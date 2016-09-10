@@ -1,0 +1,358 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'proxima_novabold';
+  src: url("../fonts/proximanova-bold-webfont.woff2") format("woff2"), url("../fonts/proximanova-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'proxima_novalight';
+  src: url("../fonts/proximanova-light-webfont.woff2") format("woff2"), url("../fonts/proximanova-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'proxima_novaregular';
+  src: url("../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 1, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/partials/_base.scss */
+body {
+  font-family: "proxima_novaregular", Open Sans, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 12, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/partials/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "proxima_novabold", Open Sans, sans-serif; }
+
+/* line 16, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/partials/_base.scss */
+.fgWhite {
+  color: #ffffff; }
+
+/* line 20, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/partials/_base.scss */
+.bgWhite {
+  background-color: #ffffff; }
+
+/* line 24, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/partials/_base.scss */
+.fgPrimary {
+  color: #2a2e6d; }
+
+/* line 28, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/partials/_base.scss */
+.bgPrimary {
+  background-color: #2a2e6d; }
+
+/* line 32, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/partials/_base.scss */
+.fgAccent {
+  color: #f0de52; }
+
+/* line 36, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/partials/_base.scss */
+.bgAccent {
+  background-color: #f0de52; }
+
+/* line 40, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/partials/_base.scss */
+.fgDark {
+  color: #222222; }
+
+/* line 44, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/partials/_base.scss */
+.bgDark {
+  background-color: #222222; }
+
+/* line 4, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+.buttonBase, .outlineButton, .filledButton {
+  width: 100px;
+  height: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px; }
+
+/* line 12, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+.outlineButton {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px #ffffff; }
+
+/* line 19, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+.filledButton {
+  border: none; }
+
+/* line 24, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+.navPage {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: #222222;
+  padding-top: 75px; }
+  /* line 30, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+  .navPage .navCloseBtn {
+    font-size: 150%;
+    position: absolute;
+    top: 30px;
+    right: 37.5px; }
+  /* line 37, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+  .navPage .navItems .col-sm-12 {
+    padding: 15px 0 15px 0; }
+    /* line 39, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+    .navPage .navItems .col-sm-12 a {
+      text-decoration: none;
+      color: #ffffff; }
+    /* line 43, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+    .navPage .navItems .col-sm-12 a:after {
+      content: '';
+      width: 0px;
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0);
+      margin: auto;
+      display: block;
+      transition: width 0.4s; }
+    /* line 52, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+    .navPage .navItems .col-sm-12 a:hover:after {
+      width: 30px;
+      background-color: #f0de52; }
+  /* line 58, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+  .navPage .actionItems {
+    margin-top: 30px; }
+    /* line 60, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+    .navPage .actionItems button {
+      display: inline; }
+    /* line 63, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+    .navPage .actionItems button:first-child {
+      margin-right: 10px; }
+
+/* line 69, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+.mainPage {
+  width: 100%; }
+  /* line 71, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+  .mainPage .pageHero {
+    height: 100%;
+    width: 100%;
+    position: relative; }
+    /* line 75, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+    .mainPage .pageHero .heroHeader {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: +1; }
+      /* line 81, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .pageHero .heroHeader .contactInfo {
+        display: none; }
+        /* line 85, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroHeader .contactInfo .col-sm-12 {
+          padding-top: 8px;
+          padding-bottom: 8px; }
+        /* line 89, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroHeader .contactInfo p {
+          padding: 3px 0 3px 0;
+          display: inline; }
+        /* line 93, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroHeader .contactInfo span {
+          width: 16px;
+          height: 16px;
+          border-radius: 16px;
+          display: inline;
+          padding: 5px; }
+      /* line 101, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .pageHero .heroHeader .naviBar {
+        height: 70px; }
+        /* line 103, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroHeader .naviBar .brandLogo {
+          height: 40px;
+          margin-top: 15px;
+          margin-bottom: 15px; }
+        /* line 108, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroHeader .naviBar .navToggle {
+          width: 30px;
+          padding: 34px 0 0 0;
+          float: right;
+          cursor: pointer; }
+          /* line 113, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+          .mainPage .pageHero .heroHeader .naviBar .navToggle .navLine {
+            width: 30px;
+            height: 2px;
+            display: block;
+            border-radius: 2px; }
+          /* line 119, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+          .mainPage .pageHero .heroHeader .naviBar .navToggle .navLine:before {
+            content: '';
+            background-color: #ffffff;
+            width: 30px;
+            height: 2px;
+            display: block;
+            position: relative;
+            border-radius: 2px;
+            top: -8px;
+            left: 0px; }
+          /* line 130, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+          .mainPage .pageHero .heroHeader .naviBar .navToggle .navLine:after {
+            content: '';
+            background-color: #ffffff;
+            width: 30px;
+            height: 2px;
+            display: block;
+            position: relative;
+            border-radius: 2px;
+            top: 6px;
+            left: 0px; }
+        /* line 142, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroHeader .naviBar .navToggle:before {
+          content: 'MENU';
+          color: #ffffff;
+          display: block;
+          position: relative;
+          left: -45px;
+          float: left;
+          top: -8px;
+          font-size: 14px; }
+    /* line 154, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+    .mainPage .pageHero .heroSlider {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      display: flex; }
+      /* line 160, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .pageHero .heroSlider .heroTextWrapper {
+        width: 80%;
+        margin: auto;
+        /* For Large Screens
+                padding-top: 130px; */ }
+        /* line 166, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroSlider .heroTextWrapper .heroText {
+          font-family: "proxima_novaregular", Open Sans, sans-serif;
+          font-size: 200%; }
+        /* line 171, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroSlider .heroTextWrapper .heroSubtext {
+          font-family: "proxima_novabold", Open Sans, sans-serif;
+          font-size: 120%; }
+        /* line 176, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroSlider .heroTextWrapper .heroSidetext {
+          font-family: "proxima_novaregular", Open Sans, sans-serif;
+          font-size: 110%; }
+        /* line 181, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroSlider .heroTextWrapper .ctaButton {
+          width: 180px; }
+      /* line 185, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .pageHero .heroSlider .heroImage {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-image: url("../img/bgImage.jpg");
+        background-size: cover; }
+      /* line 196, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .pageHero .heroSlider .heroImage:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        z-index: +1;
+        background-color: #f0de52;
+        opacity: 0.95; }
+      /* line 207, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .pageHero .heroSlider .heroAnimation {
+        width: 100%;
+        height: 70px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        z-index: +3;
+        background-image: url("../img/image.road.png");
+        background-position: bottom;
+        background-size: cover;
+        /* For Large Screens
+                background-size: contain;
+                background-repeat: repeat-x;
+                */ }
+        /* line 222, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+        .mainPage .pageHero .heroSlider .heroAnimation .heroAnimationBus {
+          height: 33px;
+          position: absolute;
+          bottom: 5px;
+          left: 1%; }
+  /* line 232, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+  .mainPage .features {
+    width: 100%; }
+    /* line 235, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+    .mainPage .features .featureItem {
+      padding: 20px; }
+      /* line 239, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .features .featureItem .featureIcon {
+        display: inline-block;
+        font-size: 150%; }
+      /* line 244, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .features .featureItem .featureTitle {
+        display: block;
+        font-family: "proxima_novabold", Open Sans, sans-serif;
+        font-size: 12px; }
+      /* line 250, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .features .featureItem .featureText {
+        display: block; }
+  /* line 256, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+  .mainPage .whoWeAre {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    background-image: url("../img/bgWhoWeAre.jpg");
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    /* line 265, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+    .mainPage .whoWeAre .sectionContent {
+      width: 80%;
+      margin: auto; }
+      /* line 269, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .whoWeAre .sectionContent .sectionTitle {
+        font-family: "proxima_novabold", Open Sans, sans-serif; }
+      /* line 273, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .whoWeAre .sectionContent .sectionHighlights {
+        height: 40px;
+        display: inline-flex; }
+      /* line 278, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .whoWeAre .sectionContent .highlight {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-right: 5px; }
+      /* line 286, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .whoWeAre .sectionContent .highlightIconBase, .mainPage .whoWeAre .sectionContent .highlight1:after, .mainPage .whoWeAre .sectionContent .highlight2:after, .mainPage .whoWeAre .sectionContent .highlight3:after {
+        font-family: icomoon;
+        font-size: 20px;
+        color: #222222;
+        display: block;
+        position: relative;
+        top: 5px; }
+      /* line 294, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .whoWeAre .sectionContent .highlight1:after {
+        content: '\e904'; }
+      /* line 298, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .whoWeAre .sectionContent .highlight2:after {
+        content: '\e900'; }
+      /* line 302, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+      .mainPage .whoWeAre .sectionContent .highlight3:after {
+        content: '\e901'; }
+  /* line 309, C:/Users/Christian Dréy/Desktop/Folders/Jobs/LoadAm/Web/scss/style.scss */
+  .mainPage .whoWeAre:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #222222;
+    opacity: 0.93; }
+
+/*# sourceMappingURL=style.css.map */

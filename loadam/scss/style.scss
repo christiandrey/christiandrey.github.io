@@ -1,0 +1,322 @@
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+@import "partials/base.scss";
+.buttonBase {
+    width: 100px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+
+.outlineButton {
+    @extend .buttonBase;
+    color: $colorWhite;
+    background-color: $colorTrans;
+    border: solid 1px $colorWhite;
+}
+
+.filledButton {
+    @extend .buttonBase;
+    border: none
+}
+
+.navPage {
+    width: 100%;
+    height: 100%;
+    color: $colorWhite;
+    background-color: $colorDark;
+    padding-top: 75px;
+    .navCloseBtn {
+        font-size: 150%;
+        position: absolute;
+        top: 30px;
+        right: 37.5px;
+    }
+    .navItems {
+        .col-sm-12 {
+            padding: 15px 0 15px 0;
+            a {
+                text-decoration: none;
+                color: $colorWhite;
+            }
+            a:after {
+                content: '';
+                width: 0px;
+                height: 3px;
+                background-color: $colorTrans;
+                margin: auto;
+                display: block;
+                transition: width 0.4s;
+            }
+            a:hover:after {
+                width: 30px;
+                background-color: $colorAccent;
+            }
+        }
+    }
+    .actionItems {
+        margin-top: 30px;
+        button {
+            display: inline
+        }
+        button:first-child {
+            margin-right: 10px;
+        }
+    }
+}
+
+.mainPage {
+    width: 100%;
+    .pageHero {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        .heroHeader {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: +1;
+            .contactInfo {
+                //Only for mobile device goes here
+                display: none;
+                //End of only for mobile
+                .col-sm-12 {
+                    padding-top: 8px;
+                    padding-bottom: 8px
+                }
+                p {
+                    padding: 3px 0 3px 0;
+                    display: inline;
+                }
+                span {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 16px;
+                    display: inline;
+                    padding: 5px;
+                }
+            }
+            .naviBar {
+                height: 70px;
+                .brandLogo {
+                    height: 40px;
+                    margin-top: 15px;
+                    margin-bottom: 15px
+                }
+                .navToggle {
+                    width: 30px;
+                    padding: 34px 0 0 0;
+                    float: right;
+                    cursor: pointer;
+                    .navLine {
+                        width: 30px;
+                        height: 2px;
+                        display: block;
+                        border-radius: 2px;
+                    }
+                    .navLine:before {
+                        content: '';
+                        background-color: $colorWhite;
+                        width: 30px;
+                        height: 2px;
+                        display: block;
+                        position: relative;
+                        border-radius: 2px;
+                        top: -8px;
+                        left: 0px
+                    }
+                    .navLine:after {
+                        content: '';
+                        background-color: $colorWhite;
+                        width: 30px;
+                        height: 2px;
+                        display: block;
+                        position: relative;
+                        border-radius: 2px;
+                        top: 6px;
+                        left: 0px
+                    }
+                }
+                .navToggle:before {
+                    content: 'MENU';
+                    color: $colorWhite;
+                    display: block;
+                    position: relative;
+                    left: -45px;
+                    float: left;
+                    top: -8px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .heroSlider {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+
+            .heroTextWrapper {
+                width: 80%;
+                margin: auto;
+                /* For Large Screens
+                padding-top: 130px; */
+
+                .heroText {
+                    font-family: $bodyFont;
+                    font-size: 200%;
+                }
+
+                .heroSubtext {
+                    font-family: $headerFont;
+                    font-size: 120%;
+                }
+
+                .heroSidetext {
+                    font-family: $bodyFont;
+                    font-size: 110%
+                }
+
+                .ctaButton {
+                    width: 180px;
+                }
+            }
+            .heroImage {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                background-image: url('../img/bgImage.jpg');
+                background-size: cover;
+            }
+
+            .heroImage:after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: relative;
+                z-index: +1;
+                background-color: $colorAccent;
+                opacity: 0.95;
+            }
+
+            .heroAnimation {
+                width: 100%;
+                height: 70px;
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                z-index: +3;
+                background-image: url('../img/image.road.png');
+                background-position: bottom;
+                background-size: cover;
+                /* For Large Screens
+                background-size: contain;
+                background-repeat: repeat-x;
+                */
+
+                .heroAnimationBus {
+                    height: 33px;
+                    position: absolute;
+                    bottom: 5px;
+                    left: 1%;
+                }
+            }
+        }
+    }
+
+    .features {
+        width: 100%;
+
+        .featureItem {
+
+            padding: 20px;
+
+            .featureIcon {
+                display: inline-block;
+                font-size: 150%;
+            }
+
+            .featureTitle {
+                display: block;
+                font-family: $headerFont;
+                font-size: 12px;
+            }
+
+            .featureText {
+                display: block
+            }
+        }
+    }
+
+    .whoWeAre {
+        width: 100%;
+        position: relative;
+        z-index: -1;
+        background-image: url('../img/bgWhoWeAre.jpg');
+        background-size: cover;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .sectionContent {
+            width: 80%;
+            margin: auto;
+
+            .sectionTitle {
+                font-family: $headerFont;
+            }
+
+            .sectionHighlights {
+                height: 40px;
+                display: inline-flex;
+            }
+
+            .highlight {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .highlightIconBase {
+                font-family: icomoon;
+                font-size: 20px;
+                color: $colorDark;
+                display: block;
+                position: relative;
+                top: 5px;
+            }
+            .highlight1:after {
+                @extend .highlightIconBase;
+                content: '\e904'
+            }
+            .highlight2:after {
+                @extend .highlightIconBase;
+                content: '\e900'
+            }
+            .highlight3:after {
+                @extend .highlightIconBase;
+                content: '\e901'
+            }
+        }
+    }
+
+    .whoWeAre:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $colorDark;
+        opacity: 0.93
+    }
+
+}
