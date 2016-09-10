@@ -2,6 +2,7 @@
 @import "partials/mixins.scss";
 @import "partials/base.scss";
 @import "partials/navigation.scss";
+@import "partials/footer.scss";
 
 .buttonBase {
     width: 130px;
@@ -452,7 +453,7 @@
             width: 40px;
             height: 40px;
             border-radius: 20px;
-            margin: auto 40px;
+            margin: auto 20px;
         }
 
         .socialIconBase {
@@ -486,46 +487,6 @@
         background-image: url('../img/googleMap.PNG');
         background-position: top left;
         background-size: cover;
-    }
-
-    .footerContent {
-        width: 100%;
-
-        .row {
-            .footerItem {
-                padding: 10px auto;
-                margin: 30px auto;
-
-                .footerImg {
-                    height: 100px;
-                    width: auto
-                }
-
-                a {
-                    text-decoration: none;
-                    color: $colorDarkGray;
-
-                    p {
-                        margin: 0;
-                        padding: 5px 0;
-                    }
-                }
-                a:after {
-                    content: '';
-                    width: 0px;
-                    height: 3px;
-                    margin: auto;
-                    background-color: $colorTrans;
-                    display: block;
-                    margin-top: -5px;
-                    transition: width 0.4s;
-                }
-                a:hover:after {
-                    width: 30px;
-                    background-color: $colorAccent;
-                }
-            }
-        }
     }
 
 
