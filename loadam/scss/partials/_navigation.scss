@@ -1,0 +1,54 @@
+.navPage {
+    width: 100%;
+    height: 100%;
+    color: $colorWhite;
+    background-color: $colorDark;
+    padding-top: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    .navCloseBtn {
+        font-size: 150%;
+        position: absolute;
+        top: 30px;
+        right: 37.5px;
+    }
+    .navItems {
+        .col-sm-12 {
+            padding: 15px 0 15px 0;
+            a {
+                text-decoration: none;
+                color: $colorWhite;
+            }
+            a:after {
+                content: '';
+                width: 0px;
+                height: 3px;
+                background-color: $colorTrans;
+                margin: auto;
+                display: block;
+                transition: width 0.4s;
+            }
+            a:hover:after {
+                width: 30px;
+                background-color: $colorAccent;
+            }
+        }
+    }
+    .actionItems {
+        margin-top: 30px;
+        button {
+            display: inline
+        }
+        button:first-child {
+            margin-right: 10px;
+        }
+    }
+}
+
+.mainPage {
+    transition: all 0.45s;
+    overflow-y: scroll;
+    transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+}
