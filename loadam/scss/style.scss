@@ -2,11 +2,10 @@
 @import "partials/mixins.scss";
 @import "partials/base.scss";
 .buttonBase {
-    width: 100px;
-    height: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    padding: 5px auto;
+    border-radius: 20px;
 }
 
 .outlineButton {
@@ -27,6 +26,10 @@
     color: $colorWhite;
     background-color: $colorDark;
     padding-top: 75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
     .navCloseBtn {
         font-size: 150%;
         position: absolute;
@@ -68,6 +71,10 @@
 
 .mainPage {
     width: 100%;
+    height: 100%;
+    transition: all 0.45s;
+    overflow-y: scroll;
+    transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
     .pageHero {
         height: 100%;
         width: 100%;
@@ -235,6 +242,11 @@
         .featureItem {
 
             padding: 20px;
+            margin-bottom: 0.5px;
+
+            :last-child {
+                margin-bottom: 0
+            }
 
             .featureIcon {
                 display: inline-block;
@@ -268,6 +280,18 @@
 
             .sectionTitle {
                 font-family: $headerFont;
+                margin-bottom: 20px;
+            }
+
+            .sectionIcon {
+                font-size: 1.5em;
+            }
+
+            .sectionText {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                text-align: justify;
+                text-align-last: center
             }
 
             .sectionHighlights {
@@ -279,8 +303,8 @@
                 width: 40px;
                 height: 40px;
                 border-radius: 20px;
-                margin-left: 5px;
-                margin-right: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
             }
 
             .highlightIconBase {
@@ -293,7 +317,7 @@
             }
             .highlight1:after {
                 @extend .highlightIconBase;
-                content: '\e904'
+                content: '\e92c'
             }
             .highlight2:after {
                 @extend .highlightIconBase;
@@ -318,5 +342,240 @@
         background-color: $colorDark;
         opacity: 0.93
     }
+
+    .servicesWeOffer {
+        .sectionContent {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .sectionTitle {
+                font-family: $headerFont;
+            }
+            .sectionSubTitle {
+                display: inline-block;
+                padding: 5px 20px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+            }
+            .servicesWrapper {
+                width: 100%;
+                .row {
+                    .serviceItem {
+                        margin: 5px 0 0 0;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                        span, div, p {
+                            display: block
+                        }
+
+                        span {
+                            font-size: 1.2em;
+                            margin-bottom: 3px;
+                        }
+
+                        div {
+                            margin-bottom: 10px
+                        }
+
+                        p {
+                            margin-top: 5px;
+                        }
+
+                        .coloredBar {
+                            width: 30px;
+                            height: 3px;
+                            margin: auto;
+                            border-radius: 5px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .whatWeDo {
+        width: 100%;
+        position: relative;
+        z-index: -1;
+        background-image: url('../img/bgWhatWeDo.jpeg');
+        background-size: cover;
+        padding-top: 30px;
+
+        .sectionContent {
+            .sectionTitle {
+                font-family: $headerFont
+            }
+            .sectionDoWrapper {
+                width: 100%;
+                margin-top: 60px;
+                .row {
+                    :last-child {
+                        margin-bottom: 0px;
+                    }
+                    .doItem {
+                        padding: 0;
+                        margin-bottom: -10px;
+
+
+                        div, p {
+                            display: block
+                        }
+                        .doHeader {
+                            width: 100%;
+                            height: 50px;
+                        }
+                        .doIcon {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 30px;
+                            margin: 20px auto;
+                        }
+
+                        .doIconBase {
+                            font-family: icomoon;
+                            font-size: 30px;
+                            color: $colorAccent;
+                            display: block;
+                            position: relative;
+                            top: 7.5px;
+                        }
+
+                        .doIcon1:after {
+                            @extend .doIconBase;
+                            content: '\e922'
+                        }
+
+                        .doIcon2:after {
+                            @extend .doIconBase;
+                            content: '\e905'
+                        }
+
+                        .doIcon3:after {
+                            @extend .doIconBase;
+                            content: '\e924'
+                        }
+
+                        .doTitle {
+                            font-family: $headerFont;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
+
+                        .doText {
+                            width: 80%;
+                            text-align: justify;
+                            text-align-last: center;
+                            margin-left: 10%;
+                            padding-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .whatWeDo:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $colorDark;
+        opacity: 0.93
+    }
+
+    .socialIcons {
+        width: 100%;
+
+        .iconsWrapper {
+            height: 70px;
+            display: inline-flex;
+            padding: 20px auto;
+        }
+
+        .socialIcon {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            margin: auto 40px;
+        }
+
+        .socialIconBase {
+            font-family: FontAwesome;
+            font-size: 20px;
+            color: $colorAccent;
+            display: block;
+            position: relative;
+            top: 6px
+        }
+
+        .socialIcon1:after {
+            @extend .socialIconBase;
+            content: '\f09a'
+        }
+
+        .socialIcon2:after {
+            @extend .socialIconBase;
+            content: '\f099'
+        }
+
+        .socialIcon3:after {
+            @extend .socialIconBase;
+            content: '\f0e1'
+        }
+    }
+
+    .googleMap {
+        width: 100%;
+        height: 300px;
+        background-image: url('../img/googleMap.PNG');
+        background-position: top left;
+        background-size: cover;
+    }
+
+    .footerContent {
+        width: 100%;
+
+        .row {
+            .footerItem {
+                padding: 10px auto;
+                margin: 30px auto;
+
+                .footerImg {
+                    height: 100px;
+                    width: auto
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $colorDarkGray;
+
+                    p {
+                        margin: 0;
+                        padding: 5px 0;
+                    }
+                }
+                a:after {
+                    content: '';
+                    width: 0px;
+                    height: 3px;
+                    margin: auto;
+                    background-color: $colorTrans;
+                    display: block;
+                    margin-top: -5px;
+                    transition: width 0.4s;
+                }
+                a:hover:after {
+                    width: 30px;
+                    background-color: $colorAccent;
+                }
+            }
+        }
+    }
+
 
 }
