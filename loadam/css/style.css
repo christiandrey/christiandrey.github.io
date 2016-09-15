@@ -134,15 +134,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 150%;
     position: absolute;
     top: 20px;
-    right: 37.5px; }
-  /* line 18, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
+    right: 37.5px;
+    cursor: pointer; }
+  /* line 20, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
   .navPage .navItems .col-sm-12 {
     padding: 15px 0 15px 0; }
-    /* line 20, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
+    /* line 22, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
     .navPage .navItems .col-sm-12 a {
       text-decoration: none;
       color: #ffffff; }
-    /* line 24, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
+    /* line 26, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
     .navPage .navItems .col-sm-12 a:after {
       content: '';
       width: 0px;
@@ -151,21 +152,21 @@ h1, h2, h3, h4, h5, h6 {
       margin: auto;
       display: block;
       transition: width 0.4s; }
-    /* line 33, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
+    /* line 35, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
     .navPage .navItems .col-sm-12 a:hover:after {
       width: 30px;
       background-color: #f0de52; }
-  /* line 39, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
+  /* line 41, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
   .navPage .actionItems {
     margin-top: 30px; }
-    /* line 41, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
+    /* line 43, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
     .navPage .actionItems button {
       display: inline; }
-    /* line 44, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
+    /* line 46, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
     .navPage .actionItems button:first-child {
       margin-right: 10px; }
 
-/* line 50, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
+/* line 52, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/partials/_navigation.scss */
 .mainPage {
   transition: all 0.45s;
   overflow-y: scroll;
@@ -240,43 +241,48 @@ h1, h2, h3, h4, h5, h6 {
       z-index: +1; }
       /* line 40, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .pageHero .heroHeader .contactInfo {
-        display: none; }
-        /* line 44, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        display: none;
+        /* Tablets and phablets */ }
+        @media only screen and (min-width: 768px) {
+          /* line 40, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+          .mainPage .pageHero .heroHeader .contactInfo {
+            display: inline; } }
+        /* line 47, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroHeader .contactInfo .col-sm-12 {
           padding-top: 8px;
           padding-bottom: 8px; }
-        /* line 48, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 51, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroHeader .contactInfo p {
           padding: 3px 0 3px 0;
           display: inline; }
-        /* line 52, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 55, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroHeader .contactInfo span {
           width: 16px;
           height: 16px;
           border-radius: 16px;
           display: inline;
           padding: 5px; }
-      /* line 60, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 63, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .pageHero .heroHeader .naviBar {
         height: 70px; }
-        /* line 62, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 65, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroHeader .naviBar .brandLogo {
           height: 40px;
           margin-top: 15px;
           margin-bottom: 15px; }
-        /* line 67, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 70, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroHeader .naviBar .navToggle {
           width: 30px;
           padding: 34px 0 0 0;
           float: right;
           cursor: pointer; }
-          /* line 72, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+          /* line 75, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
           .mainPage .pageHero .heroHeader .naviBar .navToggle .navLine {
             width: 30px;
             height: 2px;
             display: block;
             border-radius: 2px; }
-          /* line 78, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+          /* line 81, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
           .mainPage .pageHero .heroHeader .naviBar .navToggle .navLine:before {
             content: '';
             background-color: #ffffff;
@@ -287,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 2px;
             top: -8px;
             left: 0px; }
-          /* line 89, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+          /* line 92, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
           .mainPage .pageHero .heroHeader .naviBar .navToggle .navLine:after {
             content: '';
             background-color: #ffffff;
@@ -298,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 2px;
             top: 6px;
             left: 0px; }
-        /* line 101, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 104, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroHeader .naviBar .navToggle:before {
           content: 'MENU';
           color: #ffffff;
@@ -308,34 +314,44 @@ h1, h2, h3, h4, h5, h6 {
           float: left;
           top: -8px;
           font-size: 14px; }
-    /* line 113, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 116, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .pageHero .heroSlider {
       width: 100%;
       height: 100vh;
       position: relative;
       display: flex; }
-      /* line 119, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 122, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .pageHero .heroSlider .heroTextWrapper {
+        /* Tablets and phablets */
         width: 80%;
         margin: auto;
         /* For Large Screens
                 padding-top: 130px; */ }
-        /* line 125, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        @media only screen and (min-width: 768px) {
+          /* line 122, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+          .mainPage .pageHero .heroSlider .heroTextWrapper {
+            width: 50%; } }
+        /* line 131, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroSlider .heroTextWrapper .heroText {
           font-family: "proxima_novaregular", Open Sans, sans-serif;
-          font-size: 200%; }
-        /* line 130, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+          font-size: 200%;
+          /* Tablets and phablets */ }
+          @media only screen and (min-width: 768px) {
+            /* line 131, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+            .mainPage .pageHero .heroSlider .heroTextWrapper .heroText {
+              font-size: 300%; } }
+        /* line 139, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroSlider .heroTextWrapper .heroSubtext {
           font-family: "proxima_novabold", Open Sans, sans-serif;
           font-size: 120%; }
-        /* line 135, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 144, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroSlider .heroTextWrapper .heroSidetext {
           font-family: "proxima_novaregular", Open Sans, sans-serif;
           font-size: 110%; }
-        /* line 140, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 149, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroSlider .heroTextWrapper .ctaButton {
           width: 180px; }
-      /* line 144, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 153, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .pageHero .heroSlider .heroImage {
         width: 100%;
         height: 100%;
@@ -345,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
         z-index: -1;
         background-image: url("../img/bgImage.jpg");
         background-size: cover; }
-      /* line 155, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 164, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .pageHero .heroSlider .heroImage:after {
         content: '';
         width: 100%;
@@ -355,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
         z-index: +1;
         background-color: #f0de52;
         opacity: 0.95; }
-      /* line 166, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 175, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .pageHero .heroSlider .heroAnimation {
         width: 100%;
         height: 70px;
@@ -366,39 +382,51 @@ h1, h2, h3, h4, h5, h6 {
         background-image: url("../img/image.road.png");
         background-position: bottom;
         background-size: cover;
-        /* For Large Screens
-                background-size: contain;
-                background-repeat: repeat-x;
-                */ }
-        /* line 181, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* Tablets and phablets */ }
+        @media only screen and (min-width: 768px) {
+          /* line 175, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+          .mainPage .pageHero .heroSlider .heroAnimation {
+            background-size: contain;
+            background-repeat: repeat-x; } }
+        /* line 190, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .pageHero .heroSlider .heroAnimation .heroAnimationBus {
           height: 33px;
           position: absolute;
           bottom: 5px;
           left: 1%; }
-  /* line 191, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+  /* line 200, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
   .mainPage .features {
     width: 100%; }
-    /* line 194, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 203, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    .mainPage .features .row {
+      /* Tablets and phablets */ }
+      @media only screen and (min-width: 768px) {
+        /* line 203, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        .mainPage .features .row {
+          width: 80%;
+          margin-left: 10%;
+          padding: 100px 0 100px 0; } }
+    /* line 211, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .features .featureItem {
       padding: 20px;
-      margin-bottom: 0.5px; }
-      /* line 199, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      margin-bottom: 0.5px;
+      border-radius: 10px; }
+      /* line 216, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .features .featureItem :last-child {
         margin-bottom: 0; }
-      /* line 203, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 220, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .features .featureItem .featureIcon {
         display: inline-block;
         font-size: 150%; }
-      /* line 208, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 225, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .features .featureItem .featureTitle {
         display: block;
         font-family: "proxima_novabold", Open Sans, sans-serif;
         font-size: 12px; }
-      /* line 214, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 231, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .features .featureItem .featureText {
         display: block; }
-  /* line 220, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+  /* line 237, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
   .mainPage .whoWeAre {
     width: 100%;
     position: relative;
@@ -407,35 +435,40 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     padding-top: 30px;
     padding-bottom: 30px; }
-    /* line 229, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 246, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .whoWeAre .sectionContent {
       width: 80%;
-      margin: auto; }
-      /* line 233, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      margin: auto;
+      /* Tablets and phablets */ }
+      @media only screen and (min-width: 768px) {
+        /* line 246, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        .mainPage .whoWeAre .sectionContent {
+          padding: 40px 10%; } }
+      /* line 253, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whoWeAre .sectionContent .sectionTitle {
         font-family: "proxima_novabold", Open Sans, sans-serif;
         margin-bottom: 20px; }
-      /* line 238, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 258, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whoWeAre .sectionContent .sectionIcon {
         font-size: 1.5em; }
-      /* line 242, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 262, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whoWeAre .sectionContent .sectionText {
         margin-top: 20px;
         margin-bottom: 30px;
         text-align: justify;
         text-align-last: center; }
-      /* line 249, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 269, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whoWeAre .sectionContent .sectionHighlights {
         height: 40px;
         display: inline-flex; }
-      /* line 254, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 274, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whoWeAre .sectionContent .highlight {
         width: 40px;
         height: 40px;
         border-radius: 20px;
         margin-left: 10px;
         margin-right: 10px; }
-      /* line 262, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 282, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whoWeAre .sectionContent .highlightIconBase, .mainPage .whoWeAre .sectionContent .highlight1:after, .mainPage .whoWeAre .sectionContent .highlight2:after, .mainPage .whoWeAre .sectionContent .highlight3:after {
         font-family: icomoon;
         font-size: 20px;
@@ -443,16 +476,16 @@ h1, h2, h3, h4, h5, h6 {
         display: block;
         position: relative;
         top: 5px; }
-      /* line 270, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 290, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whoWeAre .sectionContent .highlight1:after {
         content: '\e92c'; }
-      /* line 274, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 294, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whoWeAre .sectionContent .highlight2:after {
         content: '\e900'; }
-      /* line 278, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 298, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whoWeAre .sectionContent .highlight3:after {
         content: '\e901'; }
-  /* line 285, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+  /* line 305, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
   .mainPage .whoWeAre:after {
     content: '';
     width: 100%;
@@ -464,47 +497,64 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1;
     background-color: #222222;
     opacity: 0.93; }
-  /* line 299, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+  /* line 319, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
   .mainPage .servicesWeOffer .sectionContent {
     padding-top: 30px;
-    padding-bottom: 30px; }
-    /* line 302, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    padding-bottom: 30px;
+    /* Tablets and phablets */ }
+    @media only screen and (min-width: 768px) {
+      /* line 319, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      .mainPage .servicesWeOffer .sectionContent {
+        padding-top: 40px;
+        padding-bottom: 40px; } }
+    /* line 326, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .servicesWeOffer .sectionContent .sectionTitle {
       font-family: "proxima_novabold", Open Sans, sans-serif; }
-    /* line 305, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 329, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .servicesWeOffer .sectionContent .sectionSubTitle {
       display: inline-block;
       padding: 5px 20px;
       margin-top: 5px;
       margin-bottom: 15px; }
-    /* line 311, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 335, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .servicesWeOffer .sectionContent .servicesWrapper {
-      width: 100%; }
-      /* line 314, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      width: 100%;
+      /* Tablets and phablets */ }
+      @media only screen and (min-width: 768px) {
+        /* line 335, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        .mainPage .servicesWeOffer .sectionContent .servicesWrapper {
+          width: 80%;
+          margin-left: 10%; } }
+      /* line 342, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .servicesWeOffer .sectionContent .servicesWrapper .row .serviceItem {
+        /* Tablets and phablets */
         margin: 5px 0 0 0;
         padding-top: 10px;
         padding-bottom: 10px; }
-        /* line 319, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        @media only screen and (min-width: 768px) {
+          /* line 342, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+          .mainPage .servicesWeOffer .sectionContent .servicesWrapper .row .serviceItem {
+            border-radius: 5px; } }
+        /* line 350, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .servicesWeOffer .sectionContent .servicesWrapper .row .serviceItem span, .mainPage .servicesWeOffer .sectionContent .servicesWrapper .row .serviceItem div, .mainPage .servicesWeOffer .sectionContent .servicesWrapper .row .serviceItem p {
           display: block; }
-        /* line 323, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 354, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .servicesWeOffer .sectionContent .servicesWrapper .row .serviceItem span {
           font-size: 1.2em;
           margin-bottom: 3px; }
-        /* line 328, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 359, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .servicesWeOffer .sectionContent .servicesWrapper .row .serviceItem div {
           margin-bottom: 10px; }
-        /* line 332, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 363, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .servicesWeOffer .sectionContent .servicesWrapper .row .serviceItem p {
           margin-top: 5px; }
-        /* line 336, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 367, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .servicesWeOffer .sectionContent .servicesWrapper .row .serviceItem .coloredBar {
           width: 30px;
           height: 3px;
           margin: auto;
           border-radius: 5px; }
-  /* line 349, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+  /* line 380, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
   .mainPage .whatWeDo {
     width: 100%;
     position: relative;
@@ -512,34 +562,34 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("../img/bgWhatWeDo.jpeg");
     background-size: cover;
     padding-top: 30px; }
-    /* line 358, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 389, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .whatWeDo .sectionContent .sectionTitle {
       font-family: "proxima_novabold", Open Sans, sans-serif; }
-    /* line 361, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 392, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .whatWeDo .sectionContent .sectionDoWrapper {
       width: 100%;
       margin-top: 60px; }
-      /* line 365, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 396, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row :last-child {
         margin-bottom: 0px; }
-      /* line 368, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+      /* line 399, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
       .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem {
         padding: 0;
         margin-bottom: -10px; }
-        /* line 373, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 404, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem div, .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem p {
           display: block; }
-        /* line 376, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 407, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doHeader {
           width: 100%;
           height: 50px; }
-        /* line 380, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 411, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doIcon {
           width: 60px;
           height: 60px;
           border-radius: 30px;
           margin: 20px auto; }
-        /* line 387, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 418, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doIconBase, .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doIcon1:after, .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doIcon2:after, .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doIcon3:after {
           font-family: icomoon;
           font-size: 30px;
@@ -547,28 +597,28 @@ h1, h2, h3, h4, h5, h6 {
           display: block;
           position: relative;
           top: 7.5px; }
-        /* line 396, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 427, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doIcon1:after {
           content: '\e922'; }
-        /* line 401, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 432, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doIcon2:after {
           content: '\e905'; }
-        /* line 406, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 437, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doIcon3:after {
           content: '\e924'; }
-        /* line 411, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 442, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doTitle {
           font-family: "proxima_novabold", Open Sans, sans-serif;
           margin-top: 10px;
           margin-bottom: 10px; }
-        /* line 417, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+        /* line 448, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
         .mainPage .whatWeDo .sectionContent .sectionDoWrapper .row .doItem .doText {
           width: 80%;
           text-align: justify;
           text-align-last: center;
           margin-left: 10%;
           padding-bottom: 20px; }
-  /* line 430, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+  /* line 461, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
   .mainPage .whatWeDo:after {
     content: '';
     width: 100%;
@@ -580,21 +630,21 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1;
     background-color: #222222;
     opacity: 0.93; }
-  /* line 443, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+  /* line 474, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
   .mainPage .socialIcons {
     width: 100%; }
-    /* line 446, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 477, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .socialIcons .iconsWrapper {
       height: 70px;
       display: inline-flex;
       padding: 20px auto; }
-    /* line 452, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 483, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .socialIcons .socialIcon {
       width: 40px;
       height: 40px;
       border-radius: 20px;
       margin: auto 20px; }
-    /* line 459, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 490, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .socialIcons .socialIconBase, .mainPage .socialIcons .socialIcon1:after, .mainPage .socialIcons .socialIcon2:after, .mainPage .socialIcons .socialIcon3:after {
       font-family: FontAwesome;
       font-size: 20px;
@@ -602,16 +652,16 @@ h1, h2, h3, h4, h5, h6 {
       display: block;
       position: relative;
       top: 6px; }
-    /* line 468, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 499, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .socialIcons .socialIcon1:after {
       content: '\f09a'; }
-    /* line 473, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 504, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .socialIcons .socialIcon2:after {
       content: '\f099'; }
-    /* line 478, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+    /* line 509, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
     .mainPage .socialIcons .socialIcon3:after {
       content: '\f0e1'; }
-  /* line 484, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
+  /* line 515, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.bitbucket.org/loadam/scss/style.scss */
   .mainPage .googleMap {
     width: 100%;
     height: 300px;

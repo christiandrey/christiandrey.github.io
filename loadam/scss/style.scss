@@ -40,6 +40,9 @@
             .contactInfo {
                 //Only for mobile device goes here
                 display: none;
+                @include MQ(M) {
+                    display: inline;
+                }
                 //End of only for mobile
                 .col-sm-12 {
                     padding-top: 8px;
@@ -117,6 +120,9 @@
             display: flex;
 
             .heroTextWrapper {
+                @include MQ(M) {
+                    width: 50%
+                }
                 width: 80%;
                 margin: auto;
                 /* For Large Screens
@@ -125,6 +131,9 @@
                 .heroText {
                     font-family: $bodyFont;
                     font-size: 200%;
+                    @include MQ(M){
+                        font-size: 300%
+                    }
                 }
 
                 .heroSubtext {
@@ -173,10 +182,10 @@
                 background-image: url('../img/image.road.png');
                 background-position: bottom;
                 background-size: cover;
-                /* For Large Screens
-                background-size: contain;
-                background-repeat: repeat-x;
-                */
+                @include MQ(M){
+                    background-size: contain;
+                    background-repeat: repeat-x
+                }
 
                 .heroAnimationBus {
                     height: 33px;
@@ -191,10 +200,18 @@
     .features {
         width: 100%;
 
-        .featureItem {
+        .row {
+            @include MQ(M){
+                width: 80%;
+                margin-left: 10%;
+                padding: 100px 0 100px 0;
+            }
+        }
 
+        .featureItem {
             padding: 20px;
             margin-bottom: 0.5px;
+            border-radius: 10px;
 
             :last-child {
                 margin-bottom: 0
@@ -229,6 +246,9 @@
         .sectionContent {
             width: 80%;
             margin: auto;
+            @include MQ(M) {
+                padding: 40px 10%;
+            }
 
             .sectionTitle {
                 font-family: $headerFont;
@@ -299,6 +319,10 @@
         .sectionContent {
             padding-top: 30px;
             padding-bottom: 30px;
+            @include MQ(M){
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
             .sectionTitle {
                 font-family: $headerFont;
             }
@@ -310,8 +334,15 @@
             }
             .servicesWrapper {
                 width: 100%;
+                @include MQ(M){
+                    width: 80%;
+                    margin-left: 10%
+                }
                 .row {
                     .serviceItem {
+                        @include MQ(M){
+                            border-radius: 5px
+                        }
                         margin: 5px 0 0 0;
                         padding-top: 10px;
                         padding-bottom: 10px;
