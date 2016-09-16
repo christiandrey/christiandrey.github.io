@@ -45,8 +45,13 @@
                 }
                 //End of only for mobile
                 .col-sm-12 {
-                    padding-top: 8px;
-                    padding-bottom: 8px
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    @include MQ(M){
+                        padding-left: 5%;
+                        padding-right: 5%
+                    }
+                    font-size: 0.9em;
                 }
                 p {
                     padding: 3px 0 3px 0;
@@ -62,10 +67,19 @@
             }
             .naviBar {
                 height: 70px;
+                @include MQ(M){
+                    padding: 0 5% 0 5%;
+                }
                 .brandLogo {
                     height: 40px;
                     margin-top: 15px;
                     margin-bottom: 15px
+                }
+
+                .navToggleColumn {
+                    @include MQ(M){
+                        padding-right: 0;
+                    }
                 }
                 .navToggle {
                     width: 30px;
@@ -209,9 +223,15 @@
         }
 
         .featureItem {
-            padding: 20px;
+            padding: 40px;
             margin-bottom: 0.5px;
-            border-radius: 10px;
+
+            @include MQ(M){
+                width: 23%;
+                height: 230px;
+                margin: 0 1% 0 1%;
+                border-radius: 10px;
+            }
 
             :last-child {
                 margin-bottom: 0
@@ -229,7 +249,10 @@
             }
 
             .featureText {
-                display: block
+                display: block;
+                @include MQ(M){
+                    font-size: 0.9em;
+                }
             }
         }
     }
