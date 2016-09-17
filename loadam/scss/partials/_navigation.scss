@@ -10,10 +10,17 @@
     z-index: -2;
     .navCloseBtn {
         font-size: 150%;
+        color: $colorWhite;
         position: absolute;
         top: 20px;
         right: 37.5px;
-        cursor: pointer
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+
+    .navCloseBtn:hover {
+        transform: scale(1.5,1.5);
+        color: $colorAccent;
     }
 
     .navItems {
@@ -22,6 +29,8 @@
             a {
                 text-decoration: none;
                 color: $colorWhite;
+                line-height: 4;
+                transition: all 1s
             }
             a:after {
                 content: '';
@@ -35,6 +44,10 @@
             a:hover:after {
                 width: 30px;
                 background-color: $colorAccent;
+            }
+
+            .navItemAnimation {
+                line-height: 1
             }
         }
     }
