@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+//  Responsive breakpoints
+$S: 480px; // Small phones Styles are written for this breakpoint by default, so no need to specify it.
+$M: 768px; // Phablets
+$L: 992px; // 10" Tablets and desktops
+$XL: 1200px; // 10" Tablets and desktops..
+
+//  Colors
+$colorPrimary   : #594736;
+$colorAccent    : #da5f1f;
+$colorDark      : #34271a;
+$colorLightDark : lighten($colorDark,1%);
+$colorBlack     : #000000;
+$colorWhite     : #ffffff;
+$colorGray      : #f9f9f9;
+$colorDarkGray  : #cecece;
+$colorTrans     : rgba(255,255,255,0);
+$colorDarkTrans : rgba(255,255,255,0.2);
+
+//  Fonts
+$bodyFont: 'proxima_novaregular',Open Sans, sans-serif;
+$bodyFontLight: 'proxima_novalight',Open Sans, sans-serif;
+$headerFont: "bebasneue",proxima_novabold, Open Sans, sans-serif;
+
+
+//  WebFonts
+@font-face {
+    font-family: 'proxima_novabold';
+    src: url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../fonts/proximanova-light-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bebasneue';
+    src: url('../fonts/BebasNeue.otf');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,71 @@
+body{
+    font-family: $bodyFont;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    @include font-smoothing;
+    background: url('../../img/bg-stripes.png') scroll repeat-x $colorPrimary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headerFont;
+    text-shadow: 0px 0px 5px $colorDark;
+}
+
+.fgWhite {
+    color: $colorWhite
+}
+
+.bgWhite {
+    background-color: $colorWhite
+}
+
+.fgPrimary {
+    color: $colorPrimary
+}
+
+.bgPrimary {
+    background-color: $colorPrimary
+}
+
+.fgAccent{
+    color: $colorAccent
+}
+
+.bgAccent{
+    background-color: $colorAccent
+}
+
+.fgDark {
+    color: $colorDark
+}
+
+.bgDark {
+    background-color: $colorDark
+}
+
+.fgGray {
+    color: $colorGray
+}
+
+.bgGray {
+    background-color: $colorGray
+}
+
+.fgDarkGray {
+    color: $colorDarkGray
+}
+
+.bgDarkGray {
+    background-color: $colorDarkGray;
+}
+
+.fgLightDark {
+    color: $colorLightDark
+}
+
+.bgLightDark {
+    background-color: $colorLightDark
+}

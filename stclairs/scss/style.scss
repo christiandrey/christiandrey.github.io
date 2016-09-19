@@ -1,0 +1,159 @@
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+@import "partials/base.scss";
+@import "partials/navigation.scss";
+@import "partials/footer.scss";
+
+.buttonBase {
+    width: 130px;
+    height: 40px;
+    padding: 5px auto;
+    border-radius: 20px;
+}
+
+.outlineButton {
+    @extend .buttonBase;
+    color: $colorWhite;
+    background-color: $colorTrans;
+    border: solid 1px $colorWhite;
+}
+
+.filledButton {
+    @extend .buttonBase;
+    border: none
+}
+
+.contactInfo {
+    .container {
+        width: 100%;
+        padding: 0;
+        background-color: rgba(0,0,0,0.53);
+        .containerLiner {
+            height: 5px;
+            width: 100%;
+        }
+        p {
+            font-size: 0.7em;
+            font-family: $bodyFont;
+            font-weight: bold;
+            margin: 5px auto;
+        }
+    }
+}
+
+.pageHeader {
+    .container {
+        img {
+            height: 40px;
+            display: block;
+            margin: 25px auto;
+        }
+        select {
+            display: block;
+            margin: 0 auto 25px;
+            width: 100%;
+            height: 30px;
+        }
+        .carousel-inner {
+            display: block;
+            height: 200px;
+            border: solid 5px $colorWhite;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px $colorDark;
+            div.item {
+                img {
+                    height: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.pageBody {
+    .restaurantEvents {
+        .pageTitle {
+            margin:30px auto;
+        }
+
+        .pageTitle:before {
+            content: '';
+            width: 100%;
+            height: 1px;
+            display: block;
+            margin-bottom: 30px;
+            background-color: $colorDarkGray;
+            box-shadow: 1px 1px 3px $colorDark;
+        }
+
+        img {
+            margin: auto;
+            height: 300px;
+            border: solid 3px $colorWhite;
+            border-radius: 10px;
+            transition: opacity 0.4s;
+            cursor: pointer
+        }
+
+        img:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .restaurantDetails {
+        margin-top: 60px;
+
+        .restaurantHours, .restaurantLocation, .restaurantReservation {
+            padding: 5px 20px 20px;
+            border: solid 1px $colorDarkTrans;
+            background: url('../img/bg-noise.png') repeat $colorDark;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px $colorDark
+        }
+        .itemTitle {
+            width: 100%;
+            height: 70px;
+            background: url('../img/double-line-white.png') center repeat-x;
+
+            h1 {
+                background-color: $colorDark;
+                font-size: 30px;
+                display: inline-block;
+                padding: 0 10px;
+            }
+        }
+
+        .restaurantHours {
+            table {
+                width: 100%;
+                margin: auto
+            }
+            td:first-child {
+                width: 40%;
+            }
+
+            td:last-child {
+                width: 60%;
+                text-align: right;
+            }
+        }
+
+        .restaurantLocation {
+            .googleMapBox {
+                width: 100%;
+                height: 150px;
+            }
+
+            p,a {
+                margin: 10px auto 5px;
+                text-decoration: none;
+                transition: color 0.4s
+            }
+
+            a:hover {
+                color: $colorWhite;
+            }
+        }
+    }
+}
+

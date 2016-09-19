@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>St Clairs Restaurant</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/iconstyle.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="contactInfo">
+            <div class="container fgWhite text-center">
+                <div class="containerLiner bgAccent"></div>
+                <p class="contactAddress fgDarkGray">9 WARSPITE ROAD, NEW CHARLTON, LONDON SE18 5NU</p>
+                <p class="contactPhone fgDarkGray">+000000000000</p>
+            </div>
+        </section>
+        <section class="pageHeader">
+            <div class="container bgDark text-center">
+                <img src="img/logo.stclairs.png" alt="St Clairs Restaurant" class="brandLogo">
+                <select class="navDropdown">
+                    <option value="">Navigate:</option>
+                    <option value="#" class="navMainItem">About Us</option>
+                    <option value="#" class="navSubItem">- Location</option>
+                    <option value="#" class="navSubItem">- Staff</option>
+                    <option value="#" class="navSubItem">- Reviews</option>
+                    <option value="#" class="navMainItem">Menus</option>
+                    <option value="#" class="navSubItem">- Lunch Menu</option>
+                    <option value="#" class="navSubItem">- Dinner Menu</option>
+                    <option value="#" class="navSubItem">- Wish List</option>
+                    <option value="#" class="navMainItem">Gallery</option>
+                    <option value="#" class="navMainItem">Events</option>
+                    <option value="#" class="navMainItem">Blog</option>
+                    <option value="#" class="navMainItem">Contact</option>
+                </select>
+                <div class="carousel slide" id="pageSlider" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#pageSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#pageSlider" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner" role=listbox>
+                        <div class="item active">
+                            <img src="img/slide.one.png" alt="Please Show Images">
+                        </div>
+                        <div class="item">
+                            <img src="img/slide.two.jpeg" alt="Please Show Images">
+                        </div>
+                    </div>
+                    <a href="#pageSlider" class="left carousel-control" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a href="#pageSlider" class="right carousel-control" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </section>
+        <section class="pageBody container">
+            <section class="restaurantEvents text-center">
+                <h1 class="pageTitle fgWhite">EVENTS</h1>
+                <div class="row">
+                    <div class="col-md-3"><img src="img/event.thursday.jpg" alt="Thursday"></div>
+                    <div class="col-md-3"><img src="img/event.friday.jpg" alt="Thursday"></div>
+                    <div class="col-md-3"><img src="img/event.thursday.jpg" alt="Thursday"></div>
+                    <div class="col-md-3"><img src="img/event.sunday.jpg" alt="Thursday"></div>
+                </div>
+            </section>
+            <section class="restaurantDetails">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="restaurantHours bgDark fgWhite">
+                            <div class="itemTitle text-center"><h1>HOURS</h1></div>
+                            <table class="hoursTable">
+                                <tbody>
+                                    <tr>
+                                        <td>Monday</td><td>9:00 AM - 11:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tuesday</td><td>9:00 AM - 11:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wednesday</td><td>9:00 AM - 11:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thursday</td><td>9:00 AM - 11:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friday</td><td>9:00 AM - 11:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday</td><td>9:00 AM - 11:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday</td><td>10:00 AM - 11:00 PM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="restaurantLocation bgDark fgWhite">
+                            <div class="itemTitle text-center"><h1>LOCATION</h1></div>
+                            <div class="googleMapBox bgWhite"></div>
+                            <p class="locationAddress text-left">9 Warspite road, New Charlton, London SE18 5NU</p>
+                            <a href="#" class="getDirections fgAccent text-left">Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="restaurantReservation bgDark fgWhite">
+                            <div class="itemTitle text-center"><h1>MAKE A RESERVATION</h1></div>
+                            <table class="reservationTable">
+                                <tbody>
+                                    <tr>
+                                        <td><p>NAME</p><input type="text" name="name"></td>
+                                        <td><p>EMAIL ADDRESS</p><input type="text" name="email"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>PHONE NUMBER</p><input type="text" name="phone"></td>
+                                        <td><p>PARTY SIZE</p><input type="text" name="size"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p>DATE</p><input type="text" name="date"></td>
+                                        <td><p>TIME</p><select name="time" id="time"></select></td>
+                                    </tr>
+                                    <tr><td colspan="2" class="text-center"><button class="bgAccent fgWhite filledButton">Submit</button></td></tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="pageFooter"></footer>
+        </section>
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
