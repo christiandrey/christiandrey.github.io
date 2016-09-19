@@ -262,7 +262,8 @@
 
             .featureIcon {
                 display: inline-block;
-                font-size: 150%;
+                height: 48px;
+                margin-bottom: 10px;
             }
 
             .featureTitle {
@@ -302,7 +303,7 @@
             }
 
             .sectionIcon {
-                font-size: 1.5em;
+                height: 48px
             }
 
             .sectionText {
@@ -313,37 +314,18 @@
             }
 
             .sectionHighlights {
-                height: 40px;
+                height: 48px;
                 display: inline-flex;
             }
 
             .highlight {
-                width: 40px;
-                height: 40px;
-                border-radius: 20px;
+                height: 48px;
                 margin-left: 10px;
                 margin-right: 10px;
-            }
-
-            .highlightIconBase {
-                font-family: icomoon;
-                font-size: 20px;
-                color: $colorDark;
-                display: block;
-                position: relative;
-                top: 5px;
-            }
-            .highlight1:after {
-                @extend .highlightIconBase;
-                content: '\e92c'
-            }
-            .highlight2:after {
-                @extend .highlightIconBase;
-                content: '\e900'
-            }
-            .highlight3:after {
-                @extend .highlightIconBase;
-                content: '\e901'
+                @include MQ(M){
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
             }
         }
     }
@@ -398,13 +380,14 @@
                         padding-top: 10px;
                         padding-bottom: 10px;
 
-                        span, div, p {
+                        img, div, p {
                             display: block
                         }
 
-                        span {
-                            font-size: 1.2em;
-                            margin-bottom: 3px;
+                        img {
+                            height: 36px;
+                            margin: auto;
+                            margin-bottom: 10px;
                         }
 
                         div {
@@ -486,34 +469,10 @@
                             }
                         }
                         .doIcon {
-                            width: 60px;
                             height: 60px;
-                            border-radius: 30px;
                             margin: 20px auto;
-                        }
-
-                        .doIconBase {
-                            font-family: icomoon;
-                            font-size: 30px;
-                            color: $colorAccent;
-                            display: block;
-                            position: relative;
-                            top: 7.5px;
-                        }
-
-                        .doIcon1:after {
-                            @extend .doIconBase;
-                            content: '\e922'
-                        }
-
-                        .doIcon2:after {
-                            @extend .doIconBase;
-                            content: '\e905'
-                        }
-
-                        .doIcon3:after {
-                            @extend .doIconBase;
-                            content: '\e924'
+                            border: solid $colorDarkGray;
+                            border-radius: 30px;
                         }
 
                         .doTitle {
