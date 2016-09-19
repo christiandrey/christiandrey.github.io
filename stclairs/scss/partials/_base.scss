@@ -6,7 +6,14 @@ body{
     margin: 0;
     padding: 0;
     @include font-smoothing;
-    background: url('../../img/bg-stripes.png') scroll repeat-x $colorPrimary;
+    background-image: url('../img/bg-stripes.png');
+    background-repeat: repeat;
+    background-color: $colorPrimary;
+
+    ::selection {
+        background-color: $colorAccent;
+        color: $colorWhite;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -43,7 +43,7 @@
 
 .pageHeader {
     .container {
-        img {
+        img.brandLogo {
             height: 40px;
             display: block;
             margin: 25px auto;
@@ -54,23 +54,46 @@
             width: 100%;
             height: 30px;
         }
-        .carousel-inner {
+
+        .pageSlider {
             display: block;
             height: 200px;
+            width: 100%;
             border: solid 5px $colorWhite;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px $colorDark;
-            div.item {
-                img {
+            border-radius: 10px;
+            box-shadow: 0 0 20px 0px $colorDark;
+
+            ul {
+                height: 100%;
+
+                li {
                     height: 100%;
-                    margin: 0;
+
+                    img {
+                        height: 200px
+                    }
                 }
             }
         }
+
+    }
+    .container:after {
+        content: '';
+        width: 100%;
+        height:50%;
+        display: block;
+        position: absolute;
+        top:0;
+        left: 0;
+        background: url('../img/bg-noise.png') repeat $colorDark;
+        z-index: -2;
+        border-bottom: solid 1px $colorDarkTrans;
     }
 }
 
 .pageBody {
+    width: 100%;
+
     .restaurantEvents {
         .pageTitle {
             margin:30px auto;
@@ -82,13 +105,23 @@
             height: 1px;
             display: block;
             margin-bottom: 30px;
-            background-color: $colorDarkGray;
-            box-shadow: 1px 1px 3px $colorDark;
+            background-color: $colorDarkTrans;
+            box-shadow: 1px 1px 1px $colorDark;
         }
+
+        //Only for mobile
+        .col-md-3 {
+            margin-bottom: 30px;
+
+            :last-child {
+                margin-bottom: 0px;
+            }
+        }
+        //end of only for mobile
 
         img {
             margin: auto;
-            height: 300px;
+            height: 200px;//300px for desktop
             border: solid 3px $colorWhite;
             border-radius: 10px;
             transition: opacity 0.4s;
@@ -102,6 +135,16 @@
 
     .restaurantDetails {
         margin-top: 60px;
+
+        //Only for mobile
+        .col-md-4 {
+            margin-bottom: 30px;
+
+            :last-child {
+                margin-bottom: 0px;
+            }
+        }
+        //End of only for mobile
 
         .restaurantHours, .restaurantLocation, .restaurantReservation {
             padding: 5px 20px 20px;
@@ -142,6 +185,11 @@
             .googleMapBox {
                 width: 100%;
                 height: 150px;
+
+                img {
+                    max-width: none !important;
+                    background: none !important;
+                }
             }
 
             p,a {
@@ -152,6 +200,87 @@
 
             a:hover {
                 color: $colorWhite;
+            }
+        }
+
+        .restaurantReservation {
+            table {
+                width: 100%;
+                margin: auto
+            }
+            td:first-child {
+                width: 50%;
+                padding: 10px 5px 10px 0;
+            }
+            td:last-child {
+                width: 50%;
+                padding: 10px 0 10px 5px;
+            }
+            td p {
+                font-size: 0.7em;
+                color: $colorDarkGray;
+                font-weight: bold;
+                letter-spacing: 0.9px;
+                padding: 0;
+                margin: 0;
+            }
+            td p:after {
+                content: ' *';
+                color: $colorAccent;
+                display: inline;
+                font-size: 1.3em
+            }
+
+            td input {
+                color: $colorDark;
+                border-radius: 5px;
+                height: 30px;
+                width: 100%;
+                padding: auto 3px;
+                text-indent: 5px;
+                border: none;
+                box-sizing: border-box;
+            }
+
+            td select {
+                color: $colorDark;
+                width: 100%;
+                height: 30px;
+                border-radius: 5px;
+            }
+            td button {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .pageFooter {
+        width: 100%;
+        height: 84px;
+        margin: 30px 0 0 0;
+        padding: 30px 0;
+        background: url('../img/bg-noise.png') repeat $colorDark;
+        border-top: solid 1px $colorDarkTrans;
+
+        .footerIcons {
+            width: 174px;
+            height: 24px;
+            margin: auto;
+
+            a {
+                text-decoration: none;
+                display: inline;
+                height: 24px;
+                width: 24px;
+                margin-right: 5px;
+
+                img {
+                    height: 24px
+                }
+
+                :last-child {
+                    margin-right: 0;
+                }
             }
         }
     }
