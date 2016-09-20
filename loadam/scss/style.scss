@@ -11,6 +11,10 @@
     border-radius: 20px;
 }
 
+.buttonBase:focus {
+    outline: none
+}
+
 .outlineButton {
     @extend .buttonBase;
     color: $colorWhite;

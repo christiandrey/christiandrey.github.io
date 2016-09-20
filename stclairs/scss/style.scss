@@ -1,7 +1,6 @@
 @import "partials/variables.scss";
 @import "partials/mixins.scss";
 @import "partials/base.scss";
-@import "partials/navigation.scss";
 @import "partials/footer.scss";
 
 .buttonBase {
@@ -9,6 +8,11 @@
     height: 40px;
     padding: 5px auto;
     border-radius: 20px;
+    transition: all 0.4s;
+}
+
+.buttonBase:focus {
+    outline: none
 }
 
 .outlineButton {
@@ -23,11 +27,15 @@
     border: none
 }
 
+.filledButton:hover {
+    opacity: 0.8;
+}
+
 .contactInfo {
     .container {
         width: 100%;
         padding: 0;
-        background-color: rgba(0,0,0,0.53);
+        background-color: rgba(0, 0, 0, 0.53);
         .containerLiner {
             height: 5px;
             width: 100%;
@@ -37,6 +45,14 @@
             font-family: $bodyFont;
             font-weight: bold;
             margin: 5px auto;
+            @include MQ(M) {
+                display: inline-block;
+            }
+        }
+        p:first-of-type {
+            @include MQ(M) {
+                margin-right: 15px;
+            }
         }
     }
 }
@@ -47,43 +63,117 @@
             height: 40px;
             display: block;
             margin: 25px auto;
+            @include MQ(M) {
+                height: 70px;
+            }
         }
         select {
             display: block;
             margin: 0 auto 25px;
             width: 100%;
             height: 30px;
+            @include MQ(M) {
+                display: none
+            }
         }
-
-        .pageSlider {
-            display: block;
-            height: 200px;
-            width: 100%;
-            border: solid 5px $colorWhite;
-            border-radius: 10px;
-            box-shadow: 0 0 20px 0px $colorDark;
-
+        .navList {
+            display: none;
+            background: url('../img/double-line-white.png') repeat-x center;
+            @include MQ(M) {
+                display: block;
+            }
             ul {
-                height: 100%;
-
+                padding: 0 12px;
+                list-style: none;
+                display: inline-block;
+                margin: auto;
+                background: url('../img/bg-noise.png') repeat $colorDark;
+                transition: all 0.2s;
                 li {
-                    height: 100%;
-
-                    img {
-                        height: 200px
+                    display: inline-block;
+                    position: relative;
+                    text-align: left;
+                    border-radius: 21px;
+                    height: auto;
+                    transition: all 0.2s;
+                    ul.dropdown {
+                        min-width: 100%;
+                        /* Set width of the dropdown */
+                        background: $colorTrans;
+                        display: none;
+                        position: absolute;
+                        z-index: 999;
+                        left: -54%;
+                        border-radius: 10px;
+                        width: 206%;
+                        padding-top: 10px;
+                        transition: all 0.2s;
+                        li {
+                            display: block;
+                            transition: all 0.2s;
+                        }
+                        li:hover {
+                            background-color: $colorDarkTrans;
+                        }
+                        .dropdownWrapper {
+                            background-color: $colorAccent;
+                            border-radius: 10px;
+                            transition: all 0.2s;
+                        }
+                    }
+                    a {
+                        display: block;
+                        padding: 3px 12px;
+                        color: $colorWhite;
+                        font-weight: bold;
+                        text-decoration: none;
+                        text-align: center;
+                        transition: all 0.2s;
+                        text-shadow: 0px 0px 2px $colorDark;
+                    }
+                }
+                li:hover {
+                    background: $colorAccent;
+                    ul.dropdown {
+                        display: block
                     }
                 }
             }
         }
-
+        .pageSlider {
+            display: block;
+            height: 200px;
+            width: 100%;
+            border: solid 4px $colorWhite;
+            border-radius: 10px;
+            box-shadow: 0 0 20px 0px $colorDark;
+            margin-top: 30px;
+            @include MQ(M) {
+                height: 320px
+            }
+            ul {
+                height: 100%;
+                li {
+                    height: 100%;
+                    img {
+                        height: 200px;
+                        width: 100%;
+                        @include MQ(M) {
+                            height: 320px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
     .container:after {
         content: '';
         width: 100%;
-        height:50%;
+        height: 50%;
         display: block;
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         background: url('../img/bg-noise.png') repeat $colorDark;
         z-index: -2;
@@ -93,12 +183,10 @@
 
 .pageBody {
     width: 100%;
-
     .restaurantEvents {
         .pageTitle {
-            margin:30px auto;
+            margin: 30px auto;
         }
-
         .pageTitle:before {
             content: '';
             width: 100%;
@@ -108,45 +196,52 @@
             background-color: $colorDarkTrans;
             box-shadow: 1px 1px 1px $colorDark;
         }
-
         //Only for mobile
         .col-md-3 {
             margin-bottom: 30px;
-
             :last-child {
                 margin-bottom: 0px;
             }
         }
+        @include MQ(M) {
+            .col-md-3 {
+                margin-bottom: 0;
+            }
+        }
         //end of only for mobile
-
         img {
             margin: auto;
-            height: 200px;//300px for desktop
+            height: 200px;
             border: solid 3px $colorWhite;
             border-radius: 10px;
             transition: opacity 0.4s;
-            cursor: pointer
+            cursor: pointer;
+            @include MQ(M) {
+                height: 250px;
+            }
         }
-
         img:hover {
             opacity: 0.7;
         }
     }
-
     .restaurantDetails {
         margin-top: 60px;
-
         //Only for mobile
         .col-md-4 {
             margin-bottom: 30px;
-
             :last-child {
                 margin-bottom: 0px;
             }
         }
         //End of only for mobile
-
-        .restaurantHours, .restaurantLocation, .restaurantReservation {
+        @include MQ(M) {
+            .col-md-4 {
+                margin-bottom: 0px
+            }
+        }
+        .restaurantHours,
+        .restaurantLocation,
+        .restaurantReservation {
             padding: 5px 20px 20px;
             border: solid 1px $colorDarkTrans;
             background: url('../img/bg-noise.png') repeat $colorDark;
@@ -157,7 +252,6 @@
             width: 100%;
             height: 70px;
             background: url('../img/double-line-white.png') center repeat-x;
-
             h1 {
                 background-color: $colorDark;
                 font-size: 30px;
@@ -165,7 +259,6 @@
                 padding: 0 10px;
             }
         }
-
         .restaurantHours {
             table {
                 width: 100%;
@@ -174,35 +267,30 @@
             td:first-child {
                 width: 40%;
             }
-
             td:last-child {
                 width: 60%;
                 text-align: right;
             }
         }
-
         .restaurantLocation {
             .googleMapBox {
                 width: 100%;
                 height: 150px;
-
                 img {
                     max-width: none !important;
                     background: none !important;
                 }
             }
-
-            p,a {
+            p,
+            a {
                 margin: 10px auto 5px;
                 text-decoration: none;
                 transition: color 0.4s
             }
-
             a:hover {
                 color: $colorWhite;
             }
         }
-
         .restaurantReservation {
             table {
                 width: 100%;
@@ -230,7 +318,6 @@
                 display: inline;
                 font-size: 1.3em
             }
-
             td input {
                 color: $colorDark;
                 border-radius: 5px;
@@ -239,50 +326,21 @@
                 padding: auto 3px;
                 text-indent: 5px;
                 border: none;
-                box-sizing: border-box;
+                box-sizing: border-box
             }
-
             td select {
                 color: $colorDark;
                 width: 100%;
                 height: 30px;
                 border-radius: 5px;
             }
+            td select:focus,
+            td select:active {
+                outline: none
+            }
             td button {
                 margin-top: 10px;
             }
         }
     }
-
-    .pageFooter {
-        width: 100%;
-        height: 84px;
-        margin: 30px 0 0 0;
-        padding: 30px 0;
-        background: url('../img/bg-noise.png') repeat $colorDark;
-        border-top: solid 1px $colorDarkTrans;
-
-        .footerIcons {
-            width: 174px;
-            height: 24px;
-            margin: auto;
-
-            a {
-                text-decoration: none;
-                display: inline;
-                height: 24px;
-                width: 24px;
-                margin-right: 5px;
-
-                img {
-                    height: 24px
-                }
-
-                :last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-    }
 }
-
