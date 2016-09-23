@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "file": "innerpage.css",
+  "file": "innerPage.css",
   "sources": [
-    "../scss/innerpage.scss",
+    "../scss/innerPage.scss",
     "../scss/partials/_variables.scss",
     "../scss/partials/_mixins.scss",
     "../scss/partials/_base.scss",
