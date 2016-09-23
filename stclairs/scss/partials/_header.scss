@@ -1,0 +1,139 @@
+.contactInfo {
+    .container {
+        width: 100%;
+        padding: 0;
+        background: url('../img/bg-noise.png') repeat $colorLightDark;
+        .containerLiner {
+            height: 5px;
+            width: 100%;
+        }
+        p {
+            font-size: 0.7em;
+            font-family: $bodyFont;
+            font-weight: bold;
+            margin: 5px auto;
+            @include MQ(M) {
+                display: inline-block;
+            }
+        }
+        p:first-of-type {
+            @include MQ(M) {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.pageHeader {
+    background: url('../img/bg-noise.png') repeat $colorDark;
+    border-bottom: solid 1px $colorDarkTrans2;
+    .subMenuBar {
+        .row {
+            width: 100%;
+            margin: 0;
+        }
+        .active {
+            color: $colorWhite !important;
+        }
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: url('../img/bg-noise.png') repeat $colorLightDark;
+        a {
+            text-decoration: none;
+            p {
+                color: $colorAccent;
+                margin: 0;
+                font-weight: bold;
+                display: inline-block;
+            }
+            p:hover {
+                color: $colorWhite;
+            }
+        }
+    }
+    .container {
+        img.brandLogo {
+            height: 40px;
+            display: block;
+            margin: 25px auto;
+            @include MQ(M) {
+                height: 70px;
+            }
+        }
+        select {
+            display: block;
+            margin: 0 auto 25px;
+            width: 100%;
+            height: 30px;
+            @include MQ(M) {
+                display: none
+            }
+        }
+        .navList {
+            display: none;
+            margin-bottom: 15px;
+            background: url('../img/double-line-white.png') repeat-x center;
+            @include MQ(M) {
+                display: block;
+            }
+            ul {
+                padding: 0 12px;
+                list-style: none;
+                display: inline-block;
+                margin: auto;
+                background: url('../img/bg-noise.png') repeat $colorDark;
+                transition: all 0.2s;
+                li {
+                    display: inline-block;
+                    position: relative;
+                    text-align: left;
+                    border-radius: 21px;
+                    height: auto;
+                    transition: all 0.2s;
+                    ul.dropdown {
+                        min-width: 100%;
+                        /* Set width of the dropdown */
+                        background: $colorTrans;
+                        display: none;
+                        position: absolute;
+                        z-index: 999;
+                        left: -54%;
+                        border-radius: 10px;
+                        width: 206%;
+                        padding-top: 10px;
+                        transition: all 0.2s;
+                        li {
+                            display: block;
+                            transition: all 0.2s;
+                        }
+                        li:hover {
+                            background-color: $colorDarkTrans;
+                        }
+                        .dropdownWrapper {
+                            background-color: $colorAccent;
+                            border-radius: 10px;
+                            transition: all 0.2s;
+                        }
+                    }
+                    a {
+                        display: block;
+                        padding: 3px 12px;
+                        color: $colorWhite;
+                        font-weight: bold;
+                        text-decoration: none;
+                        text-align: center;
+                        transition: all 0.2s;
+                        text-shadow: 0px 0px 2px $colorDark;
+                    }
+                }
+                li:hover {
+                    background: $colorAccent;
+                    ul.dropdown {
+                        display: block
+                    }
+                }
+            }
+        }
+    }
+}

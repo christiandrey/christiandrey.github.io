@@ -10,13 +10,14 @@ $XL: 1200px; // 10" Tablets and desktops..
 $colorPrimary   : #594736;
 $colorAccent    : #da5f1f;
 $colorDark      : #34271a;
-$colorLightDark : lighten($colorDark,1%);
+$colorLightDark : darken($colorDark,8%);
 $colorBlack     : #000000;
 $colorWhite     : #ffffff;
 $colorGray      : #f9f9f9;
 $colorDarkGray  : #cecece;
 $colorTrans     : rgba(255,255,255,0);
 $colorDarkTrans : rgba(255,255,255,0.2);
+$colorDarkTrans2: rgba(255,255,255,0.3);
 
 //  Fonts
 $bodyFont: 'proxima_novaregular',Open Sans, sans-serif;
