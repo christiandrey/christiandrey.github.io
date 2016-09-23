@@ -319,6 +319,10 @@
         }
     }
 
+    a:visited {
+        color: inherit;
+    }
+
     a:hover {
         color: $colorGray
     }
@@ -352,6 +356,11 @@
 
             @include MQ(M){
                 height: 400px;
+            }
+
+            object {
+                height: 100%;
+                width: 100%
             }
         }
     }

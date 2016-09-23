@@ -634,89 +634,97 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff; }
 
 /* line 322, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+.blogpostBox a:visited {
+  color: inherit; }
+
+/* line 326, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox a:hover {
   color: #f9f9f9; }
 
-/* line 326, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 330, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox span {
   margin: 15px; }
 
-/* line 330, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 334, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox span:first-of-type {
   margin-left: 0;
   margin-right: 5px; }
 
-/* line 335, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 339, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox span:last-of-type {
   margin-left: 2px; }
 
-/* line 339, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 343, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox span:last-of-type:after {
   content: ' •';
   color: #ffffff !important; }
 
-/* line 344, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 348, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox div:first-of-type {
   width: 100%;
   margin-top: 15px; }
-  /* line 348, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+  /* line 352, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
   .blogpostBox div:first-of-type .youtubeVideo {
     width: 100%;
     height: 200px;
     margin: 30px auto;
     /* Tablets and phablets */ }
     @media only screen and (min-width: 768px) {
-      /* line 348, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+      /* line 352, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
       .blogpostBox div:first-of-type .youtubeVideo {
         height: 400px; } }
+    /* line 361, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+    .blogpostBox div:first-of-type .youtubeVideo object {
+      height: 100%;
+      width: 100%; }
 
-/* line 360, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 369, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogContent img {
   width: 100%;
   border: solid 2px rgba(255, 255, 255, 0.2);
   /* Tablets and phablets */ }
   @media only screen and (min-width: 768px) {
-    /* line 360, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+    /* line 369, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
     .blogpostBox .blogContent img {
       width: 250px;
       height: auto; } }
 
-/* line 370, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 379, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogContent img.alignRight {
   float: Right;
   margin: 0 0 10px 15px; }
 
-/* line 375, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 384, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogContent img.alignLeft {
   float: Left;
   margin: 0 15px 10px 0; }
 
-/* line 380, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 389, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogContent p {
   margin-bottom: 15px; }
 
-/* line 384, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 393, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogContent a {
   color: #da5f1f;
   transition: color 0.2s; }
 
-/* line 389, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 398, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogContent a:hover {
   color: #ffffff; }
 
-/* line 393, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 402, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogContent blockquote {
   font-style: italic;
   text-decoration: none;
   font-size: 1em;
   border: none; }
 
-/* line 401, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 410, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogContent + p, .blogpostBox .blogContent + p + p {
   font-size: 0.8em;
   margin: 5px auto; }
 
-/* line 407, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 416, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogTags a, .blogpostBox .blogCategory a {
   color: #da5f1f;
   transition: color 0.2s;
@@ -724,32 +732,32 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal !important;
   letter-spacing: 0; }
 
-/* line 415, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 424, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogTags a:hover, .blogpostBox .blogCategory a:hover {
   color: #ffffff; }
 
-/* line 419, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 428, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogTags a:after, .blogpostBox .blogCategory a:after {
   content: ', ';
   color: #f9f9f9; }
 
-/* line 424, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 433, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogTags a:last-of-type:after, .blogpostBox .blogCategory a:last-of-type:after {
   content: ''; }
 
-/* line 429, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 438, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogTags:after {
   content: '' !important; }
 
-/* line 433, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 442, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogpostBox .blogCategory:after {
   content: '' !important; }
 
-/* line 438, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 447, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogContent + p + p + h2 {
   margin: 45px 0 5px; }
 
-/* line 443, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 452, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogreplyForm input, .blogreplyForm textarea, .contactForm input, .contactForm textarea {
   color: #34271a;
   border-radius: 5px;
@@ -761,46 +769,46 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
   margin: 30px 0 0; }
 
-/* line 455, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 464, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogreplyForm input:first-of-type, .contactForm input:first-of-type {
   margin-top: 0; }
 
-/* line 459, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 468, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogreplyForm textarea, .contactForm textarea {
   width: 100% !important;
   height: auto; }
 
-/* line 464, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 473, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogreplyForm button, .contactForm button {
   margin-top: 30px;
   margin-bottom: 15px;
   width: auto !important;
   padding: 5px 30px !important; }
 
-/* line 471, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 480, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogreplyForm span, .contactForm span {
   font-size: 0.8em;
   margin-left: 5px !important; }
 
-/* line 476, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 485, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogreplyForm span:after, .contactForm span:after {
   content: '' !important; }
 
-/* line 480, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 489, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogreplyForm p, .contactForm p {
   font-size: 0.8em;
   margin: 0 0 5px !important; }
 
-/* line 485, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 494, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .blogreplyForm p:after, .contactForm p:after {
   content: ' *';
   color: #da5f1f; }
 
-/* line 493, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 502, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .contactForm input, .contactForm textarea {
   margin: 0 0 30px !important; }
 
-/* line 499, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
+/* line 508, C:/Users/Christian Dréy/Desktop/Folders/Jobs/404/Published/christiandrey.github.io/stclairs/scss/innerPage.scss */
 .tagTitle + div span:first-of-type:after, .categoryTitle + div span:first-of-type:after {
   content: '' !important; }
 
