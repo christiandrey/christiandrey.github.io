@@ -22,7 +22,7 @@ $colorDarkTrans2: rgba(255,255,255,0.3);
 //  Fonts
 $bodyFont: 'proxima_novaregular',Open Sans, sans-serif;
 $bodyFontLight: 'proxima_novalight',Open Sans, sans-serif;
-$headerFont: "bebasneue",proxima_novabold, Open Sans, sans-serif;
+$headerFont: 'Oswald',bebasneue,proxima_novabold, Open Sans, sans-serif;
 
 
 //  WebFonts
@@ -60,8 +60,8 @@ $headerFont: "bebasneue",proxima_novabold, Open Sans, sans-serif;
 }
 
 @font-face {
-    font-family: 'bebasneue';
-    src: url('../fonts/BebasNeue.otf');
-    font-weight: normal;
+    font-family: 'Oswald';
+    src: local('Oswald Regular'), local('Oswald-Regular'), url('../fonts/oswald.woff2');
+    font-weight: 400;
     font-style: normal;
 }

@@ -21,7 +21,7 @@
     </section>
     <section class="pageHeader">
         <div class="container text-center">
-            <div class="containerWrapper"> <img src="../../img/logo.stclairs.png" alt="St Clairs Restaurant" class="brandLogo">
+            <div class="containerWrapper"> <a href="../../index.html"><img src="../../img/logo.stclairs.png" alt="St Clairs Restaurant" class="brandLogo"></a>
                 <select class="navDropdown" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                     <option value="">Navigate:</option>
                     <option value="../../about/index.html" class="navMainItem">About Us</option>
@@ -101,6 +101,24 @@
     </section>
     <script src="../../js/jquery-3.1.0.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $reviewerName = ['Happy Customer','Happy Customer, Yelp','Tim Jones'];
+            $reviewText = ['\"Easy to use website.  Booked a table.  Satisfied customer.  Raving Reviewer.\"','\"Absolutely Incredible\"','\"This is a quote from a recent review.  It could be clipped from a Yelp review, a newspaper or magazine article, or anything else.\"'];
+            $currentReview = 0;
+            function reviewScroll(){
+                    $('.reviewText').html($reviewText[$currentReview]);
+                    $('.reviewerName').html($reviewerName[$currentReview]);
+                    if ($currentReview == 2){
+                        $currentReview = 0;
+                    }
+                    $currentReview += 1;
+            }
+            reviewScroll();
+            setInterval(function(){
+                reviewScroll();
+            }, 5000);
+        })
+    </script>
 </body>
 </html>
