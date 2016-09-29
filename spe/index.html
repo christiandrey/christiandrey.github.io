@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>SPE UI Decides | Home</title>
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index-grid.css">
+  <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-min.js"></script>
+  	<script src="js/jquery-ui.min.js"></script>
+  <script>
+  $(document).ready(function(e) {
+    $("#sec_eye").mousedown(function(e) {
+		$("#sec_input").clone().attr('type','text').insertAfter("#sec_input").prev().remove();
+    });
+
+	$("#sec_eye").mouseup(function(e) {
+		$("#sec_input").clone().attr('type','password').insertAfter("#sec_input").prev().remove();
+    });
+});
+  </script>
+</head>
+<body class="body page-index clearfix">
+  <div class="element spelogo"></div>
+  <div class="element decide"></div>
+  <div class="container buttons">
+    <div onClick="window.location='voterlogin.php';" id="voterloginbtn" class="element voterloginbtn"></div>
+    <div onClick="window.location='adminlogin.php';" id="adminloginbtn" class="element adminloginbtn"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>SPE UI Decides | Instruction</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700,400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/instruction-grid.css">
+  <link rel="stylesheet" href="css/instruction.css">
+    <script src="js/jquery-min.js"></script>
+  	<script src="js/jquery-ui.min.js"></script>
+  <script>
+  $(document).ready(function(e) {
+    $("#sec_eye").mousedown(function(e) {
+		$("#sec_input").clone().attr('type','text').insertAfter("#sec_input").prev().remove();
+    });
+
+	$("#sec_eye").mouseup(function(e) {
+		$("#sec_input").clone().attr('type','password').insertAfter("#sec_input").prev().remove();
+    });
+});
+  </script>
+</head>
+<body class="body page-instruction clearfix">
+  <div onClick="window.location='elect.php';" class="element proceed"></div>
+  <div class="text instruction_text text-1">
+    <p>1.	You are only allowed to vote once.
+</p>
+    <p>2.	You <b>MUST</b> vote for one candidate per position.
+</p>
+    <p>3.	To vote, please click on the box that has the picture of your choice of candidate and his/her name.
+</p>
+    <p>4.	Make use of the Previous and Next Buttons to navigate between available positions to vote.
+</p>
+    <p>5.	When you have finished voting, click on the <b>‘Submit votes’</b> button at the top right hand corner to submit your votes. Failure to do so will nullify your votes.
+</p>
+    <p>6.	You will be automatically logged out after submitting.</p>
+</div>
+  <p class="text instruction_head">Please read the following instructions carefully</p>
+  <div class="element decide"></div>
+  <div class="element topbg">
+    <div class="element logo"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+body {
+  height: 100%;
+  background: url('../images/bg_white.jpg') rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center center;
+  font-size: 1em;
+}
+
+.bgwhite {
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 142px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: rgb(255, 255, 255);
+}
+
+.decide {
+  top: 265px;
+  left: 18px;
+  z-index: 3;
+  width: 178px;
+  height: 72px;
+  background-image: url('../images/decide(2).png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.element {
+  position: absolute;
+}
+
+.login {
+  top: 444px;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  width: 104px;
+  height: 31px;
+  margin: 0 auto;
+  cursor:pointer;
+  background-image: url('../images/loginbtn.png');
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.login:hover {
+  opacity: 0.8;
+}
+
+.loginbg {
+  top: 24px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 323px;
+  background: url('../images/Spe-bg-blur.jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: right center;
+}
+
+.loginshadow {
+  top: 525px;
+  left: 0;
+  right: 0;
+  width: 382px;
+  height: 106px;
+  margin: 0 auto;
+  background-image: url('../images/login_shadow.png');
+  background-size: contain;
+  background-position: center center;
+}
+
+.loginwrapper {
+  top: 80px;
+  left: 0;
+  right: 0;
+  z-index: 13;
+  width: 346px;
+  height: 490px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 7px;
+  background-color: rgba(222, 222, 222, 0.2);
+}
+
+.mat_bg {
+  top: 346px;
+  left: 0;
+  z-index: 8;
+  width: 44px;
+  height: 44px;
+  border-top: 1px solid rgb(204, 204, 204);
+  border-bottom: 1px solid rgb(204, 204, 204);
+  background: url('../images/mat_bg.png') rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center center;
+}
+
+.mat_inp {
+  top: 346px;
+  left: 44px;
+  z-index: 10;
+  width: 256px;
+  height: 44px;
+  border-top: 1px solid rgb(204, 204, 204);
+  border-bottom: 1px solid rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
+}
+
+.mat_input {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 39px;
+  padding: 0 10px;
+  font: 700 0.813em/1.38 Montserrat;
+  color: rgb(77, 77, 77);
+}
+
+.sec_bg {
+  top: 389px;
+  left: 0;
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  border-top: 1px solid rgb(204, 204, 204);
+  border-bottom: 1px solid rgb(204, 204, 204);
+  background: url('../images/sec_bg.png') rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center center;
+}
+
+.sec_eye {
+  top: 389px;
+  right: 0;
+  z-index: 12;
+  width: 44px;
+  height: 44px;
+  border-top: 1px solid rgb(204, 204, 204);
+  border-bottom: 1px solid rgb(204, 204, 204);
+  cursor:pointer;
+  background: url('../images/eye.png') rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.sec_eye:hover {
+  opacity: 0.5;
+}
+
+.sec_inp {
+  top: 389px;
+  left: 44px;
+  z-index: 7;
+  width: 256px;
+  height: 44px;
+  border-top: 1px solid rgb(204, 204, 204);
+  border-bottom: 1px solid rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
+}
+
+.sec_input {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  height: 39px;
+  padding: 0 10px;
+  font: 700 0.813em/1.38 Montserrat;
+  color: rgb(77, 77, 77);
+}
+
+.spelogo {
+  top: 47px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 47.3837209302%;
+  height: 151px;
+  margin: 0 auto;
+  background-image: url('../images/SPE-Logo-1.png');
+  background-size: cover;
+  background-position: center center;
+  cursor:pointer;
+}

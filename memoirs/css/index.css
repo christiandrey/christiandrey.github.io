@@ -1,0 +1,180 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: normal 3.125em/0.2 'Raleway';
+  font-weight:bold;
+  color: rgb(255, 255, 255);
+}
+
+.container-2 p {
+  margin-bottom: 1em;
+}
+
+.begin {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  width: 105px;
+  height: 37px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.32em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.begin:hover,
+.login:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.bgimg {
+  top: 0;
+  height: 623px;
+  background: url('../images/5.jpg') rgba(238, 29, 29, 0.49);
+  background-size: cover;
+  background-position: center top;
+}
+
+.container {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -o-transition: all .6s;
+  -ms-transition: all .6s;
+  transition: all .6s;
+}
+
+.ctn1 {
+  z-index: 3;
+  width: 28.0833333333%;
+  height: 200px;
+}
+
+.ctn2 {
+  display: none;
+  z-index: 9;
+  width: 17.8333333333%;
+  height: 179px;
+  overflow: visible;
+  opacity:0;
+}
+
+.element {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.errtext {
+  bottom: 139px;
+  z-index: 7;
+  width: 214px;
+  font-size: 0.2em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(239, 18, 18);
+  opacity:0;
+}
+
+.footerdiv {
+  bottom: 0;
+  z-index: 10;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hdtext {
+  top: 0;
+  z-index: 1;
+  width: 337px;
+  height: 130px;
+  font-size: 1em;
+  text-align: right;
+  color: rgb(255, 255, 255);
+}
+
+.hdtext2 {
+  top: 0;
+  z-index: 8;
+  width: 214px;
+  font-size: 0.32em;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.login {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+  width: 105px;
+  height: 37px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.32em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.matno {
+  display: block;
+  position: absolute;
+  bottom: 99px;
+  right: 0;
+  z-index: 6;
+  width: 214px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.79);
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 0.36em;
+  line-height: 1.38;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.surname {
+  display: block;
+  position: absolute;
+  bottom: 49px;
+  right: 0;
+  z-index: 5;
+  width: 214px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.79);
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 0.36em;
+  line-height: 1.38;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.text {
+  position: absolute;
+  right: 0;
+}

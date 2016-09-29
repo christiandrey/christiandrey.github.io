@@ -1,0 +1,3520 @@
+@font-face{
+	font-family:'Lato Regular';
+	src:url(../fonts/Lato-Regular.ttf)
+}
+
+body {
+  height: 100%;
+  background-image: url('../images/bgImg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: rgb(255, 255, 255);
+  font: normal 0.75em/1.38 'Lato Regular';
+  color: rgb(124, 124, 124);
+}
+
+.weightavg {
+    position: absolute;
+    top: 300px;
+    left: 5%;
+    height: 30px;
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(240,57,57);
+}
+
+.resplogo {
+	display:none
+}
+
+#spacer {
+	width:100%;
+	height:0px;
+	position:absolute;
+	bottom:0px;
+	background-color:rgb(240,57,57);
+	z-index:1000
+}
+
+.rbtn, .weightavg {
+	box-shadow: inset 0 0 0 0 #f03939;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all  ease 0.4s;
+	transition: all ease 0.4s;
+}
+.wbtn{
+	box-shadow: inset 0 0 0 0 #ffffff;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all  ease 0.4s;
+	transition: all ease 0.4s;
+}
+.simodselwrap, .modselwrap, .softselwrap, .expselwrap{
+	box-shadow: inset 0 0 0 0 #ffffff;
+	cursor:pointer;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all  ease 0.4s;
+	transition: all ease 0.4s;
+}
+.getnstart, .getnstarted{
+	cursor:pointer;
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all  ease 0.4s;
+	transition: all ease 0.4s;
+}
+.getnstart:hover, .getnstarted:hover{
+	opacity:0.7
+}
+.rbtn:hover, .weightavg:hover {
+	box-shadow: inset 0 35px 0 0 #FFFFFF;
+	color:#000000
+}
+.wbtn:hover{
+	box-shadow: inset 0 35px 0 0 #f03939;
+	color:#FFFFFF
+}
+.simodselwrap:hover, .modselwrap:hover, .softselwrap:hover, .expselwrap:hover{
+	box-shadow:inset 370px 0 0 0 #f03939;
+}
+.simodselwrap:hover .softlabeltext, .modselwrap:hover .softlabeltext, .softselwrap:hover .softlabeltext, .expselwrap:hover .softlabeltext{
+	color:#FFFFFF
+}
+
+.checked{
+	background-color:#f03939 !important
+}
+.whitetext{
+	color:#ffffff !important;
+}
+
+#sentable {
+	width:100%;
+	height:100%;
+	border-collapse:collapse
+}
+
+.headone {
+	background-color:#7c7c7c;
+	color:#fff;
+	vertical-align:middle;
+	text-align:center;
+	border: 1px #fff solid;
+}
+
+.headtwo {
+	background-color:#f03939;
+	color:#fff;
+	vertical-align:middle;
+	text-align:center;
+	border:1px #fff solid;
+	width:16.666666666667%
+}
+
+.cells {
+	background-color:#fff;
+	color:#000;
+	vertical-align:middle;
+	text-align:center;
+	border:1px rgba(124,124,124,0.5) solid
+}
+
+.page-hysen {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(124, 124, 124);
+}
+
+.page-index {
+  color: rgb(255, 255, 255);
+}
+
+.page-softpage {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+}
+
+.backbtn,
+.sibackbtn {
+  position: absolute;
+  top: 30px;
+  left: 16px;
+  width: 16px;
+  height: 16px;
+  cursor:pointer;
+  background-image: url('../images/Back.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.backbtn:hover {
+  opacity: 0.6;
+}
+
+.beginsolve {
+  display: block;
+  position: absolute;
+  top: 526px;
+  left: 0;
+  right: 0;
+  z-index: 136;
+  width: 182px;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgb(240, 57, 57);
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.btnwrap {
+  position: absolute;
+  top: 521px;
+  left: 0;
+  right: 0;
+  width: 400px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.calcunit {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 19px;
+  margin: 0 auto;
+  line-height: 1.38;
+  text-align: center;
+}
+
+.calcval {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 138;
+  width: 131px;
+  height: 41px;
+  margin: auto;
+  font-size: 2.5em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(240, 57, 57);
+}
+
+.chartbg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 161;
+  width: 100%;
+  height: 656px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+.chartbg .btnwrap {
+  z-index: 144;
+}
+
+.chartbg .datainputbtn {
+  left: -0.203125%;
+  z-index: 142;
+}
+
+.chartdiv {
+  position: absolute;
+  top: 10px;
+  right: 5.8333333333%;
+  z-index: 141;
+  width: calc(100% - 5% - 300px - 5% - 5%);
+  height: 476px;
+  background-color: rgba(255,255,255);
+}
+
+.closebtn {
+  position: absolute;
+  top: 12px;
+  right: 5%;
+  width: 8.5702537593%;
+  height: 22px;
+  background-image: url('../images/Close(2).png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.closebtn:hover,
+.expandbtn:hover {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.compoimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 85;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: url('../images/Chemistry.png') rgb(240, 57, 57);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.container {
+  position: absolute;
+  top: 174px;
+  left: 5%;
+  z-index: 87;
+  width: 254px;
+  height: 50px;
+}
+
+.databg {
+  display: none;
+  position: absolute;
+  top: 665px;
+  left: 0;
+  right: 0;
+  z-index: 254;
+  width: 100%;
+  height: 1px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.dataincont {
+  position: absolute;
+  width: 20%;
+  min-width: 200px;
+  max-width: 250px;
+  height: 30px;
+  border-bottom: 1px solid rgb(124, 124, 124);
+  background-color: rgb(255, 255, 255);
+}
+
+.datainputbtn {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 182px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(124, 124, 124);
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.datainslide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 137;
+  width: 100%;
+  height: 656px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+.dayscounter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 270px;
+  width: 60px;
+  height: 20px;
+  margin: auto 0;
+  border-radius: 25px;
+  background-color: rgb(38, 174, 24);
+  font-size: 0.833em;
+  line-height: 2.1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.dotbox {
+  position: absolute;
+  top: 29px;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/Side-Dot.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.drybasis {
+  position: absolute;
+  top: 14px;
+  left: 60px;
+  z-index: 86;
+  font-size: 1.333em;
+  line-height: 1.38;
+  color: rgb(124, 124, 124);
+}
+
+.expandbtn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 71;
+  width: 15px;
+  height: 15px;
+  margin: auto 0;
+  background-image: url('../images/white.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.expandnavbtn {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3%;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  background-image: url('../images/expanddots.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.expandnavbtn:hover,
+.exportbtn:hover,
+.homebtn:hover,
+.sibackbtn:hover {
+  opacity: 0.6;
+}
+
+.exportbtn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  z-index: 70;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  background-image: url('../images/export.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.gbtn {
+  left: 0;
+  z-index: 163;
+}
+
+.getnstart {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 80px;
+  height: 13px;
+  margin: 0 auto;
+  font-size: 0.833em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.getnstarted {
+  top: 282px;
+  z-index: 16;
+  width: 69px;
+  font-size: 0.833em;
+}
+
+.headerbg {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  z-index: 74;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  background-color: rgba(240, 57, 57, 0.9);
+  overflow: auto;
+}
+
+.homebtn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 65px;
+  z-index: 72;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  background-image: url('../images/home.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.hysenlog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 250px;
+  height: 108px;
+  margin: 0 auto;
+  background-image: url('../images/HySen-Logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hysenstart {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 7;
+  width: 250px;
+  height: 194px;
+  margin: auto;
+}
+
+.login {
+  display: block;
+  position: absolute;
+  top: 91px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 182px;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgb(240, 57, 57);
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.loginwrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  width: 187px;
+  height: 146px;
+  margin: auto;
+}
+
+.loginwrap .getnstart {
+  top: 133px;
+  z-index: 2;
+}
+
+.loginwrap .senlogo {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 187px;
+  height: 69px;
+  margin: 0 auto;
+}
+
+.logout {
+  position: absolute;
+  width: 46px;
+  height: 16px;
+  font: 400 0.917em/1.38 Lato;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  cursor:pointer;
+}
+
+.logout:hover {
+  border-radius: 15px;
+  background-color: rgb(240, 57, 57);
+  font-size: 11px;
+}
+
+.modelused {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 69;
+  width: 235px;
+  height: 20px;
+  margin: auto 0;
+  font-size: 1.25em;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.msgcounter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 215px;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  border-radius: 25px;
+  background-color: rgb(240, 57, 57);
+  font-size: 0.833em;
+  line-height: 2.1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: opacity 0.3s
+}
+
+.msgcounter:hover {
+    opacity: 0.9
+}
+
+.msgicon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 227px;
+  width: 20px;
+  height: 20px;
+  margin: auto 0;
+  background-image: url('../images/Messages.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar .senlogo {
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  z-index: 75;
+  width: 93px;
+  height: 34px;
+  margin: auto 0;
+}
+
+.navbar2 {
+  display: none;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  right: 0;
+  z-index: 73;
+  width: 90%;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.navbaritems {
+  position: absolute;
+  right: 3%;
+  width: 401px;
+  height: 40px;
+}
+
+.navbaritems .logout {
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  margin: auto 0;
+}
+
+.notificons {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  right: 0;
+  width: 107px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.pmodelswrap {
+  display: none;
+  position: absolute;
+  top: 76px;
+  left: 0;
+  right: 0;
+  z-index: 33;
+  width: 266px;
+  height: 448px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.92);
+  overflow: visible;
+}
+
+.pmodelswrap .backbtn {
+  z-index: 32;
+}
+
+.pmodelswrap .backbtn:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.pmodelswrap .dotbox {
+  z-index: 9;
+}
+
+.pmodelswrap .rbtn {
+  top: 352px;
+  z-index: 22;
+}
+
+.pmodelswrap .selmodel {
+  z-index: 8;
+  width: 140px;
+}
+
+.proceed {
+  display: block;
+  position: absolute;
+  top: 195px;
+  left: 0;
+  right: 0;
+  z-index: 7;
+  width: 182px;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgb(240, 57, 57);
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.proceedwrap {
+	display:none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  width: 187px;
+  height: 251px;
+  margin: auto;
+}
+
+.proceedwrap .getnstart {
+  top: 238px;
+  z-index: 8;
+}
+
+.proceedwrap .senlogo {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  width: 187px;
+  height: 69px;
+  margin: 0 auto;
+}
+
+.ptcurvebtn {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 164;
+  width: 182px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(240, 57, 57);
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.pttablebtn {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 54.25%;
+  z-index: 143;
+  width: 182px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(240, 57, 57);
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.resultbg {
+  position: absolute;
+  top: 10px;
+  left: 5%;
+  z-index: 140;
+  width: 300px;
+  height: 300px;
+  background-image: url('../images/NewRoller.png');
+  background-size: contain;
+  background-position: center center;
+}
+
+.resultbg .calcunit {
+  top: 161px;
+  z-index: 139;
+  width: 45px;
+  font-size: 1.167em;
+  color: rgb(124, 124, 124);
+}
+
+.selmodel {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(124, 124, 124);
+}
+
+.selsoft {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100px;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(124, 124, 124);
+}
+
+.senlogo {
+  position: absolute;
+  background-image: url('../images/NewSenLogo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.sicexport {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 252;
+  width: 266px;
+  height: 448px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.92);
+  overflow: visible;
+}
+
+.sicexport .dotbox {
+  z-index: 229;
+}
+
+.sicexport .selmodel {
+  z-index: 228;
+  width: 120px;
+}
+
+.sicexport .sibackbtn {
+  z-index: 251;
+}
+
+.sidayscounter {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 60px;
+  height: 20px;
+  border-radius: 25px;
+  background-color: rgb(38, 174, 24);
+  font-size: 0.833em;
+  line-height: 2.1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.sidebar {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -266px;
+  z-index: 253;
+  width: 266px;
+  height: 656px;
+  background-color: rgb(240, 57, 57);
+  overflow-y:auto;
+  overflow-x:hidden
+}
+
+.sidenavwrap {
+  position: fixed;
+  top: 65px;
+  left: -266px;
+  width: 266px;
+  height: 656px;
+  overflow:auto;
+}
+
+.sidenavwrap .logout {
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.siexport {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 202;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  background: url('../images/export.png') rgb(240, 57, 57);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: center center;
+}
+
+.simodel {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 201;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  background: url('../images/Models.png') rgb(240, 57, 57);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.simsgcounter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  background-color: rgb(240, 57, 57);
+  font-size: 0.833em;
+  line-height: 2.1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.simsgicon {
+  position: absolute;
+  top: 0;
+  right: 13px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../images/Messages.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sipmodelswrap {
+  display: none;
+  position: absolute;
+  bottom: 62px;
+  left: 0;
+  right: 0;
+  z-index: 227;
+  width: 266px;
+  height: 448px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.92);
+  overflow: visible;
+}
+
+.sipmodelswrap .dotbox {
+  z-index: 204;
+}
+
+.sipmodelswrap .selmodel {
+  z-index: 203;
+  width: 140px;
+}
+
+.sipmodelswrap .sibackbtn {
+  z-index: 226;
+}
+
+.sitmodelswrap {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  width: 266px;
+  height: 448px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.92);
+  overflow: visible;
+}
+
+.sitmodelswrap .dotbox {
+  z-index: 168;
+}
+
+.sitmodelswrap .selmodel {
+  z-index: 167;
+  width: 140px;
+}
+
+.sitmodelswrap .sibackbtn {
+  z-index: 190;
+}
+
+.siuserimg {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+  border-radius: 40px;
+  background: url('../images/user.png') rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.siusername {
+  position: absolute;
+  top: 145px;
+  left: 0;
+  right: 0;
+  width: 150px;
+  height: 16px;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.softlabel {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  font-size: 0.667em;
+  line-height: 1.88;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.softlabeltext {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 19.5429981203%;
+  height: 15px;
+  margin: auto 0;
+  font-size: 1em;
+  line-height: 1.38;
+  color: rgb(124, 124, 124);
+}
+
+.softwareswrap {
+  position: absolute;
+  top: 150px;
+  right: 3%;
+  z-index: 17;
+  width: 266px;
+  height: 448px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+.softwareswrap .dotbox {
+  z-index: 2;
+}
+
+.startsim {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 182px;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgb(240, 57, 57);
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.startsoft {
+  display: block;
+  position: absolute;
+  top: 236px;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  width: 182px;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgb(240, 57, 57);
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.tablebg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 166;
+  width: 100%;
+  height: 656px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+.tablebg .btnwrap {
+  z-index: 165;
+  min-width: 350px;
+}
+
+.tablemaindiv {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 162;
+  width: 90%;
+  height: 428px;
+  margin: 0 auto;
+  background-color: rgb(255,255,255);
+}
+
+.text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  line-height: 1.38;
+  color: rgb(124, 124, 124);
+}
+
+.tmodelswrap {
+  display: none;
+  position: absolute;
+  top: 76px;
+  left: 0;
+  right: 0;
+  z-index: 68;
+  width: 266px;
+  height: 448px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.92);
+  overflow: visible;
+}
+
+.tmodelswrap .backbtn {
+  z-index: 58;
+}
+
+.tmodelswrap .dotbox {
+  z-index: 35;
+}
+
+.tmodelswrap .rbtn {
+  top: 399px;
+  z-index: 48;
+}
+
+.tmodelswrap .selmodel {
+  z-index: 34;
+  width: 140px;
+}
+
+.unitinnerwrap {
+  position: absolute;
+  top: 0;
+  left: 11.3821138211%;
+  width: 87.8048780487%;
+  height: 51px;
+}
+
+.unitinnerwrap .calcunit {
+  top: 32px;
+  width: 100px;
+  font-size: 1em;
+  color: rgb(240, 57, 57);
+}
+
+.unitouterwrap {
+  position: absolute;
+  width: 122px;
+  height: 51px;
+}
+
+.unitouterwrap .softlabel {
+  top: 2px;
+  left: -0.0127032521%;
+}
+
+.unitsmainwrap {
+  position: absolute;
+  top: 350px;
+  left: 5%;
+  z-index: 160;
+  width: 300px;
+  height: 136px;
+}
+
+.userimg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  border-radius: 30px;
+  background: url('../images/user.png') rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.username {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 62px;
+  width: 150px;
+  height: 16px;
+  margin: auto 0;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: right;
+  color: rgb(255, 255, 255);
+}
+
+.wbtn {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 182px;
+  height: 30px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: left;
+  text-indent: 35px;
+  color: rgb(124, 124, 124);
+}
+
+.whitebutton {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 182px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.whitebutton .softlabel {
+  top: 0;
+  bottom: 0;
+  left: 13px;
+  margin: auto 0;
+}
+
+.wsoft {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+}
+
+.dataincont .softlabel,
+.wsoft .softlabel {
+  top: 0;
+  bottom: 0;
+  left: 7.5187969924%;
+  margin: auto 0;
+}
+
+._input {
+  display: block;
+  position: absolute;
+  height: 30px;
+  padding: 0 10px;
+  line-height: 1.38;
+}
+
+._text {
+  top: 0;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.dataincont ._input {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 34.5864661654%;
+  margin: auto 0;
+  border-bottom: 1px solid rgb(124, 124, 124);
+  font-size: 1em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.dataincont ._input:hover {
+  border-bottom-color: rgb(240, 57, 57);
+}
+
+.dataincont ._input:focus {
+  color: rgb(240, 57, 57);
+}
+
+.proceedwrap ._input {
+  left: 0;
+  right: 0;
+  width: 187px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: 10px 50%;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.917em;
+  text-indent: 20px;
+  color: rgb(124, 124, 124);
+}
+
+.calcunit-1 {
+  z-index: 156;
+}
+
+.calcunit-2 {
+  z-index: 151;
+}
+
+.calcunit-3 {
+  z-index: 146;
+}
+
+.closebtn-1 {
+  z-index: 262;
+}
+
+.closebtn-2 {
+  z-index: 25;
+}
+
+.dataincont-1 {
+  top: 51px;
+  left: 5%;
+  z-index: 135;
+}
+
+.dataincont-10 {
+  top: 307px;
+  right: 5%;
+  z-index: 99;
+}
+
+.dataincont-11 {
+  top: 384px;
+  left: 5%;
+  z-index: 95;
+}
+
+.dataincont-12 {
+  top: 439px;
+  left: 5%;
+  z-index: 91;
+}
+
+.dataincont-2 {
+  top: 106px;
+  left: 5%;
+  z-index: 131;
+}
+
+.dataincont-3 {
+  top: 252px;
+  left: 5%;
+  z-index: 127;
+}
+
+.dataincont-4 {
+  top: 307px;
+  left: 5%;
+  z-index: 123;
+}
+
+.dataincont-5 {
+  top: 252px;
+  left: 28.3333333333%;
+  z-index: 119;
+}
+
+.dataincont-6 {
+  top: 307px;
+  left: 28.3333333333%;
+  z-index: 115;
+}
+
+.dataincont-7 {
+  top: 252px;
+  right: 28.3333333333%;
+  z-index: 111;
+}
+
+.dataincont-8 {
+  top: 307px;
+  right: 28.3333333333%;
+  z-index: 107;
+}
+
+.dataincont-9 {
+  top: 252px;
+  right: 5%;
+  z-index: 103;
+}
+
+.dayscounter-1 {
+  z-index: 80;
+}
+
+.dayscounter-2 {
+  z-index: 31;
+}
+
+.expandnavbtn-1 {
+  z-index: 83;
+}
+
+.expandnavbtn-2 {
+  z-index: 34;
+}
+
+.logout-1 {
+  z-index: 261;
+}
+
+.logout-2 {
+  z-index: 81;
+}
+
+.logout-3 {
+  z-index: 32;
+}
+
+.logout-4 {
+  z-index: 24;
+}
+
+.msgcounter-1 {
+  z-index: 79;
+}
+
+.msgcounter-2 {
+  z-index: 30;
+}
+
+.msgicon-1 {
+  z-index: 78;
+}
+
+.msgicon-2 {
+  z-index: 29;
+}
+
+.navbar-1 {
+  z-index: 84;
+}
+
+.navbar-2 {
+  z-index: 35;
+}
+
+.navbaritems-1 {
+  top: 0;
+  bottom: 0;
+  z-index: 82;
+  margin: auto 0;
+}
+
+.navbaritems-2 {
+  top: 13px;
+  z-index: 33;
+}
+
+.notificons-1 {
+  z-index: 260;
+}
+
+.notificons-2 {
+  z-index: 23;
+}
+
+.senlogo-4 {
+  top: 150px;
+  left: 50px;
+  width: 187px;
+  height: 69px;
+}
+
+.sidayscounter-1 {
+  z-index: 259;
+}
+
+.sidayscounter-2 {
+  z-index: 22;
+}
+
+.sidenavwrap-1 {
+  z-index: 263;
+  background-color: rgb(0, 0, 0);
+}
+
+.sidenavwrap-2 {
+  z-index: 26;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.simsgcounter-1 {
+  z-index: 258;
+}
+
+.simsgcounter-2 {
+  z-index: 21;
+}
+
+.simsgicon-1 {
+  z-index: 257;
+}
+
+.simsgicon-2 {
+  z-index: 20;
+}
+
+.siuserimg-1 {
+  z-index: 255;
+}
+
+.siuserimg-2 {
+  z-index: 18;
+}
+
+.siusername-1 {
+  z-index: 256;
+}
+
+.siusername-2 {
+  z-index: 19;
+}
+
+.softlabel-1 {
+  z-index: 248;
+  background-color: #2d2d2d;
+}
+
+.softlabel-10 {
+  z-index: 217;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-11 {
+  z-index: 214;
+  background-color: rgb(38, 174, 24);
+}
+
+.softlabel-12 {
+  z-index: 211;
+  background-color: #2d2d2d;
+}
+
+.softlabel-13 {
+  z-index: 208;
+  background-color: #fec231;
+}
+
+.softlabel-14 {
+  z-index: 205;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-15 {
+  z-index: 197;
+  background-color: #2d2d2d;
+}
+
+.softlabel-16 {
+  z-index: 194;
+  background-color: #fec231;
+}
+
+.softlabel-17 {
+  z-index: 191;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-18 {
+  z-index: 187;
+  background-color: #2d2d2d;
+}
+
+.softlabel-19 {
+  z-index: 184;
+  background-color: #fec231;
+}
+
+.softlabel-2 {
+  z-index: 245;
+  background-color: #fec231;
+}
+
+.softlabel-20 {
+  z-index: 181;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-21 {
+  z-index: 178;
+  background-color: rgb(38, 174, 24);
+}
+
+.softlabel-22 {
+  z-index: 175;
+  background-color: #2d2d2d;
+}
+
+.softlabel-23 {
+  z-index: 172;
+  background-color: #fec231;
+}
+
+.softlabel-24 {
+  z-index: 169;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-25 {
+  z-index: 158;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-26 {
+  z-index: 153;
+  background-color: rgb(254, 194, 49);
+}
+
+.softlabel-27 {
+  z-index: 148;
+  background-color: rgb(0, 0, 0);
+}
+
+.softlabel-28 {
+  z-index: 132;
+  background-color: rgb(254, 194, 49);
+}
+
+.softlabel-29 {
+  z-index: 128;
+  background-color: rgb(0, 0, 0);
+}
+
+.softlabel-3 {
+  z-index: 242;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-30 {
+  z-index: 124;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-31 {
+  z-index: 120;
+  background-color: rgb(0, 0, 0);
+}
+
+.softlabel-32 {
+  z-index: 116;
+  background-color: #fec231;
+}
+
+.softlabel-33 {
+  z-index: 112;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-34 {
+  z-index: 108;
+  background-color: rgb(124, 124, 124);
+}
+
+.softlabel-35 {
+  z-index: 104;
+  background-color: rgb(0, 0, 0);
+}
+
+.softlabel-36 {
+  z-index: 100;
+  background-color: rgb(38, 174, 24);
+}
+
+.softlabel-37 {
+  z-index: 96;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-38 {
+  z-index: 92;
+  background-color: rgb(124, 124, 124);
+}
+
+.softlabel-39 {
+  z-index: 88;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-4 {
+  z-index: 239;
+  background-color: rgb(38, 174, 24);
+}
+
+.softlabel-40 {
+  z-index: 65;
+  background-color: #2d2d2d;
+}
+
+.softlabel-41 {
+  z-index: 62;
+  background-color: #fec231;
+}
+
+.softlabel-42 {
+  z-index: 59;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-43 {
+  z-index: 55;
+  background-color: #2d2d2d;
+}
+
+.softlabel-44 {
+  z-index: 52;
+  background-color: #fec231;
+}
+
+.softlabel-45 {
+  z-index: 49;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-46 {
+  z-index: 45;
+  background-color: rgb(38, 174, 24);
+}
+
+.softlabel-47 {
+  z-index: 42;
+  background-color: #2d2d2d;
+}
+
+.softlabel-48 {
+  z-index: 39;
+  background-color: #fec231;
+}
+
+.softlabel-49 {
+  z-index: 36;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-5 {
+  z-index: 236;
+  background-color: #2d2d2d;
+}
+
+.softlabel-50 {
+  z-index: 29;
+  background-color: #2d2d2d;
+}
+
+.softlabel-51 {
+  z-index: 26;
+  background-color: #fec231;
+}
+
+.softlabel-52 {
+  z-index: 23;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-53 {
+  z-index: 19;
+  background-color: rgb(38, 174, 24);
+}
+
+.softlabel-54 {
+  z-index: 16;
+  background-color: #2d2d2d;
+}
+
+.softlabel-55 {
+  z-index: 13;
+  background-color: #fec231;
+}
+
+.softlabel-56 {
+  z-index: 12;
+  background-color: rgb(38, 174, 24);
+}
+
+.softlabel-57 {
+  z-index: 10;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-58 {
+  z-index: 9;
+  background-color: #2d2d2d;
+}
+
+.softlabel-59 {
+  z-index: 6;
+  background-color: #fec231;
+}
+
+.softlabel-6 {
+  z-index: 233;
+  background-color: #fec231;
+}
+
+.softlabel-60 {
+  z-index: 5;
+  background-color: #fec231;
+}
+
+.softlabel-61 {
+  z-index: 3;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-62 {
+  z-index: 2;
+  background-color: rgb(40, 40, 40);
+}
+
+.softlabel-7 {
+  z-index: 230;
+  background-color: rgb(240, 57, 57);
+}
+
+.softlabel-8 {
+  z-index: 223;
+  background-color: #2d2d2d;
+}
+
+.softlabel-9 {
+  z-index: 220;
+  background-color: #fec231;
+}
+
+.softlabeltext-1 {
+  z-index: 249;
+}
+
+.softlabeltext-10 {
+  z-index: 218;
+}
+
+.softlabeltext-11 {
+  z-index: 215;
+}
+
+.softlabeltext-12 {
+  z-index: 212;
+}
+
+.softlabeltext-13 {
+  z-index: 209;
+}
+
+.softlabeltext-14 {
+  z-index: 206;
+}
+
+.softlabeltext-15 {
+  z-index: 198;
+}
+
+.softlabeltext-16 {
+  z-index: 195;
+}
+
+.softlabeltext-17 {
+  z-index: 192;
+}
+
+.softlabeltext-18 {
+  z-index: 188;
+}
+
+.softlabeltext-19 {
+  z-index: 185;
+}
+
+.softlabeltext-2 {
+  z-index: 246;
+}
+
+.softlabeltext-20 {
+  z-index: 182;
+}
+
+.softlabeltext-21 {
+  z-index: 179;
+}
+
+.softlabeltext-22 {
+  z-index: 176;
+}
+
+.softlabeltext-23 {
+  z-index: 173;
+}
+
+.softlabeltext-24 {
+  z-index: 170;
+}
+
+.softlabeltext-25 {
+  z-index: 133;
+}
+
+.softlabeltext-26 {
+  z-index: 129;
+}
+
+.softlabeltext-27 {
+  z-index: 125;
+}
+
+.softlabeltext-28 {
+  z-index: 121;
+}
+
+.softlabeltext-29 {
+  z-index: 117;
+}
+
+.softlabeltext-3 {
+  z-index: 243;
+}
+
+.softlabeltext-30 {
+  z-index: 113;
+}
+
+.softlabeltext-31 {
+  z-index: 109;
+}
+
+.softlabeltext-32 {
+  z-index: 105;
+}
+
+.softlabeltext-33 {
+  z-index: 101;
+}
+
+.softlabeltext-34 {
+  z-index: 97;
+}
+
+.softlabeltext-35 {
+  z-index: 93;
+}
+
+.softlabeltext-36 {
+  z-index: 89;
+}
+
+.softlabeltext-37 {
+  z-index: 66;
+}
+
+.softlabeltext-38 {
+  z-index: 63;
+}
+
+.softlabeltext-39 {
+  z-index: 60;
+}
+
+.softlabeltext-4 {
+  z-index: 240;
+}
+
+.softlabeltext-40 {
+  z-index: 56;
+}
+
+.softlabeltext-41 {
+  z-index: 53;
+}
+
+.softlabeltext-42 {
+  z-index: 50;
+}
+
+.softlabeltext-43 {
+  z-index: 46;
+}
+
+.softlabeltext-44 {
+  z-index: 43;
+}
+
+.softlabeltext-45 {
+  z-index: 40;
+}
+
+.softlabeltext-46 {
+  z-index: 37;
+}
+
+.softlabeltext-47 {
+  z-index: 30;
+}
+
+.softlabeltext-48 {
+  z-index: 27;
+}
+
+.softlabeltext-49 {
+  z-index: 24;
+}
+
+.softlabeltext-5 {
+  z-index: 237;
+}
+
+.softlabeltext-50 {
+  z-index: 20;
+}
+
+.softlabeltext-51 {
+  z-index: 17;
+}
+
+.softlabeltext-52 {
+  z-index: 14;
+}
+
+.softlabeltext-53 {
+  z-index: 13;
+}
+
+.softlabeltext-54 {
+  z-index: 11;
+}
+
+.softlabeltext-55 {
+  z-index: 10;
+}
+
+.softlabeltext-56 {
+  z-index: 7;
+}
+
+.softlabeltext-57 {
+  z-index: 4;
+}
+
+.softlabeltext-6 {
+  z-index: 234;
+}
+
+.softlabeltext-7 {
+  z-index: 231;
+}
+
+.softlabeltext-8 {
+  z-index: 224;
+}
+
+.softlabeltext-9 {
+  z-index: 221;
+}
+
+.text-1 {
+  z-index: 155;
+}
+
+.text-2 {
+  z-index: 150;
+}
+
+.text-3 {
+  z-index: 145;
+}
+
+.unitinnerwrap-1 {
+  z-index: 157;
+}
+
+.unitinnerwrap-2 {
+  z-index: 152;
+}
+
+.unitinnerwrap-3 {
+  z-index: 147;
+}
+
+.unitouterwrap-1 {
+  top: 85px;
+  left: 0;
+  right: 0;
+  z-index: 159;
+  margin: 0 auto;
+}
+
+.unitouterwrap-2 {
+  top: 0;
+  right: 0.1302083333%;
+  z-index: 154;
+}
+
+.unitouterwrap-3 {
+  top: 0;
+  left: 0;
+  z-index: 149;
+}
+
+.userimg-1 {
+  z-index: 76;
+}
+
+.userimg-2 {
+  z-index: 27;
+}
+
+.username-1 {
+  z-index: 77;
+}
+
+.username-2 {
+  z-index: 28;
+}
+
+.wbtn-1 {
+  z-index: 4;
+}
+
+.wbtn-2 {
+  z-index: 1;
+}
+
+.whitebutton-1 {
+  top: 164px;
+  z-index: 6;
+}
+
+.whitebutton-2 {
+  top: 131px;
+  z-index: 3;
+}
+
+.wsoft-1 {
+  top: 260px;
+  left: 0;
+  right: 0;
+  z-index: 250;
+  margin: 0 auto;
+}
+
+.wsoft-10 {
+  top: 198px;
+  left: 0;
+  z-index: 219;
+}
+
+.wsoft-11 {
+  top: 167px;
+  left: 0;
+  right: 0;
+  z-index: 216;
+  margin: 0 auto;
+}
+
+.wsoft-12 {
+  top: 136px;
+  left: 0;
+  right: 0;
+  z-index: 213;
+  margin: 0 auto;
+}
+
+.wsoft-13 {
+  top: 105px;
+  left: 0;
+  right: 0;
+  z-index: 210;
+  margin: 0 auto;
+}
+
+.wsoft-14 {
+  top: 74px;
+  left: 0;
+  z-index: 207;
+}
+
+.wsoft-15 {
+  top: 353px;
+  left: 0;
+  right: 0;
+  z-index: 199;
+  margin: 0 auto;
+}
+
+.wsoft-16 {
+  top: 322px;
+  left: 0;
+  right: 0;
+  z-index: 196;
+  margin: 0 auto;
+}
+
+.wsoft-17 {
+  top: 291px;
+  left: 0;
+  right: 0;
+  z-index: 193;
+  margin: 0 auto;
+}
+
+.wsoft-18 {
+  top: 260px;
+  left: 0;
+  right: 0;
+  z-index: 189;
+  margin: 0 auto;
+}
+
+.wsoft-19 {
+  top: 229px;
+  left: 0;
+  right: 0;
+  z-index: 186;
+  margin: 0 auto;
+}
+
+.wsoft-2 {
+  top: 229px;
+  left: 0;
+  right: 0;
+  z-index: 247;
+  margin: 0 auto;
+}
+
+.wsoft-20 {
+  top: 198px;
+  left: 0;
+  right: 0;
+  z-index: 183;
+  margin: 0 auto;
+}
+
+.wsoft-21 {
+  top: 167px;
+  left: 0;
+  right: 0;
+  z-index: 180;
+  margin: 0 auto;
+}
+
+.wsoft-22 {
+  top: 136px;
+  left: 0;
+  right: 0;
+  z-index: 177;
+  margin: 0 auto;
+}
+
+.wsoft-23 {
+  top: 105px;
+  left: 0;
+  right: 0;
+  z-index: 174;
+  margin: 0 auto;
+}
+
+.wsoft-24 {
+  top: 74px;
+  left: 0;
+  z-index: 171;
+}
+
+.wsoft-25 {
+  top: 353px;
+  left: 0;
+  right: 0;
+  z-index: 67;
+  margin: 0 auto;
+}
+
+.wsoft-26 {
+  top: 322px;
+  left: 0;
+  right: 0;
+  z-index: 64;
+  margin: 0 auto;
+}
+
+.wsoft-27 {
+  top: 291px;
+  left: 0;
+  right: 0;
+  z-index: 61;
+  margin: 0 auto;
+}
+
+.wsoft-28 {
+  top: 260px;
+  left: 0;
+  right: 0;
+  z-index: 57;
+  margin: 0 auto;
+}
+
+.wsoft-29 {
+  top: 229px;
+  left: 0;
+  right: 0;
+  z-index: 54;
+  margin: 0 auto;
+}
+
+.wsoft-3 {
+  top: 198px;
+  left: 0;
+  z-index: 244;
+}
+
+.wsoft-30 {
+  top: 198px;
+  left: 0;
+  right: 0;
+  z-index: 51;
+  margin: 0 auto;
+}
+
+.wsoft-31 {
+  top: 167px;
+  left: 0;
+  right: 0;
+  z-index: 47;
+  margin: 0 auto;
+}
+
+.wsoft-32 {
+  top: 136px;
+  left: 0;
+  right: 0;
+  z-index: 44;
+  margin: 0 auto;
+}
+
+.wsoft-33 {
+  top: 105px;
+  left: 0;
+  right: 0;
+  z-index: 41;
+  margin: 0 auto;
+}
+
+.wsoft-34 {
+  top: 74px;
+  left: 0;
+  z-index: 38;
+}
+
+.wsoft-35 {
+  top: 260px;
+  left: 0;
+  right: 0;
+  z-index: 31;
+  margin: 0 auto;
+}
+
+.wsoft-36 {
+  top: 229px;
+  left: 0;
+  right: 0;
+  z-index: 28;
+  margin: 0 auto;
+}
+
+.wsoft-37 {
+  top: 198px;
+  left: 0;
+  z-index: 25;
+}
+
+.wsoft-38 {
+  top: 167px;
+  left: 0;
+  right: 0;
+  z-index: 21;
+  margin: 0 auto;
+}
+
+.wsoft-39 {
+  top: 136px;
+  left: 0;
+  right: 0;
+  z-index: 18;
+  margin: 0 auto;
+}
+
+.wsoft-4 {
+  top: 167px;
+  left: 0;
+  right: 0;
+  z-index: 241;
+  margin: 0 auto;
+}
+
+.wsoft-40 {
+  top: 105px;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  margin: 0 auto;
+}
+
+.wsoft-41 {
+  top: 167px;
+  left: 0;
+  right: 0;
+  z-index: 14;
+  margin: 0 auto;
+}
+
+.wsoft-42 {
+  top: 74px;
+  left: 0;
+  z-index: 12;
+}
+
+.wsoft-43 {
+  top: 136px;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  margin: 0 auto;
+}
+
+.wsoft-44 {
+  top: 105px;
+  left: 0;
+  right: 0;
+  z-index: 8;
+  margin: 0 auto;
+}
+
+.wsoft-45 {
+  top: 74px;
+  left: 0;
+  z-index: 5;
+}
+
+.wsoft-5 {
+  top: 136px;
+  left: 0;
+  right: 0;
+  z-index: 238;
+  margin: 0 auto;
+}
+
+.wsoft-6 {
+  top: 105px;
+  left: 0;
+  right: 0;
+  z-index: 235;
+  margin: 0 auto;
+}
+
+.wsoft-7 {
+  top: 74px;
+  left: 0;
+  z-index: 232;
+}
+
+.wsoft-8 {
+  top: 260px;
+  left: 0;
+  right: 0;
+  z-index: 225;
+  margin: 0 auto;
+}
+
+.wsoft-9 {
+  top: 229px;
+  left: 0;
+  right: 0;
+  z-index: 222;
+  margin: 0 auto;
+}
+
+.dataincont ._input-1 {
+  z-index: 134;
+}
+
+.dataincont ._input-10 {
+  z-index: 98;
+}
+
+.dataincont ._input-11 {
+  z-index: 94;
+}
+
+.dataincont ._input-12 {
+  z-index: 90;
+}
+
+.dataincont ._input-2 {
+  z-index: 130;
+}
+
+.dataincont ._input-3 {
+  z-index: 126;
+}
+
+.dataincont ._input-4 {
+  z-index: 122;
+}
+
+.dataincont ._input-5 {
+  z-index: 118;
+}
+
+.dataincont ._input-6 {
+  z-index: 114;
+}
+
+.dataincont ._input-7 {
+  z-index: 110;
+}
+
+.dataincont ._input-8 {
+  z-index: 106;
+}
+
+.dataincont ._input-9 {
+  z-index: 102;
+}
+
+.proceedwrap ._input-13 {
+  top: 102px;
+  z-index: 6;
+  background-image: url('../images/user.png');
+  font-family: Lato;
+  font-weight: 400;
+}
+
+.proceedwrap ._input-14 {
+  top: 136px;
+  z-index: 5;
+  background-image: url('../images/seckey.png');
+}
+
+.softlabeltext span {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: inherit;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+.softlabeltext-32 span,
+.softlabeltext-33 span {
+  font-size: 0.583em;
+}
+
+.softlabeltext-34 span {
+  font-size: 0.417em;
+}
+
+@media(max-width: 928px) {
+  .btnwrap .ptcurvebtn {
+    right: 0.25%;
+  }
+
+#spacer {
+	height:20px
+}
+
+  .chartbg .btnwrap {
+    top: 1002px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .chartbg .chartdiv {
+    top: 520px;
+  }
+
+  .datainslide .rbtn {
+    top: 632px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .databg,
+  .databg .chartbg,
+  .databg .datainslide,
+  .databg .tablebg,
+  .datainslide .container,
+  .datainslide .dataincont-1,
+  .datainslide .dataincont-2,
+  .headerbg,
+  .headerbg .navbar2,
+  .headerbg .pmodelswrap,
+  .headerbg .tmodelswrap,
+  .hysenstart .hysenlog,
+  .hysenstart .whitebutton,
+  .pmodelswrap .selmodel,
+  .pmodelswrap .wsoft-35,
+  .pmodelswrap .wsoft-36,
+  .pmodelswrap .wsoft-38,
+  .pmodelswrap .wsoft-39,
+  .pmodelswrap .wsoft-40,
+  .resultbg .calcunit,
+  .sicexport .selmodel,
+  .sicexport .wsoft-1,
+  .sicexport .wsoft-2,
+  .sicexport .wsoft-4,
+  .sicexport .wsoft-5,
+  .sicexport .wsoft-6,
+  .sidebar .sicexport,
+  .sidebar .siexport,
+  .sidebar .simodel,
+  .sidebar .sipmodelswrap,
+  .sidebar .sitmodelswrap,
+  .sidenavwrap .logout-1,
+  .sidenavwrap .notificons-1,
+  .sidenavwrap .siuserimg-1,
+  .sidenavwrap .siusername-1,
+  .sipmodelswrap .selmodel,
+  .sipmodelswrap .wsoft-11,
+  .sipmodelswrap .wsoft-12,
+  .sipmodelswrap .wsoft-13,
+  .sipmodelswrap .wsoft-8,
+  .sipmodelswrap .wsoft-9,
+  .sitmodelswrap .selmodel,
+  .sitmodelswrap .wsoft-15,
+  .sitmodelswrap .wsoft-16,
+  .sitmodelswrap .wsoft-17,
+  .sitmodelswrap .wsoft-18,
+  .sitmodelswrap .wsoft-19,
+  .sitmodelswrap .wsoft-20,
+  .sitmodelswrap .wsoft-21,
+  .sitmodelswrap .wsoft-22,
+  .sitmodelswrap .wsoft-23,
+  .tablebg .btnwrap,
+  .tablebg .tablemaindiv,
+  .tmodelswrap .selmodel,
+  .tmodelswrap .wsoft-25,
+  .tmodelswrap .wsoft-26,
+  .tmodelswrap .wsoft-27,
+  .tmodelswrap .wsoft-28,
+  .tmodelswrap .wsoft-29,
+  .tmodelswrap .wsoft-30,
+  .tmodelswrap .wsoft-31,
+  .tmodelswrap .wsoft-32,
+  .tmodelswrap .wsoft-33,
+  .unitinnerwrap .calcunit,
+  .unitinnerwrap .text,
+  .unitsmainwrap .unitouterwrap-1 {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .headerbg .hysenstart,
+  .resultbg .calcval {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .pmodelswrap .rbtn,
+  .tmodelswrap .rbtn {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .dataincont ._input,
+  .dataincont .softlabel,
+  .dataincont .softlabeltext,
+  .expselwrap .softlabel,
+  .expselwrap .softlabeltext,
+  .modselwrap .softlabel,
+  .modselwrap .softlabeltext,
+  .navbar .expandnavbtn-1,
+  .navbar .navbaritems-1,
+  .navbar .senlogo,
+  .navbar2 .expandbtn,
+  .navbar2 .exportbtn,
+  .navbar2 .homebtn,
+  .navbar2 .modelused,
+  .navbaritems .dayscounter-1,
+  .navbaritems .logout-2,
+  .navbaritems .msgcounter-1,
+  .navbaritems .msgicon-1,
+  .navbaritems .userimg-1,
+  .navbaritems .username-1,
+  .simodselwrap .softlabel,
+  .simodselwrap .softlabeltext,
+  .whitebutton .softlabel {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .whitebutton .wbtn {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .datainslide .dataincont-10 {
+    top: 414px;
+    right: 20%;
+  }
+
+  .datainslide .dataincont-11 {
+    top: 490px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .datainslide .dataincont-12 {
+    top: 545px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .datainslide .dataincont-3,
+  .datainslide .dataincont-4 {
+    left: 20%;
+  }
+
+  .datainslide .dataincont-5 {
+    top: 359px;
+    left: 20%;
+  }
+
+  .datainslide .dataincont-6 {
+    top: 414px;
+    left: 20%;
+  }
+
+  .datainslide .dataincont-7,
+  .datainslide .dataincont-8 {
+    right: 20%;
+  }
+
+  .datainslide .dataincont-9 {
+    top: 359px;
+    right: 20%;
+  }
+}
+
+@media(max-width: 691px) {
+  body {
+    font-size: 0.75em;
+  }
+
+  .pmodelswrap {
+	  top:40px
+  }
+
+  .tmodelswrap {
+	  top:40px
+  }
+
+  .chartbg .chartdiv {
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 445px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .chartbg .btnwrap,
+  .chartbg .resultbg,
+  .chartbg .unitsmainwrap,
+  .databg,
+  .databg .chartbg,
+  .databg .datainslide,
+  .databg .tablebg,
+  .datainslide .container,
+  .datainslide .dataincont-1,
+  .datainslide .dataincont-11,
+  .datainslide .dataincont-12,
+  .datainslide .dataincont-2,
+  .datainslide .rbtn,
+  .headerbg,
+  .headerbg .navbar2,
+  .headerbg .pmodelswrap,
+  .headerbg .tmodelswrap,
+  .hysenstart .hysenlog,
+  .hysenstart .whitebutton,
+  .pmodelswrap .rbtn,
+  .pmodelswrap .selmodel,
+  .pmodelswrap .wsoft-35,
+  .pmodelswrap .wsoft-36,
+  .pmodelswrap .wsoft-38,
+  .pmodelswrap .wsoft-39,
+  .pmodelswrap .wsoft-40,
+  .resultbg .calcunit,
+  .sicexport .selmodel,
+  .sicexport .wsoft-1,
+  .sicexport .wsoft-2,
+  .sicexport .wsoft-4,
+  .sicexport .wsoft-5,
+  .sicexport .wsoft-6,
+  .sidebar .sicexport,
+  .sidebar .siexport,
+  .sidebar .simodel,
+  .sidebar .sipmodelswrap,
+  .sidebar .sitmodelswrap,
+  .sidenavwrap .logout-1,
+  .sidenavwrap .notificons-1,
+  .sidenavwrap .siuserimg-1,
+  .sidenavwrap .siusername-1,
+  .sipmodelswrap .selmodel,
+  .sipmodelswrap .wsoft-11,
+  .sipmodelswrap .wsoft-12,
+  .sipmodelswrap .wsoft-13,
+  .sipmodelswrap .wsoft-8,
+  .sipmodelswrap .wsoft-9,
+  .sitmodelswrap .selmodel,
+  .sitmodelswrap .wsoft-15,
+  .sitmodelswrap .wsoft-16,
+  .sitmodelswrap .wsoft-17,
+  .sitmodelswrap .wsoft-18,
+  .sitmodelswrap .wsoft-19,
+  .sitmodelswrap .wsoft-20,
+  .sitmodelswrap .wsoft-21,
+  .sitmodelswrap .wsoft-22,
+  .sitmodelswrap .wsoft-23,
+  .tablebg .btnwrap,
+  .tablebg .tablemaindiv,
+  .tmodelswrap .rbtn,
+  .tmodelswrap .selmodel,
+  .tmodelswrap .wsoft-25,
+  .tmodelswrap .wsoft-26,
+  .tmodelswrap .wsoft-27,
+  .tmodelswrap .wsoft-28,
+  .tmodelswrap .wsoft-29,
+  .tmodelswrap .wsoft-30,
+  .tmodelswrap .wsoft-31,
+  .tmodelswrap .wsoft-32,
+  .tmodelswrap .wsoft-33,
+  .unitinnerwrap .calcunit,
+  .unitinnerwrap .text,
+  .unitsmainwrap .unitouterwrap-1 {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .dataincont ._input,
+  .dataincont .softlabel,
+  .dataincont .softlabeltext,
+  .expselwrap .softlabel,
+  .expselwrap .softlabeltext,
+  .modselwrap .softlabel,
+  .modselwrap .softlabeltext,
+  .navbar .expandnavbtn-1,
+  .navbar .navbaritems-1,
+  .navbar .senlogo,
+  .navbar2 .expandbtn,
+  .navbar2 .exportbtn,
+  .navbar2 .homebtn,
+  .navbar2 .modelused,
+  .navbaritems .dayscounter-1,
+  .navbaritems .logout-2,
+  .navbaritems .msgcounter-1,
+  .navbaritems .msgicon-1,
+  .navbaritems .userimg-1,
+  .navbaritems .username-1,
+  .simodselwrap .softlabel,
+  .simodselwrap .softlabeltext,
+  .whitebutton .softlabel {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .headerbg .hysenstart,
+  .resultbg .calcval,
+  .whitebutton .wbtn {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .datainslide .dataincont-10,
+  .datainslide .dataincont-7,
+  .datainslide .dataincont-8,
+  .datainslide .dataincont-9 {
+    right: 15%;
+  }
+
+  .datainslide .dataincont-3,
+  .datainslide .dataincont-4,
+  .datainslide .dataincont-5,
+  .datainslide .dataincont-6 {
+    left: 15%;
+  }
+}
+
+@media(max-width: 586px) {
+.chartbg .btnwrap,
+  .chartbg .chartdiv,
+  .chartbg .resultbg,
+  .chartbg .unitsmainwrap,
+  .databg,
+  .databg .chartbg,
+  .databg .datainslide,
+  .databg .tablebg,
+  .datainslide .container,
+  .datainslide .dataincont-1,
+  .datainslide .dataincont-11,
+  .datainslide .dataincont-12,
+  .datainslide .dataincont-2,
+  .datainslide .rbtn,
+  .headerbg,
+  .headerbg .navbar2,
+  .headerbg .pmodelswrap,
+  .headerbg .tmodelswrap,
+  .hysenstart .hysenlog,
+  .hysenstart .whitebutton,
+  .pmodelswrap .rbtn,
+  .pmodelswrap .selmodel,
+  .pmodelswrap .wsoft-35,
+  .pmodelswrap .wsoft-36,
+  .pmodelswrap .wsoft-38,
+  .pmodelswrap .wsoft-39,
+  .pmodelswrap .wsoft-40,
+  .resultbg .calcunit,
+  .sicexport .selmodel,
+  .sicexport .wsoft-1,
+  .sicexport .wsoft-2,
+  .sicexport .wsoft-4,
+  .sicexport .wsoft-5,
+  .sicexport .wsoft-6,
+  .sidebar .sicexport,
+  .sidebar .siexport,
+  .sidebar .simodel,
+  .sidebar .sipmodelswrap,
+  .sidebar .sitmodelswrap,
+  .sidenavwrap .logout-1,
+  .sidenavwrap .notificons-1,
+  .sidenavwrap .siuserimg-1,
+  .sidenavwrap .siusername-1,
+  .sipmodelswrap .selmodel,
+  .sipmodelswrap .wsoft-11,
+  .sipmodelswrap .wsoft-12,
+  .sipmodelswrap .wsoft-13,
+  .sipmodelswrap .wsoft-8,
+  .sipmodelswrap .wsoft-9,
+  .sitmodelswrap .selmodel,
+  .sitmodelswrap .wsoft-15,
+  .sitmodelswrap .wsoft-16,
+  .sitmodelswrap .wsoft-17,
+  .sitmodelswrap .wsoft-18,
+  .sitmodelswrap .wsoft-19,
+  .sitmodelswrap .wsoft-20,
+  .sitmodelswrap .wsoft-21,
+  .sitmodelswrap .wsoft-22,
+  .sitmodelswrap .wsoft-23,
+  .tablebg .btnwrap,
+  .tablebg .tablemaindiv,
+  .tmodelswrap .rbtn,
+  .tmodelswrap .selmodel,
+  .tmodelswrap .wsoft-25,
+  .tmodelswrap .wsoft-26,
+  .tmodelswrap .wsoft-27,
+  .tmodelswrap .wsoft-28,
+  .tmodelswrap .wsoft-29,
+  .tmodelswrap .wsoft-30,
+  .tmodelswrap .wsoft-31,
+  .tmodelswrap .wsoft-32,
+  .tmodelswrap .wsoft-33,
+  .unitinnerwrap .calcunit,
+  .unitinnerwrap .text,
+  .unitsmainwrap .unitouterwrap-1 {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .navbar .senlogo {
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .dataincont ._input,
+  .dataincont .softlabel,
+  .dataincont .softlabeltext,
+  .expselwrap .softlabel,
+  .expselwrap .softlabeltext,
+  .modselwrap .softlabel,
+  .modselwrap .softlabeltext,
+  .navbar2 .expandbtn,
+  .navbar2 .exportbtn,
+  .navbar2 .homebtn,
+  .navbar2 .modelused,
+  .navbaritems .dayscounter-1,
+  .navbaritems .logout-2,
+  .navbaritems .msgcounter-1,
+  .navbaritems .msgicon-1,
+  .navbaritems .userimg-1,
+  .navbaritems .username-1,
+  .simodselwrap .softlabel,
+  .simodselwrap .softlabeltext,
+  .whitebutton .softlabel {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .headerbg .hysenstart,
+  .resultbg .calcval,
+  .whitebutton .wbtn {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .datainslide .dataincont-10,
+  .datainslide .dataincont-7,
+  .datainslide .dataincont-8,
+  .datainslide .dataincont-9 {
+    right: 5%;
+  }
+
+  .datainslide .dataincont-3,
+  .datainslide .dataincont-4,
+  .datainslide .dataincont-5,
+  .datainslide .dataincont-6 {
+    left: 5%;
+  }
+
+  .navbar .expandnavbtn-1 {
+    display: block;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .navbar .navbaritems-1 {
+    display: none;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media(max-width: 520px) {
+
+  .senlogo {
+    top: 125px;
+    left: 52px;
+	display:none;
+  }
+
+  .navbar-1 .senlogo {
+	  display:block;
+	  left: 12%
+  }
+  .resplogo {
+	  display:block
+  }
+
+  .navbaritems .dayscounter-2,
+  .navbaritems .logout-3,
+  .navbaritems .msgcounter-2,
+  .navbaritems .msgicon-2,
+  .navbaritems .userimg-2,
+  .navbaritems .username-2,
+  .softselwrap .softlabel,
+  .softselwrap .softlabeltext {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .softwareswrap {
+    top:  100px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .softwareswrap .rbtn {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sidenavwrap .logout-4,
+  .sidenavwrap .notificons-2,
+  .sidenavwrap .siuserimg-2,
+  .sidenavwrap .siusername-2,
+  .softwareswrap .selsoft,
+  .softwareswrap .text,
+  .softwareswrap .wsoft-41,
+  .softwareswrap .wsoft-43,
+  .softwareswrap .wsoft-44 {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .navbar .expandnavbtn-2 {
+    display: block;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .navbar .navbaritems-2 {
+    display: none;
+  }
+}
+
+@media(max-width: 450px) {
+  .btnwrap .gbtn {
+    width: 120px;
+  }
+
+  .btnwrap .pttablebtn {
+    left: auto;
+    right: 0;
+  }
+
+  .btnwrap .rbtn {
+    width: 120px;
+  }
+
+  .chartbg .btnwrap {
+    left: 0;
+    right: 0;
+    width: 252px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .chartbg .chartdiv,
+  .chartbg .resultbg,
+  .chartbg .unitsmainwrap,
+  .databg,
+  .databg .chartbg,
+  .datainslide .container,
+  .headerbg .navbar2,
+  .headerbg .pmodelswrap,
+  .headerbg .tmodelswrap,
+  .hysenstart .hysenlog,
+  .hysenstart .whitebutton,
+  .pmodelswrap .rbtn,
+  .pmodelswrap .selmodel,
+  .pmodelswrap .wsoft-35,
+  .pmodelswrap .wsoft-36,
+  .pmodelswrap .wsoft-38,
+  .pmodelswrap .wsoft-39,
+  .pmodelswrap .wsoft-40,
+  .resultbg .calcunit,
+  .sicexport .selmodel,
+  .sicexport .wsoft-1,
+  .sicexport .wsoft-2,
+  .sicexport .wsoft-4,
+  .sicexport .wsoft-5,
+  .sicexport .wsoft-6,
+  .sidebar .sicexport,
+  .sidebar .siexport,
+  .sidebar .simodel,
+  .sidebar .sipmodelswrap,
+  .sidebar .sitmodelswrap,
+  .sidenavwrap .logout-1,
+  .sidenavwrap .notificons-1,
+  .sidenavwrap .siuserimg-1,
+  .sidenavwrap .siusername-1,
+  .sipmodelswrap .selmodel,
+  .sipmodelswrap .wsoft-11,
+  .sipmodelswrap .wsoft-12,
+  .sipmodelswrap .wsoft-13,
+  .sipmodelswrap .wsoft-8,
+  .sipmodelswrap .wsoft-9,
+  .sitmodelswrap .selmodel,
+  .sitmodelswrap .wsoft-15,
+  .sitmodelswrap .wsoft-16,
+  .sitmodelswrap .wsoft-17,
+  .sitmodelswrap .wsoft-18,
+  .sitmodelswrap .wsoft-19,
+  .sitmodelswrap .wsoft-20,
+  .sitmodelswrap .wsoft-21,
+  .sitmodelswrap .wsoft-22,
+  .sitmodelswrap .wsoft-23,
+  .tablebg .tablemaindiv,
+  .tmodelswrap .rbtn,
+  .tmodelswrap .selmodel,
+  .tmodelswrap .wsoft-25,
+  .tmodelswrap .wsoft-26,
+  .tmodelswrap .wsoft-27,
+  .tmodelswrap .wsoft-28,
+  .tmodelswrap .wsoft-29,
+  .tmodelswrap .wsoft-30,
+  .tmodelswrap .wsoft-31,
+  .tmodelswrap .wsoft-32,
+  .tmodelswrap .wsoft-33,
+  .unitinnerwrap .calcunit,
+  .unitinnerwrap .text,
+  .unitsmainwrap .unitouterwrap-1 {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .datainslide .dataincont {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .datainslide .rbtn {
+    top: 853px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tablebg .btnwrap {
+    left: 0;
+    right: 0;
+    width: 252px;
+    min-width: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .dataincont ._input,
+  .dataincont .softlabel,
+  .dataincont .softlabeltext,
+  .expselwrap .softlabel,
+  .expselwrap .softlabeltext,
+  .modselwrap .softlabel,
+  .modselwrap .softlabeltext,
+  .navbar .expandnavbtn-1,
+  .navbar .navbaritems-1,
+  .navbar .senlogo,
+  .navbar2 .expandbtn,
+  .navbar2 .exportbtn,
+  .navbar2 .homebtn,
+  .navbar2 .modelused,
+  .navbaritems .dayscounter-1,
+  .navbaritems .logout-2,
+  .navbaritems .msgcounter-1,
+  .navbaritems .msgicon-1,
+  .navbaritems .userimg-1,
+  .navbaritems .username-1,
+  .simodselwrap .softlabel,
+  .simodselwrap .softlabeltext,
+  .whitebutton .softlabel {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .headerbg .hysenstart,
+  .resultbg .calcval,
+  .whitebutton .wbtn {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .datainslide .dataincont-10 {
+    top: 631px;
+  }
+
+  .datainslide .dataincont-11 {
+    top: 711px;
+  }
+
+  .datainslide .dataincont-12 {
+    top: 766px;
+  }
+
+  .datainslide .dataincont-4 {
+    top: 306px;
+  }
+
+  .datainslide .dataincont-5 {
+    top: 360px;
+  }
+
+  .datainslide .dataincont-7 {
+    top: 469px;
+  }
+
+  .datainslide .dataincont-8 {
+    top: 523px;
+  }
+
+  .datainslide .dataincont-9 {
+    top: 577px;
+  }
+}
+
+@media(max-width: 356px) {
+  .page-softpage {
+    height: 100%;
+    background-image: url('../images/bgImg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .navbar .expandnavbtn-2,
+  .navbaritems .dayscounter-2,
+  .navbaritems .logout-3,
+  .navbaritems .msgcounter-2,
+  .navbaritems .msgicon-2,
+  .navbaritems .userimg-2,
+  .navbaritems .username-2,
+  .softselwrap .softlabel,
+  .softselwrap .softlabeltext {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .navbar-1 .senlogo {
+	  display:block;
+	  left: 12%
+  }
+
+  .softwareswrap {
+    left: 0;
+    right: 0;
+    width: 100%;
+	top:65px;
+    margin-right: auto;
+    margin-left: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .senlogo-4,
+  .sidenavwrap .logout-4,
+  .sidenavwrap .notificons-2,
+  .sidenavwrap .siuserimg-2,
+  .sidenavwrap .siusername-2,
+  .softwareswrap .rbtn,
+  .softwareswrap .selsoft,
+  .softwareswrap .text,
+  .softwareswrap .wsoft-41,
+  .softwareswrap .wsoft-43,
+  .softwareswrap .wsoft-44 {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

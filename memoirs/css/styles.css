@@ -1,0 +1,292 @@
+body {
+  background-color: rgb(59, 63, 69);
+  font: 400 1em/1.38 Raleway;
+  color: rgb(255, 255, 255);
+}
+
+.headertext {
+  position: absolute;
+  top: 44px;
+  left: 60px;
+  font-size: 1.875em;
+  font-weight: 700;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.image-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 244px;
+  height: 244px;
+  margin: 0 auto;
+  border: 2px solid rgb(32, 35, 41);
+  border-radius: 4px;
+  background-image: url('../images/user.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  -ms-transition: all .4s;
+  transition: all .4s;
+}
+
+.image-preview:hover {
+  border-color: #7c7c7c;
+}
+
+.spacer {
+  position: absolute;
+  top: 580px;
+  left: 0;
+  right: 0;
+  z-index: 13;
+  width: 100%;
+  height: 51px;
+  margin: 0 auto;
+}
+
+.subheadertext {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 214px;
+  margin: 0 auto;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.subsubheadertext {
+  position: absolute;
+  top: 167px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 158px;
+  margin: 0 auto;
+  font-size: 0.938em;
+  line-height: 1.38;
+  color: rgb(201, 99, 125);
+}
+
+.uploadbox {
+  position: absolute;
+  top: 224px;
+  width: 244px;
+  height: 244px;
+}
+
+._button {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1em;
+  line-height: 1.38;
+  text-align: center;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  -ms-transition: all .4s;
+  transition: all .4s;
+}
+
+.uploadbox ._button {
+  top: 0;
+  bottom: 0;
+  width: 144px;
+  height: 38px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 3px;
+  background-color: rgb(201, 99, 125);
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.uploadbox ._button:hover {
+  background-color: rgb(32, 35, 41);
+}
+
+.image-preview-1 {
+  z-index: 9;
+}
+
+.image-preview-2 {
+  z-index: 6;
+}
+
+.image-preview-3 {
+  z-index: 3;
+}
+
+.uploadbox-1 {
+  right: 15.2%;
+  z-index: 11;
+}
+
+.uploadbox-2 {
+  left: 0;
+  right: 0;
+  z-index: 8;
+  margin: 0 auto;
+}
+
+.uploadbox-3 {
+  left: 15.2%;
+  z-index: 5;
+}
+
+._button-1 {
+  top: 531px;
+  z-index: 12;
+  width: 180px;
+  height: 40px;
+  border: 2px solid rgb(32, 35, 41);
+  border-radius: 20px;
+  font-weight: 700;
+  color: rgb(32, 35, 41);
+  box-shadow: inset 0 0 0 0 rgb(201,99,125);
+}
+
+._button-1:hover {
+  color: rgb(255, 255, 255);
+}
+
+.uploadbox ._button-2 {
+  z-index: 10;
+}
+
+.uploadbox ._button-3 {
+  z-index: 7;
+}
+
+.uploadbox ._button-4 {
+  z-index: 4;
+}
+
+@media(max-width: 1056px) {
+  .spacer {
+    top: 862px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .subheadertext,
+  .subsubheadertext,
+  .uploadbox .image-preview {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  ._button {
+    top: 804px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .uploadbox ._button {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .uploadbox-1 {
+    top: 506px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .uploadbox-2 {
+    left: 50.8004853219%;
+    right: auto;
+  }
+
+  .uploadbox-3 {
+    left: auto;
+    right: 50.8004853219%;
+  }
+}
+
+@media(max-width: 532px) {
+  body {
+    font-size: 1em;
+  }
+
+  .headertext {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  .spacer {
+    top: 1116px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .subheadertext,
+  .subsubheadertext,
+  .uploadbox .image-preview {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .uploadbox {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  ._button {
+    top: 1063px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .uploadbox ._button {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .uploadbox-1 {
+    top: 765px;
+  }
+
+  .uploadbox-2 {
+    top: 495px;
+  }
+}

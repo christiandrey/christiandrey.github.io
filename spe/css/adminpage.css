@@ -1,0 +1,1023 @@
+body {
+  height: 100%;
+  background: url('../images/bg_white.jpg') rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center center;
+  font: 400 1.625em/2 Montserrat;
+  color: rgb(255, 255, 255);
+}
+
+.admdetails {
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  z-index: 2;
+  width: 19.8333333333%;
+  height: 70px;
+  margin: auto 0;
+}
+
+.adminname {
+  top: 6px;
+  right: 0;
+  z-index: 1;
+  width: 387px;
+  height: 33px;
+  font-size: 0.923em;
+  font-weight: 700;
+  line-height: 1.38;
+  text-align: right;
+  color: rgb(0, 42, 123);
+}
+
+.ch_pass {
+  top: 245px;
+  left: 51.4157973174%;
+  z-index: 10;
+  width: 325px;
+  height: 225px;
+  background: url('../images/changepassword.png') rgb(9, 28, 46);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.ch_user {
+  top: 245px;
+  left: -0.0908159464%;
+  z-index: 9;
+  width: 325px;
+  height: 225px;
+  background: url('../images/changeusername.png') rgb(9, 28, 46);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.ch_pass:hover,
+.ch_user:hover {
+  background-color: rgb(35, 107, 173);
+}
+
+.check {
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background-image: url('../images/check.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.0001;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.chg_pass {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 78;
+  width: 738px;
+  height: 192px;
+  margin: auto;
+}
+
+.chg_pass .text {
+  z-index: 71;
+}
+
+.chg_user {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 70;
+  width: 738px;
+  height: 88px;
+  margin: auto;
+}
+
+.chg_user .element {
+  top: 36px;
+  left: 685px;
+  z-index: 69;
+}
+
+.chg_user .text {
+  z-index: 67;
+}
+
+.close_btn {
+  top: 20px;
+  right: 20px;
+  z-index: 82;
+  width: 52px;
+  height: 52px;
+  background: url('../images/ex.png') rgb(9, 28, 46);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.container {
+  position: absolute;
+}
+
+.createpoll {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 18;
+  width: 738px;
+  height: 88px;
+  margin: auto;
+}
+
+.createpoll .pollnamehead {
+  z-index: 13;
+}
+
+.createpoll .righthold {
+  top: 36px;
+  left: 685px;
+  z-index: 17;
+}
+
+.csv {
+  top: 2px;
+  right: 503px;
+  z-index: 52;
+  width: 30px;
+  height: 30px;
+  background: url('../images/csv.png') rgb(9, 28, 46);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.date {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 14;
+  margin: auto;
+  font-size: 1em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.dateholder {
+  top: 36px;
+  left: 0;
+  z-index: 15;
+  width: 106px;
+  height: 52px;
+  background-color: rgb(9, 28, 46);
+}
+
+.decide {
+  top: 46px;
+  left: 161px;
+  z-index: 6;
+  width: 133px;
+  height: 54px;
+  background-image: url('../images/decide(2).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+.done {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 81;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 200px;
+  background: url('../images/check.png') rgb(9, 28, 46);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: center center;
+}
+
+.downhold {
+  top: 36px;
+  width: 52px;
+  height: 52px;
+  background: url('../images/down.png') rgb(35, 40, 45);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.element {
+  position: absolute;
+}
+
+.firstname {
+  top: 88px;
+  left: 0;
+  z-index: 40;
+  font-size: 1em;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.head {
+  top: 0;
+  left: -5.8%;
+  z-index: 4;
+  width: 64.75%;
+  height: 141px;
+  background: url('../images/Spe-bg-blur.jpg') rgb(255, 255, 255);
+  background-size: cover;
+  background-position: left top;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
+  transform: skew(-30deg);
+}
+
+.head_bg {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 141px;
+  background-color: rgb(255, 255, 255);
+}
+
+.lastname {
+  top: 88px;
+  left: 46.4769647696%;
+  z-index: 41;
+  font-size: 1em;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.load_poll {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 66;
+  width: 738px;
+  height: 88px;
+  margin: auto;
+}
+
+.load_poll .downhold {
+  left: 627px;
+  z-index: 65;
+}
+
+.load_poll .righthold {
+  top: 36px;
+  left: 685px;
+  z-index: 64;
+}
+
+.loading {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 84;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-color: rgba(222, 222, 222, 0);
+}
+
+.loading_logo {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 85;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background: url('../images/SPE-Logo-1.png') rgba(222, 222, 222, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.loading_polls {
+  top: 0;
+  left: 0;
+  z-index: 87;
+  width: 100%;
+  height: 593px;
+  background: url('../images/bg_white.jpg') rgb(222, 222, 222);
+  background-size: cover;
+  background-position: center top;
+}
+
+.loading_text {
+  top: 522px;
+  left: 0;
+  right: 0;
+  z-index: 86;
+  width: 200px;
+  margin: 0 auto;
+  font-size: 0.615em;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(0, 0, 0);
+}
+
+.loadpolls {
+  top: 0;
+  left: 51.4157973174%;
+  z-index: 8;
+  width: 325px;
+  height: 225px;
+  background: url('../images/loadpolls.png') rgb(35, 107, 173);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.logo {
+  top: 8px;
+  left: 40px;
+  z-index: 5;
+  width: 121px;
+  height: 121px;
+  background-image: url('../images/SPE-Logo-1.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.logout_btn {
+  top: 35px;
+  right: 0;
+  width: 149px;
+  height: 29px;
+  background-image: url('../images/logout.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.check:hover,
+.csv:hover,
+.close_btn:hover,
+.downhold:hover,
+.logout_btn:hover,
+.righthold:hover,
+.upload:hover {
+  opacity: 0.8;
+}
+
+.matcont {
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 235px;
+  height: 260px;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.matholder {
+  top: 36px;
+  left: 0;
+  z-index: 51;
+  width: 235px;
+  height: 52px;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.menuhold {
+  top: 165px;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  width: 670px;
+  height: 470px;
+  margin: 0 auto;
+}
+
+.newpolls {
+  top: 0;
+  left: -0.0908159464%;
+  z-index: 7;
+  width: 325px;
+  height: 225px;
+  background: url('../images/newpolls.png') rgb(35, 107, 173);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.loadpolls:hover,
+.newpolls:hover,
+.nextbtn0:hover,
+.nextbtn1:hover,
+.nextbtn2:hover,
+.prevbtn:hover {
+  background-color: rgb(9, 28, 46);
+}
+
+.nextbtn0 {
+  top: 0;
+  right: 0;
+  z-index: 53;
+  width: 10%;
+  height: 620px;
+  background: url('../images/nextarrow.png') rgba(35, 107, 173, 0);
+  background-repeat: no-repeat;
+  background-size: 74.67px 145.33px;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.nextbtn1 {
+  top: 0;
+  right: 0;
+  z-index: 36;
+  width: 10%;
+  height: 620px;
+  background: url('../images/nextarrow.png') rgba(35, 107, 173, 0);
+  background-repeat: no-repeat;
+  background-size: 74.67px 145.33px;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.nextbtn2 {
+  top: 0;
+  right: 0;
+  z-index: 79;
+  width: 10%;
+  height: 620px;
+  background: url('../images/nextarrow.png') rgba(35, 107, 173, 0);
+  background-repeat: no-repeat;
+  background-size: 74.67px 145.33px;
+  background-position: center center;
+  opacity: 0.00001;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  height: 620px;
+  background-color: rgba(35, 107, 173, 0.9);
+}
+
+.p_bar {
+  top: 174px;
+  left: 0;
+  z-index: 34;
+  height: 7px;
+  background-color: rgb(35, 40, 45);
+}
+
+.pic_link {
+  bottom: 0;
+  left: 0;
+  z-index: 25;
+  width: 677px;
+  height: 52px;
+  min-height: 43.34375px;
+  background-color: rgb(9, 28, 46);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.level:hover,
+.pic_link:hover,
+.pollcont .text:hover,
+.position:hover {
+  background-color: rgb(35, 40, 45);
+}
+
+.picture {
+  top: 88px;
+  left: 0;
+  z-index: 23;
+  font-size: 1em;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.poll {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+
+.pollcont {
+  top: 0;
+  left: 0;
+  z-index: 62;
+  width: 627px;
+  height: 312px;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.pollcont .text {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgb(9, 28, 46);
+  text-indent: 10px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.pollholder {
+  top: 36px;
+  left: 0;
+  z-index: 63;
+  width: 627px;
+  height: 52px;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.pollnamehead,
+.user_namehead {
+  top: 0;
+  left: 0;
+  font-size: 1em;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.poscont {
+  top: 0;
+  left: 0;
+  z-index: 32;
+  width: 235px;
+  height: 312px;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.posholder {
+  top: 36px;
+  left: 0;
+  z-index: 33;
+  width: 235px;
+  height: 52px;
+  overflow: hidden;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.level,
+.position {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: rgb(9, 28, 46);
+  font-size: 1em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.prevbtn {
+  top: 0;
+  left: 0;
+  z-index: 54;
+  width: 10%;
+  height: 620px;
+  background: url('../images/leftarrow.png') rgba(35, 107, 173, 0);
+  background-repeat: no-repeat;
+  background-size: 74.67px 145.33px;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.reg_cont {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 35;
+  width: 738px;
+  height: 175px;
+  margin: auto;
+}
+
+.reg_cont .downhold {
+  left: 235px;
+  z-index: 22;
+}
+
+.reg_cont .pollnamehead {
+  z-index: 19;
+}
+
+.reg_cont .righthold {
+  top: 36px;
+  right: 0;
+  z-index: 21;
+}
+
+.reg_vot {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 52;
+  width: 738px;
+  height: 175px;
+  margin: auto;
+}
+
+.reg_vot .downhold {
+  left: 235px;
+  z-index: 39;
+}
+
+.reg_vot .righthold {
+  top: 78px;
+  right: 0;
+  z-index: 38;
+}
+
+.regvothead {
+  top: 0;
+  left: 0;
+  z-index: 37;
+  font-size: 1em;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.righthold {
+  width: 52px;
+  height: 52px;
+  background: url('../images/right.png') rgb(9, 28, 46);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+.successtext {
+  top: 146px;
+  left: 0;
+  right: 0;
+  z-index: 80;
+  margin: 0 auto;
+  font-size: 0.615em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.text {
+  position: absolute;
+}
+
+.upload {
+  bottom: 0;
+  right: 0;
+  z-index: 24;
+  width: 52px;
+  height: 52px;
+  background: url('../images/right.png') rgb(9, 28, 46);
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+}
+
+._input {
+  display: block;
+  position: absolute;
+  padding: 0 10px;
+  font-weight: 400;
+  line-height: 1.38;
+}
+
+.chg_pass ._input {
+  left: 0;
+  width: 738px;
+}
+
+.chg_user ._input {
+  top: 36px;
+  left: 0;
+  z-index: 68;
+  width: 679px;
+}
+
+.container ._input {
+  height: 52px;
+  background-color: rgb(9, 28, 46);
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+
+.createpoll ._input {
+  top: 36px;
+  left: 115px;
+  z-index: 16;
+  width: 562px;
+}
+
+.reg_cont ._input {
+  top: 36px;
+  left: 297px;
+  z-index: 20;
+  width: 380px;
+}
+
+.element-7 {
+  top: 139px;
+  z-index: 77;
+}
+
+.element-8 {
+  top: 87px;
+  z-index: 76;
+}
+
+.element-9 {
+  top: 36px;
+  z-index: 75;
+}
+
+.text-10 {
+  top: 0;
+  z-index: 56;
+}
+
+.text-11 {
+  top: 0;
+  left: 0;
+  z-index: 55;
+  line-height: 1.38;
+}
+
+.text-12 {
+  top: 208px;
+  z-index: 49;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-13 {
+  top: 156px;
+  z-index: 48;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-14 {
+  top: 104px;
+  z-index: 47;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-15 {
+  top: 52px;
+  z-index: 46;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-16 {
+  top: 0;
+  z-index: 45;
+}
+
+.text-20 {
+  top: 260px;
+  z-index: 31;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-21 {
+  top: 208px;
+  z-index: 30;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-22 {
+  top: 156px;
+  z-index: 29;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-23 {
+  top: 104px;
+  z-index: 28;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-24 {
+  top: 52px;
+  z-index: 27;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-25 {
+  top: 0;
+  z-index: 26;
+}
+
+.text-5 {
+  top: 260px;
+  z-index: 61;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-6 {
+  top: 208px;
+  z-index: 60;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-7 {
+  top: 156px;
+  z-index: 59;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-8 {
+  top: 104px;
+  z-index: 58;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.text-9 {
+  top: 52px;
+  z-index: 57;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+._input-1 {
+  top: 385px;
+  left: 13.4166666666%;
+  z-index: 83;
+  width: 6.5%;
+  height: 38px;
+  background-color: rgb(146, 14, 14);
+  font-size: 0.5em;
+  color: rgb(131, 12, 12);
+}
+
+.container ._input-2 {
+  top: 36px;
+  z-index: 74;
+}
+
+.container ._input-3 {
+  top: 88px;
+  z-index: 73;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.container ._input-4 {
+  top: 140px;
+  z-index: 72;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.container ._input-6 {
+  top: 36px;
+  left: 297px;
+  z-index: 44;
+  width: 380px;
+}
+
+.container ._input-7 {
+  bottom: 0;
+  left: 0;
+  z-index: 43;
+  width: 334px;
+}
+
+.container ._input-8 {
+  bottom: 0;
+  left: 343px;
+  z-index: 42;
+  width: 334px;
+}
+
+.logo, #newpolls, #loadpolls, .ch_user, .ch_pass, #logout_btn, .poll, .righthold, #close_btn, #csv, #nextbtn0, #nextbtn1, #nextbtn2, .downhold, #pic_link, #upload, .level, .position, .prevbtn {
+	cursor:pointer;
+}
