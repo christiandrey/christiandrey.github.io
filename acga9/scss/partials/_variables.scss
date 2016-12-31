@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+//  Responsive breakpoints
+$S: 480px; // Small phones Styles are written for this breakpoint by default, so no need to specify it.
+$M: 768px; // Phablets
+$L: 992px; // 10" Tablets and desktops
+$XL: 1200px; // 10" Tablets and desktops..
+
+//  Colors
+$colorPrimary   : #2a2e6d;
+$colorAccent    : #f0de52;
+$colorDark      : #222222;
+$colorBlack     : #000000;
+$colorWhite     : #ffffff;
+$colorGray      : #f9f9f9;
+$colorDarkGray  : #cecece;
+$colorTrans     : rgba(255,255,255,0);
+
+//  Fonts
+$bodyFont: 'DINRoundPro-Medium',Open Sans, sans-serif;
+$headerFont: "museosansrounded-500", Open Sans, sans-serif;
+
+//  Font Sources
+
+@font-face {
+    font-family: 'museosansrounded-500';
+    src: url('museosansrounded-500') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'DINRoundPro-Medium';
+    src: url('../fonts/DINRoundPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
