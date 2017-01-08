@@ -78,6 +78,7 @@
 
 @mixin center($xy:xy) {
   @if $xy == xy {
+    position: relative;
     left: 50%;
     top: 50%;
     bottom: auto;
@@ -85,11 +86,13 @@
     @include transform(translateX(-50%) translateY(-50%));
   }
   @else if $xy == x {
+    position: relative;
     left: 50%;
     right: auto;
     @include transform(translateX(-50%));
   }
   @else if $xy == y {
+    position: relative;
     top: 50%;
     bottom: auto;
     @include transform(translateY(-50%));
