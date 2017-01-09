@@ -7,16 +7,18 @@ $L: 992px; // 10" Tablets and desktops
 $XL: 1200px; // 10" Tablets and desktops..
 
 //  Colors
-$colorOpacity   : 0.8;
-$colorPrimary   : rgba(34,34,34,$colorOpacity);
-$colorDefault   : rgba(34,34,34,1);
-$colorAccent    : rgba(175,31,60,$colorOpacity);
-$colorBlack     : rgba(0,0,0,$colorOpacity);
-$colorWhite     : rgba(255,255,255,1);
-$colorWhiteTrans : rgba(255,255,255,$colorOpacity);
-$colorGray      : rgba(249,249,249,$colorOpacity);
-$colorDarkGray  : rgba(206,206,206,$colorOpacity);
-$colorTrans     : rgba(0,0,0,0.2);
+$colorOpacity       : 0.7;
+$colorPrimary       : rgba(34,34,34,1);
+$colorPrimaryTrans  : rgba(34,34,34,$colorOpacity);
+$colorAccent        : rgba(175,31,60,1);
+$colorAccentTrans   : rgba(175,31,60,$colorOpacity);
+$colorBlack         : rgba(0,0,0,1);
+$colorBlackTrans    : rgba(0,0,0,$colorOpacity);
+$colorWhite         : rgba(255,255,255,1);
+$colorWhiteTrans    : rgba(255,255,255,$colorOpacity);
+$colorGray          : rgba(249,249,249,$colorOpacity);
+$colorDarkGray      : rgba(206,206,206,$colorOpacity);
+$colorTrans         : rgba(0,0,0,0.2);
 
 //  Fonts
 $bodyFont: 'opensans-regular-webfont',Open Sans, sans-serif;

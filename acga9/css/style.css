@@ -38,44 +38,68 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
 }
 
+.fgWhiteTrans {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bgWhiteTrans {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .fgPrimary {
-  color: rgba(34, 34, 34, 0.8);
-}
-
-.bgPrimary {
-  background-color: rgba(34, 34, 34, 0.8);
-}
-
-.fgDefault {
   color: #222222;
 }
 
-.bgDefault {
+.bgPrimary {
   background-color: #222222;
 }
 
+.fgPrimaryTrans {
+  color: rgba(34, 34, 34, 0.7);
+}
+
+.bgPrimaryTrans {
+  background-color: rgba(34, 34, 34, 0.7);
+}
+
 .fgAccent {
-  color: rgba(175, 31, 60, 0.8);
+  color: #af1f3c;
 }
 
 .bgAccent {
-  background-color: rgba(175, 31, 60, 0.8);
+  background-color: #af1f3c;
+}
+
+.fgAccentTrans {
+  color: rgba(175, 31, 60, 0.7);
+}
+
+.bgAccentTrans {
+  background-color: rgba(175, 31, 60, 0.7);
 }
 
 .fgGray {
-  color: rgba(249, 249, 249, 0.8);
+  color: rgba(249, 249, 249, 0.7);
 }
 
 .bgGray {
-  background-color: rgba(249, 249, 249, 0.8);
+  background-color: rgba(249, 249, 249, 0.7);
 }
 
 .fgDarkGray {
-  color: rgba(206, 206, 206, 0.8);
+  color: rgba(206, 206, 206, 0.7);
 }
 
 .bgDarkGray {
-  background-color: rgba(206, 206, 206, 0.8);
+  background-color: rgba(206, 206, 206, 0.7);
+}
+
+.fgTrans {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.bgTrans {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .buttonBase, .outlineButton, .filledButton {
@@ -84,10 +108,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 0;
   border-radius: 0px;
   font-size: 13px;
+  transition: box-shadow 0.45s;
 }
 
 .buttonBase:focus, .outlineButton:focus, .filledButton:focus {
   outline: none;
+}
+
+.buttonBase:hover, .outlineButton:hover, .filledButton:hover {
+  box-shadow: 0 0 20px rgba(34, 34, 34, 0.3);
 }
 
 .outlineButton {
@@ -101,58 +130,85 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-image: url("../img/web.acga9.image.background.jpg");
+  background: url("../img/web.acga9.image.background.jpg") center;
 }
 
 body .indexPage {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 100vw;
+  height: 100vh;
   display: flex;
 }
 
 body .indexPage .loginWrapper {
+  padding: 40px;
   width: 90%;
-  height: auto;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.2);
+  box-shadow: 0 0 20px rgba(34, 34, 34, 0.3);
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .indexPage .loginWrapper {
+    width: 350px;
+    padding: 50px;
+  }
 }
 
 body .indexPage .loginWrapper .brandLogo {
-  height: 50px;
-  width: 118px;
-  margin: 30px auto;
-  background-image: url("../img/web.acga9.logo.full.black.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
+  width: 64px;
+  display: block;
+  height: auto;
+  margin: 0 auto 50px;
 }
 
-body .indexPage .loginWrapper .loginLinksWrapper {
-  margin: 30px auto;
-  width: 90%;
-  height: 70px;
+body .indexPage .loginWrapper .brandLogo + div {
+  margin: 0 auto 25px;
 }
 
-body .indexPage .loginWrapper .loginLinksWrapper .userLoginLink, body .indexPage .loginWrapper .loginLinksWrapper .adminLoginLink {
-  height: 100%;
-  width: 45%;
-  display: inline-block;
-}
-
-body .indexPage .loginWrapper .loginLinksWrapper .userLoginLink p, body .indexPage .loginWrapper .loginLinksWrapper .adminLoginLink p {
+body .indexPage .loginWrapper .adminLogin, body .indexPage .loginWrapper .userLogin {
+  padding: 8px 0;
+  display: flex;
+  width: 100%;
   margin: auto;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  cursor: pointer;
+  transition: box-shadow 0.45s, transform 0.45s;
 }
 
-body .indexPage .loginWrapper .loginLinksWrapper > :first-child {
-  margin-right: 8%;
+body .indexPage .loginWrapper .adminLogin div, body .indexPage .loginWrapper .userLogin div {
+  margin: auto;
+}
+
+body .indexPage .loginWrapper .adminLogin div img, body .indexPage .loginWrapper .userLogin div img {
+  display: block;
+  text-align: center;
+  width: 24px;
+  height: auto;
+  margin: auto;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .indexPage .loginWrapper .adminLogin div img, body .indexPage .loginWrapper .userLogin div img {
+    width: 18px;
+  }
+}
+
+body .indexPage .loginWrapper .adminLogin div img + p, body .indexPage .loginWrapper .userLogin div img + p {
+  font-size: 12px;
+  display: block;
+  line-height: 1;
+  margin: 5px 0 0;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .indexPage .loginWrapper .adminLogin div img + p, body .indexPage .loginWrapper .userLogin div img + p {
+    font-size: 11px;
+  }
+}
+
+body .indexPage .loginWrapper .adminLogin:hover, body .indexPage .loginWrapper .userLogin:hover {
+  box-shadow: 0 0 20px rgba(34, 34, 34, 0.3);
+  transform: scale(1.03, 1.03);
 }

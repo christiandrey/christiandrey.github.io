@@ -21,6 +21,14 @@ h1, h2, h3, h4, h5, h6 {
     background-color: $colorWhite
 }
 
+.fgWhiteTrans {
+    color: $colorWhiteTrans
+}
+
+.bgWhiteTrans {
+    background-color: $colorWhiteTrans
+}
+
 .fgPrimary {
     color: $colorPrimary
 }
@@ -29,12 +37,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: $colorPrimary
 }
 
-.fgDefault {
-    color: $colorDefault
+.fgPrimaryTrans {
+    color: $colorPrimaryTrans
 }
 
-.bgDefault {
-    background-color: $colorDefault
+.bgPrimaryTrans {
+    background-color: $colorPrimaryTrans
 }
 
 .fgAccent{
@@ -43,6 +51,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .bgAccent{
     background-color: $colorAccent
+}
+
+.fgAccentTrans{
+    color: $colorAccentTrans
+}
+
+.bgAccentTrans{
+    background-color: $colorAccentTrans
 }
 
 .fgGray {
@@ -59,6 +75,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .bgDarkGray {
     background-color: $colorDarkGray;
+}
+
+.fgTrans {
+    color: $colorTrans
+}
+
+.bgTrans {
+    background-color: $colorTrans;
 }
 
 //Animations
