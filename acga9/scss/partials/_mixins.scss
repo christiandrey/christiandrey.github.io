@@ -111,3 +111,33 @@
 	-webkit-transform: $transforms;
           transform: $transforms;
 }
+
+@mixin placeholderColor($placeholderColor, $bold:false){
+  ::-webkit-input-placeholder {
+   color: $placeholderColor;
+   @if $bold == true {
+     font-weight: bold;
+   }
+  }
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $placeholderColor;
+   @if $bold == true {
+     font-weight: bold;
+   }
+  }
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $placeholderColor;
+   @if $bold == true {
+     font-weight: bold;
+   }
+  }
+
+:-ms-input-placeholder {
+   color: $placeholderColor;
+   @if $bold == true {
+     font-weight: bold;
+   }
+  }
+}

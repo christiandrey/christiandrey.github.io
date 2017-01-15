@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 0;
   border-radius: 0px;
   font-size: 13px;
-  transition: box-shadow 0.45s;
+  transition: box-shadow 0.5s, transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .buttonBase:focus, .outlineButton:focus, .filledButton:focus {
@@ -116,7 +116,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .buttonBase:hover, .outlineButton:hover, .filledButton:hover {
-  box-shadow: 0 0 20px rgba(34, 34, 34, 0.3);
+  box-shadow: 0 0 20px rgba(34, 34, 34, 0.2);
+  transform: scale(0.97, 0.97);
+}
+
+.buttonBase:before, .outlineButton:before, .filledButton:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: width 0.5s;
+}
+
+.buttonBase:hover::before, .outlineButton:hover::before, .filledButton:hover::before {
+  width: 100%;
 }
 
 .outlineButton {
@@ -129,32 +148,64 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
+.landingWrapperModded {
+  height: 390.726px !important;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .landingWrapperModded {
+    height: 400.726px !important;
+  }
+}
+
 body {
   background: url("../img/web.acga9.image.background.jpg") center;
+  background-size: cover;
 }
 
 body .indexPage {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   display: flex;
 }
 
-body .indexPage .loginWrapper {
-  padding: 40px;
-  width: 90%;
-  margin: auto;
-  box-shadow: 0 0 20px rgba(34, 34, 34, 0.3);
+body .indexPage .loginTypeIndicator {
+  width: calc(100%+80px);
+  height: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: -40px -40px 20px;
   /* Tablets and phablets */
 }
 
 @media only screen and (min-width: 768px) {
-  body .indexPage .loginWrapper {
+  body .indexPage .loginTypeIndicator {
+    width: calc(100%+100px);
+    margin: -50px -50px 30px;
+  }
+}
+
+body .indexPage .landingWrapper {
+  padding: 40px;
+  width: 90%;
+  height: 363.750px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(34, 34, 34, 0.3);
+  transition: height 0.45s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .indexPage .landingWrapper {
     width: 350px;
     padding: 50px;
   }
 }
 
-body .indexPage .loginWrapper .brandLogo {
+body .indexPage .landingWrapper .brandLogo {
   text-align: center;
   width: 64px;
   display: block;
@@ -162,24 +213,25 @@ body .indexPage .loginWrapper .brandLogo {
   margin: 0 auto 50px;
 }
 
-body .indexPage .loginWrapper .brandLogo + div {
+body .indexPage .landingWrapper .brandLogo + div {
   margin: 0 auto 25px;
 }
 
-body .indexPage .loginWrapper .adminLogin, body .indexPage .loginWrapper .userLogin {
+body .indexPage .landingWrapper .adminLogin, body .indexPage .landingWrapper .userLogin {
   padding: 8px 0;
   display: flex;
+  position: relative;
   width: 100%;
   margin: auto;
   cursor: pointer;
-  transition: box-shadow 0.45s, transform 0.45s;
+  transition: box-shadow 0.5s, transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-body .indexPage .loginWrapper .adminLogin div, body .indexPage .loginWrapper .userLogin div {
+body .indexPage .landingWrapper .adminLogin div, body .indexPage .landingWrapper .userLogin div {
   margin: auto;
 }
 
-body .indexPage .loginWrapper .adminLogin div img, body .indexPage .loginWrapper .userLogin div img {
+body .indexPage .landingWrapper .adminLogin div img, body .indexPage .landingWrapper .userLogin div img {
   display: block;
   text-align: center;
   width: 24px;
@@ -189,12 +241,12 @@ body .indexPage .loginWrapper .adminLogin div img, body .indexPage .loginWrapper
 }
 
 @media only screen and (min-width: 768px) {
-  body .indexPage .loginWrapper .adminLogin div img, body .indexPage .loginWrapper .userLogin div img {
+  body .indexPage .landingWrapper .adminLogin div img, body .indexPage .landingWrapper .userLogin div img {
     width: 18px;
   }
 }
 
-body .indexPage .loginWrapper .adminLogin div img + p, body .indexPage .loginWrapper .userLogin div img + p {
+body .indexPage .landingWrapper .adminLogin div img + p, body .indexPage .landingWrapper .userLogin div img + p {
   font-size: 12px;
   display: block;
   line-height: 1;
@@ -203,12 +255,88 @@ body .indexPage .loginWrapper .adminLogin div img + p, body .indexPage .loginWra
 }
 
 @media only screen and (min-width: 768px) {
-  body .indexPage .loginWrapper .adminLogin div img + p, body .indexPage .loginWrapper .userLogin div img + p {
+  body .indexPage .landingWrapper .adminLogin div img + p, body .indexPage .landingWrapper .userLogin div img + p {
     font-size: 11px;
   }
 }
 
-body .indexPage .loginWrapper .adminLogin:hover, body .indexPage .loginWrapper .userLogin:hover {
-  box-shadow: 0 0 20px rgba(34, 34, 34, 0.3);
-  transform: scale(1.03, 1.03);
+body .indexPage .landingWrapper .adminLogin:hover, body .indexPage .landingWrapper .userLogin:hover {
+  transform: scale(0.97, 0.97);
+}
+
+body .indexPage .landingWrapper .adminLogin::before, body .indexPage .landingWrapper .userLogin::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: width 0.5s;
+}
+
+body .indexPage .landingWrapper .adminLogin:hover::before, body .indexPage .landingWrapper .userLogin:hover::before {
+  width: 100%;
+}
+
+body .indexPage .landingWrapper .adminFormWrapper .formHeader, body .indexPage .landingWrapper .userFormWrapper .formHeader {
+  font-size: 12px;
+  margin: 0 auto 10px;
+}
+
+body .indexPage .landingWrapper .adminFormWrapper .form .formInput, body .indexPage .landingWrapper .userFormWrapper .form .formInput {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(34, 34, 34, 0.7);
+  height: 35px;
+  font-size: 12px;
+  margin: 0 auto 15px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+body .indexPage .landingWrapper .adminFormWrapper .form .formInput:before, body .indexPage .landingWrapper .userFormWrapper .form .formInput:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: +2;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 5px;
+}
+
+body .indexPage .landingWrapper .adminFormWrapper .form ::-webkit-input-placeholder, body .indexPage .landingWrapper .userFormWrapper .form ::-webkit-input-placeholder {
+  color: rgba(34, 34, 34, 0.7);
+  font-weight: bold;
+}
+
+body .indexPage .landingWrapper .adminFormWrapper .form :-moz-placeholder, body .indexPage .landingWrapper .userFormWrapper .form :-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(34, 34, 34, 0.7);
+  font-weight: bold;
+}
+
+body .indexPage .landingWrapper .adminFormWrapper .form ::-moz-placeholder, body .indexPage .landingWrapper .userFormWrapper .form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(34, 34, 34, 0.7);
+  font-weight: bold;
+}
+
+body .indexPage .landingWrapper .adminFormWrapper .form :-ms-input-placeholder, body .indexPage .landingWrapper .userFormWrapper .form :-ms-input-placeholder {
+  color: rgba(34, 34, 34, 0.7);
+  font-weight: bold;
+}
+
+body .indexPage .landingWrapper .adminFormWrapper .form .formSubmitButton, body .indexPage .landingWrapper .userFormWrapper .form .formSubmitButton {
+  text-align: center;
+  margin: auto;
+  display: block;
 }

@@ -12,7 +12,8 @@
   </head>
   <body>
     <section class="indexPage">
-      <section class="loginWrapper bgWhiteTrans">
+      <section class="landingWrapper bgWhiteTrans">
+        <div class="loginTypeIndicator hidden"></div>
         <img src="img/web.acga9.logo.full.vertical.png" alt="" class="brandLogo">
         <div class="adminLogin fgWhite bgAccent text-center">
           <div>
@@ -26,6 +27,22 @@
             <p>User Login</p>
           </div>
         </div>
+        <div class="adminFormWrapper hidden">
+          <h6 class="formHeader fgAccent">Admin Login</h6>
+          <form action="#" class="form adminForm">
+            <input type="text" class="formInput" placeholder="Username" name="username" autofocus="true">
+            <input type="password" class="formInput" placeholder="Password" name="password">
+            <button class="formSubmitButton buttonBase filledButton bgAccent fgWhite" type="submit">Login</button>
+          </form>
+        </div>
+        <div class="userFormWrapper hidden">
+          <h6 class="formHeader fgAccent">User Login</h6>
+          <form action="#" class="form userForm">
+            <input type="text" class="formInput" placeholder="Username" name="username" autofocus="true">
+            <input type="password" class="formInput" placeholder="Password" name="password">
+            <button class="formSubmitButton buttonBase filledButton bgAccent fgWhite" type="submit">Login</button>
+          </form>
+        </div>
       </section>
     </section>
   </body>
@@ -33,4 +50,5 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/dreyanim.js"></script>
   <script src="js/dreymodal.js"></script>
+  <script src="js/index.js"></script>
 </html>
