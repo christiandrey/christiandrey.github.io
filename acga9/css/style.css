@@ -95,11 +95,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fgTrans {
-  color: rgba(0, 0, 0, 0.2);
+  color: transparent;
 }
 
 .bgTrans {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
 }
 
 .buttonBase, .outlineButton, .filledButton {
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .outlineButton {
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: transparent;
   border: solid 1px white;
 }
 
@@ -150,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .landingWrapperModded {
   height: 390.726px !important;
+  background: linear-gradient(to bottom, transparent 20px, rgba(255, 255, 255, 0.7) 20px, rgba(255, 255, 255, 0.7));
   /* Tablets and phablets */
 }
 
@@ -339,4 +340,20 @@ body .indexPage .landingWrapper .adminFormWrapper .form .formSubmitButton, body 
   text-align: center;
   margin: auto;
   display: block;
+}
+
+body .indexPage .landingWrapper .adminFormWrapper .backLink, body .indexPage .landingWrapper .userFormWrapper .backLink {
+  margin: auto;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 11px;
+  margin-top: 15px;
+  cursor: pointer;
+  display: table;
+  transition: opacity 0.45s;
+}
+
+body .indexPage .landingWrapper .adminFormWrapper .backLink:hover, body .indexPage .landingWrapper .userFormWrapper .backLink:hover {
+  opacity: 0.8;
 }
