@@ -357,3 +357,304 @@ body .indexPage .landingWrapper .adminFormWrapper .backLink, body .indexPage .la
 body .indexPage .landingWrapper .adminFormWrapper .backLink:hover, body .indexPage .landingWrapper .userFormWrapper .backLink:hover {
   opacity: 0.8;
 }
+
+body .innerPage {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+}
+
+body .innerPage .pageHeader {
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageHeader {
+    padding: 0 80px;
+  }
+}
+
+body .innerPage .pageHeader .headerItems {
+  float: right;
+  height: 100%;
+  padding: 0;
+  width: 500px;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageHeader .headerItems {
+    width: 600px;
+  }
+}
+
+body .innerPage .pageHeader .headerItems .item {
+  width: calc(100% / 3);
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  border-right: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+body .innerPage .pageHeader .headerItems .item .itemIcon {
+  height: 21px;
+  width: auto;
+  display: inline-block;
+  position: absolute;
+  z-index: +2;
+  margin: 19.5px 0 19.5px 45px;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageHeader .headerItems .item .itemIcon {
+    margin: 19.5px 0 19.5px 60px;
+  }
+}
+
+body .innerPage .pageHeader .headerItems .item .itemText {
+  font-size: 11px;
+  display: inline-block;
+  position: relative;
+  line-height: 2;
+  width: 100%;
+  text-align: center;
+  padding-left: 21px;
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+body .innerPage .pageHeader .headerItems .item:focus {
+  outline: none;
+}
+
+body .innerPage .pageHeader .headerItems .button {
+  cursor: pointer;
+  position: relative;
+}
+
+body .innerPage .pageHeader .headerItems .button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(175, 31, 60, 0.7);
+  transition: width 0.5s;
+}
+
+body .innerPage .pageHeader .headerItems .button:hover::before {
+  width: 100%;
+}
+
+body .innerPage .pageContentWrapper {
+  width: 100%;
+  height: calc(100% - 60px);
+  display: block;
+  position: relative;
+}
+
+body .innerPage .pageContentWrapper .pageNavigation {
+  width: 150px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  padding: 0;
+  position: relative;
+  overflow-y: auto;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageContentWrapper .pageNavigation {
+    width: 200px;
+  }
+}
+
+body .innerPage .pageContentWrapper .pageNavigation .brandLogo {
+  margin: 28px 40px 28px;
+  width: 70px;
+  height: auto;
+  display: block;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageContentWrapper .pageNavigation .brandLogo {
+    margin: 28px 65px 28px;
+  }
+}
+
+body .innerPage .pageContentWrapper .pageNavigation .navigationButtons {
+  width: 100%;
+  height: 240px;
+  display: block;
+  position: relative;
+}
+
+body .innerPage .pageContentWrapper .pageNavigation .navigationButtons .active {
+  background-color: rgba(175, 31, 60, 0.7);
+}
+
+body .innerPage .pageContentWrapper .pageNavigation .navigationButtons .button {
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+  height: calc(100% / 3);
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body .innerPage .pageContentWrapper .pageNavigation .navigationButtons .button .buttonIcon {
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+  margin: auto 10px auto 20px;
+  height: 17px;
+  width: auto;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageContentWrapper .pageNavigation .navigationButtons .button .buttonIcon {
+    margin: auto 20px auto 30px;
+  }
+}
+
+body .innerPage .pageContentWrapper .pageNavigation .navigationButtons .button .buttonText {
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 10px;
+  display: inline-block;
+  position: relative;
+  margin: auto 0;
+  padding: 0;
+  line-height: 1.8;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageContentWrapper .pageNavigation .navigationButtons .button .buttonText {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+body .innerPage .pageContentWrapper .pageNavigation .navigationButtons .button:last-of-type {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+body .innerPage .pageContentWrapper .pageNavigation .navigationButtons .button:focus {
+  outline: none;
+}
+
+body .innerPage .pageContentWrapper .pageNavigation .navigationButtons .button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1%;
+  height: 100%;
+  background-color: rgba(175, 31, 60, 0.7);
+  transition: width 0.5s;
+}
+
+body .innerPage .pageContentWrapper .pageNavigation .navigationButtons .button:hover::before {
+  width: 100%;
+}
+
+body .innerPage .pageContentWrapper .pageMainContent {
+  width: calc(100% - 150px);
+  height: 100%;
+  display: inline-block;
+  float: left;
+  padding: 0;
+  position: relative;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageContentWrapper .pageMainContent {
+    width: calc(100% - 200px);
+  }
+}
+
+body .innerPage .pageContentWrapper .pageMainContent .pageIcon {
+  height: 32px;
+  width: auto;
+  margin: -6px 27px 0 22px;
+  display: inline-block;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageContentWrapper .pageMainContent .pageIcon {
+    margin: -6px 48px 0 80px;
+  }
+}
+
+body .innerPage .pageContentWrapper .pageMainContent .pageTitle {
+  font-size: 23px;
+  margin: 80px auto 40px 0px;
+  display: inline-block;
+}
+
+body .innerPage .pageContentWrapper .pageMainContent .pageBodyHeader {
+  height: 20px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(34, 34, 34, 0.3);
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageContentWrapper .pageMainContent .pageBodyHeader {
+    width: calc(100% - 160px);
+  }
+}
+
+body .innerPage .pageContentWrapper .pageMainContent .pageBody {
+  height: calc(100% - 172px);
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(34, 34, 34, 0.3);
+  padding: 30px 80px 0;
+  overflow: auto;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  body .innerPage .pageContentWrapper .pageMainContent .pageBody {
+    width: calc(100% - 160px);
+  }
+}
