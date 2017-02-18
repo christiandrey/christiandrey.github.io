@@ -1,0 +1,28 @@
+// compileExpanded: ../css/style.css
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+@import "partials/base.scss";
+@import "partials/navigation.scss";
+
+.buttonBase {
+    width: 160px;
+    height: 40px;
+    padding: 5px auto;
+    border-radius: 20px;
+}
+
+.buttonBase:focus {
+    outline: none;
+}
+
+.outlineButton {
+    @extend .buttonBase;
+    color: $colorWhite;
+    background-color: $colorTrans;
+    border: solid 1px $colorWhite;
+}
+
+.filledButton {
+    @extend .buttonBase;
+    border: none
+}

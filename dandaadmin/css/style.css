@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Bd';
+  src: url("../fonts/HelveticaNeueLTPro-Bd.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Roman';
+  src: url("../fonts/HelveticaNeueLTPro-Roman.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Lt';
+  src: url("../fonts/HelveticaNeueLTPro-Lt.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+}
+
+.fgBlack {
+  color: #222222;
+}
+
+.bgBlack {
+  background-color: #222222;
+}
+
+.fgGray {
+  color: #414259;
+}
+
+.bgGray {
+  background-color: #414259;
+}
+
+.fgDark {
+  color: #2c2d3c;
+}
+
+.bgDark {
+  background-color: #2c2d3c;
+}
+
+.fgDarkGray {
+  color: #2e3244;
+}
+
+.bgDarkGray {
+  background-color: #2e3244;
+}
+
+.fgGray {
+  color: #414259;
+}
+
+.bgGray {
+  background-color: #414259;
+}
+
+.fgAccent {
+  color: #228fe3;
+}
+
+.bgAccent {
+  background-color: #228fe3;
+}
+
+.fgWhite {
+  color: #ffffff;
+}
+
+.bgWhite {
+  background-color: #ffffff;
+}
+
+.fgSuccess {
+  color: #29b75c;
+}
+
+.bgSuccess {
+  background-color: #29b75c;
+}
+
+.fgFailure {
+  color: #d81327;
+}
+
+.bgFailure {
+  background-color: #d81327;
+}
+
+.buttonBase, .outlineButton, .filledButton {
+  width: 160px;
+  height: 40px;
+  padding: 5px auto;
+  border-radius: 20px;
+}
+
+.buttonBase:focus, .outlineButton:focus, .filledButton:focus {
+  outline: none;
+}
+
+.outlineButton {
+  color: #ffffff;
+  background-color: transparent;
+  border: solid 1px #ffffff;
+}
+
+.filledButton {
+  border: none;
+}
