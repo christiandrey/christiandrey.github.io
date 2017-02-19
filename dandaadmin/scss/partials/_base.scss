@@ -8,7 +8,7 @@ body{
     // margin: 0;
     // padding: 0;
     @include font-smoothing;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.7px;
 }
 
 ::selection {
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 
 //Animations
 
-//Other Settings
+//Other Declarations
 .page {
   width: 100vw;
   height: 100vh;
@@ -121,4 +121,11 @@ h1, h2, h3, h4, h5, h6 {
       background-color: $colorDark;
     }
   }
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: lighten($colorDark, 2);
+  margin: 20px 0 20px;
 }

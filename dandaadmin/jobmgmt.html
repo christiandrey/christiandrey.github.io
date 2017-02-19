@@ -48,7 +48,7 @@
               <button class="subHeaderLink filledButton ongoingProjects">Ongoing Projects</button>
           </section>
           <section class="bodyContentsWrapper">
-            <section class="bodyContents">
+            <section class="bodyContents pendingProjectsBody hidden">
               <div class="container tableWrapper">
                 <div class="row tableHeader">
                   <div class="col-md-2">Project Title</div>
@@ -60,35 +60,311 @@
                 </div>
                 <div class="row tableBody">
                   <div id="rowIndicator" class="rowItem rowBidding"></div>
-                  <div class="col-md-2"><span class="title">The title of a very long project goes into this space</span></div>
-                  <div class="col-md-3"><span class="clientImage"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
-                  <div class="col-md-2"><span class="date">27th February, 2017</span></div>
-                  <div class="col-md-1"><span class="bids">1</span></div>
-                  <div class="col-md-3"><span class="progressAmount">0%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressBidding" style="width: 0%"></div></span></div>
+                  <div class="col-md-2 titleColumn"><span class="title">The title of a very long project goes into this space</span></div>
+                  <div class="col-md-3 clientColumn"><span class="clientImage"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-2 dateColumn"><span class="date">27th February, 2017</span></div>
+                  <div class="col-md-1 bidsColumn"><span class="bids">1</span></div>
+                  <div class="col-md-3 progressColumn"><span class="progressAmount">0%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressBidding" style="width: 0%"></div></span></div>
                   <div class="col-md-1 actionColumn"><span class="deleteButton"></span></div>
                 </div>
-
+              </div>
+            </section>
+            <section class="bodyContents ongoingProjectsBody hidden">
+              <div class="container tableWrapper">
+                <div class="row tableHeader">
+                  <div class="col-md-2">Project Title</div>
+                  <div class="col-md-3">Client</div>
+                  <div class="col-md-2">Date Posted</div>
+                  <div class="col-md-1">Status</div>
+                  <div class="col-md-3">Progress</div>
+                  <div class="col-md-1">Action</div>
+                </div>
                 <div class="row tableBody">
                   <div id="rowIndicator" class="rowItem rowPending"></div>
-                  <div class="col-md-2"><span class="title">The title of a very long project goes into this space</span></div>
-                  <div class="col-md-3"><span class="clientImage"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
-                  <div class="col-md-2"><span class="date">27th February, 2017</span></div>
-                  <div class="col-md-1"><span class="bids">1</span></div>
-                  <div class="col-md-3"><span class="progressAmount">23%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressPending" style="width: 23%"></div></span></div>
+                  <div class="col-md-2 titleColumn"><span class="title">The title of a very long project goes into this space</span></div>
+                  <div class="col-md-3 clientColumn"><span class="clientImage"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-2 dateColumn"><span class="date">27th February, 2017</span></div>
+                  <div class="col-md-1 statusColumn"><span class="status">Pending</span></div>
+                  <div class="col-md-3 progressColumn"><span class="progressAmount">23%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressPending" style="width: 23%"></div></span></div>
                   <div class="col-md-1 actionColumn"><span class="deleteButton"></span></div>
                 </div>
-
-                <div class="row tableBody">
-                  <div id="rowIndicator" class="rowItem rowCompleted"></div>
-                  <div class="col-md-2"><span class="title">The title of a very long project goes into this space</span></div>
-                  <div class="col-md-3"><span class="clientImage"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
-                  <div class="col-md-2"><span class="date">27th February, 2017</span></div>
-                  <div class="col-md-1"><span class="bids">1</span></div>
-                  <div class="col-md-3"><span class="progressAmount">100%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressCompleted" style="width: 100%"></div></span></div>
-                  <div class="col-md-1 actionColumn"><span class="deleteButton"></span></div>
-                </div>
-
               </div>
+            </section>
+            <section class="bodyContents singleProjectView">
+              <section class="leftColumn">
+                <section class="projectTitleWrapper text-center"><p class="projectTitle">The title of a very long project goes into this space.</p></section>
+                <section class="projectDetailsWrapper">
+                  <section class="projectDetails">
+                    <p class="textHeader">Number of requested drawings</p>
+                    <p class="projectRequestedDrawings">5 drawings were requested.</p>
+                    <div class="divider"></div>
+                    <p class="textHeader">Short Description</p>
+                    <p class="projectShortDescription">Short Description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto error, sapiente. Eos, eveniet sit molestiae accusantium quod maxime vitae sequi autem tenetur, aspernatur error provident cupiditate, enim modi assumenda aut?</p>
+                    <div class="divider"></div>
+                    <p class="textHeader">Date Posted</p>
+                    <p class="projectDate">27th February, 2017</p>
+                    <div class="divider"></div>
+                    <p class="textHeader">Progress Report</p>
+                    <p class="projectStatus pendingStatus">Pending</p>
+                    <span class="progressAmount">23%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressPending" style="width: 23%"></div></span>
+                    <p class="projectNotes">The designer was selected on <span class="fgAccent">27th February, 2017</span> at <span class="fgSuccess">03:56pm</span>. Time left for project completion is <span class="fgAccent">3 days and 16 hours</span>.</p>
+                    <div class="divider"></div>
+                    <p class="textHeader">Client</p>
+                    <div class="userItem clientUserItem">
+                      <div class="userIconWrapper">
+                        <div class="clientIcon userIcon"></div>
+                      </div>
+                      <div class="userNameWrapper"><span class="clientName userName">Client Name goes here</span></div>
+                      <div class="actionButtonWrapper">
+                        <div class="menuTrigger">
+                          <div class="box"></div>
+                          <div class="box"></div>
+                          <div class="box"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="textHeader">Bidders <span class="projectBiddersCount fgWhite">(4)</span></p>
+                    <p class="subtextHeader">The designer that has been selected by the client is marked by a green dot.</p>
+                    <div class="userItem designerUserItem approved">
+                      <div class="userIconWrapper">
+                        <div class="clientIcon userIcon"></div>
+                      </div>
+                      <div class="userNameWrapper"><span class="clientName userName">Client Name goes here</span></div>
+                      <div class="actionButtonWrapper">
+                        <div class="menuTrigger">
+                          <div class="box"></div>
+                          <div class="box"></div>
+                          <div class="box"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="userItem designerUserItem unapproved">
+                      <div class="userIconWrapper">
+                        <div class="clientIcon userIcon"></div>
+                      </div>
+                      <div class="userNameWrapper"><span class="clientName userName">Client Name goes here</span></div>
+                      <div class="actionButtonWrapper">
+                        <div class="menuTrigger">
+                          <div class="box"></div>
+                          <div class="box"></div>
+                          <div class="box"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="userItem designerUserItem unapproved">
+                      <div class="userIconWrapper">
+                        <div class="clientIcon userIcon"></div>
+                      </div>
+                      <div class="userNameWrapper"><span class="clientName userName">Client Name goes here</span></div>
+                      <div class="actionButtonWrapper">
+                        <div class="menuTrigger">
+                          <div class="box"></div>
+                          <div class="box"></div>
+                          <div class="box"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="userItem designerUserItem unapproved">
+                      <div class="userIconWrapper">
+                        <div class="clientIcon userIcon"></div>
+                      </div>
+                      <div class="userNameWrapper"><span class="clientName userName">Client Name goes here</span></div>
+                      <div class="actionButtonWrapper">
+                        <div class="menuTrigger">
+                          <div class="box"></div>
+                          <div class="box"></div>
+                          <div class="box"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="textHeader">Conversation</p>
+                    <button class="filledButton bgGray fgWhite viewConversation">VIEW CONVERSATION</button>
+                    <div class="divider"></div>
+                    <p class="textHeader">Floor Plans <span class="projectFloorPlansCount fgWhite">(3)</span></p>
+                    <div class="imageItem">
+                      <div class="top">
+                        <img src="img/default.png" alt="" class="imageElement">
+                      </div>
+                      <div class="bottom">
+                        <span class="polka bgAccent"></span>
+                        <span class="polka bgSuccess"></span>
+                      </div>
+                    </div>
+                    <div class="imageItem">
+                      <div class="top">
+                        <img src="img/default.png" alt="" class="imageElement">
+                      </div>
+                      <div class="bottom">
+                        <span class="polka bgAccent"></span>
+                        <span class="polka bgSuccess"></span>
+                      </div>
+                    </div>
+                    <div class="imageItem">
+                      <div class="top">
+                        <img src="img/default.png" alt="" class="imageElement">
+                      </div>
+                      <div class="bottom">
+                        <span class="polka bgAccent"></span>
+                        <span class="polka bgSuccess"></span>
+                      </div>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="textHeader">Exchanged Files <span class="projectExchangedFilesCount fgWhite">(4)</span></p>
+                    <div class="imageItem">
+                      <div class="top">
+                        <img src="img/default.png" alt="" class="imageElement">
+                      </div>
+                      <div class="bottom">
+                        <span class="polka bgAccent"></span>
+                        <span class="polka bgSuccess"></span>
+                      </div>
+                    </div>
+                    <div class="imageItem">
+                      <div class="top">
+                        <img src="img/default.png" alt="" class="imageElement">
+                      </div>
+                      <div class="bottom">
+                        <span class="polka bgAccent"></span>
+                        <span class="polka bgSuccess"></span>
+                      </div>
+                    </div>
+                    <div class="imageItem">
+                      <div class="top">
+                        <img src="img/default.png" alt="" class="imageElement">
+                      </div>
+                      <div class="bottom">
+                        <span class="polka bgAccent"></span>
+                        <span class="polka bgSuccess"></span>
+                      </div>
+                    </div>
+                    <div class="imageItem">
+                      <div class="top">
+                        <img src="img/default.png" alt="" class="imageElement">
+                      </div>
+                      <div class="bottom">
+                        <span class="polka bgAccent"></span>
+                        <span class="polka bgSuccess"></span>
+                      </div>
+                    </div>
+                  </section>
+                </section>
+              </section>
+              <section class="rightColumn">
+                <section class="emptyColumn hidden">
+                  <div class="emptyContentWrapper text-center">
+                    <div class="emptyIcon"></div>
+                    <p class="emptyText">Nothing to show.</p>
+                    <p class="emptySubText">Select an item on the left panel to display here.</p>
+                  </section>
+                </div>
+                <section class="conversationsColumn hidden">
+                  <p class="conversationsTitle">Conversations <span class="lastActivity">Last Activity: 26/02/2017, 03:56pm</span></p>
+                  <div class="conversationsBox">
+                    <div class="clientMessage">
+                      <div class="iconWrapper">
+                        <div class="icon"><img src="img/profile.jpg" alt=""></div>
+                      </div>
+                      <div class="messageWrapper">
+                        <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
+                      </div>
+                    </div>
+                    <div class="designerMessage">
+                      <div class="iconWrapper">
+                        <div class="icon"></div>
+                      </div>
+                      <div class="messageWrapper">
+                        <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
+                      </div>
+                    </div>
+                    <div class="designerMessage">
+                      <div class="iconWrapper">
+                        <div class="icon"></div>
+                      </div>
+                      <div class="messageWrapper">
+                        <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
+                      </div>
+                    </div>
+                    <div class="clientMessage">
+                      <div class="iconWrapper">
+                        <div class="icon"></div>
+                      </div>
+                      <div class="messageWrapper">
+                        <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
+                      </div>
+                    </div>
+                    <div class="designerMessage">
+                      <div class="iconWrapper">
+                        <div class="icon"></div>
+                      </div>
+                      <div class="messageWrapper">
+                        <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
+                      </div>
+                    </div>
+                    <div class="designerMessage">
+                      <div class="iconWrapper">
+                        <div class="icon"></div>
+                      </div>
+                      <div class="messageWrapper">
+                        <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
+                      </div>
+                    </div>
+                    <div class="clientMessage">
+                      <div class="iconWrapper">
+                        <div class="icon"></div>
+                      </div>
+                      <div class="messageWrapper">
+                        <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
+                      </div>
+                    </div>
+                    <div class="designerMessage">
+                      <div class="iconWrapper">
+                        <div class="icon"></div>
+                      </div>
+                      <div class="messageWrapper">
+                        <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="imageViewerColumn hidden">
+                  <p class="imageViewerTitle">Image Viewer <span class="sentDate">Sent on: 26/02/2017, 03:56pm</span></p>
+                  <div class="imageBoxWrapper">
+                    <div class="imageBox"></div>
+                    <div class="imageBoxControls">
+                      <div class="previous">&larr;</div>
+                      <div class="next">&rarr;</div>
+                    </div>
+                  </div>
+                </section>
+                <section class="profileViewerColumn">
+                  <section class="top">
+                    <section class="profileContentWrapper text-center">
+                      <div class="profileImgBg">
+                        <div>
+                          <div>
+                            <img src="img/profile.jpg" alt="" class="profileImg">
+                          </div>
+                        </div>
+                      </div>
+                      <p class="profileName">Mr. Johnny Doe</p>
+                      <p class="profileType clientType">Designer</p>
+                    </section>
+                  </section>
+                  <section class="middle">
+                    <section class="left  text-center">
+                      <p class="title">Total Jobs Approved For</p>
+                      <p class="subTitle fgAccent">23</p>
+                    </section>
+                    <section class="right text-center">
+                      <p class="title">Jobs Completed</p>
+                      <p class="subTitle fgAccent">11</p>
+                    </section>
+                  </section>
+                  <section class="bottom bgAccent"></section>
+                </section>
+              </section>
             </section>
           </section>
         </section>
