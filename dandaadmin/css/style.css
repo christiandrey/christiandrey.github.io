@@ -21,10 +21,15 @@
 
 body {
   font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+  background-color: #2c2d3c;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.4px;
+}
+
+::selection {
+  background-color: #dadee5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -80,11 +85,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fgWhite {
-  color: #ffffff;
+  color: #dadee5;
 }
 
 .bgWhite {
-  background-color: #ffffff;
+  background-color: #dadee5;
 }
 
 .fgSuccess {
@@ -103,6 +108,134 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #d81327;
 }
 
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.page .navDivision {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  z-index: +2;
+}
+
+.page .bodyDivision {
+  width: 100%;
+  height: calc(100% - 70px);
+}
+
+.page .bodyDivision .mainBody {
+  width: calc(100% - 70px);
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  float: left;
+  background-color: #2c2d3c;
+}
+
+.pageNav {
+  width: 100%;
+  height: 100%;
+  background-color: #2e3244;
+  box-shadow: 0px 5px 20px #2c2d3c;
+}
+
+.pageNav .brandLogo {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0 10px 70px;
+  display: inline-block;
+  float: left;
+  border-radius: 50px;
+  background-color: #414259;
+}
+
+.pageNav .brandName {
+  margin: 25px 0px 25px 25px;
+  font-size: 20px;
+  height: 20px;
+  float: left;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  display: inline-block;
+  line-height: 1;
+  color: #dadee5;
+}
+
+.pageNav .userDetails {
+  width: auto;
+  height: 100%;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  margin-right: 70px;
+}
+
+.pageNav .userDetails .adminEmail {
+  font-size: 12px;
+  height: 12px;
+  line-height: 1;
+  color: #dadee5;
+  display: inline;
+  margin: 29px 0;
+}
+
+.pageNav .userDetails .userAvatar {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0 10px 30px;
+  display: inline;
+  border-radius: 50px;
+  background-color: #414259;
+}
+
+.pageNav .userDetails .menuTrigger {
+  width: 5px;
+  height: 25px;
+  margin: 22.5px 0 22.5px 30px;
+  display: inline;
+  cursor: pointer;
+}
+
+.pageNav .userDetails .menuTrigger .box {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #228fe3;
+}
+
+.pageNav .userDetails .menuTrigger .box:last-of-type {
+  margin-bottom: 0;
+}
+
+.sideNav {
+  width: 70px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  background-color: #2e3244;
+}
+
+.sideNav .sideNavItemWrapper {
+  width: 70px;
+  height: 80px;
+  overflow: auto;
+}
+
+.sideNav .sideNavItemWrapper .sideNavItem {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin: 25px 20px;
+  background-color: #414259;
+  cursor: pointer;
+}
+
+.sideNav .sideNavItemWrapper .active {
+  background-color: #dadee5 !important;
+}
+
 .buttonBase, .outlineButton, .filledButton {
   width: 160px;
   height: 40px;
@@ -115,11 +248,310 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .outlineButton {
-  color: #ffffff;
+  color: #dadee5;
   background-color: transparent;
-  border: solid 1px #ffffff;
+  border: solid 1px #dadee5;
 }
 
 .filledButton {
   border: none;
+}
+
+.indexPage .bodyDivision {
+  display: flex;
+}
+
+.indexPage .bodyDivision .loginWrapper {
+  width: 300px;
+  height: 350px;
+  margin: auto;
+  background-color: #2c2d3c;
+  border-radius: 5px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.indexPage .bodyDivision .loginWrapper .loginTop {
+  width: 100%;
+  height: 80%;
+  display: block;
+  overflow: auto;
+  background-color: #2e3244;
+  box-shadow: 0px 5px 20px #2c2d3c;
+  border-bottom: dashed 2px #414259;
+}
+
+.indexPage .bodyDivision .loginWrapper .loginTop .loginIcon {
+  margin: 30px auto;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  background-color: #414259;
+}
+
+.indexPage .bodyDivision .loginWrapper .loginTop .loginForm {
+  width: 80%;
+  margin: 45px auto 0;
+}
+
+.indexPage .bodyDivision .loginWrapper .loginTop .loginForm input {
+  width: 100%;
+  font-size: 13px;
+  height: 40px;
+  border-radius: 40px;
+  padding-left: 15px;
+  margin: 8px 0;
+  color: #dadee5;
+  background-color: #2c2d3c;
+  outline: none;
+  border: none;
+}
+
+.indexPage .bodyDivision .loginWrapper .loginBottom {
+  width: 100%;
+  height: 20%;
+  display: block;
+  background-color: #414259;
+  padding: 15px 70px;
+}
+
+.dashboardPage .tasksWrapper {
+  width: 100%;
+  height: 350px;
+  margin: auto;
+}
+
+.dashboardPage .tasksWrapper .task {
+  width: calc(100% / 3);
+  height: 350px;
+  float: left;
+  background-color: #2c2d3c;
+}
+
+.dashboardPage .tasksWrapper .task .taskTop {
+  width: 300px;
+  margin: auto;
+  height: 80%;
+  background-color: #2e3244;
+  display: block;
+  border-bottom: dashed 2px #414259;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: auto;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboardPage .tasksWrapper .task .taskTop .taskIcon {
+  margin: 30px auto;
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 70px;
+  background-color: #414259;
+}
+
+.dashboardPage .tasksWrapper .task .taskTop .taskTitle {
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+.dashboardPage .tasksWrapper .task .taskTop .taskSubtitle {
+  color: #dadee5;
+  font-size: 12px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  line-height: 1.2;
+}
+
+.dashboardPage .tasksWrapper .task .taskBottom {
+  width: 300px;
+  margin: auto;
+  height: 20%;
+  display: block;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboardPage .tasksWrapper .task > div {
+  width: 300px;
+  margin: auto;
+  height: 100%;
+  cursor: pointer;
+  transition: box-shadow 0.5s, transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.dashboardPage .tasksWrapper .task > div::hover {
+  transform: scale(1.2, 1.2);
+}
+
+.jobMgmtPage .mainBody .subHeader {
+  width: 100%;
+  height: 70px;
+  display: block;
+  position: relative;
+  z-index: +1;
+  background-color: #228fe3;
+  box-shadow: 0px 5px 20px #2c2d3c;
+  overflow: auto;
+}
+
+.jobMgmtPage .mainBody .subHeader .subHeaderLink {
+  font-size: 12px;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  line-height: 1;
+  color: #2c2d3c;
+  display: inline-block;
+  margin: 15px 20px 15px 0;
+  background-color: transparent;
+  transition: background-color 0.2s ease-out;
+}
+
+.jobMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
+  margin-left: 75px;
+}
+
+.jobMgmtPage .mainBody .subHeader .subHeaderLink:hover {
+  background-color: #414259;
+  color: #dadee5;
+}
+
+.jobMgmtPage .mainBody .subHeader .active {
+  color: #dadee5;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper {
+  width: 100%;
+  height: calc(100% - 70px);
+  display: block;
+  overflow: auto;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents {
+  width: calc(100% - 145px);
+  height: 1200px;
+  margin: 30px 70px 30px 75px;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableHeader, .jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody {
+  color: #9ea9bb;
+  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+  font-size: 11px;
+  margin: 0;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody {
+  color: #dadee5;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background-color: #414259;
+  border-radius: 3px;
+  margin: 15px 0  0;
+  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .rowCompleted {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 70px;
+  width: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .rowBidding {
+  background-color: #dadee5;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .rowPending {
+  background-color: #228fe3;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .rowCompleted {
+  background-color: #29b75c;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .clientImage {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #2e3244;
+  float: left;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .clientImage + .client {
+  display: inline-block;
+  margin-left: 10px;
+  height: 30px;
+  padding-top: 9.5px;
+  line-height: 1;
+  float: left;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .progressAmount {
+  display: inline-block;
+  width: 30px;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .progressIndicator {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 5px;
+  margin-left: 10px;
+  margin-top: 4.5px;
+  vertical-align: top;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .progressIndicator .progressBase {
+  width: 100%;
+  height: 100%;
+  background-color: #575876;
+  border-radius: 10px;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .progressIndicator .progressCurrent {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .progressIndicator .progressBidding {
+  background-color: #dadee5;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .progressIndicator .progressPending {
+  background-color: #228fe3;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody .progressIndicator .progressCompleted {
+  background-color: #29b75c;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody div:not(#rowIndicator):not(.actionColumn):not(.deleteButton):not(.progressAmount):not(.progressBase):not(.progressCurrent) {
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents .tableWrapper .tableBody:last-child .deleteButton {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 15px;
+  margin-top: 20px;
+  background-color: #2e3244;
 }

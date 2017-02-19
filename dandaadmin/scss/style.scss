@@ -26,3 +26,315 @@
     @extend .buttonBase;
     border: none
 }
+
+.indexPage {
+  .bodyDivision {
+    display: flex;
+
+    .loginWrapper {
+      width: 300px;
+      height: 350px;
+      margin: auto;
+      background-color: $colorDark;
+      border-radius: 5px;
+      box-shadow: 0px 4px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+
+      .loginTop {
+        width: 100%;
+        height: 80%;
+        display: block;
+        // padding-top: 1px;
+        // margin-top: -1px;
+        overflow: auto;
+        background-color: $colorDarkGray;
+        box-shadow: 0px 5px 20px $colorDark;
+        border-bottom: dashed 2px $colorGray;
+
+        .loginIcon {
+          margin: 30px auto;
+          display: block;
+          width: 70px;
+          height: 70px;
+          border-radius: 50px;
+          background-color: $colorGray;
+        }
+
+        .loginForm {
+          width: 80%;
+          margin: 45px auto 0;
+
+          input {
+            width: 100%;
+            font-size: 13px;
+            height: 40px;
+            border-radius: 40px;
+            padding-left: 15px;
+            margin: 8px 0;
+            color: $colorWhite;
+            background-color: $colorDark;
+            outline: none;
+            border: none;
+          }
+
+        }
+      }
+
+      .loginBottom {
+        width: 100%;
+        height: 20%;
+        display: block;
+        background-color: $colorGray;
+        padding: 15px 70px;
+        // border-bottom: solid 2px $colorSuccess;
+      }
+    }
+  }
+}
+
+.dashboardPage {
+  .tasksWrapper {
+    width: 100%;
+    height: 350px;
+    margin: auto;
+
+    .task {
+      width: calc(100% / 3);
+      height: 350px;
+      float: left;
+      background-color: $colorDark;
+
+      .taskTop {
+        width: 300px;
+        margin: auto;
+        height: 80%;
+        background-color: $colorDarkGray;
+        display: block;
+        border-bottom: dashed 2px $colorGray;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        overflow: auto;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+
+        .taskIcon {
+          margin: 30px auto;
+          display: block;
+          width: 120px;
+          height: 120px;
+          border-radius: 70px;
+          background-color: $colorGray;
+        }
+
+        .taskTitle {
+          font-family: $headerFont;
+          font-size: 22px;
+          text-align: center;
+          // color: $colorWhite
+        }
+
+        .taskSubtitle {
+          color: $colorWhite;
+          font-size: 12px;
+          text-align: center;
+          width: 80%;
+          margin:auto;
+          line-height: 1.2;
+        }
+      }
+
+      .taskBottom {
+        width: 300px;
+        margin: auto;
+        height: 20%;
+        display: block;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .task > div {
+      width: 300px;
+      margin: auto;
+      height: 100%;
+      cursor: pointer;
+      transition: box-shadow 0.5s, transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .task > div::hover {
+      transform:scale(1.2,1.2);
+    }
+  }
+}
+
+.jobMgmtPage {
+  .mainBody {
+    .subHeader {
+      width: 100%;
+      height: 70px;
+      display: block;
+      position: relative;
+      z-index: +1;
+      background-color: $colorAccent;
+      box-shadow: 0px 5px 20px $colorDark;
+      overflow: auto;
+
+      .subHeaderLink {
+        font-size: 12px;
+        font-family: $headerFont;
+        line-height: 1;
+        color: $colorDark;
+        display: inline-block;
+        margin: 15px 20px 15px 0;
+        background-color: $colorTrans;
+        transition: background-color 0.2s ease-out;
+      }
+
+      .subHeaderLink:first-of-type{
+        margin-left: 75px
+      }
+
+      .subHeaderLink:hover {
+        background-color: $colorGray;
+        color: $colorWhite;
+      }
+
+      .active {
+        color: $colorWhite;
+      }
+    }
+
+    .bodyContentsWrapper {
+      width: 100%;
+      height: calc(100% - 70px);
+      display: block;
+      overflow: auto;
+
+      .bodyContents {
+        width: calc(100% - 145px);
+        height: 1200px;
+        margin: 30px 70px 30px 75px;
+
+        .tableWrapper {
+          .tableHeader {
+            color: darken($colorWhite, 20);
+            font-family: $bodyFont;
+            font-size: 11px;
+            margin: 0;
+          }
+
+          .tableBody {
+            @extend .tableHeader;
+            color: $colorWhite;
+            position: relative;
+            height: 70px;
+            width: 100%;
+            background-color: $colorGray;
+            border-radius: 3px;
+            margin: 15px 0  0;
+            box-shadow: 0px 3px 5px rgba(34,34,34,0.1);
+
+            .rowIndicator {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              height: 70px;
+              width: 3px;
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px;
+            }
+
+            .rowBidding {
+              @extend .rowIndicator;
+              background-color: $colorWhite
+            }
+
+            .rowPending {
+              @extend .rowIndicator;
+              background-color: $colorAccent
+            }
+
+            .rowCompleted {
+              @extend .rowIndicator;
+              background-color: $colorSuccess
+            }
+
+            .clientImage {
+              width: 30px;
+              height: 30px;
+              display: inline-block;
+              border-radius: 15px;
+              background-color: $colorDarkGray;
+              float: left;
+            }
+
+            .clientImage + .client {
+              display: inline-block;
+              margin-left: 10px;
+              height: 30px;
+              padding-top: 9.5px;
+              line-height: 1;
+              float: left;
+            }
+
+            .progressAmount {
+              display: inline-block;
+              width: 30px;
+            }
+
+            .progressIndicator {
+              display: inline-block;
+              position: relative;
+              width: 200px;
+              height: 5px;
+              margin-left: 10px;
+              margin-top: 4.5px;
+              vertical-align: top;
+
+              .progressBase {
+                width: 100%;
+                height: 100%;
+                background-color: lighten($colorGray, 10);
+                border-radius: 10px;
+              }
+
+              .progressCurrent {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 10px;
+                // margin-top: -5px;
+              }
+
+              .progressBidding {
+                background-color: $colorWhite
+              }
+
+              .progressPending {
+                background-color: $colorAccent
+              }
+
+              .progressCompleted {
+                background-color: $colorSuccess
+              }
+            }
+          }
+
+          .tableBody div:not(#rowIndicator, .actionColumn, .deleteButton, .progressAmount, .progressBase, .progressCurrent) {
+            @include center(y);
+          }
+
+          .tableBody:last-child .deleteButton {
+            width: 30px;
+            height: 30px;
+            display: block;
+            border-radius: 15px;
+            margin-top: 20px;
+            background-color: $colorDarkGray;
+          }
+        }
+      }
+    }
+  }
+}

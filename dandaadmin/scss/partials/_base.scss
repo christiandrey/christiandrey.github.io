@@ -1,5 +1,6 @@
 body{
     font-family: $bodyFont;
+     background-color: $colorDark;
     // height: 100vh;
     // width: 100vw;
     // max-width: 100%;
@@ -8,6 +9,10 @@ body{
     // padding: 0;
     @include font-smoothing;
     letter-spacing: 0.4px;
+}
+
+::selection {
+  background-color: $colorWhite;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -87,3 +92,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 //Animations
+
+//Other Settings
+.page {
+  width: 100vw;
+  height: 100vh;
+
+  .navDivision {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    z-index: +2;
+
+  }
+
+  .bodyDivision {
+    width: 100%;
+    height: calc(100% - 70px);
+    // z-index: -1;
+
+
+    .mainBody {
+      width: calc(100% - 70px);
+      height: 100%;
+      display: inline-flex;
+      flex-direction: column;
+      float: left;
+      background-color: $colorDark;
+    }
+  }
+}
