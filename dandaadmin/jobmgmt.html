@@ -12,13 +12,54 @@
   </head>
   <body>
     <section class="page jobMgmtPage">
+      <section class="modalsDivision hidden">
+        <div class="confirmDeleteModal hidden">
+          <div class="top text-center clearfix">
+            <div class="modalIcon"><img src="" alt=""></div>
+            <p class="modalTitle">Are you sure you want to delete this user?</p>
+          </div>
+          <div class="bottom">
+            <div class="confirmButtonsWrapper">
+              <div class="button cancelButton"></div>
+              <div class="button confirmButton"></div>
+            </div>
+          </div>
+        </div>
+        <div class="userViewModal hidden">
+          <div class="closeBtn"><img src="img/icon.close.png" alt="Close"></div>
+          <section class="top">
+            <section class="profileContentWrapper text-center">
+              <div class="profileImgBg">
+                <div>
+                  <div>
+                    <img src="img/profile.jpg" alt="" class="profileImg">
+                  </div>
+                </div>
+              </div>
+              <p class="profileName">Mr. Johnny Doe</p>
+              <p class="profileType clientType">Designer</p>
+            </section>
+          </section>
+          <section class="middle">
+            <section class="left  text-center">
+              <p class="title">Total Jobs Approved For</p>
+              <p class="subTitle fgAccent">23</p>
+            </section>
+            <section class="right text-center">
+              <p class="title">Jobs Completed</p>
+              <p class="subTitle fgAccent">11</p>
+            </section>
+          </section>
+          <section class="bottom bgAccent"></section>
+        </div>
+      </section>
       <section class="navDivision">
         <div class="pageNav">
-          <div class="brandLogo"></div>
-          <p class="brandName">D&A Admin</p>
+          <div class="brandLogo"><a href="index.html"><img src="img/brandLogo.jpg" alt="Brand Logo"></a></div>
+          <a href="index.html"><p class="brandName">D&A Admin</p></a>
           <section class="userDetails text-right">
             <p class="adminEmail">admin@dandaarchi.com</p>
-            <div class="userAvatar"></div>
+            <div class="userAvatar"><img src="img/profile.jpg" alt="User Avatar" class="userAvatar"></div>
             <div class="menuTrigger">
               <div class="box"></div>
               <div class="box"></div>
@@ -48,7 +89,7 @@
               <button class="subHeaderLink filledButton ongoingProjects">Ongoing Projects</button>
           </section>
           <section class="bodyContentsWrapper">
-            <section class="bodyContents pendingProjectsBody hidden">
+            <section class="bodyContents pendingProjectsBody">
               <div class="container tableWrapper">
                 <div class="row tableHeader">
                   <div class="col-md-2">Project Title</div>
@@ -61,7 +102,7 @@
                 <div class="row tableBody">
                   <div id="rowIndicator" class="rowItem rowBidding"></div>
                   <div class="col-md-2 titleColumn"><span class="title">The title of a very long project goes into this space</span></div>
-                  <div class="col-md-3 clientColumn"><span class="clientImage"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile2.jpg" alt="Client Avatar"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
                   <div class="col-md-2 dateColumn"><span class="date">27th February, 2017</span></div>
                   <div class="col-md-1 bidsColumn"><span class="bids">1</span></div>
                   <div class="col-md-3 progressColumn"><span class="progressAmount">0%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressBidding" style="width: 0%"></div></span></div>
@@ -82,15 +123,34 @@
                 <div class="row tableBody">
                   <div id="rowIndicator" class="rowItem rowPending"></div>
                   <div class="col-md-2 titleColumn"><span class="title">The title of a very long project goes into this space</span></div>
-                  <div class="col-md-3 clientColumn"><span class="clientImage"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile2.jpg" alt="Client Avatar"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
                   <div class="col-md-2 dateColumn"><span class="date">27th February, 2017</span></div>
                   <div class="col-md-1 statusColumn"><span class="status">Pending</span></div>
                   <div class="col-md-3 progressColumn"><span class="progressAmount">23%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressPending" style="width: 23%"></div></span></div>
                   <div class="col-md-1 actionColumn"><span class="deleteButton"></span></div>
                 </div>
+                <div class="row tableBody">
+                  <div id="rowIndicator" class="rowItem rowBidding"></div>
+                  <div class="col-md-2 titleColumn"><span class="title">The title of a very long project goes into this space</span></div>
+                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile.jpg" alt="Client Avatar"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-2 dateColumn"><span class="date">27th February, 2017</span></div>
+                  <div class="col-md-1 statusColumn"><span class="status">Bidding</span></div>
+                  <div class="col-md-3 progressColumn"><span class="progressAmount">3%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressBidding" style="width: 3%"></div></span></div>
+                  <div class="col-md-1 actionColumn"><span class="deleteButton"></span></div>
+                </div>
+                <div class="row tableBody">
+                  <div id="rowIndicator" class="rowItem rowCompleted"></div>
+                  <div class="col-md-2 titleColumn"><span class="title">The title of a very long project goes into this space</span></div>
+                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile2.jpg" alt="Client Avatar"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-2 dateColumn"><span class="date">27th February, 2017</span></div>
+                  <div class="col-md-1 statusColumn"><span class="status">Completed</span></div>
+                  <div class="col-md-3 progressColumn"><span class="progressAmount">100%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressCompleted" style="width: 100%"></div></span></div>
+                  <div class="col-md-1 actionColumn"><span class="deleteButton"></span></div>
+                </div>
               </div>
             </section>
-            <section class="bodyContents singleProjectView">
+            <section class="bodyContents singleProjectView hidden">
+              <button class="backButton filledButton fgWhite bgAccent">&larr; Back to home</button>
               <section class="leftColumn">
                 <section class="projectTitleWrapper text-center"><p class="projectTitle">The title of a very long project goes into this space.</p></section>
                 <section class="projectDetailsWrapper">
@@ -112,7 +172,7 @@
                     <p class="textHeader">Client</p>
                     <div class="userItem clientUserItem">
                       <div class="userIconWrapper">
-                        <div class="clientIcon userIcon"></div>
+                        <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
                       <div class="userNameWrapper"><span class="clientName userName">Client Name goes here</span></div>
                       <div class="actionButtonWrapper">
@@ -121,6 +181,10 @@
                           <div class="box"></div>
                           <div class="box"></div>
                         </div>
+                        <ul class="menuBox hidden">
+                          <li>Remove from job</li>
+                          <li>Delete from Database</li>
+                        </ul>
                       </div>
                     </div>
                     <div class="divider"></div>
@@ -128,54 +192,70 @@
                     <p class="subtextHeader">The designer that has been selected by the client is marked by a green dot.</p>
                     <div class="userItem designerUserItem approved">
                       <div class="userIconWrapper">
-                        <div class="clientIcon userIcon"></div>
+                        <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
-                      <div class="userNameWrapper"><span class="clientName userName">Client Name goes here</span></div>
+                      <div class="userNameWrapper"><span class="designerName userName">Designer Name goes here</span></div>
                       <div class="actionButtonWrapper">
                         <div class="menuTrigger">
                           <div class="box"></div>
                           <div class="box"></div>
                           <div class="box"></div>
                         </div>
+                        <ul class="menuBox hidden">
+                          <li>Remove from job</li>
+                          <li>Delete from Database</li>
+                        </ul>
                       </div>
                     </div>
                     <div class="userItem designerUserItem unapproved">
                       <div class="userIconWrapper">
-                        <div class="clientIcon userIcon"></div>
+                        <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
-                      <div class="userNameWrapper"><span class="clientName userName">Client Name goes here</span></div>
+                      <div class="userNameWrapper"><span class="designerName userName">Designer Name goes here</span></div>
                       <div class="actionButtonWrapper">
                         <div class="menuTrigger">
                           <div class="box"></div>
                           <div class="box"></div>
                           <div class="box"></div>
                         </div>
+                        <ul class="menuBox hidden">
+                          <li>Remove from job</li>
+                          <li>Delete from Database</li>
+                        </ul>
                       </div>
                     </div>
                     <div class="userItem designerUserItem unapproved">
                       <div class="userIconWrapper">
-                        <div class="clientIcon userIcon"></div>
+                        <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
-                      <div class="userNameWrapper"><span class="clientName userName">Client Name goes here</span></div>
+                      <div class="userNameWrapper"><span class="designerName userName">Designer Name goes here</span></div>
                       <div class="actionButtonWrapper">
                         <div class="menuTrigger">
                           <div class="box"></div>
                           <div class="box"></div>
                           <div class="box"></div>
                         </div>
+                        <ul class="menuBox hidden">
+                          <li>Remove from job</li>
+                          <li>Delete from Database</li>
+                        </ul>
                       </div>
                     </div>
                     <div class="userItem designerUserItem unapproved">
                       <div class="userIconWrapper">
-                        <div class="clientIcon userIcon"></div>
+                        <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
-                      <div class="userNameWrapper"><span class="clientName userName">Client Name goes here</span></div>
+                      <div class="userNameWrapper"><span class="designerName userName">Designer Name goes here</span></div>
                       <div class="actionButtonWrapper">
                         <div class="menuTrigger">
                           <div class="box"></div>
                           <div class="box"></div>
                           <div class="box"></div>
                         </div>
+                        <ul class="menuBox hidden">
+                          <li>Remove from job</li>
+                          <li>Delete from Database</li>
+                        </ul>
                       </div>
                     </div>
                     <div class="divider"></div>
@@ -252,7 +332,7 @@
                 </section>
               </section>
               <section class="rightColumn">
-                <section class="emptyColumn hidden">
+                <section class="emptyColumn">
                   <div class="emptyContentWrapper text-center">
                     <div class="emptyIcon"></div>
                     <p class="emptyText">Nothing to show.</p>
@@ -272,7 +352,7 @@
                     </div>
                     <div class="designerMessage">
                       <div class="iconWrapper">
-                        <div class="icon"></div>
+                        <div class="icon"><img src="img/profile2.jpg" alt=""></div>
                       </div>
                       <div class="messageWrapper">
                         <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
@@ -280,7 +360,7 @@
                     </div>
                     <div class="designerMessage">
                       <div class="iconWrapper">
-                        <div class="icon"></div>
+                        <div class="icon"><img src="img/profile2.jpg" alt=""></div>
                       </div>
                       <div class="messageWrapper">
                         <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
@@ -288,7 +368,7 @@
                     </div>
                     <div class="clientMessage">
                       <div class="iconWrapper">
-                        <div class="icon"></div>
+                        <div class="icon"><img src="img/profile.jpg" alt=""></div>
                       </div>
                       <div class="messageWrapper">
                         <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
@@ -296,7 +376,7 @@
                     </div>
                     <div class="designerMessage">
                       <div class="iconWrapper">
-                        <div class="icon"></div>
+                        <div class="icon"><img src="img/profile2.jpg" alt=""></div>
                       </div>
                       <div class="messageWrapper">
                         <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
@@ -304,7 +384,7 @@
                     </div>
                     <div class="designerMessage">
                       <div class="iconWrapper">
-                        <div class="icon"></div>
+                        <div class="icon"><img src="img/profile2.jpg" alt=""></div>
                       </div>
                       <div class="messageWrapper">
                         <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
@@ -312,7 +392,7 @@
                     </div>
                     <div class="clientMessage">
                       <div class="iconWrapper">
-                        <div class="icon"></div>
+                        <div class="icon"><img src="img/profile.jpg" alt=""></div>
                       </div>
                       <div class="messageWrapper">
                         <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
@@ -320,7 +400,7 @@
                     </div>
                     <div class="designerMessage">
                       <div class="iconWrapper">
-                        <div class="icon"></div>
+                        <div class="icon"><img src="img/profile2.jpg" alt=""></div>
                       </div>
                       <div class="messageWrapper">
                         <p class="message">Lorem ipsum dolor sit amet adipisicing and co.</p>
@@ -338,7 +418,7 @@
                     </div>
                   </div>
                 </section>
-                <section class="profileViewerColumn">
+                <section class="profileViewerColumn hidden">
                   <section class="top">
                     <section class="profileContentWrapper text-center">
                       <div class="profileImgBg">

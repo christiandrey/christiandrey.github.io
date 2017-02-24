@@ -142,6 +142,254 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 0 20px;
 }
 
+.modalsDivision {
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 45, 60, 0.9);
+  position: fixed;
+  z-index: +10;
+  display: block;
+}
+
+.modalsDivision .confirmDeleteModal {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.modalsDivision .confirmDeleteModal .top {
+  width: 100%;
+  height: 230px;
+  background-color: #2e3244;
+  border-bottom: dashed 2px #414259;
+}
+
+.modalsDivision .confirmDeleteModal .top .modalIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #2c2d3c;
+  background-image: url("../img/icon.warning.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 30px auto;
+}
+
+.modalsDivision .confirmDeleteModal .top .modalTitle {
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  font-size: 18px;
+  color: #dadee5;
+  line-height: 1.2;
+  padding: 0 30px;
+}
+
+.modalsDivision .confirmDeleteModal .bottom {
+  width: 100%;
+  height: 70px;
+  background-color: #414259;
+  overflow: hidden;
+}
+
+.modalsDivision .confirmDeleteModal .bottom .confirmButtonsWrapper {
+  width: 90px;
+  height: 30px;
+  margin: 20px 105px;
+}
+
+.modalsDivision .confirmDeleteModal .bottom .confirmButtonsWrapper .button {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #2c2d3c;
+  display: inline;
+  float: left;
+  background-image: url("../img/icon.cancel.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modalsDivision .confirmDeleteModal .bottom .confirmButtonsWrapper .button:last-of-type {
+  margin-left: 30px;
+  background-image: url("../img/icon.confirm.png");
+}
+
+.modalsDivision .userViewModal {
+  width: 400px;
+  height: 500px;
+  text-align: center;
+  border-radius: 5px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.modalsDivision .userViewModal .closeBtn {
+  position: absolute;
+  z-index: +11;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #414259;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.modalsDivision .userViewModal .closeBtn img {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+}
+
+.modalsDivision .userViewModal .top {
+  width: 100%;
+  height: calc(100% - 70px);
+  background-color: #2e3244;
+  border-bottom: dashed 2px #414259;
+}
+
+.modalsDivision .userViewModal .top .profileContentWrapper {
+  width: 80%;
+  margin: auto 10%;
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  display: inline-block;
+  background-color: #2b2c3c;
+  margin: auto;
+}
+
+.modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg > div {
+  width: 240px;
+  height: 240px;
+  border-radius: 240px;
+  margin: 5px;
+  background-color: #303141;
+}
+
+.modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg > div > div {
+  width: 230px;
+  height: 230px;
+  border-radius: 230px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #3d3e53;
+}
+
+.modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg > div > div > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.modalsDivision .userViewModal .top .profileContentWrapper .profileName {
+  color: #dadee5;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  margin: 20px auto 8px;
+}
+
+.modalsDivision .userViewModal .top .profileContentWrapper .profileType {
+  color: #dadee5;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.modalsDivision .userViewModal .top .profileContentWrapper .profileType.clientType:before {
+  content: "•";
+  color: #29b75c;
+  margin-left: 3px;
+}
+
+.modalsDivision .userViewModal .top .profileContentWrapper .profileType.clientType:before {
+  content: "•";
+  color: #228fe3;
+  margin-right: 3px;
+}
+
+.modalsDivision .userViewModal .middle {
+  width: 100%;
+  height: 60px;
+  background-color: #414259;
+}
+
+.modalsDivision .userViewModal .middle .left, .modalsDivision .userViewModal .middle .right {
+  display: inline;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.modalsDivision .userViewModal .middle .left .title, .modalsDivision .userViewModal .middle .right .title {
+  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+  font-size: 10px;
+  color: #dadee5;
+  line-height: 1;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+.modalsDivision .userViewModal .middle .left .subTitle, .modalsDivision .userViewModal .middle .right .subTitle {
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.modalsDivision .userViewModal .bottom {
+  width: 100%;
+  height: 10px;
+}
+
 .pageNav {
   width: 100%;
   height: 100%;
@@ -157,6 +405,14 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   border-radius: 50px;
   background-color: #414259;
+  cursor: pointer;
+}
+
+.pageNav .brandLogo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 5px;
 }
 
 .pageNav .brandName {
@@ -195,6 +451,13 @@ h1, h2, h3, h4, h5, h6 {
   display: inline;
   border-radius: 50px;
   background-color: #414259;
+}
+
+.pageNav .userDetails .userAvatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 5px;
 }
 
 .pageNav .userDetails .menuTrigger {
@@ -236,12 +499,95 @@ h1, h2, h3, h4, h5, h6 {
   height: 30px;
   border-radius: 30px;
   margin: 25px 20px;
-  background-color: #414259;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
 }
 
-.sideNav .sideNavItemWrapper .active {
-  background-color: #dadee5 !important;
+.sideNav .sideNavItemWrapper .home {
+  background-image: url("../img/icon.nav.home.png");
+  transition: background-image 0.2s ease;
+}
+
+.sideNav .sideNavItemWrapper .home:hover, .sideNav .sideNavItemWrapper .home.active {
+  background-image: url("../img/icon.nav.home.hover.png");
+}
+
+.sideNav .sideNavItemWrapper .home.active:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #228fe3;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.sideNav .sideNavItemWrapper .jobMgmt {
+  background-image: url("../img/icon.nav.jobMgmt.png");
+  transition: background-image 0.2s ease;
+}
+
+.sideNav .sideNavItemWrapper .jobMgmt:hover, .sideNav .sideNavItemWrapper .jobMgmt.active {
+  background-image: url("../img/icon.nav.jobMgmt.hover.png");
+}
+
+.sideNav .sideNavItemWrapper .jobMgmt.active:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #228fe3;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.sideNav .sideNavItemWrapper .userMgmt {
+  background-image: url("../img/icon.nav.userMgmt.png");
+  transition: background-image 0.2s ease;
+}
+
+.sideNav .sideNavItemWrapper .userMgmt:hover, .sideNav .sideNavItemWrapper .userMgmt.active {
+  background-image: url("../img/icon.nav.userMgmt.hover.png");
+}
+
+.sideNav .sideNavItemWrapper .userMgmt.active:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #228fe3;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.sideNav .sideNavItemWrapper .cashMgmt {
+  background-image: url("../img/icon.nav.cashMgmt.png");
+  transition: background-image 0.2s ease;
+}
+
+.sideNav .sideNavItemWrapper .cashMgmt:hover, .sideNav .sideNavItemWrapper .cashMgmt.active {
+  background-image: url("../img/icon.nav.cashMgmt.hover.png");
+}
+
+.sideNav .sideNavItemWrapper .cashMgmt.active:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #228fe3;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 .buttonBase, .outlineButton, .filledButton {
@@ -268,6 +614,7 @@ h1, h2, h3, h4, h5, h6 {
 .userItem {
   height: 70px;
   width: 300px;
+  margin: 0 10px 10px 0;
   background-color: #2e3244;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -292,6 +639,13 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   border-radius: 20px;
   background-color: #414259;
+}
+
+.userItem .userIconWrapper .userIcon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 5px;
 }
 
 .userItem .userNameWrapper {
@@ -341,6 +695,40 @@ h1, h2, h3, h4, h5, h6 {
 
 .userItem .actionButtonWrapper .menuTrigger .box:last-of-type {
   margin-bottom: 0;
+}
+
+.userItem .actionButtonWrapper .menuBox {
+  position: absolute;
+  top: 35px;
+  right: 24px;
+  z-index: +2;
+  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
+}
+
+.userItem .actionButtonWrapper .menuBox li {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+  line-height: 1;
+  background-color: #414259;
+  border-bottom: solid 2px #3b3b50;
+  transition: background-color 0.3s ease;
+}
+
+.userItem .actionButtonWrapper .menuBox li:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.userItem .actionButtonWrapper .menuBox li:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: none;
+}
+
+.userItem .actionButtonWrapper .menuBox li:hover {
+  background-color: #3b3b50;
 }
 
 .userItem:hover {
@@ -450,6 +838,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 70px;
   border-radius: 50px;
   background-color: #414259;
+  background-image: url("../img/icon.login.png");
+  background-size: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .indexPage .bodyDivision .loginWrapper .loginTop .loginForm {
@@ -514,6 +906,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #414259;
 }
 
+.dashboardPage .tasksWrapper .task .taskTop .taskIcon img {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+}
+
 .dashboardPage .tasksWrapper .task .taskTop .taskTitle {
   font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
   font-size: 22px;
@@ -569,7 +967,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #2c2d3c;
   display: inline-block;
   margin: 15px 20px 15px 0;
-  background-color: transparent;
+  background-color: rgba(65, 66, 89, 0.2);
   transition: background-color 0.2s ease-out;
 }
 
@@ -584,6 +982,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .jobMgmtPage .mainBody .subHeader .active {
   color: #dadee5;
+  border: solid 2px rgba(65, 66, 89, 0.6);
+  background-color: rgba(65, 66, 89, 0.8);
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper {
@@ -636,9 +1036,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 15px;
   margin-top: 20px;
   background-color: #2e3244;
+  background-image: url("../img/icon.delete.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowCompleted {
+.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCredit {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -667,6 +1071,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 15px;
   background-color: #2e3244;
   float: left;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage img {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  border-radius: 10px;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage + .client {
@@ -762,9 +1173,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 15px;
   margin-top: 20px;
   background-color: #2e3244;
+  background-image: url("../img/icon.delete.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted {
+.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCredit {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -793,6 +1208,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 15px;
   background-color: #2e3244;
   float: left;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage img {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  border-radius: 10px;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage + .client {
@@ -855,11 +1277,28 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .backButton {
+  font-size: 12px;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  line-height: 1;
+  color: #dadee5;
+  float: left;
+  margin: 0 0 20px;
+  background-color: #414259;
+  border: 2px solid #414259;
+  transition: background-color 0.2s, border 0.2s ease-out;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .backButton:hover {
+  background-color: #38394d;
+}
+
 .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn {
   width: 60%;
-  height: 100%;
+  height: calc(100% - 60px);
   display: inline;
   float: left;
+  clear: left;
   position: relative;
   transform: translateZ(0);
 }
@@ -990,7 +1429,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn {
   width: 40%;
-  height: 100%;
+  height: calc(100% - 60px);
   background-color: #282936;
   display: inline;
   float: left;
@@ -1018,6 +1457,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 70px;
   border-radius: 35px;
   background-color: #414259;
+  background-image: url("../img/icon.empty.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   display: inline-block;
 }
 
@@ -1072,6 +1515,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px 10px;
   margin-top: 33px;
   overflow: auto;
+  background-image: url("../img/conversationsbg.jpg");
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage {
@@ -1134,6 +1578,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
   border-radius: 25px;
   background-color: #414259;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .iconWrapper .icon > img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 20px;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .messageWrapper {
@@ -1235,6 +1686,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   text-align: center;
+  border-top-right-radius: 5px;
+  overflow: hidden;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top {
@@ -1364,4 +1817,661 @@ h1, h2, h3, h4, h5, h6 {
 .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .bottom {
   width: 100%;
   height: 10px;
+}
+
+.userMgmtPage .mainBody .subHeader {
+  width: 100%;
+  height: 70px;
+  display: block;
+  position: relative;
+  z-index: +1;
+  background-color: #228fe3;
+  box-shadow: 0px 5px 20px #2c2d3c;
+  overflow: auto;
+}
+
+.userMgmtPage .mainBody .subHeader .subHeaderLink {
+  font-size: 12px;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  line-height: 1;
+  color: #2c2d3c;
+  display: inline-block;
+  margin: 15px 20px 15px 0;
+  background-color: transparent;
+  border: solid 2px rgba(65, 66, 89, 0.2);
+  transition: background-color 0.2s ease-out;
+}
+
+.userMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
+  margin-left: 75px;
+}
+
+.userMgmtPage .mainBody .subHeader .subHeaderLink:hover {
+  background-color: #414259;
+  color: #dadee5;
+}
+
+.userMgmtPage .mainBody .subHeader .active {
+  color: #dadee5;
+  border: solid 2px rgba(65, 66, 89, 0.6);
+  background-color: rgba(65, 66, 89, 0.8);
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper {
+  width: 100%;
+  height: calc(100% - 70px);
+  display: block;
+  overflow: auto;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .bodyContents {
+  width: calc(100% - 145px);
+  margin: 30px 70px 30px 75px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView {
+  height: calc(100% - 30px);
+  margin-bottom: 0;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn {
+  width: 60%;
+  height: 100%;
+  display: inline;
+  float: left;
+  position: relative;
+  transform: translateZ(0);
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .textHeader {
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  font-size: 12px;
+  margin-top: 20px;
+  color: #228fe3;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .subtextHeader {
+  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+  font-size: 11px;
+  margin-top: -5px;
+  letter-spacing: 1px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper {
+  width: 100%;
+  height: 100%;
+  color: #dadee5;
+  font-size: 12px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  overflow: auto;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper {
+  width: 100%;
+  height: 60px;
+  background-color: #2e3244;
+  border-radius: 30px;
+  display: block;
+  margin: 30px 0 40px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchQuery {
+  width: calc(100% - 60px);
+  height: 40px;
+  font-size: 13px;
+  display: inline;
+  float: left;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 15px;
+  margin: 10px 0 10px 10px;
+  color: #dadee5;
+  background-color: #2c2d3c;
+  outline: none;
+  border: none;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon {
+  width: 40px;
+  height: 40px;
+  background-color: #228fe3;
+  margin: 10px 10px 10px 0;
+  position: relative;
+  display: inline;
+  float: left;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon:hover {
+  background-color: #1a7fcc;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 7px;
+  left: 7px;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  border: solid 3px #dadee5;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 3px;
+  border-radius: 8px;
+  background-color: #dadee5;
+  bottom: 12px;
+  right: 10px;
+  transform: rotate(45deg);
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .biddingStatus:after {
+  content: "•";
+  color: #dadee5;
+  margin-left: 3px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .pendingStatus:after {
+  content: "•";
+  color: #228fe3;
+  margin-left: 3px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .completedStatus:after {
+  content: "•";
+  color: #29b75c;
+  margin-left: 3px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressAmount {
+  display: inline-block;
+  width: 30px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator {
+  display: inline-block;
+  position: relative;
+  width: calc(100% - 45px);
+  height: 5px;
+  float: right;
+  margin-left: 10px;
+  margin-top: 4.5px;
+  vertical-align: top;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressBase {
+  width: 100%;
+  height: 100%;
+  background-color: #575876;
+  border-radius: 10px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressCurrent {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressBidding {
+  background-color: #dadee5;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressPending {
+  background-color: #228fe3;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressCompleted {
+  background-color: #29b75c;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn {
+  width: 40%;
+  height: 100%;
+  background-color: #282936;
+  display: inline;
+  float: left;
+  border-top-right-radius: 5px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn {
+  width: 100%;
+  height: 100%;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper {
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper .emptyIcon {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #414259;
+  display: inline-block;
+  background-image: url("../img/icon.empty.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper .emptyText {
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  color: #414259;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper .emptySubText {
+  color: #dadee5;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top {
+  width: 100%;
+  height: calc(100% - 70px);
+  background-color: #2e3244;
+  border-bottom: dashed 2px #414259;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper {
+  width: 80%;
+  margin: auto 10%;
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  display: inline-block;
+  background-color: #2b2c3c;
+  margin: auto;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div {
+  width: 240px;
+  height: 240px;
+  border-radius: 240px;
+  margin: 5px;
+  background-color: #303141;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div > div {
+  width: 230px;
+  height: 230px;
+  border-radius: 230px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #3d3e53;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div > div > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileName {
+  color: #dadee5;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  margin: 20px auto 8px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType {
+  color: #dadee5;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.clientType:before {
+  content: "•";
+  color: #29b75c;
+  margin-left: 3px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.clientType:before {
+  content: "•";
+  color: #228fe3;
+  margin-right: 3px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle {
+  width: 100%;
+  height: 60px;
+  background-color: #414259;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .left, .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .right {
+  display: inline;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .left .title, .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .right .title {
+  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+  font-size: 10px;
+  color: #dadee5;
+  line-height: 1;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .left .subTitle, .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .right .subTitle {
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .bottom {
+  width: 100%;
+  height: 10px;
+}
+
+.cashMgmtPage .mainBody .subHeader {
+  width: 100%;
+  height: 70px;
+  display: block;
+  position: relative;
+  z-index: +1;
+  background-color: #228fe3;
+  box-shadow: 0px 5px 20px #2c2d3c;
+  overflow: auto;
+}
+
+.cashMgmtPage .mainBody .subHeader .subHeaderLink {
+  font-size: 12px;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  line-height: 1;
+  color: #2c2d3c;
+  display: inline-block;
+  margin: 15px 20px 15px 0;
+  background-color: rgba(65, 66, 89, 0.2);
+  transition: background-color 0.2s ease-out;
+}
+
+.cashMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
+  margin-left: 75px;
+}
+
+.cashMgmtPage .mainBody .subHeader .subHeaderLink:hover {
+  background-color: #414259;
+  color: #dadee5;
+}
+
+.cashMgmtPage .mainBody .subHeader .active {
+  color: #dadee5;
+  border: solid 2px rgba(65, 66, 89, 0.6);
+  background-color: rgba(65, 66, 89, 0.8);
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper {
+  width: 100%;
+  height: calc(100% - 70px);
+  display: block;
+  overflow: auto;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .bodyContents {
+  width: calc(100% - 145px);
+  margin: 30px 70px 30px 75px;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .cashBalance {
+  color: #dadee5;
+  font-size: 52px;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  margin: 10px auto 60px;
+  line-height: 1;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .cashBalance + h6 {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper {
+  width: 100%;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableHeader, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody {
+  color: #9ea9bb;
+  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+  font-size: 11px;
+  margin: 0;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody {
+  cursor: pointer;
+  color: #dadee5;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background-color: #414259;
+  border-radius: 3px;
+  margin: 15px 0  0;
+  transition: background-color 0.3s ease-in;
+  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .designerColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .amountColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .dateColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .timeColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .typeColumn {
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowIndicator, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowPending, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowPending {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 70px;
+  width: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowDebit {
+  background-color: #d81327;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowCredit {
+  background-color: #29b75c;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .designerImage {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #2e3244;
+  float: left;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .designerImage img {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .designerImage + .designer {
+  display: inline-block;
+  margin-left: 10px;
+  height: 30px;
+  padding-top: 9.5px;
+  line-height: 1;
+  float: left;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody:hover {
+  background-color: #474962;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .cashBalance {
+  color: #dadee5;
+  font-size: 52px;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  margin: 10px auto 60px;
+  line-height: 1;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .cashBalance + h6 {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableHeader, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody {
+  color: #9ea9bb;
+  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+  font-size: 11px;
+  margin: 0;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody {
+  color: #dadee5;
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background-color: #414259;
+  border-radius: 3px;
+  margin: 15px 0  0;
+  transition: background-color 0.3s ease-in;
+  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .designerColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .amountColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .dateColumn {
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .actionButton, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .approveButton, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .rejectButton {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 15px;
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .approveButton {
+  background-color: #29b75c;
+  background-image: url("../img/icon.confirm.png");
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .rejectButton {
+  background-color: #d81327;
+  margin-left: 30px;
+  background-image: url("../img/icon.cancel.png");
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowIndicator, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowPending {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 70px;
+  width: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowPending {
+  background-color: #dadee5;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .designerImage {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #2e3244;
+  float: left;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .designerImage img {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .designerImage + .designer {
+  display: inline-block;
+  margin-left: 10px;
+  height: 30px;
+  padding-top: 9.5px;
+  line-height: 1;
+  float: left;
 }

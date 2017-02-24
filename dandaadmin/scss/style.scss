@@ -30,6 +30,7 @@
 .userItem {
   height: 70px;
   width: 300px;
+  margin: 0 10px 10px 0;
   background-color: $colorDarkGray;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -52,6 +53,13 @@
       display: block;
       border-radius: 20px;
       background-color: $colorGray;
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        margin: 5px;
+      }
     }
   }
 
@@ -96,11 +104,45 @@
         margin-bottom: 0;
       }
     }
-  }
-}
 
-.userItem:hover {
-  background-color: lighten($colorDarkGray, 3)
+    .menuBox {
+      position: absolute;
+      top: 35px;
+      right: 24px;
+      z-index: +2;
+      box-shadow: 0px 3px 5px rgba(34,34,34,0.1);
+
+      li {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        padding: 10px;
+        line-height: 1;
+        background-color: $colorGray;
+        border-bottom: solid 2px darken($colorGray, 3);
+        transition: background-color 0.3s ease;
+
+        &:first-of-type {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+
+        &:last-of-type {
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-bottom: none;
+        }
+
+        &:hover {
+          background-color: darken($colorGray, 3);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    background-color: lighten($colorDarkGray, 3)
+  }
 }
 
 .clientUserItem {
@@ -206,6 +248,10 @@
           height: 70px;
           border-radius: 50px;
           background-color: $colorGray;
+          background-image: url('../img/icon.login.png');
+          background-size: 45%;
+          background-position: center;
+          background-repeat: no-repeat;
         }
 
         .loginForm {
@@ -272,6 +318,12 @@
           height: 120px;
           border-radius: 70px;
           background-color: $colorGray;
+
+          img {
+            width: 80px;
+            height: 80px;
+            margin: 20px;
+          }
         }
 
         .taskTitle {
@@ -335,7 +387,7 @@
         color: $colorDark;
         display: inline-block;
         margin: 15px 20px 15px 0;
-        background-color: $colorTrans;
+        background-color: transparentize($colorGray, 0.8);
         transition: background-color 0.2s ease-out;
       }
 
@@ -350,6 +402,8 @@
 
       .active {
         color: $colorWhite;
+        border: solid 2px transparentize($colorGray, 0.4);
+        background-color: transparentize($colorGray, 0.2);
       }
     }
 
@@ -398,6 +452,10 @@
                 border-radius: 15px;
                 margin-top: 20px;
                 background-color: $colorDarkGray;
+                background-image: url('../img/icon.delete.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
               }
             }
 
@@ -433,6 +491,13 @@
               border-radius: 15px;
               background-color: $colorDarkGray;
               float: left;
+
+              img {
+                width: 24px;
+                height: 24px;
+                margin: 3px;
+                border-radius: 10px;
+              }
             }
 
             .clientImage + .client {
@@ -528,6 +593,10 @@
                 border-radius: 15px;
                 margin-top: 20px;
                 background-color: $colorDarkGray;
+                background-image: url('../img/icon.delete.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
               }
             }
 
@@ -563,6 +632,13 @@
               border-radius: 15px;
               background-color: $colorDarkGray;
               float: left;
+
+              img {
+                width: 24px;
+                height: 24px;
+                margin: 3px;
+                border-radius: 10px;
+              }
             }
 
             .clientImage + .client {
@@ -628,12 +704,28 @@
         height: calc(100% - 30px);
         margin-bottom: 0;
 
+        .backButton {
+          font-size: 12px;
+          font-family: $headerFont;
+          line-height: 1;
+          color: $colorWhite;
+          float: left;
+          margin: 0 0 20px;
+          background-color: $colorGray;
+          border: 2px solid $colorGray;
+          transition: background-color 0.2s, border 0.2s ease-out;
+
+          &:hover {
+            background-color: darken($colorGray, 4);
+          }
+        }
 
         .leftColumn {
           width: 60%;
-          height: 100%;
+          height: calc(100% - 60px);
           display: inline;
           float: left;
+          clear: left;
           position: relative;
           transform: translateZ(0);
 
@@ -761,7 +853,7 @@
 
         .rightColumn {
           width: 40%;
-          height: 100%;
+          height: calc(100% - 60px);
           background-color: darken($colorDark, 2);
           display: inline;
           float: left;
@@ -778,6 +870,10 @@
                 height: 70px;
                 border-radius: 35px;
                 background-color: $colorGray;
+                background-image: url('../img/icon.empty.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
                 display: inline-block;
               }
 
@@ -833,6 +929,7 @@
               padding: 30px 10px;
               margin-top: 33px;
               overflow: auto;
+              background-image: url('../img/conversationsbg.jpg');
 
               .clientMessage {
                 width: 100%;
@@ -841,7 +938,6 @@
                 .iconWrapper {
                   width: 70px;
                   display: inline;
-
 
                   .icon {
                     width: 50px;
@@ -894,6 +990,13 @@
                     margin: 10px;
                     border-radius: 25px;
                     background-color: $colorGray;
+
+                    > img {
+                      width: 40px;
+                      height: 40px;
+                      margin: 5px;
+                      border-radius: 20px;
+                    }
                   }
                 }
 
@@ -999,6 +1102,8 @@
             width: 100%;
             height: 100%;
             text-align: center;
+            border-top-right-radius: 5px;
+            overflow: hidden;
 
             .top {
               width: 100%;
@@ -1108,6 +1213,647 @@
             .bottom {
               width: 100%;
               height: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.userMgmtPage {
+  .mainBody {
+    .subHeader {
+      width: 100%;
+      height: 70px;
+      display: block;
+      position: relative;
+      z-index: +1;
+      background-color: $colorAccent;
+      box-shadow: 0px 5px 20px $colorDark;
+      overflow: auto;
+
+      .subHeaderLink {
+        font-size: 12px;
+        font-family: $headerFont;
+        line-height: 1;
+        color: $colorDark;
+        display: inline-block;
+        margin: 15px 20px 15px 0;
+        background-color: $colorTrans;
+        border: solid 2px transparentize($colorGray, 0.8);
+        transition: background-color 0.2s ease-out;
+      }
+
+      .subHeaderLink:first-of-type{
+        margin-left: 75px
+      }
+
+      .subHeaderLink:hover {
+        background-color: $colorGray;
+        color: $colorWhite;
+      }
+
+      .active {
+        color: $colorWhite;
+        border: solid 2px transparentize($colorGray, 0.4);
+        background-color: transparentize($colorGray, 0.2);
+      }
+    }
+
+    .bodyContentsWrapper {
+      width: 100%;
+      height: calc(100% - 70px);
+      display: block;
+      overflow: auto;
+
+      .bodyContents {
+        width: calc(100% - 145px);
+        margin: 30px 70px 30px 75px;
+      }
+
+      .mainUserView {
+        height: calc(100% - 30px);
+        margin-bottom: 0;
+
+
+        .leftColumn {
+          width: 60%;
+          height: 100%;
+          display: inline;
+          float: left;
+          position: relative;
+          transform: translateZ(0);
+
+          .textHeader {
+            font-family: $headerFont;
+            font-size: 12px;
+            margin-top: 20px;
+            color: $colorAccent;
+          }
+
+          .subtextHeader {
+            font-family: $bodyFont;
+            font-size: 11px;
+            margin-top: -5px;
+            letter-spacing: 1px
+          }
+
+          .userListWrapper {
+            width: 100%;
+            height: 100%;
+            color: $colorWhite;
+            font-size: 12px;
+            padding-right: 30px;
+            // margin-top: 70px;
+            padding-bottom: 30px;
+            overflow: auto;
+
+            .userList {
+              .searchBoxWrapper {
+                width: 100%;
+                height: 60px;
+                background-color: $colorDarkGray;
+                border-radius: 30px;
+                display: block;
+                margin: 30px 0 40px;
+
+                .searchQuery {
+                  width: calc(100% - 60px);
+                  height: 40px;
+                  font-size: 13px;
+                  display: inline;
+                  float: left;
+                  border-top-left-radius: 20px;
+                  border-bottom-left-radius: 20px;
+                  padding-left: 15px;
+                  margin: 10px 0 10px 10px;
+                  color: $colorWhite;
+                  background-color: $colorDark;
+                  outline: none;
+                  border: none;
+                }
+
+                .searchIcon {
+                  width: 40px;
+                  height: 40px;
+                  background-color: $colorAccent;
+                  margin: 10px 10px 10px 0;
+                  position: relative;
+                  display: inline;
+                  float: left;
+                  border-top-right-radius: 20px;
+                  border-bottom-right-radius: 20px;
+                  transition: background-color 0.3s ease;
+                  cursor: pointer;
+
+                  &:hover {
+                    background-color: darken($colorAccent, 6);
+                  }
+
+                  &:before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    top: 7px;
+                    left: 7px;
+                    border-radius: 20px;
+                    width: 20px;
+                    height: 20px;
+                    border: solid 3px $colorWhite;
+                  }
+
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 8px;
+                    height: 3px;
+                    border-radius: 8px;
+                    background-color: $colorWhite;
+                    bottom: 12px;
+                    right: 10px;
+                    transform: rotate(45deg);
+                  }
+                }
+              }
+
+              .biddingStatus:after {
+                content: "•";
+                color: $colorWhite;
+                margin-left: 3px
+              }
+
+              .pendingStatus:after {
+                content: "•";
+                color: $colorAccent;
+                margin-left: 3px
+              }
+
+              .completedStatus:after {
+                content: "•";
+                color: $colorSuccess;
+                margin-left: 3px
+              }
+
+              .progressAmount {
+                display: inline-block;
+                width: 30px;
+              }
+
+              .progressIndicator {
+                display: inline-block;
+                position: relative;
+                width: calc(100% - 45px);
+                height: 5px;
+                float: right;
+                margin-left: 10px;
+                margin-top: 4.5px;
+                vertical-align: top;
+
+                .progressBase {
+                  width: 100%;
+                  height: 100%;
+                  background-color: lighten($colorGray, 10);
+                  border-radius: 10px;
+                }
+
+                .progressCurrent {
+                  height: 100%;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  border-radius: 10px;
+                  // margin-top: -5px;
+                }
+
+                .progressBidding {
+                  background-color: $colorWhite
+                }
+
+                .progressPending {
+                  background-color: $colorAccent
+                }
+
+                .progressCompleted {
+                  background-color: $colorSuccess
+                }
+              }
+            }
+          }
+        }
+
+        .rightColumn {
+          width: 40%;
+          height: 100%;
+          background-color: darken($colorDark, 2);
+          display: inline;
+          float: left;
+          border-top-right-radius: 5px;
+
+          .emptyColumn {
+            width: 100%;
+            height: 100%;
+
+            .emptyContentWrapper {
+              @include center(y);
+              .emptyIcon {
+                width: 70px;
+                height: 70px;
+                border-radius: 35px;
+                background-color: $colorGray;
+                display: inline-block;
+                background-image: url('../img/icon.empty.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+
+              .emptyText {
+                font-family: $headerFont;
+                color: $colorGray;
+                line-height: 2;
+                margin: 0;
+                padding: 0;
+              }
+
+              .emptySubText {
+                color: $colorWhite;
+                font-size: 10px;
+                line-height: 1;
+              }
+            }
+          }
+
+          .profileViewerColumn {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border-top-right-radius: 5px;
+            overflow: hidden;
+
+            .top {
+              width: 100%;
+              height: calc(100% - 70px);
+              background-color: $colorDarkGray;
+              border-bottom: dashed 2px $colorGray;
+
+              .profileContentWrapper {
+                width: 80%;
+                margin: auto 10%;
+                @include center(y);
+
+                .profileImgBg {
+                  $bgSize: 250;
+                  $bgSizeDiff: 10;
+                  width: $bgSize * 1px;
+                  height: $bgSize * 1px;
+                  border-radius: $bgSize * 1px;
+                  display: inline-block;
+                  background-color: darken($colorGray,10);
+                  margin: auto;
+
+                  > div {
+                    width: ($bgSize - $bgSizeDiff) * 1px;
+                    height: ($bgSize - $bgSizeDiff) * 1px;
+                    border-radius: ($bgSize - $bgSizeDiff) * 1px;
+                    margin: $bgSizeDiff / 2 * 1px;
+                    background-color: darken($colorGray,8);
+
+                    > div {
+                      width: ($bgSize - ($bgSizeDiff * 2)) * 1px;
+                      height: ($bgSize - ($bgSizeDiff * 2)) * 1px;
+                      border-radius: ($bgSize - ($bgSizeDiff * 2)) * 1px;
+                      @include center(xy);
+                      background-color: darken($colorGray,2);
+
+                      > img {
+                        width: ($bgSize - ($bgSizeDiff * 5)) * 1px;
+                        height: ($bgSize - ($bgSizeDiff * 5)) * 1px;
+                        border-radius: ($bgSize - ($bgSizeDiff * 5)) * 1px;
+                        @include center(y);
+                        // margin: $bgSizeDiff * 1px;
+                      }
+                    }
+                  }
+                }
+
+                .profileName {
+                  color: $colorWhite;
+                  font-family: $headerFont;
+                  font-size: 14px;
+                  line-height: 1;
+                  margin: 20px auto 8px;
+                }
+
+                .profileType {
+                  color: $colorWhite;
+                  font-size: 11px;
+                  line-height: 1;
+
+                  &.clientType:before {
+                    content: "•";
+                    color: $colorSuccess;
+                    margin-left: 3px
+                  }
+
+                  &.clientType:before {
+                    content: "•";
+                    color: $colorAccent;
+                    margin-right: 3px
+                  }
+                }
+              }
+            }
+
+            .middle {
+              width: 100%;
+              height: 60px;
+              background-color: $colorGray;
+
+              .left, .right {
+                display: inline;
+                float: left;
+                width: 50%;
+                height: 100%;
+
+                .title {
+                  font-family: $bodyFont;
+                  font-size: 10px;
+                  color: $colorWhite;
+                  line-height: 1;
+                  padding: 0;
+                  margin: 15px 0 5px;
+                }
+
+                .subTitle {
+                  font-family: $headerFont;
+                  // color: $colorWhite;
+                  font-size: 18px;
+                  line-height: 1;
+                  padding: 0;
+                  margin: 0;
+                }
+              }
+            }
+
+            .bottom {
+              width: 100%;
+              height: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.cashMgmtPage {
+  .mainBody {
+    .subHeader {
+      width: 100%;
+      height: 70px;
+      display: block;
+      position: relative;
+      z-index: +1;
+      background-color: $colorAccent;
+      box-shadow: 0px 5px 20px $colorDark;
+      overflow: auto;
+
+      .subHeaderLink {
+        font-size: 12px;
+        font-family: $headerFont;
+        line-height: 1;
+        color: $colorDark;
+        display: inline-block;
+        margin: 15px 20px 15px 0;
+        background-color: transparentize($colorGray, 0.8);
+        transition: background-color 0.2s ease-out;
+      }
+
+      .subHeaderLink:first-of-type{
+        margin-left: 75px
+      }
+
+      .subHeaderLink:hover {
+        background-color: $colorGray;
+        color: $colorWhite;
+      }
+
+      .active {
+        color: $colorWhite;
+        border: solid 2px transparentize($colorGray, 0.4);
+        background-color: transparentize($colorGray, 0.2);
+      }
+    }
+
+    .bodyContentsWrapper {
+      width: 100%;
+      height: calc(100% - 70px);
+      display: block;
+      overflow: auto;
+
+      .bodyContents {
+        width: calc(100% - 145px);
+        margin: 30px 70px 30px 75px;
+      }
+
+      .mainCashMgmtView {
+        .cashBalance {
+          color: $colorWhite;
+          font-size: 52px;
+          font-family: $headerFont;
+          margin: 10px auto 60px;
+          line-height: 1;
+
+          + h6 {
+            margin-left: 30px;
+            margin-bottom: 20px;
+            width: 100%;
+          }
+        }
+        .tableWrapper {
+          width: 100%;
+
+          .tableHeader {
+            color: darken($colorWhite, 20);
+            font-family: $bodyFont;
+            font-size: 11px;
+            margin: 0;
+          }
+
+          .tableBody {
+            cursor: pointer;
+            @extend .tableHeader;
+            color: $colorWhite;
+            position: relative;
+            height: 70px;
+            width: 100%;
+            background-color: $colorGray;
+            border-radius: 3px;
+            margin: 15px 0  0;
+            transition: background-color 0.3s ease-in;
+            box-shadow: 0px 3px 5px rgba(34,34,34,0.1);
+
+            .designerColumn, .amountColumn, .dateColumn, .timeColumn, .typeColumn {
+              @include center(y)
+            }
+
+            .rowIndicator {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              height: 70px;
+              width: 3px;
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px;
+            }
+
+            .rowDebit {
+              @extend .rowIndicator;
+              background-color: $colorFailure
+            }
+
+            .rowCredit {
+              @extend .rowIndicator;
+              background-color: $colorSuccess
+            }
+
+            .designerImage {
+              width: 30px;
+              height: 30px;
+              display: inline-block;
+              border-radius: 15px;
+              background-color: $colorDarkGray;
+              float: left;
+
+              img {
+                width: 24px;
+                height: 24px;
+                margin: 3px;
+                border-radius: 10px;
+              }
+            }
+
+            .designerImage + .designer {
+              display: inline-block;
+              margin-left: 10px;
+              height: 30px;
+              padding-top: 9.5px;
+              line-height: 1;
+              float: left;
+            }
+          }
+
+          .tableBody:hover {
+            background-color: lighten($colorGray, 3)
+          }
+        }
+      }
+      .requestsView {
+        .cashBalance {
+          color: $colorWhite;
+          font-size: 52px;
+          font-family: $headerFont;
+          margin: 10px auto 60px;
+          line-height: 1;
+
+          + h6 {
+            margin-left: 30px;
+            margin-bottom: 20px;
+            width: 100%;
+          }
+        }
+        .tableWrapper {
+
+          .tableHeader {
+            color: darken($colorWhite, 20);
+            font-family: $bodyFont;
+            font-size: 11px;
+            margin: 0;
+          }
+
+          .tableBody {
+            @extend .tableHeader;
+            color: $colorWhite;
+            position: relative;
+            height: 70px;
+            width: 100%;
+            background-color: $colorGray;
+            border-radius: 3px;
+            margin: 15px 0  0;
+            transition: background-color 0.3s ease-in;
+            box-shadow: 0px 3px 5px rgba(34,34,34,0.1);
+
+            .designerColumn, .amountColumn, .dateColumn {
+              @include center(y)
+            }
+
+            .actionColumn {
+              .actionButton {
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                border-radius: 15px;
+                margin-top: 20px;
+                position: relative;
+                cursor: pointer;
+                background-size: 80%;
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+              .approveButton {
+                @extend .actionButton;
+                background-color: $colorSuccess;
+                background-image: url('../img/icon.confirm.png');
+              }
+
+              .rejectButton {
+                @extend .actionButton;
+                background-color: $colorFailure;
+                margin-left: 30px;
+                background-image: url('../img/icon.cancel.png');
+              }
+            }
+
+            .rowIndicator {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              height: 70px;
+              width: 3px;
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px;
+            }
+
+            .rowPending {
+              @extend .rowIndicator;
+              background-color: $colorWhite;
+            }
+
+            .designerImage {
+              width: 30px;
+              height: 30px;
+              display: inline-block;
+              border-radius: 15px;
+              background-color: $colorDarkGray;
+              float: left;
+
+              img {
+                width: 24px;
+                height: 24px;
+                margin: 3px;
+                border-radius: 10px;
+              }
+            }
+
+            .designerImage + .designer {
+              display: inline-block;
+              margin-left: 10px;
+              height: 30px;
+              padding-top: 9.5px;
+              line-height: 1;
+              float: left;
             }
           }
         }

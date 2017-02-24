@@ -13,6 +13,14 @@
     float: left;
     border-radius: 50px;
     background-color: $colorGray;
+    cursor: pointer;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      margin: 5px;
+    }
   }
 
   .brandName {
@@ -50,6 +58,13 @@
       display: inline;
       border-radius: 50px;
       background-color: $colorGray;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 5px;
+      }
     }
 
     .menuTrigger {
@@ -91,12 +106,36 @@
       height: 30px;
       border-radius: 30px;
       margin: 25px 20px;
-      background-color: $colorGray;
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       cursor: pointer;
     }
 
-    .active {
-      background-color: $colorWhite !important;
+    @each $navItem in home, jobMgmt, userMgmt, cashMgmt {
+      .#{$navItem} {
+        background-image: url('../img/icon.nav.#{$navItem}.png');
+        transition: background-image 0.2s ease;
+
+        &:hover, &.active {
+          background-image: url('../img/icon.nav.#{$navItem}.hover.png');
+        }
+
+        &.active:after {
+          content: "";
+          width: 5px;
+          height: 5px;
+          border-radius: 5px;
+          background-color: $colorAccent;
+          display: block;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+        }
+      }
     }
   }
+
+
 }

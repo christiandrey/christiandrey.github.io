@@ -129,3 +129,219 @@ h1, h2, h3, h4, h5, h6 {
   background-color: lighten($colorDark, 2);
   margin: 20px 0 20px;
 }
+
+//Modals
+.modalsDivision {
+  width: 100%;
+  height: 100%;
+  background: transparentize($colorDark, 0.1);
+  position: fixed;
+  z-index: +10;
+  display: block;
+
+  .confirmDeleteModal {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    @include center(y);
+
+    .top {
+      width: 100%;
+      height: 230px;
+      background-color: $colorDarkGray;
+      border-bottom: dashed 2px $colorGray;
+
+      .modalIcon {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: $colorDark;
+        background-image: url('../img/icon.warning.png');
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 30px auto;
+      }
+
+      .modalTitle {
+        font-family: $headerFont;
+        font-size: 18px;
+        color: $colorWhite;
+        line-height: 1.2;
+        padding: 0 30px;
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      height: 70px;
+      background-color: $colorGray;
+      overflow: hidden;
+
+      .confirmButtonsWrapper {
+        width: 90px;
+        height: 30px;
+        margin: 20px 105px;
+
+        .button {
+          width: 30px;
+          height: 30px;
+          border-radius: 15px;
+          background-color: $colorDark;
+          display: inline;
+          float: left;
+          background-image: url('../img/icon.cancel.png');
+          background-size: 80%;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+
+          &:last-of-type {
+            margin-left: 30px;
+            background-image: url('../img/icon.confirm.png');
+          }
+        }
+      }
+    }
+  }
+
+  .userViewModal {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    @include center(y);
+    overflow: hidden;
+
+    .closeBtn {
+      position: absolute;
+      z-index: +11;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: $colorGray;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin: 3px;
+      }
+    }
+
+    .top {
+      width: 100%;
+      height: calc(100% - 70px);
+      background-color: $colorDarkGray;
+      border-bottom: dashed 2px $colorGray;
+
+      .profileContentWrapper {
+        width: 80%;
+        margin: auto 10%;
+        @include center(y);
+
+        .profileImgBg {
+          $bgSize: 250;
+          $bgSizeDiff: 10;
+          width: $bgSize * 1px;
+          height: $bgSize * 1px;
+          border-radius: $bgSize * 1px;
+          display: inline-block;
+          background-color: darken($colorGray,10);
+          margin: auto;
+
+          > div {
+            width: ($bgSize - $bgSizeDiff) * 1px;
+            height: ($bgSize - $bgSizeDiff) * 1px;
+            border-radius: ($bgSize - $bgSizeDiff) * 1px;
+            margin: $bgSizeDiff / 2 * 1px;
+            background-color: darken($colorGray,8);
+
+            > div {
+              width: ($bgSize - ($bgSizeDiff * 2)) * 1px;
+              height: ($bgSize - ($bgSizeDiff * 2)) * 1px;
+              border-radius: ($bgSize - ($bgSizeDiff * 2)) * 1px;
+              @include center(xy);
+              background-color: darken($colorGray,2);
+
+              > img {
+                width: ($bgSize - ($bgSizeDiff * 5)) * 1px;
+                height: ($bgSize - ($bgSizeDiff * 5)) * 1px;
+                border-radius: ($bgSize - ($bgSizeDiff * 5)) * 1px;
+                @include center(y);
+                // margin: $bgSizeDiff * 1px;
+              }
+            }
+          }
+        }
+
+        .profileName {
+          color: $colorWhite;
+          font-family: $headerFont;
+          font-size: 14px;
+          line-height: 1;
+          margin: 20px auto 8px;
+        }
+
+        .profileType {
+          color: $colorWhite;
+          font-size: 11px;
+          line-height: 1;
+
+          &.clientType:before {
+            content: "•";
+            color: $colorSuccess;
+            margin-left: 3px
+          }
+
+          &.clientType:before {
+            content: "•";
+            color: $colorAccent;
+            margin-right: 3px
+          }
+        }
+      }
+    }
+
+    .middle {
+      width: 100%;
+      height: 60px;
+      background-color: $colorGray;
+
+      .left, .right {
+        display: inline;
+        float: left;
+        width: 50%;
+        height: 100%;
+
+        .title {
+          font-family: $bodyFont;
+          font-size: 10px;
+          color: $colorWhite;
+          line-height: 1;
+          padding: 0;
+          margin: 15px 0 5px;
+        }
+
+        .subTitle {
+          font-family: $headerFont;
+          // color: $colorWhite;
+          font-size: 18px;
+          line-height: 1;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      height: 10px;
+    }
+  }
+}
