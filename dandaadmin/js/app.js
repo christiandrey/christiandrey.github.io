@@ -6,18 +6,22 @@
 ////Scripts Dependent on document ready
 $(document).ready(function(){
   //Side Navigation
-  $('.sideNav .home').click(function(){
-    location.href = "dashboard.html"
-  })
-  $('.sideNav .jobMgmt').click(function(){
-    location.href = "jobmgmt.html"
-  })
-  $('.sideNav .userMgmt').click(function(){
-    location.href = "usermgmt.html"
-  })
-  $('.sideNav .cashMgmt').click(function(){
-    location.href = "cashmgmt.html"
-  })
+  // $('.sideNav .home').click(function(event){
+  //   event.preventDefault();
+  //   location.href = "dashboard.html"
+  // })
+  // $('.sideNav .jobMgmt').click(function(event){
+  //   event.preventDefault();
+  //   location.href = "jobmgmt.html"
+  // })
+  // $('.sideNav .userMgmt').click(function(event){
+  //   event.preventDefault();
+  //   location.href = "usermgmt.html"
+  // })
+  // $('.sideNav .cashMgmt').click(function(event){
+  //   event.preventDefault();
+  //   location.href = "cashmgmt.html"
+  // })
   //--End of Side Navigation
 
   //Page Subheader Linking
