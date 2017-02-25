@@ -128,8 +128,9 @@ $(document).ready(function(){
 
 //Index Page Specific Scripts
 $(document).ready(function(){
-  $('.loginForm').submit(function(event){
+  $('.indexPage .loginButton').click(function(event){
     event.preventDefault;
+    console.log($('.indexPage .loginForm'));
     location.href = "dashboard.html"
   })
 })
