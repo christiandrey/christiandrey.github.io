@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dreyanim.css">
     <link rel="stylesheet" href="css/dreymodal.css">
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css">
   </head>
   <body>
     <section class="page jobMgmtPage">
@@ -52,6 +53,33 @@
           </section>
           <section class="bottom bgAccent"></section>
         </div>
+        <div class="changePasswordModal hidden">
+          <div class="closeBtn"><img src="img/icon.close.png" alt="Close"></div>
+          <div class="top text-center clearfix">
+            <p class="modalTitle">Change your password</p>
+            <form action="" class="changePasswordForm" method="post" id="changePasswordForm">
+              <input class="input oldPasswordField" type="password" placeholder="Old Password" name="oldPassword" required>
+              <input class="input newPasswordField" type="password" placeholder="New Password" name="newPassword" required>
+              <input class="input confirmpasswordField" type="password" placeholder="Confirm New Password" name="confirmPassword" required>
+            </form>
+          </div>
+          <div class="bottom text-center">
+            <button class="bgAccent fgWhite filledButton finish" type="submit" form="changePasswordForm">DONE</button>
+          </div>
+        </div>
+        <div class="changeEmailModal hidden">
+          <div class="closeBtn"><img src="img/icon.close.png" alt="Close"></div>
+          <div class="top text-center clearfix">
+            <p class="modalTitle">Change admin email address</p>
+            <form action="" class="changeEmailForm" method="post" id="changeEmailForm">
+              <input class="input oldEmailField" type="email" placeholder="Old Email Address" name="oldEmail" required>
+              <input class="input newEmailField" type="email" placeholder="New Email Address" name="newEmail" required>
+            </form>
+          </div>
+          <div class="bottom text-center">
+            <button class="bgAccent fgWhite filledButton finish" type="submit" form="changeEmailForm">DONE</button>
+          </div>
+        </div>
       </section>
       <section class="navDivision">
         <div class="pageNav">
@@ -65,28 +93,33 @@
               <div class="box"></div>
               <div class="box"></div>
             </div>
+            <ul class="menuBox hidden">
+              <li class="changeAdminEmail">Change admin email</li>
+              <li class="changeAdminPassword">Change admin password</li>
+              <li class="logout">Logout</li>
+            </ul>
           </section>
         </div>
       </section>
       <section class="bodyDivision">
         <section class="sideNav">
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem home"></div>
+            <a href=""><div class="sideNavItem home"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem jobMgmt active"></div>
+            <a href=""><div class="sideNavItem jobMgmt active"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem userMgmt"></div>
+            <a href=""><div class="sideNavItem userMgmt"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem cashMgmt"></div>
+            <a href=""><div class="sideNavItem cashMgmt"></div></a>
           </section>
         </section>
         <section class="mainBody">
           <section class="subHeader">
-              <button class="subHeaderLink filledButton pendingProjects active">Pending Projects</button>
-              <button class="subHeaderLink filledButton ongoingProjects">Ongoing Projects</button>
+              <button class="subHeaderLink filledButton pendingProjects active" data-is-link-to="pendingProjectsBody">Pending Projects</button>
+              <button class="subHeaderLink filledButton ongoingProjects" data-is-link-to="ongoingProjectsBody">Ongoing Projects</button>
           </section>
           <section class="bodyContentsWrapper">
             <section class="bodyContents pendingProjectsBody">
@@ -99,10 +132,10 @@
                   <div class="col-md-3">Progress</div>
                   <div class="col-md-1">Action</div>
                 </div>
-                <div class="row tableBody">
+                <div class="row tableBody" data-job-id="1234" data-job-type="pending">
                   <div id="rowIndicator" class="rowItem rowBidding"></div>
                   <div class="col-md-2 titleColumn"><span class="title">The title of a very long project goes into this space</span></div>
-                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile2.jpg" alt="Client Avatar"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile2.jpg" alt="Client Avatar"></span><span class="client" data-user-id="3455" data-user-type="client">Mr. Johnny Doe with a very long name</span></div>
                   <div class="col-md-2 dateColumn"><span class="date">27th February, 2017</span></div>
                   <div class="col-md-1 bidsColumn"><span class="bids">1</span></div>
                   <div class="col-md-3 progressColumn"><span class="progressAmount">0%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressBidding" style="width: 0%"></div></span></div>
@@ -120,28 +153,28 @@
                   <div class="col-md-3">Progress</div>
                   <div class="col-md-1">Action</div>
                 </div>
-                <div class="row tableBody">
+                <div class="row tableBody" data-job-id="1234" data-job-type="ongoing">
                   <div id="rowIndicator" class="rowItem rowPending"></div>
                   <div class="col-md-2 titleColumn"><span class="title">The title of a very long project goes into this space</span></div>
-                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile2.jpg" alt="Client Avatar"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile2.jpg" alt="Client Avatar"></span><span class="client" data-user-id="3455" data-user-type="client">Mr. Johnny Doe with a very long name</span></div>
                   <div class="col-md-2 dateColumn"><span class="date">27th February, 2017</span></div>
                   <div class="col-md-1 statusColumn"><span class="status">Pending</span></div>
                   <div class="col-md-3 progressColumn"><span class="progressAmount">23%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressPending" style="width: 23%"></div></span></div>
                   <div class="col-md-1 actionColumn"><span class="deleteButton"></span></div>
                 </div>
-                <div class="row tableBody">
+                <div class="row tableBody" data-job-id="1234" data-job-type="ongoing">
                   <div id="rowIndicator" class="rowItem rowBidding"></div>
                   <div class="col-md-2 titleColumn"><span class="title">The title of a very long project goes into this space</span></div>
-                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile.jpg" alt="Client Avatar"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile.jpg" alt="Client Avatar"></span><span class="client" data-user-id="3455" data-user-type="client">Mr. Johnny Doe with a very long name</span></div>
                   <div class="col-md-2 dateColumn"><span class="date">27th February, 2017</span></div>
                   <div class="col-md-1 statusColumn"><span class="status">Bidding</span></div>
                   <div class="col-md-3 progressColumn"><span class="progressAmount">3%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressBidding" style="width: 3%"></div></span></div>
                   <div class="col-md-1 actionColumn"><span class="deleteButton"></span></div>
                 </div>
-                <div class="row tableBody">
+                <div class="row tableBody" data-job-id="1234" data-job-type="ongoing">
                   <div id="rowIndicator" class="rowItem rowCompleted"></div>
                   <div class="col-md-2 titleColumn"><span class="title">The title of a very long project goes into this space</span></div>
-                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile2.jpg" alt="Client Avatar"></span><span class="client">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-3 clientColumn"><span class="clientImage"><img src="img/profile2.jpg" alt="Client Avatar"></span><span class="client" data-user-id="3455" data-user-type="client">Mr. Johnny Doe with a very long name</span></div>
                   <div class="col-md-2 dateColumn"><span class="date">27th February, 2017</span></div>
                   <div class="col-md-1 statusColumn"><span class="status">Completed</span></div>
                   <div class="col-md-3 progressColumn"><span class="progressAmount">100%</span><span class="progressIndicator"><div class="progressBase"></div><div class="progressCurrent progressCompleted" style="width: 100%"></div></span></div>
@@ -170,7 +203,7 @@
                     <p class="projectNotes">The designer was selected on <span class="fgAccent">27th February, 2017</span> at <span class="fgSuccess">03:56pm</span>. Time left for project completion is <span class="fgAccent">3 days and 16 hours</span>.</p>
                     <div class="divider"></div>
                     <p class="textHeader">Client</p>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -190,7 +223,7 @@
                     <div class="divider"></div>
                     <p class="textHeader">Bidders <span class="projectBiddersCount fgWhite">(4)</span></p>
                     <p class="subtextHeader">The designer that has been selected by the client is marked by a green dot.</p>
-                    <div class="userItem designerUserItem approved">
+                    <div class="userItem designerUserItem approved" data-user-type="designer" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
@@ -207,7 +240,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem designerUserItem unapproved">
+                    <div class="userItem designerUserItem unapproved" data-user-type="designer" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
@@ -224,7 +257,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem designerUserItem unapproved">
+                    <div class="userItem designerUserItem unapproved" data-user-type="designer" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
@@ -241,7 +274,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem designerUserItem unapproved">
+                    <div class="userItem designerUserItem unapproved" data-user-type="designer" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
@@ -260,10 +293,10 @@
                     </div>
                     <div class="divider"></div>
                     <p class="textHeader">Conversation</p>
-                    <button class="filledButton bgGray fgWhite viewConversation">VIEW CONVERSATION</button>
+                    <button class="filledButton bgGray fgWhite viewConversation">View Conversation</button>
                     <div class="divider"></div>
                     <p class="textHeader">Floor Plans <span class="projectFloorPlansCount fgWhite">(3)</span></p>
-                    <div class="imageItem">
+                    <div class="imageItem" data-image-id="1234" data-image-type="floorplan">
                       <div class="top">
                         <img src="img/default.png" alt="" class="imageElement">
                       </div>
@@ -272,7 +305,7 @@
                         <span class="polka bgSuccess"></span>
                       </div>
                     </div>
-                    <div class="imageItem">
+                    <div class="imageItem" data-image-id="1234" data-image-type="floorplan">
                       <div class="top">
                         <img src="img/default.png" alt="" class="imageElement">
                       </div>
@@ -281,7 +314,7 @@
                         <span class="polka bgSuccess"></span>
                       </div>
                     </div>
-                    <div class="imageItem">
+                    <div class="imageItem" data-image-id="1234" data-image-type="floorplan">
                       <div class="top">
                         <img src="img/default.png" alt="" class="imageElement">
                       </div>
@@ -292,7 +325,7 @@
                     </div>
                     <div class="divider"></div>
                     <p class="textHeader">Exchanged Files <span class="projectExchangedFilesCount fgWhite">(4)</span></p>
-                    <div class="imageItem">
+                    <div class="imageItem" data-image-id="1234" data-image-type="exchangedfile">
                       <div class="top">
                         <img src="img/default.png" alt="" class="imageElement">
                       </div>
@@ -301,7 +334,7 @@
                         <span class="polka bgSuccess"></span>
                       </div>
                     </div>
-                    <div class="imageItem">
+                    <div class="imageItem" data-image-id="1234" data-image-type="exchangedfile">
                       <div class="top">
                         <img src="img/default.png" alt="" class="imageElement">
                       </div>
@@ -310,7 +343,7 @@
                         <span class="polka bgSuccess"></span>
                       </div>
                     </div>
-                    <div class="imageItem">
+                    <div class="imageItem" data-image-id="1234" data-image-type="exchangedfile">
                       <div class="top">
                         <img src="img/default.png" alt="" class="imageElement">
                       </div>
@@ -319,7 +352,7 @@
                         <span class="polka bgSuccess"></span>
                       </div>
                     </div>
-                    <div class="imageItem">
+                    <div class="imageItem" data-image-id="1234" data-image-type="exchangedfile">
                       <div class="top">
                         <img src="img/default.png" alt="" class="imageElement">
                       </div>
@@ -429,7 +462,7 @@
                         </div>
                       </div>
                       <p class="profileName">Mr. Johnny Doe</p>
-                      <p class="profileType clientType">Designer</p>
+                      <p class="profileType">Designer</p>
                     </section>
                   </section>
                   <section class="middle">
@@ -442,7 +475,7 @@
                       <p class="subTitle fgAccent">11</p>
                     </section>
                   </section>
-                  <section class="bottom bgAccent"></section>
+                  <section class="bottom"></section>
                 </section>
               </section>
             </section>
@@ -455,4 +488,5 @@
   <!-- <script src="js/bootstrap.min.js"></script> -->
   <script src="js/dreyanim.js"></script>
   <script src="js/dreymodal.js"></script>
+  <script src="js/app.js"></script>
 </html>

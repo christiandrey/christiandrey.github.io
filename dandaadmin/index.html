@@ -22,13 +22,13 @@
         <section class="loginWrapper">
           <section class="loginTop">
             <div class="loginIcon"></div>
-            <form action="" class="loginForm">
+            <form action="dashboard.html" class="loginForm" method="post" id="loginForm">
               <input class="input emailField" type="email" placeholder="Email Address" name="email" required autofocus>
               <input class="input passwordField" type="password" placeholder="Password" name="password" required>
             </form>
           </section>
           <section class="loginBottom">
-            <button class="buttonBase filledButton bgAccent fgWhite loginButton">LOGIN</button>
+            <button class="buttonBase filledButton bgAccent fgWhite loginButton" type="submit" form="loginForm">LOGIN</button>
           </section>
         </section>
       </section>
@@ -38,4 +38,5 @@
   <!-- <script src="js/bootstrap.min.js"></script> -->
   <script src="js/dreyanim.js"></script>
   <script src="js/dreymodal.js"></script>
+  <script src="js/app.js"></script>
 </html>

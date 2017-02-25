@@ -25,6 +25,33 @@
             </div>
           </div>
         </div>
+        <div class="changePasswordModal hidden">
+          <div class="closeBtn"><img src="img/icon.close.png" alt="Close"></div>
+          <div class="top text-center clearfix">
+            <p class="modalTitle">Change your password</p>
+            <form action="" class="changePasswordForm" method="post" id="changePasswordForm">
+              <input class="input oldPasswordField" type="password" placeholder="Old Password" name="oldPassword" required>
+              <input class="input newPasswordField" type="password" placeholder="New Password" name="newPassword" required>
+              <input class="input confirmpasswordField" type="password" placeholder="Confirm New Password" name="confirmPassword" required>
+            </form>
+          </div>
+          <div class="bottom text-center">
+            <button class="bgAccent fgWhite filledButton finish" type="submit" form="changePasswordForm">DONE</button>
+          </div>
+        </div>
+        <div class="changeEmailModal hidden">
+          <div class="closeBtn"><img src="img/icon.close.png" alt="Close"></div>
+          <div class="top text-center clearfix">
+            <p class="modalTitle">Change admin email address</p>
+            <form action="" class="changeEmailForm" method="post" id="changeEmailForm">
+              <input class="input oldEmailField" type="email" placeholder="Old Email Address" name="oldEmail" required>
+              <input class="input newEmailField" type="email" placeholder="New Email Address" name="newEmail" required>
+            </form>
+          </div>
+          <div class="bottom text-center">
+            <button class="bgAccent fgWhite filledButton finish" type="submit" form="changeEmailForm">DONE</button>
+          </div>
+        </div>
       </section>
       <section class="navDivision">
         <div class="pageNav">
@@ -38,39 +65,44 @@
               <div class="box"></div>
               <div class="box"></div>
             </div>
+            <ul class="menuBox hidden">
+              <li class="changeAdminEmail">Change admin email</li>
+              <li class="changeAdminPassword">Change admin password</li>
+              <li class="logout">Logout</li>
+            </ul>
           </section>
         </div>
       </section>
       <section class="bodyDivision">
         <section class="sideNav">
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem home"></div>
+            <a href=""><div class="sideNavItem home"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem jobMgmt"></div>
+            <a href=""><div class="sideNavItem jobMgmt active"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem userMgmt active"></div>
+            <a href=""><div class="sideNavItem userMgmt"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem cashMgmt"></div>
+            <a href=""><div class="sideNavItem cashMgmt"></div></a>
           </section>
         </section>
         <section class="mainBody">
           <section class="subHeader">
-              <button class="subHeaderLink filledButton clients active">Clients</button>
-              <button class="subHeaderLink filledButton designers">Designers</button>
+              <button class="subHeaderLink filledButton clients active" data-is-link-to="clientList">Clients</button>
+              <button class="subHeaderLink filledButton designers" data-is-link-to="designerList">Designers</button>
           </section>
           <section class="bodyContentsWrapper">
             <section class="bodyContents mainUserView">
               <section class="leftColumn">
                 <section class="userListWrapper">
-                  <section class="userList clientList hidden">
+                  <section class="userList clientList">
                     <p class="textHeader">Clients <span class="clientUserCount fgWhite">(100)</span></p>
                     <section class="searchBoxWrapper">
                       <input type="text" class="input searchQuery" name="query" placeholder="Search..."><span class="searchIcon"></span>
                     </section>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -87,7 +119,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -104,7 +136,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -121,7 +153,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -138,7 +170,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -155,7 +187,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -172,7 +204,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -189,7 +221,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -206,7 +238,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -223,7 +255,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -240,7 +272,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem clientUserItem">
+                    <div class="userItem clientUserItem" data-user-type="client" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="clientIcon userIcon"><img src="img/profile2.jpg" alt="" class="clientAvatar"></div>
                       </div>
@@ -258,12 +290,12 @@
                       </div>
                     </div>
                   </section>
-                  <section class="userList designerList">
+                  <section class="userList designerList hidden">
                     <p class="textHeader">Designers <span class="designerUserCount fgWhite">(100)</span></p>
                     <section class="searchBoxWrapper">
                       <input type="text" class="input searchQuery" name="query" placeholder="Search..."><span class="searchIcon"></span>
                     </section>
-                    <div class="userItem designerUserItem">
+                    <div class="userItem designerUserItem" data-user-type="designer" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
@@ -280,7 +312,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem designerUserItem">
+                    <div class="userItem designerUserItem" data-user-type="designer" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
@@ -297,7 +329,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem designerUserItem">
+                    <div class="userItem designerUserItem" data-user-type="designer" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
@@ -314,7 +346,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem designerUserItem">
+                    <div class="userItem designerUserItem" data-user-type="designer" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
@@ -331,7 +363,7 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="userItem designerUserItem">
+                    <div class="userItem designerUserItem" data-user-type="designer" data-user-id="1234">
                       <div class="userIconWrapper">
                         <div class="designerIcon userIcon"><img src="img/profile.jpg" alt="" class="designerAvatar"></div>
                       </div>
@@ -370,7 +402,7 @@
                         </div>
                       </div>
                       <p class="profileName">Mr. Johnny Doe</p>
-                      <p class="profileType clientType">Designer</p>
+                      <p class="profileType">Designer</p>
                     </section>
                   </section>
                   <section class="middle">
@@ -396,4 +428,5 @@
   <!-- <script src="js/bootstrap.min.js"></script> -->
   <script src="js/dreyanim.js"></script>
   <script src="js/dreymodal.js"></script>
+  <script src="js/app.js"></script>
 </html>

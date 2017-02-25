@@ -12,6 +12,35 @@
   </head>
   <body>
     <section class="page dashboardPage">
+      <section class="modalsDivision hidden">
+        <div class="changePasswordModal hidden">
+          <div class="closeBtn"><img src="img/icon.close.png" alt="Close"></div>
+          <div class="top text-center clearfix">
+            <p class="modalTitle">Change your password</p>
+            <form action="" class="changePasswordForm" method="post" id="changePasswordForm">
+              <input class="input oldPasswordField" type="password" placeholder="Old Password" name="oldPassword" required>
+              <input class="input newPasswordField" type="password" placeholder="New Password" name="newPassword" required>
+              <input class="input confirmpasswordField" type="password" placeholder="Confirm New Password" name="confirmPassword" required>
+            </form>
+          </div>
+          <div class="bottom text-center">
+            <button class="bgAccent fgWhite filledButton finish" type="submit" form="changePasswordForm">DONE</button>
+          </div>
+        </div>
+        <div class="changeEmailModal hidden">
+          <div class="closeBtn"><img src="img/icon.close.png" alt="Close"></div>
+          <div class="top text-center clearfix">
+            <p class="modalTitle">Change admin email address</p>
+            <form action="" class="changeEmailForm" method="post" id="changeEmailForm">
+              <input class="input oldEmailField" type="email" placeholder="Old Email Address" name="oldEmail" required>
+              <input class="input newEmailField" type="email" placeholder="New Email Address" name="newEmail" required>
+            </form>
+          </div>
+          <div class="bottom text-center">
+            <button class="bgAccent fgWhite filledButton finish" type="submit" form="changeEmailForm">DONE</button>
+          </div>
+        </div>
+      </section>
       <section class="navDivision">
         <div class="pageNav">
           <div class="brandLogo"><a href="index.html"><img src="img/brandLogo.jpg" alt="Brand Logo"></a></div>
@@ -24,22 +53,27 @@
               <div class="box"></div>
               <div class="box"></div>
             </div>
+            <ul class="menuBox hidden">
+              <li class="changeAdminEmail">Change admin email</li>
+              <li class="changeAdminPassword">Change admin password</li>
+              <li class="logout">Logout</li>
+            </ul>
           </section>
         </div>
       </section>
       <section class="bodyDivision">
         <section class="sideNav">
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem home active"></div>
+            <a href=""><div class="sideNavItem home"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem jobMgmt"></div>
+            <a href=""><div class="sideNavItem jobMgmt active"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem userMgmt"></div>
+            <a href=""><div class="sideNavItem userMgmt"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem cashMgmt"></div>
+            <a href=""><div class="sideNavItem cashMgmt"></div></a>
           </section>
         </section>
         <section class="mainBody">
@@ -83,4 +117,5 @@
   <!-- <script src="js/bootstrap.min.js"></script> -->
   <script src="js/dreyanim.js"></script>
   <script src="js/dreymodal.js"></script>
+  <script src="js/app.js"></script>
 </html>

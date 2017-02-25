@@ -148,33 +148,25 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(44, 45, 60, 0.9);
   position: fixed;
   z-index: +10;
-  display: block;
+  display: flex;
 }
 
-.modalsDivision .confirmDeleteModal {
+.modalsDivision .confirmModal {
   width: 300px;
   height: 300px;
   margin: auto;
   border-radius: 5px;
   overflow: hidden;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
-.modalsDivision .confirmDeleteModal .top {
+.modalsDivision .confirmModal .top {
   width: 100%;
   height: 230px;
   background-color: #2e3244;
   border-bottom: dashed 2px #414259;
 }
 
-.modalsDivision .confirmDeleteModal .top .modalIcon {
+.modalsDivision .confirmModal .top .modalIcon {
   width: 60px;
   height: 60px;
   border-radius: 30px;
@@ -186,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 30px auto;
 }
 
-.modalsDivision .confirmDeleteModal .top .modalTitle {
+.modalsDivision .confirmModal .top .modalTitle {
   font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
   font-size: 18px;
   color: #dadee5;
@@ -194,20 +186,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 30px;
 }
 
-.modalsDivision .confirmDeleteModal .bottom {
+.modalsDivision .confirmModal .bottom {
   width: 100%;
   height: 70px;
   background-color: #414259;
   overflow: hidden;
 }
 
-.modalsDivision .confirmDeleteModal .bottom .confirmButtonsWrapper {
+.modalsDivision .confirmModal .bottom .confirmButtonsWrapper {
   width: 90px;
   height: 30px;
   margin: 20px 105px;
 }
 
-.modalsDivision .confirmDeleteModal .bottom .confirmButtonsWrapper .button {
+.modalsDivision .confirmModal .bottom .confirmButtonsWrapper .button {
   width: 30px;
   height: 30px;
   border-radius: 15px;
@@ -219,11 +211,16 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.modalsDivision .confirmDeleteModal .bottom .confirmButtonsWrapper .button:last-of-type {
+.modalsDivision .confirmModal .bottom .confirmButtonsWrapper .button:last-of-type {
   margin-left: 30px;
   background-image: url("../img/icon.confirm.png");
+}
+
+.modalsDivision .confirmModal .bottom .confirmButtonsWrapper .button:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .modalsDivision .userViewModal {
@@ -232,15 +229,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   border-radius: 5px;
   margin: auto;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
   overflow: hidden;
+  position: relative;
 }
 
 .modalsDivision .userViewModal .closeBtn {
@@ -390,6 +380,168 @@ h1, h2, h3, h4, h5, h6 {
   height: 10px;
 }
 
+.modalsDivision .changePasswordModal {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.modalsDivision .changePasswordModal .closeBtn {
+  position: absolute;
+  z-index: +11;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #414259;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.modalsDivision .changePasswordModal .closeBtn img {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+}
+
+.modalsDivision .changePasswordModal .closeBtn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.modalsDivision .changePasswordModal .top {
+  width: 100%;
+  height: 230px;
+  background-color: #2e3244;
+  border-bottom: dashed 2px #414259;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.modalsDivision .changePasswordModal .top .modalTitle {
+  width: 100%;
+  font-size: 12px;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  text-transform: uppercase;
+  padding: 10px 0;
+  background-color: #414259;
+  color: #dadee5;
+}
+
+.modalsDivision .changePasswordModal .top .changePasswordForm {
+  width: 80%;
+  margin: 13px auto 0;
+}
+
+.modalsDivision .changePasswordModal .top .changePasswordForm input {
+  width: 100%;
+  font-size: 12px;
+  height: 40px;
+  border-radius: 40px;
+  padding-left: 15px;
+  margin: 8px 0;
+  color: #dadee5;
+  background-color: #2c2d3c;
+  outline: none;
+  border: none;
+}
+
+.modalsDivision .changePasswordModal .bottom {
+  width: 100%;
+  height: 70px;
+  background-color: #414259;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+
+.modalsDivision .changePasswordModal .bottom .finish {
+  margin: 15px auto;
+}
+
+.modalsDivision .changeEmailModal {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.modalsDivision .changeEmailModal .closeBtn {
+  position: absolute;
+  z-index: +11;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #414259;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.modalsDivision .changeEmailModal .closeBtn img {
+  width: 24px;
+  height: 24px;
+  margin: 3px;
+}
+
+.modalsDivision .changeEmailModal .closeBtn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.modalsDivision .changeEmailModal .top {
+  width: 100%;
+  height: 230px;
+  background-color: #2e3244;
+  border-bottom: dashed 2px #414259;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.modalsDivision .changeEmailModal .top .modalTitle {
+  width: 100%;
+  font-size: 12px;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  text-transform: uppercase;
+  padding: 10px 0;
+  background-color: #414259;
+  color: #dadee5;
+}
+
+.modalsDivision .changeEmailModal .top .changeEmailForm {
+  width: 80%;
+  margin: 40px auto 0;
+}
+
+.modalsDivision .changeEmailModal .top .changeEmailForm input {
+  width: 100%;
+  font-size: 12px;
+  height: 40px;
+  border-radius: 40px;
+  padding-left: 15px;
+  margin: 8px 0;
+  color: #dadee5;
+  background-color: #2c2d3c;
+  outline: none;
+  border: none;
+}
+
+.modalsDivision .changeEmailModal .bottom {
+  width: 100%;
+  height: 70px;
+  background-color: #414259;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+
+.modalsDivision .changeEmailModal .bottom .finish {
+  margin: 15px auto;
+}
+
 .pageNav {
   width: 100%;
   height: 100%;
@@ -478,6 +630,44 @@ h1, h2, h3, h4, h5, h6 {
 
 .pageNav .userDetails .menuTrigger .box:last-of-type {
   margin-bottom: 0;
+}
+
+.pageNav .userDetails .menuBox {
+  position: absolute;
+  top: 35px;
+  right: 80px;
+  padding: 0;
+  z-index: +2;
+  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
+}
+
+.pageNav .userDetails .menuBox li {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+  line-height: 1;
+  background-color: #414259;
+  border-bottom: solid 2px #3b3b50;
+  transition: background-color 0.3s ease;
+  font-size: 12px;
+  cursor: pointer;
+  color: #dadee5;
+}
+
+.pageNav .userDetails .menuBox li:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.pageNav .userDetails .menuBox li:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: none;
+}
+
+.pageNav .userDetails .menuBox li:hover {
+  background-color: #3b3b50;
 }
 
 .sideNav {
@@ -595,6 +785,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   padding: 5px auto;
   border-radius: 20px;
+  font-size: 12px;
 }
 
 .buttonBase:focus, .outlineButton:focus, .filledButton:focus {
@@ -608,7 +799,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .filledButton {
+  box-shadow: 0px 0px 0px rgba(44, 45, 60, 0.3);
   border: none;
+  transition: transform 0.3s, box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.filledButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 5px rgba(44, 45, 60, 0.3);
 }
 
 .userItem {
@@ -942,11 +1140,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
   height: 100%;
   cursor: pointer;
+  box-shadow: 0px 4px 5px transparent;
   transition: box-shadow 0.5s, transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .dashboardPage .tasksWrapper .task > div:hover {
-  transform: scale(1.1, 1.1);
+  transform: translateY(-20px);
+  box-shadow: 0px 24px 20px rgba(0, 0, 0, 0.2);
 }
 
 .jobMgmtPage .mainBody .subHeader {
@@ -968,7 +1168,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   margin: 15px 20px 15px 0;
   background-color: rgba(65, 66, 89, 0.2);
-  transition: background-color 0.2s ease-out;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease-out;
 }
 
 .jobMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
@@ -990,7 +1190,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: calc(100% - 70px);
   display: block;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents {
@@ -1040,6 +1240,13 @@ h1, h2, h3, h4, h5, h6 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s ease-out;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .actionColumn .deleteButton:hover {
+  transform: scale(1.05, 1.05);
+  background-color: #383d53;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCredit {
@@ -1087,6 +1294,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 9.5px;
   line-height: 1;
   float: left;
+  cursor: pointer;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage + .client:hover {
+  text-decoration: underline;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressAmount {
@@ -1117,6 +1329,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   border-radius: 10px;
+  transition: width 0.8s ease;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressBidding {
@@ -1177,6 +1390,12 @@ h1, h2, h3, h4, h5, h6 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  transition: transform 0.3s, background-color 0.3s ease-out;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .actionColumn .deleteButton:hover {
+  transform: scale(1.05, 1.05);
+  background-color: #383d53;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCredit {
@@ -1224,6 +1443,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 9.5px;
   line-height: 1;
   float: left;
+  cursor: pointer;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage + .client:hover {
+  text-decoration: underline;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressAmount {
@@ -1254,6 +1478,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   border-radius: 10px;
+  transition: width 0.8s ease;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressBidding {
@@ -1286,7 +1511,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
   background-color: #414259;
   border: 2px solid #414259;
-  transition: background-color 0.2s, border 0.2s ease-out;
+  transition: background-color 0.2s, border 0.2s, transform 0.3s, box-shadow 0.3s ease-out;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .backButton:hover {
@@ -1425,6 +1650,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressCompleted {
   background-color: #29b75c;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .viewConversation {
+  font-size: 12px;
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+  line-height: 1;
+  color: #dadee5;
+  background-color: #414259;
+  border: 2px solid #414259;
+  transition: background-color 0.2s, border 0.2s, transform 0.3s, box-shadow 0.3s ease-out;
+}
+
+.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .viewConversation:hover {
+  background-color: #38394d;
 }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn {
@@ -1775,10 +2014,10 @@ h1, h2, h3, h4, h5, h6 {
 .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.clientType:before {
   content: "•";
   color: #29b75c;
-  margin-left: 3px;
+  margin-right: 3px;
 }
 
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.clientType:before {
+.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.designerType:before {
   content: "•";
   color: #228fe3;
   margin-right: 3px;
@@ -1839,7 +2078,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px 20px 15px 0;
   background-color: transparent;
   border: solid 2px rgba(65, 66, 89, 0.2);
-  transition: background-color 0.2s ease-out;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease-out;
 }
 
 .userMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
@@ -2180,10 +2419,10 @@ h1, h2, h3, h4, h5, h6 {
 .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.clientType:before {
   content: "•";
   color: #29b75c;
-  margin-left: 3px;
+  margin-right: 3px;
 }
 
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.clientType:before {
+.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.designerType:before {
   content: "•";
   color: #228fe3;
   margin-right: 3px;
@@ -2243,7 +2482,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   margin: 15px 20px 15px 0;
   background-color: rgba(65, 66, 89, 0.2);
-  transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s, transform 0.3s, box-shadow 0.3s ease-out;
 }
 
 .cashMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
@@ -2299,7 +2538,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody {
-  cursor: pointer;
   color: #dadee5;
   position: relative;
   height: 70px;
@@ -2311,7 +2549,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
 }
 
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .designerColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .amountColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .dateColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .timeColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .typeColumn {
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .amountColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .dateColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .timeColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .typeColumn {
   position: relative;
   top: 50%;
   bottom: auto;
@@ -2340,33 +2578,35 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #29b75c;
 }
 
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .designerImage {
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage {
   width: 30px;
   height: 30px;
   display: inline-block;
   border-radius: 15px;
   background-color: #2e3244;
   float: left;
+  cursor: pointer;
 }
 
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .designerImage img {
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage img {
   width: 24px;
   height: 24px;
   margin: 3px;
   border-radius: 10px;
 }
 
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .designerImage + .designer {
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage + .user {
   display: inline-block;
   margin-left: 10px;
   height: 30px;
   padding-top: 9.5px;
   line-height: 1;
   float: left;
+  cursor: pointer;
 }
 
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody:hover {
-  background-color: #474962;
+.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage + .user:hover {
+  text-decoration: underline;
 }
 
 .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .cashBalance {
@@ -2402,7 +2642,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
 }
 
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .designerColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .amountColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .dateColumn {
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .amountColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .dateColumn {
   position: relative;
   top: 50%;
   bottom: auto;
@@ -2429,12 +2669,22 @@ h1, h2, h3, h4, h5, h6 {
 .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .approveButton {
   background-color: #29b75c;
   background-image: url("../img/icon.confirm.png");
+  transition: transform 0.3s ease-out;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .approveButton:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .rejectButton {
   background-color: #d81327;
   margin-left: 30px;
   background-image: url("../img/icon.cancel.png");
+  transition: transform 0.3s, ease-out;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .rejectButton:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowIndicator, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowPending {
@@ -2451,7 +2701,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #dadee5;
 }
 
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .designerImage {
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage {
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -2460,18 +2710,23 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .designerImage img {
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage img {
   width: 24px;
   height: 24px;
   margin: 3px;
   border-radius: 10px;
 }
 
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .designerImage + .designer {
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage + .user {
   display: inline-block;
   margin-left: 10px;
   height: 30px;
   padding-top: 9.5px;
   line-height: 1;
   float: left;
+  cursor: pointer;
+}
+
+.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage + .user:hover {
+  text-decoration: underline;
 }

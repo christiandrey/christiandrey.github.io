@@ -86,6 +86,44 @@
         margin-bottom: 0;
       }
     }
+
+    .menuBox {
+      position: absolute;
+      top: 35px;
+      right: 80px;
+      padding: 0;
+      z-index: +2;
+      box-shadow: 0px 3px 5px rgba(34,34,34,0.1);
+
+      li {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        padding: 10px;
+        line-height: 1;
+        background-color: $colorGray;
+        border-bottom: solid 2px darken($colorGray, 3);
+        transition: background-color 0.3s ease;
+        font-size: 12px;
+        cursor: pointer;
+        color: $colorWhite;
+
+        &:first-of-type {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+
+        &:last-of-type {
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-bottom: none;
+        }
+
+        &:hover {
+          background-color: darken($colorGray, 3);
+        }
+      }
+    }
   }
 }
 

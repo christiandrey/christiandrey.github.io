@@ -13,15 +13,15 @@
   <body>
     <section class="page cashMgmtPage">
       <section class="modalsDivision hidden">
-        <div class="confirmDeleteModal hidden">
+        <div class="confirmModal hidden">
           <div class="top text-center clearfix">
             <div class="modalIcon"></div>
             <p class="modalTitle">Are you sure you want to delete this user?</p>
           </div>
           <div class="bottom">
             <div class="confirmButtonsWrapper">
-              <div class="button cancelButton"></div>
-              <div class="button confirmButton"></div>
+              <div class="button cancelButton" data-confirm-action="cancel"></div>
+              <div class="button confirmButton" data-confirm-action="confirm"></div>
             </div>
           </div>
         </div>
@@ -52,6 +52,33 @@
           </section>
           <section class="bottom bgAccent"></section>
         </div>
+        <div class="changePasswordModal hidden">
+          <div class="closeBtn"><img src="img/icon.close.png" alt="Close"></div>
+          <div class="top text-center clearfix">
+            <p class="modalTitle">Change your password</p>
+            <form action="" class="changePasswordForm" method="post" id="changePasswordForm">
+              <input class="input oldPasswordField" type="password" placeholder="Old Password" name="oldPassword" required>
+              <input class="input newPasswordField" type="password" placeholder="New Password" name="newPassword" required>
+              <input class="input confirmpasswordField" type="password" placeholder="Confirm New Password" name="confirmPassword" required>
+            </form>
+          </div>
+          <div class="bottom text-center">
+            <button class="bgAccent fgWhite filledButton finish" type="submit" form="changePasswordForm">DONE</button>
+          </div>
+        </div>
+        <div class="changeEmailModal hidden">
+          <div class="closeBtn"><img src="img/icon.close.png" alt="Close"></div>
+          <div class="top text-center clearfix">
+            <p class="modalTitle">Change admin email address</p>
+            <form action="" class="changeEmailForm" method="post" id="changeEmailForm">
+              <input class="input oldEmailField" type="email" placeholder="Old Email Address" name="oldEmail" required>
+              <input class="input newEmailField" type="email" placeholder="New Email Address" name="newEmail" required>
+            </form>
+          </div>
+          <div class="bottom text-center">
+            <button class="bgAccent fgWhite filledButton finish" type="submit" form="changeEmailForm">DONE</button>
+          </div>
+        </div>
       </section>
       <section class="navDivision">
         <div class="pageNav">
@@ -65,54 +92,59 @@
               <div class="box"></div>
               <div class="box"></div>
             </div>
+            <ul class="menuBox hidden">
+              <li class="changeAdminEmail">Change admin email</li>
+              <li class="changeAdminPassword">Change admin password</li>
+              <li class="logout">Logout</li>
+            </ul>
           </section>
         </div>
       </section>
       <section class="bodyDivision">
         <section class="sideNav">
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem home"></div>
+            <a href=""><div class="sideNavItem home"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem jobMgmt"></div>
+            <a href=""><div class="sideNavItem jobMgmt active"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem userMgmt"></div>
+            <a href=""><div class="sideNavItem userMgmt"></div></a>
           </section>
           <section class="sideNavItemWrapper">
-            <div class="sideNavItem cashMgmt active"></div>
+            <a href=""><div class="sideNavItem cashMgmt"></div></a>
           </section>
         </section>
         <section class="mainBody">
           <section class="subHeader">
-              <button class="subHeaderLink filledButton wallet active">Wallet</button>
-              <button class="subHeaderLink filledButton withdrawalRequests">Withdrawal Requests</button>
+              <button class="subHeaderLink filledButton wallet active" data-is-link-to="mainCashMgmtView">Wallet</button>
+              <button class="subHeaderLink filledButton withdrawalRequests" data-is-link-to="requestsView">Withdrawal Requests</button>
           </section>
           <section class="bodyContentsWrapper">
-            <section class="bodyContents mainCashMgmtView hidden">
+            <section class="bodyContents mainCashMgmtView">
               <h5 class="fgAccent text-center">Balance</h5>
               <p class="text-center cashBalance">$9999.99</p>
               <h6 class="fgAccent">Transaction History</h6>
               <div class="divider"></div>
               <div class="container tableWrapper">
                 <div class="row tableHeader">
-                  <div class="col-md-4">Designer</div>
+                  <div class="col-md-4">User</div>
                   <div class="col-md-2">Amount</div>
                   <div class="col-md-3">Date</div>
                   <div class="col-md-2">Time</div>
                   <div class="col-md-1">Type</div>
                 </div>
-                <div class="row tableBody">
-                  <div id="rowIndicator" class="rowItem rowDebit"></div>
-                  <div class="col-md-4 designerColumn"><span class="designerImage"><img src="img/profile.jpg" alt="Designer Avatar"></span><span class="designer">Mr. Johnny Doe with a very long name</span></div>
+                <div class="row tableBody" data-transaction-id="1234" data-transaction-type="debit">
+                  <div id="rowIndicator" class="rowDebit"></div>
+                  <div class="col-md-4 userColumn"><span class="userImage"><img src="img/profile2.jpg" alt="Designer Avatar"></span><span class="user" data-user-id="3455" data-user-type="designer">Mr. Johnny Doe with a very long name</span></div>
                   <div class="col-md-2 amountColumn"><span class="amount">$30.00</span></div>
                   <div class="col-md-3 dateColumn"><span class="date">27th February, 2017</span></div>
                   <div class="col-md-2 timeColumn"><span class="time">02:23PM GMT</span></div>
                   <div class="col-md-1 typeColumn"><span class="type">Debit</span></div>
                 </div>
-                <div class="row tableBody">
-                  <div id="rowIndicator" class="rowItem rowCredit"></div>
-                  <div class="col-md-4 designerColumn"><span class="designerImage"><img src="img/profile.jpg" alt="Designer Avatar"></span><span class="designer">Mr. Johnny Doe with a very long name</span></div>
+                <div class="row tableBody" data-transaction-id="1234" data-transaction-type="credit">
+                  <div id="rowIndicator" class="rowCredit"></div>
+                  <div class="col-md-4 userColumn"><span class="userImage"><img src="img/profile2.jpg" alt="Designer Avatar"></span><span class="user" data-user-id="3455" data-user-type="designer">Mr. Johnny Doe with a very long name</span></div>
                   <div class="col-md-2 amountColumn"><span class="amount">$30.00</span></div>
                   <div class="col-md-3 dateColumn"><span class="date">27th February, 2017</span></div>
                   <div class="col-md-2 timeColumn"><span class="time">02:23PM GMT</span></div>
@@ -120,7 +152,7 @@
                 </div>
               </div>
             </section>
-            <section class="bodyContents requestsView">
+            <section class="bodyContents requestsView hidden">
               <div class="container tableWrapper">
                 <div class="row tableHeader">
                   <div class="col-md-4">Designer</div>
@@ -128,9 +160,30 @@
                   <div class="col-md-3">Request Date</div>
                   <div class="col-md-3">Action</div>
                 </div>
-                <div class="row tableBody">
+                <div class="row tableBody" data-transaction-id="1234" data-transaction-type="request">
                   <div id="rowIndicator" class="rowItem rowPending"></div>
-                  <div class="col-md-4 designerColumn"><span class="designerImage"></span><span class="designer">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-4 userColumn"><span class="userImage"><img src="img/profile2.jpg" alt="Designer Avatar"></span><span class="user" data-user-id="3455" data-user-type="designer">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-2 amountColumn"><span class="amount">$30.00</span></div>
+                  <div class="col-md-3 dateColumn"><span class="date">27th February, 2017</span></div>
+                  <div class="col-md-3 actionColumn"><span class="approveButton"></span><span class="rejectButton"></span></div>
+                </div>
+                <div class="row tableBody" data-transaction-id="1234" data-transaction-type="request">
+                  <div id="rowIndicator" class="rowItem rowPending"></div>
+                  <div class="col-md-4 userColumn"><span class="userImage"><img src="img/profile2.jpg" alt="Designer Avatar"></span><span class="user" data-user-id="3455" data-user-type="designer">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-2 amountColumn"><span class="amount">$30.00</span></div>
+                  <div class="col-md-3 dateColumn"><span class="date">27th February, 2017</span></div>
+                  <div class="col-md-3 actionColumn"><span class="approveButton"></span><span class="rejectButton"></span></div>
+                </div>
+                <div class="row tableBody" data-transaction-id="1234" data-transaction-type="request">
+                  <div id="rowIndicator" class="rowItem rowPending"></div>
+                  <div class="col-md-4 userColumn"><span class="userImage"><img src="img/profile2.jpg" alt="Designer Avatar"></span><span class="user" data-user-id="3455" data-user-type="designer">Mr. Johnny Doe with a very long name</span></div>
+                  <div class="col-md-2 amountColumn"><span class="amount">$30.00</span></div>
+                  <div class="col-md-3 dateColumn"><span class="date">27th February, 2017</span></div>
+                  <div class="col-md-3 actionColumn"><span class="approveButton"></span><span class="rejectButton"></span></div>
+                </div>
+                <div class="row tableBody" data-transaction-id="1234" data-transaction-type="request">
+                  <div id="rowIndicator" class="rowItem rowPending"></div>
+                  <div class="col-md-4 userColumn"><span class="userImage"><img src="img/profile2.jpg" alt="Designer Avatar"></span><span class="user" data-user-id="3455" data-user-type="designer">Mr. Johnny Doe with a very long name</span></div>
                   <div class="col-md-2 amountColumn"><span class="amount">$30.00</span></div>
                   <div class="col-md-3 dateColumn"><span class="date">27th February, 2017</span></div>
                   <div class="col-md-3 actionColumn"><span class="approveButton"></span><span class="rejectButton"></span></div>
@@ -146,4 +199,5 @@
   <!-- <script src="js/bootstrap.min.js"></script> -->
   <script src="js/dreyanim.js"></script>
   <script src="js/dreymodal.js"></script>
+  <script src="js/app.js"></script>
 </html>
