@@ -126,6 +126,15 @@ $(document).ready(function(){
 
 //--End of Global scripts
 
+//Index Page Specific Scripts
+$(document).ready(function(){
+  $('.loginForm').submit(function(event){
+    event.preventDefault;
+    location.href = "dashboard.html"
+  })
+})
+//--Index Page Specific Scripts
+
 //Dashboard Page Specific Scripts
 $(document).ready(function(){
   //Dashboard Linking
