@@ -3,22 +3,19 @@
   font-family: 'HelveticaNeueLTPro-Bd';
   src: url("../fonts/HelveticaNeueLTPro-Bd.otf") format("opentype");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'HelveticaNeueLTPro-Roman';
   src: url("../fonts/HelveticaNeueLTPro-Roman.otf") format("opentype");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 @font-face {
   font-family: 'HelveticaNeueLTPro-Lt';
   src: url("../fonts/HelveticaNeueLTPro-Lt.otf") format("opentype");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 body {
   font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
@@ -26,121 +23,92 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 0.7px;
-}
+  letter-spacing: 0.7px; }
 
 ::selection {
-  background-color: #dadee5;
-}
+  background-color: #dadee5; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-}
+  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif; }
 
 .fgBlack {
-  color: #222222;
-}
+  color: #222222; }
 
 .bgBlack {
-  background-color: #222222;
-}
+  background-color: #222222; }
 
 .fgGray {
-  color: #414259;
-}
+  color: #414259; }
 
 .bgGray {
-  background-color: #414259;
-}
+  background-color: #414259; }
 
 .fgDark {
-  color: #2c2d3c;
-}
+  color: #2c2d3c; }
 
 .bgDark {
-  background-color: #2c2d3c;
-}
+  background-color: #2c2d3c; }
 
 .fgDarkGray {
-  color: #2e3244;
-}
+  color: #2e3244; }
 
 .bgDarkGray {
-  background-color: #2e3244;
-}
+  background-color: #2e3244; }
 
 .fgGray {
-  color: #414259;
-}
+  color: #414259; }
 
 .bgGray {
-  background-color: #414259;
-}
+  background-color: #414259; }
 
 .fgAccent {
-  color: #228fe3;
-}
+  color: #228fe3; }
 
 .bgAccent {
-  background-color: #228fe3;
-}
+  background-color: #228fe3; }
 
 .fgWhite {
-  color: #dadee5;
-}
+  color: #dadee5; }
 
 .bgWhite {
-  background-color: #dadee5;
-}
+  background-color: #dadee5; }
 
 .fgSuccess {
-  color: #29b75c;
-}
+  color: #29b75c; }
 
 .bgSuccess {
-  background-color: #29b75c;
-}
+  background-color: #29b75c; }
 
 .fgFailure {
-  color: #d81327;
-}
+  color: #d81327; }
 
 .bgFailure {
-  background-color: #d81327;
-}
+  background-color: #d81327; }
 
 .page {
   width: 100vw;
-  height: 100vh;
-}
-
-.page .navDivision {
-  width: 100%;
-  height: 70px;
-  position: relative;
-  z-index: +2;
-}
-
-.page .bodyDivision {
-  width: 100%;
-  height: calc(100% - 70px);
-}
-
-.page .bodyDivision .mainBody {
-  width: calc(100% - 70px);
-  height: 100%;
-  display: inline-flex;
-  flex-direction: column;
-  float: left;
-  background-color: #2c2d3c;
-}
+  height: 100vh; }
+  .page .navDivision {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    z-index: +2; }
+  .page .bodyDivision {
+    width: 100%;
+    height: calc(100% - 70px); }
+    .page .bodyDivision .mainBody {
+      width: calc(100% - 70px);
+      height: 100%;
+      display: inline-flex;
+      flex-direction: column;
+      float: left;
+      background-color: #2c2d3c; }
 
 .divider {
   width: 100%;
   height: 2px;
   background-color: #303142;
-  margin: 20px 0 20px;
-}
+  margin: 20px 0 20px; }
 
 .modalsDivision {
   width: 100%;
@@ -148,666 +116,505 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(44, 45, 60, 0.9);
   position: fixed;
   z-index: +10;
-  display: flex;
-}
-
-.modalsDivision .confirmModal {
-  width: 300px;
-  height: 300px;
-  margin: auto;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.modalsDivision .confirmModal .top {
-  width: 100%;
-  height: 230px;
-  background-color: #2e3244;
-  border-bottom: dashed 2px #414259;
-}
-
-.modalsDivision .confirmModal .top .modalIcon {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-  background-color: #2c2d3c;
-  background-image: url("../img/icon.warning.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 30px auto;
-}
-
-.modalsDivision .confirmModal .top .modalTitle {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 18px;
-  color: #dadee5;
-  line-height: 1.2;
-  padding: 0 30px;
-}
-
-.modalsDivision .confirmModal .bottom {
-  width: 100%;
-  height: 70px;
-  background-color: #414259;
-  overflow: hidden;
-}
-
-.modalsDivision .confirmModal .bottom .confirmButtonsWrapper {
-  width: 90px;
-  height: 30px;
-  margin: 20px 105px;
-}
-
-.modalsDivision .confirmModal .bottom .confirmButtonsWrapper .button {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: #2c2d3c;
-  display: inline;
-  float: left;
-  background-image: url("../img/icon.cancel.png");
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.modalsDivision .confirmModal .bottom .confirmButtonsWrapper .button:last-of-type {
-  margin-left: 30px;
-  background-image: url("../img/icon.confirm.png");
-}
-
-.modalsDivision .confirmModal .bottom .confirmButtonsWrapper .button:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.modalsDivision .userViewModal {
-  width: 400px;
-  height: 500px;
-  text-align: center;
-  border-radius: 5px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.modalsDivision .userViewModal .closeBtn {
-  position: absolute;
-  z-index: +11;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: #414259;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-}
-
-.modalsDivision .userViewModal .closeBtn img {
-  width: 24px;
-  height: 24px;
-  margin: 3px;
-}
-
-.modalsDivision .userViewModal .top {
-  width: 100%;
-  height: calc(100% - 70px);
-  background-color: #2e3244;
-  border-bottom: dashed 2px #414259;
-}
-
-.modalsDivision .userViewModal .top .profileContentWrapper {
-  width: 80%;
-  margin: auto 10%;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg {
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
-  display: inline-block;
-  background-color: #2b2c3c;
-  margin: auto;
-}
-
-.modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg > div {
-  width: 240px;
-  height: 240px;
-  border-radius: 240px;
-  margin: 5px;
-  background-color: #303141;
-}
-
-.modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg > div > div {
-  width: 230px;
-  height: 230px;
-  border-radius: 230px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-color: #3d3e53;
-}
-
-.modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg > div > div > img {
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.modalsDivision .userViewModal .top .profileContentWrapper .profileName {
-  color: #dadee5;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 14px;
-  line-height: 1;
-  margin: 20px auto 8px;
-}
-
-.modalsDivision .userViewModal .top .profileContentWrapper .profileType {
-  color: #dadee5;
-  font-size: 11px;
-  line-height: 1;
-}
-
-.modalsDivision .userViewModal .top .profileContentWrapper .profileType.clientType:before {
-  content: "•";
-  color: #29b75c;
-  margin-left: 3px;
-}
-
-.modalsDivision .userViewModal .top .profileContentWrapper .profileType.clientType:before {
-  content: "•";
-  color: #228fe3;
-  margin-right: 3px;
-}
-
-.modalsDivision .userViewModal .middle {
-  width: 100%;
-  height: 60px;
-  background-color: #414259;
-}
-
-.modalsDivision .userViewModal .middle .left, .modalsDivision .userViewModal .middle .right {
-  display: inline;
-  float: left;
-  width: 50%;
-  height: 100%;
-}
-
-.modalsDivision .userViewModal .middle .left .title, .modalsDivision .userViewModal .middle .right .title {
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 10px;
-  color: #dadee5;
-  line-height: 1;
-  padding: 0;
-  margin: 15px 0 5px;
-}
-
-.modalsDivision .userViewModal .middle .left .subTitle, .modalsDivision .userViewModal .middle .right .subTitle {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 18px;
-  line-height: 1;
-  padding: 0;
-  margin: 0;
-}
-
-.modalsDivision .userViewModal .bottom {
-  width: 100%;
-  height: 10px;
-}
-
-.modalsDivision .changePasswordModal {
-  width: 400px;
-  height: 300px;
-  margin: auto;
-  position: relative;
-}
-
-.modalsDivision .changePasswordModal .closeBtn {
-  position: absolute;
-  z-index: +11;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: #414259;
-  top: -15px;
-  right: -15px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.modalsDivision .changePasswordModal .closeBtn img {
-  width: 24px;
-  height: 24px;
-  margin: 3px;
-}
-
-.modalsDivision .changePasswordModal .closeBtn:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.modalsDivision .changePasswordModal .top {
-  width: 100%;
-  height: 230px;
-  background-color: #2e3244;
-  border-bottom: dashed 2px #414259;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  overflow: hidden;
-}
-
-.modalsDivision .changePasswordModal .top .modalTitle {
-  width: 100%;
-  font-size: 12px;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  text-transform: uppercase;
-  padding: 10px 0;
-  background-color: #414259;
-  color: #dadee5;
-}
-
-.modalsDivision .changePasswordModal .top .changePasswordForm {
-  width: 80%;
-  margin: 13px auto 0;
-}
-
-.modalsDivision .changePasswordModal .top .changePasswordForm input {
-  width: 100%;
-  font-size: 12px;
-  height: 40px;
-  border-radius: 40px;
-  padding-left: 15px;
-  margin: 8px 0;
-  color: #dadee5;
-  background-color: #2c2d3c;
-  outline: none;
-  border: none;
-}
-
-.modalsDivision .changePasswordModal .bottom {
-  width: 100%;
-  height: 70px;
-  background-color: #414259;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-
-.modalsDivision .changePasswordModal .bottom .finish {
-  margin: 15px auto;
-}
-
-.modalsDivision .changeEmailModal {
-  width: 400px;
-  height: 300px;
-  margin: auto;
-  position: relative;
-}
-
-.modalsDivision .changeEmailModal .closeBtn {
-  position: absolute;
-  z-index: +11;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: #414259;
-  top: -15px;
-  right: -15px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.modalsDivision .changeEmailModal .closeBtn img {
-  width: 24px;
-  height: 24px;
-  margin: 3px;
-}
-
-.modalsDivision .changeEmailModal .closeBtn:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.modalsDivision .changeEmailModal .top {
-  width: 100%;
-  height: 230px;
-  background-color: #2e3244;
-  border-bottom: dashed 2px #414259;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  overflow: hidden;
-}
-
-.modalsDivision .changeEmailModal .top .modalTitle {
-  width: 100%;
-  font-size: 12px;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  text-transform: uppercase;
-  padding: 10px 0;
-  background-color: #414259;
-  color: #dadee5;
-}
-
-.modalsDivision .changeEmailModal .top .changeEmailForm {
-  width: 80%;
-  margin: 40px auto 0;
-}
-
-.modalsDivision .changeEmailModal .top .changeEmailForm input {
-  width: 100%;
-  font-size: 12px;
-  height: 40px;
-  border-radius: 40px;
-  padding-left: 15px;
-  margin: 8px 0;
-  color: #dadee5;
-  background-color: #2c2d3c;
-  outline: none;
-  border: none;
-}
-
-.modalsDivision .changeEmailModal .bottom {
-  width: 100%;
-  height: 70px;
-  background-color: #414259;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  overflow: hidden;
-}
-
-.modalsDivision .changeEmailModal .bottom .finish {
-  margin: 15px auto;
-}
+  display: flex; }
+  .modalsDivision .confirmModal {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden; }
+    .modalsDivision .confirmModal .top {
+      width: 100%;
+      height: 230px;
+      background-color: #2e3244;
+      border-bottom: dashed 2px #414259; }
+      .modalsDivision .confirmModal .top .modalIcon {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: #2c2d3c;
+        background-image: url("../img/icon.warning.png");
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 30px auto; }
+      .modalsDivision .confirmModal .top .modalTitle {
+        font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+        font-size: 18px;
+        color: #dadee5;
+        line-height: 1.2;
+        padding: 0 30px; }
+    .modalsDivision .confirmModal .bottom {
+      width: 100%;
+      height: 70px;
+      background-color: #414259;
+      overflow: hidden; }
+      .modalsDivision .confirmModal .bottom .confirmButtonsWrapper {
+        width: 90px;
+        height: 30px;
+        margin: 20px 105px; }
+        .modalsDivision .confirmModal .bottom .confirmButtonsWrapper .button {
+          width: 30px;
+          height: 30px;
+          border-radius: 15px;
+          background-color: #2c2d3c;
+          display: inline;
+          float: left;
+          background-image: url("../img/icon.cancel.png");
+          background-size: 80%;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+          transition: transform 0.3s ease; }
+          .modalsDivision .confirmModal .bottom .confirmButtonsWrapper .button:last-of-type {
+            margin-left: 30px;
+            background-image: url("../img/icon.confirm.png"); }
+          .modalsDivision .confirmModal .bottom .confirmButtonsWrapper .button:hover {
+            transform: scale(1.1, 1.1); }
+  .modalsDivision .userViewModal {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    overflow: hidden;
+    position: relative; }
+    .modalsDivision .userViewModal .closeBtn {
+      position: absolute;
+      z-index: +11;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: #414259;
+      top: 15px;
+      right: 15px;
+      cursor: pointer; }
+      .modalsDivision .userViewModal .closeBtn img {
+        width: 24px;
+        height: 24px;
+        margin: 3px; }
+    .modalsDivision .userViewModal .top {
+      width: 100%;
+      height: calc(100% - 70px);
+      background-color: #2e3244;
+      border-bottom: dashed 2px #414259; }
+      .modalsDivision .userViewModal .top .profileContentWrapper {
+        width: 80%;
+        margin: auto 10%;
+        position: relative;
+        top: 50%;
+        bottom: auto;
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        .modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg {
+          width: 250px;
+          height: 250px;
+          border-radius: 250px;
+          display: inline-block;
+          background-color: #2b2c3c;
+          margin: auto; }
+          .modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg > div {
+            width: 240px;
+            height: 240px;
+            border-radius: 240px;
+            margin: 5px;
+            background-color: #303141; }
+            .modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg > div > div {
+              width: 230px;
+              height: 230px;
+              border-radius: 230px;
+              position: relative;
+              left: 50%;
+              top: 50%;
+              bottom: auto;
+              right: auto;
+              -moz-transform: translateX(-50%) translateY(-50%);
+              -o-transform: translateX(-50%) translateY(-50%);
+              -ms-transform: translateX(-50%) translateY(-50%);
+              -webkit-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+              background-color: #3d3e53; }
+              .modalsDivision .userViewModal .top .profileContentWrapper .profileImgBg > div > div > img {
+                width: 200px;
+                height: 200px;
+                border-radius: 200px;
+                position: relative;
+                top: 50%;
+                bottom: auto;
+                -moz-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+        .modalsDivision .userViewModal .top .profileContentWrapper .profileName {
+          color: #dadee5;
+          font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+          font-size: 14px;
+          line-height: 1;
+          margin: 20px auto 8px; }
+        .modalsDivision .userViewModal .top .profileContentWrapper .profileType {
+          color: #dadee5;
+          font-size: 11px;
+          line-height: 1; }
+          .modalsDivision .userViewModal .top .profileContentWrapper .profileType.clientType:before {
+            content: "•";
+            color: #29b75c;
+            margin-left: 3px; }
+          .modalsDivision .userViewModal .top .profileContentWrapper .profileType.clientType:before {
+            content: "•";
+            color: #228fe3;
+            margin-right: 3px; }
+    .modalsDivision .userViewModal .middle {
+      width: 100%;
+      height: 60px;
+      background-color: #414259; }
+      .modalsDivision .userViewModal .middle .left, .modalsDivision .userViewModal .middle .right {
+        display: inline;
+        float: left;
+        width: 50%;
+        height: 100%; }
+        .modalsDivision .userViewModal .middle .left .title, .modalsDivision .userViewModal .middle .right .title {
+          font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+          font-size: 10px;
+          color: #dadee5;
+          line-height: 1;
+          padding: 0;
+          margin: 15px 0 5px; }
+        .modalsDivision .userViewModal .middle .left .subTitle, .modalsDivision .userViewModal .middle .right .subTitle {
+          font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+          font-size: 18px;
+          line-height: 1;
+          padding: 0;
+          margin: 0; }
+    .modalsDivision .userViewModal .bottom {
+      width: 100%;
+      height: 10px; }
+  .modalsDivision .changePasswordModal {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    position: relative; }
+    .modalsDivision .changePasswordModal .closeBtn {
+      position: absolute;
+      z-index: +11;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: #414259;
+      top: -15px;
+      right: -15px;
+      cursor: pointer;
+      transition: transform 0.2s ease; }
+      .modalsDivision .changePasswordModal .closeBtn img {
+        width: 24px;
+        height: 24px;
+        margin: 3px; }
+      .modalsDivision .changePasswordModal .closeBtn:hover {
+        transform: scale(1.1, 1.1); }
+    .modalsDivision .changePasswordModal .top {
+      width: 100%;
+      height: 230px;
+      background-color: #2e3244;
+      border-bottom: dashed 2px #414259;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      overflow: hidden; }
+      .modalsDivision .changePasswordModal .top .modalTitle {
+        width: 100%;
+        font-size: 12px;
+        font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+        text-transform: uppercase;
+        padding: 10px 0;
+        background-color: #414259;
+        color: #dadee5; }
+      .modalsDivision .changePasswordModal .top .changePasswordForm {
+        width: 80%;
+        margin: 13px auto 0; }
+        .modalsDivision .changePasswordModal .top .changePasswordForm input {
+          width: 100%;
+          font-size: 12px;
+          height: 40px;
+          border-radius: 40px;
+          padding-left: 15px;
+          margin: 8px 0;
+          color: #dadee5;
+          background-color: #2c2d3c;
+          outline: none;
+          border: none; }
+    .modalsDivision .changePasswordModal .bottom {
+      width: 100%;
+      height: 70px;
+      background-color: #414259;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      overflow: hidden; }
+      .modalsDivision .changePasswordModal .bottom .finish {
+        margin: 15px auto; }
+  .modalsDivision .changeEmailModal {
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    position: relative; }
+    .modalsDivision .changeEmailModal .closeBtn {
+      position: absolute;
+      z-index: +11;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: #414259;
+      top: -15px;
+      right: -15px;
+      cursor: pointer;
+      transition: transform 0.2s ease; }
+      .modalsDivision .changeEmailModal .closeBtn img {
+        width: 24px;
+        height: 24px;
+        margin: 3px; }
+      .modalsDivision .changeEmailModal .closeBtn:hover {
+        transform: scale(1.1, 1.1); }
+    .modalsDivision .changeEmailModal .top {
+      width: 100%;
+      height: 230px;
+      background-color: #2e3244;
+      border-bottom: dashed 2px #414259;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      overflow: hidden; }
+      .modalsDivision .changeEmailModal .top .modalTitle {
+        width: 100%;
+        font-size: 12px;
+        font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+        text-transform: uppercase;
+        padding: 10px 0;
+        background-color: #414259;
+        color: #dadee5; }
+      .modalsDivision .changeEmailModal .top .changeEmailForm {
+        width: 80%;
+        margin: 40px auto 0; }
+        .modalsDivision .changeEmailModal .top .changeEmailForm input {
+          width: 100%;
+          font-size: 12px;
+          height: 40px;
+          border-radius: 40px;
+          padding-left: 15px;
+          margin: 8px 0;
+          color: #dadee5;
+          background-color: #2c2d3c;
+          outline: none;
+          border: none; }
+    .modalsDivision .changeEmailModal .bottom {
+      width: 100%;
+      height: 70px;
+      background-color: #414259;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      overflow: hidden; }
+      .modalsDivision .changeEmailModal .bottom .finish {
+        margin: 15px auto; }
 
 .pageNav {
   width: 100%;
   height: 100%;
   background-color: #2e3244;
-  box-shadow: 0px 5px 20px #2c2d3c;
-}
-
-.pageNav .brandLogo {
-  width: 50px;
-  height: 50px;
-  margin: 10px 0 10px 70px;
-  display: inline-block;
-  float: left;
-  border-radius: 50px;
-  background-color: #414259;
-  cursor: pointer;
-}
-
-.pageNav .brandLogo img {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  margin: 5px;
-}
-
-.pageNav .brandName {
-  margin: 25px 0px 25px 25px;
-  font-size: 20px;
-  height: 20px;
-  float: left;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  display: inline-block;
-  line-height: 1;
-  color: #dadee5;
-}
-
-.pageNav .userDetails {
-  width: auto;
-  height: 100%;
-  float: right;
-  display: flex;
-  flex-direction: row;
-  margin-right: 70px;
-}
-
-.pageNav .userDetails .adminEmail {
-  font-size: 12px;
-  height: 12px;
-  line-height: 1;
-  color: #dadee5;
-  display: inline;
-  margin: 29px 0;
-}
-
-.pageNav .userDetails .userAvatar {
-  width: 50px;
-  height: 50px;
-  margin: 10px 0 10px 30px;
-  display: inline;
-  border-radius: 50px;
-  background-color: #414259;
-}
-
-.pageNav .userDetails .userAvatar img {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  margin: 5px;
-}
-
-.pageNav .userDetails .menuTrigger {
-  width: 5px;
-  height: 25px;
-  margin: 22.5px 0 22.5px 30px;
-  display: inline;
-  cursor: pointer;
-}
-
-.pageNav .userDetails .menuTrigger .box {
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  background-color: #228fe3;
-}
-
-.pageNav .userDetails .menuTrigger .box:last-of-type {
-  margin-bottom: 0;
-}
-
-.pageNav .userDetails .menuBox {
-  position: absolute;
-  top: 35px;
-  right: 80px;
-  padding: 0;
-  z-index: +2;
-  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
-}
-
-.pageNav .userDetails .menuBox li {
-  width: 100%;
-  text-align: center;
-  list-style: none;
-  padding: 10px;
-  line-height: 1;
-  background-color: #414259;
-  border-bottom: solid 2px #3b3b50;
-  transition: background-color 0.3s ease;
-  font-size: 12px;
-  cursor: pointer;
-  color: #dadee5;
-}
-
-.pageNav .userDetails .menuBox li:first-of-type {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.pageNav .userDetails .menuBox li:last-of-type {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom: none;
-}
-
-.pageNav .userDetails .menuBox li:hover {
-  background-color: #3b3b50;
-}
+  box-shadow: 0px 5px 20px #2c2d3c; }
+  .pageNav .brandLogo {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 10px 70px;
+    display: inline-block;
+    float: left;
+    border-radius: 50px;
+    background-color: #414259;
+    cursor: pointer; }
+    .pageNav .brandLogo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      margin: 5px; }
+  .pageNav .brandName {
+    margin: 25px 0px 25px 25px;
+    font-size: 20px;
+    height: 20px;
+    float: left;
+    font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+    display: inline-block;
+    line-height: 1;
+    color: #dadee5; }
+  .pageNav .userDetails {
+    width: auto;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px; }
+    .pageNav .userDetails .adminEmail {
+      font-size: 12px;
+      height: 12px;
+      line-height: 1;
+      color: #dadee5;
+      display: inline;
+      margin: 29px 0; }
+    .pageNav .userDetails .userAvatar {
+      width: 50px;
+      height: 50px;
+      margin: 10px 0 10px 30px;
+      display: inline;
+      border-radius: 50px;
+      background-color: #414259; }
+      .pageNav .userDetails .userAvatar img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 5px; }
+    .pageNav .userDetails .menuTrigger {
+      width: 5px;
+      height: 25px;
+      margin: 22.5px 0 22.5px 30px;
+      display: inline;
+      cursor: pointer; }
+      .pageNav .userDetails .menuTrigger .box {
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        background-color: #228fe3; }
+      .pageNav .userDetails .menuTrigger .box:last-of-type {
+        margin-bottom: 0; }
+    .pageNav .userDetails .menuBox {
+      position: absolute;
+      top: 35px;
+      right: 80px;
+      padding: 0;
+      z-index: +2;
+      box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1); }
+      .pageNav .userDetails .menuBox li {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        padding: 10px;
+        line-height: 1;
+        background-color: #414259;
+        border-bottom: solid 2px #3b3b50;
+        transition: background-color 0.3s ease;
+        font-size: 12px;
+        cursor: pointer;
+        color: #dadee5; }
+        .pageNav .userDetails .menuBox li:first-of-type {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px; }
+        .pageNav .userDetails .menuBox li:last-of-type {
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-bottom: none; }
+        .pageNav .userDetails .menuBox li:hover {
+          background-color: #3b3b50; }
 
 .sideNav {
   width: 70px;
   height: 100%;
   display: inline-block;
   float: left;
-  background-color: #2e3244;
-}
-
-.sideNav .sideNavItemWrapper {
-  width: 70px;
-  height: 80px;
-  overflow: auto;
-}
-
-.sideNav .sideNavItemWrapper .sideNavItem {
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  margin: 25px 20px;
-  position: relative;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
-
-.sideNav .sideNavItemWrapper .home {
-  background-image: url("../img/icon.nav.home.png");
-  transition: background-image 0.2s ease;
-}
-
-.sideNav .sideNavItemWrapper .home:hover, .sideNav .sideNavItemWrapper .home.active {
-  background-image: url("../img/icon.nav.home.hover.png");
-}
-
-.sideNav .sideNavItemWrapper .home.active:after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #228fe3;
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.sideNav .sideNavItemWrapper .jobMgmt {
-  background-image: url("../img/icon.nav.jobMgmt.png");
-  transition: background-image 0.2s ease;
-}
-
-.sideNav .sideNavItemWrapper .jobMgmt:hover, .sideNav .sideNavItemWrapper .jobMgmt.active {
-  background-image: url("../img/icon.nav.jobMgmt.hover.png");
-}
-
-.sideNav .sideNavItemWrapper .jobMgmt.active:after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #228fe3;
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.sideNav .sideNavItemWrapper .userMgmt {
-  background-image: url("../img/icon.nav.userMgmt.png");
-  transition: background-image 0.2s ease;
-}
-
-.sideNav .sideNavItemWrapper .userMgmt:hover, .sideNav .sideNavItemWrapper .userMgmt.active {
-  background-image: url("../img/icon.nav.userMgmt.hover.png");
-}
-
-.sideNav .sideNavItemWrapper .userMgmt.active:after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #228fe3;
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.sideNav .sideNavItemWrapper .cashMgmt {
-  background-image: url("../img/icon.nav.cashMgmt.png");
-  transition: background-image 0.2s ease;
-}
-
-.sideNav .sideNavItemWrapper .cashMgmt:hover, .sideNav .sideNavItemWrapper .cashMgmt.active {
-  background-image: url("../img/icon.nav.cashMgmt.hover.png");
-}
-
-.sideNav .sideNavItemWrapper .cashMgmt.active:after {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  background-color: #228fe3;
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
+  background-color: #2e3244; }
+  .sideNav .sideNavItemWrapper {
+    width: 70px;
+    height: 80px;
+    overflow: auto; }
+    .sideNav .sideNavItemWrapper .sideNavItem {
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      margin: 25px 20px;
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer; }
+    .sideNav .sideNavItemWrapper .home {
+      background-image: url("../img/icon.nav.home.png");
+      transition: background-image 0.2s ease; }
+      .sideNav .sideNavItemWrapper .home:hover, .sideNav .sideNavItemWrapper .home.active {
+        background-image: url("../img/icon.nav.home.hover.png"); }
+      .sideNav .sideNavItemWrapper .home.active:after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #228fe3;
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px; }
+    .sideNav .sideNavItemWrapper .jobMgmt {
+      background-image: url("../img/icon.nav.jobMgmt.png");
+      transition: background-image 0.2s ease; }
+      .sideNav .sideNavItemWrapper .jobMgmt:hover, .sideNav .sideNavItemWrapper .jobMgmt.active {
+        background-image: url("../img/icon.nav.jobMgmt.hover.png"); }
+      .sideNav .sideNavItemWrapper .jobMgmt.active:after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #228fe3;
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px; }
+    .sideNav .sideNavItemWrapper .userMgmt {
+      background-image: url("../img/icon.nav.userMgmt.png");
+      transition: background-image 0.2s ease; }
+      .sideNav .sideNavItemWrapper .userMgmt:hover, .sideNav .sideNavItemWrapper .userMgmt.active {
+        background-image: url("../img/icon.nav.userMgmt.hover.png"); }
+      .sideNav .sideNavItemWrapper .userMgmt.active:after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #228fe3;
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px; }
+    .sideNav .sideNavItemWrapper .cashMgmt {
+      background-image: url("../img/icon.nav.cashMgmt.png");
+      transition: background-image 0.2s ease; }
+      .sideNav .sideNavItemWrapper .cashMgmt:hover, .sideNav .sideNavItemWrapper .cashMgmt.active {
+        background-image: url("../img/icon.nav.cashMgmt.hover.png"); }
+      .sideNav .sideNavItemWrapper .cashMgmt.active:after {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #228fe3;
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px; }
 
 .buttonBase, .outlineButton, .filledButton {
   width: 160px;
   height: 40px;
   padding: 5px auto;
   border-radius: 20px;
-  font-size: 12px;
-}
+  font-size: 12px; }
 
 .buttonBase:focus, .outlineButton:focus, .filledButton:focus {
-  outline: none;
-}
+  outline: none; }
 
 .outlineButton {
   color: #dadee5;
-  background-color: transparent;
-  border: solid 1px #dadee5;
-}
+  background-color: black;
+  border: solid 1px #dadee5; }
 
 .filledButton {
   box-shadow: 0px 0px 0px rgba(44, 45, 60, 0.3);
   border: none;
-  transition: transform 0.3s, box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.filledButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 4px 5px rgba(44, 45, 60, 0.3);
-}
+  transition: transform 0.3s, box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .filledButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 5px rgba(44, 45, 60, 0.3); }
 
 .userItem {
   height: 70px;
@@ -820,126 +627,93 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: inline-block;
   transition: background-color 0.3s ease-in;
-  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
-}
-
-.userItem .userIconWrapper {
-  height: 70px;
-  width: 70px;
-  display: inline;
-  float: left;
-}
-
-.userItem .userIconWrapper .userIcon {
-  width: 40px;
-  height: 40px;
-  margin: 15px;
-  display: block;
-  border-radius: 20px;
-  background-color: #414259;
-}
-
-.userItem .userIconWrapper .userIcon img {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  margin: 5px;
-}
-
-.userItem .userNameWrapper {
-  width: 190px;
-  height: 70px;
-  display: inline;
-  float: left;
-}
-
-.userItem .userNameWrapper .userName {
-  font-size: 12px;
-  line-height: 1;
-  display: block;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.userItem .actionButtonWrapper {
-  width: 40px;
-  height: 70px;
-  display: inline;
-  float: left;
-  box-sizing: border-box;
-}
-
-.userItem .actionButtonWrapper .menuTrigger {
-  width: 5px;
-  height: 25px;
-  margin: 22.5px 17.5px;
-  display: block;
-  cursor: pointer;
-}
-
-.userItem .actionButtonWrapper .menuTrigger .box {
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  background-color: #228fe3;
-}
-
-.userItem .actionButtonWrapper .menuTrigger .box:last-of-type {
-  margin-bottom: 0;
-}
-
-.userItem .actionButtonWrapper .menuBox {
-  position: absolute;
-  top: 35px;
-  right: 24px;
-  z-index: +2;
-  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
-}
-
-.userItem .actionButtonWrapper .menuBox li {
-  width: 100%;
-  text-align: center;
-  list-style: none;
-  padding: 10px;
-  line-height: 1;
-  background-color: #414259;
-  border-bottom: solid 2px #3b3b50;
-  transition: background-color 0.3s ease;
-}
-
-.userItem .actionButtonWrapper .menuBox li:first-of-type {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.userItem .actionButtonWrapper .menuBox li:last-of-type {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom: none;
-}
-
-.userItem .actionButtonWrapper .menuBox li:hover {
-  background-color: #3b3b50;
-}
-
-.userItem:hover {
-  background-color: #34394d;
-}
+  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1); }
+  .userItem .userIconWrapper {
+    height: 70px;
+    width: 70px;
+    display: inline;
+    float: left; }
+    .userItem .userIconWrapper .userIcon {
+      width: 40px;
+      height: 40px;
+      margin: 15px;
+      display: block;
+      border-radius: 20px;
+      background-color: #414259; }
+      .userItem .userIconWrapper .userIcon img {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        margin: 5px; }
+  .userItem .userNameWrapper {
+    width: 190px;
+    height: 70px;
+    display: inline;
+    float: left; }
+    .userItem .userNameWrapper .userName {
+      font-size: 12px;
+      line-height: 1;
+      display: block;
+      position: relative;
+      top: 50%;
+      bottom: auto;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  .userItem .actionButtonWrapper {
+    width: 40px;
+    height: 70px;
+    display: inline;
+    float: left;
+    box-sizing: border-box; }
+    .userItem .actionButtonWrapper .menuTrigger {
+      width: 5px;
+      height: 25px;
+      margin: 22.5px 17.5px;
+      display: block;
+      cursor: pointer; }
+      .userItem .actionButtonWrapper .menuTrigger .box {
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        background-color: #228fe3; }
+      .userItem .actionButtonWrapper .menuTrigger .box:last-of-type {
+        margin-bottom: 0; }
+    .userItem .actionButtonWrapper .menuBox {
+      position: absolute;
+      top: 35px;
+      right: 24px;
+      z-index: +2;
+      box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1); }
+      .userItem .actionButtonWrapper .menuBox li {
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        padding: 10px;
+        line-height: 1;
+        background-color: #414259;
+        border-bottom: solid 2px #3b3b50;
+        transition: background-color 0.3s ease; }
+        .userItem .actionButtonWrapper .menuBox li:first-of-type {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px; }
+        .userItem .actionButtonWrapper .menuBox li:last-of-type {
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-bottom: none; }
+        .userItem .actionButtonWrapper .menuBox li:hover {
+          background-color: #3b3b50; }
+  .userItem:hover {
+    background-color: #34394d; }
 
 .clientUserItem {
-  border-bottom: solid 2px #29b75c;
-}
+  border-bottom: solid 2px #29b75c; }
 
 .designerUserItem {
-  border-bottom: solid 2px #228fe3;
-}
+  border-bottom: solid 2px #228fe3; }
 
 .approved:after {
   content: "";
@@ -950,12 +724,10 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 8px;
   left: 8px;
-  display: block;
-}
+  display: block; }
 
 .unapproved {
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
 .imageItem {
   width: 100px;
@@ -965,189 +737,144 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   cursor: pointer;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.5s, transform 0.5s ease;
-}
-
-.imageItem:hover {
-  transform: scale(0.95, 0.95);
-}
-
-.imageItem .top {
-  width: 100px;
-  height: 100px;
-  background-color: #2e3244;
-}
-
-.imageItem .top .imageElement {
-  width: 80px;
-  height: 80px;
-  margin: 10px;
-}
-
-.imageItem .bottom {
-  width: 100px;
-  height: 25px;
-  background-color: #414259;
-  border-top: dashed 2px #2e3244;
-}
-
-.imageItem .bottom .polka {
-  display: inline;
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  float: right;
-  margin-right: 2px;
-  margin-top: 10px;
-}
-
-.imageItem .bottom .polka:first-of-type {
-  margin-right: 10px;
-}
+  transition: box-shadow 0.5s, transform 0.5s ease; }
+  .imageItem:hover {
+    transform: scale(0.95, 0.95); }
+  .imageItem .top {
+    width: 100px;
+    height: 100px;
+    background-color: #2e3244; }
+    .imageItem .top .imageElement {
+      width: 80px;
+      height: 80px;
+      margin: 10px; }
+  .imageItem .bottom {
+    width: 100px;
+    height: 25px;
+    background-color: #414259;
+    border-top: dashed 2px #2e3244; }
+    .imageItem .bottom .polka {
+      display: inline;
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      float: right;
+      margin-right: 2px;
+      margin-top: 10px; }
+      .imageItem .bottom .polka:first-of-type {
+        margin-right: 10px; }
 
 .indexPage .bodyDivision {
-  display: flex;
-}
-
-.indexPage .bodyDivision .loginWrapper {
-  width: 300px;
-  height: 350px;
-  margin: auto;
-  background-color: #2c2d3c;
-  border-radius: 5px;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.indexPage .bodyDivision .loginWrapper .loginTop {
-  width: 100%;
-  height: 80%;
-  display: block;
-  overflow: auto;
-  background-color: #2e3244;
-  box-shadow: 0px 5px 20px #2c2d3c;
-  border-bottom: dashed 2px #414259;
-}
-
-.indexPage .bodyDivision .loginWrapper .loginTop .loginIcon {
-  margin: 30px auto;
-  display: block;
-  width: 70px;
-  height: 70px;
-  border-radius: 50px;
-  background-color: #414259;
-  background-image: url("../img/icon.login.png");
-  background-size: 45%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.indexPage .bodyDivision .loginWrapper .loginTop .loginForm {
-  width: 80%;
-  margin: 45px auto 0;
-}
-
-.indexPage .bodyDivision .loginWrapper .loginTop .loginForm input {
-  width: 100%;
-  font-size: 13px;
-  height: 40px;
-  border-radius: 40px;
-  padding-left: 15px;
-  margin: 8px 0;
-  color: #dadee5;
-  background-color: #2c2d3c;
-  outline: none;
-  border: none;
-}
-
-.indexPage .bodyDivision .loginWrapper .loginBottom {
-  width: 100%;
-  height: 20%;
-  display: block;
-  background-color: #414259;
-  padding: 15px 70px;
-}
+  display: flex; }
+  .indexPage .bodyDivision .loginWrapper {
+    width: 300px;
+    height: 350px;
+    margin: auto;
+    background-color: #2c2d3c;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; }
+    .indexPage .bodyDivision .loginWrapper .loginTop {
+      width: 100%;
+      height: 80%;
+      display: block;
+      overflow: auto;
+      background-color: #2e3244;
+      box-shadow: 0px 5px 20px #2c2d3c;
+      border-bottom: dashed 2px #414259; }
+      .indexPage .bodyDivision .loginWrapper .loginTop .loginIcon {
+        margin: 30px auto;
+        display: block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: #414259;
+        background-image: url("../img/icon.login.png");
+        background-size: 45%;
+        background-position: center;
+        background-repeat: no-repeat; }
+      .indexPage .bodyDivision .loginWrapper .loginTop .loginForm {
+        width: 80%;
+        margin: 45px auto 0; }
+        .indexPage .bodyDivision .loginWrapper .loginTop .loginForm input {
+          width: 100%;
+          font-size: 13px;
+          height: 40px;
+          border-radius: 40px;
+          padding-left: 15px;
+          margin: 8px 0;
+          color: #dadee5;
+          background-color: #2c2d3c;
+          outline: none;
+          border: none; }
+    .indexPage .bodyDivision .loginWrapper .loginBottom {
+      width: 100%;
+      height: 20%;
+      display: block;
+      background-color: #414259;
+      padding: 15px 70px; }
 
 .dashboardPage .tasksWrapper {
   width: 100%;
   height: 350px;
-  margin: auto;
-}
-
-.dashboardPage .tasksWrapper .task {
-  width: calc(100% / 3);
-  height: 350px;
-  float: left;
-  background-color: #2c2d3c;
-}
-
-.dashboardPage .tasksWrapper .task .taskTop {
-  width: 300px;
-  margin: auto;
-  height: 80%;
-  background-color: #2e3244;
-  display: block;
-  border-bottom: dashed 2px #414259;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  overflow: auto;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
-  pointer-events: none;
-}
-
-.dashboardPage .tasksWrapper .task .taskTop .taskIcon {
-  margin: 30px auto;
-  display: block;
-  width: 120px;
-  height: 120px;
-  border-radius: 70px;
-  background-color: #414259;
-}
-
-.dashboardPage .tasksWrapper .task .taskTop .taskIcon img {
-  width: 80px;
-  height: 80px;
-  margin: 20px;
-}
-
-.dashboardPage .tasksWrapper .task .taskTop .taskTitle {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 22px;
-  text-align: center;
-}
-
-.dashboardPage .tasksWrapper .task .taskTop .taskSubtitle {
-  color: #dadee5;
-  font-size: 12px;
-  text-align: center;
-  width: 80%;
-  margin: auto;
-  line-height: 1.2;
-}
-
-.dashboardPage .tasksWrapper .task .taskBottom {
-  width: 300px;
-  margin: auto;
-  height: 20%;
-  display: block;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
-}
-
-.dashboardPage .tasksWrapper .task > div {
-  width: 300px;
-  margin: auto;
-  height: 100%;
-  cursor: pointer;
-  box-shadow: 0px 4px 5px transparent;
-  transition: box-shadow 0.5s, transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.dashboardPage .tasksWrapper .task > div:hover {
-  transform: translateY(-20px);
-  box-shadow: 0px 24px 20px rgba(0, 0, 0, 0.2);
-}
+  margin: auto; }
+  .dashboardPage .tasksWrapper .task {
+    width: calc(100% / 3);
+    height: 350px;
+    float: left;
+    background-color: #2c2d3c; }
+    .dashboardPage .tasksWrapper .task .taskTop {
+      width: 300px;
+      margin: auto;
+      height: 80%;
+      background-color: #2e3244;
+      display: block;
+      border-bottom: dashed 2px #414259;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      overflow: auto;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+      pointer-events: none; }
+      .dashboardPage .tasksWrapper .task .taskTop .taskIcon {
+        margin: 30px auto;
+        display: block;
+        width: 120px;
+        height: 120px;
+        border-radius: 70px;
+        background-color: #414259; }
+        .dashboardPage .tasksWrapper .task .taskTop .taskIcon img {
+          width: 80px;
+          height: 80px;
+          margin: 20px; }
+      .dashboardPage .tasksWrapper .task .taskTop .taskTitle {
+        font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+        font-size: 22px;
+        text-align: center; }
+      .dashboardPage .tasksWrapper .task .taskTop .taskSubtitle {
+        color: #dadee5;
+        font-size: 12px;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        line-height: 1.2; }
+    .dashboardPage .tasksWrapper .task .taskBottom {
+      width: 300px;
+      margin: auto;
+      height: 20%;
+      display: block;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1); }
+  .dashboardPage .tasksWrapper .task > div {
+    width: 300px;
+    margin: auto;
+    height: 100%;
+    cursor: pointer;
+    box-shadow: 0px 4px 5px transparent;
+    transition: box-shadow 0.5s, transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .dashboardPage .tasksWrapper .task > div:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 24px 20px rgba(0, 0, 0, 0.2); }
 
 .jobMgmtPage .mainBody .subHeader {
   width: 100%;
@@ -1157,906 +884,674 @@ h1, h2, h3, h4, h5, h6 {
   z-index: +1;
   background-color: #228fe3;
   box-shadow: 0px 5px 20px #2c2d3c;
-  overflow: auto;
-}
-
-.jobMgmtPage .mainBody .subHeader .subHeaderLink {
-  font-size: 12px;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  line-height: 1;
-  color: #2c2d3c;
-  display: inline-block;
-  margin: 15px 20px 15px 0;
-  background-color: rgba(65, 66, 89, 0.2);
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease-out;
-}
-
-.jobMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
-  margin-left: 75px;
-}
-
-.jobMgmtPage .mainBody .subHeader .subHeaderLink:hover {
-  background-color: #414259;
-  color: #dadee5;
-}
-
-.jobMgmtPage .mainBody .subHeader .active {
-  color: #dadee5;
-  border: solid 2px rgba(65, 66, 89, 0.6);
-  background-color: rgba(65, 66, 89, 0.8);
-}
+  overflow: auto; }
+  .jobMgmtPage .mainBody .subHeader .subHeaderLink {
+    font-size: 12px;
+    font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+    line-height: 1;
+    color: #2c2d3c;
+    display: inline-block;
+    margin: 15px 20px 15px 0;
+    background-color: rgba(65, 66, 89, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease-out; }
+  .jobMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
+    margin-left: 75px; }
+  .jobMgmtPage .mainBody .subHeader .subHeaderLink:hover {
+    background-color: #414259;
+    color: #dadee5; }
+  .jobMgmtPage .mainBody .subHeader .active {
+    color: #dadee5;
+    border: solid 2px rgba(65, 66, 89, 0.6);
+    background-color: rgba(65, 66, 89, 0.8); }
 
 .jobMgmtPage .mainBody .bodyContentsWrapper {
   width: 100%;
   height: calc(100% - 70px);
   display: block;
-  overflow: hidden;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents {
-  width: calc(100% - 145px);
-  margin: 30px 70px 30px 75px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableHeader, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody {
-  color: #9ea9bb;
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 11px;
-  margin: 0;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody {
-  cursor: pointer;
-  color: #dadee5;
-  position: relative;
-  height: 70px;
-  width: 100%;
-  background-color: #414259;
-  border-radius: 3px;
-  margin: 15px 0  0;
-  transition: background-color 0.3s ease-in;
-  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .titleColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .dateColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .bidsColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressColumn {
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .actionColumn .deleteButton {
-  width: 30px;
-  height: 30px;
-  display: block;
-  border-radius: 15px;
-  margin-top: 20px;
-  background-color: #2e3244;
-  background-image: url("../img/icon.delete.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s ease-out;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .actionColumn .deleteButton:hover {
-  transform: scale(1.05, 1.05);
-  background-color: #383d53;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCredit {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 70px;
-  width: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowBidding {
-  background-color: #dadee5;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowPending {
-  background-color: #228fe3;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowCompleted {
-  background-color: #29b75c;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  border-radius: 15px;
-  background-color: #2e3244;
-  float: left;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage img {
-  width: 24px;
-  height: 24px;
-  margin: 3px;
-  border-radius: 10px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage + .client {
-  display: inline-block;
-  margin-left: 10px;
-  height: 30px;
-  padding-top: 9.5px;
-  line-height: 1;
-  float: left;
-  cursor: pointer;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage + .client:hover {
-  text-decoration: underline;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressAmount {
-  display: inline-block;
-  width: 30px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator {
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  height: 5px;
-  margin-left: 10px;
-  margin-top: 4.5px;
-  vertical-align: top;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressBase {
-  width: 100%;
-  height: 100%;
-  background-color: #575876;
-  border-radius: 10px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressCurrent {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  transition: width 0.8s ease;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressBidding {
-  background-color: #dadee5;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressPending {
-  background-color: #228fe3;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressCompleted {
-  background-color: #29b75c;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody:hover {
-  background-color: #474962;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableHeader, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody {
-  color: #9ea9bb;
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 11px;
-  margin: 0;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody {
-  cursor: pointer;
-  color: #dadee5;
-  position: relative;
-  height: 70px;
-  width: 100%;
-  background-color: #414259;
-  border-radius: 3px;
-  margin: 15px 0  0;
-  transition: background-color 0.3s ease-in;
-  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .titleColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .dateColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .statusColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressColumn {
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .actionColumn .deleteButton {
-  width: 30px;
-  height: 30px;
-  display: block;
-  border-radius: 15px;
-  margin-top: 20px;
-  background-color: #2e3244;
-  background-image: url("../img/icon.delete.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: transform 0.3s, background-color 0.3s ease-out;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .actionColumn .deleteButton:hover {
-  transform: scale(1.05, 1.05);
-  background-color: #383d53;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCredit {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 70px;
-  width: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowBidding {
-  background-color: #dadee5;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowPending {
-  background-color: #228fe3;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted {
-  background-color: #29b75c;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  border-radius: 15px;
-  background-color: #2e3244;
-  float: left;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage img {
-  width: 24px;
-  height: 24px;
-  margin: 3px;
-  border-radius: 10px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage + .client {
-  display: inline-block;
-  margin-left: 10px;
-  height: 30px;
-  padding-top: 9.5px;
-  line-height: 1;
-  float: left;
-  cursor: pointer;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage + .client:hover {
-  text-decoration: underline;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressAmount {
-  display: inline-block;
-  width: 30px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator {
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  height: 5px;
-  margin-left: 10px;
-  margin-top: 4.5px;
-  vertical-align: top;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressBase {
-  width: 100%;
-  height: 100%;
-  background-color: #575876;
-  border-radius: 10px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressCurrent {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  transition: width 0.8s ease;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressBidding {
-  background-color: #dadee5;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressPending {
-  background-color: #228fe3;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressCompleted {
-  background-color: #29b75c;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody:hover {
-  background-color: #474962;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView {
-  height: calc(100% - 30px);
-  margin-bottom: 0;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .backButton {
-  font-size: 12px;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  line-height: 1;
-  color: #dadee5;
-  float: left;
-  margin: 0 0 20px;
-  background-color: #414259;
-  border: 2px solid #414259;
-  transition: background-color 0.2s, border 0.2s, transform 0.3s, box-shadow 0.3s ease-out;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .backButton:hover {
-  background-color: #38394d;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn {
-  width: 60%;
-  height: calc(100% - 60px);
-  display: inline;
-  float: left;
-  clear: left;
-  position: relative;
-  transform: translateZ(0);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .textHeader {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 12px;
-  margin-top: 20px;
-  color: #228fe3;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .subtextHeader {
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 11px;
-  margin-top: -5px;
-  letter-spacing: 1px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectTitleWrapper {
-  width: 100%;
-  height: 70px;
-  position: fixed;
-  z-index: +4;
-  top: 0;
-  left: 0;
-  background-color: #2e3244;
-  box-shadow: 0px 5px 5px #2a2b39;
-  border-bottom: dashed 2px #414259;
-  border-top-left-radius: 5px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectTitleWrapper .projectTitle {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 12px;
-  width: 100%;
-  color: #dadee5;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper {
-  width: 100%;
-  height: calc(100% - 70px);
-  color: #dadee5;
-  font-size: 12px;
-  padding-right: 30px;
-  margin-top: 70px;
-  padding-bottom: 30px;
-  overflow: auto;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .projectNotes {
-  font-size: 11px;
-  letter-spacing: 1px;
-  margin-top: 10px;
-  background-color: #414259;
-  padding: 10px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .biddingStatus:after {
-  content: "•";
-  color: #dadee5;
-  margin-left: 3px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .pendingStatus:after {
-  content: "•";
-  color: #228fe3;
-  margin-left: 3px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .completedStatus:after {
-  content: "•";
-  color: #29b75c;
-  margin-left: 3px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressAmount {
-  display: inline-block;
-  width: 30px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator {
-  display: inline-block;
-  position: relative;
-  width: calc(100% - 45px);
-  height: 5px;
-  float: right;
-  margin-left: 10px;
-  margin-top: 4.5px;
-  vertical-align: top;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressBase {
-  width: 100%;
-  height: 100%;
-  background-color: #575876;
-  border-radius: 10px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressCurrent {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressBidding {
-  background-color: #dadee5;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressPending {
-  background-color: #228fe3;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressCompleted {
-  background-color: #29b75c;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .viewConversation {
-  font-size: 12px;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  line-height: 1;
-  color: #dadee5;
-  background-color: #414259;
-  border: 2px solid #414259;
-  transition: background-color 0.2s, border 0.2s, transform 0.3s, box-shadow 0.3s ease-out;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .viewConversation:hover {
-  background-color: #38394d;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn {
-  width: 40%;
-  height: calc(100% - 60px);
-  background-color: #282936;
-  display: inline;
-  float: left;
-  border-top-right-radius: 5px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .emptyColumn {
-  width: 100%;
-  height: 100%;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .emptyColumn .emptyContentWrapper {
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .emptyColumn .emptyContentWrapper .emptyIcon {
-  width: 70px;
-  height: 70px;
-  border-radius: 35px;
-  background-color: #414259;
-  background-image: url("../img/icon.empty.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .emptyColumn .emptyContentWrapper .emptyText {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  color: #414259;
-  line-height: 2;
-  margin: 0;
-  padding: 0;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .emptyColumn .emptyContentWrapper .emptySubText {
-  color: #dadee5;
-  font-size: 10px;
-  line-height: 1;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn {
-  width: 100%;
-  height: 100%;
-  padding: 0 0px 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsTitle {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 13px;
-  color: #228fe3;
-  width: 100%;
-  padding: 10px;
-  position: absolute;
-  z-index: +1;
-  top: 0;
-  left: 0;
-  line-height: 1;
-  background-color: #2d3142;
-  box-shadow: 0px 5px 5px #2a2b39;
-  border-bottom: dashed 2px #414259;
-  border-top-right-radius: 5px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsTitle .lastActivity {
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 10px;
-  color: #dadee5;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox {
-  width: 100%;
-  height: 100%;
-  padding: 30px 10px;
-  margin-top: 33px;
-  overflow: auto;
-  background-image: url("../img/conversationsbg.jpg");
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage {
-  width: 100%;
-  display: flex;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage .iconWrapper {
-  width: 70px;
-  display: inline;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage .iconWrapper .icon {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  border-radius: 25px;
-  background-color: #414259;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage .iconWrapper .icon > img {
-  width: 40px;
-  height: 40px;
-  margin: 5px;
-  border-radius: 20px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage .messageWrapper {
-  width: calc(100% - 70px);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage .messageWrapper .message {
-  max-width: 200px;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #2e3244;
-  color: #dadee5;
-  font-size: 11px;
-  position: relative;
-  box-shadow: 0px 4px 5px rgba(34, 34, 34, 0.04);
-  border-left: solid 2px #29b75c;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .iconWrapper {
-  width: 70px;
-  display: inline-block;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .iconWrapper .icon {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  border-radius: 25px;
-  background-color: #414259;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .iconWrapper .icon > img {
-  width: 40px;
-  height: 40px;
-  margin: 5px;
-  border-radius: 20px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .messageWrapper {
-  width: calc(100% - 70px);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .messageWrapper .message {
-  max-width: 200px;
-  margin-top: 20px;
-  padding: 10px;
-  display: inline;
-  float: right;
-  clear: left;
-  background-color: #2e3244;
-  color: #dadee5;
-  font-size: 11px;
-  position: relative;
-  box-shadow: 0px 4px 5px rgba(34, 34, 34, 0.04);
-  border-right: solid 2px #228fe3;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn {
-  width: 100%;
-  height: 100%;
-  padding: 0 0px 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageViewerTitle {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 13px;
-  color: #228fe3;
-  width: 100%;
-  padding: 10px;
-  position: absolute;
-  z-index: +1;
-  top: 0;
-  left: 0;
-  line-height: 1;
-  background-color: #2d3142;
-  box-shadow: 0px 5px 5px #2a2b39;
-  border-bottom: dashed 2px #414259;
-  border-top-right-radius: 5px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageViewerTitle .sentDate {
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 10px;
-  color: #dadee5;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper {
-  width: 100%;
-  height: 100%;
-  padding: 30px 10px;
-  margin-top: 33px;
-  overflow: auto;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBox {
-  width: 100%;
-  height: calc(100% - 30px);
-  background-image: url("../img/non-default.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBoxControls {
-  text-align: center;
-  position: absolute;
-  bottom: 7px;
-  left: 0;
-  width: 100%;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBoxControls .previous, .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBoxControls .next {
-  background-color: #414259;
-  display: inline-block;
-  width: 50px;
-  text-align: center;
-  border: 2px solid #414259;
-  border-radius: 50px;
-  color: #dadee5;
-  padding: 10px;
-  cursor: pointer;
-  transition: transform 0.3s, border 0.3s ease;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBoxControls .previous:hover, .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBoxControls .next:hover {
-  transform: scale(0.95);
-  border: 2px solid #474962;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  border-top-right-radius: 5px;
-  overflow: hidden;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top {
-  width: 100%;
-  height: calc(100% - 70px);
-  background-color: #2e3244;
-  border-bottom: dashed 2px #414259;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper {
-  width: 80%;
-  margin: auto 10%;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg {
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
-  display: inline-block;
-  background-color: #2b2c3c;
-  margin: auto;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div {
-  width: 240px;
-  height: 240px;
-  border-radius: 240px;
-  margin: 5px;
-  background-color: #303141;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div > div {
-  width: 230px;
-  height: 230px;
-  border-radius: 230px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-color: #3d3e53;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div > div > img {
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileName {
-  color: #dadee5;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 14px;
-  line-height: 1;
-  margin: 20px auto 8px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType {
-  color: #dadee5;
-  font-size: 11px;
-  line-height: 1;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.clientType:before {
-  content: "•";
-  color: #29b75c;
-  margin-right: 3px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.designerType:before {
-  content: "•";
-  color: #228fe3;
-  margin-right: 3px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle {
-  width: 100%;
-  height: 60px;
-  background-color: #414259;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .left, .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .right {
-  display: inline;
-  float: left;
-  width: 50%;
-  height: 100%;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .left .title, .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .right .title {
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 10px;
-  color: #dadee5;
-  line-height: 1;
-  padding: 0;
-  margin: 15px 0 5px;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .left .subTitle, .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .right .subTitle {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 18px;
-  line-height: 1;
-  padding: 0;
-  margin: 0;
-}
-
-.jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .bottom {
-  width: 100%;
-  height: 10px;
-}
+  overflow: hidden; }
+  .jobMgmtPage .mainBody .bodyContentsWrapper .bodyContents {
+    width: calc(100% - 145px);
+    margin: 30px 70px 30px 75px; }
+  .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableHeader, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody {
+    color: #9ea9bb;
+    font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+    font-size: 11px;
+    margin: 0; }
+  .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody {
+    cursor: pointer;
+    color: #dadee5;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background-color: #414259;
+    border-radius: 3px;
+    margin: 15px 0  0;
+    transition: background-color 0.3s ease-in;
+    box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1); }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .titleColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .dateColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .bidsColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressColumn {
+      position: relative;
+      top: 50%;
+      bottom: auto;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .actionColumn .deleteButton {
+      width: 30px;
+      height: 30px;
+      display: block;
+      border-radius: 15px;
+      margin-top: 20px;
+      background-color: #2e3244;
+      background-image: url("../img/icon.delete.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s ease-out; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .actionColumn .deleteButton:hover {
+        transform: scale(1.05, 1.05);
+        background-color: #383d53; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCredit {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 70px;
+      width: 3px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowBidding {
+      background-color: #dadee5; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowPending {
+      background-color: #228fe3; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .rowCompleted {
+      background-color: #29b75c; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border-radius: 15px;
+      background-color: #2e3244;
+      float: left; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage img {
+        width: 24px;
+        height: 24px;
+        margin: 3px;
+        border-radius: 10px; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage + .client {
+      display: inline-block;
+      margin-left: 10px;
+      height: 30px;
+      padding-top: 9.5px;
+      line-height: 1;
+      float: left;
+      cursor: pointer; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .clientImage + .client:hover {
+        text-decoration: underline; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressAmount {
+      display: inline-block;
+      width: 30px; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator {
+      display: inline-block;
+      position: relative;
+      width: 200px;
+      height: 5px;
+      margin-left: 10px;
+      margin-top: 4.5px;
+      vertical-align: top; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressBase {
+        width: 100%;
+        height: 100%;
+        background-color: #575876;
+        border-radius: 10px; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressCurrent {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        transition: width 0.8s ease; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressBidding {
+        background-color: #dadee5; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressPending {
+        background-color: #228fe3; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody .progressIndicator .progressCompleted {
+        background-color: #29b75c; }
+  .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .tableWrapper .tableBody:hover {
+    background-color: #474962; }
+  .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableHeader, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody {
+    color: #9ea9bb;
+    font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+    font-size: 11px;
+    margin: 0; }
+  .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody {
+    cursor: pointer;
+    color: #dadee5;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background-color: #414259;
+    border-radius: 3px;
+    margin: 15px 0  0;
+    transition: background-color 0.3s ease-in;
+    box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1); }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .titleColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .dateColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .statusColumn, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressColumn {
+      position: relative;
+      top: 50%;
+      bottom: auto;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .actionColumn .deleteButton {
+      width: 30px;
+      height: 30px;
+      display: block;
+      border-radius: 15px;
+      margin-top: 20px;
+      background-color: #2e3244;
+      background-image: url("../img/icon.delete.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: transform 0.3s, background-color 0.3s ease-out; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .actionColumn .deleteButton:hover {
+        transform: scale(1.05, 1.05);
+        background-color: #383d53; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowIndicator, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowDebit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowDebit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCredit, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCredit {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 70px;
+      width: 3px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowBidding {
+      background-color: #dadee5; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowPending {
+      background-color: #228fe3; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted {
+      background-color: #29b75c; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border-radius: 15px;
+      background-color: #2e3244;
+      float: left; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage img {
+        width: 24px;
+        height: 24px;
+        margin: 3px;
+        border-radius: 10px; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage + .client {
+      display: inline-block;
+      margin-left: 10px;
+      height: 30px;
+      padding-top: 9.5px;
+      line-height: 1;
+      float: left;
+      cursor: pointer; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .clientImage + .client:hover {
+        text-decoration: underline; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressAmount {
+      display: inline-block;
+      width: 30px; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator {
+      display: inline-block;
+      position: relative;
+      width: 200px;
+      height: 5px;
+      margin-left: 10px;
+      margin-top: 4.5px;
+      vertical-align: top; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressBase {
+        width: 100%;
+        height: 100%;
+        background-color: #575876;
+        border-radius: 10px; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressCurrent {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        transition: width 0.8s ease; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressBidding {
+        background-color: #dadee5; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressPending {
+        background-color: #228fe3; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody .progressIndicator .progressCompleted {
+        background-color: #29b75c; }
+  .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .tableWrapper .tableBody:hover {
+    background-color: #474962; }
+  .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView {
+    height: calc(100% - 30px);
+    margin-bottom: 0; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .backButton {
+      font-size: 12px;
+      font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+      line-height: 1;
+      color: #dadee5;
+      float: left;
+      margin: 0 0 20px;
+      background-color: #414259;
+      border: 2px solid #414259;
+      transition: background-color 0.2s, border 0.2s, transform 0.3s, box-shadow 0.3s ease-out; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .backButton:hover {
+        background-color: #38394d; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn {
+      width: 60%;
+      height: calc(100% - 60px);
+      display: inline;
+      float: left;
+      clear: left;
+      position: relative;
+      transform: translateZ(0); }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .textHeader {
+        font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+        font-size: 12px;
+        margin-top: 20px;
+        color: #228fe3; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .subtextHeader {
+        font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+        font-size: 11px;
+        margin-top: -5px;
+        letter-spacing: 1px; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectTitleWrapper {
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        z-index: +4;
+        top: 0;
+        left: 0;
+        background-color: #2e3244;
+        box-shadow: 0px 5px 5px #2a2b39;
+        border-bottom: dashed 2px #414259;
+        border-top-left-radius: 5px; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectTitleWrapper .projectTitle {
+          font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+          font-size: 12px;
+          width: 100%;
+          color: #dadee5;
+          position: relative;
+          top: 50%;
+          bottom: auto;
+          -moz-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper {
+        width: 100%;
+        height: calc(100% - 70px);
+        color: #dadee5;
+        font-size: 12px;
+        padding-right: 30px;
+        margin-top: 70px;
+        padding-bottom: 30px;
+        overflow: auto; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .projectNotes {
+          font-size: 11px;
+          letter-spacing: 1px;
+          margin-top: 10px;
+          background-color: #414259;
+          padding: 10px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .biddingStatus:after {
+          content: "•";
+          color: #dadee5;
+          margin-left: 3px; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .pendingStatus:after {
+          content: "•";
+          color: #228fe3;
+          margin-left: 3px; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .completedStatus:after {
+          content: "•";
+          color: #29b75c;
+          margin-left: 3px; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressAmount {
+          display: inline-block;
+          width: 30px; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator {
+          display: inline-block;
+          position: relative;
+          width: calc(100% - 45px);
+          height: 5px;
+          float: right;
+          margin-left: 10px;
+          margin-top: 4.5px;
+          vertical-align: top; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressBase {
+            width: 100%;
+            height: 100%;
+            background-color: #575876;
+            border-radius: 10px; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressCurrent {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressBidding {
+            background-color: #dadee5; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressPending {
+            background-color: #228fe3; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .progressIndicator .progressCompleted {
+            background-color: #29b75c; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .viewConversation {
+          font-size: 12px;
+          font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+          line-height: 1;
+          color: #dadee5;
+          background-color: #414259;
+          border: 2px solid #414259;
+          transition: background-color 0.2s, border 0.2s, transform 0.3s, box-shadow 0.3s ease-out; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .leftColumn .projectDetailsWrapper .projectDetails .viewConversation:hover {
+            background-color: #38394d; }
+    .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn {
+      width: 40%;
+      height: calc(100% - 60px);
+      background-color: #282936;
+      display: inline;
+      float: left;
+      border-top-right-radius: 5px; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .emptyColumn {
+        width: 100%;
+        height: 100%; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .emptyColumn .emptyContentWrapper {
+          position: relative;
+          top: 50%;
+          bottom: auto;
+          -moz-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .emptyColumn .emptyContentWrapper .emptyIcon {
+            width: 70px;
+            height: 70px;
+            border-radius: 35px;
+            background-color: #414259;
+            background-image: url("../img/icon.empty.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .emptyColumn .emptyContentWrapper .emptyText {
+            font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+            color: #414259;
+            line-height: 2;
+            margin: 0;
+            padding: 0; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .emptyColumn .emptyContentWrapper .emptySubText {
+            color: #dadee5;
+            font-size: 10px;
+            line-height: 1; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn {
+        width: 100%;
+        height: 100%;
+        padding: 0 0px 30px;
+        position: relative;
+        overflow: hidden; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsTitle {
+          font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+          font-size: 13px;
+          color: #228fe3;
+          width: 100%;
+          padding: 10px;
+          position: absolute;
+          z-index: +1;
+          top: 0;
+          left: 0;
+          line-height: 1;
+          background-color: #2d3142;
+          box-shadow: 0px 5px 5px #2a2b39;
+          border-bottom: dashed 2px #414259;
+          border-top-right-radius: 5px; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsTitle .lastActivity {
+            font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+            font-size: 10px;
+            color: #dadee5; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox {
+          width: 100%;
+          height: 100%;
+          padding: 30px 10px;
+          margin-top: 33px;
+          overflow: auto;
+          background-image: url("../img/conversationsbg.jpg"); }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage {
+            width: 100%;
+            display: flex; }
+            .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage .iconWrapper {
+              width: 70px;
+              display: inline; }
+              .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage .iconWrapper .icon {
+                width: 50px;
+                height: 50px;
+                margin: 10px;
+                border-radius: 25px;
+                background-color: #414259; }
+                .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage .iconWrapper .icon > img {
+                  width: 40px;
+                  height: 40px;
+                  margin: 5px;
+                  border-radius: 20px; }
+            .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage .messageWrapper {
+              width: calc(100% - 70px); }
+              .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .clientMessage .messageWrapper .message {
+                max-width: 200px;
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #2e3244;
+                color: #dadee5;
+                font-size: 11px;
+                position: relative;
+                box-shadow: 0px 4px 5px rgba(34, 34, 34, 0.04);
+                border-left: solid 2px #29b75c;
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse; }
+            .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .iconWrapper {
+              width: 70px;
+              display: inline-block; }
+              .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .iconWrapper .icon {
+                width: 50px;
+                height: 50px;
+                margin: 10px;
+                border-radius: 25px;
+                background-color: #414259; }
+                .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .iconWrapper .icon > img {
+                  width: 40px;
+                  height: 40px;
+                  margin: 5px;
+                  border-radius: 20px; }
+            .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .messageWrapper {
+              width: calc(100% - 70px); }
+              .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .conversationsColumn .conversationsBox .designerMessage .messageWrapper .message {
+                max-width: 200px;
+                margin-top: 20px;
+                padding: 10px;
+                display: inline;
+                float: right;
+                clear: left;
+                background-color: #2e3244;
+                color: #dadee5;
+                font-size: 11px;
+                position: relative;
+                box-shadow: 0px 4px 5px rgba(34, 34, 34, 0.04);
+                border-right: solid 2px #228fe3;
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 10px; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn {
+        width: 100%;
+        height: 100%;
+        padding: 0 0px 30px;
+        position: relative;
+        overflow: hidden; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageViewerTitle {
+          font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+          font-size: 13px;
+          color: #228fe3;
+          width: 100%;
+          padding: 10px;
+          position: absolute;
+          z-index: +1;
+          top: 0;
+          left: 0;
+          line-height: 1;
+          background-color: #2d3142;
+          box-shadow: 0px 5px 5px #2a2b39;
+          border-bottom: dashed 2px #414259;
+          border-top-right-radius: 5px; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageViewerTitle .sentDate {
+            font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+            font-size: 10px;
+            color: #dadee5; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper {
+          width: 100%;
+          height: 100%;
+          padding: 30px 10px;
+          margin-top: 33px;
+          overflow: auto; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBox {
+            width: 100%;
+            height: calc(100% - 30px);
+            background-image: url("../img/non-default.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBoxControls {
+            text-align: center;
+            position: absolute;
+            bottom: 7px;
+            left: 0;
+            width: 100%; }
+            .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBoxControls .previous, .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBoxControls .next {
+              background-color: #414259;
+              display: inline-block;
+              width: 50px;
+              text-align: center;
+              border: 2px solid #414259;
+              border-radius: 50px;
+              color: #dadee5;
+              padding: 10px;
+              cursor: pointer;
+              transition: transform 0.3s, border 0.3s ease; }
+              .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBoxControls .previous:hover, .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .imageViewerColumn .imageBoxWrapper .imageBoxControls .next:hover {
+                transform: scale(0.95);
+                border: 2px solid #474962; }
+      .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-top-right-radius: 5px;
+        overflow: hidden; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top {
+          width: 100%;
+          height: calc(100% - 70px);
+          background-color: #2e3244;
+          border-bottom: dashed 2px #414259; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper {
+            width: 80%;
+            margin: auto 10%;
+            position: relative;
+            top: 50%;
+            bottom: auto;
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+            .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg {
+              width: 250px;
+              height: 250px;
+              border-radius: 250px;
+              display: inline-block;
+              background-color: #2b2c3c;
+              margin: auto; }
+              .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div {
+                width: 240px;
+                height: 240px;
+                border-radius: 240px;
+                margin: 5px;
+                background-color: #303141; }
+                .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div > div {
+                  width: 230px;
+                  height: 230px;
+                  border-radius: 230px;
+                  position: relative;
+                  left: 50%;
+                  top: 50%;
+                  bottom: auto;
+                  right: auto;
+                  -moz-transform: translateX(-50%) translateY(-50%);
+                  -o-transform: translateX(-50%) translateY(-50%);
+                  -ms-transform: translateX(-50%) translateY(-50%);
+                  -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);
+                  background-color: #3d3e53; }
+                  .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div > div > img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 200px;
+                    position: relative;
+                    top: 50%;
+                    bottom: auto;
+                    -moz-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%); }
+            .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileName {
+              color: #dadee5;
+              font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+              font-size: 14px;
+              line-height: 1;
+              margin: 20px auto 8px; }
+            .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType {
+              color: #dadee5;
+              font-size: 11px;
+              line-height: 1; }
+              .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.clientType:before {
+                content: "•";
+                color: #29b75c;
+                margin-right: 3px; }
+              .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.designerType:before {
+                content: "•";
+                color: #228fe3;
+                margin-right: 3px; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle {
+          width: 100%;
+          height: 60px;
+          background-color: #414259; }
+          .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .left, .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .right {
+            display: inline;
+            float: left;
+            width: 50%;
+            height: 100%; }
+            .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .left .title, .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .right .title {
+              font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+              font-size: 10px;
+              color: #dadee5;
+              line-height: 1;
+              padding: 0;
+              margin: 15px 0 5px; }
+            .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .left .subTitle, .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .middle .right .subTitle {
+              font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+              font-size: 18px;
+              line-height: 1;
+              padding: 0;
+              margin: 0; }
+        .jobMgmtPage .mainBody .bodyContentsWrapper .singleProjectView .rightColumn .profileViewerColumn .bottom {
+          width: 100%;
+          height: 10px; }
 
 .userMgmtPage .mainBody .subHeader {
   width: 100%;
@@ -2066,402 +1561,304 @@ h1, h2, h3, h4, h5, h6 {
   z-index: +1;
   background-color: #228fe3;
   box-shadow: 0px 5px 20px #2c2d3c;
-  overflow: auto;
-}
-
-.userMgmtPage .mainBody .subHeader .subHeaderLink {
-  font-size: 12px;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  line-height: 1;
-  color: #2c2d3c;
-  display: inline-block;
-  margin: 15px 20px 15px 0;
-  background-color: transparent;
-  border: solid 2px rgba(65, 66, 89, 0.2);
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease-out;
-}
-
-.userMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
-  margin-left: 75px;
-}
-
-.userMgmtPage .mainBody .subHeader .subHeaderLink:hover {
-  background-color: #414259;
-  color: #dadee5;
-}
-
-.userMgmtPage .mainBody .subHeader .active {
-  color: #dadee5;
-  border: solid 2px rgba(65, 66, 89, 0.6);
-  background-color: rgba(65, 66, 89, 0.8);
-}
+  overflow: auto; }
+  .userMgmtPage .mainBody .subHeader .subHeaderLink {
+    font-size: 12px;
+    font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+    line-height: 1;
+    color: #2c2d3c;
+    display: inline-block;
+    margin: 15px 20px 15px 0;
+    background-color: black;
+    border: solid 2px rgba(65, 66, 89, 0.2);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease-out; }
+  .userMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
+    margin-left: 75px; }
+  .userMgmtPage .mainBody .subHeader .subHeaderLink:hover {
+    background-color: #414259;
+    color: #dadee5; }
+  .userMgmtPage .mainBody .subHeader .active {
+    color: #dadee5;
+    border: solid 2px rgba(65, 66, 89, 0.6);
+    background-color: rgba(65, 66, 89, 0.8); }
 
 .userMgmtPage .mainBody .bodyContentsWrapper {
   width: 100%;
   height: calc(100% - 70px);
   display: block;
-  overflow: auto;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .bodyContents {
-  width: calc(100% - 145px);
-  margin: 30px 70px 30px 75px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView {
-  height: calc(100% - 30px);
-  margin-bottom: 0;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn {
-  width: 60%;
-  height: 100%;
-  display: inline;
-  float: left;
-  position: relative;
-  transform: translateZ(0);
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .textHeader {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 12px;
-  margin-top: 20px;
-  color: #228fe3;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .subtextHeader {
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 11px;
-  margin-top: -5px;
-  letter-spacing: 1px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper {
-  width: 100%;
-  height: 100%;
-  color: #dadee5;
-  font-size: 12px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  overflow: auto;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper {
-  width: 100%;
-  height: 60px;
-  background-color: #2e3244;
-  border-radius: 30px;
-  display: block;
-  margin: 30px 0 40px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchQuery {
-  width: calc(100% - 60px);
-  height: 40px;
-  font-size: 13px;
-  display: inline;
-  float: left;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  padding-left: 15px;
-  margin: 10px 0 10px 10px;
-  color: #dadee5;
-  background-color: #2c2d3c;
-  outline: none;
-  border: none;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon {
-  width: 40px;
-  height: 40px;
-  background-color: #228fe3;
-  margin: 10px 10px 10px 0;
-  position: relative;
-  display: inline;
-  float: left;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon:hover {
-  background-color: #1a7fcc;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon:before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 7px;
-  left: 7px;
-  border-radius: 20px;
-  width: 20px;
-  height: 20px;
-  border: solid 3px #dadee5;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 8px;
-  height: 3px;
-  border-radius: 8px;
-  background-color: #dadee5;
-  bottom: 12px;
-  right: 10px;
-  transform: rotate(45deg);
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .biddingStatus:after {
-  content: "•";
-  color: #dadee5;
-  margin-left: 3px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .pendingStatus:after {
-  content: "•";
-  color: #228fe3;
-  margin-left: 3px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .completedStatus:after {
-  content: "•";
-  color: #29b75c;
-  margin-left: 3px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressAmount {
-  display: inline-block;
-  width: 30px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator {
-  display: inline-block;
-  position: relative;
-  width: calc(100% - 45px);
-  height: 5px;
-  float: right;
-  margin-left: 10px;
-  margin-top: 4.5px;
-  vertical-align: top;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressBase {
-  width: 100%;
-  height: 100%;
-  background-color: #575876;
-  border-radius: 10px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressCurrent {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressBidding {
-  background-color: #dadee5;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressPending {
-  background-color: #228fe3;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressCompleted {
-  background-color: #29b75c;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn {
-  width: 40%;
-  height: 100%;
-  background-color: #282936;
-  display: inline;
-  float: left;
-  border-top-right-radius: 5px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn {
-  width: 100%;
-  height: 100%;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper {
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper .emptyIcon {
-  width: 70px;
-  height: 70px;
-  border-radius: 35px;
-  background-color: #414259;
-  display: inline-block;
-  background-image: url("../img/icon.empty.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper .emptyText {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  color: #414259;
-  line-height: 2;
-  margin: 0;
-  padding: 0;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper .emptySubText {
-  color: #dadee5;
-  font-size: 10px;
-  line-height: 1;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  border-top-right-radius: 5px;
-  overflow: hidden;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top {
-  width: 100%;
-  height: calc(100% - 70px);
-  background-color: #2e3244;
-  border-bottom: dashed 2px #414259;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper {
-  width: 80%;
-  margin: auto 10%;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg {
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
-  display: inline-block;
-  background-color: #2b2c3c;
-  margin: auto;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div {
-  width: 240px;
-  height: 240px;
-  border-radius: 240px;
-  margin: 5px;
-  background-color: #303141;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div > div {
-  width: 230px;
-  height: 230px;
-  border-radius: 230px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-color: #3d3e53;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div > div > img {
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileName {
-  color: #dadee5;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 14px;
-  line-height: 1;
-  margin: 20px auto 8px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType {
-  color: #dadee5;
-  font-size: 11px;
-  line-height: 1;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.clientType:before {
-  content: "•";
-  color: #29b75c;
-  margin-right: 3px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.designerType:before {
-  content: "•";
-  color: #228fe3;
-  margin-right: 3px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle {
-  width: 100%;
-  height: 60px;
-  background-color: #414259;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .left, .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .right {
-  display: inline;
-  float: left;
-  width: 50%;
-  height: 100%;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .left .title, .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .right .title {
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 10px;
-  color: #dadee5;
-  line-height: 1;
-  padding: 0;
-  margin: 15px 0 5px;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .left .subTitle, .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .right .subTitle {
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  font-size: 18px;
-  line-height: 1;
-  padding: 0;
-  margin: 0;
-}
-
-.userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .bottom {
-  width: 100%;
-  height: 10px;
-}
+  overflow: auto; }
+  .userMgmtPage .mainBody .bodyContentsWrapper .bodyContents {
+    width: calc(100% - 145px);
+    margin: 30px 70px 30px 75px; }
+  .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView {
+    height: calc(100% - 30px);
+    margin-bottom: 0; }
+    .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn {
+      width: 60%;
+      height: 100%;
+      display: inline;
+      float: left;
+      position: relative;
+      transform: translateZ(0); }
+      .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .textHeader {
+        font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+        font-size: 12px;
+        margin-top: 20px;
+        color: #228fe3; }
+      .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .subtextHeader {
+        font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+        font-size: 11px;
+        margin-top: -5px;
+        letter-spacing: 1px; }
+      .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper {
+        width: 100%;
+        height: 100%;
+        color: #dadee5;
+        font-size: 12px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        overflow: auto; }
+        .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper {
+          width: 100%;
+          height: 60px;
+          background-color: #2e3244;
+          border-radius: 30px;
+          display: block;
+          margin: 30px 0 40px; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchQuery {
+            width: calc(100% - 60px);
+            height: 40px;
+            font-size: 13px;
+            display: inline;
+            float: left;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding-left: 15px;
+            margin: 10px 0 10px 10px;
+            color: #dadee5;
+            background-color: #2c2d3c;
+            outline: none;
+            border: none; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon {
+            width: 40px;
+            height: 40px;
+            background-color: #228fe3;
+            margin: 10px 10px 10px 0;
+            position: relative;
+            display: inline;
+            float: left;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: background-color 0.3s ease;
+            cursor: pointer; }
+            .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon:hover {
+              background-color: #1a7fcc; }
+            .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon:before {
+              content: "";
+              position: absolute;
+              display: block;
+              top: 7px;
+              left: 7px;
+              border-radius: 20px;
+              width: 20px;
+              height: 20px;
+              border: solid 3px #dadee5; }
+            .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .searchBoxWrapper .searchIcon:after {
+              content: "";
+              position: absolute;
+              display: block;
+              width: 8px;
+              height: 3px;
+              border-radius: 8px;
+              background-color: #dadee5;
+              bottom: 12px;
+              right: 10px;
+              transform: rotate(45deg); }
+        .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .biddingStatus:after {
+          content: "•";
+          color: #dadee5;
+          margin-left: 3px; }
+        .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .pendingStatus:after {
+          content: "•";
+          color: #228fe3;
+          margin-left: 3px; }
+        .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .completedStatus:after {
+          content: "•";
+          color: #29b75c;
+          margin-left: 3px; }
+        .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressAmount {
+          display: inline-block;
+          width: 30px; }
+        .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator {
+          display: inline-block;
+          position: relative;
+          width: calc(100% - 45px);
+          height: 5px;
+          float: right;
+          margin-left: 10px;
+          margin-top: 4.5px;
+          vertical-align: top; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressBase {
+            width: 100%;
+            height: 100%;
+            background-color: #575876;
+            border-radius: 10px; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressCurrent {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressBidding {
+            background-color: #dadee5; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressPending {
+            background-color: #228fe3; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .leftColumn .userListWrapper .userList .progressIndicator .progressCompleted {
+            background-color: #29b75c; }
+    .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn {
+      width: 40%;
+      height: 100%;
+      background-color: #282936;
+      display: inline;
+      float: left;
+      border-top-right-radius: 5px; }
+      .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn {
+        width: 100%;
+        height: 100%; }
+        .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper {
+          position: relative;
+          top: 50%;
+          bottom: auto;
+          -moz-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper .emptyIcon {
+            width: 70px;
+            height: 70px;
+            border-radius: 35px;
+            background-color: #414259;
+            display: inline-block;
+            background-image: url("../img/icon.empty.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper .emptyText {
+            font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+            color: #414259;
+            line-height: 2;
+            margin: 0;
+            padding: 0; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .emptyColumn .emptyContentWrapper .emptySubText {
+            color: #dadee5;
+            font-size: 10px;
+            line-height: 1; }
+      .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-top-right-radius: 5px;
+        overflow: hidden; }
+        .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top {
+          width: 100%;
+          height: calc(100% - 70px);
+          background-color: #2e3244;
+          border-bottom: dashed 2px #414259; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper {
+            width: 80%;
+            margin: auto 10%;
+            position: relative;
+            top: 50%;
+            bottom: auto;
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+            .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg {
+              width: 250px;
+              height: 250px;
+              border-radius: 250px;
+              display: inline-block;
+              background-color: #2b2c3c;
+              margin: auto; }
+              .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div {
+                width: 240px;
+                height: 240px;
+                border-radius: 240px;
+                margin: 5px;
+                background-color: #303141; }
+                .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div > div {
+                  width: 230px;
+                  height: 230px;
+                  border-radius: 230px;
+                  position: relative;
+                  left: 50%;
+                  top: 50%;
+                  bottom: auto;
+                  right: auto;
+                  -moz-transform: translateX(-50%) translateY(-50%);
+                  -o-transform: translateX(-50%) translateY(-50%);
+                  -ms-transform: translateX(-50%) translateY(-50%);
+                  -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);
+                  background-color: #3d3e53; }
+                  .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileImgBg > div > div > img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 200px;
+                    position: relative;
+                    top: 50%;
+                    bottom: auto;
+                    -moz-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%); }
+            .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileName {
+              color: #dadee5;
+              font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+              font-size: 14px;
+              line-height: 1;
+              margin: 20px auto 8px; }
+            .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType {
+              color: #dadee5;
+              font-size: 11px;
+              line-height: 1; }
+              .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.clientType:before {
+                content: "•";
+                color: #29b75c;
+                margin-right: 3px; }
+              .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .top .profileContentWrapper .profileType.designerType:before {
+                content: "•";
+                color: #228fe3;
+                margin-right: 3px; }
+        .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle {
+          width: 100%;
+          height: 60px;
+          background-color: #414259; }
+          .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .left, .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .right {
+            display: inline;
+            float: left;
+            width: 50%;
+            height: 100%; }
+            .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .left .title, .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .right .title {
+              font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+              font-size: 10px;
+              color: #dadee5;
+              line-height: 1;
+              padding: 0;
+              margin: 15px 0 5px; }
+            .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .left .subTitle, .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .middle .right .subTitle {
+              font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+              font-size: 18px;
+              line-height: 1;
+              padding: 0;
+              margin: 0; }
+        .userMgmtPage .mainBody .bodyContentsWrapper .mainUserView .rightColumn .profileViewerColumn .bottom {
+          width: 100%;
+          height: 10px; }
 
 .cashMgmtPage .mainBody .subHeader {
   width: 100%;
@@ -2471,262 +1868,192 @@ h1, h2, h3, h4, h5, h6 {
   z-index: +1;
   background-color: #228fe3;
   box-shadow: 0px 5px 20px #2c2d3c;
-  overflow: auto;
-}
-
-.cashMgmtPage .mainBody .subHeader .subHeaderLink {
-  font-size: 12px;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  line-height: 1;
-  color: #2c2d3c;
-  display: inline-block;
-  margin: 15px 20px 15px 0;
-  background-color: rgba(65, 66, 89, 0.2);
-  transition: background-color 0.2s, transform 0.3s, box-shadow 0.3s ease-out;
-}
-
-.cashMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
-  margin-left: 75px;
-}
-
-.cashMgmtPage .mainBody .subHeader .subHeaderLink:hover {
-  background-color: #414259;
-  color: #dadee5;
-}
-
-.cashMgmtPage .mainBody .subHeader .active {
-  color: #dadee5;
-  border: solid 2px rgba(65, 66, 89, 0.6);
-  background-color: rgba(65, 66, 89, 0.8);
-}
+  overflow: auto; }
+  .cashMgmtPage .mainBody .subHeader .subHeaderLink {
+    font-size: 12px;
+    font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+    line-height: 1;
+    color: #2c2d3c;
+    display: inline-block;
+    margin: 15px 20px 15px 0;
+    background-color: rgba(65, 66, 89, 0.2);
+    transition: background-color 0.2s, transform 0.3s, box-shadow 0.3s ease-out; }
+  .cashMgmtPage .mainBody .subHeader .subHeaderLink:first-of-type {
+    margin-left: 75px; }
+  .cashMgmtPage .mainBody .subHeader .subHeaderLink:hover {
+    background-color: #414259;
+    color: #dadee5; }
+  .cashMgmtPage .mainBody .subHeader .active {
+    color: #dadee5;
+    border: solid 2px rgba(65, 66, 89, 0.6);
+    background-color: rgba(65, 66, 89, 0.8); }
 
 .cashMgmtPage .mainBody .bodyContentsWrapper {
   width: 100%;
   height: calc(100% - 70px);
   display: block;
-  overflow: auto;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .bodyContents {
-  width: calc(100% - 145px);
-  margin: 30px 70px 30px 75px;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .cashBalance {
-  color: #dadee5;
-  font-size: 52px;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  margin: 10px auto 60px;
-  line-height: 1;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .cashBalance + h6 {
-  margin-left: 30px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper {
-  width: 100%;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableHeader, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody {
-  color: #9ea9bb;
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 11px;
-  margin: 0;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody {
-  color: #dadee5;
-  position: relative;
-  height: 70px;
-  width: 100%;
-  background-color: #414259;
-  border-radius: 3px;
-  margin: 15px 0  0;
-  transition: background-color 0.3s ease-in;
-  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .amountColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .dateColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .timeColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .typeColumn {
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowIndicator, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowPending, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowPending {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 70px;
-  width: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowDebit {
-  background-color: #d81327;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowCredit {
-  background-color: #29b75c;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  border-radius: 15px;
-  background-color: #2e3244;
-  float: left;
-  cursor: pointer;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage img {
-  width: 24px;
-  height: 24px;
-  margin: 3px;
-  border-radius: 10px;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage + .user {
-  display: inline-block;
-  margin-left: 10px;
-  height: 30px;
-  padding-top: 9.5px;
-  line-height: 1;
-  float: left;
-  cursor: pointer;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage + .user:hover {
-  text-decoration: underline;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .cashBalance {
-  color: #dadee5;
-  font-size: 52px;
-  font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
-  margin: 10px auto 60px;
-  line-height: 1;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .cashBalance + h6 {
-  margin-left: 30px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableHeader, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody {
-  color: #9ea9bb;
-  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
-  font-size: 11px;
-  margin: 0;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody {
-  color: #dadee5;
-  position: relative;
-  height: 70px;
-  width: 100%;
-  background-color: #414259;
-  border-radius: 3px;
-  margin: 15px 0  0;
-  transition: background-color 0.3s ease-in;
-  box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1);
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .amountColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .dateColumn {
-  position: relative;
-  top: 50%;
-  bottom: auto;
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .actionButton, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .approveButton, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .rejectButton {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  border-radius: 15px;
-  margin-top: 20px;
-  position: relative;
-  cursor: pointer;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .approveButton {
-  background-color: #29b75c;
-  background-image: url("../img/icon.confirm.png");
-  transition: transform 0.3s ease-out;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .approveButton:hover {
-  transform: scale(1.05, 1.05);
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .rejectButton {
-  background-color: #d81327;
-  margin-left: 30px;
-  background-image: url("../img/icon.cancel.png");
-  transition: transform 0.3s, ease-out;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .rejectButton:hover {
-  transform: scale(1.05, 1.05);
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowIndicator, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowPending {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 70px;
-  width: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowPending {
-  background-color: #dadee5;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  border-radius: 15px;
-  background-color: #2e3244;
-  float: left;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage img {
-  width: 24px;
-  height: 24px;
-  margin: 3px;
-  border-radius: 10px;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage + .user {
-  display: inline-block;
-  margin-left: 10px;
-  height: 30px;
-  padding-top: 9.5px;
-  line-height: 1;
-  float: left;
-  cursor: pointer;
-}
-
-.cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage + .user:hover {
-  text-decoration: underline;
-}
+  overflow: auto; }
+  .cashMgmtPage .mainBody .bodyContentsWrapper .bodyContents {
+    width: calc(100% - 145px);
+    margin: 30px 70px 30px 75px; }
+  .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .cashBalance {
+    color: #dadee5;
+    font-size: 52px;
+    font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+    margin: 10px auto 60px;
+    line-height: 1; }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .cashBalance + h6 {
+      margin-left: 30px;
+      margin-bottom: 20px;
+      width: 100%; }
+  .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper {
+    width: 100%; }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableHeader, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody {
+      color: #9ea9bb;
+      font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+      font-size: 11px;
+      margin: 0; }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody {
+      color: #dadee5;
+      position: relative;
+      height: 70px;
+      width: 100%;
+      background-color: #414259;
+      border-radius: 3px;
+      margin: 15px 0  0;
+      transition: background-color 0.3s ease-in;
+      box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1); }
+      .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .amountColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .dateColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .timeColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .typeColumn {
+        position: relative;
+        top: 50%;
+        bottom: auto;
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%); }
+      .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowIndicator, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowPending, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .mainCashMgmtView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowPending, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowPending {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 70px;
+        width: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; }
+      .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowDebit {
+        background-color: #d81327; }
+      .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .rowCredit {
+        background-color: #29b75c; }
+      .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border-radius: 15px;
+        background-color: #2e3244;
+        float: left;
+        cursor: pointer; }
+        .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage img {
+          width: 24px;
+          height: 24px;
+          margin: 3px;
+          border-radius: 10px; }
+      .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage + .user {
+        display: inline-block;
+        margin-left: 10px;
+        height: 30px;
+        padding-top: 9.5px;
+        line-height: 1;
+        float: left;
+        cursor: pointer; }
+        .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .tableWrapper .tableBody .userImage + .user:hover {
+          text-decoration: underline; }
+  .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .cashBalance {
+    color: #dadee5;
+    font-size: 52px;
+    font-family: "HelveticaNeueLTPro-Bd", Open Sans, sans-serif;
+    margin: 10px auto 60px;
+    line-height: 1; }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .cashBalance + h6 {
+      margin-left: 30px;
+      margin-bottom: 20px;
+      width: 100%; }
+  .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableHeader, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody {
+    color: #9ea9bb;
+    font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+    font-size: 11px;
+    margin: 0; }
+  .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody {
+    color: #dadee5;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background-color: #414259;
+    border-radius: 3px;
+    margin: 15px 0  0;
+    transition: background-color 0.3s ease-in;
+    box-shadow: 0px 3px 5px rgba(34, 34, 34, 0.1); }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .amountColumn, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .dateColumn {
+      position: relative;
+      top: 50%;
+      bottom: auto;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .actionButton, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .approveButton, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .rejectButton {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border-radius: 15px;
+      margin-top: 20px;
+      position: relative;
+      cursor: pointer;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .approveButton {
+      background-color: #29b75c;
+      background-image: url("../img/icon.confirm.png");
+      transition: transform 0.3s ease-out; }
+      .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .approveButton:hover {
+        transform: scale(1.05, 1.05); }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .rejectButton {
+      background-color: #d81327;
+      margin-left: 30px;
+      background-image: url("../img/icon.cancel.png");
+      transition: transform 0.3s, ease-out; }
+      .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .actionColumn .rejectButton:hover {
+        transform: scale(1.05, 1.05); }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowIndicator, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .pendingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .pendingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowBidding, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .ongoingProjectsBody .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .jobMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .jobMgmtPage .cashMgmtPage .mainBody .bodyContentsWrapper .ongoingProjectsBody .requestsView .tableWrapper .tableBody .rowCompleted, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowDebit, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .mainCashMgmtView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .mainCashMgmtView .requestsView .tableWrapper .tableBody .rowCredit, .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowPending {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 70px;
+      width: 3px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px; }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .rowPending {
+      background-color: #dadee5; }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border-radius: 15px;
+      background-color: #2e3244;
+      float: left; }
+      .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage img {
+        width: 24px;
+        height: 24px;
+        margin: 3px;
+        border-radius: 10px; }
+    .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage + .user {
+      display: inline-block;
+      margin-left: 10px;
+      height: 30px;
+      padding-top: 9.5px;
+      line-height: 1;
+      float: left;
+      cursor: pointer; }
+      .cashMgmtPage .mainBody .bodyContentsWrapper .requestsView .tableWrapper .tableBody .userImage + .user:hover {
+        text-decoration: underline; }
