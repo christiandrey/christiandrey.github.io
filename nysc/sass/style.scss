@@ -1,0 +1,9 @@
+// compileExpanded: ../css/style.css
+@import 'compass';
+@import 'partials/mixins'; // custom mixins @media breakpoints
+@import 'partials/variables'; // colors, fonts etc...
+@import 'partials/base'; // forms, base fonts and colors...
+@import 'partials/navigations';
+@import 'partials/blocks';
+@import 'partials/heroes';
+@import 'partials/animations';

@@ -1,0 +1,150 @@
+// antialiasing mode font rendering
+
+html * {
+  @include font-smoothing;
+}
+
+html {
+	font-size: 62.5%;
+    height: 100%;
+}
+
+*, *:after, *:before {
+  @include bx_s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: $font_regular;
+    color: $color_text;
+    font-size: 1.4rem;
+    font-size: 14px;
+    word-spacing: .5px;
+    letter-spacing: .75px;
+    height: 100%;
+    line-height: 150%;
+    font-weight: 400;
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font_bold;
+    font-weight: normal;
+    margin: 10px 0 15px;
+}
+
+h1 {
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+p {
+    margin: 0 0 8.5px;
+
+    a {
+        text-decoration: underline;
+    }
+
+    em {
+        font-weight: bold;
+        font-style: italic;
+
+        sup {
+            color: $brand_inverse;
+        }
+    }
+}
+
+.centered {
+	float: none; 
+	margin: 0 auto; 
+	display: table; 
+	text-align: center;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+.color-primary {
+    color: $brand_primary !important;
+}
+
+.color-secondary {
+    color: $brand_accent !important;
+}
+
+.color-inverse {
+    color: $brand_inverse !important;
+}
+
+.color-white {
+    color: $color_white !important;
+}
+
+.color-grey-light {
+    color: $color_grey_light !important;
+}
+
+
+.bg-primary {
+    background-color: $brand_primary !important;
+}
+
+.bg-secondary {
+    background-color: $brand_accent !important;
+}
+
+.bg-inverse {
+    background-color: $brand_inverse !important;
+}
+
+.bg-black {
+    background-color: $brand_black !important;  
+}
+
+.bg-white {
+    background-color: $color_white !important;
+}
+
+.font-regular {
+    font-family: $font_regular !important;
+}
+
+.font-bold {
+    font-family: $font_bold !important;
+}
+
+.caps-upper {
+    text-transform: uppercase !important;
+}
+

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<title>Something cooking | SAEDConnect</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+</head>
+
+<body>
+
+    <main class="main-content">
+
+
+        <section class="hero saedconnect">
+           <div class="hurray_balloons hide_view"></div>
+            <div class="container">
+                <article class="view default_view ">
+                   <div class="banner_text_overlay">
+                        <div class="intro-text">
+
+                            <div class="hour_glass">
+                               <svg id="wrap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px"  viewBox="0 0 250 250" enable-xml:space="preserve">
+
+                              <!-- background -->
+                              <svg class="glass_stage">
+                                <circle cx="150" cy="150" r="115"/>
+                                <path style="fill:transparent" d="M150,150 m0,-130 a 130,130 0 0,1 0,260 a 130,130 0 0,1 0,-260">
+                                </path>
+                              </svg>
+
+                              <!-- image -->
+                              <svg>
+                                <path id="hourglass" d="M150,150 C60,85 240,85 150,150 C60,215 240,215 150,150 Z" style="stroke: white; stroke-width:5; fill:white;" />
+
+                                <path id="frame" d="M100,97 L200, 97 M100,203 L200,203 M110,97 L110,142 M110,158 L110,200 M190,97 L190,142 M190,158 L190,200 M110,150 L110,150 M190,150 L190,150" style="stroke:#ffd24f; stroke-width:6; stroke-linecap:round" />
+
+                                <animateTransform xlink:href="#frame" attributeName="transform" type="rotate" begin="0s" dur="24s" values="0 150 150; 0 150 150; 180 150 150" keyTimes="0; 0.8; 1" repeatCount="indefinite" />
+                                <animateTransform xlink:href="#hourglass" attributeName="transform" type="rotate" begin="0s" dur="24s" values="0 150 150; 0 150 150; 180 150 150" keyTimes="0; 0.8; 1" repeatCount="indefinite" />
+                              </svg>
+
+                              <!-- sand -->
+                              <svg>
+                                <!-- upper part -->
+                                <polygon id="upper" points="120,125 180,125 150,147" style="fill:#128A4B;">
+                                  <animate attributeName="points" dur="24s" keyTimes="0; 0.8; 1" values="120,125 180,125 150,147; 150,150 150,150 150,150; 150,150 150,150 150,150" repeatCount="indefinite"/>
+                                </polygon>
+
+                                <!-- falling sand -->
+                                <path id="line" stroke-linecap="round" stroke-dasharray="1,4" stroke-dashoffset="200.00" stroke="#128A4B" stroke-width="2" d="M150,150 L150,198">
+                                  <!-- running sand -->
+                                  <animate attributeName="stroke-dashoffset" dur="24s" to="1.00" repeatCount="indefinite"/>
+                                  <!-- emptied upper -->
+                                  <animate attributeName="d" dur="24s" to="M150,195 L150,195" values="M150,150 L150,198; M150,150 L150,198; M150,198 L150,198; M150,195 L150,195" keyTimes="0; 0.65; 0.9; 1" repeatCount="indefinite"/>
+                                  <!-- last drop -->
+                                  <animate attributeName="stroke" dur="24s" keyTimes="0; 0.65; 0.8; 1" values="#128A4B;#128A4B;transparent;transparent" to="transparent" repeatCount="indefinite"/>
+                                </path>
+
+                                    <!-- lower part -->
+                                    <g id="lower">
+                                      <path d="M150,180 L180,190 A28,10 0 1,1 120,190 L150,180 Z" style="stroke: transparent; stroke-width:5; fill:#128A4B;">
+                                        <animateTransform attributeName="transform" type="translate" keyTimes="0; 0.65; 1" values="0 5; 0 0; 0 0" dur="24s" repeatCount="indefinite" />
+                                      </path>
+                                      <animateTransform xlink:href="#lower" attributeName="transform"
+                                            type="rotate"
+                                            begin="0s" dur="24s"
+                                            values="0 150 150; 0 150 150; 180 150 150"
+                                            keyTimes="0; 0.8; 1"
+                                            repeatCount="indefinite"/>
+                                    </g>
+
+                                    <!-- lower overlay - hourglass -->
+                                    <path d="M150,150 C60,85 240,85 150,150 C60,215 240,215 150,150 Z" style="stroke: white; stroke-width:5; fill:transparent;">
+                                      <animateTransform attributeName="transform"
+                                            type="rotate"
+                                            begin="0s" dur="24s"
+                                            values="0 150 150; 0 150 150; 180 150 150"
+                                            keyTimes="0; 0.8; 1"
+                                            repeatCount="indefinite"/>
+                                    </path>
+
+                                    <!-- lower overlay - frame -->
+                                    <path id="frame" d="M100,97 L200, 97 M100,203 L200,203" style="stroke:#ffd24f; stroke-width:6; stroke-linecap:round">
+                                      <animateTransform attributeName="transform"
+                                            type="rotate"
+                                            begin="0s" dur="24s"
+                                            values="0 150 150; 0 150 150; 180 150 150"
+                                            keyTimes="0; 0.8; 1"
+                                            repeatCount="indefinite"/>
+                                    </path>
+                                  </svg>
+
+                                </svg>
+                            </div>
+
+                            <h1 class="title-text color-white">Welcome to SAEDConnect</h1>
+                            <h3 class="title-phrase font-regular color-white">Something is cooking...</h3>
+
+                        </div>
+                    </div>
+                    <div class="launch_ribbon">
+                        <div class="wrapper text-center">
+                        <button type="button" id="trigger_launch" class="primary_grad btn-launch">
+                            <i class="icon">
+                                <!--<img src="./img/power_icon.svg" alt="Launch Site">-->
+
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 96" xml:space="preserve">
+                                <g>
+                                    <path class="st0" d="M0,55.5c0.3-9.3,4.9-19,14.2-26.3c3.2-2.5,5.9-2.6,7.7-0.1c1.9,2.4,1.2,5-1.8,7.6C5.2,48.9,6.1,70.9,22,81.2 c12,7.8,27.9,4.9,36.5-6.6c8.6-11.5,6.8-27.9-4.2-37.2c-0.7-0.6-1.5-1.1-2.1-1.8c-2.1-2-2.4-4.8-0.6-6.8c1.7-1.9,4.2-2.2,6.6-0.5 C66,34,71,41.5,72.8,51C77.2,75.3,58.7,96.2,34,95C15.4,94.1-0.2,77.1,0,55.5z"/>
+                                    <path class="st0" d="M30,64c0.5-8,1-15.8,1.3-23.4c0.1-2.2,0.7-3.5,3.2-3.5c7.4,0.1,7.4-0.2,7.7,7.2c0.4,7.3,1,14.6,1.3,21.9 c0.2,4.7-2.3,7.4-6.5,7.5c-4.2,0.1-6.9-1.8-7.2-6c-0.1-1.4,0-2.7,0-3.7C29.9,64,29.9,64,30,64z"/>
+                                    <path class="st0" d="M43.5,10.3c-0.1,6.6-2.4,8.9-7.2,8.8c-2.2-0.1-4-0.7-5-2.8c-1.1-2.2-1-4.3,0.4-6.3c0.8-1.2,1.7-2.2,2.6-3.4 c0.8-1,1.3-2,1.4-3.3c0.1-2.8,0.5-3,2.9-1.4C41.9,4.2,43.4,7.4,43.5,10.3z"/>
+                                    <path class="st1" d="M41.5,27.7c0,6.6-0.9,7.3-7.6,6.3c-1.4-0.2-1.9-0.9-1.9-2.2c0-1.4,0-2.8,0-4.3c0-6.8-0.5-5.8,6.1-6 c2.6-0.1,3.8,0.8,3.5,3.5C41.4,25.9,41.5,26.8,41.5,27.7z"/>
+                                </g>
+                                </svg>
+                            </i>
+                            <span class="btn_text font-bold">Launch</span>
+                        </button>
+                    </div>
+                    </div>
+                </article>
+                <article class="view timer_view hide_view">
+                    <span class="countdown_timer color-white font-bold"></span>
+                </article>
+                <article class="view welcome_view hide_view">
+                   <div class="banner_text_overlay">
+                        <div class="intro-text">
+
+                            <div id="final_msg">
+                            <svg version="1.1" id="congrat_msg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 421.3 97.5" style="enable-background:new 0 0 421.3 97.5;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path class="h_letter" fill-opacity="0.1" stroke="#454545" stroke-width="3" d="M68.5,75.5H52.5V44.1H17.1v31.5H1.2V0.6h15.9V30h35.4V0.6h16.1V75.5z"/>
+                                        <path class="h_letter" fill-opacity="0.1" stroke="#454545" stroke-width="3" d="M133.8,75.5h-14.3v-6.9c-4.9,5.5-11.2,8.2-19.1,8.2c-5.8,0-10.2-1.5-13.1-4.5
+                                            c-2.9-3-4.4-7.2-4.4-12.6V21.3h14.3v32.9c0,6.7,3.3,10,10,10c5,0,9.1-2.1,12.4-6.2V21.3h14.3V75.5z"/>
+                                        <path class="h_letter" fill-opacity="0.1" stroke="#454545" stroke-width="3" d="M162.2,75.5H148V21.3h14.3v7.4c2-2.5,4.6-4.6,7.8-6.3c3.1-1.6,6.3-2.5,9.5-2.5v13.9
+                                            c-1-0.2-2.3-0.3-3.9-0.3c-2.4,0-4.9,0.6-7.6,1.8c-2.7,1.2-4.6,2.7-5.7,4.4V75.5z"/>
+                                        <path class="h_letter" fill-opacity="0.1" stroke="#454545" stroke-width="3" d="M202.7,75.5h-14.3V21.3h14.3v7.4c2-2.5,4.6-4.6,7.8-6.3c3.1-1.6,6.3-2.5,9.5-2.5v13.9
+                                            c-1-0.2-2.3-0.3-3.9-0.3c-2.4,0-4.9,0.6-7.6,1.8c-2.7,1.2-4.6,2.7-5.7,4.4V75.5z"/>
+                                        <path class="h_letter" fill-opacity="0.1" stroke="#454545" stroke-width="3" d="M275.7,75.5h-14.3v-5.6c-3.9,4.6-9.6,7-17.2,7c-4.9,0-9.2-1.6-13.1-4.8c-3.9-3.2-5.8-7.6-5.8-13.2
+                                            c0-5.8,1.9-10.2,5.7-13.1c3.8-2.9,8.2-4.4,13.2-4.4c7.7,0,13.4,2.2,17.2,6.6v-7.3c0-2.8-1.1-5-3.3-6.6c-2.2-1.6-5.1-2.5-8.6-2.5
+                                            c-6,0-11.3,2.1-15.8,6.4l-5.4-9.5c6.4-5.7,14.3-8.5,23.7-8.5c7,0,12.7,1.6,17.1,4.8c4.4,3.2,6.6,8.5,6.6,15.7V75.5z M249.9,67.2
+                                            c5.3,0,9.1-1.6,11.5-4.7v-6.7c-2.3-3.1-6.1-4.7-11.5-4.7c-2.9,0-5.4,0.7-7.3,2.2c-1.9,1.5-2.9,3.5-2.9,6c0,2.5,1,4.4,2.9,5.8
+                                            C244.6,66.5,247,67.2,249.9,67.2z"/>
+                                        <path class="h_letter" fill-opacity="0.1" stroke="#454545" stroke-width="3" d="M287.9,96.8l2.1-12.8c1.3,0.6,2.8,0.9,4.5,0.9c3.8,0,6.3-1.3,7.5-3.9l2-4.6l-22-55h15.3L311.5,59
+                                            l14.2-37.7H341l-25.5,63.1c-1.9,4.8-4.5,8.1-7.9,10.1c-3.4,1.9-7.6,2.9-12.7,3.1C292.4,97.5,290,97.3,287.9,96.8z"/>
+                                        <path class="h_letter" fill-opacity="0.1" stroke="#454545" stroke-width="3" d="M361.1,74c-1.8,1.8-3.9,2.7-6.4,2.7s-4.6-0.9-6.3-2.7c-1.8-1.8-2.6-3.9-2.6-6.3
+                                            c0-2.5,0.9-4.6,2.6-6.4c1.8-1.8,3.9-2.7,6.3-2.7s4.6,0.9,6.4,2.7s2.7,3.9,2.7,6.4C363.8,70.1,362.9,72.2,361.1,74z M361,51.2
+                                            h-12.6l-2.4-50.5h17.2L361,51.2z"/>
+                                        <path class="h_letter" fill-opacity="0.1" stroke="#454545" stroke-width="3" d="M389.9,74c-1.8,1.8-3.9,2.7-6.4,2.7s-4.6-0.9-6.3-2.7c-1.8-1.8-2.6-3.9-2.6-6.3
+                                            c0-2.5,0.9-4.6,2.6-6.4c1.8-1.8,3.9-2.7,6.3-2.7s4.6,0.9,6.4,2.7s2.7,3.9,2.7,6.4C392.6,70.1,391.7,72.2,389.9,74z M389.8,51.2
+                                            h-12.6l-2.4-50.5H392L389.8,51.2z"/>
+                                        <path class="h_letter" fill-opacity="0.1" stroke="#454545" stroke-width="3" d="M418.6,74c-1.8,1.8-3.9,2.7-6.4,2.7s-4.6-0.9-6.3-2.7c-1.8-1.8-2.6-3.9-2.6-6.3
+                                            c0-2.5,0.9-4.6,2.6-6.4c1.8-1.8,3.9-2.7,6.3-2.7s4.6,0.9,6.4,2.7s2.7,3.9,2.7,6.4C421.3,70.1,420.4,72.2,418.6,74z M418.5,51.2
+                                            h-12.6l-2.4-50.5h17.2L418.5,51.2z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                            </div>
+
+                            <h1 class="title-text color-white">saedconnect.com is live</h1>
+
+                            <h4 class="title_phrase hidden font-regular color-white">Redirecting in a bit</h4>
+
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo" class="fixed_footer">
+        <section class="container">
+            <div class="flex-row">
+                <article class="footer_item social_links">
+                    <h4 class="feat_title color-default ">Find us on:</h4>
+                    <div class="feat_value social_links">
+                        <a href="https://twitter.com/" target="_blank" class="social social_tw">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com/" target="_blank" class="social social_fb">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/" target="_blank" class="social social_ig">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="footer_item social_links">
+                    <div class="support_brand brand_nysc">
+                        <span class="brand_img"></span>
+                    </div>
+                    <div class="support_brand brand_vm">
+                        <span class="brand_img"></span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </footer>
+
+    <!-- Javascript starts here-->
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery-timer-min.js"></script>
+
+    <script type="application/x-javascript">
+        var launch_btn = $('#trigger_launch'),
+            hero_container = $('.hero'),
+            def_view = $('.default_view'),
+            timer_view = $('.timer_view'),
+            welcome_view = $('.welcome_view'),
+            balloons = $(".hurray_balloons"),
+            timer = $('.countdown_timer'),
+            redirect_delay = 15000;
+
+        launch_btn.on("click", function() {
+            def_view.removeClass('view');
+            def_view.addClass('hide_view');
+            timer_view.removeClass('hide_view');
+
+            timer.setTimer(function(i, count) {
+              $(this).text(count);
+            }, 1000, 6, true, function() {
+                timer_view.addClass('hide_view');
+                balloons.removeClass('hide_view');
+                welcome_view.removeClass('hide_view');
+                welcome_view.addClass('start_animate');
+
+            });
+
+            if(balloons.hasClass('hide_view')) {
+                setTimeout(function() {
+                    window.location = "http://saedconnect.com";
+                }, redirect_delay);
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
