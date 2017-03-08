@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+//  Responsive breakpoints
+$S: 480px; // Small phones Styles are written for this breakpoint by default, so no need to specify it.
+$M: 768px; // Phablets
+$L: 992px; // 10" Tablets and desktops
+$XL: 1200px; // 10" Tablets and desktops..
+
+//  Colors
+$colorBlack     : #000000;
+$colorDark      : #1c2237;
+$colorGray      : #1e1f20;
+$colorDarkTrans : rgba(28,34,55,0.9);
+$colorAccent    : #ce616e;
+$colorWhite     : #ffffff;
+$colorTrans     : rgba(0,0,0,0);
+
+//  Fonts
+$bodyFont: 'HelveticaNeueLTPro-Roman',Open Sans, sans-serif;
+$headerFont: "Mermaid1001", Open Sans, sans-serif;
+
+//  Font Sources
+@font-face {
+    font-family: 'Mermaid1001';
+    src: url('../fonts/Mermaid1001.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTPro-Roman';
+    src: url('../fonts/HelveticaNeueLTPro-Roman.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,353 @@
+.sectionIndicator {
+  $indicatorSize : 5;
+  width: $indicatorSize * 1px;
+  height: (4 * $indicatorSize) + (3 * ($indicatorSize + 1)) * 1px;
+  position: fixed !important;
+  right: 8%;
+  z-index: +1;
+  @include center(y);
+
+
+  .indicator {
+    width: $indicatorSize * 1px;
+    height: $indicatorSize * 1px;
+    border-radius: $indicatorSize * 1px;
+    background-color: $colorAccent;
+    display: block;
+    margin-bottom: ($indicatorSize + 1) * 1px;
+
+    &.active {
+      background: none;
+      border: solid 1px $colorWhite;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sectionBlock {
+  .sectionHeader {
+    font-family: $headerFont;
+    font-size: 4.5em;
+  }
+
+  &.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      background-color: $colorDarkTrans;
+    }
+
+    .heroContent.middle {
+      width: 80%;
+      height: auto;
+      margin: auto;
+      @include center(y);
+
+      .brandContainer {
+        width: 100%;
+        height: auto;
+
+        p {
+          font-family: $headerFont;
+          font-size: 4em;
+          line-height: 0.9;
+          margin: 0;
+
+          @include MQ(M){
+            font-size: 10em
+          }
+
+          &:first-of-type {
+            color: $colorWhite
+          }
+
+          &:last-of-type {
+            color: $colorAccent
+          }
+        }
+      }
+    }
+
+    .heroContent.bottom {
+      width: 80%;
+      height: 40px;
+      margin-left: 10%;
+      z-index: +1;
+      position: absolute;
+      bottom: 15px;
+
+      .scrollableIcon {
+        width: auto;
+        height: 40px;
+      }
+    }
+  }
+
+  &.bio {
+    width: 100%;
+    height: 100vh;
+
+    .container-fluid {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+
+      .row {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+
+        .bioImage {
+          width: 100%;
+          height: 30%;
+          padding: 0;
+          background-image: url('../img/profileImg.jpg');
+          background-size: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          @include MQ(M) {
+            width: (500 / 12) * 1%;
+            height: 100%;
+          }
+        }
+
+        .bioContent {
+          width: 100%;
+          height: 70%;
+          padding: 0;
+          background-color: $colorWhite;
+
+          @include MQ(M) {
+            width: (700 / 12) * 1%;
+            height: 100%;
+          }
+
+          .bioContentContainer {
+            width: 80%;
+            height: auto;
+            margin-left: 10%;
+            @include center(y);
+            @include MQ(M){
+              width: 60%;
+              margin-left: 20%;
+            }
+
+            p {
+              &:first-of-type {
+                font-family: $headerFont;
+                font-weight: bold;
+                color: $colorDark;
+                font-size: 2em;
+                line-height: 1.2em;
+                margin-bottom: 0.8em;
+                @include MQ(M){
+                  font-size: 2.2em;
+                }
+              }
+
+              &:last-of-type {
+                color: $colorBlack;
+                font-size: 1em;
+                @include MQ(M){
+                  font-size: 1.2em;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  &.gallery {
+    width: 100%;
+    height: auto;
+    background-color: $colorGray;
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    @include MQ(M){
+      padding-top: 8em;
+      padding-bottom: 8em;
+    }
+
+    p {
+      &:first-of-type {
+        color: $colorAccent;
+        margin-left: 10%;
+        margin-bottom: 30px;
+        line-height: 1;
+      }
+
+      &:nth-of-type(2) {
+        color: $colorWhite;
+        margin-left: 10%;
+        width: 80%;
+        margin-bottom: 30px;
+        font-size: 1em;
+
+        @include MQ(M){
+          width: 40%;
+          font-size: 1.2em;
+
+        }
+
+        a {
+          color: #128ab0;
+          outline: none;
+          text-decoration: none;
+
+          &:visited {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .galleryContainer {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      @include MQ(M){
+        width: 80%;
+        margin-left: 10%;
+      }
+
+      .bsHack {
+        margin: 0;
+        padding: 0;
+      }
+
+      .galleryRow {
+        margin-bottom: 15px;
+
+        &:last-of-type {
+          margin-bottom: 0px
+        }
+
+        &.one {
+          width: 100%;
+        }
+
+        &.two {
+          width: 100%;
+        }
+
+        &.three {
+          width: 100%;
+        }
+
+        &.four {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.contact {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    .contactSummaryContainer {
+      width: 80%;
+      margin-left: 10%;
+      @include center(y);
+
+      p {
+        &:first-of-type {
+          margin-bottom: 30px;
+          color: $colorGray;
+          line-height: 0.8em;
+        }
+
+        &:last-of-type {
+          font-size: 1em;
+          color: $colorBlack;
+          @include MQ(M){
+            width: 50%;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+    .contactDetailsContainer {
+      width: 80%;
+      margin-left: 10%;
+      position: absolute;
+      bottom: 15px;
+      @include MQ(M){
+        bottom: 90px;
+      }
+
+      .socialLinksContainer {
+        margin-bottom: 10px;
+        @include MQ(M){
+          margin-bottom: 20px;
+        }
+
+        a {
+          outline: none;
+          display: inline-block;
+          margin-right: 30px;
+          @include MQ(M) {
+            margin-right: 50px
+          }
+
+          img {
+            width: 30px;
+            height: 30px;
+            @include MQ(M) {
+              width: 50px;
+              height: 50px;
+            }
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          &:visited {
+            text-decoration: none;
+          }
+        }
+
+        &+p {
+          color: $colorBlack;
+          font-size: 1em;
+          @include MQ(M){
+            font-size: 1.2em;
+          }
+
+          a {
+            text-decoration: none;
+            color: $colorBlack;
+
+            &:visited {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

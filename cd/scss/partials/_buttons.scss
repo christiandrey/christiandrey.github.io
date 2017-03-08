@@ -1,0 +1,30 @@
+.buttonBase {
+    width: 160px;
+    height: 40px;
+    padding: 5px auto;
+    border-radius: 20px;
+    font-size: 12px
+}
+
+.buttonBase:focus {
+    outline: none;
+}
+
+.outlineButton {
+    @extend .buttonBase;
+    color: $colorWhite;
+    background-color: $colorTrans;
+    border: solid 1px $colorWhite
+}
+
+.filledButton {
+    @extend .buttonBase;
+    box-shadow: 0px 0px 0px transparentize($colorDark, 0.7);
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 4px 5px transparentize($colorDark, 0.7);
+    }
+}

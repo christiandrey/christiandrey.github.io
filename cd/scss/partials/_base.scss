@@ -1,0 +1,63 @@
+body{
+    font-family: $bodyFont;
+    @include font-smoothing;
+    letter-spacing: 0.7px;
+    font-size: 12px;
+}
+
+::selection {
+  background-color: $colorAccent;
+  color: $colorWhite;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headerFont;
+}
+
+.fgBlack {
+    color: $colorBlack
+}
+
+.bgBlack {
+    background-color: $colorBlack
+}
+
+.fgDark {
+    color: $colorDark
+}
+
+.bgDark {
+    background-color: $colorDark
+}
+
+.fgGray {
+    color: $colorGray
+}
+
+.bgGray {
+    background-color: $colorGray
+}
+
+.fgDarkTrans {
+    color: $colorDarkTrans
+}
+
+.bgDarkTrans {
+    background-color: $colorDarkTrans
+}
+
+.fgAccent {
+    color: $colorAccent
+}
+
+.bgAccent {
+    background-color: $colorAccent
+}
+
+.fgWhite {
+    color: $colorWhite
+}
+
+.bgWhite {
+    background-color: $colorWhite
+}
