@@ -11,14 +11,17 @@
   </head>
 
   <body>
-    <main class="page indexPage">
+    <main class="page indexPage" role="main">
+      <nav class="navContainer" role="navigation">
+        <div></div>
+      </nav>
       <div class="sectionIndicator">
-        <div class="indicator active"></div>
-        <div class="indicator"></div>
-        <div class="indicator"></div>
-        <div class="indicator"></div>
+        <div class="indicator active typeA"></div>
+        <div class="indicator typeA"></div>
+        <div class="indicator typeA"></div>
+        <div class="indicator typeA"></div>
       </div>
-      <section class="sectionBlock hero">
+      <header class="sectionBlock hero">
         <div class="heroContent middle">
           <div class="brandContainer">
             <p>Christian</p>
@@ -28,7 +31,7 @@
         <div class="heroContent bottom text-center">
           <img src="cd/img/scrollable.png" alt="" class="scrollableIcon">
         </div>
-      </section>
+      </header>
 
       <section class="sectionBlock bio">
         <div class="container-fluid">
@@ -50,33 +53,35 @@
         <div class="galleryContainer container-fluid">
           <div class="galleryRow one">
             <div class="row bsHack">
-              <div class="col-md-12 bsHack">
+              <div class="col-md-12 bsHack galleryItem one">
                 <div class="bgAccent" style="width: 100%; height: 200px"></div>
               </div>
             </div>
           </div>
           <div class="galleryRow two">
             <div class="row bsHack">
-              <div class="col-md-4 bsHack"><div class="bgAccent" style="width: 100%; height: 200px"></div></div>
-              <div class="col-md-8 bsHack"><div class="bgWhite" style="width: 100%; height: 200px"></div></div>
+              <div class="col-md-4 bsHack galleryItem two"><div class="bgAccent" style="width: 100%; height: 200px"></div></div>
+              <div class="col-md-8 bsHack galleryItem three"><div class="bgWhite" style="width: 100%; height: 200px"></div></div>
             </div>
           </div>
           <div class="galleryRow three">
             <div class="row bsHack">
               <div class="col-md-8 bsHack">
-                <div class="row bsHack"><div class="bgDark" style="width: 100%; height: 200px"></div></div>
+                <div class="row bsHack"><div class="col-md-12 bsHack galleryItem four">
+                  <div class="bgDark" style="width: 100%; height: 200px"></div>
+                </div></div>
                 <div class="row bsHack">
-                  <div class="col-md-6 bsHack"><div class="bgAccent" style="width: 100%; height: 200px"></div></div>
-                  <div class="col-md-6 bsHack"><div class="bgWhite" style="width: 100%; height: 200px"></div></div>
+                  <div class="col-md-6 bsHack galleryItem five"><div class="bgAccent" style="width: 100%; height: 200px"></div></div>
+                  <div class="col-md-6 bsHack galleryItem six"><div class="bgWhite" style="width: 100%; height: 200px"></div></div>
                 </div>
               </div>
-              <div class="col-md-4 bsHack"><div class="bgAccent" style="width: 100%; height: 400px"></div></div>
+              <div class="col-md-4 bsHack galleryItem seven"><div class="bgAccent" style="width: 100%; height: 415px"></div></div>
             </div>
           </div>
           <div class="galleryRow four">
             <div class="row bsHack">
-              <div class="col-md-6 bsHack"><div class="bgAccent" style="width: 100%; height: 200px"></div></div>
-              <div class="col-md-6 bsHack"><div class="bgWhite" style="width: 100%; height: 200px"></div></div>
+              <div class="col-md-6 bsHack galleryItem eight"><div class="bgAccent" style="width: 100%; height: 200px"></div></div>
+              <div class="col-md-6 bsHack galleryItem nine"><div class="bgWhite" style="width: 100%; height: 200px"></div></div>
             </div>
           </div>
         </div>
@@ -102,4 +107,16 @@
   <!--Scripts to be Used-->
   <script src="cd/js/jquery-3.1.0.min.js"></script>
   <script src="cd/js/reveel.js"></script>
+  <script src="cd/js/parallax.min.js"></script>
+  <script>
+    $('.hero').parallax({
+      imageSrc: 'cd/img/bg.jpg',
+      speed: 0.4
+    })
+
+    $('.bioImage').parallax({
+      imageSrc: 'cd/img/profileImg.jpg',
+      speed: 0.2
+    })
+  </script>
 </html>

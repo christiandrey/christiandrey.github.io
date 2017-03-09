@@ -12,17 +12,43 @@
     width: $indicatorSize * 1px;
     height: $indicatorSize * 1px;
     border-radius: $indicatorSize * 1px;
-    background-color: $colorAccent;
     display: block;
     margin-bottom: ($indicatorSize + 1) * 1px;
+    transition: all 0.3s;
 
     &.active {
       background: none;
-      border: solid 1px $colorWhite;
     }
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+
+    &.typeA {
+      background-color: $colorAccent;
+
+      &.active {
+        background: none;
+        border: solid 1px $colorWhite;
+      }
+    }
+
+    &.typeB {
+      background-color: $colorWhite;
+
+      &.active {
+        background: none;
+        border: solid 1px $colorWhite;
+      }
+    }
+
+    &.typeC {
+      background-color: $colorAccent;
+
+      &.active {
+        background: none;
+        border: solid 1px $colorGray;
+      }
     }
   }
 }
@@ -36,7 +62,7 @@
   &.hero {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/bg.jpg');
+    // background-image: url('../img/bg.jpg');
     background-position: center;
     position: relative;
 
@@ -116,7 +142,7 @@
           width: 100%;
           height: 30%;
           padding: 0;
-          background-image: url('../img/profileImg.jpg');
+          // background-image: url('../img/profileImg.jpg');
           background-size: 100%;
           background-position: center;
           background-repeat: no-repeat;
@@ -249,14 +275,60 @@
 
         &.two {
           width: 100%;
+
+          .galleryItem {
+            &.two {
+              padding-bottom: 15px;
+              @include MQ(M){
+                padding-bottom: 0;
+                padding-right: 15px;
+              }
+            }
+          }
         }
 
         &.three {
           width: 100%;
+
+          .galleryItem {
+            &.four {
+              padding-bottom: 15px;
+              @include MQ(M){
+                padding-right: 15px;
+              }
+            }
+
+            &.five {
+              padding-bottom: 15px;
+              @include MQ(M){
+                padding-bottom: 0;
+                padding-right: 15px;
+              }
+            }
+
+            &.six {
+              padding-bottom: 15px;
+              @include MQ(M){
+                padding-bottom: 0;
+                padding-right: 15px;
+              }
+            }
+
+          }
         }
 
         &.four {
           width: 100%;
+
+          .galleryItem {
+            &.eight {
+              padding-bottom: 15px;
+              @include MQ(M){
+                padding-bottom: 0;
+                padding-right: 15px;
+              }
+            }
+          }
         }
       }
     }

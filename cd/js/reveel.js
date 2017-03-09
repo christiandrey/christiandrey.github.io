@@ -6,6 +6,7 @@
     this.reveelWidth = null;
     this.reveelHeight = null;
     this.reveelMargin = null;
+    this.reveelTransform = null;
     this.styleConfig = null;
   }
 
@@ -43,10 +44,11 @@
     this.reveelWidth = $('.' + this.reveelClassName + '.reveelClone').innerWidth() + this.config.reveelPadding;
     this.reveelHeight = $('.' + this.reveelClassName + '.reveelClone').innerHeight() + this.config.reveelPadding;
     this.reveelMargin = $('.' + this.reveelClassName + '.reveelClone').css("margin");
+    this.reveelTransform = $('.' + this.reveelClassName + '.reveelClone').css("transform");
     $('.' + this.reveelClassName).css("opacity","0");
     $('.' + this.reveelClassName + '.reveelClone').remove();
 
-    $('.' + this.reveelClassName).wrap("<div style='position: relative; margin: " + this.reveelMargin + "'></div>");
+    $('.' + this.reveelClassName).wrap("<div style='position: relative; margin: " + this.reveelMargin + "; transform: " + this.reveelTransform + "'></div>");
     $('.' + this.reveelClassName).css("margin","0px");
 
     switch(this.config.reveelDirection){
