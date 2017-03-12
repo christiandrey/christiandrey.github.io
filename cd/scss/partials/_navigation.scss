@@ -48,15 +48,19 @@
     width: 0;
 
     &:before {
-      @include transform(rotate(45deg));
-      transform-origin: left;
+      @include prefix((
+        transform: rotate(45deg),
+        transform-origin: left
+      ))
       top: -7px;
       left: 3px;
     }
 
     &:after {
-      transform: rotate(-45deg);
-      transform-origin: left;
+      @include prefix((
+        transform: rotate(-45deg),
+        transform-origin: left
+      ))
       top: 4px;
       left: 3px;
     }
@@ -68,24 +72,30 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: scale(0,0);
-    transform-origin: top right;
     transition: all 0.25s;
     opacity: 0;
+    @include prefix((
+      transform: scale(0,0),
+      transform-origin: top right
+    ))
 
     &.open {
-      transform: scale(1,1);
-      animation-name: navOpacity;
-      animation-duration: 0.15s;
-      animation-fill-mode: forwards;
-      animation-delay: 0.1s;
+      @include prefix((
+        transform: scale(1,1),
+        animation-name: navOpacity,
+        animation-duration: 0.15s,
+        animation-fill-mode: forwards,
+        animation-delay: 0.1s
+      ))
     }
 
     &.close {
-      transform: scale(0,0);
-      animation-name: navOpacityClose;
-      animation-duration: 0.05s;
-      animation-fill-mode: forwards;
+      @include prefix((
+        transform: scale(0,0),
+        animation-name: navOpacityClose,
+        animation-duration: 0.05s,
+        animation-fill-mode: forwards
+      ))
     }
 
     div {

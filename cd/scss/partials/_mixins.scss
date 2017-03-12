@@ -112,6 +112,7 @@
           transform: $transforms;
 }
 
+
 @mixin placeholderColor($placeholderColor, $bold:false){
   ::-webkit-input-placeholder {
    color: $placeholderColor;
@@ -141,3 +142,23 @@
    }
   }
 }
+
+@mixin prefix($declarations, $prefixes: (moz o ms webkit)) {
+  @each $property, $value in $declarations {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+
+    // Output standard non-prefixed declaration
+    #{$property}: $value;
+  }
+}
+
+//Example usage of the prefix mixin
+// .selector {
+//   @include prefix((
+//     column-count: 3,
+//     column-gap: 1.5em,
+//     column-rule: 2px solid hotpink
+//   ));
+// }

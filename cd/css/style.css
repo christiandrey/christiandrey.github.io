@@ -143,13 +143,25 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  -moz-transform-origin: left;
+  -o-transform-origin: left;
+  -ms-transform-origin: left;
+  -webkit-transform-origin: left;
   transform-origin: left;
   top: -7px;
   left: 3px;
 }
 
 .navContainer .ham.open:after {
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+  -moz-transform-origin: left;
+  -o-transform-origin: left;
+  -ms-transform-origin: left;
+  -webkit-transform-origin: left;
   transform-origin: left;
   top: 4px;
   left: 3px;
@@ -161,24 +173,68 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0;
   right: 0;
-  transform: scale(0, 0);
-  transform-origin: top right;
   transition: all 0.25s;
   opacity: 0;
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -moz-transform-origin: top right;
+  -o-transform-origin: top right;
+  -ms-transform-origin: top right;
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
 }
 
 .navContainer .navElements.open {
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
+  -moz-animation-name: navOpacity;
+  -o-animation-name: navOpacity;
+  -ms-animation-name: navOpacity;
+  -webkit-animation-name: navOpacity;
   animation-name: navOpacity;
+  -moz-animation-duration: 0.15s;
+  -o-animation-duration: 0.15s;
+  -ms-animation-duration: 0.15s;
+  -webkit-animation-duration: 0.15s;
   animation-duration: 0.15s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  -ms-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
 
 .navContainer .navElements.close {
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
+  -moz-animation-name: navOpacityClose;
+  -o-animation-name: navOpacityClose;
+  -ms-animation-name: navOpacityClose;
+  -webkit-animation-name: navOpacityClose;
   animation-name: navOpacityClose;
+  -moz-animation-duration: 0.05s;
+  -o-animation-duration: 0.05s;
+  -ms-animation-duration: 0.05s;
+  -webkit-animation-duration: 0.05s;
   animation-duration: 0.05s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
@@ -841,7 +897,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .lightBox .lightBoxContainer .projectImages .imageItemContainer .imageWrapper .imageItem {
   width: calc(100% / 4);
-  height: auto;
+  height: 100%;
   margin: 0;
   padding: 0;
   border-radius: 5px;
@@ -856,6 +912,11 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  -moz-object-fit: contain;
+  -o-object-fit: contain;
+  -ms-object-fit: contain;
+  -webkit-object-fit: contain;
+  object-fit: contain;
 }
 
 .lightBox .lightBoxContainer .projectImages .imageIndicator {
@@ -912,6 +973,10 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
   }
   .lightBox .lightBoxContainer .projectImages .imageCtrlContainer .imageCtrl:first-of-type {
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
   .lightBox .lightBoxContainer .projectImages .imageCtrlContainer .imageCtrl:last-of-type {
