@@ -423,3 +423,284 @@
     }
   }
 }
+
+.lightBox {
+  width: 100%;
+  height: 100vh;
+  // background-color: $colorGray;
+  background-color: transparentize($colorGray, 0.2);
+
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: +2;
+
+  .lightBoxContainer {
+    width: 100%;
+    height: 100%;
+
+    @include MQ(M){
+      width: 60%;
+      min-width: 700px;
+      height: 500px;
+      margin: auto;
+      @include center(y);
+    }
+
+    .projectImages {
+      width: 100%;
+      height: 100%;
+      background-color: $colorOffWhite;
+      display: block;
+
+      @include MQ(M){
+        width: 60%;
+        height: 100%;
+        display: inline;
+        float: left;
+        position: relative;
+      }
+
+      .imageItemContainer {
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+        margin: 30px 30px 0 30px;
+        overflow: hidden;
+        position: relative;
+
+        .imageWrapper {
+          width: 400%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+
+          .imageItem {
+            width: calc(100% / 4);
+            height: auto;
+            margin: 0;
+            padding: 0;
+            border-radius: 5px;
+            display: inline-block;
+            float: left;
+            overflow: hidden;
+            @include center(y);
+          }
+        }
+      }
+
+      .imageIndicator {
+        width: auto;
+        height: 5px;
+        margin: 12.5px auto;
+        display: inline-flex;
+        // position: relative;
+        @include center(x);
+
+        .indicator {
+          width: 5px;
+          height: 5px;
+          border-radius: 2.5px;
+          background-color: $colorDark;
+          display: inline-block;
+          margin-right: 3px;
+
+          &.active {
+            background-color: $colorAccent;
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .imageCtrlContainer {
+
+        @include MQ(M){
+          width: 68px;
+          height: 30px;
+          position: absolute;
+          top: -33px;
+          right: 0;
+
+          .imageCtrl {
+            width: 30px;
+            height: 30px;
+            display: inline;
+            float: left;
+            margin-right: 8px;
+            background-image: url('../img/arrowButton.png');
+            background-size: cover;
+
+            &:first-of-type {
+              transform: rotate(180deg);
+            }
+
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .projectDetails {
+      width: 100%;
+      height: 100%;
+      background-color: $colorDark;
+      display: block;
+      position: relative;
+      padding: 60px 10% 0;
+
+      @include MQ(M){
+        width: 40%;
+        height: 100%;
+        display: inline;
+        float: left;
+        padding: 50px 30px 0;
+      }
+
+      .projectTitle {
+        width: 100%;
+        font-family: $headerFont;
+        color: $colorAccent;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        line-height: 1;
+
+        @include MQ(M){
+          font-size: 2em;
+        }
+      }
+
+      .projectDescription {
+        width: 100%;
+        font-family: $bodyFont;
+        color: $colorWhite;
+        font-size: 1em;
+        margin-bottom: 20px;
+
+        @include MQ(M){
+          font-size: 0.95em;
+        }
+      }
+
+      .projectSoftwares {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 30px;
+        padding: 0;
+
+        .software {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          margin-right: 15px;
+          background-size: contain;
+
+          &.xd {
+            background-image: url('../img/xd.png');
+          }
+
+          &.ae {
+            background-image: url('../img/ae.png');
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .projectTags {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+
+        .tag {
+          background-color: $colorAccent;
+          color: $colorWhite;
+          padding: 3px 20px;
+          margin-right: 5px;
+
+          @include MQ(M){
+            font-size: 0.9em;
+          }
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .linksContainer {
+        width: 80%;
+        height: 100px;
+        position: absolute;
+        bottom: 15px;
+
+        @include MQ(M){
+          height: 90px;
+        }
+
+        div {
+          width: 100%;
+          margin-bottom: 15px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
+          img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+          }
+
+          a {
+            text-decoration: none;
+            color: $colorWhite;
+            font-size: 0.9em;
+          }
+        }
+      }
+
+      .bottomBorder {
+        width: 100%;
+        height: 15px;
+        background-color: $colorAccent;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @include MQ(M){
+          height: 25px;
+        }
+      }
+
+      .closeLightBox {
+        width: 34px;
+        height: 34px;
+        background-color: $colorAccent;
+        background-image: url('../img/closeButton.png');
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 17px;
+        position: fixed;
+        top: 20px;
+        right: calc(8% - 17px);
+
+        @include MQ(M){
+          width: 30px;
+          height: 30px;
+          top: -33px;
+          right: 0;
+        }
+      }
+    }
+  }
+
+
+}

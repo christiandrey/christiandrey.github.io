@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Christian Dréy</title>
     <link rel="stylesheet" href="cd/css/reset.css">
@@ -13,14 +13,71 @@
   <body>
     <main class="page indexPage" role="main">
       <nav class="navContainer" role="navigation">
-        <div></div>
+        <div class="ham"></div>
+        <div class="navElements close">
+          <div class="home" role="button"></div>
+          <div class="bio" role="button"></div>
+          <div class="gallery" role="button"></div>
+          <div class="contact" role="button"></div>
+        </div>
       </nav>
+
       <div class="sectionIndicator">
-        <div class="indicator active typeA"></div>
-        <div class="indicator typeA"></div>
-        <div class="indicator typeA"></div>
-        <div class="indicator typeA"></div>
+        <div class="indicator active"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
       </div>
+
+      <div class="lightBox hidden">
+        <div class="lightBoxContainer clearfix">
+          <div class="projectImages clearfix">
+            <div class="imageItemContainer">
+              <div class="imageWrapper">
+                <img src="cd/img/testlong.png" alt="" class="imageItem">
+                <img src="cd/img/profileImg.jpg" alt="" class="imageItem">
+                <img src="cd/img/profileImg.jpg" alt="" class="imageItem">
+                <img src="cd/img/profileImg.jpg" alt="" class="imageItem">
+              </div>
+            </div>
+            <div class="imageIndicator">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+            </div>
+            <div class="imageCtrlContainer">
+              <span class="imageCtrl prev" role="button"></span>
+              <span class="imageCtrl next" role="button"></span>
+            </div>
+          </div>
+          <div class="projectDetails">
+            <p class="projectTitle">Project title goes into this space</p>
+            <p class="projectDescription">Short description of the project goes into this space right here. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi nam eveniet optio veniam at! Quis alias saepe eaque deserunt quam enim tempora rem, numquam atque, tempore iure, accusantium repellat autem.</p>
+            <div class="projectSoftwares">
+              <span class="software xd"></span>
+              <span class="software ae"></span>
+            </div>
+            <div class="projectTags">
+              <span class="tag">Web development</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <div class="linksContainer">
+              <div class="liveLinkContainer">
+                <img src="cd/img/liveLink.png" alt="Live Link" class="linkIcon">
+                <a href="#" class="liveLink">Live link</a>
+              </div>
+              <div class="behanceLinkContainer">
+                <img src="cd/img/behance.png" alt="View on Behance" class="behanceIcon">
+                <a href="#" class="behanceLink">View on Behance</a>
+              </div>
+            </div>
+            <div class="bottomBorder"></div>
+            <div class="button closeLightBox" role="button"></div>
+          </div>
+        </div>
+      </div>
+
       <header class="sectionBlock hero">
         <div class="heroContent middle">
           <div class="brandContainer">
@@ -108,15 +165,8 @@
   <script src="cd/js/jquery-3.1.0.min.js"></script>
   <script src="cd/js/reveel.js"></script>
   <script src="cd/js/parallax.min.js"></script>
+  <script src="cd/js/jquery.scrollTo.min.js"></script>
   <script>
-    $('.hero').parallax({
-      imageSrc: 'cd/img/bg.jpg',
-      speed: 0.4
-    })
-
-    $('.bioImage').parallax({
-      imageSrc: 'cd/img/profileImg.jpg',
-      speed: 0.2
-    })
   </script>
+  <script src="cd/js/app.js"></script>
 </html>

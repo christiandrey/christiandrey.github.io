@@ -78,6 +78,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ffffff;
 }
 
+.fgOffWhite {
+  color: #e0dfdf;
+}
+
+.bgOffWhite {
+  background-color: #e0dfdf;
+}
+
 .navContainer {
   width: 34px;
   height: 34px;
@@ -87,17 +95,19 @@ h1, h2, h3, h4, h5, h6 {
   top: 20px;
   right: calc(8% - 17px);
   z-index: +1;
+  cursor: pointer;
 }
 
-.navContainer div {
+.navContainer .ham {
   width: 14px;
   height: 3px;
   margin: 15.5px 10px 15.5px 7px;
   border-radius: 1.5px;
   background-color: #ffffff;
+  transition: all 0.25s;
 }
 
-.navContainer div:before {
+.navContainer .ham:before {
   content: "";
   width: 20px;
   height: 3px;
@@ -107,9 +117,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: -6px;
   left: 0;
+  transition: all 0.25s;
 }
 
-.navContainer div:after {
+.navContainer .ham:after {
   content: "";
   width: 20px;
   height: 3px;
@@ -119,6 +130,134 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 3px;
   left: 0;
+  transition: all 0.25s;
+}
+
+.navContainer .ham.open {
+  width: 0;
+}
+
+.navContainer .ham.open:before {
+  transform: rotate(45deg);
+  transform-origin: left;
+  top: -7px;
+  left: 3px;
+}
+
+.navContainer .ham.open:after {
+  transform: rotate(-45deg);
+  transform-origin: left;
+  top: 4px;
+  left: 3px;
+}
+
+.navContainer .navElements {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(0, 0);
+  transform-origin: top right;
+  transition: all 0.25s;
+  opacity: 0;
+}
+
+.navContainer .navElements.open {
+  transform: scale(1, 1);
+  animation-name: navOpacity;
+  animation-duration: 0.15s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+}
+
+.navContainer .navElements.close {
+  transform: scale(0, 0);
+  animation-name: navOpacityClose;
+  animation-duration: 0.05s;
+  animation-fill-mode: forwards;
+}
+
+.navContainer .navElements div {
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: #ce616e;
+  position: absolute;
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  transition: transform 0.25s;
+}
+
+.navContainer .navElements div:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.navContainer .navElements div.home {
+  top: 0;
+  right: 0;
+  background-image: url("../img/nav.homeIcon.png");
+  transition: all 0.25s ease;
+}
+
+.navContainer .navElements div.home.open {
+  top: 0;
+  left: 0;
+}
+
+.navContainer .navElements div.bio {
+  top: 0;
+  right: 0;
+  background-image: url("../img/nav.bioIcon.png");
+  transition: all 0.3s ease;
+}
+
+.navContainer .navElements div.bio.open {
+  top: 38px;
+  left: 10.18px;
+}
+
+.navContainer .navElements div.gallery {
+  top: 0;
+  right: 0;
+  background-image: url("../img/nav.galleryIcon.png");
+  transition: all 0.35s ease;
+}
+
+.navContainer .navElements div.gallery.open {
+  top: 65.82px;
+  right: 38px;
+}
+
+.navContainer .navElements div.contact {
+  top: 0;
+  right: 0;
+  background-image: url("../img/nav.contactIcon.png");
+  transition: all 0.4s ease;
+}
+
+.navContainer .navElements div.contact.open {
+  top: 76px;
+  right: 0;
+}
+
+@keyframes navOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes navOpacityClose {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .sectionIndicator {
@@ -627,6 +766,330 @@ h1, h2, h3, h4, h5, h6 {
 
 .sectionBlock.contact .contactDetailsContainer .socialLinksContainer + p a:visited {
   text-decoration: none;
+}
+
+.lightBox {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(30, 31, 32, 0.8);
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: +2;
+}
+
+.lightBox .lightBoxContainer {
+  width: 100%;
+  height: 100%;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .lightBox .lightBoxContainer {
+    width: 60%;
+    min-width: 700px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    bottom: auto;
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.lightBox .lightBoxContainer .projectImages {
+  width: 100%;
+  height: 100%;
+  background-color: #e0dfdf;
+  display: block;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .lightBox .lightBoxContainer .projectImages {
+    width: 60%;
+    height: 100%;
+    display: inline;
+    float: left;
+    position: relative;
+  }
+}
+
+.lightBox .lightBoxContainer .projectImages .imageItemContainer {
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  margin: 30px 30px 0 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.lightBox .lightBoxContainer .projectImages .imageItemContainer .imageWrapper {
+  width: 400%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.lightBox .lightBoxContainer .projectImages .imageItemContainer .imageWrapper .imageItem {
+  width: calc(100% / 4);
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  bottom: auto;
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.lightBox .lightBoxContainer .projectImages .imageIndicator {
+  width: auto;
+  height: 5px;
+  margin: 12.5px auto;
+  display: inline-flex;
+  position: relative;
+  left: 50%;
+  right: auto;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.lightBox .lightBoxContainer .projectImages .imageIndicator .indicator {
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #1c2237;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.lightBox .lightBoxContainer .projectImages .imageIndicator .indicator.active {
+  background-color: #ce616e;
+}
+
+.lightBox .lightBoxContainer .projectImages .imageIndicator .indicator:last-of-type {
+  margin-right: 0;
+}
+
+.lightBox .lightBoxContainer .projectImages .imageCtrlContainer {
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .lightBox .lightBoxContainer .projectImages .imageCtrlContainer {
+    width: 68px;
+    height: 30px;
+    position: absolute;
+    top: -33px;
+    right: 0;
+  }
+  .lightBox .lightBoxContainer .projectImages .imageCtrlContainer .imageCtrl {
+    width: 30px;
+    height: 30px;
+    display: inline;
+    float: left;
+    margin-right: 8px;
+    background-image: url("../img/arrowButton.png");
+    background-size: cover;
+  }
+  .lightBox .lightBoxContainer .projectImages .imageCtrlContainer .imageCtrl:first-of-type {
+    transform: rotate(180deg);
+  }
+  .lightBox .lightBoxContainer .projectImages .imageCtrlContainer .imageCtrl:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.lightBox .lightBoxContainer .projectDetails {
+  width: 100%;
+  height: 100%;
+  background-color: #1c2237;
+  display: block;
+  position: relative;
+  padding: 60px 10% 0;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .lightBox .lightBoxContainer .projectDetails {
+    width: 40%;
+    height: 100%;
+    display: inline;
+    float: left;
+    padding: 50px 30px 0;
+  }
+}
+
+.lightBox .lightBoxContainer .projectDetails .projectTitle {
+  width: 100%;
+  font-family: "Mermaid1001", Open Sans, sans-serif;
+  color: #ce616e;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  line-height: 1;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .lightBox .lightBoxContainer .projectDetails .projectTitle {
+    font-size: 2em;
+  }
+}
+
+.lightBox .lightBoxContainer .projectDetails .projectDescription {
+  width: 100%;
+  font-family: "HelveticaNeueLTPro-Roman", Open Sans, sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+  margin-bottom: 20px;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .lightBox .lightBoxContainer .projectDetails .projectDescription {
+    font-size: 0.95em;
+  }
+}
+
+.lightBox .lightBoxContainer .projectDetails .projectSoftwares {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.lightBox .lightBoxContainer .projectDetails .projectSoftwares .software {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background-size: contain;
+}
+
+.lightBox .lightBoxContainer .projectDetails .projectSoftwares .software.xd {
+  background-image: url("../img/xd.png");
+}
+
+.lightBox .lightBoxContainer .projectDetails .projectSoftwares .software.ae {
+  background-image: url("../img/ae.png");
+}
+
+.lightBox .lightBoxContainer .projectDetails .projectSoftwares .software:last-of-type {
+  margin-right: 0;
+}
+
+.lightBox .lightBoxContainer .projectDetails .projectTags {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.lightBox .lightBoxContainer .projectDetails .projectTags .tag {
+  background-color: #ce616e;
+  color: #ffffff;
+  padding: 3px 20px;
+  margin-right: 5px;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .lightBox .lightBoxContainer .projectDetails .projectTags .tag {
+    font-size: 0.9em;
+  }
+}
+
+.lightBox .lightBoxContainer .projectDetails .projectTags .tag:last-of-type {
+  margin-right: 0;
+}
+
+.lightBox .lightBoxContainer .projectDetails .linksContainer {
+  width: 80%;
+  height: 100px;
+  position: absolute;
+  bottom: 15px;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .lightBox .lightBoxContainer .projectDetails .linksContainer {
+    height: 90px;
+  }
+}
+
+.lightBox .lightBoxContainer .projectDetails .linksContainer div {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.lightBox .lightBoxContainer .projectDetails .linksContainer div:last-of-type {
+  margin-bottom: 0;
+}
+
+.lightBox .lightBoxContainer .projectDetails .linksContainer div img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.lightBox .lightBoxContainer .projectDetails .linksContainer div a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+.lightBox .lightBoxContainer .projectDetails .bottomBorder {
+  width: 100%;
+  height: 15px;
+  background-color: #ce616e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .lightBox .lightBoxContainer .projectDetails .bottomBorder {
+    height: 25px;
+  }
+}
+
+.lightBox .lightBoxContainer .projectDetails .closeLightBox {
+  width: 34px;
+  height: 34px;
+  background-color: #ce616e;
+  background-image: url("../img/closeButton.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 17px;
+  position: fixed;
+  top: 20px;
+  right: calc(8% - 17px);
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .lightBox .lightBoxContainer .projectDetails .closeLightBox {
+    width: 30px;
+    height: 30px;
+    top: -33px;
+    right: 0;
+  }
 }
 
 .buttonBase, .outlineButton, .filledButton {
