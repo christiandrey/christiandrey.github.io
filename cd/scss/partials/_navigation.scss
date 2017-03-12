@@ -48,7 +48,7 @@
     width: 0;
 
     &:before {
-      transform: rotate(45deg);
+      @include transform(rotate(45deg));
       transform-origin: left;
       top: -7px;
       left: 3px;
