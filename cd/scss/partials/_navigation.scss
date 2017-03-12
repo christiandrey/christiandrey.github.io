@@ -110,7 +110,7 @@
       transition: transform 0.25s;
 
       &:hover {
-        transform: scale(0.9,0.9);
+        @include prefix((transform: scale(0.9,0.9)))
       }
 
       &.home {
