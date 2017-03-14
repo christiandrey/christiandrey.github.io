@@ -86,6 +86,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #e0dfdf;
 }
 
+.blur {
+  filter: blur(10px);
+}
+
 .navContainer {
   width: 34px;
   height: 34px;
@@ -250,7 +254,29 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.25s;
 }
 
-.navContainer .navElements div:hover {
+.navContainer .navElements div.home {
+  top: 0;
+  right: 0;
+  background-image: url("../img/nav.homeIcon.png");
+  transition: all 0.25s ease;
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+
+.navContainer .navElements div.home.open {
+  top: 0;
+  left: 0;
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.navContainer .navElements div.home:hover {
   -moz-transform: scale(0.9, 0.9);
   -o-transform: scale(0.9, 0.9);
   -ms-transform: scale(0.9, 0.9);
@@ -258,52 +284,94 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(0.9, 0.9);
 }
 
-.navContainer .navElements div.home {
-  top: 0;
-  right: 0;
-  background-image: url("../img/nav.homeIcon.png");
-  transition: all 0.25s ease;
-}
-
-.navContainer .navElements div.home.open {
-  top: 0;
-  left: 0;
-}
-
 .navContainer .navElements div.bio {
   top: 0;
   right: 0;
   background-image: url("../img/nav.bioIcon.png");
-  transition: all 0.3s ease;
+  transition: all 0.35s ease;
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
 }
 
 .navContainer .navElements div.bio.open {
   top: 38px;
   left: 10.18px;
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.navContainer .navElements div.bio:hover {
+  -moz-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
 }
 
 .navContainer .navElements div.gallery {
   top: 0;
   right: 0;
   background-image: url("../img/nav.galleryIcon.png");
-  transition: all 0.35s ease;
+  transition: all 0.45s ease;
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
 }
 
 .navContainer .navElements div.gallery.open {
   top: 65.82px;
   right: 38px;
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.navContainer .navElements div.gallery:hover {
+  -moz-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
 }
 
 .navContainer .navElements div.contact {
   top: 0;
   right: 0;
   background-image: url("../img/nav.contactIcon.png");
-  transition: all 0.4s ease;
+  transition: all 0.55s ease;
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
 }
 
 .navContainer .navElements div.contact.open {
   top: 76px;
   right: 0;
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.navContainer .navElements div.contact:hover {
+  -moz-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
 }
 
 @keyframes navOpacity {
@@ -635,12 +703,43 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 15px;
 }
 
+.sectionBlock.gallery .galleryContainer .galleryRow .imageDescription {
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  margin: 15px;
+  position: absolute;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow .imageDescription p {
+  width: 60%;
+  font-family: "Mermaid1001", Open Sans, sans-serif;
+  color: #ffffff;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 15px auto auto auto;
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow .imageDescription button {
+  margin: auto;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 30px;
+}
+
 .sectionBlock.gallery .galleryContainer .galleryRow:last-of-type {
   margin-bottom: 0px;
 }
 
 .sectionBlock.gallery .galleryContainer .galleryRow.one {
   width: 100%;
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow.one .galleryItem.one .imageDescription {
+  background-color: rgba(222, 23, 42, 0.7);
 }
 
 .sectionBlock.gallery .galleryContainer .galleryRow.two {
@@ -652,11 +751,28 @@ h1, h2, h3, h4, h5, h6 {
   /* Tablets and phablets */
 }
 
+.sectionBlock.gallery .galleryContainer .galleryRow.two .galleryItem.two .imageDescription {
+  height: calc(100% - 45px);
+  background-color: rgba(68, 156, 69, 0.7);
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionBlock.gallery .galleryContainer .galleryRow.two .galleryItem.two .imageDescription {
+    height: calc(100% - 30px);
+    width: calc(100% - 45px);
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .sectionBlock.gallery .galleryContainer .galleryRow.two .galleryItem.two {
     padding-bottom: 0;
     padding-right: 15px;
   }
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow.two .galleryItem.three .imageDescription {
+  background-color: rgba(131, 61, 120, 0.7);
 }
 
 .sectionBlock.gallery .galleryContainer .galleryRow.three {
@@ -674,6 +790,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.sectionBlock.gallery .galleryContainer .galleryRow.three .galleryItem.four .imageDescription {
+  height: calc(100% - 45px);
+  background-color: rgba(34, 30, 91, 0.7);
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionBlock.gallery .galleryContainer .galleryRow.three .galleryItem.four .imageDescription {
+    height: calc(100% - 45px);
+    width: calc(100% - 45px);
+  }
+}
+
 .sectionBlock.gallery .galleryContainer .galleryRow.three .galleryItem.five {
   padding-bottom: 15px;
   /* Tablets and phablets */
@@ -683,6 +812,19 @@ h1, h2, h3, h4, h5, h6 {
   .sectionBlock.gallery .galleryContainer .galleryRow.three .galleryItem.five {
     padding-bottom: 0;
     padding-right: 15px;
+  }
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow.three .galleryItem.five .imageDescription {
+  height: calc(100% - 45px);
+  background-color: rgba(44, 44, 44, 0.7);
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionBlock.gallery .galleryContainer .galleryRow.three .galleryItem.five .imageDescription {
+    height: calc(100% - 30px);
+    width: calc(100% - 45px);
   }
 }
 
@@ -696,6 +838,23 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0;
     padding-right: 15px;
   }
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow.three .galleryItem.six .imageDescription {
+  height: calc(100% - 45px);
+  background-color: rgba(182, 122, 29, 0.7);
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionBlock.gallery .galleryContainer .galleryRow.three .galleryItem.six .imageDescription {
+    height: calc(100% - 30px);
+    width: calc(100% - 45px);
+  }
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow.three .galleryItem.seven .imageDescription {
+  background-color: rgba(47, 39, 44, 0.7);
 }
 
 .sectionBlock.gallery .galleryContainer .galleryRow.four {
@@ -712,6 +871,61 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 0;
     padding-right: 15px;
   }
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow.four .galleryItem.eight .imageDescription {
+  height: calc(100% - 45px);
+  background-color: rgba(200, 168, 56, 0.7);
+  /* Tablets and phablets */
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionBlock.gallery .galleryContainer .galleryRow.four .galleryItem.eight .imageDescription {
+    height: calc(100% - 30px);
+    width: calc(100% - 45px);
+  }
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow.four .galleryItem.nine .imageDescription {
+  background-color: rgba(65, 66, 89, 0.7);
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow .galleryItem img {
+  width: 100%;
+  height: 200px;
+  -moz-object-fit: cover;
+  -o-object-fit: cover;
+  -ms-object-fit: cover;
+  -webkit-object-fit: cover;
+  object-fit: cover;
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow .galleryItem.one img {
+  -moz-object-position: 50% 68%;
+  -o-object-position: 50% 68%;
+  -ms-object-position: 50% 68%;
+  -webkit-object-position: 50% 68%;
+  object-position: 50% 68%;
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow .galleryItem.two img {
+  -moz-object-position: 50% 36%;
+  -o-object-position: 50% 36%;
+  -ms-object-position: 50% 36%;
+  -webkit-object-position: 50% 36%;
+  object-position: 50% 36%;
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow .galleryItem.four img {
+  -moz-object-position: 50% 9%;
+  -o-object-position: 50% 9%;
+  -ms-object-position: 50% 9%;
+  -webkit-object-position: 50% 9%;
+  object-position: 50% 9%;
+}
+
+.sectionBlock.gallery .galleryContainer .galleryRow .galleryItem.seven img {
+  height: 415px;
 }
 
 .sectionBlock.contact {
@@ -835,7 +1049,7 @@ h1, h2, h3, h4, h5, h6 {
 .lightBox {
   width: 100%;
   height: 100vh;
-  background-color: rgba(30, 31, 32, 0.8);
+  background-color: rgba(30, 31, 32, 0.9);
   overflow: auto;
   position: fixed;
   top: 0;
@@ -1165,7 +1379,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.buttonBase, .outlineButton, .filledButton {
+.buttonBase, .outlineButton, .gallery .viewProjectBtn, .filledButton {
   width: 160px;
   height: 40px;
   padding: 5px auto;
@@ -1173,11 +1387,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
-.buttonBase:focus, .outlineButton:focus, .filledButton:focus {
+.buttonBase:focus, .outlineButton:focus, .gallery .viewProjectBtn:focus, .filledButton:focus {
   outline: none;
 }
 
-.outlineButton {
+.outlineButton, .gallery .viewProjectBtn {
   color: #ffffff;
   background-color: transparent;
   border: solid 1px #ffffff;
@@ -1192,4 +1406,37 @@ h1, h2, h3, h4, h5, h6 {
 .filledButton:hover {
   transform: translateY(-2px);
   box-shadow: 0px 4px 5px rgba(28, 34, 55, 0.3);
+}
+
+.gallery .viewProjectBtn {
+  border-radius: 0;
+  border: solid 2px #ffffff;
+  position: relative;
+  transition: transform 0.25s ease;
+}
+
+.gallery .viewProjectBtn:after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: rgba(28, 34, 55, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.25s ease;
+  z-index: -1;
+}
+
+.gallery .viewProjectBtn:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.gallery .viewProjectBtn:hover:after {
+  width: 100%;
+}
+
+.floatable {
+  transition: transform 0.6s;
+  transform: translateY(-10px);
+  box-shadow: #000000 0px 10px 10px;
 }

@@ -109,19 +109,25 @@
       background-repeat: no-repeat;
       transition: transform 0.25s;
 
-      &:hover {
-        @include prefix((transform: scale(0.9,0.9)))
-      }
-
       &.home {
         top: 0;
         right: 0;
         background-image: url('../img/nav.homeIcon.png');
         transition: all 0.25s ease;
+        @include prefix((
+          transform: scale(0,0)
+        ))
 
         &.open {
           top: 0;
           left: 0;
+          @include prefix((
+            transform: scale(1,1)
+          ))
+        }
+
+        &:hover {
+          @include prefix((transform: scale(0.9,0.9)))
         }
       }
 
@@ -129,11 +135,21 @@
         top: 0;
         right: 0;
         background-image: url('../img/nav.bioIcon.png');
-        transition: all 0.3s ease;
+        transition: all 0.35s ease;
+        @include prefix((
+          transform: scale(0,0)
+        ))
 
         &.open {
           top: 38px;
           left: 10.18px;
+          @include prefix((
+            transform: scale(1,1)
+          ))
+        }
+
+        &:hover {
+          @include prefix((transform: scale(0.9,0.9)))
         }
       }
 
@@ -141,11 +157,21 @@
         top: 0;
         right: 0;
         background-image: url('../img/nav.galleryIcon.png');
-        transition: all 0.35s ease;
+        transition: all 0.45s ease;
+        @include prefix((
+          transform: scale(0,0)
+        ))
 
         &.open {
           top: 65.82px;
           right: 38px;
+          @include prefix((
+            transform: scale(1,1)
+          ))
+        }
+
+        &:hover {
+          @include prefix((transform: scale(0.9,0.9)))
         }
       }
 
@@ -153,11 +179,21 @@
         top: 0;
         right: 0;
         background-image: url('../img/nav.contactIcon.png');
-        transition: all 0.4s ease;
+        transition: all 0.55s ease;
+        @include prefix((
+          transform: scale(0,0)
+        ))
 
         &.open {
           top: 76px;
           right: 0;
+          @include prefix((
+            transform: scale(1,1)
+          ))
+        }
+
+        &:hover {
+          @include prefix((transform: scale(0.9,0.9)))
         }
       }
     }

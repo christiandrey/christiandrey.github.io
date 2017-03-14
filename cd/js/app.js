@@ -39,7 +39,6 @@ $(document).ready(function(){
       $(document).ready(function(){
         if ($(document).scrollTop() >= $element.offset().top && $(document).scrollTop() <= $element.offset().top + $element.height()) {
           eval(action)
-          // console.log($element.offset().top)
         }
       });
       break;
@@ -50,7 +49,6 @@ $(document).ready(function(){
     $(document).scroll(function(){
       if ($(document).scrollTop() >= $element.offset().top && $(document).scrollTop() <= $element.offset().top + $element.height()) {
         eval(action)
-        // console.log($element.offset().top)
       }
     })
   }
@@ -71,6 +69,47 @@ $(document).ready(function(){
     speed: 0.2
   })
   //--End of Parallax Effects
+
+  //Gallery Effects & Actions
+  var _;
+  $('.galleryItem').mouseenter(function(){
+    $(this).find('.imageDescription').dreyanim({
+      animationType: "slideInFromUp",
+      animationTime: 600
+    })
+  })
+
+  $('.galleryItem').mouseleave(function(){
+    $(this).find('.imageDescription').dreyanim({
+      animationType: "fadeOut",
+      animationTime: 100
+    })
+  })
+
+  $('.viewProjectBtn').click(function(){
+    _ = $(this);
+    $('.lightBox').removeClass("hidden");
+    $('.lightBoxContainer').dreyanim({
+      animationType: "fallInAlternate",
+      animationTime: 600
+    });
+    $('.sectionBlock').addClass("blur");
+    $('body').css("overflow","hidden")
+  })
+
+  $('.imageDescription').click(function(){
+    $(this).find('.viewProjectBtn').click();
+  })
+
+  ////LightBox Effects and Actions
+  $('.lightBox .closeLightBox').click(function(){
+    $('.lightBox').addClass("hidden");
+    $('.lightBoxContainer').addClass("hidden");
+    $('.sectionBlock').removeClass("blur");
+    $('body').css("overflow","")
+  })
+  ////--LightBox Effects and Actions
+  //--End of Gallery Effects & Actions
 
 
 })

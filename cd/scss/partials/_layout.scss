@@ -265,12 +265,47 @@
       .galleryRow {
         margin-bottom: 15px;
 
+        .imageDescription {
+          width: calc(100% - 30px);
+          height: calc(100% - 30px);
+          margin: 15px;
+          position: absolute;
+          padding: 15px;
+          cursor: pointer;
+
+          p {
+            width: 60%;
+            font-family: $headerFont;
+            color: $colorWhite;
+            font-size: 1.8em;
+            text-align: center;
+            margin: 15px auto auto auto;
+          }
+
+          button {
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 30px;
+          }
+        }
+
         &:last-of-type {
           margin-bottom: 0px
         }
 
         &.one {
           width: 100%;
+
+          .galleryItem {
+            &.one {
+              .imageDescription {
+                background-color: transparentize(#de172a, 0.3);
+              }
+            }
+          }
         }
 
         &.two {
@@ -279,9 +314,26 @@
           .galleryItem {
             &.two {
               padding-bottom: 15px;
+
+              .imageDescription {
+                height: calc(100% - 45px);
+                background-color: transparentize(#449C45, 0.3);
+
+                @include MQ(M){
+                  height: calc(100% - 30px);
+                  width: calc(100% - 45px);
+                }
+              }
+
               @include MQ(M){
                 padding-bottom: 0;
                 padding-right: 15px;
+              }
+            }
+
+            &.three {
+              .imageDescription {
+                background-color: transparentize(#833D78, 0.3);
               }
             }
           }
@@ -296,6 +348,16 @@
               @include MQ(M){
                 padding-right: 15px;
               }
+
+              .imageDescription {
+                height: calc(100% - 45px);
+                background-color: transparentize(#221E5B, 0.3);
+
+                @include MQ(M){
+                  height: calc(100% - 45px);
+                  width: calc(100% - 45px);
+                }
+              }
             }
 
             &.five {
@@ -303,6 +365,16 @@
               @include MQ(M){
                 padding-bottom: 0;
                 padding-right: 15px;
+              }
+
+              .imageDescription {
+                height: calc(100% - 45px);
+                background-color: transparentize(#2C2C2C, 0.3);
+
+                @include MQ(M){
+                  height: calc(100% - 30px);
+                  width: calc(100% - 45px);
+                }
               }
             }
 
@@ -312,8 +384,23 @@
                 padding-bottom: 0;
                 padding-right: 15px;
               }
+
+              .imageDescription {
+                height: calc(100% - 45px);
+                background-color: transparentize(#B67A1D, 0.3);
+
+                @include MQ(M){
+                  height: calc(100% - 30px);
+                  width: calc(100% - 45px);
+                }
+              }
             }
 
+            &.seven {
+              .imageDescription {
+                background-color: transparentize(#2F272C, 0.3);
+              }
+            }
           }
         }
 
@@ -327,7 +414,53 @@
                 padding-bottom: 0;
                 padding-right: 15px;
               }
+
+              .imageDescription {
+                height: calc(100% - 45px);
+                background-color: transparentize(#C8A838, 0.3);
+
+                @include MQ(M){
+                  height: calc(100% - 30px);
+                  width: calc(100% - 45px);
+                }
+              }
             }
+
+            &.nine {
+              .imageDescription {
+                background-color: transparentize(#414259, 0.3);
+              }
+            }
+          }
+        }
+
+        .galleryItem {
+          img {
+            width: 100%;
+            height: 200px;
+            @include prefix((object-fit: cover));
+          }
+
+          &.one img {
+            @include prefix((
+              object-position: 50% 68%
+            ))
+          }
+
+          &.two img {
+            @include prefix((
+              object-position: 50% 36%
+            ))
+          }
+
+          &.four img {
+            @include prefix((
+              object-position: 50% 9%
+            ))
+          }
+
+          &.seven img {
+            height: 415px
           }
         }
       }
@@ -428,7 +561,7 @@
   width: 100%;
   height: 100vh;
   // background-color: $colorGray;
-  background-color: transparentize($colorGray, 0.2);
+  background-color: transparentize($colorGray, 0.1);
 
   overflow: auto;
   position: fixed;
