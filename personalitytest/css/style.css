@@ -14,79 +14,15 @@ body {
   font-size: 12px;
 }
 
-::selection {
-  background-color: #ce616e;
-  color: #ffffff;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "CircularStd-Bold", Open Sans, sans-serif;
-}
-
-.fgBlack {
-  color: #000000;
-}
-
-.bgBlack {
-  background-color: #000000;
-}
-
-.fgDark {
-  color: #2E0C40;
-}
-
-.bgDark {
-  background-color: #2E0C40;
-}
-
-.fgGray {
-  color: #1e1f20;
-}
-
-.bgGray {
-  background-color: #1e1f20;
-}
-
-.fgDarkTrans {
-  color: rgba(28, 34, 55, 0.9);
-}
-
-.bgDarkTrans {
-  background-color: rgba(28, 34, 55, 0.9);
-}
-
-.fgAccent {
-  color: #ce616e;
-}
-
-.bgAccent {
-  background-color: #ce616e;
-}
-
-.fgWhite {
-  color: #ffffff;
-}
-
-.bgWhite {
-  background-color: #ffffff;
-}
-
-.fgOffWhite {
-  color: #e0dfdf;
-}
-
-.bgOffWhite {
-  background-color: #e0dfdf;
-}
-
-.blur {
-  filter: blur(10px);
 }
 
 body {
   width: 100vw;
   height: 100vh;
   background-color: #2E0C40;
+  overflow: hidden;
 }
 
 body img {
