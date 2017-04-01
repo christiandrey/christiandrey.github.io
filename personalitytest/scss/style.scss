@@ -1,0 +1,37 @@
+// compileExpanded: ../css/style.css
+@import "partials/variables.scss";
+@import "partials/mixins.scss";
+@import "partials/base.scss";
+
+body {
+  // display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: $colorDark;
+
+  img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    // @include center(x);
+
+    & + h1 {
+      text-align: center;
+      color: $colorAccent;
+      font-size: 4em;
+      margin-top: 50px;
+    }
+  }
+
+  h5 {
+    color: $colorWhite;
+    text-align: center;
+
+    span {
+      color: red
+    }
+  }
+}

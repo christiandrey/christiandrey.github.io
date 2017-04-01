@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+//  Responsive breakpoints
+$S: 480px; // Small phones Styles are written for this breakpoint by default, so no need to specify it.
+$M: 768px; // Phablets
+$L: 992px; // 10" Tablets and desktops
+$XL: 1200px; // 10" Tablets and desktops..
+
+//  Colors
+
+$colorDark      : #2E0C40;
+$colorAccent    : #ce616e;
+$colorWhite     : #ffffff;
+
+//  Fonts
+$bodyFont: 'Open Sans', sans-serif;
+$headerFont: "CircularStd-Bold", Open Sans, sans-serif;
+
+//  Font Sources
+@font-face {
+    font-family: 'CircularStd-Bold';
+    src: url('../fonts/CircularStd-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
