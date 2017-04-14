@@ -1,0 +1,45 @@
+/* ==|====================
+   Module/Buttons
+   ======================= */
+
+.btn {
+	height: 40px;
+	width: 170px;
+	border-radius: 40px;
+	font-family: $headerFont;
+	font-size: 1em;
+	line-height: 1;
+	letter-spacing: 0.7px;
+	box-shadow: 0 4px 5px transparentize($color2, 0.85);
+	transition: transform 0.45s, box-shadow 0.45s;
+
+	&:hover {
+		box-shadow: 0 20px 10px transparentize($color2, 0.6);
+		transform: translateY(-10px);
+	}
+
+	&.btn-small {
+		height: 30px;
+		width: 130px;
+
+		&:hover {
+			box-shadow: 0 8px 10px transparentize($color2, 0.6);
+			transform: translateY(-5px);
+		}
+	}
+
+	&.btn-orange {
+		background-color: $color1;
+		color: $color2;
+	}
+
+	&.btn-grey {
+		background-color: $color2;
+		color: $white;
+	}
+
+	&.btn-white {
+		background-color: $white;
+		color: $color2;
+	}
+}

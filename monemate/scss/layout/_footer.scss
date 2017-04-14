@@ -1,0 +1,39 @@
+/* ==|====================
+   Layout/Footer
+   ======================= */
+
+.l-footer {
+	.certification {
+		padding: 5px 30px;
+		height: 30px;
+
+		@include MQ(M) {
+			height: 70px;
+			padding: 10px 30px;
+		}
+
+		img {
+			height: 20px;
+			width: auto;
+			float: left;
+			display: block;
+
+			@include MQ(M) {
+				height: 50px
+			}
+
+			&.bitcoin-banner {
+				float: right;
+			}
+		}
+	}
+
+	.copyright {
+		padding: 3px 30px;
+		background-color: $color1;
+
+		h6 {
+			color: $black;
+		}
+	}
+}

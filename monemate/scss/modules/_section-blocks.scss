@@ -1,0 +1,218 @@
+/* ==|====================
+   Module/Buttons
+   ======================= */
+
+ .m-section {
+ 	width: 100%;
+ 	height: auto;
+
+ 	&.how-it-works {
+ 		background-color: $white;
+
+ 		.section-title {
+ 			color: $black;
+ 			margin-top: 30px;
+
+ 			span {
+ 				color: $color1;
+ 			}
+
+ 			@include MQ(M) {
+ 				margin: 0 auto;
+ 			}
+ 		}
+
+ 		.row {
+ 			@include MQ(M) {
+ 				height: 350px;
+
+ 				.col-md-3 {
+ 					@include center(y);
+ 				}
+ 			}
+ 		}
+
+ 		.col-icon {
+ 			margin-top: 30px;
+
+ 			@include MQ(M) {
+ 				margin-top: 70px
+ 			}
+ 		}
+
+ 		.col-title {
+ 			margin: 12px auto;
+ 		}
+
+ 		.col-content {
+ 			padding-left: 30px;
+ 			padding-right: 30px;
+ 			margin-bottom: 30px;
+
+ 			@include MQ(M) {
+ 				margin-bottom: 70px
+ 			}
+ 		}
+ 	}
+
+ 	&.live-statistics {
+ 		background-color: $color2;
+ 		padding-top: 30px;
+ 		padding-bottom: 30px;
+
+ 		.col-title {
+ 			color: $white;
+ 			margin: 10px auto;
+ 		}
+
+ 		.col-data {
+ 			color: $color2;
+ 			background-color: $color1;
+ 			padding: 5px 10px;
+ 			display: inline-block;
+ 			margin: 0 auto
+ 		}
+
+ 		.col-xs-6.col-md-3:nth-of-type(3), .col-xs-6.col-md-3:nth-of-type(4) {
+ 			margin-top: 30px;
+
+ 			@include MQ(M) {
+ 				margin-top: 0;
+ 			}
+ 		}
+ 	}
+
+ 	&.monemate-statistics {
+ 		padding: 30px 0;
+ 		background-color: $color1;
+
+ 		.section-title {
+ 			color: $color2;
+ 			margin: 0 auto 30px;
+
+ 			span {
+ 				color: $white
+ 			}
+ 		}
+
+ 		table {
+ 			width: 80%;
+ 			margin: 0 10%;
+ 			text-align: center;
+ 			margin-bottom: 30px;
+
+ 			thead {
+ 				background-color: $color2;
+
+ 				th {
+ 					color: $white;
+ 					height: 40px;
+ 					vertical-align: middle;
+ 					text-align: center;
+ 					letter-spacing: 0.4px;
+ 				}
+ 			}
+
+ 			tbody {
+ 				background-color: $white;
+
+ 				tr {
+ 					td {
+ 						height: 40px;
+ 						color: $black;
+ 						vertical-align: middle;
+ 						width: 50%;
+ 					}
+ 				}
+ 			}
+ 		}
+
+ 		.col-md-3:last-of-type {
+ 			table {
+ 				margin-bottom: 0px;
+ 			}
+ 		}
+ 	}
+
+ 	&.donations-plan {
+ 		padding: 30px 0;
+
+ 		.section-title {
+ 			color: $color2;
+ 			margin: 0 auto 30px;
+
+ 			span {
+ 				color: $color1
+ 			}
+ 		}
+
+ 		table {
+ 			width: 100%;
+
+ 			thead {
+ 				tr {
+ 					height: 40px;
+ 					background-color: $color2;
+
+ 					th {
+ 						color: $white;
+	 					vertical-align: middle;
+	 					text-align: center;
+ 					}
+ 				}
+ 			}
+
+ 			tbody {
+ 				tr {
+ 					height: 40px;
+ 					background-color: $white;
+
+ 					td {
+ 						color: $black;
+	 					vertical-align: middle;
+	 					text-align: center;
+ 					}
+
+ 					&:nth-child(even) {
+ 						background-color: $color1
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	&.testimonials {
+ 		padding: 30px 0;
+ 		background-color: $color2;
+
+ 		.section-title {
+ 			color: $color1;
+ 			margin: 0 auto 30px;
+ 		}
+
+ 		.col-name {
+ 			margin: 10px auto;
+ 			color: $white;
+ 		}
+
+		.col-amount {
+			margin: 0 auto 10px;
+			color: $color1;
+		}
+
+		.col-content {
+			margin: 0 auto;
+			color: $white;
+			padding: 0 30px;
+			text-align: left;
+		}
+
+		.col-md-3 {
+			margin-bottom: 30px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+ 	}
+ }
