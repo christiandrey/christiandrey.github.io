@@ -5,25 +5,66 @@
  .m-section {
  	width: 100%;
  	height: auto;
+ 	padding: 30px 0;
+ 	font-size: 1.1em;
+	
+	@include MQ(M) {
+		padding: 40px 0;
+	}
+
+	.section-title {
+		margin-bottom: 30px;
+
+		&.title-bo {
+			color: $black;
+			span {
+				color: $color1;
+			}
+		}
+
+		&.title-gw {
+			color: $color2;
+			span {
+				color: $white;
+			}
+		}
+
+		&.title-go {
+			color: $color2;
+			span {
+				color: $color1;
+			}
+		}
+
+		&.title-ow {
+			color: $color1;
+			span {
+				color: $white
+			}
+		}
+
+	}
 
  	&.how-it-works {
+ 		padding: 0;
  		background-color: $white;
 
  		.section-title {
  			color: $black;
  			margin-top: 30px;
+ 			margin-bottom: 0;
 
  			span {
  				color: $color1;
  			}
 
- 			@include MQ(M) {
+ 			@include MQ(L) {
  				margin: 0 auto;
  			}
  		}
 
  		.row {
- 			@include MQ(M) {
+ 			@include MQ(L) {
  				height: 350px;
 
  				.col-md-3 {
@@ -57,8 +98,6 @@
 
  	&.live-statistics {
  		background-color: $color2;
- 		padding-top: 30px;
- 		padding-bottom: 30px;
 
  		.col-title {
  			color: $white;
@@ -83,7 +122,6 @@
  	}
 
  	&.monemate-statistics {
- 		padding: 30px 0;
  		background-color: $color1;
 
  		.section-title {
@@ -135,8 +173,6 @@
  	}
 
  	&.donations-plan {
- 		padding: 30px 0;
-
  		.section-title {
  			color: $color2;
  			margin: 0 auto 30px;
@@ -181,8 +217,58 @@
  		}
  	}
 
+ 	&.latest-donations {
+ 		background-color: $color1;
+ 		padding: 30px 0 0;
+
+ 		.row {
+ 			@include MQ(L) {
+ 				height: 160px;
+
+ 				.col-md-3 {
+ 					@include center(y);
+ 				}
+ 			}
+
+ 			.section-title {
+ 				color: $color2;
+ 				padding-bottom: 30px;
+ 				margin: 0 auto;
+
+ 				span {
+ 					color: $white;
+ 				}
+ 			}
+
+ 			.user-item {
+ 				background-color: $color2;
+ 				padding: 10px;
+ 				border-radius: 5px;
+ 				display: inline-block;
+ 				margin-bottom: 30px;
+
+ 				.user-icon {
+ 					height: 30px;
+ 					display: inline-block;
+ 				}
+
+ 				.user-name {
+ 					color: $white;
+ 					padding-left: 10px;
+ 					display: inline-block;
+ 					width: 100px;
+ 				}
+
+ 				.user-amount-paid {
+ 					color: $color1;
+ 					padding-left: 10px;
+ 					display: inline-block;
+ 				}
+ 			}
+ 		}
+ 	}
+
  	&.testimonials {
- 		padding: 30px 0;
  		background-color: $color2;
 
  		.section-title {
@@ -214,5 +300,124 @@
 				margin-bottom: 0;
 			}
 		}
+ 	}
+
+ 	&.how-it-works-introduction {
+ 		background-color: $color1;
+ 		color: $black;
+
+ 		p {
+ 			margin: 0;
+ 			font-size: 1em;
+ 		}
+ 	}
+
+ 	&.call-to-action {
+ 		background-color: $color2;
+
+ 		.section-title {
+ 			color: $color1;
+
+ 			span {
+ 				color: $white
+ 			}
+ 		}
+
+ 		a {
+ 			display: block;
+ 			text-align: center;
+ 			// margin: auto;
+ 		}
+ 	}
+
+ 	&.faqs {
+ 		.section-title {
+ 			color: $black;
+
+ 			span {
+ 				color: $color1;
+ 			}
+ 		}
+
+ 		.faq {
+ 			padding: 10px;
+ 			margin: 0;
+
+ 			&.faq-question {
+ 				background-color: $color2;
+ 				color: $color1;
+ 				letter-spacing: 0.6px;
+
+ 				&:before {
+ 					content: 'Q: '
+ 				}
+ 			}
+
+ 			&.faq-answer {
+ 				background-color: $color1;
+ 				color: $black;
+ 				margin-bottom: 30px;
+
+ 				&:before {
+ 					content: 'A: '
+ 				}
+
+ 				&:last-of-type {
+ 					margin-bottom: 0;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	&.about-originator {
+ 		background-color: $color1;
+
+ 		article.section-content {
+ 			color: $black
+ 		}
+ 	}
+
+ 	&.about-programs {
+ 		background-color: $white;
+
+ 		article.section-content {
+ 			color: $black
+ 		}
+ 	}
+
+ 	&.terms {
+ 		color: $black;
+
+ 		article.section-content {
+ 			padding: 0 30px;
+
+ 			ol {
+ 				list-style-type: decimal;
+ 			}
+
+ 			ul {
+ 				list-style-type: disc;
+ 			}
+ 		}
+ 	}
+
+ 	&.support, &.register, &.login, &.forgot {
+ 		background-color: $color1;
+
+ 		form {
+ 			@include MQ(M) {
+ 				width: 50%;
+ 				margin-left: 25%;
+ 			}
+
+ 			.form-submessage {
+ 				margin: 30px auto -20px;
+ 			}
+
+ 			a.forgot-link {
+ 				color: $color1;
+ 				font-family: $headerFont;
+ 			}
+ 		}
  	}
  }

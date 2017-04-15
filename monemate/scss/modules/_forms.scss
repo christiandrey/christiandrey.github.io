@@ -1,0 +1,55 @@
+/* ==|====================
+   Module/Box
+   ======================= */
+
+form {
+	background-color: $white;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0 4px 5px transparentize($color2, 0.85);
+
+	label {
+		font-family: $headerFont;
+	}
+
+	.form-icon {
+		display: block;
+		height: 80px;
+		text-align: center;
+		margin: auto
+	}
+
+	.form-alert {
+		width: 100%;
+		padding: 10px;
+		margin: 30px auto;
+		background-color: $color2;
+		color: $white;
+
+		strong {
+			color: $color1;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.form-submessage {
+		font-size: 0.85em;
+		display: block;
+		text-align: center;
+		margin: auto;
+		padding: 0 30px;
+	}
+
+	button[type="submit"] {
+		display: block;
+		text-align: center;
+		margin: 30px auto 0;
+	}
+}

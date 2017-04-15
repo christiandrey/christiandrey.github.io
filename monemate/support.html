@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monemate - How it works</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
+    
+</head>
+<body>
+	<main class="l-main" role="main">
+        <nav class="l-nav" role="navigation">
+            <div class="hamburger"></div>
+            <img src="img/image.brandlogo.png" alt="" class="brand-logo">
+            <ul class="nav-items-wrapper">
+                <li class="nav-item"><a href="index.html" class="nav-item-link" class="nav-item-link">HOME</a></li>
+                <li class="nav-item"><a href="howitworks.html" class="nav-item-link">HOW IT WORKS</a></li>
+                <li class="nav-item"><a href="faqs.html" class="nav-item-link">FAQS</a></li>
+                <li class="nav-item"><a href="aboutus.html" class="nav-item-link">ABOUT US</a></li>
+                <li class="nav-item"><a href="terms.html" class="nav-item-link">TERMS</a></li>
+                <li class="nav-item"><a href="support.html" class="nav-item-link">SUPPORT</a></li>
+                <li class="nav-item"><a href="register.html"><button class="btn btn-small btn-orange">Register</button></a></li>
+                <li class="nav-item"><a href="login.html"><button class="btn btn-small btn-grey">Login</button></a></li>
+            </ul>
+        </nav>
+        <section class="m-section support">
+            <div class="container">
+                <h2 class="section-title title-gw text-center">Submit a support <span>request</span></h2>
+                <form class="form support-form" action="">
+                    <p class="form-alert"><strong>Existing members:</strong> Please login to your account and submit a support ticket from your back office.</p>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" class="form-control" placeholder="Enter email address here" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="priority">Support priority</label>
+                    <select name="priority" id="priority" class="form-control">
+                        <option value="low" selected>Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="category">Support category</label>
+                    <select name="category" id="category" class="form-control">
+                        <option value="low" selected>Account Support</option>
+                        <option value="medium">General Inquiries</option>
+                        <option value="high">Website Support</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Support subject</label>
+                        <input type="text" name="subject" class="form-control" placeholder="Enter support subject here" id="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Support details</label>
+                        <textarea name="message" class="form-control" rows="5" id="message" placeholder="Enter details of support request here" required></textarea>
+                    </div>
+                    <button class="btn btn-orange" type="submit">Submit request</button>
+                </form>
+            </div>
+        </section>
+        <footer class="l-footer" role="footer">
+            <div class="certification">
+                <img src="img/image.blockchain-banner.png" class="blockchain-banner">
+                <img src="img/image.bitcoin-banner.png" class="bitcoin-banner">
+            </div>
+            <div class="copyright">
+                <h6>Copyright, Monemate 2017</h6>
+            </div>
+        </footer>
+    </main>
+</body>
+<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+</html>
