@@ -3,5 +3,9 @@ $(document).ready(function(){
 		$('.nav-items-wrapper').toggleClass('open')
 	})
 
+	$('.office .hamburger').on("click", function(e) {
+		$('.office-toolbar').toggleClass('open')
+	})
+
 	$('.user-item-scroller').liMarquee();
 })

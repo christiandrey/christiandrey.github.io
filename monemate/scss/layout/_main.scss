@@ -18,14 +18,19 @@
 			overflow: auto;
 			position: fixed;
 			top: 60px;
-			left: 0px;
+			left: -90%;
 			z-index: +3;
+			transition: left 0.45s;
 
 			@include MQ(M) {
 				width: 25%;
 				position: static;
 				display: inline;
 				float: left;
+			}
+
+			&.open {
+				left: 0px;
 			}
 
 			.office-toolbar-main {
