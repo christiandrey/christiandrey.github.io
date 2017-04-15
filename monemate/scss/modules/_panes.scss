@@ -1,0 +1,129 @@
+/* ==|====================
+   Module/Pane
+   ======================= */
+
+.pane {
+	width: 100%;
+	background-color: $white;
+	border-radius: 5px;
+	box-shadow: 0 4px 5px transparentize($color2, 0.85);
+	font-size: 1.1em;
+	margin-bottom: 30px;
+	overflow: hidden;
+
+	.pane-heading {
+		padding: 5px 30px;
+		border-bottom: dashed $color3 2px;
+		background-color: $color4;
+
+		.pane-title {
+			color: $color2;
+
+			span {
+				color: $color1;
+			}
+		}
+
+		.pane-subtitle {
+			color: $black;
+			margin: 10px 0;
+			font-size: 1.1em;
+		}
+	}
+
+	.pane-body {
+		padding: 30px 30px;
+
+		.pane-icon {
+			width: 60px;
+			display: block;
+			margin: auto;
+			text-align: center
+		}
+
+		.pane-table {
+			text-align: left;
+			margin-top: 30px;
+			table-layout: fixed;
+
+			thead {
+				tr {
+ 					background-color: $color2;
+					
+					th {
+						color: $white;
+	 					vertical-align: middle;
+	 					text-align: left;
+	 					height: 40px;
+	 					padding-left: 30px;
+					}
+				}
+			}
+
+			tbody {
+				tr {
+					td {
+						width: 50%;
+						padding-left: 30px;
+						vertical-align: middle;
+						height: 40px;
+					}
+				}
+			}
+
+			&.no-top-margin {
+				margin-top: 0
+			}
+		}
+
+		.pane-anchor-tag {
+			padding: 5px 10px;
+			background-color: $color2;
+			color: $white;
+			font-family: $headerFont;
+			display: inline-block;
+			float: left;
+			clear: both;
+			margin: 10px 0px 0px;
+			text-decoration: none;
+			transition: background-color 0.15s, color 0.15s;
+
+			&:first-of-type {
+				margin: 0;
+			}			
+
+			&:hover {
+				background-color: $color1;
+				color: $color2;
+			}
+
+			&.in-center {
+				display: inline-block;
+				float: none;
+				clear: none;
+				text-align: center;
+				margin: 10 auto 0px
+			}
+		}
+	}
+
+	.pane-alert {
+		width: calc(100% + 60px);
+		padding: 10px 30px;
+		margin: 30px -30px;
+		background-color: $color2;
+		color: $white;
+
+		strong {
+			color: $color1;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
