@@ -172,6 +172,10 @@
 				width: 100%;
 				height: calc(100% - 60px);
 				padding: 50px 0;
+
+				@include MQ(M) {
+					padding: 50px 15px;
+				}
 			}
 
 			.office-alert {
