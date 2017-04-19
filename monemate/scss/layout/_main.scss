@@ -11,19 +11,19 @@
 		background-color: $color3;
 
 		.office-toolbar {
-			width: 90%;
+			width: 280px;
 			height: 100vh;
 			background-color: $color2;
 			box-shadow: 10px 0px 25px transparentize($color2, 0.95);
 			overflow: auto;
 			position: fixed;
-			top: 60px;
-			left: -90%;
+			top: 50px;
+			left: -280px;
 			z-index: +3;
 			transition: left 0.45s;
 
 			@include MQ(M) {
-				width: 25%;
+				width: 250px;
 				position: static;
 				display: inline;
 				float: left;
@@ -35,22 +35,22 @@
 
 			.office-toolbar-main {
 				width: 100%;
-				padding: 30px;
+				padding: 10px 30px 30px;
 
 				.brand-logo {
-					width: 60%;
+					width: 50%;
 					height: auto;
 					display: block;
-					margin: 30px auto 50px;
+					margin: 15px auto 30px;
 					text-align: center;
 				}
 
 				.user-avatar {
-					width: 100px;
-					height: 100px;
+					width: 80px;
+					height: 80px;
 					display: block;
 					text-align: center;
-					border: solid 5px $white;
+					border: solid 4px $white;
 					border-radius: 50px;
 					margin: 0 auto 10px
 				}
@@ -65,28 +65,39 @@
 					&+button.btn.btn-orange {
 						display: block;
 						text-align: center;
-						margin: -5px auto 10px;
-						font-size: 1.1em;
+						margin: -15px auto 10px;
+						font-size: 1em;
 					}
 				}
 
 				.member-tools {
 					width: 100%;
-					padding: 10px 0 30px;
+					padding: 10px 0 20px;
 
 					.section-title {
 						color: $color1;
-						margin: 30px 0px 10px;
+						margin: 15px 0px 10px;
 						letter-spacing: 0.7px;
 					}
 
 					.member-tool-link {
 						width: 100%;
-						padding: 10px 30px 10px 0;
+						padding: 5px 0px 8px 0;
 						display: block;
+						position: relative;
+
+						&.is-collapsible {
+							.tool-link {
+								&:after {
+									content: attr(data-content);
+									color: $color1;
+									margin-left: 10px;
+								}
+							}
+						}
 
 						.tool-icon {
-							background-color: $color1;
+							background: linear-gradient($color1, darken($color1, 20));
 							width: 7px;
 							height: 7px;
 							border-radius: 5px;
@@ -99,9 +110,36 @@
 							font-size: 1.1em;
 							display: inline-block;
 							color: $white;
+							transition: color 0.15s, transform 0.25s;
 
 							&.active {
 								color: $color1;
+							}
+
+							&:hover {
+								color: $color1;
+								transform: translateX(10px);
+							}
+						}
+
+						.tool-menu {
+							display: none;
+							margin-left: 30px;
+
+							li {
+								padding: 8px;
+								color: $white;
+								transition: color 0.15s, transform 0.15s;
+
+								a {
+									text-decoration: none;
+									color: inherit;
+								}
+
+								&:hover {
+									transform: translateX(10px);
+									color: $color1;
+								}
 							}
 						}
 					}
@@ -109,7 +147,7 @@
 
 				.other-nav-items {
 					width: 100%;
-					padding: 30px 0;
+					padding: 20px 0 0;
 					margin: 0;
 
 					.section-title {
@@ -120,9 +158,34 @@
 
 					.nav-link {
 						display: block;
-						padding: 10px 0px;
+						padding: 5px 25px;
 						color: $white;
 						font-size: 1.1em;
+						position: relative;
+						text-decoration: none;
+						transition: color 0.15s, transform 0.25s;
+
+						&:hover {
+							color: $color1;
+							transform: translateX(10px);
+
+							&:before {
+								left: -5px;                                                                                                                                                                                                                                                                                                                                                                                                             
+							}
+						}
+
+						&:before {
+							content: "";
+							width: 7px;
+							height: 7px;
+							border-radius: 4px;
+							background-color: $white;
+							display: block;
+							position: absolute;
+							top: 13px;
+							left: 0px;
+							transition: trasform 0.15s;
+						}
 					}
 				}
 			}
@@ -133,7 +196,7 @@
 			overflow: auto;
 
 			@include MQ(M) {
-				width: 75%;
+				width: calc(100% - 250px);
 				position: static;
 				display: inline;
 				float: left;
@@ -144,16 +207,20 @@
 
 			.office-top-bar {
 				width: 100%;
-				height: 60px;
+				height: 50px;
 				background-color: $white;
-				padding: 15px 30px;
+				padding: 12px 30px;
 				box-shadow: 0 10px 25px transparentize($color2, 0.95);
 
 				.hamburger {
-					height: 30px;
+					height: 26px;
 					width: auto;
 					display: inline-block;
 					float: left;
+
+					@include MQ(M) {
+						display: none;
+					}
 				}
 
 				.user-name {
@@ -161,6 +228,7 @@
 					float: right;
 					color: $black;
 					letter-spacing: 0.7px;
+					line-height: 0.7;
 
 					span {
 						color: $color1;
@@ -171,10 +239,10 @@
 			.office-body {
 				width: 100%;
 				height: calc(100% - 60px);
-				padding: 50px 0;
+				padding: 30px 0;
 
 				@include MQ(M) {
-					padding: 50px 15px;
+					padding: 30px 15px;
 				}
 			}
 

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+//Responsive breakpoints
+$S: 480px; // Small phones Styles are written for this breakpoint by default, so no need to specify it.
+$M: 768px; // Phablets
+$L: 992px; // 10" Tablets and desktops
+$XL: 1200px; // 10" Tablets and desktops..
+
+// Fonts
+$bodyFont: "Quicksand_Bold", Helvetica, Arial, sans-serif;
+$headerFont: "Quicksand_Book", Georgia, serif;
+
+//  Font Sources
+@font-face {
+    font-family: 'Quicksand_Bold';
+    src: url('../fonts/Quicksand_Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand_Book';
+    src: url('../fonts/Quicksand_Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// = Colors
+// -----------------------------
+
+// Graphic chart
+$pink1: #ea4c89;
+$pink2: #f06292;
+$green1: #62c594;
+$green2: #8ed174;
+$blue1: #6a93ff;
+$blue2: #78a5fe;
+$purple1: #725feb;
+$purple2: #8a6cec;
+$orange1: #efc065;
+$orange2: #f5c66b;
+$white: #ffffff;
+$grey: #444c62;
+$bgouter: #171b33;
+$bginner: #202740;
+$deepblue1: #1f2741;
+$deepblue2: #232a43;
+$black: #000;
+
+$color1: $deepblue1;
+$color2: $deepblue2;
+
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+$wrapper-width: pxtoem(1140, 16);

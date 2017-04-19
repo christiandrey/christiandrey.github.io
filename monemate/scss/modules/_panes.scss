@@ -18,6 +18,9 @@
 
 		.pane-title {
 			color: $color2;
+			margin-top: 5px;
+			margin-bottom: 0;
+			font-size: 1.4em;
 
 			span {
 				color: $color1;
@@ -26,13 +29,13 @@
 
 		.pane-subtitle {
 			color: $black;
-			margin: 10px 0;
-			font-size: 1.1em;
+			margin: 5px 0 0;
+			font-size: 1em;
 		}
 	}
 
 	.pane-body {
-		padding: 30px 30px;
+		padding: 15px;
 
 		.pane-icon {
 			width: 60px;
@@ -105,12 +108,50 @@
 				margin: 10 auto 0px
 			}
 		}
+
+		.pane-timer {
+			&.danger {
+				.row {
+					border: solid 3px red;
+				}
+			}
+			.row {
+				background-color: $color1;
+				border-radius: 5px;
+				overflow: hidden;
+
+				.col {
+					padding: 0px 0;
+
+					:first-child {
+						font-size: 1.2em;
+					}
+
+					:last-child {
+						font-size: 0.85em;
+					}
+
+					&:last-child {
+						border-radius: 5px;
+					}
+
+					&:nth-child(even) {
+						background-color: darken($color1, 3);
+					}
+				}
+			}
+
+			@include MQ(M) {
+				width: 300px;
+				margin: auto;
+			}
+		}
 	}
 
 	.pane-alert {
 		width: calc(100% + 60px);
 		padding: 10px 30px;
-		margin: 30px -30px;
+		margin: 15px -30px;
 		background-color: $color2;
 		color: $white;
 

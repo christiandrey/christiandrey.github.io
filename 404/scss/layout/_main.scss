@@ -1,0 +1,77 @@
+/* ==|====================
+   Layout/Main
+   ======================= */
+
+.l-main {
+	width: 100%;
+	height: 100vh;
+	background: radial-gradient($bginner, $bgouter);
+	overflow: hidden;
+
+	.slide-control {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+
+		@include MQ(M) {
+			position: absolute !important;
+			bottom: 50px;
+			left: 50px;
+			top: auto;
+			right: auto;
+		}
+
+		.control {
+			width: 40px;
+			height: 40px;
+			position: relative;
+			border-radius: 20px;
+			border: solid 2px $grey;
+			display: inline-block;
+			cursor: pointer;
+
+
+			&:first-of-type {
+				margin-right: 5px;
+			}
+
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				background-color: $grey;
+				border-radius: 4px;
+				top: 16px;
+				transition: left 0.45s, right 0.45s, background-color 0.45s;
+			}
+
+			&.prev {
+				&:after {
+					left: 10px;
+				}
+
+				&:hover {
+					&:after {
+						left: 6px;
+						background-color: $pink1;
+					}
+				}
+			}
+
+			&.next {
+				&:after {
+					right: 10px;
+				}
+
+				&:hover {
+					&:after {
+						right: 6px;
+						background-color: $pink1;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,130 @@
+/* ==|====================
+   Layout/Header
+   ======================= */
+
+.l-header {
+	width: 400%;
+	height: 100%;
+	position: relative;
+	left: 0;
+	transition: left 0.45s;
+
+	.slide {
+		width: 25%;
+		height: 100%;
+		display: inline-flex;
+		float: left;
+
+		.pane {
+			width: 28%;
+			min-width: 300px;
+			max-width: 500px;
+			background-color: $color1;
+			margin: auto;
+			position: relative;
+			border-radius: 5px;
+			overflow: hidden;
+			padding: 50px 30px;
+			box-shadow: 0 5px 10px transparentize($black, 0.85);
+
+			@include MQ(M) {
+				min-width: 300px;
+			}
+
+			.pane-title {
+				color: $white;
+				font-size: 2em;
+				letter-spacing: -1.7px;
+				margin-bottom: 10px;
+			}
+
+			.pane-subtitle {
+				color: $white;
+				font-size: 1.2em;
+				letter-spacing: -1px;
+				margin-bottom: 10px;
+			}
+
+			.pane-text {
+				color: $white;
+				font-size: 1em;
+
+				&.faded {
+					color: $grey;
+				}
+			}
+
+			.pane-link {
+				color: $blue1;
+				transition: color 0.45s;
+				text-decoration: none;
+
+				&:hover {
+					color: $pink1;
+				}
+			}
+
+			&.pane-one {
+				.brand-logo {
+					height: 20px;
+					width: auto;
+					margin-bottom: 5px;
+				}
+
+				.pane-text:first-of-type {
+					margin-bottom: 40px;
+				}
+
+				.form-label {
+					float: left;
+					display: inline;
+					margin-bottom: 40px;
+
+					&+.pane-link {
+						display: inline;
+						float: right;
+						line-height: 2;
+
+						&+.btn.btn-purple {
+							margin: 20px;
+						}
+					}
+				}
+			}
+
+			&.pane-two {
+				.pane-text:first-of-type, .form input.form-textbox:last-of-type {
+					margin-bottom: 40px;
+				}
+			}
+
+			&.pane-three {
+				.brand-logo {
+					height: 20px;
+					width: auto;
+					margin-bottom: 5px;
+				}
+
+				.pane-text:first-of-type {
+					margin-bottom: 40px;
+				}
+
+				.form-label {
+					float: left;
+					display: inline;
+					margin-bottom: 40px;
+
+					&+.btn.btn-green {
+						margin: 20px;
+					}
+				}
+			}
+
+			&.pane-four {
+				.pane-text:first-of-type {
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+}

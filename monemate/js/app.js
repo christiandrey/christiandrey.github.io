@@ -18,4 +18,9 @@ $(document).ready(function(){
 	})
 
 	$('.user-item-scroller').liMarquee();
+
+	$('.office .member-tool-link.is-collapsible a').on("click", function(e) {
+		e.preventDefault();
+		$(this).siblings('.tool-menu').slideToggle();
+	})
 })
