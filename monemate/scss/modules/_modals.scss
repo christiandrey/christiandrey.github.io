@@ -1,0 +1,98 @@
+/* ==|====================
+   Module/Modal
+   ======================= */
+
+.modal {
+	background-color: transparentize($color2, 0.2);
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	z-index: +3;
+	top: 0;
+	left: 0;
+
+	.modal-content {
+		width: 90%;
+		max-width: 500px;
+		position: relative;
+		background-color: $color4;
+		margin: 100px auto 0;
+
+		.modal-heading {
+			padding: 5px 15px;
+			border-bottom: dashed $color3 2px;
+
+			.modal-title {
+				font-size: 1.4em;
+
+				span {
+					color: $color1;
+				}
+			}
+
+			.modal-close-btn {
+				width: 30px;
+				height: 30px;
+				border-radius: 15px;
+				border: solid 2px $white;
+				background-color: $color2;
+				background-size: 80%;
+				background-position: center;
+				background-image: url('../img/icon.hamburger-close-white.png');
+				position: absolute;
+				top: -15px;
+				right: -15px;
+				cursor: pointer;
+				transition: transform 0.15s;
+
+				&:hover {
+					transform: scale(1.1,1.1);
+				}
+			}
+		}
+
+		.modal-body {
+			background-color: $white;
+			padding: 15px;
+			border-bottom-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+
+			@include MQ(M) {
+				padding: 15px 30px 30px;
+			}
+
+			.modal-text {
+				font-size: 1.1em;
+			}
+		}
+
+		.modal-alert {
+			width: calc(100% + 30px);
+			padding: 10px 15px;
+			margin: 15px -15px;
+			background-color: $color2;
+			color: $white;
+
+			a {
+				text-decoration: none;
+			}
+
+			strong {
+				color: $color1;
+
+				&:hover {
+					color: $white;
+				}
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

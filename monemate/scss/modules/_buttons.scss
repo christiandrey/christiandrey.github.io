@@ -12,16 +12,34 @@
 	letter-spacing: 0.7px;
 	box-shadow: 0 4px 5px transparentize($color2, 0.85);
 	transition: transform 0.45s, box-shadow 0.45s;
+	outline: none;
 
 	&:hover {
 		box-shadow: 0 20px 10px transparentize($color2, 0.6);
 		transform: translateY(-10px);
 	}
 
+	&:focus {
+		outline: none;
+	}
+
 	&.btn-small {
 		height: 30px;
 		width: 130px;
 		font-size: 1em;
+		letter-spacing: 0.4px;
+
+		&:hover {
+			box-shadow: 0 8px 10px transparentize($color2, 0.6);
+			transform: translateY(-5px);
+		}
+	}
+
+	&.btn-xsmall {
+		width: auto;
+		height: auto;
+		padding: 5px 10px;
+		font-size: 0.7em;
 
 		&:hover {
 			box-shadow: 0 8px 10px transparentize($color2, 0.6);
@@ -42,5 +60,9 @@
 	&.btn-white {
 		background-color: $white;
 		color: $color2;
+	}
+
+	&.auto-size {
+		width: auto !important;
 	}
 }

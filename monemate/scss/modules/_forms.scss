@@ -8,6 +8,18 @@ form {
 	border-radius: 5px;
 	box-shadow: 0 4px 5px transparentize($color2, 0.85);
 
+	&.modal-form {
+		padding: 0;
+		border-radius: 0;
+		box-shadow: none;
+
+		button[type="submit"] {
+			display: inline-block;
+			// text-align: left;
+			margin: 0;
+		}
+	}
+
 	label {
 		font-family: $headerFont;
 	}
@@ -51,5 +63,38 @@ form {
 		display: block;
 		text-align: center;
 		margin: 30px auto 0;
+	}
+}
+
+.form-checkbox {
+	position: relative;
+	left: -5000px;
+	outline: none;
+	cursor: pointer;
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		border: solid 1px $color2;
+		border-radius: 3px;
+		width: 15px;
+		height: 15px;
+		top: 0;
+		left: 5000px;
+	}
+
+	&:checked {
+		&:after {
+			content: "";
+				display: block;
+				position: absolute;
+				background-color: $color1;
+				border-radius: 10px;
+				width: 7px;
+				height: 7px;
+				top: 4px;
+				left: 5004px;
+		}
 	}
 }

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monemate | Profile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
+        
+    </head>
+    <body>
+        <main class="l-main" role="main">
+        <section class="modal edit-email hidden">
+            <div class="modal-content">
+                <div class="modal-heading">
+                    <h3 class="modal-title">Change <span>email</span></h3>
+                    <div class="modal-close-btn"></div>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-text">Current email address: <strong>test@example.com</strong></p>
+                    <form action="" class="modal-form">
+                        <div class="form-group">
+                            <label for="email">New email address</label>
+                            <input type="email" class="form-control" id="email" name="user-new-email">
+                        </div>
+                        <div class="form-group">
+                            <label for="secret-answer">Secret question goes into this space</label>
+                            <input type="text" class="form-control" id="secret-answer" name="user-secret-answer">
+                        </div>
+                        <p class="modal-text">Confirmation email will be sent to your new email address</p>
+                        <button class="btn btn-small btn-orange" type="submit">Save</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="modal edit-country hidden">
+            <div class="modal-content">
+                <div class="modal-heading">
+                    <h3 class="modal-title">Change <span>country</span></h3>
+                    <div class="modal-close-btn"></div>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-text">Current country: <strong>12345657</strong></p>
+                    <form action="" class="modal-form">
+                        <div class="form-group">
+                            <label for="email">New country</label>
+                            <select class="form-control">
+                                <option value="AFG">Afghanistan</option>
+                                <option value="ALA">Åland Islands</option>
+                                <option value="ALB">Albania</option>
+                                <option value="DZA">Algeria</option>
+                                <option value="ASM">American Samoa</option>
+                                <option value="AND">Andorra</option>
+                                <option value="AGO">Angola</option>
+                                <option value="AIA">Anguilla</option>
+                                <option value="ATA">Antarctica</option>
+                                <option value="ATG">Antigua and Barbuda</option>
+                                <option value="ARG">Argentina</option>
+                                <option value="ARM">Armenia</option>
+                                <option value="ABW">Aruba</option>
+                                <option value="AUS">Australia</option>
+                                <option value="AUT">Austria</option>
+                                <option value="AZE">Azerbaijan</option>
+                                <option value="BHS">Bahamas</option>
+                                <option value="BHR">Bahrain</option>
+                                <option value="BGD">Bangladesh</option>
+                                <option value="BRB">Barbados</option>
+                                <option value="BLR">Belarus</option>
+                                <option value="BEL">Belgium</option>
+                                <option value="BLZ">Belize</option>
+                                <option value="BEN">Benin</option>
+                                <option value="BMU">Bermuda</option>
+                                <option value="BTN">Bhutan</option>
+                                <option value="BOL">Bolivia, Plurinational State of</option>
+                                <option value="BES">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="BIH">Bosnia and Herzegovina</option>
+                                <option value="BWA">Botswana</option>
+                                <option value="BVT">Bouvet Island</option>
+                                <option value="BRA">Brazil</option>
+                                <option value="IOT">British Indian Ocean Territory</option>
+                                <option value="BRN">Brunei Darussalam</option>
+                                <option value="BGR">Bulgaria</option>
+                                <option value="BFA">Burkina Faso</option>
+                                <option value="BDI">Burundi</option>
+                                <option value="KHM">Cambodia</option>
+                                <option value="CMR">Cameroon</option>
+                                <option value="CAN">Canada</option>
+                                <option value="CPV">Cape Verde</option>
+                                <option value="CYM">Cayman Islands</option>
+                                <option value="CAF">Central African Republic</option>
+                                <option value="TCD">Chad</option>
+                                <option value="CHL">Chile</option>
+                                <option value="CHN">China</option>
+                                <option value="CXR">Christmas Island</option>
+                                <option value="CCK">Cocos (Keeling) Islands</option>
+                                <option value="COL">Colombia</option>
+                                <option value="COM">Comoros</option>
+                                <option value="COG">Congo</option>
+                                <option value="COD">Congo, the Democratic Republic of the</option>
+                                <option value="COK">Cook Islands</option>
+                                <option value="CRI">Costa Rica</option>
+                                <option value="CIV">Côte d'Ivoire</option>
+                                <option value="HRV">Croatia</option>
+                                <option value="CUB">Cuba</option>
+                                <option value="CUW">Curaçao</option>
+                                <option value="CYP">Cyprus</option>
+                                <option value="CZE">Czech Republic</option>
+                                <option value="DNK">Denmark</option>
+                                <option value="DJI">Djibouti</option>
+                                <option value="DMA">Dominica</option>
+                                <option value="DOM">Dominican Republic</option>
+                                <option value="ECU">Ecuador</option>
+                                <option value="EGY">Egypt</option>
+                                <option value="SLV">El Salvador</option>
+                                <option value="GNQ">Equatorial Guinea</option>
+                                <option value="ERI">Eritrea</option>
+                                <option value="EST">Estonia</option>
+                                <option value="ETH">Ethiopia</option>
+                                <option value="FLK">Falkland Islands (Malvinas)</option>
+                                <option value="FRO">Faroe Islands</option>
+                                <option value="FJI">Fiji</option>
+                                <option value="FIN">Finland</option>
+                                <option value="FRA">France</option>
+                                <option value="GUF">French Guiana</option>
+                                <option value="PYF">French Polynesia</option>
+                                <option value="ATF">French Southern Territories</option>
+                                <option value="GAB">Gabon</option>
+                                <option value="GMB">Gambia</option>
+                                <option value="GEO">Georgia</option>
+                                <option value="DEU">Germany</option>
+                                <option value="GHA">Ghana</option>
+                                <option value="GIB">Gibraltar</option>
+                                <option value="GRC">Greece</option>
+                                <option value="GRL">Greenland</option>
+                                <option value="GRD">Grenada</option>
+                                <option value="GLP">Guadeloupe</option>
+                                <option value="GUM">Guam</option>
+                                <option value="GTM">Guatemala</option>
+                                <option value="GGY">Guernsey</option>
+                                <option value="GIN">Guinea</option>
+                                <option value="GNB">Guinea-Bissau</option>
+                                <option value="GUY">Guyana</option>
+                                <option value="HTI">Haiti</option>
+                                <option value="HMD">Heard Island and McDonald Islands</option>
+                                <option value="VAT">Holy See (Vatican City State)</option>
+                                <option value="HND">Honduras</option>
+                                <option value="HKG">Hong Kong</option>
+                                <option value="HUN">Hungary</option>
+                                <option value="ISL">Iceland</option>
+                                <option value="IND">India</option>
+                                <option value="IDN">Indonesia</option>
+                                <option value="IRN">Iran, Islamic Republic of</option>
+                                <option value="IRQ">Iraq</option>
+                                <option value="IRL">Ireland</option>
+                                <option value="IMN">Isle of Man</option>
+                                <option value="ISR">Israel</option>
+                                <option value="ITA">Italy</option>
+                                <option value="JAM">Jamaica</option>
+                                <option value="JPN">Japan</option>
+                                <option value="JEY">Jersey</option>
+                                <option value="JOR">Jordan</option>
+                                <option value="KAZ">Kazakhstan</option>
+                                <option value="KEN">Kenya</option>
+                                <option value="KIR">Kiribati</option>
+                                <option value="PRK">Korea, Democratic People's Republic of</option>
+                                <option value="KOR">Korea, Republic of</option>
+                                <option value="KWT">Kuwait</option>
+                                <option value="KGZ">Kyrgyzstan</option>
+                                <option value="LAO">Lao People's Democratic Republic</option>
+                                <option value="LVA">Latvia</option>
+                                <option value="LBN">Lebanon</option>
+                                <option value="LSO">Lesotho</option>
+                                <option value="LBR">Liberia</option>
+                                <option value="LBY">Libya</option>
+                                <option value="LIE">Liechtenstein</option>
+                                <option value="LTU">Lithuania</option>
+                                <option value="LUX">Luxembourg</option>
+                                <option value="MAC">Macao</option>
+                                <option value="MKD">Macedonia, the former Yugoslav Republic of</option>
+                                <option value="MDG">Madagascar</option>
+                                <option value="MWI">Malawi</option>
+                                <option value="MYS">Malaysia</option>
+                                <option value="MDV">Maldives</option>
+                                <option value="MLI">Mali</option>
+                                <option value="MLT">Malta</option>
+                                <option value="MHL">Marshall Islands</option>
+                                <option value="MTQ">Martinique</option>
+                                <option value="MRT">Mauritania</option>
+                                <option value="MUS">Mauritius</option>
+                                <option value="MYT">Mayotte</option>
+                                <option value="MEX">Mexico</option>
+                                <option value="FSM">Micronesia, Federated States of</option>
+                                <option value="MDA">Moldova, Republic of</option>
+                                <option value="MCO">Monaco</option>
+                                <option value="MNG">Mongolia</option>
+                                <option value="MNE">Montenegro</option>
+                                <option value="MSR">Montserrat</option>
+                                <option value="MAR">Morocco</option>
+                                <option value="MOZ">Mozambique</option>
+                                <option value="MMR">Myanmar</option>
+                                <option value="NAM">Namibia</option>
+                                <option value="NRU">Nauru</option>
+                                <option value="NPL">Nepal</option>
+                                <option value="NLD">Netherlands</option>
+                                <option value="NCL">New Caledonia</option>
+                                <option value="NZL">New Zealand</option>
+                                <option value="NIC">Nicaragua</option>
+                                <option value="NER">Niger</option>
+                                <option value="NGA">Nigeria</option>
+                                <option value="NIU">Niue</option>
+                                <option value="NFK">Norfolk Island</option>
+                                <option value="MNP">Northern Mariana Islands</option>
+                                <option value="NOR">Norway</option>
+                                <option value="OMN">Oman</option>
+                                <option value="PAK">Pakistan</option>
+                                <option value="PLW">Palau</option>
+                                <option value="PSE">Palestinian Territory, Occupied</option>
+                                <option value="PAN">Panama</option>
+                                <option value="PNG">Papua New Guinea</option>
+                                <option value="PRY">Paraguay</option>
+                                <option value="PER">Peru</option>
+                                <option value="PHL">Philippines</option>
+                                <option value="PCN">Pitcairn</option>
+                                <option value="POL">Poland</option>
+                                <option value="PRT">Portugal</option>
+                                <option value="PRI">Puerto Rico</option>
+                                <option value="QAT">Qatar</option>
+                                <option value="REU">Réunion</option>
+                                <option value="ROU">Romania</option>
+                                <option value="RUS">Russian Federation</option>
+                                <option value="RWA">Rwanda</option>
+                                <option value="BLM">Saint Barthélemy</option>
+                                <option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>
+                                <option value="KNA">Saint Kitts and Nevis</option>
+                                <option value="LCA">Saint Lucia</option>
+                                <option value="MAF">Saint Martin (French part)</option>
+                                <option value="SPM">Saint Pierre and Miquelon</option>
+                                <option value="VCT">Saint Vincent and the Grenadines</option>
+                                <option value="WSM">Samoa</option>
+                                <option value="SMR">San Marino</option>
+                                <option value="STP">Sao Tome and Principe</option>
+                                <option value="SAU">Saudi Arabia</option>
+                                <option value="SEN">Senegal</option>
+                                <option value="SRB">Serbia</option>
+                                <option value="SYC">Seychelles</option>
+                                <option value="SLE">Sierra Leone</option>
+                                <option value="SGP">Singapore</option>
+                                <option value="SXM">Sint Maarten (Dutch part)</option>
+                                <option value="SVK">Slovakia</option>
+                                <option value="SVN">Slovenia</option>
+                                <option value="SLB">Solomon Islands</option>
+                                <option value="SOM">Somalia</option>
+                                <option value="ZAF">South Africa</option>
+                                <option value="SGS">South Georgia and the South Sandwich Islands</option>
+                                <option value="SSD">South Sudan</option>
+                                <option value="ESP">Spain</option>
+                                <option value="LKA">Sri Lanka</option>
+                                <option value="SDN">Sudan</option>
+                                <option value="SUR">Suriname</option>
+                                <option value="SJM">Svalbard and Jan Mayen</option>
+                                <option value="SWZ">Swaziland</option>
+                                <option value="SWE">Sweden</option>
+                                <option value="CHE">Switzerland</option>
+                                <option value="SYR">Syrian Arab Republic</option>
+                                <option value="TWN">Taiwan, Province of China</option>
+                                <option value="TJK">Tajikistan</option>
+                                <option value="TZA">Tanzania, United Republic of</option>
+                                <option value="THA">Thailand</option>
+                                <option value="TLS">Timor-Leste</option>
+                                <option value="TGO">Togo</option>
+                                <option value="TKL">Tokelau</option>
+                                <option value="TON">Tonga</option>
+                                <option value="TTO">Trinidad and Tobago</option>
+                                <option value="TUN">Tunisia</option>
+                                <option value="TUR">Turkey</option>
+                                <option value="TKM">Turkmenistan</option>
+                                <option value="TCA">Turks and Caicos Islands</option>
+                                <option value="TUV">Tuvalu</option>
+                                <option value="UGA">Uganda</option>
+                                <option value="UKR">Ukraine</option>
+                                <option value="ARE">United Arab Emirates</option>
+                                <option value="GBR">United Kingdom</option>
+                                <option value="USA">United States</option>
+                                <option value="UMI">United States Minor Outlying Islands</option>
+                                <option value="URY">Uruguay</option>
+                                <option value="UZB">Uzbekistan</option>
+                                <option value="VUT">Vanuatu</option>
+                                <option value="VEN">Venezuela, Bolivarian Republic of</option>
+                                <option value="VNM">Viet Nam</option>
+                                <option value="VGB">Virgin Islands, British</option>
+                                <option value="VIR">Virgin Islands, U.S.</option>
+                                <option value="WLF">Wallis and Futuna</option>
+                                <option value="ESH">Western Sahara</option>
+                                <option value="YEM">Yemen</option>
+                                <option value="ZMB">Zambia</option>
+                                <option value="ZWE">Zimbabwe</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="secret-answer">Secret question goes into this space</label>
+                            <input type="text" class="form-control" id="secret-answer" name="user-secret-answer">
+                        </div>
+                        <button class="btn btn-small btn-orange" type="submit">Save</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="modal edit-fullname hidden">
+            <div class="modal-content">
+                <div class="modal-heading">
+                    <h3 class="modal-title">Change <span>names</span></h3>
+                    <div class="modal-close-btn"></div>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-text">Current first/last name: <strong>John Doe</strong></p>
+                    <form action="" class="modal-form">
+                        <div class="form-group">
+                            <label for="user-first-name">New first name</label>
+                            <input type="text" class="form-control" id="user-first-name" name="user-first-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="user-last-name">New last name</label>
+                            <input type="text" class="form-control" id="user-last-name" name="user-last-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="secret-answer">Secret question goes into this space</label>
+                            <input type="text" class="form-control" id="secret-answer" name="user-secret-answer">
+                        </div>
+                        <button class="btn btn-small btn-orange" type="submit">Save</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="modal edit-phone hidden">
+            <div class="modal-content">
+                <div class="modal-heading">
+                    <h3 class="modal-title">Change phone <span>number</span></h3>
+                    <div class="modal-close-btn"></div>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-text">Current phone number: <strong>0000000</strong></p>
+                    <form action="" class="modal-form">
+                        <div class="form-group">
+                            <label for="user-phone-number">New phone number</label>
+                            <input type="tel" class="form-control" id="user-phone-number" name="user-phone-number">
+                        </div>
+                        <div class="form-group">
+                            <label for="secret-answer">Secret question goes into this space</label>
+                            <input type="text" class="form-control" id="secret-answer" name="user-secret-answer">
+                        </div>
+                        <button class="btn btn-small btn-orange" type="submit">Save</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="modal add-social-network hidden">
+            <div class="modal-content">
+                <div class="modal-heading">
+                    <h3 class="modal-title">Add social network <span>link</span></h3>
+                    <div class="modal-close-btn"></div>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="modal-form">
+                        <div class="form-group">
+                            <label for="user-social">Social network</label>
+                            <select name="user-social" class="form-control">
+                                <option>Facebook</option>
+                                <option>Twitter</option>
+                                <option>Instagram</option>
+                                <option>Google plus</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="secret-answer">Secret question goes into this space</label>
+                            <input type="text" class="form-control" id="secret-answer" name="user-secret-answer">
+                        </div>
+                        <button class="btn btn-small btn-orange" type="submit">Save</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="office">
+            <section class="office-toolbar">
+                <section class="office-toolbar-main">
+                    <img src="../img/image.brandlogo.white.png" alt="" class="brand-logo">
+                    <img src="../img/image.avatar.jpg" alt="" class="user-avatar">
+                    <h4 class="user-name">Dreytest</h4>
+                    <button class="btn btn-small btn-orange" id="sign-out">Sign out</button>
+                    <section class="member-tools">
+                        <h6 class="section-title text-left">MEMBER TOOLS</h6
+                        >
+                        <div class="member-tool-link">
+                            <div class="tool-icon"></div>
+                            <a class="tool-link" href="dashboard.html">Dashboard</a>
+                        </div>
+                        <div class="member-tool-link">
+                            <div class="tool-icon"></div>
+                            <a class="tool-link active" href="profile.html">My Profile</a>
+                        </div>
+                        <div class="member-tool-link">
+                            <div class="tool-icon"></div>
+                            <a class="tool-link" href="referrals.html">My Referrals</a>
+                        </div>
+                        <div class="member-tool-link is-collapsible">
+                            <div class="tool-icon"></div>
+                            <a class="tool-link" href="" data-content="&#9654">My Money</a>
+                            <ul class="tool-menu">
+                                <li><a href="account.html">Bitcoin Wallet</a></li>
+                                <li><a href="upgrade.html">Upgrade</a></li>
+                                <li><a href="missed.html">Missed Donations</a></li>
+                                <li><a href="pending.html">Pending Donations</a></li>
+                                <li><a href="completed.html">Completed Donations</a></li>
+                            </ul>
+                        </div>
+                        <div class="member-tool-link">
+                            <div class="tool-icon"></div>
+                            <a class="tool-link" href="referral-link.html">My Referral Link</a>
+                        </div>
+                        <div class="member-tool-link">
+                            <div class="tool-icon"></div>
+                            <a class="tool-link" href="../support.html">Support</a>
+                        </div>
+                        <div class="member-tool-link">
+                            <div class="tool-icon"></div>
+                            <a class="tool-link" href="news.html">News</a>
+                        </div>
+                        <div class="member-tool-link">
+                            <div class="tool-icon"></div>
+                            <a class="tool-link" href="testimonials.html">Testimonials</a>h3
+                        </div>
+                    </section>
+                    <section class="other-nav-items hidden">
+                        <h6 class="section-title text-left">OTHER LINKS</h6
+                        >
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../faqs.html">Faqs</a>
+                        <a class="nav-link" href="../aboutus.html">About us</a>
+                        <a class="nav-link" href="../terms.html">Terms</a>
+                        <a class="nav-link" href="../support.html">Support</a>
+                        <a class="nav-link" href="./dashboard.html">Back office</a>
+                    </section>
+                </section>
+            </section>
+            <section class="office-main-container">
+                <section class="office-main">
+                    <section class="office-top-bar">
+                        <img src="../img/icon.hamburger.png" alt="" class="hamburger">
+                        <h5 class="user-name">Hello, <span>dreytest</span></h5>
+                    </section>
+                    <section class="office-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="pane">
+                                        <div class="pane-heading">
+                                            <h3 class="pane-title">Member <span>profile</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="col-12">
+                                        <div class="pane">
+                                            <div class="pane-heading">
+                                                <h3 class="pane-title">Registration <span>details</span></h3>
+                                            </div>
+                                            <div class="pane-body"><table class="table table-striped pane-table no-top-margin">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><h5>Username</h5></td>
+                                                        <td><span class="user-username">dreytest</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><h5>Email</h5></td>
+                                                        <td class="td-word-wrap"><span class="user-email">test@example.com</span> <button class="btn btn-xsmall btn-orange" id="edit" data-modal-toggle="edit-email">Edit</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><h5>Skype ID</h5></td>
+                                                        <td><span><input type="text" name="user-skype" class="form-control user-skype" style="display: inline; width: 75px;" placeholder="Skype ID"> <button class="btn btn-xsmall btn-orange">Save</button></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><h5>Joined</h5></td>
+                                                        <td><span class="user-joined">14-Apr-2017</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><h5>IP Address</h5></td>
+                                                        <td><span class="user-IP">10.199.212.2</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><h5>Country</h5></td>
+                                                        <td><span class="user-country">Senegal</span> <button class="btn btn-xsmall btn-orange" id="edit" data-modal-toggle="edit-country">Edit</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><h5>Name</h5></td>
+                                                        <td><span class="user-fullname">John Doe</span> <button class="btn btn-xsmall btn-orange" id="edit" data-modal-toggle="edit-fullname">Edit</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><h5>Phone</h5></td>
+                                                        <td><span class="user-phone">999-99999</span> <button class="btn btn-xsmall btn-orange" id="edit" data-modal-toggle="edit-phone">Edit</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><h5>Invited by</h5></td>
+                                                        <td class="td-word-wrap"><span class="user-invitedby">Janet</span> <a href="mailto:janet@example.com" class="a-inverse">(janet@example.com)</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="pane">
+                                            <div class="pane-heading">
+                                                <h3 class="pane-title">Security</h3>
+                                            </div>
+                                            <div class="pane-body">
+                                                <table class="table table-striped pane-table no-top-margin">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Account password</h5>
+                                                            </td>
+                                                            <td><span class="user-password">********</span> <button class="btn btn-xsmall btn-orange">Edit</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Secret Question</h5>
+                                                            </td>
+                                                            <td><span class="user-securityQuestion">Who is the president?</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Secret Answer</h5>
+                                                            </td>
+                                                            <td><span class="user-secretAnswer">********</span> <button class="btn btn-xsmall btn-orange">Edit</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Lock my IP address</h5>
+                                                            </td>
+                                                            <td><input type="checkbox" class="form-checkbox"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <span>Lock my IP Address prevents login to your account from a different IP address. If this option is on and your IP address changes you will be required to provide 2-factor authentication by clicking a link sent to your email to unlock your account. Understand how this feature works before turning it on. It is a valuable security tool when used properly.</span>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2">
+                                                                <h5>Last 5 different login IP addresses</h5>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5 class="user-IP-date">14-Apr-2017</h5>
+                                                            </td>
+                                                            <td><span class="user-IP">10.199.212.2</span></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="pane">
+                                            <div class="pane-heading">
+                                                <h3 class="pane-title">Email <span>settings</span></h3>
+                                            </div>
+                                            <div class="pane-body">
+                                                <table class="table table-striped pane-table no-top-margin">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Send me a mail when a donation is submitted to me</h5>
+                                                            </td>
+                                                            <td><input type="checkbox" class="form-checkbox" checked></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Send me a mail when a donation I send is approved</h5>
+                                                            </td>
+                                                            <td><input type="checkbox" class="form-checkbox" checked></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="col-12">
+                                        <div class="pane">
+                                            <div class="pane-heading">
+                                                <h3 class="pane-title">Avatar</h3>
+                                            </div>
+                                            <div class="pane-body text-center">
+                                                <img class="pane-icon" src="../img/icon.avatar.png">
+                                                <br>
+                                                <a href="change-avatar.html"><button class="btn btn-small btn-orange">Change avatar</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="pane">
+                                            <div class="pane-heading">
+                                                <h3 class="pane-title">Profile <span>options</span></h3>
+                                            </div>
+                                            <div class="pane-body">
+                                                <h5>Control what you share with others</h5>
+                                                <table class="table table-striped pane-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Email address</h5>
+                                                                <span>Show my email address</span>
+                                                            </td>
+                                                            <td><input type="checkbox"checked class="form-checkbox"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Avatar</h5>
+                                                                <span>Show my avatar</span>
+                                                            </td>
+                                                            <td><input type="checkbox" checked class="form-checkbox"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Social links</h5>
+                                                                <span>Show my social network links</span>
+                                                            </td>
+                                                            <td><input type="checkbox" checked class="form-checkbox"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Skype</h5>
+                                                                <span>Show my skype details</span>
+                                                            </td>
+                                                            <td><input type="checkbox" checked class="form-checkbox"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h5>Phone number</h5>
+                                                                <span>Show my phone number</span>
+                                                            </td>
+                                                            <td><input type="checkbox" checked class="form-checkbox"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="pane">
+                                            <div class="pane-heading">
+                                                <h3 class="pane-title">Social <span>networks</span></h3>
+                                            </div>
+                                            <div class="pane-body">
+                                                <h5>Any social network links listed here will be displayed on your public profile page.</h5>
+                                                <span class="">No items to display</span>&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-small btn-orange auto-size" id="modal-toggle" data-modal-toggle="add-social-network">Add link</button>
+                                                <table class="table table-striped pane-table no-top-margin hidden">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="td-word-wrap" style="width: 80%"><h5>http://www.facebook.com/example</h5></td>
+                                                            <td><button class="btn btn-xsmall btn-grey">Delete</button></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <footer class="l-footer" role="footer">
+            <div class="certification">
+                <img src="../img/image.blockchain-banner.png" class="blockchain-banner">
+                <img src="../img/image.bitcoin-banner.png" class="bitcoin-banner">
+            </div>
+            <div class="copyright">
+                <h6>Copyright, Monemate 2017</h6>
+            </div>
+        </footer>
+        </main>
+    </body>
+    <script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-migrate-3.0.0.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.liMarquee.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+</html>

@@ -12,8 +12,7 @@
 	overflow: hidden;
 
 	.pane-heading {
-		padding: 5px 30px;
-		border-bottom: dashed $color3 2px;
+		padding: 5px 15px;
 		background-color: $color4;
 
 		.pane-title {
@@ -36,6 +35,11 @@
 
 	.pane-body {
 		padding: 15px;
+		border-top: dashed $color3 2px;
+
+		&.no-border {
+			border: none;
+		}
 
 		.pane-icon {
 			width: 60px;
@@ -49,6 +53,19 @@
 			margin-top: 30px;
 			table-layout: fixed;
 
+			a {
+				color: $white;
+
+				&.a-inverse {
+					color: $color2;
+					text-decoration: none;
+
+					&:hover {
+						color: $color1;
+					}
+				}
+			}
+
 			thead {
 				tr {
  					background-color: $color2;
@@ -58,7 +75,7 @@
 	 					vertical-align: middle;
 	 					text-align: left;
 	 					height: 40px;
-	 					padding-left: 30px;
+	 					padding: 0 15px;
 					}
 				}
 			}
@@ -67,9 +84,39 @@
 				tr {
 					td {
 						width: 50%;
-						padding-left: 30px;
+						padding: 0 15px;
 						vertical-align: middle;
 						height: 40px;
+
+						&.td-word-wrap {
+							word-wrap: break-word;
+						}
+
+						&.padded {
+							padding-top: 15px;
+							padding-bottom: 15px;
+						}
+
+						img.user-icon {
+							width: 60px;
+							height: auto;
+							display: block;
+							margin: 0 auto 15px;
+
+							&+p, &+span {
+								clear: left;
+
+								@include MQ(M) {
+									clear: none;
+								}
+							}
+
+							@include MQ(M) {
+								float: left;
+								margin: 0 15px 0 0;
+								display: inline;
+							}
+						}
 					}
 				}
 			}
@@ -105,7 +152,15 @@
 				float: none;
 				clear: none;
 				text-align: center;
-				margin: 10 auto 0px
+				margin: 10px auto 0px
+			}
+
+			&.inline {
+				display: inline-block;
+				float: none;
+				clear: none;
+				text-align: center;
+				margin: 0;
 			}
 		}
 
@@ -155,8 +210,22 @@
 		background-color: $color2;
 		color: $white;
 
+		&.in-accordion {
+			width: calc(100% + 30px);
+			padding: 10px 15px;
+			margin: 15px -15px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
 		strong {
 			color: $color1;
+
+			&:hover {
+				color: $white;
+			}
 		}
 
 		&:first-child {
@@ -165,6 +234,84 @@
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+	}
+
+	.search-referrals {
+		margin-top: 15px;
+		display: inline-block;
+		text-align: center;
+
+		input {
+			display: inline;
+			width: auto;
+			margin-bottom: 15px;
+		}
+
+		@include MQ(M) {
+			margin-top: 0;
+			float: right;
+
+			input {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.empty-text {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	.pagination {
+		span {
+			font-family: $headerFont;
+		}
+
+		&.per-page {
+			float: right
+		}
+	}
+
+	.validate-field {
+		display: inline-block;
+		text-align: center;
+
+		input {
+			display: inline;
+			width: auto;
+			margin-bottom: 15px;
+
+			@include MQ(M) {
+				margin-bottom: 0;
+				margin-right: 15px;
+			}
+		}
+	}
+
+	.preset-avatars-group {
+		text-align: center;
+
+		@include MQ(M) {
+			text-align: left;
+		}
+
+		.preset-avatar {
+			width: 60px;
+			height: auto;
+			display: inline-block;
+			border-radius: 30px;
+			border: solid 3px $white;
+			cursor: pointer;
+			transition: opacity 0.15s;
+
+			&:hover {
+				opacity: 0.7;
+			}
+
+			&.selected {
+				border: solid 3px $color1;
+			}
 		}
 	}
 }

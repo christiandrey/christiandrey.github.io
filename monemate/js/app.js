@@ -17,10 +17,29 @@ $(document).ready(function(){
 		}
 	})
 
-	$('.user-item-scroller').liMarquee();
+	try {
+		$('.user-item-scroller').liMarquee();
+	} catch(error){
+		console.log(error.message)
+	}
 
-	$('.office .member-tool-link.is-collapsible a').on("click", function(e) {
+	$('.office .member-tool-link.is-collapsible .tool-link').on("click", function(e) {
 		e.preventDefault();
 		$(this).siblings('.tool-menu').slideToggle();
+	})
+
+	//Modals
+	$('.modal .modal-close-btn').click(function(e) {
+		$('.modal').addClass('hidden')
+	})
+
+	$('#modal-toggle, #edit').click(function(e) {
+		var modalName = $(this).attr("data-modal-toggle");
+		$('.modal.' + modalName).toggleClass('hidden');
+	})
+	//End of Modals
+
+	$('#sign-out').click(function(e) {
+		location.href="../login.html"
 	})
 })
