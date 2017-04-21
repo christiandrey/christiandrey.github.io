@@ -7,7 +7,8 @@
 
 	&.auth-header {
 		background: linear-gradient($red1, $red2);
-		height: 45%;
+		height: 30%;
+		box-shadow: 0px 10px 40px transparentize($red2, 0.2);
 
 		.auth-icon {
 			width: 60px;
@@ -20,7 +21,7 @@
 	}
 
 	&.auth-body {
-		padding: 40px;
+		padding: 50px 30px 30px;
 
 		p {
 			&:first-child {
