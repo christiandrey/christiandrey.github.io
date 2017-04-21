@@ -1,0 +1,46 @@
+/* ==|====================
+   Layout/Main
+   ======================= */
+
+.l-section {
+	width: 100%;
+
+	&.auth-header {
+		background: linear-gradient($red1, $red2);
+		height: 45%;
+
+		.auth-icon {
+			width: 60px;
+			height: auto;
+			padding: 0px 0;
+			display: block;
+			margin: auto;
+			@include center(y);
+		}
+	}
+
+	&.auth-body {
+		padding: 40px;
+
+		p {
+			&:first-child {
+				color: $red1;
+				margin-bottom: 30px;
+				font-family: $headerFont;
+				font-size: 1.5em;
+			}
+
+			&:last-child {
+				color: $grey2;
+				margin-top: 15px;
+				font-family: $headerFont;
+				font-size: 0.9em;
+
+				a {
+					text-decoration: none;
+					color: $red1;
+				}
+			}
+		}
+	}
+}
