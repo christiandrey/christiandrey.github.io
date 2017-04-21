@@ -44,4 +44,81 @@
 			}
 		}
 	}
+
+	&.view-header {
+		background: linear-gradient($red1, $red2);
+		box-shadow: 0px 10px 40px transparentize($red2, 0.2);
+
+		.view-header-content {
+			padding: 5px 0 30px;
+			color: $white;
+			position: relative;
+
+			.view-header-title {
+				font-size: 4em;
+				margin-bottom: 10px;
+				background-color: $white;
+				color: $red1;
+				padding: 5px 30px;
+				border-radius: 100px;
+				display: inline-block;
+			}
+
+			.view-header-subtitle {
+				font-size: 1.2em
+			}
+
+			.add-task {
+				position: absolute;
+				bottom: -30px;
+				right: 20px;
+				background-color: $purple;
+				background-image: url('../img/icon.add.png');
+				background-position: center;
+				background-size: 60%;
+				background-repeat: no-repeat;
+				border-radius: 30px;
+				width: 60px;
+				height: 60px;
+				transition: transform 0.15s;
+
+				&:hover {
+					transform: scale(0.98,0.98)
+				}
+			}
+		}
+	}
+
+	&.view-body {
+		padding: 50px 20px 30px;
+
+		.task-container {
+			width: 100%;
+			background-color: $white;
+			border-radius: 5px;
+			padding: 15px 20px;
+			box-shadow: 0 4px 5px transparentize($black, 0.9);
+
+			.task-container-title {
+				font-family: $headerFont;
+				font-size: 1.1em;
+				color: $red1;
+				float: left;
+				margin-bottom: 10px;
+				letter-spacing: 0.5px;
+
+				span {
+					font-family: $bodyFont;
+					font-size: 0.9em;
+					color: $grey;
+				}
+			}
+
+			.task-filter-icon {
+				float: right;
+				height: 20px;
+				width: auto;
+			}
+		}
+	}
 }

@@ -14,27 +14,64 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<main class="l-main" role="main">
-        <section class="l-section auth-header" role="">
-            <img src="img/icon.login.png" alt="" class="auth-icon">
+	<main class="l-main tinted" role="main">
+        <section class="l-section view-header" role="">
+            <nav class="l-nav" role"navigation">
+                <img src="img/icon.hamburger-white.png" alt="" class="hamburger">
+            </nav>
+            <section class="l-section view-header-content text-center">
+                <h1 class="view-header-title">8</h1>
+                <h4 class="view-header-subtitle">unfinished tasks</h4>
+                <div class="add-task" id="add-task"></div>
+            </section>
         </section>
-        <section class="l-section auth-body">
-            <p>Welcome,</p>
-            <form action="" class="form text-center">
-                <input type="email" name="user-email" id="user-email" class="form-input" placeholder="Email address" required autofocus>
-                <input type="password" name="user-password" id="user-email" class="form-input" placeholder="Password" required>
-                <button class="btn btn-yellow" type="submit">Continue</button>
-                <p>Don't have an account? <a href="signup.html">Create one now</a></p>
-            </form>
+
+        <section class="l-section view-body" role="">
+            <section class="task-container">
+                <span class="task-container-title">Tasks <span class="hidden">Swipe to complete task</span></span>
+                <img src="img/icon.filter.png" class="task-filter-icon">
+                <div class="m-task" draggable>
+                    <div class="task-priority urgent"></div>
+                    <span class="task-title">Hello world</span>
+                    <span class="task-expiry">6:00pm</span>
+                </div>
+                <div class="m-task" draggable>
+                    <div class="task-priority urgent"></div>
+                    <span class="task-title">Hello world</span>
+                    <span class="task-expiry">6:00pm</span>
+                </div>
+                <div class="m-task" draggable>
+                    <div class="task-priority urgent"></div>
+                    <span class="task-title">Hello world</span>
+                    <span class="task-expiry">6:00pm</span>
+                </div>
+                <div class="m-task" draggable>
+                    <div class="task-priority urgent"></div>
+                    <span class="task-title">Hello world</span>
+                    <span class="task-expiry">6:00pm</span>
+                </div>
+                <div class="m-task" draggable>
+                    <div class="task-priority urgent"></div>
+                    <span class="task-title">Hello world</span>
+                    <span class="task-expiry">6:00pm</span>
+                </div>
+                <div class="m-task" draggable>
+                    <div class="task-priority urgent"></div>
+                    <span class="task-title">Hello world</span>
+                    <span class="task-expiry">6:00pm</span>
+                </div>
+                <div class="m-task" draggable>
+                    <div class="task-priority urgent"></div>
+                    <span class="task-title">Hello world</span>
+                    <span class="task-expiry">6:00pm</span>
+                </div>
+                <div class="m-task" draggable>
+                    <div class="task-priority urgent"></div>
+                    <span class="task-title">Hello world</span>
+                    <span class="task-expiry">6:00pm</span>
+                </div>
+            </section>
         </section>
-        <div class="decorator bottom">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
-            <div class="four"></div>
-            <div class="five"></div>
-        </div>
-        <section class="l-section auth-footer"></section>
     </main>
 </body>
 <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>

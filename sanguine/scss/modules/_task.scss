@@ -1,0 +1,45 @@
+/* ==|====================
+   Module/Task
+   ======================= */
+
+.m-task {
+	height: 60px;
+	width: 100%;
+	padding: 10px;
+	border-bottom: solid 1px $grey;
+	display: block;
+	clear: both;
+
+	.task-priority {
+		width: 30px;
+		height: 30px;
+		border-radius: 20px;
+		float: left;
+		display: inline-block;
+		margin-top: 5px;
+		margin-right: 10px;
+
+		&.urgent {
+			background: linear-gradient($red1, $red2)
+		}
+	}
+
+	.task-title {
+		font-family: $headerFont;
+		font-size: 1.1em;
+		color: $grey2;
+		float: left;
+		display: inline-block;
+		@include center(y);
+		letter-spacing: 0.5px;
+	}
+
+	.task-expiry {
+		font-family: $headerFont;
+		font-size: 1.1em;
+		color: $grey2;
+		float: right;
+		display: inline-block;
+		@include center(y);
+	}
+}
