@@ -1,5 +1,5 @@
 /* ==|====================
-   Layout/Main
+   Layout/Section
    ======================= */
 
 .l-section {
@@ -36,6 +36,7 @@
 				margin-top: 15px;
 				font-family: $headerFont;
 				font-size: 0.9em;
+				line-height: 1.5;
 
 				a {
 					text-decoration: none;

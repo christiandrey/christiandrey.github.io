@@ -9,10 +9,19 @@
 	box-shadow: 0 4px 5px transparentize($black, 0.95);
 	position: relative;
 	transition: transform 0.45s;
+	outline: none !important;
 
 	&.btn-yellow {
 		background-color: $yellow;
 		color: $purple;
+		font-family: $headerFont;
+		font-size: 1em;
+		z-index: +1;
+	}
+
+	&.btn-grey {
+		background-color: $grey;
+		color: $grey2;
 		font-family: $headerFont;
 		font-size: 1em;
 		z-index: +1;
@@ -31,17 +40,23 @@
 		z-index: -1;
 		background-color: transparentize($black, 0.95);
 		transition: width 0.45s;
-		outline: none;
+		outline: none !important;
 	}
 
 	&:hover {
 		transform: scale(0.98,0.98);
+		outline: none !important;
+
 		&:before {
 			width: 100%;
 		}
 	}
 
 	&:active {
-		outline: none;
+		outline: none !important;
+	}
+
+	&:focus {
+		outline: none !important;
 	}
 }

@@ -10,12 +10,13 @@
     
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/dreyanim.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<main class="l-main tinted" role="main">
-        <section class="view hidden" id="task-list-view">
+        <section class="view" id="task-list-view">
             <section class="view-header" role="">
                 <nav class="l-nav" role"navigation">
                     <img src="img/icon.hamburger-white.png" alt="" class="hamburger">
@@ -27,8 +28,8 @@
                 </section>
             </section>
             <section class="view-body" role="">
-                <section class="task-container">
-                    <span class="task-container-title">Tasks <span class="hidden">Swipe to complete task</span></span>
+                <section class="task-container clearfix">
+                    <span class="task-container-title">Tasks <span class="">Swipe a task to complete</span></span>
                     <img src="img/icon.filter.png" class="task-filter-icon">
                     <div class="m-task" draggable>
                         <div class="task-priority urgent"></div>
@@ -52,7 +53,7 @@
         <section class="view hidden" id="task-single-view">
             <section class="view-header" role="">
                 <nav class="l-nav" role"navigation">
-                    <img src="img/icon.hamburger-white.png" alt="" class="hamburger">
+                    <img src="img/icon.back-btn.png" alt="" class="back-btn">
                 </nav>
                 <section class="l-section view-header-content">
                     <h1 class="view-header-title inner">Lorem ipsum dolor sit amet adiposcing and some other shit goes into this space.</h1>
@@ -98,10 +99,32 @@
             </section>
         </section>
 
-        <section class="view" id="new-task-view">
+        <section class="view hidden" id="new-task-view">
+            <img class="view-close-btn" src="img/icon.hamburger-close-white.png">
             <section class="view-content">
-                <span>I want to </span><form style="display: block;" id="new-task-form"><textarea type="text" name="task-title" class="form-input" rows="1" autofocus></textarea></form><span> on </span><input type="date" name="task-date" class="form-input" form="new-task-form"><span> at </span><input type="time" name="task-time" class="form-input" form="new-task-form">
+                <span>I want to </span>
+                <form style="display: block;" id="new-task-form">
+                    <textarea type="text" name="task-title" class="form-input" rows="1" autofocus required></textarea>
+                </form>
+                <span> on </span><input type="date" name="task-date" class="form-input" form="new-task-form"><span> at </span><input type="time" name="task-time" class="form-input" form="new-task-form">
                 <button class="btn btn-yellow" type="submit" form="new-task-form">Save</button>
+            </section>
+        </section>
+
+        <section class="filter hidden">
+            <section class="filter-content hidden">
+                <p>Filter</p>
+                <button class="btn btn-yellow" id="alphabet-sort">Sort alphabetically</button>
+                <button class="btn btn-yellow" id="priority-sort">Sort by priority</button>
+                <button class="btn btn-yellow" id="date-sort">Sort by date created</button>
+                <button class="btn btn-grey" id="cancel-filter">Cancel</button>
+            </section>
+        </section>
+
+        <section class="side-bar hidden">
+            <section class="side-bar-content hidden">
+                <p class="user-fullname">Christian <span>Dréy</span></p>
+                <button class="btn btn-yellow" onclick="javascript:location.href='login.html'">Logout</button>
             </section>
         </section>
     </main>
@@ -109,7 +132,8 @@
 <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-3.0.0.min.js"></script>
 <script type="text/javascript" src="js/autosize.min.js"></script>
+<script type="text/javascript" src="js/dreyanim.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
-<!-- <script type="text/javascript" src="js/velocity.min.js"></script> -->
 <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
 </html>
