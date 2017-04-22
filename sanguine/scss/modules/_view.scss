@@ -1,0 +1,208 @@
+/* ==|====================
+   Module/View
+   ======================= */
+
+.view {
+	width: 100%;
+
+	.view-header {
+		background: linear-gradient($red1, $red2);
+		box-shadow: 0px 10px 40px transparentize($red2, 0.2);
+
+		.view-header-content {
+			padding: 5px 0 30px;
+			color: $white;
+			position: relative;
+
+			.view-header-title {
+				font-size: 4em;
+				margin-bottom: 10px;
+				background-color: $white;
+				color: $red1;
+				padding: 5px 30px;
+				border-radius: 100px;
+				display: inline-block;
+
+				&.inner {
+					font-size: 2em;
+					margin-bottom: 0;
+					color: $white;
+					background: none;
+					border-radius: 0;
+					line-height: 1.2;
+					letter-spacing: 0.2px;
+				}
+			}
+
+			.view-header-subtitle {
+				font-size: 1.2em
+			}
+
+			.add-task {
+				position: absolute;
+				bottom: -30px;
+				right: 20px;
+				background-color: $purple;
+				background-image: url('../img/icon.add.png');
+				background-position: center;
+				background-size: 60%;
+				background-repeat: no-repeat;
+				border-radius: 30px;
+				width: 60px;
+				height: 60px;
+				transition: transform 0.15s;
+
+				&:hover {
+					transform: scale(0.98,0.98)
+				}
+			}
+		}
+	}
+
+	.view-body {
+		padding: 50px 20px 30px;
+
+		.task-container {
+			width: 100%;
+			background-color: $white;
+			border-radius: 5px;
+			padding: 15px 20px;
+			box-shadow: 0 4px 5px transparentize($black, 0.9);
+			margin-bottom: 20px;
+			position: relative;
+
+			.task-container-title {
+				font-family: $headerFont;
+				font-size: 1.1em;
+				color: $red1;
+				float: left;
+				margin-bottom: 10px;
+				letter-spacing: 0.5px;
+
+				span {
+					font-family: $bodyFont;
+					font-size: 0.9em;
+					color: $grey;
+				}
+			}
+
+			.task-filter-icon {
+				float: right;
+				height: 20px;
+				width: auto;
+			}
+
+			.task-expiry, .task-notes {
+				clear: both;
+				font-size: 1em;
+				margin: 15px 0;
+				line-height: 1.2;
+			}
+
+			.task-subtask {
+				padding: 15px 0;
+				border-bottom: solid 1px $grey;
+
+				&:last-of-type {
+					border-bottom: none;
+				}
+			}
+
+			.action {
+				width: 100%;
+			}
+
+			.priority-pill-container {
+				margin-top: 15px;
+				clear: both;
+
+				.priority-pill {
+					padding: 5px 10px;
+					background-color: $grey;
+					color: $grey2;
+					font-family: $headerFont;
+					font-size: 1em;
+					display: inline;
+					float: left;
+					margin-right: 10px;
+					cursor: pointer;
+					margin-bottom: 10px;
+
+					&.selected {
+						&[data-task-priority='urgent'] {
+							background-color: $red1;
+							color: $white;
+						}
+
+						&[data-task-priority='medium'] {
+							background-color: $purple;
+							color: $white;
+						}
+
+						&[data-task-priority='normal'] {
+							background-color: $yellow;
+							color: $purple;
+						}
+					}
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&#new-task-view {
+		height: 100%;
+		background: linear-gradient($red1, $red2);
+		display: flex;
+		overflow: hidden;
+
+		.view-content {
+			width: 100%;
+			padding: 0 40px;
+			margin: auto;
+
+			span {
+				color: $white;
+				font-family: $headerFont;
+				font-size: 3em;
+				margin-bottom: 50px;
+				line-height: 0.5;
+			}
+
+			.form-input {
+				font-size: 3em;
+				font-family: $headerFont;
+				background: none;
+				outline: none;
+				border: none;
+				color: $yellow;
+				word-break: break-all;
+				word-wrap: break-word;
+				padding: 5px 0;
+
+				&:nth-of-type(odd) {
+					color: $purple;
+				}
+
+				&::selection {
+					background-color: $white;
+					color: $red2;
+				}
+			}
+
+			textarea {
+				color: $yellow !important;
+				width: 100%;
+				resize: none;
+			}
+
+			button.btn {
+				display: block;
+				margin: 30px auto 0;
+			}
+		}
+	}
+}
