@@ -1,0 +1,86 @@
+/* ==|====================
+   Layout/Nav
+   ======================= */
+
+.l-nav {
+	width: 100%;
+	background-color: $color2;
+	padding: 5px 30px;
+
+	@include MQ(M) {
+		padding: 5px 110px;
+	}
+
+	.brand-logo {
+		height: 60px;
+		width: auto;
+		float: left;
+		display: inline-block;
+	}
+
+	.nav-trigger {
+		height: 40px;
+		margin-top: 10px;
+		float: right;
+		display: inline-block;
+		background-color: $color4;
+
+		&>img {
+			height: 40px;
+			width: auto;
+			cursor: pointer;
+		}
+
+		&.open {
+			@include wiHe();
+			margin: 0;
+			position: fixed;
+			float: none;
+			top: 0;
+			left: 0;
+			z-index: +1;
+
+			&>img {
+				position: absolute;
+				top: 15px;
+				right: 30px;
+
+				@include MQ(M) {
+					right: 110px;
+				}
+			}
+		}
+	}
+}
+
+.nav-drawer {
+	z-index: +2;
+	@include center(xy);
+	position: fixed;
+	width: 100%;
+	transition: transform .45s;
+
+	.nav-item {
+		@include rFS(3);
+		display: table;
+		text-decoration: none;
+		color: $color1;
+		text-align: center;
+		font-family: $headerFont;
+		margin: 0 auto 5%;
+		border-bottom: solid 2px $color4;
+		transition: border 0.45s;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		&.active {
+			color: $color5;
+		}
+
+		&:hover {
+			border-bottom: solid 2px $color1;
+		}
+	}
+}

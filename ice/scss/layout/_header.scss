@@ -1,0 +1,54 @@
+/* ==|====================
+   Layout/Header
+   ======================= */
+
+.l-header {
+	@include wiHe(100%, calc(100vh - 70px));
+	background-image: url('../img/image.bg.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 0 30px;
+
+	@include MQ(M) {
+		padding: 5px 110px;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		@include wiHe();
+		top: 0;
+		left: 0;
+		background-color: transparentize($color1, 0.1);
+		z-index: 0;
+	}
+
+	.header-content {
+		@include center(y);
+
+		.header-text {
+			@include rFS(4);
+			color: $color5;
+			font-family: $headerFont;
+
+			@include MQ(M) {
+				width: 65%;
+				@include rFS(5);
+			}
+
+			span {
+				color: $color4;
+			}
+		}
+
+		.call-to-action {
+			margin-top: 12%;
+
+			@include MQ(M) {
+				margin-top: 8%;
+			}
+		}
+	}	
+}

@@ -1,0 +1,15 @@
+/* ==|====================
+   Layout/Footer
+   ======================= */
+
+.l-footer {
+	width: 100%;
+	background-color: $color1;
+	padding: 20px 30px;
+
+	p {
+		text-align: right;
+		@include rFS(1);
+		color: $color5;
+	}
+}

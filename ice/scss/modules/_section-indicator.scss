@@ -1,0 +1,50 @@
+/* ==|====================
+   Module/Section Indicator
+   ======================= */
+
+.section-indicator {
+	@include wiHe(10px, 100vh);
+	position: absolute;
+	top: 0;
+	left: 10px;
+	z-index: +10;
+
+	@include MQ(M) {
+		left: 50px;
+	}
+
+	.indicator {
+		@include center(x);
+		transition: border .45s, background-color .45s;
+
+		&.top {
+			@include wiHe(1px, 20%);
+			background-color: $color5;
+		}
+
+		&.middle {
+			@include wiHe(10px, 10px);
+			border: 1px solid $color5;
+			border-radius: 9px;
+
+			&.filled {
+				background-color: $color4;
+				border: none;
+			}
+		}
+
+		&.bottom {
+			@include wiHe(1px, calc(100% - 20% - 9px));
+			background-color: $color5;
+
+			&.hacked {
+				@include wiHe(1px, calc(100% - 20% - 79px));
+			}
+		}
+
+		&.is-not-visible {
+			opacity: 0;
+		}
+	}
+
+}

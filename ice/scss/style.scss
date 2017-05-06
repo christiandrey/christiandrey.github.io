@@ -1,0 +1,20 @@
+// compileCompressed: ../css/style.css
+/* Site settings */
+@import "site-settings";
+
+/*Mixins*/
+@import "mixins";
+
+/* Base */
+@import "base";
+
+/* Layouts */
+@import "layout/nav";
+@import "layout/main";
+@import "layout/header";
+@import "layout/section";
+@import "layout/footer";
+
+/* Modules */
+@import "modules/buttons";
+@import "modules/section-indicator";
