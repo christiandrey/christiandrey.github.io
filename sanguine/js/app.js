@@ -74,6 +74,7 @@ $(document).ready(function(e) {
 	//Add new task form submit
 	$('#new-task-form').submit(function(e) {
 		e.preventDefault();
+<<<<<<< HEAD
 		var _ = $(this);
 		var API_URL = "http://127.0.0.1:2311/api/v1/";
 		var token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cLzEyNy4wLjAuMToyMzExXC9hcGlcL3YxXC91c2VyXC9zaWduaW4iLCJpYXQiOjE0OTMxMjYxNDQsImV4cCI6MTQ5MzIxMjU0NCwibmJmIjoxNDkzMTI2MTQ0LCJqdGkiOiJyYzA4d1NLYW5PTmxDZGg1In0.2MhjaqPdZb8YGdyuABogWpHKjyMyAqudbJjJrc6-qiU';
@@ -106,6 +107,18 @@ $(document).ready(function(e) {
 		// 	animationTime: 450,
 		// 	animationDelay: 100
 		// })
+=======
+		$('.view#new-task-view').dreyanim({
+			animationType: "fallOut",
+			animationTime: 450
+		})
+
+		$('.view#task-list-view').dreyanim({
+			animationType: "fallIn",
+			animationTime: 450,
+			animationDelay: 100
+		})
+>>>>>>> c605f90cbcf5c95d81b658eba2bcc339b4f560e7
 	})
 	//End of add new task form submit
 
@@ -146,6 +159,7 @@ $(document).ready(function(e) {
 	})
 	// End of task swipe action
 
+<<<<<<< HEAD
 	// Subtask swipe action
 	$('.view#task-single-view .task-subtask').on("swipe", function(e){
 		$(this).dreyanim({
@@ -171,11 +185,19 @@ $(document).ready(function(e) {
 	// })
 
 	$('.view#task-list-view .m-task').on('click', function(e) {
+=======
+	//Open task Single view page
+	$('.view#task-list-view .m-task').click(function(e) {
+>>>>>>> c605f90cbcf5c95d81b658eba2bcc339b4f560e7
 		e.stopImmediatePropagation();
 		$('.view#task-list-view').dreyanim({
 			animationType: "slideOutToRight",
 			animationTime: 450
+<<<<<<< HEAD
 		});
+=======
+		})
+>>>>>>> c605f90cbcf5c95d81b658eba2bcc339b4f560e7
 
 		$('.view#task-single-view').dreyanim({
 			animationType: "slideInFromLeft",
