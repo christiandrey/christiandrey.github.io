@@ -18,69 +18,292 @@
 		display: inline-block;
 	}
 
-	.nav-trigger {
-		height: 40px;
-		margin-top: 10px;
-		float: right;
-		display: inline-block;
-		background-color: $color4;
+	.navContainer {
+	  width: 34px;
+	  height: 34px;
+	  border-radius: 17px;
+	  background: $color4;
+	  position: fixed;
+	  top: 18px;
+	  right: calc(8% - 17px);
+	  z-index: +1;
+	  cursor: pointer;
 
-		&>img {
-			height: 40px;
-			width: auto;
-			cursor: pointer;
-		}
+	  & .ham {
+	    width: 14px;
+	    height: 3px;
+	    margin: 15.5px 10px 15.5px 7px;
+	    border-radius: 1.5px;
+	    background-color: $color5;
+	    transition: all 0.25s;
 
-		&.open {
-			@include wiHe();
-			margin: 0;
-			position: fixed;
-			float: none;
-			top: 0;
-			left: 0;
-			z-index: +1;
+	    &:before {
+	      content: "";
+	      width: 20px;
+	      height: 3px;
+	      border-radius: 1.5px;
+	      background-color: $color5;
+	      display: block;
+	      position: relative;
+	      top: -6px;
+	      left: 0;
+	      transition: all 0.25s;
+	    }
 
-			&>img {
-				position: absolute;
-				top: 15px;
-				right: 30px;
+	    &:after {
+	      content: "";
+	      width: 20px;
+	      height: 3px;
+	      border-radius: 1.5px;
+	      background-color: $color5;
+	      display: block;
+	      position: relative;
+	      top: 3px;
+	      left: 0;
+	      transition: all 0.25s;
+	    }
+	  }
 
-				@include MQ(M) {
-					right: 110px;
-				}
-			}
-		}
+	  & .ham.open {
+	    width: 0;
+
+	    &:before {
+	      @include prefix((
+	        transform: rotate(45deg),
+	        transform-origin: left
+	      ))
+	      top: -7px;
+	      left: 3px;
+	    }
+
+	    &:after {
+	      @include prefix((
+	        transform: rotate(-45deg),
+	        transform-origin: left
+	      ))
+	      top: 4px;
+	      left: 3px;
+	    }
+	  }
+
+	  .navElements {
+	    width: 110px;
+	    height: 110px;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    transition: all 0.25s;
+	    opacity: 0;
+	    @include prefix((
+	      transform: scale(0,0),
+	      transform-origin: top right
+	    ))
+
+	    &.open {
+	      @include prefix((
+	        transform: scale(1,1),
+	        animation-name: navOpacity,
+	        animation-duration: 0.15s,
+	        animation-fill-mode: forwards,
+	        animation-delay: 0.1s
+	      ))
+	    }
+
+	    &.close {
+	      @include prefix((
+	        transform: scale(0,0),
+	        animation-name: navOpacityClose,
+	        animation-duration: 0.05s,
+	        animation-fill-mode: forwards
+	      ))
+	    }
+
+	    div {
+	      width: 34px;
+	      height: 34px;
+	      border-radius: 17px;
+	      background-color: $color4;
+	      position: absolute;
+	      background-position: center;
+	      background-size: 50%;
+	      background-repeat: no-repeat;
+	      transition: transform 0.25s;
+
+	      &.home {
+	        top: 0;
+	        right: 0;
+	        background-image: url('../img/nav.homeIcon.png');
+	        transition: all 0.25s ease;
+	        @include prefix((
+	          transform: scale(0,0)
+	        ))
+
+	        &.open {
+	          top: 0;
+	          left: 0;
+	          @include prefix((
+	            transform: scale(1,1)
+	          ))
+	        }
+
+	        &:hover {
+	          @include prefix((transform: scale(0.9,0.9)))
+	        }
+	      }
+
+	      &.whoweare {
+	        top: 0;
+	        right: 0;
+	        background-image: url('../img/nav.whoweareIcon.png');
+	        transition: all 0.35s ease;
+	        @include prefix((
+	          transform: scale(0,0)
+	        ))
+
+	        &.open {
+	          top: 38px;
+	          left: 10.18px;
+	          @include prefix((
+	            transform: scale(1,1)
+	          ))
+	        }
+
+	        &:hover {
+	          @include prefix((transform: scale(0.9,0.9)))
+	        }
+	      }
+
+	      &.whatwedo {
+	        top: 0;
+	        right: 0;
+	        background-image: url('../img/nav.whatwedoIcon.png');
+	        transition: all 0.45s ease;
+	        @include prefix((
+	          transform: scale(0,0)
+	        ))
+
+	        &.open {
+	          top: 65.82px;
+	          right: 38px;
+	          @include prefix((
+	            transform: scale(1,1)
+	          ))
+	        }
+
+	        &:hover {
+	          @include prefix((transform: scale(0.9,0.9)))
+	        }
+	      }
+
+	      &.contact {
+	        top: 0;
+	        right: 0;
+	        background-image: url('../img/nav.contactIcon.png');
+	        transition: all 0.55s ease;
+	        @include prefix((
+	          transform: scale(0,0)
+	        ))
+
+	        &.open {
+	          top: 76px;
+	          right: 0;
+	          @include prefix((
+	            transform: scale(1,1)
+	          ))
+	        }
+
+	        &:hover {
+	          @include prefix((transform: scale(0.9,0.9)))
+	        }
+	      }
+	    }
+
+	    @keyframes navOpacity {
+	      from {
+	        opacity: 0
+	      }
+
+	      to {
+	        opacity: 1
+	      }
+	    }
+
+	    @keyframes navOpacityClose {
+	      from {
+	        opacity: 1
+	      }
+
+	      to {
+	        opacity: 0
+	      }
+	    }
+	  }
 	}
+
+
+	// .nav-trigger {
+	// 	height: 40px;
+	// 	margin-top: 10px;
+	// 	float: right;
+	// 	display: inline-block;
+	// 	background-color: $color4;
+
+	// 	&>img {
+	// 		height: 40px;
+	// 		width: auto;
+	// 		cursor: pointer;
+	// 	}
+
+	// 	&.open {
+	// 		@include wiHe();
+	// 		margin: 0;
+	// 		position: fixed;
+	// 		float: none;
+	// 		top: 0;
+	// 		left: 0;
+	// 		z-index: +1;
+
+	// 		&>img {
+	// 			position: absolute;
+	// 			top: 15px;
+	// 			right: 30px;
+
+	// 			@include MQ(M) {
+	// 				right: 110px;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
-.nav-drawer {
-	z-index: +2;
-	@include center(xy);
-	position: fixed;
-	width: 100%;
-	transition: transform .45s;
+// .nav-drawer {
+// 	z-index: +2;
+// 	@include center(xy);
+// 	position: fixed;
+// 	width: 100%;
+// 	transition: transform .45s;
 
-	.nav-item {
-		@include rFS(3);
-		display: table;
-		text-decoration: none;
-		color: $color1;
-		text-align: center;
-		font-family: $headerFont;
-		margin: 0 auto 5%;
-		border-bottom: solid 2px $color4;
-		transition: border 0.45s;
+// 	.nav-item {
+// 		@include rFS(3);
+// 		display: table;
+// 		text-decoration: none;
+// 		color: $color1;
+// 		text-align: center;
+// 		font-family: $headerFont;
+// 		margin: 0 auto 5%;
+// 		border-bottom: solid 5px $color4;
+// 		transition: border 0.45s;
 
-		&:last-of-type {
-			margin-bottom: 0;
-		}
+// 		&:last-of-type {
+// 			margin-bottom: 0;
+// 		}
 
-		&.active {
-			color: $color5;
-		}
+// 		&.active {
+// 			color: $color5;
+// 		}
 
-		&:hover {
-			border-bottom: solid 2px $color1;
-		}
-	}
-}
+// 		&:hover {
+// 			border-bottom: solid 5px $color1;
+// 		}
+// 	}
+// }
