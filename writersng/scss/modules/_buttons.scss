@@ -1,0 +1,43 @@
+/* ==|====================
+   Module/Button
+   ======================= */
+
+.btn {
+	@include wh(175px, 40px);
+	font-family: $headerFont;
+	color: $white;
+	box-shadow: 0 5px 10px transparentize($black, 0.85);
+	outline: none;
+	border-radius: 0;
+	transition: transform 0.45s, box-shadow 0.45s, background 0.45s;
+
+	&:hover {
+		color: $white;
+		transform: translateY(-10px);
+		box-shadow: 0 15px 20px transparentize($black, 0.9);
+	}
+
+	&.btn-aqua {
+		background-color: $color1;
+	}
+
+	&.btn-black {
+		background-color: $black;
+	}
+
+	&.btn-orange {
+		background: linear-gradient(to right, $color2, $color3);
+	}
+
+	&.btn-white {
+		background-color: $white;
+		box-shadow: none;
+		color: $black;
+		border: solid 1px $grey2;
+		@include wh(175px, 40px);
+
+		&:hover {
+			box-shadow: 0 5px 10px transparentize($black, 0.85);
+		}
+	}
+}

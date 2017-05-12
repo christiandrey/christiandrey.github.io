@@ -1,0 +1,111 @@
+/* ==|====================
+   Layout/Header
+   ======================= */
+
+.l-header {
+	@include wh(100%, 100vh);
+	background-image: url('../img/image.bg.jpg');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+
+	.header-left-bg {
+		display: block;
+		position: absolute;
+		top: 8px;
+		left: -110px;
+		height: 100%;
+
+		img {
+			display: block;
+			@include wh(auto, 120%);
+		};
+
+		@include MQ(M) {
+			top: 0px;
+			left: -70px;
+			height: 100%;
+		};
+	}
+
+	.header-right-bg {
+		display: block;
+		position: absolute;
+		top: 100px;
+		right: -130px;
+		height: 100%;
+
+		img {
+			display: block;
+			@include wh(auto, 120%);
+		};
+
+		@include MQ(M) {
+			top: 70px;
+			right: -50px;
+			height: 100%;
+		};
+	}
+
+	.header-content {
+		@include center(y);
+		@include wh(80%, auto);
+		margin: 0 auto;
+
+		.brand-logo {
+			@include wh(auto, 100px);
+			display: block;
+			margin: 0 auto;
+		}
+
+		.header-title {
+			@include rfs(2.2);
+			font-family: $headlineFont;
+			color: $white;
+			text-align: center;
+			margin: 10px auto 30px;
+			line-height: 1;
+
+			span {
+				color: $dark;
+			}
+
+			@include MQ(M) {
+				@include rfs(5.8);
+				margin: 10px auto 40px;
+			};
+		}
+
+		.header-subtitle {
+			@include rfs(1);
+			@include wh(83%, auto);
+			color: $white;
+			text-align: center;
+			margin: 0 auto 30px;
+
+			@include MQ(M) {
+				@include wh(62%, auto);
+				margin: 0 auto 40px;
+			};
+
+			&+button {
+				margin: 0 auto;
+				display: block;
+			}
+		}
+	}
+
+	.scroll-icon {
+		@include wh(zuto, 40px);
+		@include center(x);
+		display: block;
+		position: absolute !important;
+		bottom: 10px;
+		
+		@include MQ(M) {
+			bottom: 30px;
+		};
+	}
+
+}
