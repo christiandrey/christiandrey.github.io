@@ -205,6 +205,10 @@
 					.col-title {
 						letter-spacing: 0;
 						color: $black;
+
+						span {
+							color: $color2;
+						}
 					}
 
 					.col-body {
