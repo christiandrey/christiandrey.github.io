@@ -63,7 +63,7 @@ $(document).ready(function(e) {
 		$selector.find('.alert-content .alert-title').html(title);
 		$selector.find('.alert-content .alert-body').html(body);
 		$selector.removeClass("hidden");
-		$(body).css('overflow', 'hidden');
+		$('body').css('overflow', 'hidden');
 		$selector.find('.alert-content').dreyanim({
 			animationType: "fallInAlternate",
 			animationTime: 450,
@@ -75,7 +75,7 @@ $(document).ready(function(e) {
 			})
 			setTimeout(function() {
 				$selector.addClass("hidden");
-				$(body).css('overflow', 'auto');
+				$('body').css('overflow', 'auto');
 				$selector.find('.alert-content').addClass("hidden");
 			}, 450)			
 		})
@@ -83,5 +83,8 @@ $(document).ready(function(e) {
 
 	//Call the alert with wngalert($status as string, $title as string, $body as string)
 
+	$('#index-page .l-nav').click(function(e) {
+		wngalert("failure", "Header", "Body conetnt lorem ipsum");
+	})
 	//--End of Alert Script
 })
