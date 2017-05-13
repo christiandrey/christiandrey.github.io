@@ -1,0 +1,64 @@
+/* ==|====================
+   Layout/Footer
+   ======================= */
+
+.l-footer {
+	@include wh(100%, auto);
+	background-color: $dark;
+	padding: 0 15px;
+
+	@include MQ(M) {
+		padding: 0 120px;
+	};
+
+	.footer-content {
+		padding: 30px 0;
+
+		.footer-brand {
+			@include wh(auto, 50px);
+			@include center(y);
+			display: block;
+			text-align: center;
+			margin: 0 auto 30px;
+
+			@include MQ(M) {
+				margin: 0;
+			};
+		}
+
+		.footer-link {
+			@include rfs(0.9);
+			color: $white;
+			display: table;
+			line-height: 1;
+			margin: 0 auto 10px;
+			text-decoration: none;
+			text-align: center;
+
+			&.active {
+				font-weight: bold;
+				border-bottom: solid 1px $white
+			}
+
+			@include MQ(M) {
+				text-align: left;
+				margin: 0 0 10px;
+			};
+		}
+
+		.footer-copyright {
+			@include rfs(0.9);
+			@include center(y);
+			color: $white;
+			text-align: center;
+			margin: 30px 0 0;
+			line-height: 1.2;
+
+			@include MQ(M) {
+				text-align: left;
+				margin: 0 0 0 30px
+			};
+		}
+
+	}
+}
