@@ -10,6 +10,10 @@
 	position: relative;
 	overflow: hidden;
 
+	#get-started-page & {
+		background-image: url('../img/image.bg-desat.jpg');
+	}
+
 	.header-left-bg {
 		display: block;
 		position: absolute;
@@ -59,6 +63,7 @@
 			@include wh(auto, 100px);
 			display: block;
 			margin: 0 auto;
+			cursor: pointer;
 		}
 
 		.header-title {
@@ -78,6 +83,16 @@
 				@include rfs(5.8);
 				margin: 10px auto 40px;
 			};
+
+			#get-started-page & {
+				@include rfs(1.8);
+				margin: 10px auto 10px;
+
+				@include MQ(M) {
+					@include rfs(3);
+				};
+			}
+
 		}
 
 		.header-subtitle {
@@ -96,6 +111,36 @@
 			&+button {
 				margin: 0 auto;
 				display: block;
+			}
+		}
+
+		#get-started-page & {
+			.get-started-form {
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+
+				.i-email {
+					@include wh(80%, 40px);
+					margin: 0 auto 10px;
+					border: none;
+					outline: none;
+					padding: 0 15px;
+					box-shadow: 0 5px 10px transparentize($black, 0.95);
+					transform: translateY(2px);
+					transition: box-shadow .45s, transform 0.45s;
+
+					@include MQ(M) {
+						@include wh(50%, 40px);
+						max-width: 400px;
+						margin: 0 auto;
+					};
+
+					&:focus {
+						box-shadow: 0 5px 15px transparentize($black, 0.75);
+						transform: translateY(-5px);
+					}
+				}
 			}
 		}
 	}
