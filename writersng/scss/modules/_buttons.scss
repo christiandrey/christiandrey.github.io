@@ -8,6 +8,7 @@
 	color: $white;
 	box-shadow: 0 5px 10px transparentize($black, 0.85);
 	outline: none;
+	border: none;
 	border-radius: 0;
 	transition: transform 0.45s, box-shadow 0.45s, background 0.45s;
 
@@ -17,12 +18,21 @@
 		box-shadow: 0 15px 20px transparentize($black, 0.9);
 	}
 
+	&:focus {
+		outline: none;
+	}
+
 	&.btn-aqua {
 		background-color: $color1;
 	}
 
 	&.btn-black {
 		background-color: $black;
+		box-shadow: none;
+
+		&:hover {
+			box-shadow: 0 5px 10px transparentize($black, 0.85);
+		}		
 	}
 
 	&.btn-orange {
@@ -35,6 +45,9 @@
 		color: $black;
 		border: solid 1px $grey2;
 		@include wh(175px, 40px);
+		@include MQ(M) {
+			@include wh(100%, 40px);
+		};
 
 		&:hover {
 			box-shadow: 0 5px 10px transparentize($black, 0.85);

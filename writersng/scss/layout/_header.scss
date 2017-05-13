@@ -51,6 +51,8 @@
 	.header-content {
 		@include center(y);
 		@include wh(80%, auto);
+		position: relative;
+		z-index: 2;
 		margin: 0 auto;
 
 		.brand-logo {
@@ -66,6 +68,7 @@
 			text-align: center;
 			margin: 10px auto 30px;
 			line-height: 1;
+			letter-spacing: 0;
 
 			span {
 				color: $dark;
@@ -83,6 +86,7 @@
 			color: $white;
 			text-align: center;
 			margin: 0 auto 30px;
+			letter-spacing: 0.2px;
 
 			@include MQ(M) {
 				@include wh(62%, auto);
@@ -97,7 +101,7 @@
 	}
 
 	.scroll-icon {
-		@include wh(zuto, 40px);
+		@include wh(auto, auto);
 		@include center(x);
 		display: block;
 		position: absolute !important;
@@ -106,6 +110,10 @@
 		@include MQ(M) {
 			bottom: 30px;
 		};
+
+		img {
+			@include wh(25px, auto);
+		}
 	}
 
 }
