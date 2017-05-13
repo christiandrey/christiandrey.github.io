@@ -84,11 +84,4 @@ $(document).ready(function(e) {
 	//Call the alert with wngalert($status as string, $title as string, $body as string)
 
 	//--End of Alert Script
-<<<<<<< HEAD
-=======
-
-	$('#index-page .l-nav').click(function(e) {
-		wngalert("success", "Heading", "Body")		
-	})
->>>>>>> b550ba8d1a14fbd54abb4514cd79d5f87b4930ad
 })
