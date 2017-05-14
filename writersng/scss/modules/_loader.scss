@@ -1,0 +1,42 @@
+/* ==|====================
+   Module/Loader
+   ======================= */
+
+.m-loader {
+	@include wh();
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+
+	.loader-overlay {
+		@include wh();
+		background-color: transparentize($black, 0.4);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+
+	.loader-content {
+		@include wh(180px, 180px);
+		@include center(y);
+		background-color: $white;
+		border-radius: 90px;
+		padding: 15px;
+		box-shadow: 0 5px 10px transparentize($black, 0.85);
+		margin: 0 auto;
+		position: relative;
+		z-index: 4;
+		vertical-align: middle;
+
+		.loader-icon {
+			@include wh(150px, 150px);
+			margin: 0 auto 20px;
+			background-image: url('../img/icon.progress-animated.gif');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+}

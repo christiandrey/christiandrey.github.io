@@ -50,41 +50,9 @@ $(document).ready(function(e) {
 	//--End of slider script
 
 	//--Alert Script
-	function wngalert(status, title, body) {
-		$selector = $('#alert');
-		$classList = "success failure";
-		if (status == "success") {
-			$selector.find('.alert-content .alert-icon').removeClass($classList).addClass("success");
-		}
-		if (status == "failure") {
-			$selector.find('.alert-content .alert-icon').removeClass($classList).addClass("failure")
-		}
-
-		$selector.find('.alert-content .alert-title').html(title);
-		$selector.find('.alert-content .alert-body').html(body);
-		$selector.removeClass("hidden");
-		$('body').css('overflow', 'hidden');
-		$selector.find('.alert-content').dreyanim({
-			animationType: "fallInAlternate",
-			animationTime: 450,
-		})
-		$selector.find('.alert-content .alert-footer button').click(function(e) {
-			$selector.find('.alert-content').dreyanim({
-				animationType: "fallOutAlternate",
-				animationTime: 450,
-			})
-			setTimeout(function() {
-				$selector.addClass("hidden");
-				$('body').css('overflow', 'auto');
-				$selector.find('.alert-content').addClass("hidden");
-			}, 450)			
-		})
-	}
-
 	//Call the alert with wngalert($status as string, $title as string, $body as string)
-
 	$('#index-page .l-nav').click(function(e) {
-		wngalert("failure", "Header", "Body conetnt lorem ipsum");
+		wngalert("success", "Header", "Body conetnt lorem ipsum");
 	})
 	//--End of Alert Script
 })

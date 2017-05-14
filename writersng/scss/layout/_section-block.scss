@@ -289,4 +289,50 @@
 			}
 		}
 	}
+
+	#what-we-do-page & {
+		&.what-we-do-inner {
+			position: relative;
+			overflow: hidden;
+
+			.section-content {
+				padding: 30px 0;
+
+				@include MQ(M) {
+					padding: 105px 0;
+				};
+
+				.section-icon {
+					@include wh(60px, auto);
+					display: block;
+					text-align: center;
+					margin: 0px auto 30px;
+
+					@include MQ(M) {
+						@include wh(300px, auto);
+					};
+				}
+
+				.col-content {
+					text-align: center;
+
+					.col-title {
+						letter-spacing: 0;
+						color: $black;
+
+						span {
+							color: $color2;
+						}
+					}
+
+					.col-body {
+						margin: 30px auto 50px;
+						letter-spacing: 0.2px;
+						line-height: 2;
+						color: $black;
+					}
+				}
+			}
+		}
+	}
 }

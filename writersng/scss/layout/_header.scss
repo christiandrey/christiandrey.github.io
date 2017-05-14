@@ -14,6 +14,15 @@
 		background-image: url('../img/image.bg-desat.jpg');
 	}
 
+	#what-we-do-page & {
+		@include wh(100%, auto);
+		padding: 30px 0;
+
+			@include MQ(M) {
+				padding: 105px 0;
+			};
+	}
+
 	.header-left-bg {
 		display: block;
 		position: absolute;
@@ -93,6 +102,9 @@
 				};
 			}
 
+			#what-we-do-page & {
+				margin: 10px auto 20px;
+			}
 		}
 
 		.header-subtitle {
@@ -111,6 +123,10 @@
 			&+button {
 				margin: 0 auto;
 				display: block;
+			}
+
+			#what-we-do-page & {
+				margin: 0 auto;
 			}
 		}
 
@@ -142,6 +158,13 @@
 					}
 				}
 			}
+		}
+
+		#what-we-do-page & {
+			top: auto;
+		    bottom: auto;
+		    @include transform(translateY(0));
+		    // margin: 0;
 		}
 	}
 
