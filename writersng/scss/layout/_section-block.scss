@@ -335,4 +335,103 @@
 			}
 		}
 	}
+
+	#login-page & {
+		padding: 0;
+
+		@include MQ(M) {
+			padding: 0;
+		};
+
+		.section-content {
+
+			.left-pane {
+				height: 100vh;
+				background-image: url('../img/image.bg.jpg');
+				background-position: center;
+				background-size: cover;
+				padding: 0 40px;
+
+				@include MQ(L) {
+					padding: 0 120px;
+				}
+
+				.col-content {
+					@include center(y);
+					text-align: left;
+
+					.brand-logo {
+						@include wh(auto, 100px);
+						display: block;
+						margin: 0;
+						cursor: pointer;
+					}
+
+					.col-title {
+						@include rfs(4);
+						font-family: $headlineFont;
+						color: $white;
+						text-align: left;
+						margin: 20px auto 30px;
+						line-height: 1;
+						letter-spacing: 0;
+
+						span {
+							color: $dark;
+						}
+					}
+
+					.col-subtitle {
+						@include rfs(1);
+						@include wh(100%, auto);
+						color: $white;
+						text-align: left;
+						margin: 0 auto 40px;
+						letter-spacing: 0.2px;
+
+						&+button {
+							margin: 0;
+							display: block;
+						}
+					}
+				}
+			}
+
+			.right-pane {
+				height: 100vh;
+
+				.col-content {
+					@include center(y);
+					text-align: center;
+
+					.col-icon {
+						@include wh(80px, auto);
+						display: block;
+						text-align: center;
+						margin: 0px auto 30px;
+
+						@include MQ(M) {
+							@include wh(300px, auto);
+						};
+					}
+
+					.col-title {
+						letter-spacing: 0;
+						color: $black;
+
+						span {
+							color: $color2;
+						}
+					}
+
+					.col-subtitle {
+						letter-spacing: 0.2px;
+						line-height: 2;
+						color: $black;
+						margin: 0 0 30px;
+					}
+				}
+			}
+		}
+	}
 }

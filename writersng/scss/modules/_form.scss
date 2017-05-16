@@ -1,0 +1,29 @@
+/* ==|====================
+   Module/Form
+   ======================= */
+
+.m-form {
+	input.form-input {
+		@include wh(80%, 40px);
+		display: block;
+		margin: 0 auto 30px;
+		border: none;
+		padding: 5px 15px;
+		outline: none;
+		border-bottom: solid 2px $grey2;
+		transition: border 0.45s;
+
+		&:last-of-type {
+			margin: 0 auto;
+		}
+
+		&:focus {
+			border-bottom: solid 2px $color1;
+			outline: none;
+		}
+	}
+
+	button[type='submit'] {
+		margin: 30px auto 0;
+	}
+}
