@@ -159,9 +159,10 @@
   font-size: 14px * $multiplier;
 
   @include MQ($breaking-point) {
-    font-size: 16px * $multiplier; // fallback
-    font-size: 1vw * $multiplier * 1.05; // fallback
-    font-size: calc(1px + 1vw * $multiplier);
+    // font-size: 16px * $multiplier; // fallback
+    // font-size: 1vw * $multiplier * 1.05; // fallback
+    // font-size: calc(1px + 1vw * $multiplier);
+    font-size: 14px * $multiplier
   }
 }
 
