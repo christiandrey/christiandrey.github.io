@@ -18,4 +18,66 @@
 		cursor: pointer;
 	}
 
+	#admin-page & {
+		@include wh(100%, 80px);
+		position: fixed;
+		top: 0;
+		left: 0;
+		padding: 0 80px;
+		background-color: $color1;
+
+		.nav-link {
+			@include center(y);
+			letter-spacing: 0.2px;
+			text-decoration: none;
+			color: $white;
+			display: block;
+			left: 80px;
+			position: absolute;
+		}
+
+		.brand-logo {
+			@include wh(auto,40px);
+			@include center(xy);
+			position: absolute;
+		}
+
+		.user-details {
+			@include center(y);
+			position: absolute;
+			display: inline;
+			right: 80px;
+
+			.user-avatar {
+				@include wh(auto, 40px);
+				border-radius: 20px;
+				display: block;
+				float: left;
+			}
+
+			.user-name {
+				margin-left: 5px;
+				margin-top: 14px;
+				letter-spacing: 0.2px;
+				display: block;
+				float: left;
+				color: $white;
+			}
+
+			.user-action {
+				background: none;
+				border: none;
+				padding: 0;
+				margin-left: 2px;
+				margin-top: 7px;
+				display: block;
+				float: left;
+
+				span {
+					color: $color3
+				}
+			}
+		}
+	}
+
 }

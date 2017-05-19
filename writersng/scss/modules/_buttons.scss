@@ -9,7 +9,7 @@
 	box-shadow: 0 5px 10px transparentize($black, 0.85);
 	outline: none;
 	border: none;
-	border-radius: 0;
+	border-radius: 30px;
 	transition: transform 0.45s, box-shadow 0.45s, background 0.45s;
 
 	&:hover {

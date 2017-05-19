@@ -55,4 +55,29 @@ $(document).ready(function(e) {
 		wngalert("success", "Header", "Body conetnt lorem ipsum");
 	})
 	//--End of Alert Script
+
+	//Set progress bar Script
+	var _ = $('#admin-page .m-progress .progress-level');
+	// for (var i = 0; i < _.length; i++) {
+	// 	console.log(_[i])
+	// }
+	$.each(_, function(i,v) {
+		_ = $(v);
+		var rand = (Math.random() * 0.5).toFixed(3);
+		var __ = _.attr("data-progress-level");
+		_.css("transition", "width " + rand + "s")
+		if(__ == 0) {
+			_.css('background-color',"#777777");
+		} else if (__ > 0 && __ <= 30) {
+			_.css('background-color',"#f4c737");
+		} else if (__ > 30 && __ <= 60) {
+			_.css('background-color',"#f2a42f");
+		} else if (__ > 60 && __ <= 99) {
+			_.css('background-color',"#32a2bd");
+		} else if (__ == 100) {
+			_.css('background-color',"#128a4b");
+		}
+		_.css('width',_.attr("data-progress-level") + "%");
+	})
+	//End of set progress bar Script
 })

@@ -434,4 +434,132 @@
 			}
 		}
 	}
+
+	#admin-page & {
+		&.admin-body {
+			@include wh(100%, calc(100vh - 80px));
+			background-color: $light2;
+			position: absolute;
+			top: 80px;
+			left: 0;
+			padding: 50px 80px;
+
+			.left-column {
+				@include wh(80px, auto);
+				float: left;
+				background-color: $white;
+				border-radius: 5px;
+				box-shadow: 0 5px 10px transparentize($black, 0.90);
+
+				@include MQ(M) {
+					@include wh(200px);
+				}
+
+				@include MQ(L) {
+					@include wh(250px);
+				}
+
+				.col-header {
+					font-family: $headerFont;
+					color: $color1;
+					text-align: center;
+					margin: 50px auto 20px;
+					letter-spacing: 0;
+
+					@include MQ(M) {
+						text-align: left;
+						margin: 50px 0 20px 20px;
+					}
+				}
+
+				.tool-item {
+					@include wh(100%, auto);
+					background-color: $white;
+					cursor: pointer;
+					padding: 20px 0;
+					position: relative;
+					transition: background-color .15s;
+
+					@include MQ(M) {
+						@include wh(100%, 40px);
+						padding: 0;
+					}
+
+					.tool-indicator {
+						@include wh(2px, 100%);
+						position: absolute;
+						top: 0;
+						right: 0;
+						transition: background-color .15s;
+
+						@include MQ(M) {
+							@include wh(4px, 100%);
+							position: relative;
+							display: block;
+							float: left;
+							background-color: $light2;
+						}
+					}
+
+					.tool-icon {
+						@include wh(auto, 20px);
+						display: block;
+						margin: 0 auto;
+
+						@include MQ(M) {
+							@include wh(auto, 20px);
+							float: left;
+							margin: 10px 0 10px 16px;
+						}
+					}
+
+					.tool-name {
+						color: $grey;
+						font-size: 12px;
+						display: block;
+						text-align: center;
+						margin: 13px auto 0;
+						letter-spacing: 0.2px;
+
+						@include MQ(M) {
+							font-size: 14px;
+							margin: 13px 20px;
+							float: left;
+							text-align: left;
+						}
+					}
+
+					&.is-active {
+						background-color: $light2;
+
+						.tool-indicator {
+							background-color: $color1;
+						}
+					}
+
+					&:hover {
+						background-color: $light2;
+
+						.tool-indicator {
+							background-color: $color3;
+						}
+					}
+				}
+			}
+
+			.right-column {
+				@include wh(calc(100% - 130px), calc(100vh - 120px));
+				float: right;
+				overflow: auto;
+
+				@include MQ(M) {
+					@include wh(calc(100% - 250px));
+				}
+
+				@include MQ(L) {
+					@include wh(calc(100% - 300px));
+				}
+			}
+		}
+	}
 }

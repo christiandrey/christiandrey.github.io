@@ -6,7 +6,8 @@ body {
 	font-family: $bodyFont;
     @include font-smoothing;
     letter-spacing: 0.7px;
-    @include rfs(1);
+    // @include rfs(1);
+    font-size: 14px;
 }
 
 a {

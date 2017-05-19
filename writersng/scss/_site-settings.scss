@@ -6,7 +6,7 @@
 
 //Responsive breakpoints
 $S: 480px; // Small phones Styles are written for this breakpoint by default, so no need to specify it.
-$M: 768px; // Phablets
+$M: 769px; // Phablets
 $L: 992px; // 10" Tablets and desktops
 $XL: 1200px; // 10" Tablets and desktops..
 
@@ -44,14 +44,16 @@ $headlineFont: "Qanelas-Black", Georgia, serif;
 $aqua: #32a2bd;
 $orange: #f2a42f;
 $yellow: #f4c737;
+$green: #128a4b;
 $dark: #222222;
 $grey: #777777;
 $grey2: #ebebeb;
-$light: #f9f9f9;
+$light: #F6F7FB;
+$light2: #f4f8f9;
 $white: #ffffff;
 $black: #000;
 
-$color1: $aqua;
+$color1: $green;
 $color2: $orange;
 $color3: $yellow;
 

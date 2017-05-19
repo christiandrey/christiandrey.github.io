@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Writers.ng | Admin</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+    
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <!-- Uncomment any of the following lines to use the stylesheet otherwise delete before final build -->
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/dreyanim.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/dreymodal.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<main class="l-main" id="admin-page" role="main">
+        <nav class="l-nav" role="navigation">
+            <a href="../index.html" class="nav-link">Go to writers.ng</a>
+            <img class="brand-logo" src="../img/icon.brand--green-stretch.png">
+            <div class="user-details">
+                <img src="../img/user.avatar.jpg" alt="" class="user-avatar">
+                <p class="user-name">Hi, Jane</p>
+                <div class="user-action">
+                    <button class="user-action dropdown-toggle" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Account settings</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="l-section admin-body" role="">
+            <div class="left-column">
+                <p class="col-header">Tools</p>
+                <div class="tool-item is-active">
+                    <div class="tool-indicator"></div>
+                    <img src="../img/icon.dashboard.png" alt="writers.ng" class="tool-icon">
+                    <p class="tool-name">Dashboard</p>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-indicator"></div>
+                    <img src="../img/icon.jobs.png" alt="writers.ng" class="tool-icon">
+                    <p class="tool-name">Jobs</p>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-indicator"></div>
+                    <img src="../img/icon.users.png" alt="writers.ng" class="tool-icon">
+                    <p class="tool-name">Users</p>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-indicator"></div>
+                    <img src="../img/icon.writers.png" alt="writers.ng" class="tool-icon">
+                    <p class="tool-name">Writers</p>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-indicator"></div>
+                    <img src="../img/icon.admins.png" alt="writers.ng" class="tool-icon">
+                    <p class="tool-name">Admins</p>
+                </div>
+            </div>
+            <section class="right-column">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="m-pane" id="users-stats">
+                                <div class="pane-header">
+                                    <p class="pane-title">USERS</p>
+                                </div>
+                                <div class="pane-body clearfix">
+                                    <div class="pane-left-col">
+                                        <p class="pane-md-text">45</p>
+                                    </div>
+                                    <div class="pane-right-col">
+                                        <div class="pane-stats-item">
+                                            <p class="stats-title">NEW USERS</p>
+                                            <p class="stats-value">23</p>
+                                        </div>
+                                        <div class="pane-stats-item">
+                                            <p class="stats-title">ACTIVE USERS</p>
+                                            <p class="stats-value">23</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="m-pane" id="writers-stats">
+                                <div class="pane-header">
+                                    <p class="pane-title">WRITERS</p>
+                                </div>
+                                <div class="pane-body clearfix">
+                                    <div class="pane-left-col">
+                                        <p class="pane-md-text">45</p>
+                                    </div>
+                                    <div class="pane-right-col">
+                                        <div class="pane-stats-item">
+                                            <p class="stats-title">NEW WRITERS</p>
+                                            <p class="stats-value">23</p>
+                                        </div>
+                                        <div class="pane-stats-item">
+                                            <p class="stats-title">ACTIVE WRITERS</p>
+                                            <p class="stats-value">23</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="m-pane" id="admins-stats">
+                                <div class="pane-header">
+                                    <p class="pane-title">ADMINS</p>
+                                </div>
+                                <div class="pane-body clearfix">
+                                    <div class="pane-left-col">
+                                        <p class="pane-md-text">45</p>
+                                    </div>
+                                    <div class="pane-right-col">
+                                        <div class="pane-stats-item">
+                                            <p class="stats-title">ACTIVE ADMINS</p>
+                                            <p class="stats-value">23</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5 col-lg-3">
+                            <div class="m-pane" id="progress-summary">
+                                <p class="pane-xl-text">46%</p>
+                                <div class="m-progress">
+                                    <div class="progress-level is-ongoing" data-progress-level="46"></div>
+                                    <div class="progress-back"></div>
+                                </div>
+                                <div class="pane-stats-item">
+                                    <span class="stats-title">TOTAL JOBS</span>
+                                    <span class="stats-value">56</span>
+                                </div>
+                                <div class="pane-stats-item">
+                                    <span class="stats-title">PENDING JOBS</span>
+                                    <span class="stats-value">56</span>
+                                </div>
+                                <div class="pane-stats-item">
+                                    <span class="stats-title">CANCELLED JOBS</span>
+                                    <span class="stats-value">56</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-lg-9">
+                            <div class="m-pane" id="recent-jobs">
+                                <div class="pane-header">
+                                    <p class="pane-title">RECENT JOBS</p>
+                                </div>
+                                <div class="pane-body">
+                                    <div class="pane-job-item">
+                                        <span class="job-title">Lorem ipsum dolor sit amet and co...</span>
+                                        <div class="m-progress job-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="80"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pane-job-item">
+                                        <span class="job-title">Lorem ipsum dolor sit amet and co...</span>
+                                        <div class="m-progress job-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="50"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pane-job-item">
+                                        <span class="job-title">Lorem ipsum dolor sit amet and co...</span>
+                                        <div class="m-progress job-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="100"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pane-job-item">
+                                        <span class="job-title">Lorem ipsum dolor sit amet and co...</span>
+                                        <div class="m-progress job-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="0"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pane-job-item">
+                                        <span class="job-title">Lorem ipsum dolor sit amet and co...</span>
+                                        <div class="m-progress job-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="20"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                    </div>
+                                    <div class="pane-job-item">
+                                        <span class="job-title">Lorem ipsum dolor sit amet and co...</span>
+                                        <div class="m-progress job-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="80"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pane-footer">
+                                    <button class="btn btn-aqua pane-action" onclick="javascript:location.href='./jobs.html'">See all jobs</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="../js/wngalert.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+<!-- Uncomment any of the following lines to use the plugin otherwise delete before final build -->
+<!--  -->
+<!-- <script type="text/javascript" src="js/velocity.min.js"></script> -->
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="js/dreyanim.js"></script> -->
+<!-- <script type="text/javascript" src="js/dreymodal.js"></script> -->
+</html>
