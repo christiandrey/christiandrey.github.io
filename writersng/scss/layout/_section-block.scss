@@ -444,7 +444,7 @@
 			left: 0;
 			padding: 50px 80px;
 
-			.left-column {
+			&>.left-column {
 				@include wh(80px, auto);
 				float: left;
 				background-color: $white;
@@ -547,7 +547,7 @@
 				}
 			}
 
-			.right-column {
+			&>.right-column {
 				@include wh(calc(100% - 130px), calc(100vh - 120px));
 				float: right;
 				overflow: auto;

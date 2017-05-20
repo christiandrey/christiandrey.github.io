@@ -21,6 +21,13 @@
 		}
 	}
 
+	.progress-label {
+		font-size: 10px;
+		color: $grey;
+		letter-spacing: 0.2px;
+		margin: 5px auto 20px;
+	}
+
 	@at-root .pane-md-text {
 		$parent: &;
 		text-align: center;
@@ -39,10 +46,6 @@
 		#progress-summary & {
 			width: 100%;
 			margin-bottom: 10px;
-
-			&:nth-child(3) {
-				margin-top: 20px;
-			}
 
 			&:last-child {
 				margin-bottom: 0;
@@ -107,6 +110,24 @@
 		$parent: &;
 		@include wh(100%, auto);
 
+		.pane-table-header {
+			margin: 0px;
+
+			span {
+				font-size: 10px;
+				color: $grey;
+				letter-spacing: 0.2px;
+				display: inline-block;
+
+				&:first-child {
+				}
+
+				&:last-child {
+					margin-left: calc(50% - 18px);
+				}
+			}
+		}
+
 		.pane-job-item {
 			@include wh(calc(100% + 40px), 40px);
 			margin: 0 -20px 5px;
@@ -124,6 +145,11 @@
 				width: 50%;
 				overflow: hidden;
 				margin-right: 30px;
+				font-size: 11px;
+
+				@include MQ(M) {
+					font-size: 13px;
+				}
 			}
 
 			&:hover {
