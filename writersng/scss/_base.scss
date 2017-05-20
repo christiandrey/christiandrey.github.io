@@ -36,6 +36,10 @@ h1, h2, h3, h4, h5, h6 {
     float: left;
 }
 
+.col-xs-pull-5ths, .col-sm-pull-5ths, .col-md-pull-5ths, .col-lg-pull-5ths {right:20%}
+.col-xs-push-5ths, .col-sm-push-5ths, .col-md-push-5ths, .col-lg-push-5ths {left:20%}
+.col-xs-offset-5ths, .col-sm-offset-5ths, .col-md-offset-5ths, .col-lg-offset-5ths {margin-left:20%}
+
 @media (min-width: 768px) {
     .col-sm-5ths {
         width: 20%;

@@ -18,6 +18,10 @@
 		box-shadow: 0 15px 20px transparentize($black, 0.9);
 	}
 
+	&:active {
+		outline: none;
+	}
+
 	&:focus {
 		outline: none;
 	}

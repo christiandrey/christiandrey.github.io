@@ -6,9 +6,9 @@
 
 //Responsive breakpoints
 $S: 480px; // Small phones Styles are written for this breakpoint by default, so no need to specify it.
-$M: 769px; // Phablets
-$L: 992px; // 10" Tablets and desktops
-$XL: 1200px; // 10" Tablets and desktops..
+$M: 768px; // Phablets col-sm-*
+$L: 992px; // 10" Tablets and desktops col-md-*
+$XL: 1200px; // 10" Tablets and desktops.. col-lg-*
 
 // Fonts
 $bodyFont: "SourceSansPro-Regular", Arial, sans-serif;
