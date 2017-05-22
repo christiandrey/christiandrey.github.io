@@ -75,36 +75,42 @@
 		}
 	}
 
-	// .form-radio {
-	// 	position: relative;
-	// 	left: -5000px;
-	// 	outline: none;
+	.form-radio {
+		position: relative;
+		left: -5000px;
+		outline: none !important;
 
 
-	// 	&:before {
-	// 		content: "";
-	// 		display: block;
-	// 		position: absolute;
-	// 		border: solid 1px $grey;
-	// 		border-radius: 3px;
-	// 		width: 15px;
-	// 		height: 15px;
-	// 		top: 0;
-	// 		left: 5000px;
-	// 	}
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			border: solid 1px $grey;
+			border-radius: 3px;
+			width: 15px;
+			height: 15px;
+			top: -4px;
+			left: 5021px;
+		}
 
-	// 	&:checked {
-	// 		&:after {
-	// 			content: "";
-	// 			display: block;
-	// 			position: absolute;
-	// 			background-color: $color1;
-	// 			border-radius: 10px;
-	// 			width: 7px;
-	// 			height: 7px;
-	// 			top: 4px;
-	// 			left: 5004px;
-	// 		}
-	// 	}
-	// }
+		&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				background-color: $color1;
+				border-radius: 10px;
+				width: 7px;
+				height: 7px;
+				top: 0;
+				left: 5025px;
+				transform: scale(0,0);
+				transition: transform 0.35s;
+			}
+
+		&:checked {
+			&:after {
+				transform: scale(1,1);
+			}
+		}
+	}
 }
