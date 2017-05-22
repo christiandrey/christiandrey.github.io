@@ -729,6 +729,7 @@
 					padding: 3px 7px;
 					background-color: $grey;
 					line-height: 1;
+					cursor: pointer;
 
 					@include MQ(M) {
 						display: none;
@@ -790,6 +791,7 @@
 					padding: 3px 10px;
 					background-color: $grey;
 					line-height: 1;
+					cursor: pointer;
 
 					@include MQ(M) {
 						display: none;

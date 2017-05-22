@@ -108,13 +108,13 @@ $(document).ready(function(e) {
 			animationType: "fallOutAlternate",
 			animationTime: 450
 		})
-
+		$('.two-column-layout.user-dashboard .right-column').scrollTop(0);
 		$('.two-column-layout.user-dashboard .right-column div.new-job').dreyanim({
 			animationType: "fallInAlternate",
 			animationTime: 450,
 			animationDelay: 100
 		})
-
+		
 		$('.two-column-layout.user-dashboard .left-column div.job-list, .two-column-layout.user-dashboard .left-column div.view-job').addClass('hidden')
 		$('.two-column-layout.user-dashboard .left-column div.new-job').removeClass('hidden')
 	})
@@ -128,6 +128,7 @@ $(document).ready(function(e) {
 
 		$('.two-column-layout.user-dashboard .right-column div.new-job .col-header .col-title').html("Add a new job");
 
+		$('.two-column-layout.user-dashboard .right-column').scrollTop(0);
 		$('.two-column-layout.user-dashboard .right-column div.job-list').dreyanim({
 			animationType: "fallIn",
 			animationTime: 450,
@@ -146,6 +147,7 @@ $(document).ready(function(e) {
 			animationTime: 450
 		})
 
+		$('.two-column-layout.user-dashboard .right-column').scrollTop(0);
 		$('.two-column-layout.user-dashboard .right-column div.view-job').dreyanim({
 			animationType: "fallInAlternate",
 			animationTime: 450,
@@ -162,6 +164,7 @@ $(document).ready(function(e) {
 			animationType: "fallOut",
 			animationTime: 450
 		})
+		$('.two-column-layout.user-dashboard .right-column').scrollTop(0);
 
 		$('.two-column-layout.user-dashboard .right-column div.job-list').dreyanim({
 			animationType: "fallIn",
@@ -181,6 +184,7 @@ $(document).ready(function(e) {
 			animationType: "fallOut",
 			animationTime: 450
 		})
+		$('.two-column-layout.user-dashboard .right-column').scrollTop(0);
 
 		$('.two-column-layout.user-dashboard .right-column div.new-job').dreyanim({
 			animationType: "fallIn",
