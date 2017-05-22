@@ -3,28 +3,198 @@
    ======================= */
 
 .l-nav {
-	position: fixed;
-	top: 20px;
-	right: 15px;
+	@include wh(100%, 80px);
+	padding: 0 15px;
 	z-index: +2;
+	position: relative;
 
 	@include MQ(M) {
-		top: 50px;
-		right: 120px;
+		padding: 0 80px;
 	}
 
-	img {
-		@include wh(38px,38px);
-		cursor: pointer;
+	.nav-hamburger {
+		@include wh(auto,40px);
+		margin: 20px 20px 20px 0;
+		float: left;
+		display: inline-block;
+
+		@include MQ(M) {
+			display: none;
+		}
 	}
 
-	#admin-page & {
-		@include wh(100%, 80px);
+	.brand-logo {
+		@include wh(auto,40px);
+		margin: 20px 0;
+		float: left;
+		display: inline-block;
+	}
+
+	.right-aligned-items {
+		background-color: $dark;
+		@include wh(calc(100%), 100%);
+		padding: 90px 40px 20px;
 		position: fixed;
 		top: 0;
 		left: 0;
-		padding: 0 80px;
+		transition: transform 0.35s;
+		transform: translateY(100%);
+		z-index: 5;
+
+		&.open {
+			transform: translateY(0%);
+		}
+
+		@include MQ(M) {
+			@include wh(auto, 100%);
+			background: none;
+			padding: 0;
+			position: static;
+			float: right;
+			transform: translateY(0%);
+		}
+
+		.close-btn {
+			position: absolute;
+			@include wh(auto,40px);
+			top: 20px;
+			right: 20px;
+
+			@include MQ(M) {
+				display: none;
+			}
+		}
+
+		.user-details {
+			text-align: left;
+
+			@include MQ(M) {
+				display: block;
+				float: right;
+				margin: 20px 0;
+			}
+
+			.user-avatar {
+				@include wh(auto, 60px);
+				border-radius: 30px;
+				display: block;
+				margin: 0;
+				float: left;
+				border: solid 3px $white;
+
+				@include MQ(M) {
+					@include wh(auto, 40px);
+					border: none;
+				}
+			}
+
+			.user-name {
+				letter-spacing: 0.2px;
+				color: $white;
+				display: block;
+				float: left;
+				font-size: 1em;
+				margin: 23px 0 23px 10px;
+
+				@include MQ(M) {
+					color: $dark;
+					margin: 13px 0 13px 10px;
+				}
+			}
+
+			.user-action {
+				background: none;
+				border: none;
+				padding: 4px;
+				margin-left: 2px;
+				margin-top: 7px;
+				display: block;
+				float: left;
+				position: relative;
+				display: none;
+
+				span {
+					color: $color3
+				}
+
+				@include MQ(M) {
+					display: block;
+					margin-top: 2px;
+					margin-left: 2px;
+				}
+			}
+		}
+
+		.nav-links-container {
+				margin: 60px 0;
+				width: 100%;
+				text-align: left;
+
+				@include MQ(M) {
+					margin: 33px 20px;
+					width: auto;
+					display: block;
+					float: right;
+				}
+
+				.nav-links-title {
+					font-family: $headerFont;
+					font-size: 1.3em;
+					color: $color2;
+					margin: 0 0 8px;
+
+					@include MQ(M) {
+						display: none;
+					}
+				}
+
+				.nav-link {
+					font-size: 1em;
+					letter-spacing: 0.2px;
+
+					@include MQ(M) {
+						display: inline-block;
+						padding: 0 10px;
+					}
+
+					a {
+						text-decoration: none;
+						color: $white;
+						display: block;
+						padding: 18px 0;
+						transition: color 0.15s;
+
+						@include MQ(M) {
+							color: $dark;
+							padding: 0;
+							display: inline-block;
+						}
+
+						&:hover {
+							color: $color2;
+						}
+					}
+
+					&.hidden-sm {
+						@include MQ(M) {
+							display: none;
+						}
+					}
+
+					&.is-active {
+						a {
+							color: $color2;
+						}
+					}
+				}
+			}
+	}
+
+	#admin-page & {
 		background-color: $color1;
+		position: fixed;
+		top: 0;
+		left: 0;
 
 		.nav-link {
 			@include center(y);

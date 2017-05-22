@@ -336,7 +336,7 @@
 		}
 	}
 
-	#login-page & {
+	#auth-page & {
 		padding: 0;
 
 		@include MQ(M) {
@@ -399,6 +399,7 @@
 
 			.right-pane {
 				height: 100vh;
+				padding: 0 10%;
 
 				.col-content {
 					@include center(y);
@@ -558,6 +559,246 @@
 
 				@include MQ(L) {
 					@include wh(calc(100% - 300px));
+				}
+			}
+		}
+	}
+
+	&.two-column-layout {
+		@include wh(100%, calc(100vh - 80px));
+		background-color: $light2;
+		padding: 30px 15px;
+		overflow: hidden;
+		position: relative;
+
+		@include MQ(M) {
+			height: auto;
+			padding: 50px 80px;
+		}
+
+		.left-column {
+			@include wh(calc(100% - 30px), calc(100vh - 110px));
+			padding: 5px 0;
+			border-radius: 5px;
+			background-color: $white;
+			box-shadow: 0 5px 10px transparentize($black, 0.95);
+			padding: 20px;
+			overflow: auto;
+			transition: top .35s;
+			position: absolute;
+			z-index: 3;
+			top: 100%;
+			left: 15px;
+
+			@include MQ(M) {
+				@include wh(250px);
+				float: left;
+				position: static;
+			};
+
+			.col-title {
+				color: $color1;
+				font-family: $headerFont;
+				letter-spacing: 0;
+				font-size: 1.3em;
+				margin-bottom: 10px;
+			}
+
+			.col-subtitle {
+				color: $grey;
+				font-family: $headerFont;
+				letter-spacing: 0;
+				font-size: 1.1em;
+				margin-bottom: 8px;
+			}
+
+			.search-form {
+				margin: 0 0 10px;
+				.form-input {
+					@include wh(100%, auto);
+					padding-left: 0;
+				}
+			}
+
+			.search-results {
+				font-size: 1em;
+				letter-spacing: 0.2px;
+				margin-bottom: 40px;
+
+				span {
+					font-weight: bold;
+					color: $color1;
+				}
+			}
+
+			div.sort-order, div.sort-by {
+				padding: 0 0 20px;
+				border-bottom: solid 2px $grey2;
+				margin: 20px 0 5px;
+
+				label {
+					font-size: 1em;
+					letter-spacing: 0.2px
+				}
+			}
+
+			button[type="submit"] {
+				display: table;
+				width: 100%;
+				margin: 20px auto 20px;
+
+				@include MQ(M) {
+					margin: 20px auto 5px;
+				}
+			}
+
+			button[type="button"] {
+				display: table;
+				margin: 0 auto 15px;
+			}
+
+			button#cancel-filter {
+
+				@include MQ(M) {
+					display: none;
+				}
+			}
+
+			a.edit-job {
+				button {
+					width: 100%;
+					margin: 0 0 20px;
+				}
+			}
+		}
+
+		.right-column {
+			@include wh(100%, calc(100vh - 110px));
+			padding: 5px 0;
+			overflow: auto;
+
+			@include MQ(M) {
+				@include wh(calc(100% - 300px), calc(100vh - 140px));
+				float: right;
+			}
+
+			.col-header {
+				margin: 0 0 30px;
+
+				.col-title {
+					font-family: $headerFont;
+					color: $color1;
+					letter-spacing: 0;
+					font-size: 2em;
+					float: left;
+				}
+
+				.col-stats {
+					letter-spacing: 0.2px;
+					font-size: 1em;
+					color: $grey;
+					float: left;
+					margin: 5px 0 0 10px;
+
+					span {
+						letter-spacing: 0.2px;
+						color: $white;
+						background-color: $grey;
+						padding: 2px 5px;
+						border-radius: 3px;
+					}
+				}
+
+				.filter-icon {
+					@include wh(auto, 24px);
+					float: right;
+					display: inline-block;
+
+					@include MQ(M) {
+						display: none;
+					}
+				}
+
+				.col-action {
+					display: inline-block;
+					float: right;
+					color: $white;
+					border-radius: 10px;
+					letter-spacing: 0.2px;
+					margin-top: calc((2em - 18px) / 2);
+					padding: 3px 7px;
+					background-color: $grey;
+					line-height: 1;
+
+					@include MQ(M) {
+						display: none;
+					}
+				}
+			}
+
+			.col-body {
+
+				.heading-2 {
+					display: block;
+					letter-spacing: 0;
+					font-weight: bold;
+					color: $color1;
+					margin: 0 0 8px;
+				}
+
+				.job-info-item {
+					margin: 0 auto 30px;
+
+					.job-info-value {
+						letter-spacing: 0.2px;
+						font-size: 1em;
+					}
+				}
+
+				.progress-info {
+					.progress-label {
+						margin-bottom: 8px;
+					}
+
+					.m-progress {
+						@include wh(100%, 5px);
+						margin: 0 0 30px;
+					}
+				}
+
+				.job-summary {
+					margin: 0 0 30px;
+
+					& >p:last-of-type {
+						@include wh(100%, auto);
+						letter-spacing: 0.2px;
+						line-height: 1.3;
+						font-size: 1em;
+						padding: 15px;
+						border: solid 1px $grey2;
+						border-bottom: solid 2px $color1;
+					}
+				}
+
+				.col-action {
+					display: inline-block;
+					float: right;
+					color: $white;
+					border-radius: 10px;
+					letter-spacing: 0.2px;
+					margin: 0 0 30px;
+					padding: 3px 10px;
+					background-color: $grey;
+					line-height: 1;
+
+					@include MQ(M) {
+						display: none;
+					}
+
+					&:last-of-type {
+						margin-right: 8px;
+						background-color: $color1;
+					}
 				}
 			}
 		}

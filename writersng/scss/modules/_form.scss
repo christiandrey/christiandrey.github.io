@@ -4,7 +4,7 @@
 
 .m-form {
 	input.form-input {
-		@include wh(80%, 40px);
+		@include wh(100%, 40px);
 		display: block;
 		margin: 0 auto 30px;
 		border: none;
@@ -13,7 +13,27 @@
 		border-bottom: solid 2px $grey2;
 		transition: border 0.45s;
 
-		&:last-of-type {
+		&:last-child {
+			margin: 0 auto;
+		}
+
+		&:focus {
+			border-bottom: solid 2px $color1;
+			outline: none;
+		}
+	}
+
+	.form-textarea {
+		@include wh(100%, auto);
+		display: block;
+		margin: 0 auto 30px;
+		border: solid 1px $grey2;
+		padding: 5px 15px;
+		outline: none;
+		border-bottom: solid 2px $grey2;
+		transition: border 0.45s;
+
+		&:last-child {
 			margin: 0 auto;
 		}
 
@@ -26,4 +46,65 @@
 	button[type='submit'] {
 		margin: 30px auto 0;
 	}
+
+	label.form-label {
+		display: block;
+		letter-spacing: 0;
+		font-weight: bold;
+		color: $color1;
+		margin: 0 0 8px;
+	}
+
+	select.form-select {
+		@include wh(100%, auto);
+		display: block;
+		margin: 0 auto 30px;
+		border: solid 1px $grey2;
+		padding: 5px 15px;
+		outline: none;
+		border-bottom: solid 2px $grey2;
+		transition: border 0.45s;
+
+		&:last-child {
+			margin: 0 auto;
+		}
+
+		&:focus {
+			border-bottom: solid 2px $color1;
+			outline: none;
+		}
+	}
+
+	// .form-radio {
+	// 	position: relative;
+	// 	left: -5000px;
+	// 	outline: none;
+
+
+	// 	&:before {
+	// 		content: "";
+	// 		display: block;
+	// 		position: absolute;
+	// 		border: solid 1px $grey;
+	// 		border-radius: 3px;
+	// 		width: 15px;
+	// 		height: 15px;
+	// 		top: 0;
+	// 		left: 5000px;
+	// 	}
+
+	// 	&:checked {
+	// 		&:after {
+	// 			content: "";
+	// 			display: block;
+	// 			position: absolute;
+	// 			background-color: $color1;
+	// 			border-radius: 10px;
+	// 			width: 7px;
+	// 			height: 7px;
+	// 			top: 4px;
+	// 			left: 5004px;
+	// 		}
+	// 	}
+	// }
 }

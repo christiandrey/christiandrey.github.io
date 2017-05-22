@@ -7,7 +7,7 @@
 	font-family: $headerFont;
 	color: $white;
 	box-shadow: 0 5px 10px transparentize($black, 0.85);
-	outline: none;
+	outline: none !important;
 	border: none;
 	border-radius: 30px;
 	transition: transform 0.45s, box-shadow 0.45s, background 0.45s;
@@ -19,15 +19,25 @@
 	}
 
 	&:active {
-		outline: none;
+		color: $white;
+		outline: none !important;
 	}
 
 	&:focus {
-		outline: none;
+		color: $white;
+		outline: none !important;
 	}
 
 	&.btn-aqua {
 		background-color: $color1;
+	}
+
+	&.btn-color-1 {
+		background-color: $color1;
+	}
+	
+	&.btn-grey {
+		background-color: $grey;
 	}
 
 	&.btn-black {
@@ -55,6 +65,15 @@
 
 		&:hover {
 			box-shadow: 0 5px 10px transparentize($black, 0.85);
-		}
+		}		
+	}
+
+	&.btn-f-center {
+		display: table;
+		margin: 0 auto;
+	}
+
+	&.btn-f-full {
+			@include wh(100%, 40px);
 	}
 }

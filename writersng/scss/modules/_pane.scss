@@ -167,6 +167,10 @@
 			}
 		}
 
+		.pane-job-item-var {
+
+		}
+
 		#users-stats &, #writers-stats &, #admins-stats & {
 			.pane-left-col {
 				@include wh(30%);
