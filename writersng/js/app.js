@@ -102,100 +102,12 @@ $(document).ready(function(e) {
 	})
 	//End of left column mobile animation
 
-	//Create new job animation
+	//Job item click script
 	$('.two-column-layout.user-dashboard .right-column div.job-list .m-job-item-new').click(function(e) {
-		$('.two-column-layout.user-dashboard .right-column div.job-list').dreyanim({
-			animationType: "fallOutAlternate",
-			animationTime: 450
-		})
-		$('.two-column-layout.user-dashboard .right-column').scrollTop(0);
-		$('.two-column-layout.user-dashboard .right-column div.new-job').dreyanim({
-			animationType: "fallInAlternate",
-			animationTime: 450,
-			animationDelay: 100
-		})
-		
-		$('.two-column-layout.user-dashboard .left-column div.job-list, .two-column-layout.user-dashboard .left-column div.view-job').addClass('hidden')
-		$('.two-column-layout.user-dashboard .left-column div.new-job').removeClass('hidden')
+		location.href="./new-job.html"
 	})
-
-	$('.two-column-layout.user-dashboard .left-column div.new-job a.job-list, .two-column-layout.user-dashboard .right-column div.new-job .col-header .col-action').click(function(e) {
-		e.preventDefault();
-		$('.two-column-layout.user-dashboard .right-column div.new-job').dreyanim({
-			animationType: "fallOut",
-			animationTime: 450
-		})
-
-		$('.two-column-layout.user-dashboard .right-column div.new-job .col-header .col-title').html("Add a new job");
-
-		$('.two-column-layout.user-dashboard .right-column').scrollTop(0);
-		$('.two-column-layout.user-dashboard .right-column div.job-list').dreyanim({
-			animationType: "fallIn",
-			animationTime: 450,
-			animationDelay: 100
-		})
-
-		$('.two-column-layout.user-dashboard .left-column div.new-job, .two-column-layout.user-dashboard .left-column div.view-job').addClass('hidden')
-		$('.two-column-layout.user-dashboard .left-column div.job-list').removeClass('hidden')
-	})
-	//End of create new job animation
-
-	//View job animation
 	$('.two-column-layout.user-dashboard .right-column div.job-list .m-job-item').click(function(e) {
-		$('.two-column-layout.user-dashboard .right-column div.job-list').dreyanim({
-			animationType: "fallOutAlternate",
-			animationTime: 450
-		})
-
-		$('.two-column-layout.user-dashboard .right-column').scrollTop(0);
-		$('.two-column-layout.user-dashboard .right-column div.view-job').dreyanim({
-			animationType: "fallInAlternate",
-			animationTime: 450,
-			animationDelay: 100
-		})
-
-		$('.two-column-layout.user-dashboard .left-column div.job-list, .two-column-layout.user-dashboard .left-column div.new-job').addClass('hidden')
-		$('.two-column-layout.user-dashboard .left-column div.view-job').removeClass('hidden')
+		location.href="./view-job.html"
 	})
-
-	$('.two-column-layout.user-dashboard .left-column div.view-job a.job-list, .two-column-layout.user-dashboard .right-column div.view-job .col-action#job-list').click(function(e) {
-		e.preventDefault();
-		$('.two-column-layout.user-dashboard .right-column div.view-job').dreyanim({
-			animationType: "fallOut",
-			animationTime: 450
-		})
-		$('.two-column-layout.user-dashboard .right-column').scrollTop(0);
-
-		$('.two-column-layout.user-dashboard .right-column div.job-list').dreyanim({
-			animationType: "fallIn",
-			animationTime: 450,
-			animationDelay: 100
-		})
-
-		$('.two-column-layout.user-dashboard .left-column div.new-job, .two-column-layout.user-dashboard .left-column div.view-job').addClass('hidden')
-		$('.two-column-layout.user-dashboard .left-column div.job-list').removeClass('hidden')
-	})
-	//End of View job animation
-
-	//Edit job animation
-	$('.two-column-layout.user-dashboard .left-column div.view-job a.edit-job, .two-column-layout.user-dashboard .right-column div.view-job .col-action#edit-job').click(function(e) {
-		e.preventDefault();
-		$('.two-column-layout.user-dashboard .right-column div.view-job').dreyanim({
-			animationType: "fallOut",
-			animationTime: 450
-		})
-		$('.two-column-layout.user-dashboard .right-column').scrollTop(0);
-
-		$('.two-column-layout.user-dashboard .right-column div.new-job').dreyanim({
-			animationType: "fallIn",
-			animationTime: 450,
-			animationDelay: 100
-		})
-
-		$('.two-column-layout.user-dashboard .right-column div.new-job .col-header .col-title').html("Edit job");
-
-		$('.two-column-layout.user-dashboard .left-column div.job-list, .two-column-layout.user-dashboard .left-column div.view-job').addClass('hidden')
-		$('.two-column-layout.user-dashboard .left-column div.new-job').removeClass('hidden')
-	})
-	//End of edit job animation
+	//End of Job item click script
 })

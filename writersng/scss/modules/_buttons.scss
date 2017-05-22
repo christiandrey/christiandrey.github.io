@@ -40,6 +40,17 @@
 		background-color: $grey;
 	}
 
+	&.btn-n-white {
+		background-color: $white;
+		box-shadow: none;
+		color: $black;
+		border: solid 1px $grey2;
+
+		&:hover {
+			box-shadow: 0 5px 10px transparentize($black, 0.85);
+		}
+	}
+
 	&.btn-black {
 		background-color: $black;
 		box-shadow: none;
@@ -74,6 +85,6 @@
 	}
 
 	&.btn-f-full {
-			@include wh(100%, 40px);
+		@include wh(100%, 40px);
 	}
 }
