@@ -1,0 +1,112 @@
+/* ==|====================
+   Module/Message Box
+   ======================= */
+
+.m-message-box {
+	@include wh(100%, auto);
+	margin-top: 20px;
+	padding: 20px 10px 0px;
+
+	@include MQ(M) {
+			padding: 20px 20px 0;
+		}
+
+	&.sender {
+		background-color: $light2;
+		border-bottom: solid 2px $color1;
+	}
+
+	&.receiver {
+		border-bottom: solid 2px $color2;
+	}
+
+	&.type-message {
+		margin-top: 0;
+	}
+
+	.message-box-icon {
+		@include wh(55px, auto);
+		display: block;
+		border-radius: 30px;
+
+		@include MQ(M) {
+			@include wh(40px, auto);
+		}
+
+		@include MQ(L) {
+			@include wh(55px, auto);
+		}
+	}
+	.message-box-header {
+		text-align: center;
+		padding: 0 0 10px;
+
+		@include MQ(L) {
+			text-align: right;
+		}
+
+		.last-seen {
+			color: $grey;
+			display: inline;
+			font-size: 0.8em;
+			text-align: right;
+			letter-spacing: 0.2px;
+
+			span {
+				font-weight: bold;
+				color: $color1;
+			}
+		}
+
+		.local-time {
+			color: $grey;
+			display: inline;
+			font-size: 0.8em;
+			text-align: right;
+			letter-spacing: 0.2px;
+			margin-left: 15px;
+
+			span {
+				font-weight: bold;
+				color: $color1;
+			}
+		}
+	}
+
+	.message-box-body {
+		padding: 0;
+
+		.message-box-name {
+			font-family: $headerFont;
+			font-size: 1em;
+			color: $color1;
+			margin-bottom: 10px;
+		}
+
+		.message-box-message {
+			font-size: 1em;
+			letter-spacing: 0.2px;
+			line-height: 1.2;
+		}
+
+		.form-textarea {
+			border-radius: 0 !important;
+			resize: none;
+			letter-spacing: 0.2px !important;
+			color: $black !important;
+			box-shadow: none !important;
+		}
+	}
+
+	.message-box-footer {
+		padding: 10px 0;
+		text-align: right;
+
+		.message-box-time {
+			color: $grey;
+			font-size: 0.8em;
+			text-align: right;
+			letter-spacing: 0.2px;
+		}
+	}
+}

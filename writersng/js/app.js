@@ -110,4 +110,20 @@ $(document).ready(function(e) {
 		location.href="./view-job.html"
 	})
 	//End of Job item click script
+
+	//Emoji Text Area
+	try {
+		$('textarea#emoji-textarea').emojioneArea({
+			pickerPosition: "bottom",
+		  	filtersPosition: "bottom",
+		    tones: false,
+		    autocomplete: false,
+		    spellcheck: true,
+		    hidePickerOnBlur: true
+
+		})
+	} catch(err) {
+		console.log(err)
+	}
+	//End of Emoji Text Area
 })
