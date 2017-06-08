@@ -4,11 +4,10 @@
 
 .m-message-box {
 	@include wh(100%, auto);
-	margin-top: 20px;
-	padding: 20px 10px 0px;
+	padding: 30px 10px 0px;
 
 	@include MQ(M) {
-			padding: 20px 20px 0;
+			padding: 30px 20px 0;
 		}
 
 	&.sender {
@@ -87,6 +86,68 @@
 			font-size: 1em;
 			letter-spacing: 0.2px;
 			line-height: 1.2;
+		}
+
+		.message-box-attachments {
+			margin: 30px 0 0;
+
+			.title {
+				color: $grey;
+				font-size: 1em;
+				letter-spacing: 0;
+				font-family: $headerFont;
+				margin-bottom: 8px;
+			}
+
+			.attachment-item {
+				display: inline-block;
+				@include wh(150px, auto);
+				margin: 0 15px 15px 0;
+				box-shadow: 0 5px 10px transparentize($black, 0.95);
+
+				&:last-child {
+					margin: 0 0 -15px 0;
+				}
+
+				.attachment-preview {
+					@include wh(100%, 100px);
+					background-image: url("../img/image.blog-1.jpg");
+					background-size: cover;
+					cursor: pointer;
+					display: block;
+					transition: filter .45s;
+
+					&:hover {
+						filter: saturate(20%);
+					}
+				}
+
+				.attachment-footer {
+					@include wh(100%, auto);
+					padding: 5px 5px;
+					background-color: $white;
+
+					.download-icon {
+						color: $color1;
+						display: inline-block;
+						margin-right: 5px;
+
+						&+a {
+							font-size: 0.9em;
+							letter-spacing: 0.2px;
+						}
+					}
+
+					.file-size {
+						color: $grey;
+						text-align: right;
+						font-size: 0.9em;
+						letter-spacing: 0.2px;
+						float: right;
+						line-height: 1.2;
+					}
+				}
+			}
 		}
 
 		.form-textarea {

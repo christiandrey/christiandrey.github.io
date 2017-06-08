@@ -30,6 +30,38 @@
 		display: inline-block;
 	}
 
+	.user-notification {
+		@include wh(24px, 24px);
+		display: block;
+		background-image: url("../img/user-notifications.orange.png");
+		background-size: 80%;
+		background-position: center;
+		background-repeat: no-repeat;
+		float: left;
+		position: relative;
+		top: 18px;
+		margin-left: 11px;
+		cursor: pointer;
+
+		@include MQ(M) {
+			background-image: url("../img/user-notifications.png");
+			top: 8px
+		}
+
+		&.new {
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 2px;
+				right: -1px;
+				@include wh(6px, 6px);
+				background-color: red;
+				border-radius: 4px;
+			}
+		}
+	}
+
 	.right-aligned-items {
 		background-color: $dark;
 		@include wh(calc(100%), 100%);
@@ -188,6 +220,22 @@
 					}
 				}
 			}
+	}
+
+	ul.dropdown-menu {
+		left: auto;
+		right: 28%;
+		top: 97%;
+		letter-spacing: 0.2px;
+		min-width: 125px;
+		padding: 0;
+		border: 1px solid $light2;
+		box-shadow: 0 6px 6px rgba(0,0,0,.05);
+		border-radius: 0;
+
+		a {
+			padding: 3px 14px;
+		}
 	}
 
 	#admin-page & {

@@ -1,0 +1,115 @@
+/* ==|====================
+   Module/File Viewer
+   ======================= */
+
+.m-file-viewer {
+	@include wh();
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+
+	.file-viewer-overlay {
+		@include wh();
+		background-color: transparentize($black, 0.4);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+
+	.file-viewer-content {
+		@include wh(600px, auto);
+		min-width: 300px;
+		background-color: $white;
+		padding: 0;
+		box-shadow: 0 5px 10px transparentize($black, 0.85);
+		margin: 80px auto 0;
+		position: relative;
+		z-index: 4;
+
+		.file-viewer-body {
+			@include wh(600px, 500px);
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			.inline-loader {
+				position: absolute !important;
+				@include center(xy);
+				z-index: 4;
+			}
+
+			.file-viewer-error {
+				@include wh(100%, auto);
+				position: absolute !important;
+				@include center(xy);
+				font-family: $headerFont;
+				text-align: center;
+				color: $color1;
+				font-size: 3em;
+				z-index: 4;
+				letter-spacing: -1px;
+
+				span {
+					color: $grey;
+					font-size: 15px;
+					letter-spacing: 0;
+				}
+			}
+
+			.gdocsviewer {
+				@include wh();
+				position: relative;
+				z-index: 5;
+
+				iframe {
+					@include wh(auto, 100%);
+					margin: 0 auto;
+					display: table;
+				}
+			}
+		}
+
+		.file-viewer-footer {
+			@include wh(100%, auto);
+				padding: 10px;
+				background-color: $light2;
+
+				.download-icon {
+					color: $color1;
+					display: inline-block;
+					margin-right: 5px;
+
+					&+a {
+						font-size: 1em;
+						letter-spacing: 0.2px;
+					}
+				}
+
+				.file-size {
+					color: $grey;
+					text-align: right;
+					font-size: 1em;
+					letter-spacing: 0.2px;
+					float: right;
+					line-height: 1.2;
+				}
+		}
+
+		.file-viewer-close {
+			@include wh(24px, 24px);
+			background-image: url("../img/icon.hamburger.close.png");
+			background-size: cover;
+			position: absolute;
+			top: -12px;
+			right: -12px;
+			cursor: pointer;
+			transition: transform .2s;
+
+			&:hover {
+				transform: scale(1.05, 1.05) rotate(90deg)
+			}
+		}
+	}
+}

@@ -102,15 +102,6 @@ $(document).ready(function(e) {
 	})
 	//End of left column mobile animation
 
-	//Job item click script
-	$('.two-column-layout.user-dashboard .right-column div.job-list .m-job-item-new').click(function(e) {
-		location.href="./new-job.html"
-	})
-	$('.two-column-layout.user-dashboard .right-column div.job-list .m-job-item').click(function(e) {
-		location.href="./view-job.html"
-	})
-	//End of Job item click script
-
 	//Emoji Text Area
 	try {
 		$('textarea#emoji-textarea').emojioneArea({
@@ -126,4 +117,14 @@ $(document).ready(function(e) {
 		console.log(err)
 	}
 	//End of Emoji Text Area
+
+	//File Viewer
+	$('.attachment-item .attachment-preview[data-href]').click(function(e) {
+		try {
+			wngviewer($(this));
+		} catch(err) {
+			console.log(err)
+		}
+	})
+	//End of File Viewer
 })

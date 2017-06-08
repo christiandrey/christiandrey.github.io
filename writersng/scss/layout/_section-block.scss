@@ -642,6 +642,45 @@
 				}
 			}
 
+			div.new-job-price-container {
+				margin: 30px 0 0;
+
+				.new-job-price {
+					color: $grey;
+					background-color: $light2;
+					padding: 20px;
+					font-family: $headerFont;
+					letter-spacing: 0;
+					font-size: 2.5em;
+
+					span {
+						display: inline-block;
+						margin-right: 5px;
+						position: relative;
+
+						&:before {
+							content: "";
+							display: block;
+							position: absolute;
+							top: 55%;
+							left: -5%;
+							@include wh(110%, 3px);
+							background-color: $grey;
+						}
+
+						&:after {
+							content: "";
+							display: block;
+							position: absolute;
+							top: 40%;
+							left: -5%;
+							@include wh(110%, 3px);
+							background-color: $grey;
+						}
+					}
+				}
+			}
+
 			button[type="submit"] {
 				display: table;
 				width: 100%;
@@ -747,6 +786,13 @@
 					margin: 0 0 8px;
 				}
 
+				.heading-3 {
+					display: block;
+					letter-spacing: 0.2px;
+					color: $grey;
+					margin: 0 0 15px;
+				}
+
 				.job-info-item {
 					margin: 0 auto 30px;
 
@@ -806,6 +852,11 @@
 				a.contact-writer {
 					margin: 50px auto 15px !important;
 					display: block;
+				}
+
+				a.load-earlier-messages {
+					display: table;
+					margin: 0 auto 25px;
 				}
 			}
 		}

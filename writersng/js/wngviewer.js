@@ -1,0 +1,69 @@
+function wngviewer(element) {
+	var bodyContent = '<img src="../img/icon.inline-loader.gif.gif" class="inline-loader"><a class="file-viewer-link" href=""></a><p class="file-viewer-error hidden">Ooops! :-( <br /><span>An error occured. Please download file to view.</span></p>'
+	var footerContent = '<i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>'
+	$("<div/>", {
+      class: "m-file-viewer hidden",
+    }).prependTo('.l-main');
+
+    $("<div/>", {
+      class: "file-viewer-overlay"
+    }).appendTo('.m-file-viewer');
+
+    $("<div/>", {
+      class: "file-viewer-content"
+    }).appendTo('.m-file-viewer');
+
+    $("<div/>", {
+      class: "file-viewer-body"
+    }).appendTo('.file-viewer-content');
+    
+    $("<div/>", {
+      class: "file-viewer-footer"
+    }).appendTo('.file-viewer-content');
+
+    $("<div/>", {
+      class: "file-viewer-close"
+    }).appendTo('.file-viewer-content');
+
+    $('.m-file-viewer .file-viewer-body').html(bodyContent);
+    $('.m-file-viewer .file-viewer-footer').html(footerContent);
+	var file = element.attr("data-href");
+	var ext = file.substring(file.lastIndexOf('.') + 1);
+
+	if (/^(jpeg|jpg|png|bmp)$/.test(ext)) {
+		$('.m-file-viewer .file-viewer-body').css("background-image","url("+ file +")");
+
+		$('.m-file-viewer a.file-viewer-link').addClass("hidden");
+		$('.m-file-viewer .inline-loader').addClass("hidden");
+		$('.m-file-viewer .gdocsviewer').addClass("hidden");
+		$('.m-file-viewer .file-viewer-error').addClass("hidden");
+
+		$('.m-file-viewer').removeClass("hidden");
+	} else if (/^(tiff|pdf|ppt|pps|doc|docx)$/.test(ext)) {
+		$('.m-file-viewer .file-viewer-body').css("background","none");
+
+		$('.m-file-viewer .inline-loader').removeClass("hidden");
+		$('.m-file-viewer a.file-viewer-link').removeClass("hidden");
+		$('.m-file-viewer .gdocsviewer').removeClass("hidden");
+
+		$('.m-file-viewer .file-viewer-error').addClass("hidden");
+
+		$('.m-file-viewer a.file-viewer-link').attr("href",file);
+		$('.m-file-viewer a.file-viewer-link').gdocsViewer();
+
+		$('.m-file-viewer').removeClass("hidden");
+
+	} else {
+		$('.m-file-viewer .file-viewer-error').removeClass("hidden");
+		
+		$('.m-file-viewer a.file-viewer-link').addClass("hidden");
+		$('.m-file-viewer .inline-loader').addClass("hidden");
+		$('.m-file-viewer .gdocsviewer').addClass("hidden");
+
+		$('.m-file-viewer').removeClass("hidden");
+	}
+
+	$('.m-file-viewer .file-viewer-close').click(function(e) {
+		$('.m-file-viewer').remove();
+	})
+}
