@@ -19,7 +19,7 @@
 	}
 
 	.file-viewer-content {
-		@include wh(600px, auto);
+		@include wh(90%, auto);
 		min-width: 300px;
 		background-color: $white;
 		padding: 0;
@@ -28,11 +28,23 @@
 		position: relative;
 		z-index: 4;
 
+		@include MQ(M) {
+			@include wh(600px, auto);
+		}
+
 		.file-viewer-body {
-			@include wh(600px, 500px);
+			@include wh(100%, 400px);
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
+
+			@include MQ(S) {
+				@include wh(100%, 500px);
+			}
+
+			@include MQ(M) {
+				@include wh(600px, 500px);
+			}
 
 			.inline-loader {
 				position: absolute !important;
@@ -41,8 +53,9 @@
 			}
 
 			.file-viewer-error {
-				@include wh(100%, auto);
+				@include wh(90%, auto);
 				position: absolute !important;
+				left: 5%;
 				@include center(xy);
 				font-family: $headerFont;
 				text-align: center;
@@ -51,9 +64,17 @@
 				z-index: 4;
 				letter-spacing: -1px;
 
+				@include MQ(M) {
+					@include wh(100%, auto);
+					left: 0;
+				}
+
 				span {
 					color: $grey;
 					font-size: 15px;
+					display: inline-block;
+					margin-top: 15px;
+					line-height: 1;
 					letter-spacing: 0;
 				}
 			}
@@ -106,6 +127,7 @@
 			right: -12px;
 			cursor: pointer;
 			transition: transform .2s;
+			z-index: 6;
 
 			&:hover {
 				transform: scale(1.05, 1.05) rotate(90deg)

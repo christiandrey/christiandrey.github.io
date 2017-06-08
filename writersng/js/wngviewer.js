@@ -39,6 +39,8 @@ function wngviewer(element) {
 		$('.m-file-viewer .file-viewer-error').addClass("hidden");
 
 		$('.m-file-viewer').removeClass("hidden");
+		$('body').css('overflow', 'hidden');
+		
 	} else if (/^(tiff|pdf|ppt|pps|doc|docx)$/.test(ext)) {
 		$('.m-file-viewer .file-viewer-body').css("background","none");
 
@@ -52,6 +54,7 @@ function wngviewer(element) {
 		$('.m-file-viewer a.file-viewer-link').gdocsViewer();
 
 		$('.m-file-viewer').removeClass("hidden");
+		$('body').css('overflow', 'hidden');
 
 	} else {
 		$('.m-file-viewer .file-viewer-error').removeClass("hidden");
@@ -61,9 +64,11 @@ function wngviewer(element) {
 		$('.m-file-viewer .gdocsviewer').addClass("hidden");
 
 		$('.m-file-viewer').removeClass("hidden");
+		$('body').css('overflow', 'hidden');
 	}
 
 	$('.m-file-viewer .file-viewer-close').click(function(e) {
+		$('body').css('overflow', 'auto');
 		$('.m-file-viewer').remove();
 	})
 }
