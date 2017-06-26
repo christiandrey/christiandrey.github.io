@@ -49,7 +49,6 @@
         <section class="l-section two-column-layout user-dashboard">
             <div class="left-column">
                 <div class="new-job">
-                    <a href="./dashboard.html" class="btn btn-white btn-f-center job-list">Back to list</a>
                     <div class="job-price-container">
                         <div class="header">
                             <p class="paper-type">
@@ -103,11 +102,13 @@
                 <div class="new-job">
                     <div class="col-header clearfix">
                         <p class="col-title">Add a new job</p>
-                        <span class="col-action" onclick="javascript:location.href='./dashboard.html'">Back to list</span>
                     </div>
                     <div class="col-body">
                         <div class="m-pane">
-                            <form class="m-form add-new-job" action="./ordersummary.html">
+                            <div class="inner-column-header">
+                                <p class="heading">JOB DETAILS</p>
+                            </div>
+                            <form class="m-form add-new-job" action="/ordersummary.html">
                                 <input class="form-input" placeholder="Project title" name="project-title" autofocus></input>
                                 <textarea rows="10" placeholder="Project summary" class="form-textarea"></textarea>
                                 <div class="row no-padding">
@@ -185,10 +186,36 @@
                                     <label for="attachment" class="form-label">Select attachments</label>
                                     <input class="form-input" placeholder="Select a file" type="file" name="attachment" id="attachment"></input>
                                 </div>
-                                <button class="btn btn-color-1 btn-f-center">
-                                    Continue
-                                </button>
                             </form>
+                            <div class="inner-column-header">
+                                <p class="heading">ACCOUNT DETAILS</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-3 col-lg-offset-1 text-right">
+                                    <div class="user-form-switch">
+                                        <div class="selected" id="new">
+                                            New customer
+                                        </div>
+                                        <div id="returning">
+                                            Returning customer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-6 text-center">
+                                    <form class="m-form login-form padded hidden" id="login-form">
+                                        <input type="email" name="email" class="form-input" placeholder="Email address" required autofocus>
+                                        <input type="password" class="form-input" name="password" placeholder="Password" required>
+                                        <button class="btn btn-aqua" type="submit">Continue</button>
+                                    </form>
+                                    <form class="m-form signup-form padded" id="signup-form">
+                                        <input type="text" name="first-name" class="form-input" placeholder="First name" required autofocus>
+                                        <input type="text" name="last-name" class="form-input" placeholder="Last name" required>
+                                        <input type="email" name="email" class="form-input" placeholder="Email address" required>
+                                        <input type="password" class="form-input" name="password" placeholder="Password" required>
+                                        <button class="btn btn-aqua" type="submit">Finish</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

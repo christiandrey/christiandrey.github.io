@@ -58,9 +58,6 @@ $(document).ready(function(e) {
 
 	//Set progress bar Script
 	var _ = $('.m-progress .progress-level');
-	// for (var i = 0; i < _.length; i++) {
-	// 	console.log(_[i])
-	// }
 	$.each(_, function(i,v) {
 		_ = $(v);
 		var rand = (Math.random() * 0.5).toFixed(3);
@@ -103,20 +100,30 @@ $(document).ready(function(e) {
 	//End of left column mobile animation
 
 	//Emoji Text Area
-	try {
-		$('textarea#emoji-textarea').emojioneArea({
-			pickerPosition: "bottom",
-		  	filtersPosition: "bottom",
-		    tones: false,
-		    autocomplete: false,
-		    spellcheck: true,
-		    hidePickerOnBlur: true
+	// try {
+	// 	$('textarea#emoji-textarea').emojioneArea({
+	// 		pickerPosition: "bottom",
+	// 	  	filtersPosition: "bottom",
+	// 	    tones: false,
+	// 	    autocomplete: false,
+	// 	    spellcheck: true,
+	// 	    hidePickerOnBlur: true
 
-		})
-	} catch(err) {
-		console.log(err)
-	}
+	// 	})
+	// } catch(err) {
+	// 	console.log(err)
+	// }
 	//End of Emoji Text Area
+
+	//TinyMCE Text Area
+	// try {
+	// 	tinymce.init({
+	// 	    selector: '#type-message-textarea'
+	// 	});
+	// } catch(err) {
+	// 	console.log(err)
+	// }
+	//End of TinyMCE Text Area
 
 	//File Viewer
 	$('.attachment-item .attachment-preview[data-href]').click(function(e) {
@@ -127,4 +134,26 @@ $(document).ready(function(e) {
 		}
 	})
 	//End of File Viewer
+
+	//Sticky
+	try {
+		var sticky = new Sticky('.left-column');
+	} catch(err) {
+		console.log(err)
+	}
+	//End of Sticky
+
+	//User form switch
+	$('.user-form-switch div').click(function(e) {
+		$(this).siblings().removeClass("selected");
+		$(this).addClass("selected");
+		if ($(this).attr("id") == "new") {
+			$('.new-job .signup-form').removeClass("hidden")
+			$('.new-job .login-form').addClass("hidden")
+		} else {
+			$('.new-job .login-form').removeClass("hidden")
+			$('.new-job .signup-form').addClass("hidden")
+		}
+	})
+	//End of User form switch
 })

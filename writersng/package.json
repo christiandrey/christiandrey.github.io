@@ -9,7 +9,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "lite-server",
+    "sass-watch": "node-sass --watch --recursive --output css --source-map true --source-map-contents scss",
+    "dev": "concurrently --kill-others \"npm run start\" \"npm run sass-watch\""
   },
   "author": "",
   "license": "ISC"

@@ -1,6 +1,6 @@
-function wngviewer(element) {
-	var bodyContent = '<img src="../img/icon.inline-loader.gif.gif" class="inline-loader"><a class="file-viewer-link" href=""></a><p class="file-viewer-error hidden">Ooops! :-( <br /><span>An error occured. Please download file to view.</span></p>'
-	var footerContent = '<i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>'
+function wngviewer(element, fileName, fileSize) {
+	var bodyContent = '<img src="../img/icon.inline-loader.gif.gif" class="inline-loader"><a class="file-viewer-link" href=""></a><p class="file-viewer-error hidden">Ooops! :-( <br /><span>An error occured. Please download file to view.</span></p>';
+	var footerContent = '<i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>';
 	$("<div/>", {
       class: "m-file-viewer hidden",
     }).prependTo('.l-main');
@@ -28,7 +28,9 @@ function wngviewer(element) {
     $('.m-file-viewer .file-viewer-body').html(bodyContent);
     $('.m-file-viewer .file-viewer-footer').html(footerContent);
 	var file = element.attr("data-href");
-	var ext = file.substring(file.lastIndexOf('.') + 1);
+	var fileName = element.attr("data-fileName") || "File does not have a name";
+	var fileSize = element.attr("data-fileSize") || "NA";
+	var ext = file.substring(file.lastIndexOf('.') + 1).toLowerCase();
 
 	if (/^(jpeg|jpg|png|bmp)$/.test(ext)) {
 		$('.m-file-viewer .file-viewer-body').css("background-image","url("+ file +")");
@@ -71,4 +73,8 @@ function wngviewer(element) {
 		$('body').css('overflow', 'auto');
 		$('.m-file-viewer').remove();
 	})
+
+	$('.m-file-viewer .file-viewer-footer a').attr("href", file);
+	$('.m-file-viewer .file-viewer-footer a').html(fileName);
+	$('.m-file-viewer .file-viewer-footer .file-size').html("(" + fileSize + ")");
 }

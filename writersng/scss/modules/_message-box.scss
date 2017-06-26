@@ -103,6 +103,7 @@
 				display: inline-block;
 				@include wh(150px, auto);
 				margin: 0 15px 15px 0;
+				background-color: $light;
 				box-shadow: 0 5px 10px transparentize($black, 0.95);
 
 				&:last-child {
@@ -111,8 +112,10 @@
 
 				.attachment-preview {
 					@include wh(100%, 100px);
-					background-image: url("../img/image.blog-1.jpg");
-					background-size: cover;
+					background-image: url('../img/icon.businessDocs.png');
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
 					cursor: pointer;
 					display: block;
 					transition: filter .45s;
@@ -151,11 +154,40 @@
 		}
 
 		.form-textarea {
-			border-radius: 0 !important;
+			border-radius: 0;
 			resize: none;
-			letter-spacing: 0.2px !important;
-			color: $black !important;
-			box-shadow: none !important;
+			letter-spacing: 0.2px;
+			color: $black;
+			box-shadow: none;
+			padding: 15px 15px 5px;
+		}
+
+		.attachment-selection {
+			padding: 5px 10px;
+			background-color: $grey2;
+
+			div.paperclip {
+				@include wh(30px, 30px);
+				background-image: url('../img/icon.paperclip.png');
+				background-color: $grey2;
+				background-size: 60%;
+				background-position: center;
+				background-repeat: no-repeat;
+				cursor: pointer;
+				float: right;
+				border-radius: 5px;
+				transition: background-color .2s;
+
+				&:hover {
+					background-color: $light2;
+				}
+			}
+
+			&:after {
+				display: block;
+				content: "";
+				clear: both;
+			}
 		}
 	}
 

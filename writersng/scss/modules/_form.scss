@@ -113,4 +113,16 @@
 			}
 		}
 	}
+
+	&.login-form, &.signup-form {
+		&.padded {
+			background-color: $light2;
+			padding: 30px;
+			border-top: solid 2px $color1;
+
+			button[type="submit"] {
+				margin: auto;
+			}
+		}
+	}
 }

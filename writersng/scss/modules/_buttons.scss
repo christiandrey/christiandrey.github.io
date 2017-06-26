@@ -6,7 +6,7 @@
 	@include wh(175px, 40px);
 	font-family: $headerFont;
 	color: $white;
-	box-shadow: 0 5px 10px transparentize($black, 0.85);
+	box-shadow: 0 5px 10px transparentize($black, 0.97);
 	outline: none !important;
 	border: none;
 	border-radius: 30px;
@@ -14,7 +14,7 @@
 
 	&:hover {
 		color: $white;
-		transform: translateY(-10px);
+		transform: translateY(-3px);
 		box-shadow: 0 15px 20px transparentize($black, 0.9);
 	}
 
@@ -47,7 +47,7 @@
 		border: solid 1px $grey2;
 
 		&:hover {
-			box-shadow: 0 5px 10px transparentize($black, 0.85);
+			box-shadow: 0 5px 10px transparentize($black, 0.95);
 		}
 	}
 
@@ -87,4 +87,9 @@
 	&.btn-f-full {
 		@include wh(100%, 40px);
 	}
+}
+
+a.btn {
+	line-height: 1.9;
+	letter-spacing: 0.2px;
 }
