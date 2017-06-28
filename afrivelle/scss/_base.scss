@@ -1,0 +1,58 @@
+/* ===========================
+   Base
+   =========================== */
+
+body {
+	font-family: $bodyFont;
+    @include font-smoothing;
+    letter-spacing: 0.7px;
+    @include rfs(1);
+}
+
+a {
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headerFont;
+}
+
+::selection {
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-left: 1px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+        padding-right: 15px;
+    }
+}
