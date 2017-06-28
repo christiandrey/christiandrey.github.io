@@ -213,6 +213,19 @@
 						}
 					}
 
+					&.login a, &.signup a {
+						font-weight: bold;
+						color: $color2;
+
+						&:hover {
+							color: $grey;
+						}
+
+						@include MQ(M) {
+							color: $color1;
+						}
+					}
+
 					&.is-active {
 						a {
 							color: $color2;

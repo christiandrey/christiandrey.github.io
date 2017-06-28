@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
         top: calc(50% - 1px);
         left: -4px;
         position: absolute;
-        @include wh(calc(100% + 8px), 1px);
+        @include wh(calc(100% + 8px), 2px);
         background-color: red;
     }
 }

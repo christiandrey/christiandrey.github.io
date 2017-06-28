@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -4px;
     position: absolute;
     width: calc(100% + 8px);
-    height: 1px;
+    height: 2px;
     background-color: red; }
 
 /* Bootstrap Overrides */
@@ -317,6 +317,15 @@ h1, h2, h3, h4, h5, h6 {
           @media only screen and (min-width: 768px) {
             .l-nav .right-aligned-items .nav-links-container .nav-link.hidden-sm {
               display: none; } }
+        .l-nav .right-aligned-items .nav-links-container .nav-link.login a, .l-nav .right-aligned-items .nav-links-container .nav-link.signup a {
+          font-weight: bold;
+          color: #f2a42f;
+          /* Tablets and phablets */ }
+          .l-nav .right-aligned-items .nav-links-container .nav-link.login a:hover, .l-nav .right-aligned-items .nav-links-container .nav-link.signup a:hover {
+            color: #777777; }
+          @media only screen and (min-width: 768px) {
+            .l-nav .right-aligned-items .nav-links-container .nav-link.login a, .l-nav .right-aligned-items .nav-links-container .nav-link.signup a {
+              color: #128a4b; } }
         .l-nav .right-aligned-items .nav-links-container .nav-link.is-active a {
           color: #f2a42f; }
   .l-nav ul.dropdown-menu {
@@ -1779,7 +1788,7 @@ a.btn {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5; }
+  z-index: 10; }
   .m-file-viewer .file-viewer-overlay {
     width: 100%;
     height: 100%;
@@ -1787,7 +1796,7 @@ a.btn {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 5; }
+    z-index: 10; }
   .m-file-viewer .file-viewer-content {
     width: 90%;
     height: auto;
@@ -1797,7 +1806,7 @@ a.btn {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     margin: 80px auto 0;
     position: relative;
-    z-index: 6;
+    z-index: 11;
     /* Tablets and phablets */ }
     @media only screen and (min-width: 768px) {
       .m-file-viewer .file-viewer-content {
@@ -1831,7 +1840,7 @@ a.btn {
         -ms-transform: translateX(-50%) translateY(-50%);
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
-        z-index: 6; }
+        z-index: 11; }
       .m-file-viewer .file-viewer-content .file-viewer-body .file-viewer-error {
         width: 90%;
         height: auto;
@@ -1851,7 +1860,7 @@ a.btn {
         text-align: center;
         color: #128a4b;
         font-size: 3em;
-        z-index: 6;
+        z-index: 11;
         letter-spacing: -1px;
         /* Tablets and phablets */ }
         @media only screen and (min-width: 768px) {
@@ -1869,7 +1878,7 @@ a.btn {
         width: 100%;
         height: 100%;
         position: relative;
-        z-index: 7; }
+        z-index: 12; }
         .m-file-viewer .file-viewer-content .file-viewer-body .gdocsviewer iframe {
           width: auto;
           height: 100%;
@@ -1904,7 +1913,7 @@ a.btn {
       right: -12px;
       cursor: pointer;
       transition: transform .2s;
-      z-index: 8; }
+      z-index: 13; }
       .m-file-viewer .file-viewer-content .file-viewer-close:hover {
         transform: scale(1.05, 1.05) rotate(90deg); }
 
