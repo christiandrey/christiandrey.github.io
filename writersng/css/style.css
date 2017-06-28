@@ -49,6 +49,17 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   padding-right: 2.5px; }
 
+.strikethrough {
+  position: relative; }
+  .strikethrough:after {
+    content: "";
+    top: calc(50% - 1px);
+    left: -4px;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 1px;
+    background-color: red; }
+
 /* Bootstrap Overrides */
 /* ===========================
    Bootstrap Overrides
@@ -1193,6 +1204,10 @@ h1, h2, h3, h4, h5, h6 {
                 font-weight: bold; }
               .l-section.two-column-layout .left-column div.job-price-container .body .invoice-item.total .value, .l-section.single-column-layout .left-column div.job-price-container .body .invoice-item.total .value {
                 color: #128a4b; }
+          .l-section.two-column-layout .left-column div.job-price-container .body .no-price-content, .l-section.single-column-layout .left-column div.job-price-container .body .no-price-content {
+            color: #777777;
+            font-size: .9em;
+            letter-spacing: 0.2px; }
         .l-section.two-column-layout .left-column div.job-price-container .footer, .l-section.single-column-layout .left-column div.job-price-container .footer {
           background-color: rgba(244, 248, 249, 0.5);
           border-top-color: #f4f8f9;
@@ -1358,9 +1373,9 @@ h1, h2, h3, h4, h5, h6 {
               background-color: #f4f8f9; }
         .l-section.two-column-layout .right-column .col-body .job-info-item, .l-section.two-column-layout .center-column .col-body .job-info-item, .l-section.single-column-layout .right-column .col-body .job-info-item, .l-section.single-column-layout .center-column .col-body .job-info-item {
           margin: 0 auto 30px; }
-        .l-section.two-column-layout .right-column .col-body .job-summary, .l-section.two-column-layout .center-column .col-body .job-summary, .l-section.single-column-layout .right-column .col-body .job-summary, .l-section.single-column-layout .center-column .col-body .job-summary {
+        .l-section.two-column-layout .right-column .col-body .job-summary, .l-section.two-column-layout .right-column .col-body .job-outline, .l-section.two-column-layout .center-column .col-body .job-summary, .l-section.two-column-layout .center-column .col-body .job-outline, .l-section.single-column-layout .right-column .col-body .job-summary, .l-section.single-column-layout .right-column .col-body .job-outline, .l-section.single-column-layout .center-column .col-body .job-summary, .l-section.single-column-layout .center-column .col-body .job-outline {
           margin: 0 0 30px; }
-          .l-section.two-column-layout .right-column .col-body .job-summary > p:last-of-type, .l-section.two-column-layout .center-column .col-body .job-summary > p:last-of-type, .l-section.single-column-layout .right-column .col-body .job-summary > p:last-of-type, .l-section.single-column-layout .center-column .col-body .job-summary > p:last-of-type {
+          .l-section.two-column-layout .right-column .col-body .job-summary > p:last-of-type, .l-section.two-column-layout .right-column .col-body .job-outline > p:last-of-type, .l-section.two-column-layout .center-column .col-body .job-summary > p:last-of-type, .l-section.two-column-layout .center-column .col-body .job-outline > p:last-of-type, .l-section.single-column-layout .right-column .col-body .job-summary > p:last-of-type, .l-section.single-column-layout .right-column .col-body .job-outline > p:last-of-type, .l-section.single-column-layout .center-column .col-body .job-summary > p:last-of-type, .l-section.single-column-layout .center-column .col-body .job-outline > p:last-of-type {
             width: 100%;
             height: auto;
             letter-spacing: 0.2px;
@@ -1459,6 +1474,34 @@ h1, h2, h3, h4, h5, h6 {
               color: white; }
             .l-section.two-column-layout .right-column .col-body .user-form-switch div:hover, .l-section.two-column-layout .center-column .col-body .user-form-switch div:hover, .l-section.single-column-layout .right-column .col-body .user-form-switch div:hover, .l-section.single-column-layout .center-column .col-body .user-form-switch div:hover {
               border-color: #128a4b; }
+        .l-section.two-column-layout .right-column .col-body .wallet-balance, .l-section.two-column-layout .center-column .col-body .wallet-balance, .l-section.single-column-layout .right-column .col-body .wallet-balance, .l-section.single-column-layout .center-column .col-body .wallet-balance {
+          margin-bottom: 30px; }
+          .l-section.two-column-layout .right-column .col-body .wallet-balance .header, .l-section.two-column-layout .center-column .col-body .wallet-balance .header, .l-section.single-column-layout .right-column .col-body .wallet-balance .header, .l-section.single-column-layout .center-column .col-body .wallet-balance .header {
+            background-color: #777777;
+            color: white;
+            font-family: "CircularStd-Bold", Georgia, serif;
+            font-size: 1.1em;
+            letter-spacing: 0.1px;
+            padding: 8px 10px;
+            margin: 0; }
+          .l-section.two-column-layout .right-column .col-body .wallet-balance .body, .l-section.two-column-layout .center-column .col-body .wallet-balance .body, .l-section.single-column-layout .right-column .col-body .wallet-balance .body, .l-section.single-column-layout .center-column .col-body .wallet-balance .body {
+            margin: 10px 0 0;
+            background-color: #f4f8f9;
+            padding: 10px 10px 0;
+            text-align: center; }
+            .l-section.two-column-layout .right-column .col-body .wallet-balance .body .balance, .l-section.two-column-layout .center-column .col-body .wallet-balance .body .balance, .l-section.single-column-layout .right-column .col-body .wallet-balance .body .balance, .l-section.single-column-layout .center-column .col-body .wallet-balance .body .balance {
+              font-family: "CircularStd-Bold", Georgia, serif;
+              color: #777777;
+              font-size: 3em; }
+              .l-section.two-column-layout .right-column .col-body .wallet-balance .body .balance .naira, .l-section.two-column-layout .center-column .col-body .wallet-balance .body .balance .naira, .l-section.single-column-layout .right-column .col-body .wallet-balance .body .balance .naira, .l-section.single-column-layout .center-column .col-body .wallet-balance .body .balance .naira {
+                font-family: Segoe UI;
+                font-weight: bold; }
+          .l-section.two-column-layout .right-column .col-body .wallet-balance .footer, .l-section.two-column-layout .center-column .col-body .wallet-balance .footer, .l-section.single-column-layout .right-column .col-body .wallet-balance .footer, .l-section.single-column-layout .center-column .col-body .wallet-balance .footer {
+            background-color: rgba(244, 248, 249, 0.5);
+            border-top-color: #f4f8f9;
+            border-top-style: solid;
+            border-top-width: 2px;
+            padding: 15px 10px; }
         .l-section.two-column-layout .right-column .col-body .col-action, .l-section.two-column-layout .center-column .col-body .col-action, .l-section.single-column-layout .right-column .col-body .col-action, .l-section.single-column-layout .center-column .col-body .col-action {
           display: inline-block;
           float: right;
@@ -1704,7 +1747,7 @@ a.btn {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3; }
+  z-index: 5; }
   .m-file-viewer .file-viewer-overlay {
     width: 100%;
     height: 100%;
@@ -1712,7 +1755,7 @@ a.btn {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 3; }
+    z-index: 5; }
   .m-file-viewer .file-viewer-content {
     width: 90%;
     height: auto;
@@ -1722,7 +1765,7 @@ a.btn {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     margin: 80px auto 0;
     position: relative;
-    z-index: 4;
+    z-index: 6;
     /* Tablets and phablets */ }
     @media only screen and (min-width: 768px) {
       .m-file-viewer .file-viewer-content {
@@ -1756,7 +1799,7 @@ a.btn {
         -ms-transform: translateX(-50%) translateY(-50%);
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
-        z-index: 4; }
+        z-index: 6; }
       .m-file-viewer .file-viewer-content .file-viewer-body .file-viewer-error {
         width: 90%;
         height: auto;
@@ -1776,7 +1819,7 @@ a.btn {
         text-align: center;
         color: #128a4b;
         font-size: 3em;
-        z-index: 4;
+        z-index: 6;
         letter-spacing: -1px;
         /* Tablets and phablets */ }
         @media only screen and (min-width: 768px) {
@@ -1794,7 +1837,7 @@ a.btn {
         width: 100%;
         height: 100%;
         position: relative;
-        z-index: 5; }
+        z-index: 7; }
         .m-file-viewer .file-viewer-content .file-viewer-body .gdocsviewer iframe {
           width: auto;
           height: 100%;
@@ -1829,7 +1872,7 @@ a.btn {
       right: -12px;
       cursor: pointer;
       transition: transform .2s;
-      z-index: 6; }
+      z-index: 8; }
       .m-file-viewer .file-viewer-content .file-viewer-close:hover {
         transform: scale(1.05, 1.05) rotate(90deg); }
 
@@ -2434,5 +2477,43 @@ a.btn {
       font-size: 0.8em;
       text-align: right;
       letter-spacing: 0.2px; }
+
+/* ==|====================
+   Module/Transaction Item
+   ======================= */
+.m-transaction-item {
+  background-color: #f4f8f9;
+  padding: 15px 10px;
+  font-size: 0.9em;
+  margin: 0 0 15px;
+  position: relative; }
+  .m-transaction-item .description {
+    font-weight: bold; }
+  .m-transaction-item span {
+    margin-bottom: 8px;
+    display: inline-block;
+    /* Landscape tablets and desktop or laptops */ }
+    .m-transaction-item span.datetime {
+      margin-bottom: 0; }
+    @media only screen and (min-width: 992px) {
+      .m-transaction-item span {
+        margin-bottom: 0; } }
+  .m-transaction-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%; }
+  .m-transaction-item.credit:before {
+    background-color: #128a4b; }
+  .m-transaction-item.credit .amount {
+    color: #128a4b;
+    font-weight: bold; }
+  .m-transaction-item.debit:before {
+    background-color: red; }
+  .m-transaction-item.debit .amount {
+    color: red;
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

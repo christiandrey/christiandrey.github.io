@@ -115,15 +115,15 @@ $(document).ready(function(e) {
 	// }
 	//End of Emoji Text Area
 
-	//TinyMCE Text Area
-	// try {
-	// 	tinymce.init({
-	// 	    selector: '#type-message-textarea'
-	// 	});
-	// } catch(err) {
-	// 	console.log(err)
-	// }
-	//End of TinyMCE Text Area
+	// TinyMCE Text Area
+	try {
+		tinymce.init({
+		    selector: '#project-summary, #project-outline'
+		});
+	} catch(err) {
+		console.log(err)
+	}
+	// End of TinyMCE Text Area
 
 	//File Viewer
 	$('.attachment-item .attachment-preview[data-href]').click(function(e) {
@@ -156,4 +156,21 @@ $(document).ready(function(e) {
 		}
 	})
 	//End of User form switch
+
+	//Payment option selection
+	$('.payment-options .option').click(function(e) {
+		$(this).siblings().removeClass("selected");
+		$(this).addClass("selected");
+		$('.payment-options input#payment-type').val($(this).attr("id"));
+	})
+	//Payment option selection
+
+	//Bank details view/edit
+	$('a.edit-bank-details').click(function(e) {
+		e.preventDefault();
+		$('.bank-details-view').addClass('hidden');
+		$('.bank-details-edit').removeClass('hidden');
+		$('.bank-details-edit input[name="account-number"]').focus();
+	})
+	//End of Bank details view/edit
 })

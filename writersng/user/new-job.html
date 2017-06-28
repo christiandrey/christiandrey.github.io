@@ -40,9 +40,16 @@
                     <p class="nav-links-title">Quick links</p>
                     <li class="nav-link"><a href="../index.html">Home</a></li>
                     <li class="nav-link"><a href="">Blog</a></li>
-                    <li class="nav-link is-active"><a href="">My Jobs</a></li>
+                    <!--If user is logged in-->
+                    <li class="nav-link is-active"><a href="./dashboard.html">My Jobs</a></li>
+                    <li class="nav-link"><a href="./transactions.html">Transactions</a></li>
                     <li class="nav-link hidden-sm"><a href="">Account settings</a></li>
                     <li class="nav-link hidden-sm"><a href="">Logout</a></li>
+                    <!---->
+                    <!--If user is logged out-->
+                    <li class="nav-link hidden"><a href="../login.html">Login</a></li>
+                    <li class="nav-link hidden"><a href="./signup.html">Signup</a></li>
+                    <!---->
                 </ul>
             </div>
         </nav>
@@ -92,9 +99,17 @@
                                     <i class="naira"></i>1100
                                 </div>
                             </div>
+                            <!--Show when there's no price information-->
+                            <div class="no-price-content hidden">
+                                Lorem ipsum dolor sit amet adipiscing and some other stuff goes into this space right here.
+                            </div>
+                            <!---->
                         </div>
                         <div class="footer">
                             <a href="./ordersummary.html" class="btn btn-color-1 btn-f-center">Proceed to checkout</a>
+                            <!--Show when there's no price information-->
+                            <a href="" class="btn btn-color-1 btn-f-center hidden">Contact us</a>
+                            <!---->
                         </div>
                     </div>
                 </div>
@@ -109,7 +124,8 @@
                         <div class="m-pane">
                             <form class="m-form add-new-job" action="./ordersummary.html">
                                 <input class="form-input" placeholder="Project title" name="project-title" autofocus></input>
-                                <textarea rows="10" placeholder="Project summary" class="form-textarea"></textarea>
+                                <textarea rows="10" placeholder="Project summary" class="form-textarea" name="project-summary" id="project-summary"></textarea>
+                                <textarea rows="10" placeholder="Outline/Table of content" class="form-textarea" name="project-outline" id="project-outline"></textarea>
                                 <div class="row no-padding">
                                     <div class="col-md-6">
                                         <div class="form-group">

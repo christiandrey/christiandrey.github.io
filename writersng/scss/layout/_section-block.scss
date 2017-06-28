@@ -697,6 +697,12 @@
 							}
 						}
 					}
+
+					.no-price-content {
+						color: $grey;
+						font-size: .9em;
+						letter-spacing: 0.2px;
+					}
 				}
 
 				.footer {
@@ -916,7 +922,7 @@
 					margin: 0 auto 30px;
 				}
 
-				.job-summary {
+				.job-summary, .job-outline {
 					margin: 0 0 30px;
 
 					& >p:last-of-type {
@@ -1056,6 +1062,46 @@
 						&:hover {
 							border-color: $color1;
 						}
+					}
+				}
+
+				.wallet-balance {
+					margin-bottom: 30px;
+
+					.header {
+						background-color: $grey;
+						color: white;
+						font-family: $headerFont;
+						font-size: 1.1em;
+						letter-spacing: 0.1px;
+						padding: 8px 10px;
+						margin: 0;
+					}
+
+					.body {
+						margin: 10px 0 0;
+						background-color: $light2;
+						padding: 10px 10px 0;
+						text-align: center;
+
+						.balance {
+							font-family: $headerFont;
+							color: $grey;
+							font-size: 3em;
+
+							.naira {
+								font-family: Segoe UI;
+								font-weight: bold;
+							}
+						}
+					}
+
+					.footer {
+						background-color: transparentize($light2, 0.5);
+						border-top-color: $light2;
+						border-top-style: solid;
+						border-top-width: 2px;
+						padding: 15px 10px;
 					}
 				}
 
