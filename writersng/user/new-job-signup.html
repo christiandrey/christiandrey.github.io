@@ -127,8 +127,12 @@
                             </div>
                             <form class="m-form add-new-job" action="/ordersummary.html">
                                 <input class="form-input" placeholder="Project title" name="project-title" autofocus></input>
-                                <textarea rows="10" placeholder="Project summary" class="form-textarea" name="project-summary" id="project-summary"></textarea>
-                                <textarea rows="10" placeholder="Outline/Table of content" class="form-textarea" name="project-outline" id="project-outline"></textarea>
+                                <div class="form-group">
+                                    <textarea rows="10" placeholder="Project summary" class="form-textarea" name="project-summary" id="project-summary"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <textarea rows="10" placeholder="Outline/Table of content" class="form-textarea" name="project-outline" id="project-outline"></textarea>    
+                                </div>                                
                                 <div class="row no-padding">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -161,10 +165,37 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="delivery" class="form-label">Delivery type</label>
-                                            <select name="delivery" class="form-select" id="delivery">
-                                                <option selected>Select a delivery type</option>
-                                                <option>Delivery type</option>
+                                            <label for="academic-level" class="form-label">Academic level</label>
+                                            <select name="academic-level" class="form-select" id="academic-level">
+                                                <option>Select an academic level</option>
+                                                <option selected>High School</option>
+                                                <option>Undergrad. (yrs 1-2)</option>
+                                                <option>Undergrad. (yrs 3-4)</option>
+                                                <option>Master's</option>
+                                                <option>Doctoral</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="format" class="form-label">Paper format</label>
+                                            <select name="format" class="form-select" id="format">
+                                                <option selected>Select a paper format</option>
+                                                <option>MLA</option>
+                                                <option>APA</option>
+                                                <option>Chicago/Turabian</option>
+                                                <option>Not applicable</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="spacing" class="form-label">Line spacing</label>
+                                            <select name="spacing" class="form-select" id="spacing">
+                                                <option>Single spaced</option>
+                                                <option>Double spaced</option>
                                             </select>
                                         </div>
                                     </div>
@@ -193,7 +224,16 @@
                                     </div>
                                 </div>
                                 <div class="row no-padding">
-                                    <div class="col-md-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="delivery" class="form-label">Delivery type</label>
+                                            <select name="delivery" class="form-select" id="delivery">
+                                                <option selected>Select a delivery type</option>
+                                                <option>Delivery type</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="pages" class="form-label">Pages</label>
                                             <input type="number" class="form-input" value="1" name="pages"></input>
@@ -269,6 +309,7 @@
 <script type="text/javascript" src="../js/jquery.matchHeight-min.js"></script>
 <script type="text/javascript" src="../js/wngalert.js"></script>
 <script type="text/javascript" src="../js/sticky.min.js"></script>
+<script type="text/javascript" src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
 <script type="text/javascript" src="../js/app.js"></script>
 <!-- Uncomment any of the following lines to use the plugin otherwise delete before final build -->
 <!--  -->

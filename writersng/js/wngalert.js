@@ -1,4 +1,4 @@
-function wngalert(status, title, body) {
+function wngalert(status, title, body, callback) {
 	$("<div/>", {
       class: "m-alert hidden",
       id: "alert"
@@ -51,6 +51,7 @@ function wngalert(status, title, body) {
 		animationTime: 450,
 	})
 	$selector.find('.alert-content .alert-footer button').click(function(e) {
+    eval(callback);
 		$selector.find('.alert-content').dreyanim({
 			animationType: "fallOutAlternate",
 			animationTime: 450,

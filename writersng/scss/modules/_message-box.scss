@@ -110,6 +110,22 @@
 					margin: 0 0 -15px 0;
 				}
 
+				.attachment-remove {
+					@include wh(24px, 24px);
+					background-image: url("../img/icon.hamburger.close.png");
+					background-size: cover;
+					position: absolute;
+					top: -12px;
+					right: -12px;
+					cursor: pointer;
+					transition: transform .2s;
+					z-index: 8;
+
+					&:hover {
+						transform: scale(1.05, 1.05) rotate(90deg)
+					}
+				}
+				
 				.attachment-preview {
 					@include wh(100%, 100px);
 					background-image: url('../img/icon.businessDocs.png');

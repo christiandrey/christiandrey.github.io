@@ -4,11 +4,12 @@
 
 .m-form {
 	input.form-input {
-		@include wh(100%, 40px);
+		@include wh(100%, 33px);
 		display: block;
 		margin: 0 auto 30px;
 		border: none;
 		padding: 5px 15px;
+		padding-left: 21px;
 		outline: none;
 		border-bottom: solid 2px $grey2;
 		transition: border 0.45s;

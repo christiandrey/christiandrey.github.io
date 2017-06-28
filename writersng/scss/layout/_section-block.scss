@@ -430,6 +430,11 @@
 						line-height: 2;
 						color: $black;
 						margin: 0 0 30px;
+						
+						span {
+							color: $color1;
+							font-weight: bold;
+						}
 					}
 				}
 			}
@@ -820,12 +825,29 @@
 					@include wh(150px, auto);
 					margin: 0 15px 15px 0;
 					background-color: $light;
+					position: relative;
 					box-shadow: 0 5px 10px transparentize($black, 0.95);
 
 					&:last-child {
 						margin: 0 0 -15px 0;
 					}
 
+					.attachment-remove {
+						@include wh(24px, 24px);
+						background-image: url("../img/icon.hamburger.close.png");
+						background-size: cover;
+						position: absolute;
+						top: -12px;
+						right: -12px;
+						cursor: pointer;
+						transition: transform .2s;
+						z-index: 8;
+
+						&:hover {
+							transform: scale(1.05, 1.05) rotate(90deg)
+						}
+					}
+					
 					.attachment-preview {
 						@include wh(100%, 100px);
 						background-image: url('../img/icon.businessDocs.png');
@@ -1030,6 +1052,20 @@
 					}
 				}
 
+				.transactions-pagination {
+					@include center(x);
+
+					a {
+						color: $grey;
+					}
+
+					li.active>a {
+						background-color: $color1;
+						color: white;
+						border-color: $color1;
+					}
+				}
+
 				.user-form-switch {
 					display: flex;
 					justify-content: space-between;
@@ -1087,7 +1123,7 @@
 						.balance {
 							font-family: $headerFont;
 							color: $grey;
-							font-size: 3em;
+							font-size: 2.8em;
 
 							.naira {
 								font-family: Segoe UI;

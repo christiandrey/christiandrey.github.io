@@ -133,6 +133,10 @@ $(document).ready(function(e) {
 			console.log(err)
 		}
 	})
+
+	$('.attachment-item .attachment-remove').click(function(e) {
+		$(this).parents('.attachment-item').remove();
+	})
 	//End of File Viewer
 
 	//Sticky
