@@ -63,4 +63,8 @@ $(document).ready(function(e) {
 			offset: -80
 		})
 	})
+
+	$(".form-message-wrapper .form-message-close").click(function(e) {
+		$(this).parent().addClass("hidden");
+	})
 })

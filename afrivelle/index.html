@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <!-- Uncomment any of the following lines to use the stylesheet otherwise delete before final build -->
     <!--  -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
+     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> 
     <!-- <link rel="stylesheet" type="text/css" href="css/dreyanim.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/dreymodal.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -159,6 +159,10 @@
                 <p class="section-subtitle">
                     Get in touch with us
                 </p>
+                <div class="form-message-wrapper">
+                    <span class="form-message">Yippee!! Your form has been submitted!</span>
+                    <div class="form-message-close"></div>
+                </div>
                 <form action="" class="m-form">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
@@ -194,7 +198,10 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12">
-                            <button type="submit" class="btn btn-color2 submit-form">SUBMIT</button>
+                            <button type="submit" class="btn btn-color2 submit-form">
+                                <i class="fa fa-spinner fa-pulse"></i>
+                                <span>SUBMIT</span>
+                            </button>
                         </div>
                     </div>
                 </form>

@@ -589,6 +589,30 @@ h1, h2, h3, h4, h5, h6 {
         @media only screen and (min-width: 992px) {
           .l-section.contact-us .section-content .section-subtitle {
             margin-bottom: 50px; } }
+      .l-section.contact-us .section-content .form-message-wrapper {
+        background-color: #ff595f;
+        width: 100%;
+        height: 30px;
+        padding: 0px;
+        padding-left: 12px;
+        color: white;
+        margin-bottom: 30px;
+        margin-top: -10px;
+        display: flex;
+        justify-content: space-between;
+        /* Landscape tablets and desktop or laptops */ }
+        @media only screen and (min-width: 992px) {
+          .l-section.contact-us .section-content .form-message-wrapper {
+            margin-top: -30px; } }
+        .l-section.contact-us .section-content .form-message-wrapper .form-message {
+          color: white;
+          align-self: center; }
+        .l-section.contact-us .section-content .form-message-wrapper .form-message-close {
+          width: 30px;
+          height: 30px;
+          background-image: url("../img/icon.close.png");
+          cursor: pointer;
+          background-size: contain; }
       .l-section.contact-us .section-content .submit-form {
         margin-bottom: 15px; }
 
@@ -603,10 +627,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   padding: 6px 18px;
   line-height: 1.3;
-  border-radius: 0; }
+  border-radius: 0;
+  box-shadow: none;
+  outline: none !important;
+  transition: border .45s, transform .45s, box-shadow .45s; }
   .btn.btn-color2 {
     background-color: #ff595f;
+    border-top: solid 1px #ff595f;
     color: white; }
+    .btn.btn-color2:hover {
+      border-top: solid 1px rgba(255, 255, 255, 0.3);
+      box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.1);
+      transform: translateX(2px) translateY(-2px); }
 
 /* ==|====================
    Module/Form
