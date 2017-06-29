@@ -3,4 +3,101 @@
    ======================= */
 
 .l-header {
+    position: relative;
+    background-color: $color1;
+    @include wh(100%, calc(100vh - 140px));
+
+    @include MQ(L) {
+        @include wh(100%, calc(100vh - 80px));
+    }
+
+    .header-content {
+        padding: 0 30px;
+        text-align: center;
+        @include center(y);
+
+        @include MQ(L) {
+            text-align: left;
+        }
+        
+        .header-brand {
+            @include wh(auto, 70px);
+            display: block;
+            margin: 0 auto 30px;
+
+            @include MQ(M) {
+                margin: 0px auto 30px;
+            }
+
+            @include MQ(L) {
+                @include wh(auto, 120px);
+                margin: 0;
+                float: right;
+            }
+        }
+
+        .hero-title {
+            font-size: 2em;
+            color: white;
+            margin-bottom: 20px;
+            
+            @include MQ(M) {
+                font-size: 4em;
+                margin-bottom: 30px;
+            }
+
+            span {
+                color: $color4;
+            }
+
+            @include MQ(L) {
+                margin-left: 60px;
+                width: 60%;
+                min-width: 300px;
+                max-width: 500px;
+            }
+        }
+
+        .get-in-touch {
+            @include MQ(L) {
+                text-align: left;
+                margin-left: 60px;
+            }
+        }
+
+        .hero-subtitle {
+            font-size: 13px;
+            color: white;
+            margin-bottom: 20px;
+            line-height: 1.5;
+
+            @include MQ(M) {
+                font-size: 12px;
+                line-height: 2;
+                margin-bottom: 30px;
+                width: 80%;
+                margin-left: 10%;
+            }
+
+            @include MQ(L) {
+                text-align: left;
+                margin-left: 60px;
+                line-height: 1.5;
+                max-width: 600px;
+                width: 75%;
+            }
+        }
+    }
+
+    .header-bg {
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+
+        @include MQ(L) {
+            width: 60%;
+            left: 20%;
+        }
+    }
 }

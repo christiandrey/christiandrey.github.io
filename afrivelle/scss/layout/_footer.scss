@@ -3,4 +3,15 @@
    ======================= */
 
 .l-footer {
+    background-color: $color1;
+    color: white;
+    padding: 12px 0;
+    margin: 0 0 60px;
+    text-align: center;
+
+    @include MQ(L) {
+        margin: 0;
+        padding: 12px 0 12px 80px;
+        text-align: left;
+    }
 }

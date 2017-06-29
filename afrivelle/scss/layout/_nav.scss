@@ -3,4 +3,117 @@
    ======================= */
 
 .l-nav {
+    .nav-main {
+        @include wh(100%, 80px);
+        background-color: $color1;
+        border-bottom: solid 1px $color5;
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+
+        @include MQ(M) {
+            padding: 0 80px;
+        }
+
+        .brand-container {
+            padding: 0 0 10px 0;
+            display: flex;
+            
+            .brand-icon {
+                @include wh(auto, 40px);
+                display: none;
+                margin-right: 15px;
+                align-self: flex-end;
+            }
+
+            .brand-text {
+                @include wh(auto, 40px);
+                align-self: flex-end;
+            }
+        }
+
+        .nav-links-container {
+            display: none;
+            position: relative;
+
+            @include MQ(L) {
+                display: flex;
+                justify-content: flex-start;
+                width: 50%;
+                min-width: 400px;
+                max-width: 500px;
+            }
+
+            .nav-link {
+                @include wh(25%, auto);
+                padding-bottom: 10px;
+                text-align: center;
+                color: white;
+                align-self: flex-end;
+
+            }
+
+            .indicator {
+                @include wh(25%, 2px);
+                background-color: $color3;
+                border-radius: 3px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .nav-mobile {
+        @include wh(100%, 60px);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: $color1;
+        z-index: 10;
+        display: flex;
+        justify-content: flex-start;
+
+        @include MQ(L) {
+            display: none;
+        }
+
+        .nav-link {
+            @include wh(25%, 100%);
+            text-align: center;
+            color: white;
+            background-size: 30%;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            @include MQ(M) {
+                background-size: 20%;
+            }
+
+            &.home {
+                background-image: url("../img/icon.temp.png")
+            }
+
+            &.who-we-are {
+                background-image: url("../img/icon.temp.png")
+            }
+
+            &.what-we-do {
+                background-image: url("../img/icon.temp.png")
+            }
+
+            &.contact-us {
+                background-image: url("../img/icon.temp.png")
+            }
+        }
+
+        .indicator {
+            @include wh(25%, 2px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $color3;
+            border-radius: 3px;
+        }
+    }
 }

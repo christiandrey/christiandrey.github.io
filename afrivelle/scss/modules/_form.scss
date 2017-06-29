@@ -1,0 +1,54 @@
+/* ==|====================
+   Module/Form
+   ======================= */
+
+.m-form {
+    .form-item {
+        margin-bottom: 40px;
+        position: relative;
+
+        input, textarea {
+            border: solid 1px white;
+            background-color: transparent;
+            position: relative;
+            color: white;
+            resize: none;
+            width: 100%;
+            outline: none !important;
+            padding-left: 10px;
+            font-size: 13px;
+            transition: border .3s;
+            z-index: 3;
+
+            &:focus {
+                border: none;
+                border-bottom: solid 1px $color2;
+            }
+        }
+
+        input {
+            height: 35px;
+        }
+
+        textarea {
+            padding-top: 10px;
+        }
+
+        .form-label {
+            color: white;
+            position: absolute;
+            font-family: $bodyFont;
+            top: 10px;
+            left: 10px;
+            font-size: 13px;
+            z-index: 2;
+            transition: top .3s, font-size .3s, color .3s;
+
+            &.is-focused {
+                top: -15px;
+                font-size: 10px;
+                color: $color4;
+            }
+        }
+    }
+}

@@ -1,0 +1,275 @@
+/* ==|====================
+   Layout/Section Block
+   ======================= */
+
+.l-section {
+    width: 100%;
+
+    &.who-we-are {
+        background-color: $color3;
+        padding: 0 0 60px 0;
+
+        @include MQ(L) {
+            padding: 0 0 80px 0;
+        }
+
+        .section-bg {
+            @include wh(80%, auto);
+            position: relative;
+            margin-left: 10%;
+            margin-bottom: 60px;
+
+            @include MQ(L) {
+                width: 60%;
+                margin-left: 20%;
+            }
+        }
+
+        .section-content {
+            text-align: center;
+
+            .section-icon {
+                @include wh(auto, 60px);
+                display: block;
+                margin: 0 auto 20px;
+            }
+
+            .section-title {
+                display: inline-block;
+                padding: 6px 24px;
+                background-color: $color1;
+                color: white;
+                margin-bottom: 20px;
+            }
+
+            .section-body {
+                @include wh(calc(100% - 60px), auto);
+                margin-left: 30px;
+                color: $color1;
+                line-height: 1.5;
+
+                @include MQ(L) {
+                    @include wh(60%, auto);
+                    margin: 0 auto;
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+
+    &.what-we-do {
+        .pane {
+            &.left {
+                padding: 30px;
+                text-align: center;
+
+                @include MQ(L) {
+                    text-align: left;
+                    padding: 80px;
+                }
+
+                .pane-content {
+                    .pane-item {
+                        margin-bottom: 30px;
+
+                        @include MQ(L) {
+                            margin-bottom: 60px;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .pane-item-icon {
+                            @include wh(auto, 60px);
+                            display: block;
+                            margin: 0 auto 20px;
+
+                        }
+
+                        .pane-item-title {
+                            font-family: $headerFont;
+                            font-size: 16px;
+                            color: $color2;
+                            margin: 0 auto 10px;
+                            letter-spacing: 0;
+                        }
+
+                        .pane-item-body {
+                            color: black;
+                            font-size: 13px;
+                            line-height: 2;
+                        }
+                    }
+                }
+            }
+
+            &.right {
+                background-color: $grey;
+                padding: 30px;
+                text-align: left;
+
+                @include MQ(M) {
+                    text-align: center;
+                }
+
+                @include MQ(L) {
+                    text-align: left;
+                    height: 644px;
+                    padding: 80px;
+                }
+
+                .pane-content {
+                    @include MQ(L) {
+                        @include center(y);
+                    }
+                    .brand-icon {
+                        @include wh(auto, 70px);
+                        display: block;
+                        margin: 0 0 20px;
+
+                        @include MQ(M) {
+                            margin: 0 auto 20px;
+                        }
+
+                        @include MQ(L) {
+                            margin: 0 0 10px;
+                        }
+                    }
+
+                    .pane-title {
+                        color: $color1;
+                        font-size: 18px;
+                        margin: 0 0 25px;
+
+                        @include MQ(L) {
+                            font-size: 22px;
+                            margin: 0 0 35px;
+                        }
+                    }
+
+                    .advantage {
+                        padding: 6px 12px;
+                        margin-bottom: 10px;
+                        display: table;
+                        
+                        @include MQ(M) {
+                            margin: 0 auto 10px;
+                        }
+
+                        @include MQ(L) {
+                            margin: 0;
+                            margin-bottom: 15px;
+                        }
+
+                        &.one {
+                            background-color: $color1;
+                            color: white;
+                        }
+
+                        &.two {
+                            background-color: $color2;
+                            color: white;
+                        }
+
+                        &.three {
+                            background-color: $color3;
+                            color: $color1;
+                        }
+
+                        &.four {
+                            background-color: $color4;
+                            color: $color1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.works {
+        position: relative;
+
+        .carousel-controls {
+            @include wh(30px, 30px);
+            background-size: contain;
+            z-index: 10;
+            cursor: pointer;
+
+            &.prev {
+                background-image: url("../img/icon.prev.png");
+                position: absolute !important;
+                @include center(y);
+                left: 30px;
+            }
+
+            &.next {
+                background-image: url("../img/icon.next.png");
+                position: absolute !important;
+                @include center(y);
+                right: 30px;
+            }
+        }
+
+        .carousel {
+            @include MQ(L) {
+                display: flex;
+                justify-content: flex-start;
+            }
+            .carousel-item {
+                @include wh(100%, auto);
+
+                @include MQ(L) {
+                    @include wh(50%, auto);
+                }
+            }
+        }
+    }
+
+    &.contact-us {
+        padding: 30px;
+        background-color: $color5;
+
+        @include MQ(L) {
+            padding: 80px;
+        }
+
+        .section-content {
+            text-align: center;
+
+            @include MQ(L) {
+                width: 60%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            .section-title {
+                font-size: 2em;
+                color: white;
+                margin-bottom: 10px;
+
+                span {
+                    color: $color3;
+                }
+
+                @include MQ(L) {
+                    font-size: 3em;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .section-subtitle {
+                color: $color4;
+                margin-bottom: 30px;
+
+                @include MQ(L) {
+                    margin-bottom: 50px;
+                }
+            }
+
+            .submit-form {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
