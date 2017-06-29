@@ -614,6 +614,10 @@ h1, h2, h3, h4, h5, h6 {
 .m-form .form-item {
   margin-bottom: 40px;
   position: relative; }
+  .m-form .form-item.error input, .m-form .form-item.error textarea {
+    border: solid 1px #09e5a5; }
+  .m-form .form-item.error .form-error {
+    display: block; }
   .m-form .form-item input, .m-form .form-item textarea {
     border: solid 1px white;
     background-color: transparent;
@@ -646,5 +650,14 @@ h1, h2, h3, h4, h5, h6 {
       top: -15px;
       font-size: 10px;
       color: #09e5a5; }
+  .m-form .form-item .form-error {
+    color: #ff595f;
+    position: absolute;
+    display: none;
+    font-family: "Roboto-Regular", Helvetica, Arial;
+    bottom: -16px;
+    left: 10px;
+    font-size: 10px;
+    z-index: 2; }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,6 +7,16 @@
         margin-bottom: 40px;
         position: relative;
 
+        &.error {
+            input, textarea {
+                border: solid 1px $color4;
+            }
+
+            .form-error {
+                display: block;
+            }
+        }
+
         input, textarea {
             border: solid 1px white;
             background-color: transparent;
@@ -49,6 +59,17 @@
                 font-size: 10px;
                 color: $color4;
             }
+        }
+
+        .form-error {
+            color: $color2;
+            position: absolute;
+            display: none;
+            font-family: $bodyFont;
+            bottom: -16px;
+            left: 10px;
+            font-size: 10px;
+            z-index: 2;
         }
     }
 }
