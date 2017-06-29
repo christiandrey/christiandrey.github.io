@@ -6,12 +6,41 @@
     background-color: $color1;
     color: white;
     padding: 12px 0;
-    margin: 0 0 60px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 60px;
 
     @include MQ(L) {
-        margin: 0;
-        padding: 12px 0 12px 80px;
+        padding: 12px 80px 12px 80px;
         text-align: left;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+
+        @include MQ(L) {
+            flex-direction: row;
+            margin-bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 7px;
+            color: $color4;
+
+            @include MQ(L) {
+                margin-bottom: 0;
+                margin-right: 15px;
+            }
+        }
     }
 }
