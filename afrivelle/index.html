@@ -27,21 +27,21 @@
                 </div>
                 <div class="nav-links-container">
                     <div class="indicator"></div>
-                    <div class="nav-link">Home</div>
-                    <div class="nav-link">Who we are</div>
-                    <div class="nav-link">What we do</div>
-                    <div class="nav-link">Contact us</div>
+                    <div class="nav-link home" data-href="home">Home</div>
+                    <div class="nav-link who-we-are" data-href="who-we-are">Who we are</div>
+                    <div class="nav-link what-we-do" data-href="what-we-do">What we do</div>
+                    <div class="nav-link contact-us" data-href="contact-us">Contact us</div>
                 </div>
             </div>
             <div class="nav-mobile">
                 <div class="indicator"></div>
-                <div class="nav-link home"></div>
-                <div class="nav-link who-we-are"></div>
-                <div class="nav-link what-we-do"></div>
-                <div class="nav-link contact-us"></div>
+                <div class="nav-link home" data-href="home"></div>
+                <div class="nav-link who-we-are" data-href="who-we-are"></div>
+                <div class="nav-link what-we-do" data-href="what-we-do"></div>
+                <div class="nav-link contact-us" data-href="contact-us"></div>
             </div>
         </nav>
-        <header class="l-header" role="header">
+        <header class="l-header" role="header" id="home">
             <img src="img/icon.header-bg.png" alt="Afrivelle" class="header-bg">
             <div class="header-content">
                 <div class="row">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </header>
-        <section class="l-section who-we-are" role="">
+        <section class="l-section who-we-are" role="" id="who-we-are">
             <img src="img/icon.section-bg.png" alt="Afrivelle" class="section-bg">
             <div class="section-content">
                 <img src="img/icon.who-we-are.png" alt="" class="section-icon">
@@ -72,7 +72,7 @@
                 </p>
             </div>    
         </section>
-        <section class="l-section what-we-do" role="">
+        <section class="l-section what-we-do" role="" id="what-we-do">
             <div class="container-responsive">
                 <div class="row no-gutter">
                     <div class="col-xs-12 col-md-7">
@@ -143,7 +143,7 @@
                 </div>
             </div>
         </section>
-        <section class="l-section works" role="">
+        <section class="l-section works" role="" id="works">
             <div class="carousel-controls prev"></div>
             <div class="carousel-controls next"></div>
             <div class="carousel">
@@ -151,7 +151,7 @@
                 <img src="img/image.two.jpg" alt="Afrivelle" class="carousel-item visible-md visible-lg">
             </div>
         </section>
-        <section class="l-section contact-us">
+        <section class="l-section contact-us" role="" id="contact-us">
             <div class="section-content">
                 <p class="section-title">
                     We like a <span>good</span> challenge
@@ -203,6 +203,8 @@
 </body>
 <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="js/noframework.waypoints.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <!-- Uncomment any of the following lines to use the plugin otherwise delete before final build -->
 <!--  -->

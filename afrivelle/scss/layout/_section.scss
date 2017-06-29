@@ -60,7 +60,7 @@
     &.what-we-do {
         .pane {
             &.left {
-                padding: 30px;
+                padding: 30px 45px;
                 text-align: center;
 
                 @include MQ(L) {
@@ -106,7 +106,7 @@
 
             &.right {
                 background-color: $grey;
-                padding: 30px;
+                padding: 30px 45px;
                 text-align: left;
 
                 @include MQ(M) {
@@ -201,6 +201,10 @@
                 position: absolute !important;
                 @include center(y);
                 left: 30px;
+
+                @include MQ(L) {
+                    left: 80px;
+                }
             }
 
             &.next {
@@ -208,6 +212,10 @@
                 position: absolute !important;
                 @include center(y);
                 right: 30px;
+
+                @include MQ(L) {
+                    right: 80px;
+                }
             }
         }
 

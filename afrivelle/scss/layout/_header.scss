@@ -5,6 +5,7 @@
 .l-header {
     position: relative;
     background-color: $color1;
+    margin-top: 80px;
     @include wh(100%, calc(100vh - 140px));
 
     @include MQ(L) {
