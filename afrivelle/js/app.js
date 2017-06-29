@@ -53,7 +53,7 @@ $(document).ready(function(e) {
 		$.scrollTo(scroll, {
 			duration: 600,
 			offset: -80
-		})
+		});
 	})
 
 	$("a.get-in-touch").click(function(e) {

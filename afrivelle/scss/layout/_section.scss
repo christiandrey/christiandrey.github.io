@@ -276,7 +276,6 @@
             }
 
             .form-message-wrapper {
-                background-color: $color2;
                 @include wh(100%, 30px);
                 padding: 0px;
                 padding-left: 12px;
@@ -284,22 +283,39 @@
                 margin-bottom: 30px;
                 margin-top: -10px;
                 display: flex;
+                color: white;
                 justify-content: space-between;
 
                 @include MQ(L) {
                     margin-top: -30px
                 }
 
+                &.success {
+                    background-color: $color4;
+                    color: $color1;
+                }
+
+                &.error {
+                    background-color: $color2;
+                }
+
                 .form-message {
-                    color: white;
                     align-self: center;
                 }
 
                 .form-message-close {
                     @include wh(30px, 30px);
+                    background-color: $color1;
                     background-image: url("../img/icon.close.png");
                     cursor: pointer;
-                    background-size: contain;
+                    background-size: 70%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: background-size .3s;
+
+                    &:hover {
+                        background-size: 67%;
+                    }
                 }
             }
 
