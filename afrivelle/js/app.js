@@ -1,7 +1,4 @@
 $(document).ready(function(e) {
-	// $(".form-item input, .form-item textarea").on(focus, function(e) {
-		
-	// })
 
 	$(".form-item input, .form-item textarea").focusin(function(e) {
 		if ($(this).val() == "" || $(this).val() == null) {
@@ -58,9 +55,16 @@ $(document).ready(function(e) {
 
 	$("a.get-in-touch").click(function(e) {
 		e.preventDefault();
-		$.scrollTo("#contact-us", {
-			duration: 600,
-			offset: -80
+		$(".mvp-sprint-application").dreyanim({
+			animationType: "fallInAlternate",
+			animationTime: 350
+		})
+	})
+
+	$(".mvp-sprint-application .close-btn").click(function(e){
+		$(".mvp-sprint-application").dreyanim({
+			animationType: "fallOut",
+			animationTime: 400
 		})
 	})
 

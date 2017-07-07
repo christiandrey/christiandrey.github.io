@@ -60,6 +60,7 @@
         }
 
         .get-in-touch {
+            position: relative;
             @include MQ(L) {
                 text-align: left;
                 margin-left: 60px;
