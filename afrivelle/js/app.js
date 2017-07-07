@@ -59,6 +59,7 @@ $(document).ready(function(e) {
 			animationType: "fallInAlternate",
 			animationTime: 350
 		})
+		$("body").css("overflow","hidden");
 	})
 
 	$(".mvp-sprint-application .close-btn").click(function(e){
@@ -66,6 +67,7 @@ $(document).ready(function(e) {
 			animationType: "fallOut",
 			animationTime: 400
 		})
+		$("body").css("overflow","auto");
 	})
 
 	$(".form-message-wrapper .form-message-close").click(function(e) {
