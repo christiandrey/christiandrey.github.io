@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%; }
   .l-section.mvp-sprint-application {
     padding: 80px 30px 30px;
-    background-color: #ff595f;
+    background-color: #1b1a2c;
     position: fixed;
     top: 0;
     left: 0;
@@ -367,29 +367,23 @@ h1, h2, h3, h4, h5, h6 {
     /* Tablets and phablets */ }
     @media only screen and (min-width: 768px) {
       .l-section.mvp-sprint-application {
-        padding: 70px 80px; } }
-    .l-section.mvp-sprint-application .form-item {
-      color: black !important; }
-      .l-section.mvp-sprint-application .form-item span {
-        color: black !important; }
-      .l-section.mvp-sprint-application .form-item input, .l-section.mvp-sprint-application .form-item textarea {
-        border-color: black !important; }
+        padding: 60px 80px; } }
     .l-section.mvp-sprint-application button {
       display: table;
       margin-left: auto;
       margin-right: auto; }
     .l-section.mvp-sprint-application p.title {
       font-size: 1.5em;
-      color: black;
+      color: white;
       padding-bottom: 15px;
-      border-bottom: solid #1b1a2c 2px;
+      border-bottom: solid #ff595f 2px;
       margin-bottom: 30px;
       text-align: left; }
     .l-section.mvp-sprint-application .close-btn {
       width: 35px;
       height: 35px;
       background-image: url("../img/icon.close.png");
-      background-color: black;
+      background-color: #ff595f;
       background-size: 80%;
       background-position: center;
       cursor: pointer;

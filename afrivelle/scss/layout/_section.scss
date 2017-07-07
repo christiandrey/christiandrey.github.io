@@ -7,7 +7,7 @@
 
     &.mvp-sprint-application {
         padding: 80px 30px 30px;
-        background-color: $color2;
+        background-color: $color1;
         position: fixed;
         top: 0;
         left: 0;
@@ -16,19 +16,7 @@
         overflow: auto;
 
         @include MQ(M) {
-            padding: 70px 80px;
-        }
-
-        .form-item {
-            color: black !important;
-
-            span {
-                color: black !important;
-            }
-            
-            input, textarea {
-                border-color: black !important;
-            }
+            padding: 60px 80px;
         }
 
         button {
@@ -39,9 +27,9 @@
 
         p.title {
             font-size: 1.5em;
-            color: black;
+            color: white;
             padding-bottom: 15px;
-            border-bottom: solid $color1 2px;
+            border-bottom: solid $color2 2px;
             margin-bottom: 30px;
             text-align: left;
         }
@@ -49,7 +37,7 @@
         .close-btn {
             @include wh(35px, 35px);
             background-image: url("../img/icon.close.png");
-            background-color: black;
+            background-color: $color2;
             background-size: 80%;
             background-position: center;
             cursor: pointer;
