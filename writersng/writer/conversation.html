@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Writers.ng | User</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+    
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <!-- Uncomment any of the following lines to use the stylesheet otherwise delete before final build -->
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/dreyanim.css">
+    <link rel="stylesheet" type="text/css" href="../css/emojionearea.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/dreymodal.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<main class="l-main" role="main">
+        <nav class="l-nav clearfix" role="navigation">
+            <img src="../img/icon.hamburger.png" alt="writers.ng" class="nav-hamburger">
+            <img class="brand-logo" src="../img/icon.brand--dark-stretch.png">
+            <div class="right-aligned-items clearfix">
+                <img src="../img/icon.hamburger.close.png" alt="" class="close-btn">
+                <div class="user-details clearfix">
+                    <img src="../img/user.avatar.jpg" alt="" class="user-avatar">
+                    <p class="user-name">Hi, Ophilia</p>
+                    <div class="user-notification new"></div>
+                    <div class="user-action">
+                        <button class="user-action dropdown-toggle" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Account settings</a></li>
+                          <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav-links-container">
+                    <p class="nav-links-title">Quick links</p>
+                    <li class="nav-link"><a href="../index.html">Home</a></li>
+                    <li class="nav-link"><a href="">Blog</a></li>
+                    <!--If user is logged in-->
+                    <li class="nav-link is-active"><a href="./dashboard.html">My Jobs</a></li>
+                    <li class="nav-link"><a href="./transactions.html">Transactions</a></li>
+                    <li class="nav-link hidden-sm"><a href="">Account settings</a></li>
+                    <li class="nav-link hidden-sm"><a href="">Logout</a></li>
+                    <!---->
+                    <!--If user is logged out-->
+                    <li class="nav-link hidden"><a href="../login.html">Login</a></li>
+                    <li class="nav-link hidden"><a href="./signup.html">Signup</a></li>
+                    <!---->
+                </ul>
+            </div>
+        </nav>
+        <section class="l-section two-column-layout user-dashboard">
+            <div class="left-column">
+                    <a href="./dashboard.html" class="btn btn-white btn-f-full btn-f-center job-list">Back to list</a>
+            </div>
+            <div class="right-column">
+                    <div class="col-header clearfix">
+                        <p class="col-title">Conversation with User</p>
+                    </div>
+                    <div class="col-body">
+                        <div class="m-pane">
+                            <div class="container-fluid">
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12">
+                                        <a href="" class="btn btn-n-white load-earlier-messages">Load earlier messages</a>
+                                    </div>
+                                </div>
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12">
+                                        <div class="m-message-box sender">
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-2 col-lg-1">
+                                                    <img src="../img/user.avatar.jpg" alt="writers.ng" class="message-box-icon">
+                                                </div>
+                                                <div class="col-xs-9 col-md-10 col-lg-11">
+                                                    <div class="message-box-body">
+                                                        <p class="message-box-name">Me</p>
+                                                        <p class="message-box-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                        <div class="message-box-attachments">
+                                                            <p class="title">Attachments</p>
+                                                            <div class="attachment-item">
+                                                                <div class="attachment-preview" style="background-image: url('../img/image.blog-1.jpg')" data-href="http://www.ikea.com/gb/en/images/rooms/ikea-a-contemporary-kitchen-for-big-chefs-and-little-helpers__1364316013714-s4.jpg" data-fileName="Ikea shopping kitchen" data-fileSize="120KB"></div>
+                                                                <div class="attachment-footer">
+                                                                    <i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="attachment-item">
+                                                                <div class="attachment-preview" data-href="http://plugindoc.mozdev.org/testpages/test.pdf"></div>
+                                                                <div class="attachment-footer">
+                                                                    <i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="attachment-item">
+                                                                <div class="attachment-preview" data-href="http://opendatakit.org/wp-content/uploads/static/sample.xls"></div>
+                                                                <div class="attachment-footer">
+                                                                    <i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="attachment-item">
+                                                                <div class="attachment-preview"></div>
+                                                                <div class="attachment-footer">
+                                                                    <i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="attachment-item">
+                                                                <div class="attachment-preview"></div>
+                                                                <div class="attachment-footer">
+                                                                    <i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="attachment-item">
+                                                                <div class="attachment-preview"></div>
+                                                                <div class="attachment-footer">
+                                                                    <i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="message-box-footer">
+                                                        <p class="message-box-time">12:03pm, May 26, 2017</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-message-box receiver">
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-2 col-lg-1">
+                                                    <img src="../img/user.avatar.jpg" alt="writers.ng" class="message-box-icon">
+                                                </div>
+                                                <div class="col-xs-9 col-md-10 col-lg-11">
+                                                    <div class="message-box-body">
+                                                        <p class="message-box-name">User</p>
+                                                        <p class="message-box-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    </div>
+                                                    <div class="message-box-footer">
+                                                        <p class="message-box-time">12:03pm, May 26, 2017</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-message-box receiver">
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-2 col-lg-1">
+                                                    <img src="../img/user.avatar.jpg" alt="writers.ng" class="message-box-icon">
+                                                </div>
+                                                <div class="col-xs-9 col-md-10 col-lg-11">
+                                                    <div class="message-box-body">
+                                                        <p class="message-box-name">User</p>
+                                                        <p class="message-box-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    </div>
+                                                    <div class="message-box-footer">
+                                                        <p class="message-box-time">12:03pm, May 26, 2017</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-message-box sender">
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-2 col-lg-1">
+                                                    <img src="../img/user.avatar.jpg" alt="writers.ng" class="message-box-icon">
+                                                </div>
+                                                <div class="col-xs-9 col-md-10 col-lg-11">
+                                                    <div class="message-box-body">
+                                                        <p class="message-box-name">Me</p>
+                                                        <p class="message-box-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    </div>
+                                                    <div class="message-box-footer">
+                                                        <p class="message-box-time">12:03pm, May 26, 2017</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-message-box sender">
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-2 col-lg-1">
+                                                    <img src="../img/user.avatar.jpg" alt="writers.ng" class="message-box-icon">
+                                                </div>
+                                                <div class="col-xs-9 col-md-10 col-lg-11">
+                                                    <div class="message-box-body">
+                                                        <p class="message-box-name">Me</p>
+                                                        <p class="message-box-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    </div>
+                                                    <div class="message-box-footer">
+                                                        <p class="message-box-time">12:03pm, May 26, 2017</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-message-box receiver">
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-2 col-lg-1">
+                                                    <img src="../img/user.avatar.jpg" alt="writers.ng" class="message-box-icon">
+                                                </div>
+                                                <div class="col-xs-9 col-md-10 col-lg-11">
+                                                    <div class="message-box-body">
+                                                        <p class="message-box-name">User</p>
+                                                        <p class="message-box-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    </div>
+                                                    <div class="message-box-footer">
+                                                        <p class="message-box-time">12:03pm, May 26, 2017</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-message-box sender">
+                                            <div class="row">
+                                                <div class="col-xs-3 col-md-2 col-lg-1">
+                                                    <img src="../img/user.avatar.jpg" alt="writers.ng" class="message-box-icon">
+                                                </div>
+                                                <div class="col-xs-9 col-md-10 col-lg-11">
+                                                    <div class="message-box-body">
+                                                        <p class="message-box-name">Me</p>
+                                                        <p class="message-box-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                                    </div>
+                                                    <div class="message-box-footer">
+                                                        <p class="message-box-time">12:03pm, May 26, 2017</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="m-message-box type-message">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="message-box-header">
+                                                        <span class="last-seen">Last seen: <span>5 hours ago</span></span><span class="local-time">Local time: <span>12:30pm</span></span>
+                                                    </div>
+                                                    <div class="message-box-body">
+                                                        <form action="" class="m-form">
+                                                            <textarea rows="2" placeholder="Type your message here..." class="form-textarea" id="type-message-textarea"></textarea>
+                                                        </form>
+                                                        <div class="attachment-selection">
+                                                            <div class="paperclip"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="message-box-footer">
+                                                        <button class="btn btn-color-1">Send</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <footer class="l-footer" role="">
+            <div class="footer-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-5">
+                            <img src="../img/icon.brand--white-stretch.png" class="footer-brand" alt="">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <a href="" class="footer-link active"><p>Home</p></a>
+                            <a href="" class="footer-link"><p>Blog</p></a>
+                            <a href="" class="footer-link"><p>Privacy policy</p></a>
+                            <a href="" class="footer-link"><p>Terms &amp; conditions</p></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-push-0 col-md-4">
+                            <div class="footer-copyright">
+                                <p>Copyright, 2017: writers.ng</p>
+                                <p>All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="../js/wngalert.js"></script>
+<script type="text/javascript" src="../js/wngviewer.js"></script>
+<script type="text/javascript" src="../js/jquery.gdocsviewer.min.js"></script>
+<script type="text/javascript" src="../js/sticky.min.js"></script>
+<script type="text/javascript" src="../js/emojionearea.min.js"></script>
+<script type="text/javascript" src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+<!-- Uncomment any of the following lines to use the plugin otherwise delete before final build -->
+<!--  -->
+<!-- <script type="text/javascript" src="js/velocity.min.js"></script> -->
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/dreyanim.js"></script>
+<!-- <script type="text/javascript" src="js/dreymodal.js"></script> -->
+</html>

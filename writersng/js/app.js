@@ -177,4 +177,13 @@ $(document).ready(function(e) {
 		$('.bank-details-edit input[name="account-number"]').focus();
 	})
 	//End of Bank details view/edit
+
+    //Writer status change
+    $('div.edit-icon#status').click(function() {
+        var $this = $(this);
+        $this.siblings(".job-info-value").addClass("hidden");
+        $this.addClass("hidden");
+        $this.siblings(".m-form").removeClass("hidden");
+    });
+    //End of writer status change
 })

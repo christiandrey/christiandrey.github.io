@@ -1399,6 +1399,32 @@ h1, h2, h3, h4, h5, h6 {
               background-color: #f4f8f9; }
         .l-section.two-column-layout .right-column .col-body .job-info-item, .l-section.two-column-layout .center-column .col-body .job-info-item, .l-section.single-column-layout .right-column .col-body .job-info-item, .l-section.single-column-layout .center-column .col-body .job-info-item {
           margin: 0 auto 30px; }
+          .l-section.two-column-layout .right-column .col-body .job-info-item.editable:after, .l-section.two-column-layout .center-column .col-body .job-info-item.editable:after, .l-section.single-column-layout .right-column .col-body .job-info-item.editable:after, .l-section.single-column-layout .center-column .col-body .job-info-item.editable:after {
+            display: table;
+            content: "";
+            clear: both; }
+          .l-section.two-column-layout .right-column .col-body .job-info-item.editable .m-form [class*="form-"], .l-section.two-column-layout .center-column .col-body .job-info-item.editable .m-form [class*="form-"], .l-section.single-column-layout .right-column .col-body .job-info-item.editable .m-form [class*="form-"], .l-section.single-column-layout .center-column .col-body .job-info-item.editable .m-form [class*="form-"] {
+            margin-left: 0;
+            width: 150px; }
+          .l-section.two-column-layout .right-column .col-body .job-info-item.editable .job-info-value, .l-section.two-column-layout .center-column .col-body .job-info-item.editable .job-info-value, .l-section.single-column-layout .right-column .col-body .job-info-item.editable .job-info-value, .l-section.single-column-layout .center-column .col-body .job-info-item.editable .job-info-value {
+            float: left; }
+          .l-section.two-column-layout .right-column .col-body .job-info-item.editable div.edit-icon, .l-section.two-column-layout .center-column .col-body .job-info-item.editable div.edit-icon, .l-section.single-column-layout .right-column .col-body .job-info-item.editable div.edit-icon, .l-section.single-column-layout .center-column .col-body .job-info-item.editable div.edit-icon {
+            display: inline-block;
+            margin-left: 10px;
+            width: 25px;
+            height: 25px;
+            background-color: #ebebeb;
+            border-radius: 15px;
+            background-image: url("../img/icon.edit.png");
+            background-size: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            float: left;
+            margin-top: -5px;
+            cursor: pointer;
+            transition: background-color .3s; }
+            .l-section.two-column-layout .right-column .col-body .job-info-item.editable div.edit-icon:hover, .l-section.two-column-layout .center-column .col-body .job-info-item.editable div.edit-icon:hover, .l-section.single-column-layout .right-column .col-body .job-info-item.editable div.edit-icon:hover, .l-section.single-column-layout .center-column .col-body .job-info-item.editable div.edit-icon:hover {
+              background-color: #d2d2d2; }
         .l-section.two-column-layout .right-column .col-body .job-summary, .l-section.two-column-layout .right-column .col-body .job-outline, .l-section.two-column-layout .center-column .col-body .job-summary, .l-section.two-column-layout .center-column .col-body .job-outline, .l-section.single-column-layout .right-column .col-body .job-summary, .l-section.single-column-layout .right-column .col-body .job-outline, .l-section.single-column-layout .center-column .col-body .job-summary, .l-section.single-column-layout .center-column .col-body .job-outline {
           margin: 0 0 30px; }
           .l-section.two-column-layout .right-column .col-body .job-summary > p:last-of-type, .l-section.two-column-layout .right-column .col-body .job-outline > p:last-of-type, .l-section.two-column-layout .center-column .col-body .job-summary > p:last-of-type, .l-section.two-column-layout .center-column .col-body .job-outline > p:last-of-type, .l-section.single-column-layout .right-column .col-body .job-summary > p:last-of-type, .l-section.single-column-layout .right-column .col-body .job-outline > p:last-of-type, .l-section.single-column-layout .center-column .col-body .job-summary > p:last-of-type, .l-section.single-column-layout .center-column .col-body .job-outline > p:last-of-type {

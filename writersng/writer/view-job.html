@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Writers.ng | User</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+    
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <!-- Uncomment any of the following lines to use the stylesheet otherwise delete before final build -->
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/dreyanim.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/dreymodal.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<main class="l-main" role="main">
+        <nav class="l-nav clearfix" role="navigation">
+            <img src="../img/icon.hamburger.png" alt="writers.ng" class="nav-hamburger">
+            <img class="brand-logo" src="../img/icon.brand--dark-stretch.png">
+            <div class="right-aligned-items clearfix">
+                <img src="../img/icon.hamburger.close.png" alt="" class="close-btn">
+                <div class="user-details clearfix">
+                    <img src="../img/user.avatar.jpg" alt="" class="user-avatar">
+                    <p class="user-name">Hi, Ophilia</p>
+                    <div class="user-notification new"></div>
+                    <div class="user-action">
+                        <button class="user-action dropdown-toggle" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Account settings</a></li>
+                          <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav-links-container">
+                    <p class="nav-links-title">Quick links</p>
+                    <li class="nav-link"><a href="../index.html">Home</a></li>
+                    <li class="nav-link"><a href="">Blog</a></li>
+                    <!--If user is logged in-->
+                    <li class="nav-link is-active"><a href="./dashboard.html">My Jobs</a></li>
+                    <li class="nav-link"><a href="./transactions.html">Transactions</a></li>
+                    <li class="nav-link hidden-sm"><a href="">Account settings</a></li>
+                    <li class="nav-link hidden-sm"><a href="">Logout</a></li>
+                    <!---->
+                    <!--If user is logged out-->
+                    <li class="nav-link hidden"><a href="../login.html">Login</a></li>
+                    <li class="nav-link hidden"><a href="./signup.html">Signup</a></li>
+                    <!---->
+                </ul>
+            </div>
+        </nav>
+        <section class="l-section two-column-layout user-dashboard">
+            <div class="left-column">
+                <div class="view-job">
+                    <a href="./dashboard.html" class="btn btn-white btn-f-full btn-f-center job-list">Back to list</a>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="view-job">
+                    <div class="col-header clearfix">
+                        <p class="col-title">Job title goes into this space here</p>
+                    </div>
+                    <div class="col-body">
+                        <div class="m-pane">
+                            <div class="container-fluid">
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12 text-right">
+                                        <span class="col-action" id="job-list" onclick="javascript:location.href='./dashboard.html'">Back to list</span>
+                                    </div>
+                                </div>
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <div class="job-info-item">
+                                            <p class="job-info-title heading-2">Created on</p>
+                                            <p class="job-info-value">24th May, 2017</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 col-lg-4">
+                                        <div class="job-info-item editable">
+                                            <p class="job-info-title heading-2">Status <i class="fa fa-spinner fa-pulse hidden"></i></p>
+                                            <span class="job-info-value">Ongoing</span>
+                                            <form class="m-form hidden">
+                                                <select class="form-select">
+                                                    <option>Pending</option>
+                                                    <option>Ongoing</option>
+                                                    <option>Completed</option>
+                                                </select>
+                                            </form>
+                                            <div class="edit-icon" id="status"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-12 col-lg-4">
+                                        <div class="progress-info">
+                                            <p class="progress-label ">PROGRESS</p>
+                                            <div class="m-progress">
+                                                <div class="progress-level is-ongoing" data-progress-level="72"></div>
+                                                <div class="progress-back"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12">
+                                        <div class="job-summary">
+                                            <p class="heading-2">Project summary</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                        <div class="job-outline">
+                                            <p class="heading-2">Outline/Table of content</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="job-info-item">
+                                            <p class="job-info-title heading-2">Project type</p>
+                                            <p class="job-info-value">Project type goes here</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="job-info-item">
+                                            <p class="job-info-title heading-2">Project subtype</p>
+                                            <p class="job-info-value">Project subtype goes here</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="job-info-item">
+                                            <p class="job-info-title heading-2">Project discipline</p>
+                                            <p class="job-info-value">Project discipline goes here</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="job-info-item">
+                                            <p class="job-info-title heading-2">Delivery type</p>
+                                            <p class="job-info-value">Delivery type goes here</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="job-info-item">
+                                            <p class="job-info-title heading-2">Paper format</p>
+                                            <p class="job-info-value">Chicago/Turbanian</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="job-info-item">
+                                            <p class="job-info-title heading-2">Line spacing</p>
+                                            <p class="job-info-value">Double spaced</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="job-info-item">
+                                            <p class="job-info-title heading-2">Academic level</p>
+                                            <p class="job-info-value">High School</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="job-info-item">
+                                            <p class="job-info-title heading-2">Pages</p>
+                                            <p class="job-info-value">5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12">
+                                        <div class="job-attachments">
+                                            <p class="heading-2">Attachments</p>
+                                            <div class="attachment-item">
+                                                <div class="attachment-preview" style="background-image: url('../img/image.blog-1.jpg')" data-href="http://www.ikea.com/gb/en/images/rooms/ikea-a-contemporary-kitchen-for-big-chefs-and-little-helpers__1364316013714-s4.jpg" data-fileName="Ikea shopping kitchen" data-fileSize="120KB"></div>
+                                                <div class="attachment-footer">
+                                                    <i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>
+                                                </div>
+                                            </div>
+                                            <div class="attachment-item">
+                                                <div class="attachment-preview" data-href="http://plugindoc.mozdev.org/testpages/test.pdf"></div>
+                                                <div class="attachment-footer">
+                                                    <i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>
+                                                </div>
+                                            </div>
+                                            <div class="attachment-item">
+                                                <div class="attachment-preview" data-href="http://opendatakit.org/wp-content/uploads/static/sample.xls"></div>
+                                                <div class="attachment-footer">
+                                                    <i class="fa fa-cloud-download download-icon"></i><a href="">File name...</a><span class="file-size">(220 KB)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row no-gutter">
+                                    <div class="col-xs-12">
+                                        <a href="./conversation.html" class="btn btn-grey btn-f-center contact-writer">Contact user</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="l-footer" role="">
+            <div class="footer-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-5">
+                            <img src="../img/icon.brand--white-stretch.png" class="footer-brand" alt="">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <a href="" class="footer-link active"><p>Home</p></a>
+                            <a href="" class="footer-link"><p>Blog</p></a>
+                            <a href="" class="footer-link"><p>Privacy policy</p></a>
+                            <a href="" class="footer-link"><p>Terms &amp; conditions</p></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-push-0 col-md-4">
+                            <div class="footer-copyright">
+                                <p>Copyright, 2017: writers.ng</p>
+                                <p>All rights reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="../js/wngalert.js"></script>
+<script type="text/javascript" src="../js/wngviewer.js"></script>
+<script type="text/javascript" src="../js/jquery.gdocsviewer.min.js"></script>
+<script type="text/javascript" src="../js/sticky.min.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+<!-- Uncomment any of the following lines to use the plugin otherwise delete before final build -->
+<!--  -->
+<!-- <script type="text/javascript" src="js/velocity.min.js"></script> -->
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/dreyanim.js"></script>
+<!-- <script type="text/javascript" src="js/dreymodal.js"></script> -->
+</html>

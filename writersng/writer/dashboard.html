@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>Writers.ng | User</title>
@@ -26,7 +26,7 @@
                 <img src="../img/icon.hamburger.close.png" alt="" class="close-btn">
                 <div class="user-details clearfix">
                     <img src="../img/user.avatar.jpg" alt="" class="user-avatar">
-                    <p class="user-name">Hi, Jane</p>
+                    <p class="user-name">Hi, Ophilia</p>
                     <div class="user-notification new"></div>
                     <div class="user-action">
                         <button class="user-action dropdown-toggle" type="button" data-toggle="dropdown"><span class="caret"></span></button>
@@ -41,8 +41,7 @@
                     <li class="nav-link"><a href="../index.html">Home</a></li>
                     <li class="nav-link"><a href="">Blog</a></li>
                     <!--If user is logged in-->
-                    <li class="nav-link is-active"><a href="./dashboard.html">Browse Jobs</a></li>
-                    <li class="nav-link"><a href="./myjobs.html">My Jobs</a></li>
+                    <li class="nav-link is-active"><a href="./dashboard.html">My Jobs</a></li>
                     <li class="nav-link"><a href="./transactions.html">Transactions</a></li>
                     <li class="nav-link hidden-sm"><a href="">Account settings</a></li>
                     <li class="nav-link hidden-sm"><a href="">Logout</a></li>
@@ -79,10 +78,10 @@
                                 <label><input type="radio" name="sort-by" checked class="form-radio" value="created-date">Created date</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="sort-by" class="form-radio" value="progress">Project type</label>
+                                <label><input type="radio" name="sort-by" class="form-radio" value="progress">Progress</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="sort-by" class="form-radio" value="status">Academic level</label>
+                                <label><input type="radio" name="sort-by" class="form-radio" value="status">Status</label>
                             </div>
                             <div class="radio">
                                 <label><input type="radio" name="sort-by" class="form-radio" value="title">Title</label>
@@ -97,12 +96,155 @@
                 <div class="job-list">
                     <div class="col-header clearfix">
                         <p class="col-title">Jobs</p>
+                        <p class="col-stats"><span>23</span> total jobs &nbsp; <span>11</span> active</p>
                         <img src="../img/icon.filter.png" alt="writers.ng" class="filter-icon">
                     </div>
                     <div class="col-body">
                         <div class="container-fluid">
-                            <div class="m-pane">
-                                Hello world
+                            <div class="row no-gutter">
+                                <div class="col-xs-12 col-md-6 col-lg-4">
+                                    <a class="m-job-item" href="./view-job.html">
+                                        <img src="../img/icon.jobs.color.png" alt="writers.ng" class="job-icon">
+                                        <p class="job-title">Lorem ipsum dolor sit amet</p>
+                                        <p class="job-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                        </p>
+                                        <div class="job-info-container">
+                                            <div class="job-info">
+                                                <span>CREATED ON</span><span>24th May, 2017</span>
+                                            </div>
+                                            <div class="job-info">
+                                                <span>STATUS</span><span>ONGOING</span>
+                                            </div>
+                                        </div>
+                                        <p class="progress-label">PROGRESS</p>
+                                        <div class="m-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="86"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                        <div class="job-decorator"></div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-lg-4">
+                                    <a class="m-job-item" href="./view-job.html">
+                                        <img src="../img/icon.jobs.color.png" alt="writers.ng" class="job-icon">
+                                        <p class="job-title">Lorem ipsum dolor sit amet</p>
+                                        <p class="job-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                        </p>
+                                        <div class="job-info-container">
+                                            <div class="job-info">
+                                                <span>CREATED ON</span><span>24th May, 2017</span>
+                                            </div>
+                                            <div class="job-info">
+                                                <span>STATUS</span><span>ONGOING</span>
+                                            </div>
+                                        </div>
+                                        <p class="progress-label">PROGRESS</p>
+                                        <div class="m-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="11"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                        <div class="job-decorator"></div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-lg-4">
+                                    <a class="m-job-item" href="./view-job.html">
+                                        <img src="../img/icon.jobs.color.png" alt="writers.ng" class="job-icon">
+                                        <p class="job-title">Lorem ipsum dolor sit amet</p>
+                                        <p class="job-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                        </p>
+                                        <div class="job-info-container">
+                                            <div class="job-info">
+                                                <span>CREATED ON</span><span>24th May, 2017</span>
+                                            </div>
+                                            <div class="job-info">
+                                                <span>STATUS</span><span>ONGOING</span>
+                                            </div>
+                                        </div>
+                                        <p class="progress-label">PROGRESS</p>
+                                        <div class="m-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="94"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                        <div class="job-decorator"></div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-lg-4">
+                                    <a class="m-job-item" href="./view-job.html">
+                                        <img src="../img/icon.jobs.color.png" alt="writers.ng" class="job-icon">
+                                        <p class="job-title">Lorem ipsum dolor sit amet</p>
+                                        <p class="job-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                        </p>
+                                        <div class="job-info-container">
+                                            <div class="job-info">
+                                                <span>CREATED ON</span><span>24th May, 2017</span>
+                                            </div>
+                                            <div class="job-info">
+                                                <span>STATUS</span><span>ONGOING</span>
+                                            </div>
+                                        </div>
+                                        <p class="progress-label">PROGRESS</p>
+                                        <div class="m-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="27"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                        <div class="job-decorator"></div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-lg-4">
+                                    <a class="m-job-item" href="./view-job.html">
+                                        <img src="../img/icon.jobs.color.png" alt="writers.ng" class="job-icon">
+                                        <p class="job-title">Lorem ipsum dolor sit amet</p>
+                                        <p class="job-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                        </p>
+                                        <div class="job-info-container">
+                                            <div class="job-info">
+                                                <span>CREATED ON</span><span>24th May, 2017</span>
+                                            </div>
+                                            <div class="job-info">
+                                                <span>STATUS</span><span>ONGOING</span>
+                                            </div>
+                                        </div>
+                                        <p class="progress-label">PROGRESS</p>
+                                        <div class="m-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="52"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                        <div class="job-decorator"></div>
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 col-lg-4">
+                                    <a class="m-job-item" href="./view-job.html">
+                                        <img src="../img/icon.jobs.color.png" alt="writers.ng" class="job-icon">
+                                        <p class="job-title">Lorem ipsum dolor sit amet</p>
+                                        <p class="job-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                                        </p>
+                                        <div class="job-info-container">
+                                            <div class="job-info">
+                                                <span>CREATED ON</span><span>24th May, 2017</span>
+                                            </div>
+                                            <div class="job-info">
+                                                <span>STATUS</span><span>COMPLETED</span>
+                                            </div>
+                                        </div>
+                                        <p class="progress-label">PROGRESS</p>
+                                        <div class="m-progress">
+                                            <div class="progress-level is-ongoing" data-progress-level="100"></div>
+                                            <div class="progress-back"></div>
+                                        </div>
+                                        <div class="job-decorator"></div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

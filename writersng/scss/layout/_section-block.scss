@@ -3,1187 +3,1269 @@
    ======================= */
 
 .l-section {
-	@include wh(100%, auto);
-	padding: 0 15px;
-
-	@include MQ(M) {
-		padding: 0 120px;
-	};
-
-	#index-page & {
-		&.what-we-do {
-			.section-content {
-				padding: 30px 0;
-
-				@include MQ(M) {
-					padding: 105px 0;
-				};
-
-				.section-title {
-					text-align: center;
-					margin-top: 0;
-					margin-bottom: 30px;
-					letter-spacing: 0;
-
-					@include MQ(M) {
-						margin-bottom: 40px
-					};
-				}
-
-				.col-content {
-					text-align: center;
-					transition: box-shadow 0.45s;
-					cursor: pointer;
-
-					@include MQ(M) {
-						padding: 30px 20px 25px;
-						border-radius: 10px;
-					};
-
-					&:hover {
-						@include MQ(M) {
-							box-shadow: 0 5px 10px transparentize($black, 0.95);
-						}
-					}
-
-					.col-icon {
-						@include wh(auto, 35px);
-						margin: 0 auto 15px;
-						display: block;
-
-						@include MQ(M) {
-							@include wh(auto, 68px);
-							margin: 0 auto 60px;
-						};
-					}
-
-
-					.col-title {
-						@include rfs(1.3);
-						font-family: $headerFont;
-						letter-spacing: 0px;
-						color: $black;
-						margin: 0 auto 15px;
-
-						@include MQ(M) {
-							@include rfs(1);
-							line-height: 1.2;
-							height: 40px;
-							margin: 0 auto 15px;
-						};
-					}
-
-					.col-body {
-						@include rfs(0.97);
-						color: $grey;
-						margin: 0 auto 20px;
-						letter-spacing: 0.2px;
-
-						@include MQ(M) {
-							@include rfs(0.9);
-							line-height: 1.2;
-							height: 50px;
-							margin: 0 auto 40px;
-						}
-
-						&+button {
-							margin: 0 auto 35px;
-
-							@include MQ(M) {
-								margin: 0 auto;
-							};
-						}
-					}
-				}
-			}
-		}
-
-		&.testimony {
-			background-color: $color2;
-
-			.section-content {
-				padding: 35px 0;
-
-				.larr, .rarr {
-					@include wh(30px, auto);
-					@include center(y);
-					display: block;
-					margin: 0 auto;
-					cursor: pointer;
-				}
-
-				.col-content-stage-outer {
-					@include wh(80%, auto);
-					margin: 0 auto;
-					overflow: hidden;
-
-					@include MQ(M) {
-						@include wh(100%, auto);
-					};
-
-					.col-content-stage {
-						@include wh(200%, auto);
-						position: relative;
-						margin: 0 auto;
-						left: 0;
-						transition: left .45s;
-
-						.col-content {
-							text-align: center;
-							display: inline;
-							float: left;
-							width: 50%;
-
-							.col-icon {
-								@include wh(40px, auto);
-								display: block;
-								margin: 0 auto;
-
-								@include MQ(M) {
-									@include wh(55px, auto);
-								};
-							}
-
-							.col-body {
-								margin: 20px auto 10px;
-								letter-spacing: 0.2px;
-								color: $black;
-
-								@include MQ(M) {
-									margin: 35px auto 15px; 
-								};
-							}
-
-							.col-author {
-								margin: 0 auto;
-								color: $white;
-								font-weight: bold;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		&.stand-out-cta {
-			position: relative;
-			overflow: hidden;
-
-			.section-bg {
-				@include wh(auto, 100%);
-				position: absolute;
-				top: 0;
-				left: 0;
-
-				&.two {
-					top: 50px;
-					left: 70px;
-				}
-			}
-
-			.section-content {
-				padding: 30px 0;
-
-				@include MQ(M) {
-					padding: 105px 0;
-				};
-
-				.section-icon {
-					@include wh(60px, auto);
-					display: block;
-					text-align: center;
-					margin: 0px auto 30px;
-
-					@include MQ(M) {
-						@include wh(300px, auto);
-					};
-				}
-
-				.col-content {
-					text-align: center;
-
-					.col-title {
-						letter-spacing: 0;
-						color: $black;
-
-						span {
-							color: $color2;
-						}
-					}
-
-					.col-body {
-						margin: 30px auto 50px;
-						letter-spacing: 0.2px;
-						color: $black;
-					}
-				}
-			}
-		}
-
-		&.latest-blog-stories {
-			background-color: $light;
-
-			.section-content {
-				padding: 30px 0;
-
-				@include MQ(M) {
-					padding: 50px 0 80px;
-				};
-
-				.section-title {
-					letter-spacing: 0;
-					color: $black;
-
-					@include MQ(M) {
-						margin: 0 0 30px 30px
-					};
-				}
-
-				.section-content-inner {
-					padding: 30px 15px;
-					background-color: $white;
-
-					.col-content {
-						margin: 0 0 30px;
-
-						.col-image {
-							display: block;
-							@include wh(100%, auto);
-							margin: 0 0 30px;
-						}
-
-						.col-category {
-							@include rfs(0.83);
-							font-family: $headerFont;
-							color: $grey;
-							letter-spacing: 0.5px;
-						}
-
-						.col-title {
-							@include rfs(1.5);
-							letter-spacing: 0;
-							color: $black;
-							margin: 20px 0 20px;
-							text-align: left;
-
-							@include MQ(M) {
-								@include rfs(1.7);
-								letter-spacing: 0.3px
-							};
-						}
-
-						.col-body {
-							letter-spacing: 0.2px;
-							line-height: 2;
-							color: $black;
-							margin: 0 0 30px;
-						}
-					}
-
-					button#read-more {
-						display: block;
-						text-align: center;
-						margin: 30px auto 0;
-					}
-				}
-			}
-		}
-	}
-
-	#what-we-do-page & {
-		&.what-we-do-inner {
-			position: relative;
-			overflow: hidden;
-
-			.section-content {
-				padding: 30px 0;
-
-				@include MQ(M) {
-					padding: 105px 0;
-				};
-
-				.section-icon {
-					@include wh(60px, auto);
-					display: block;
-					text-align: center;
-					margin: 0px auto 30px;
-
-					@include MQ(M) {
-						@include wh(300px, auto);
-					};
-				}
-
-				.col-content {
-					text-align: center;
-
-					.col-title {
-						letter-spacing: 0;
-						color: $black;
-
-						span {
-							color: $color2;
-						}
-					}
-
-					.col-body {
-						margin: 30px auto 50px;
-						letter-spacing: 0.2px;
-						line-height: 2;
-						color: $black;
-					}
-				}
-			}
-		}
-	}
-
-	#auth-page & {
-		padding: 0;
-
-		@include MQ(M) {
-			padding: 0;
-		};
-
-		.section-content {
-
-			.left-pane {
-				height: 100vh;
-				background-image: url('../img/image.bg.jpg');
-				background-position: center;
-				background-size: cover;
-				padding: 0 40px;
-
-				@include MQ(L) {
-					padding: 0 120px;
-				}
-
-				.col-content {
-					@include center(y);
-					text-align: left;
-
-					.brand-logo {
-						@include wh(auto, 100px);
-						display: block;
-						margin: 0;
-						cursor: pointer;
-					}
-
-					.col-title {
-						@include rfs(4);
-						font-family: $headlineFont;
-						color: $white;
-						text-align: left;
-						margin: 20px auto 30px;
-						line-height: 1;
-						letter-spacing: 0;
-
-						span {
-							color: $dark;
-						}
-					}
-
-					.col-subtitle {
-						@include rfs(1);
-						@include wh(100%, auto);
-						color: $white;
-						text-align: left;
-						margin: 0 auto 40px;
-						letter-spacing: 0.2px;
-
-						&+button {
-							margin: 0;
-							display: block;
-						}
-					}
-				}
-			}
-
-			.right-pane {
-				height: 100vh;
-				padding: 0 10%;
-
-				.col-content {
-					@include center(y);
-					text-align: center;
-
-					.col-icon {
-						@include wh(80px, auto);
-						display: block;
-						text-align: center;
-						margin: 0px auto 30px;
-
-						@include MQ(M) {
-							@include wh(300px, auto);
-						};
-					}
-
-					.col-title {
-						letter-spacing: 0;
-						color: $black;
-
-						span {
-							color: $color2;
-						}
-					}
-
-					.col-subtitle {
-						letter-spacing: 0.2px;
-						line-height: 2;
-						color: $black;
-						margin: 0 0 30px;
-						
-						span {
-							color: $color1;
-							font-weight: bold;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	#admin-page & {
-		&.admin-body {
-			@include wh(100%, calc(100vh - 80px));
-			background-color: $light2;
-			position: absolute;
-			top: 80px;
-			left: 0;
-			padding: 50px 80px;
-
-			&>.left-column {
-				@include wh(80px, auto);
-				float: left;
-				background-color: $white;
-				border-radius: 5px;
-				box-shadow: 0 5px 10px transparentize($black, 0.90);
-
-				@include MQ(M) {
-					@include wh(200px);
-				}
-
-				@include MQ(L) {
-					@include wh(250px);
-				}
-
-				.col-header {
-					font-family: $headerFont;
-					color: $color1;
-					text-align: center;
-					margin: 50px auto 20px;
-					letter-spacing: 0;
-
-					@include MQ(M) {
-						text-align: left;
-						margin: 50px 0 20px 20px;
-					}
-				}
-
-				.tool-item {
-					@include wh(100%, auto);
-					background-color: $white;
-					cursor: pointer;
-					padding: 20px 0;
-					position: relative;
-					transition: background-color .15s;
-
-					@include MQ(M) {
-						@include wh(100%, 40px);
-						padding: 0;
-					}
-
-					.tool-indicator {
-						@include wh(2px, 100%);
-						position: absolute;
-						top: 0;
-						right: 0;
-						transition: background-color .15s;
-
-						@include MQ(M) {
-							@include wh(4px, 100%);
-							position: relative;
-							display: block;
-							float: left;
-							background-color: $light2;
-						}
-					}
-
-					.tool-icon {
-						@include wh(auto, 20px);
-						display: block;
-						margin: 0 auto;
-
-						@include MQ(M) {
-							@include wh(auto, 20px);
-							float: left;
-							margin: 10px 0 10px 16px;
-						}
-					}
-
-					.tool-name {
-						color: $grey;
-						font-size: 12px;
-						display: block;
-						text-align: center;
-						margin: 13px auto 0;
-						letter-spacing: 0.2px;
-
-						@include MQ(M) {
-							font-size: 14px;
-							margin: 13px 20px;
-							float: left;
-							text-align: left;
-						}
-					}
-
-					&.is-active {
-						background-color: $light2;
-
-						.tool-indicator {
-							background-color: $color1;
-						}
-					}
-
-					&:hover {
-						background-color: $light2;
-
-						.tool-indicator {
-							background-color: $color3;
-						}
-					}
-				}
-			}
-
-			&>.right-column {
-				@include wh(calc(100% - 130px), calc(100vh - 120px));
-				float: right;
-				overflow: auto;
-
-				@include MQ(M) {
-					@include wh(calc(100% - 250px));
-				}
-
-				@include MQ(L) {
-					@include wh(calc(100% - 300px));
-				}
-			}
-		}
-	}
-
-	&.two-column-layout, &.single-column-layout {
-		@include wh(100%, auto);
-		background-color: $light2;
-		padding: 30px 15px;
-		overflow: hidden;
-		position: relative;
-
-		@include MQ(M) {
-			height: auto;
-			padding: 50px 80px;
-		}
-
-		.left-column {
-			@include wh(calc(100% - 30px), auto);
-			padding: 5px 0;
-			border-radius: 5px;
-			background-color: $white;
-			box-shadow: 0 5px 10px transparentize($black, 0.95);
-			padding: 20px;
-			overflow: auto;
-			transition: top .35s;
-			position: absolute;
-			z-index: 3;
-			top: 100%;
-			left: 15px;
-
-			@include MQ(M) {
-				@include wh(250px, auto);
-				float: left;
-				position: static;
-				transition: none;
-			};
-
-			.col-title {
-				color: $color1;
-				font-family: $headerFont;
-				letter-spacing: 0;
-				font-size: 1.3em;
-				margin-bottom: 10px;
-			}
-
-			.col-subtitle {
-				color: $grey;
-				font-family: $headerFont;
-				letter-spacing: 0;
-				font-size: 1.1em;
-				margin-bottom: 8px;
-			}
-
-			.search-form {
-				margin: 0 0 10px;
-				.form-input {
-					@include wh(100%, auto);
-					padding-left: 0;
-				}
-			}
-
-			.search-results {
-				font-size: 1em;
-				letter-spacing: 0.2px;
-				margin-bottom: 40px;
-
-				span {
-					font-weight: bold;
-					color: $color1;
-				}
-			}
-
-			div.sort-order, div.sort-by {
-				padding: 0 0 20px;
-				border-bottom: solid 2px $grey2;
-				margin: 20px 0 5px;
-
-				label {
-					font-size: 1em;
-					letter-spacing: 0.2px
-				}
-			}
-
-			div.job-price-container {
-				margin: 0px -10px 0;
-
-				.header {
-					.paper-type {
-						background-color: $color3;
-						color: white;
-						font-family: $headerFont;
-						font-size: 1.1em;
-						letter-spacing: 0.1px;
-						padding: 8px 10px;
-						margin: 0;
-					}
-
-					.paper-subtype {
-						background-color: transparentize($light2, 0.5);
-						color: $grey;
-						font-size: .9em;
-						letter-spacing: 0.2px;
-						padding: 10px 10px;
-						margin: 0;
-					}
-				}
-
-				.body {
-					margin: 10px 0 0;
-					background-color: $light2;
-					padding: 10px 10px 0;
-
-					.invoice-item {
-						display: flex;
-						justify-content: space-between;
-						padding: 10px 0;
-						color: $grey;
-						font-size: .9em;
-						letter-spacing: 0.2px;
-						border-top: dotted 1px $grey;
-
-						.value {
-							font-weight: bold;
-						}
-
-						&.total {
-							border-top: solid 2px $color3;
-
-							.heading {
-								font-weight: bold;
-							}
-
-							.value {
-								color: $color1;
-							}
-						}
-					}
-
-					.no-price-content {
-						color: $grey;
-						font-size: .9em;
-						letter-spacing: 0.2px;
-					}
-				}
-
-				.footer {
-					background-color: transparentize($light2, 0.5);
-					border-top-color: $light2;
-					border-top-style: solid;
-					border-top-width: 2px;
-					padding: 15px 10px;
-				}
-			}
-
-			button[type="submit"] {
-				display: table;
-				width: 100%;
-				margin: 20px auto 20px;
-
-				@include MQ(M) {
-					margin: 20px auto 5px;
-				}
-			}
-
-			button[type="button"] {
-				display: table;
-				margin: 0 auto 15px;
-			}
-
-			button#cancel-filter {
-				@include MQ(M) {
-					display: none;
-				}
-			}
-
-			a.edit-job {
-				width: 100%;
-				margin: 0 0 20px;
-			}
-
-			a.job-list {
-				margin: 0 0 20px;
-			}
-		}
-
-		.right-column, .center-column {
-			@include wh(100%, auto);
-			padding: 5px 0;
-			// overflow: auto;
-
-			@include MQ(M) {
-				// @include wh(calc(100% - 300px), calc(100vh - 140px));
-				@include wh(calc(100% - 300px), auto);
-				float: right;
-			}
-
-			.col-header {
-				margin: 0 0 30px;
-
-				.col-title {
-					font-family: $headerFont;
-					color: $color1;
-					letter-spacing: 0;
-					font-size: 2em;
-					float: left;
-				}
-
-				.col-stats {
-					letter-spacing: 0.2px;
-					font-size: 1em;
-					color: $grey;
-					float: left;
-					margin: 5px 0 0 10px;
-
-					span {
-						letter-spacing: 0.2px;
-						color: $white;
-						background-color: $grey;
-						padding: 2px 5px;
-						border-radius: 3px;
-					}
-				}
-
-				.filter-icon {
-					@include wh(auto, 24px);
-					float: right;
-					display: inline-block;
-
-					@include MQ(M) {
-						display: none;
-					}
-				}
-
-				.col-action {
-					display: inline-block;
-					float: right;
-					color: $white;
-					border-radius: 10px;
-					letter-spacing: 0.2px;
-					margin-top: calc((2em - 18px) / 2);
-					padding: 3px 7px;
-					background-color: $grey;
-					line-height: 1;
-					cursor: pointer;
-
-					@include MQ(M) {
-						display: none;
-					}
-				}
-			}
-
-			.col-body {
-				letter-spacing: 0.2px;
-				font-size: 1em;
-
-				.attachment-item {
-					display: inline-block;
-					@include wh(150px, auto);
-					margin: 0 15px 15px 0;
-					background-color: $light;
-					position: relative;
-					box-shadow: 0 5px 10px transparentize($black, 0.95);
-
-					&:last-child {
-						margin: 0 0 -15px 0;
-					}
-
-					.attachment-remove {
-						@include wh(24px, 24px);
-						background-image: url("../img/icon.hamburger.close.png");
-						background-size: cover;
-						position: absolute;
-						top: -12px;
-						right: -12px;
-						cursor: pointer;
-						transition: transform .2s;
-						z-index: 8;
-
-						&:hover {
-							transform: scale(1.05, 1.05) rotate(90deg)
-						}
-					}
-					
-					.attachment-preview {
-						@include wh(100%, 100px);
-						background-image: url('../img/icon.businessDocs.png');
-						background-size: contain;
-						background-position: center;
-						background-repeat: no-repeat;
-						cursor: pointer;
-						display: block;
-						transition: filter .45s;
-
-						&:hover {
-							filter: saturate(20%);
-						}
-					}
-
-					.attachment-footer {
-						@include wh(100%, auto);
-						padding: 5px 5px;
-						background-color: $white;
-
-						.download-icon {
-							color: $color1;
-							display: inline-block;
-							margin-right: 5px;
-
-							&+a {
-								font-size: 0.9em;
-								letter-spacing: 0.2px;
-							}
-						}
-
-						.file-size {
-							color: $grey;
-							text-align: right;
-							font-size: 0.9em;
-							letter-spacing: 0.2px;
-							float: right;
-							line-height: 1.2;
-						}
-					}
-				}
-
-				.heading-2 {
-					display: block;
-					letter-spacing: 0;
-					font-weight: bold;
-					color: $color1;
-					margin: 0 0 8px;
-				}
-
-				.heading-3 {
-					display: block;
-					letter-spacing: 0.2px;
-					color: $grey;
-					margin: 0 0 15px;
-				}
-
-				.inner-column-header {
-					border-bottom: solid 1px $grey2;
-					height: 40px;
-					display: flex;
-					justify-content: space-between;
-					margin: 0 0 20px;
-
-					.heading {
-						display: block;
-						font-size: 0.8em;
-						letter-spacing: 0.1px;
-						color: $grey;
-						align-self: flex-end;
-						margin-bottom: 8px;
-					}
-
-					.action {
-						@include wh(30px, 30px);
-						display: block;
-						background-image: url('../img/icon.edit.png');
-						background-color: $grey2;
-						background-size: 60%;
-						background-position: center;
-						background-repeat: no-repeat;
-						border-radius: 5px;
-						margin-top: 5px;
-						cursor: pointer;
-						transition: background-color .3s;
-
-						&:hover {
-							background-color: $light2;
-						}
-					}
-				}
-
-				.job-info-item {
-					margin: 0 auto 30px;
-				}
-
-				.job-summary, .job-outline {
-					margin: 0 0 30px;
-
-					& >p:last-of-type {
-						@include wh(100%, auto);
-						letter-spacing: 0.2px;
-						line-height: 1.3;
-						font-size: 1em;
-						padding: 15px;
-						border: solid 1px $grey2;
-						border-bottom: solid 2px $color1;
-					}
-				}
-
-				.payment-breakdown {
-					.header {
-						background-color: $grey;
-						color: white;
-						font-family: $headerFont;
-						font-size: 1.1em;
-						letter-spacing: 0.1px;
-						padding: 8px 10px;
-						margin: 0;
-					}
-
-					.body {
-						margin: 10px 0 0;
-						background-color: $light2;
-						padding: 10px 10px 0;
-
-						.invoice-item {
-							display: flex;
-							justify-content: space-between;
-							padding: 10px 0;
-							color: $grey;
-							font-size: .9em;
-							letter-spacing: 0.2px;
-							border-top: dotted 1px $grey;
-
-							.value {
-								font-weight: bold;
-							}
-
-							&.total {
-								border-top: solid 2px $color3;
-
-								.heading {
-									font-weight: bold;
-								}
-
-								.value {
-									color: $color1;
-								}
-							}
-						}
-					}
-				}
-
-				.payment-options {
-					@include wh(100%, auto);
-					margin-bottom: 20px;
-					display: flex;
-					justify-content: space-between;
-
-					.option {
-						@include wh(calc(50% - 5px));
-						text-align: center;
-						background-color: $light2;
-						padding: 10px 0;
-						font-family: $headerFont;
-						letter-spacing: 0.2px;
-						font-size: 0.9em;
-						cursor: pointer;
-						border: solid 2px rgba(0,0,0,0);
-						transition: border .2s;
-
-						&:first-of-type {
-							margin-right: 7px;				
-						}
-
-						&.selected {
-							background-color: $color3;
-						}
-
-						&:hover {
-							border: solid 2px $color3;
-						}
-					}
-				}
-
-				.payment-option-description {
-					color: $grey;
-					font-size: 0.8em;
-					margin-bottom: 20px;
-					display: block;
-				}
-
-				.progress-info {
-					.progress-label {
-						margin-bottom: 8px;
-					}
-
-					.m-progress {
-						@include wh(100%, 5px);
-						margin: 0 0 30px;
-					}
-				}
-
-				.transactions-pagination {
-					@include center(x);
-
-					a {
-						color: $grey;
-					}
-
-					li.active>a {
-						background-color: $color1;
-						color: white;
-						border-color: $color1;
-					}
-				}
-
-				.user-form-switch {
-					display: flex;
-					justify-content: space-between;
-
-					@include MQ(L) {
-						flex-direction: column;
-					}
-
-					div {
-						padding: 10px 7px;
-						background-color: $light2;
-						width: 50%;
-						margin: 0;
-						text-align: center;
-						cursor: pointer;
-						border: solid 2px rgba(0,0,0,0);
-						transition: border .2s;
-
-						@include MQ(L) {
-							width: auto;
-							margin: 0 0 10px;
-							text-align: right
-						}
-
-						&.selected {
-							background-color: $color1;
-							color: white;
-						}
-
-						&:hover {
-							border-color: $color1;
-						}
-					}
-				}
-
-				.wallet-balance {
-					margin-bottom: 30px;
-
-					.header {
-						background-color: $grey;
-						color: white;
-						font-family: $headerFont;
-						font-size: 1.1em;
-						letter-spacing: 0.1px;
-						padding: 8px 10px;
-						margin: 0;
-					}
-
-					.body {
-						margin: 10px 0 0;
-						background-color: $light2;
-						padding: 10px 10px 0;
-						text-align: center;
-
-						.balance {
-							font-family: $headerFont;
-							color: $grey;
-							font-size: 2.8em;
-
-							.naira {
-								font-family: Segoe UI;
-								font-weight: bold;
-							}
-						}
-					}
-
-					.footer {
-						background-color: transparentize($light2, 0.5);
-						border-top-color: $light2;
-						border-top-style: solid;
-						border-top-width: 2px;
-						padding: 15px 10px;
-					}
-				}
-
-				.col-action {
-					display: inline-block;
-					float: right;
-					color: $white;
-					border-radius: 10px;
-					letter-spacing: 0.2px;
-					margin: 0 0 30px;
-					padding: 3px 10px;
-					background-color: $grey;
-					line-height: 1;
-					cursor: pointer;
-
-					@include MQ(M) {
-						display: none;
-					}
-
-					&:last-of-type {
-						margin-right: 8px;
-						background-color: $color1;
-					}
-				}
-
-				a.contact-writer {
-					margin: 50px auto 15px !important;
-					display: block;
-				}
-
-				a.load-earlier-messages {
-					display: table;
-					margin: 0 auto 25px;
-					width: auto;
-					padding-left: 25px;
-					padding-right: 25px;
-				}
-			}
-		}
-
-		.center-column {
-			@include wh(100%, auto);
-
-			@include MQ(M) {
-				@include wh(100%, auto);
-			}
-		}
-	}
+    @include wh(100%, auto);
+    padding: 0 15px;
+
+    @include MQ(M) {
+        padding: 0 120px;
+    }
+
+    ;
+
+    #index-page & {
+        &.what-we-do {
+            .section-content {
+                padding: 30px 0;
+
+                @include MQ(M) {
+                    padding: 105px 0;
+                }
+
+                ;
+
+                .section-title {
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                    letter-spacing: 0;
+
+                    @include MQ(M) {
+                        margin-bottom: 40px
+                    }
+
+                    ;
+                }
+
+                .col-content {
+                    text-align: center;
+                    transition: box-shadow 0.45s;
+                    cursor: pointer;
+
+                    @include MQ(M) {
+                        padding: 30px 20px 25px;
+                        border-radius: 10px;
+                    }
+
+                    ;
+
+                    &:hover {
+                        @include MQ(M) {
+                            box-shadow: 0 5px 10px transparentize($black, 0.95);
+                        }
+                    }
+
+                    .col-icon {
+                        @include wh(auto, 35px);
+                        margin: 0 auto 15px;
+                        display: block;
+
+                        @include MQ(M) {
+                            @include wh(auto, 68px);
+                            margin: 0 auto 60px;
+                        }
+
+                        ;
+                    }
+
+
+                    .col-title {
+                        @include rfs(1.3);
+                        font-family: $headerFont;
+                        letter-spacing: 0px;
+                        color: $black;
+                        margin: 0 auto 15px;
+
+                        @include MQ(M) {
+                            @include rfs(1);
+                            line-height: 1.2;
+                            height: 40px;
+                            margin: 0 auto 15px;
+                        }
+
+                        ;
+                    }
+
+                    .col-body {
+                        @include rfs(0.97);
+                        color: $grey;
+                        margin: 0 auto 20px;
+                        letter-spacing: 0.2px;
+
+                        @include MQ(M) {
+                            @include rfs(0.9);
+                            line-height: 1.2;
+                            height: 50px;
+                            margin: 0 auto 40px;
+                        }
+
+                        & + button {
+                            margin: 0 auto 35px;
+
+                            @include MQ(M) {
+                                margin: 0 auto;
+                            }
+
+                            ;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.testimony {
+            background-color: $color2;
+
+            .section-content {
+                padding: 35px 0;
+
+                .larr, .rarr {
+                    @include wh(30px, auto);
+                    @include center(y);
+                    display: block;
+                    margin: 0 auto;
+                    cursor: pointer;
+                }
+
+                .col-content-stage-outer {
+                    @include wh(80%, auto);
+                    margin: 0 auto;
+                    overflow: hidden;
+
+                    @include MQ(M) {
+                        @include wh(100%, auto);
+                    }
+
+                    ;
+
+                    .col-content-stage {
+                        @include wh(200%, auto);
+                        position: relative;
+                        margin: 0 auto;
+                        left: 0;
+                        transition: left .45s;
+
+                        .col-content {
+                            text-align: center;
+                            display: inline;
+                            float: left;
+                            width: 50%;
+
+                            .col-icon {
+                                @include wh(40px, auto);
+                                display: block;
+                                margin: 0 auto;
+
+                                @include MQ(M) {
+                                    @include wh(55px, auto);
+                                }
+
+                                ;
+                            }
+
+                            .col-body {
+                                margin: 20px auto 10px;
+                                letter-spacing: 0.2px;
+                                color: $black;
+
+                                @include MQ(M) {
+                                    margin: 35px auto 15px;
+                                }
+
+                                ;
+                            }
+
+                            .col-author {
+                                margin: 0 auto;
+                                color: $white;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.stand-out-cta {
+            position: relative;
+            overflow: hidden;
+
+            .section-bg {
+                @include wh(auto, 100%);
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                &.two {
+                    top: 50px;
+                    left: 70px;
+                }
+            }
+
+            .section-content {
+                padding: 30px 0;
+
+                @include MQ(M) {
+                    padding: 105px 0;
+                }
+
+                ;
+
+                .section-icon {
+                    @include wh(60px, auto);
+                    display: block;
+                    text-align: center;
+                    margin: 0px auto 30px;
+
+                    @include MQ(M) {
+                        @include wh(300px, auto);
+                    }
+
+                    ;
+                }
+
+                .col-content {
+                    text-align: center;
+
+                    .col-title {
+                        letter-spacing: 0;
+                        color: $black;
+
+                        span {
+                            color: $color2;
+                        }
+                    }
+
+                    .col-body {
+                        margin: 30px auto 50px;
+                        letter-spacing: 0.2px;
+                        color: $black;
+                    }
+                }
+            }
+        }
+
+        &.latest-blog-stories {
+            background-color: $light;
+
+            .section-content {
+                padding: 30px 0;
+
+                @include MQ(M) {
+                    padding: 50px 0 80px;
+                }
+
+                ;
+
+                .section-title {
+                    letter-spacing: 0;
+                    color: $black;
+
+                    @include MQ(M) {
+                        margin: 0 0 30px 30px
+                    }
+
+                    ;
+                }
+
+                .section-content-inner {
+                    padding: 30px 15px;
+                    background-color: $white;
+
+                    .col-content {
+                        margin: 0 0 30px;
+
+                        .col-image {
+                            display: block;
+                            @include wh(100%, auto);
+                            margin: 0 0 30px;
+                        }
+
+                        .col-category {
+                            @include rfs(0.83);
+                            font-family: $headerFont;
+                            color: $grey;
+                            letter-spacing: 0.5px;
+                        }
+
+                        .col-title {
+                            @include rfs(1.5);
+                            letter-spacing: 0;
+                            color: $black;
+                            margin: 20px 0 20px;
+                            text-align: left;
+
+                            @include MQ(M) {
+                                @include rfs(1.7);
+                                letter-spacing: 0.3px
+                            }
+
+                            ;
+                        }
+
+                        .col-body {
+                            letter-spacing: 0.2px;
+                            line-height: 2;
+                            color: $black;
+                            margin: 0 0 30px;
+                        }
+                    }
+
+                    button#read-more {
+                        display: block;
+                        text-align: center;
+                        margin: 30px auto 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #what-we-do-page & {
+        &.what-we-do-inner {
+            position: relative;
+            overflow: hidden;
+
+            .section-content {
+                padding: 30px 0;
+
+                @include MQ(M) {
+                    padding: 105px 0;
+                }
+
+                ;
+
+                .section-icon {
+                    @include wh(60px, auto);
+                    display: block;
+                    text-align: center;
+                    margin: 0px auto 30px;
+
+                    @include MQ(M) {
+                        @include wh(300px, auto);
+                    }
+
+                    ;
+                }
+
+                .col-content {
+                    text-align: center;
+
+                    .col-title {
+                        letter-spacing: 0;
+                        color: $black;
+
+                        span {
+                            color: $color2;
+                        }
+                    }
+
+                    .col-body {
+                        margin: 30px auto 50px;
+                        letter-spacing: 0.2px;
+                        line-height: 2;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    #auth-page & {
+        padding: 0;
+
+        @include MQ(M) {
+            padding: 0;
+        }
+
+        ;
+
+        .section-content {
+
+            .left-pane {
+                height: 100vh;
+                background-image: url('../img/image.bg.jpg');
+                background-position: center;
+                background-size: cover;
+                padding: 0 40px;
+
+                @include MQ(L) {
+                    padding: 0 120px;
+                }
+
+                .col-content {
+                    @include center(y);
+                    text-align: left;
+
+                    .brand-logo {
+                        @include wh(auto, 100px);
+                        display: block;
+                        margin: 0;
+                        cursor: pointer;
+                    }
+
+                    .col-title {
+                        @include rfs(4);
+                        font-family: $headlineFont;
+                        color: $white;
+                        text-align: left;
+                        margin: 20px auto 30px;
+                        line-height: 1;
+                        letter-spacing: 0;
+
+                        span {
+                            color: $dark;
+                        }
+                    }
+
+                    .col-subtitle {
+                        @include rfs(1);
+                        @include wh(100%, auto);
+                        color: $white;
+                        text-align: left;
+                        margin: 0 auto 40px;
+                        letter-spacing: 0.2px;
+
+                        & + button {
+                            margin: 0;
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .right-pane {
+                height: 100vh;
+                padding: 0 10%;
+
+                .col-content {
+                    @include center(y);
+                    text-align: center;
+
+                    .col-icon {
+                        @include wh(80px, auto);
+                        display: block;
+                        text-align: center;
+                        margin: 0px auto 30px;
+
+                        @include MQ(M) {
+                            @include wh(300px, auto);
+                        }
+
+                        ;
+                    }
+
+                    .col-title {
+                        letter-spacing: 0;
+                        color: $black;
+
+                        span {
+                            color: $color2;
+                        }
+                    }
+
+                    .col-subtitle {
+                        letter-spacing: 0.2px;
+                        line-height: 2;
+                        color: $black;
+                        margin: 0 0 30px;
+
+                        span {
+                            color: $color1;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #admin-page & {
+        &.admin-body {
+            @include wh(100%, calc(100vh - 80px));
+            background-color: $light2;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            padding: 50px 80px;
+
+            & > .left-column {
+                @include wh(80px, auto);
+                float: left;
+                background-color: $white;
+                border-radius: 5px;
+                box-shadow: 0 5px 10px transparentize($black, 0.90);
+
+                @include MQ(M) {
+                    @include wh(200px);
+                }
+
+                @include MQ(L) {
+                    @include wh(250px);
+                }
+
+                .col-header {
+                    font-family: $headerFont;
+                    color: $color1;
+                    text-align: center;
+                    margin: 50px auto 20px;
+                    letter-spacing: 0;
+
+                    @include MQ(M) {
+                        text-align: left;
+                        margin: 50px 0 20px 20px;
+                    }
+                }
+
+                .tool-item {
+                    @include wh(100%, auto);
+                    background-color: $white;
+                    cursor: pointer;
+                    padding: 20px 0;
+                    position: relative;
+                    transition: background-color .15s;
+
+                    @include MQ(M) {
+                        @include wh(100%, 40px);
+                        padding: 0;
+                    }
+
+                    .tool-indicator {
+                        @include wh(2px, 100%);
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        transition: background-color .15s;
+
+                        @include MQ(M) {
+                            @include wh(4px, 100%);
+                            position: relative;
+                            display: block;
+                            float: left;
+                            background-color: $light2;
+                        }
+                    }
+
+                    .tool-icon {
+                        @include wh(auto, 20px);
+                        display: block;
+                        margin: 0 auto;
+
+                        @include MQ(M) {
+                            @include wh(auto, 20px);
+                            float: left;
+                            margin: 10px 0 10px 16px;
+                        }
+                    }
+
+                    .tool-name {
+                        color: $grey;
+                        font-size: 12px;
+                        display: block;
+                        text-align: center;
+                        margin: 13px auto 0;
+                        letter-spacing: 0.2px;
+
+                        @include MQ(M) {
+                            font-size: 14px;
+                            margin: 13px 20px;
+                            float: left;
+                            text-align: left;
+                        }
+                    }
+
+                    &.is-active {
+                        background-color: $light2;
+
+                        .tool-indicator {
+                            background-color: $color1;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $light2;
+
+                        .tool-indicator {
+                            background-color: $color3;
+                        }
+                    }
+                }
+            }
+
+            & > .right-column {
+                @include wh(calc(100% - 130px), calc(100vh - 120px));
+                float: right;
+                overflow: auto;
+
+                @include MQ(M) {
+                    @include wh(calc(100% - 250px));
+                }
+
+                @include MQ(L) {
+                    @include wh(calc(100% - 300px));
+                }
+            }
+        }
+    }
+
+    &.two-column-layout, &.single-column-layout {
+        @include wh(100%, auto);
+        background-color: $light2;
+        padding: 30px 15px;
+        overflow: hidden;
+        position: relative;
+
+        @include MQ(M) {
+            height: auto;
+            padding: 50px 80px;
+        }
+
+        .left-column {
+            @include wh(calc(100% - 30px), auto);
+            padding: 5px 0;
+            border-radius: 5px;
+            background-color: $white;
+            box-shadow: 0 5px 10px transparentize($black, 0.95);
+            padding: 20px;
+            overflow: auto;
+            transition: top .35s;
+            position: absolute;
+            z-index: 3;
+            top: 100%;
+            left: 15px;
+
+            @include MQ(M) {
+                @include wh(250px, auto);
+                float: left;
+                position: static;
+                transition: none;
+            }
+
+            ;
+
+            .col-title {
+                color: $color1;
+                font-family: $headerFont;
+                letter-spacing: 0;
+                font-size: 1.3em;
+                margin-bottom: 10px;
+            }
+
+            .col-subtitle {
+                color: $grey;
+                font-family: $headerFont;
+                letter-spacing: 0;
+                font-size: 1.1em;
+                margin-bottom: 8px;
+            }
+
+            .search-form {
+                margin: 0 0 10px;
+
+                .form-input {
+                    @include wh(100%, auto);
+                    padding-left: 0;
+                }
+            }
+
+            .search-results {
+                font-size: 1em;
+                letter-spacing: 0.2px;
+                margin-bottom: 40px;
+
+                span {
+                    font-weight: bold;
+                    color: $color1;
+                }
+            }
+
+            div.sort-order, div.sort-by {
+                padding: 0 0 20px;
+                border-bottom: solid 2px $grey2;
+                margin: 20px 0 5px;
+
+                label {
+                    font-size: 1em;
+                    letter-spacing: 0.2px
+                }
+            }
+
+            div.job-price-container {
+                margin: 0px -10px 0;
+
+                .header {
+                    .paper-type {
+                        background-color: $color3;
+                        color: white;
+                        font-family: $headerFont;
+                        font-size: 1.1em;
+                        letter-spacing: 0.1px;
+                        padding: 8px 10px;
+                        margin: 0;
+                    }
+
+                    .paper-subtype {
+                        background-color: transparentize($light2, 0.5);
+                        color: $grey;
+                        font-size: .9em;
+                        letter-spacing: 0.2px;
+                        padding: 10px 10px;
+                        margin: 0;
+                    }
+                }
+
+                .body {
+                    margin: 10px 0 0;
+                    background-color: $light2;
+                    padding: 10px 10px 0;
+
+                    .invoice-item {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 0;
+                        color: $grey;
+                        font-size: .9em;
+                        letter-spacing: 0.2px;
+                        border-top: dotted 1px $grey;
+
+                        .value {
+                            font-weight: bold;
+                        }
+
+                        &.total {
+                            border-top: solid 2px $color3;
+
+                            .heading {
+                                font-weight: bold;
+                            }
+
+                            .value {
+                                color: $color1;
+                            }
+                        }
+                    }
+
+                    .no-price-content {
+                        color: $grey;
+                        font-size: .9em;
+                        letter-spacing: 0.2px;
+                    }
+                }
+
+                .footer {
+                    background-color: transparentize($light2, 0.5);
+                    border-top-color: $light2;
+                    border-top-style: solid;
+                    border-top-width: 2px;
+                    padding: 15px 10px;
+                }
+            }
+
+            button[type="submit"] {
+                display: table;
+                width: 100%;
+                margin: 20px auto 20px;
+
+                @include MQ(M) {
+                    margin: 20px auto 5px;
+                }
+            }
+
+            button[type="button"] {
+                display: table;
+                margin: 0 auto 15px;
+            }
+
+            button#cancel-filter {
+                @include MQ(M) {
+                    display: none;
+                }
+            }
+
+            a.edit-job {
+                width: 100%;
+                margin: 0 0 20px;
+            }
+
+            a.job-list {
+                margin: 0 0 20px;
+            }
+        }
+
+        .right-column, .center-column {
+            @include wh(100%, auto);
+            padding: 5px 0;
+            // overflow: auto;
+            @include MQ(M) {
+                // @include wh(calc(100% - 300px), calc(100vh - 140px));
+                @include wh(calc(100% - 300px), auto);
+                float: right;
+            }
+
+            .col-header {
+                margin: 0 0 30px;
+
+                .col-title {
+                    font-family: $headerFont;
+                    color: $color1;
+                    letter-spacing: 0;
+                    font-size: 2em;
+                    float: left;
+                }
+
+                .col-stats {
+                    letter-spacing: 0.2px;
+                    font-size: 1em;
+                    color: $grey;
+                    float: left;
+                    margin: 5px 0 0 10px;
+
+                    span {
+                        letter-spacing: 0.2px;
+                        color: $white;
+                        background-color: $grey;
+                        padding: 2px 5px;
+                        border-radius: 3px;
+                    }
+                }
+
+                .filter-icon {
+                    @include wh(auto, 24px);
+                    float: right;
+                    display: inline-block;
+
+                    @include MQ(M) {
+                        display: none;
+                    }
+                }
+
+                .col-action {
+                    display: inline-block;
+                    float: right;
+                    color: $white;
+                    border-radius: 10px;
+                    letter-spacing: 0.2px;
+                    margin-top: calc((2em - 18px) / 2);
+                    padding: 3px 7px;
+                    background-color: $grey;
+                    line-height: 1;
+                    cursor: pointer;
+
+                    @include MQ(M) {
+                        display: none;
+                    }
+                }
+            }
+
+            .col-body {
+                letter-spacing: 0.2px;
+                font-size: 1em;
+
+                .attachment-item {
+                    display: inline-block;
+                    @include wh(150px, auto);
+                    margin: 0 15px 15px 0;
+                    background-color: $light;
+                    position: relative;
+                    box-shadow: 0 5px 10px transparentize($black, 0.95);
+
+                    &:last-child {
+                        margin: 0 0 -15px 0;
+                    }
+
+                    .attachment-remove {
+                        @include wh(24px, 24px);
+                        background-image: url("../img/icon.hamburger.close.png");
+                        background-size: cover;
+                        position: absolute;
+                        top: -12px;
+                        right: -12px;
+                        cursor: pointer;
+                        transition: transform .2s;
+                        z-index: 8;
+
+                        &:hover {
+                            transform: scale(1.05, 1.05) rotate(90deg)
+                        }
+                    }
+
+                    .attachment-preview {
+                        @include wh(100%, 100px);
+                        background-image: url('../img/icon.businessDocs.png');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        cursor: pointer;
+                        display: block;
+                        transition: filter .45s;
+
+                        &:hover {
+                            filter: saturate(20%);
+                        }
+                    }
+
+                    .attachment-footer {
+                        @include wh(100%, auto);
+                        padding: 5px 5px;
+                        background-color: $white;
+
+                        .download-icon {
+                            color: $color1;
+                            display: inline-block;
+                            margin-right: 5px;
+
+                            & + a {
+                                font-size: 0.9em;
+                                letter-spacing: 0.2px;
+                            }
+                        }
+
+                        .file-size {
+                            color: $grey;
+                            text-align: right;
+                            font-size: 0.9em;
+                            letter-spacing: 0.2px;
+                            float: right;
+                            line-height: 1.2;
+                        }
+                    }
+                }
+
+                .heading-2 {
+                    display: block;
+                    letter-spacing: 0;
+                    font-weight: bold;
+                    color: $color1;
+                    margin: 0 0 8px;
+                }
+
+                .heading-3 {
+                    display: block;
+                    letter-spacing: 0.2px;
+                    color: $grey;
+                    margin: 0 0 15px;
+                }
+
+                .inner-column-header {
+                    border-bottom: solid 1px $grey2;
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 0 20px;
+
+                    .heading {
+                        display: block;
+                        font-size: 0.8em;
+                        letter-spacing: 0.1px;
+                        color: $grey;
+                        align-self: flex-end;
+                        margin-bottom: 8px;
+                    }
+
+                    .action {
+                        @include wh(30px, 30px);
+                        display: block;
+                        background-image: url('../img/icon.edit.png');
+                        background-color: $grey2;
+                        background-size: 60%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border-radius: 5px;
+                        margin-top: 5px;
+                        cursor: pointer;
+                        transition: background-color .3s;
+
+                        &:hover {
+                            background-color: $light2;
+                        }
+                    }
+                }
+
+                .job-info-item {
+                    margin: 0 auto 30px;
+
+                    &.editable {
+
+                        &:after {
+                            display: table;
+                            content: "";
+                            clear: both;
+                        }
+
+                        .m-form {
+
+                            [class*="form-"] {
+                                margin-left: 0;
+                                width: 150px;
+                            }
+                        }
+
+                        .job-info-value {
+                            float: left;
+                        }
+
+                        div.edit-icon {
+                            display: inline-block;
+                            margin-left: 10px;
+                            width: 25px;
+                            height: 25px;
+                            background-color: $grey2;
+                            border-radius: 15px;
+                            background-image: url("../img/icon.edit.png");
+                            background-size: 50%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            float: left;
+                            margin-top: -5px;
+                            cursor: pointer;
+                            transition: background-color .3s;
+
+                            &:hover {
+                                background-color: darken($grey2, 10);
+                            }
+                        }
+                    }
+                }
+
+                .job-summary, .job-outline {
+                    margin: 0 0 30px;
+
+                    & > p:last-of-type {
+                        @include wh(100%, auto);
+                        letter-spacing: 0.2px;
+                        line-height: 1.3;
+                        font-size: 1em;
+                        padding: 15px;
+                        border: solid 1px $grey2;
+                        border-bottom: solid 2px $color1;
+                    }
+                }
+
+                .payment-breakdown {
+                    .header {
+                        background-color: $grey;
+                        color: white;
+                        font-family: $headerFont;
+                        font-size: 1.1em;
+                        letter-spacing: 0.1px;
+                        padding: 8px 10px;
+                        margin: 0;
+                    }
+
+                    .body {
+                        margin: 10px 0 0;
+                        background-color: $light2;
+                        padding: 10px 10px 0;
+
+                        .invoice-item {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 10px 0;
+                            color: $grey;
+                            font-size: .9em;
+                            letter-spacing: 0.2px;
+                            border-top: dotted 1px $grey;
+
+                            .value {
+                                font-weight: bold;
+                            }
+
+                            &.total {
+                                border-top: solid 2px $color3;
+
+                                .heading {
+                                    font-weight: bold;
+                                }
+
+                                .value {
+                                    color: $color1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .payment-options {
+                    @include wh(100%, auto);
+                    margin-bottom: 20px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .option {
+                        @include wh(calc(50% - 5px));
+                        text-align: center;
+                        background-color: $light2;
+                        padding: 10px 0;
+                        font-family: $headerFont;
+                        letter-spacing: 0.2px;
+                        font-size: 0.9em;
+                        cursor: pointer;
+                        border: solid 2px rgba(0,0,0,0);
+                        transition: border .2s;
+
+                        &:first-of-type {
+                            margin-right: 7px;
+                        }
+
+                        &.selected {
+                            background-color: $color3;
+                        }
+
+                        &:hover {
+                            border: solid 2px $color3;
+                        }
+                    }
+                }
+
+                .payment-option-description {
+                    color: $grey;
+                    font-size: 0.8em;
+                    margin-bottom: 20px;
+                    display: block;
+                }
+
+                .progress-info {
+                    .progress-label {
+                        margin-bottom: 8px;
+                    }
+
+                    .m-progress {
+                        @include wh(100%, 5px);
+                        margin: 0 0 30px;
+                    }
+                }
+
+                .transactions-pagination {
+                    @include center(x);
+
+                    a {
+                        color: $grey;
+                    }
+
+                    li.active > a {
+                        background-color: $color1;
+                        color: white;
+                        border-color: $color1;
+                    }
+                }
+
+                .user-form-switch {
+                    display: flex;
+                    justify-content: space-between;
+
+                    @include MQ(L) {
+                        flex-direction: column;
+                    }
+
+                    div {
+                        padding: 10px 7px;
+                        background-color: $light2;
+                        width: 50%;
+                        margin: 0;
+                        text-align: center;
+                        cursor: pointer;
+                        border: solid 2px rgba(0,0,0,0);
+                        transition: border .2s;
+
+                        @include MQ(L) {
+                            width: auto;
+                            margin: 0 0 10px;
+                            text-align: right
+                        }
+
+                        &.selected {
+                            background-color: $color1;
+                            color: white;
+                        }
+
+                        &:hover {
+                            border-color: $color1;
+                        }
+                    }
+                }
+
+                .wallet-balance {
+                    margin-bottom: 30px;
+
+                    .header {
+                        background-color: $grey;
+                        color: white;
+                        font-family: $headerFont;
+                        font-size: 1.1em;
+                        letter-spacing: 0.1px;
+                        padding: 8px 10px;
+                        margin: 0;
+                    }
+
+                    .body {
+                        margin: 10px 0 0;
+                        background-color: $light2;
+                        padding: 10px 10px 0;
+                        text-align: center;
+
+                        .balance {
+                            font-family: $headerFont;
+                            color: $grey;
+                            font-size: 2.8em;
+
+                            .naira {
+                                font-family: Segoe UI;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    .footer {
+                        background-color: transparentize($light2, 0.5);
+                        border-top-color: $light2;
+                        border-top-style: solid;
+                        border-top-width: 2px;
+                        padding: 15px 10px;
+                    }
+                }
+
+                .col-action {
+                    display: inline-block;
+                    float: right;
+                    color: $white;
+                    border-radius: 10px;
+                    letter-spacing: 0.2px;
+                    margin: 0 0 30px;
+                    padding: 3px 10px;
+                    background-color: $grey;
+                    line-height: 1;
+                    cursor: pointer;
+
+                    @include MQ(M) {
+                        display: none;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 8px;
+                        background-color: $color1;
+                    }
+                }
+
+                a.contact-writer {
+                    margin: 50px auto 15px !important;
+                    display: block;
+                }
+
+                a.load-earlier-messages {
+                    display: table;
+                    margin: 0 auto 25px;
+                    width: auto;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+            }
+        }
+
+        .center-column {
+            @include wh(100%, auto);
+
+            @include MQ(M) {
+                @include wh(100%, auto);
+            }
+        }
+    }
 }
