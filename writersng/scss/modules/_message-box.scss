@@ -3,219 +3,225 @@
    ======================= */
 
 .m-message-box {
-	@include wh(100%, auto);
-	padding: 30px 10px 0px;
+    @include wh(100%, auto);
+    padding: 30px 10px 0px;
 
-	@include MQ(M) {
-			padding: 30px 20px 0;
-		}
+    @include MQ(M) {
+        padding: 30px 20px 0;
+    }
 
-	&.sender {
-		background-color: $light2;
-		border-bottom: solid 2px $color1;
-	}
+    &.sender {
+        background-color: $light2;
+        border-bottom: solid 2px $color1;
+    }
 
-	&.receiver {
-		border-bottom: solid 2px $color2;
-	}
+    &.receiver {
+        border-bottom: solid 2px $color2;
+    }
 
-	&.type-message {
-		margin-top: 0;
-	}
+    &.type-message {
+        margin-top: 0;
+    }
 
-	.message-box-icon {
-		@include wh(55px, auto);
-		display: block;
-		border-radius: 30px;
+    .message-box-icon {
+        @include wh(55px, auto);
+        display: block;
+        border-radius: 30px;
 
-		@include MQ(M) {
-			@include wh(40px, auto);
-		}
+        @include MQ(M) {
+            @include wh(40px, auto);
+        }
 
-		@include MQ(L) {
-			@include wh(55px, auto);
-		}
-	}
-	.message-box-header {
-		text-align: center;
-		padding: 0 0 10px;
+        @include MQ(L) {
+            @include wh(55px, auto);
+        }
+    }
 
-		@include MQ(L) {
-			text-align: right;
-		}
+    .message-box-header {
+        text-align: center;
+        padding: 0 0 10px;
 
-		.last-seen {
-			color: $grey;
-			display: inline;
-			font-size: 0.8em;
-			text-align: right;
-			letter-spacing: 0.2px;
+        @include MQ(L) {
+            text-align: right;
+        }
 
-			span {
-				font-weight: bold;
-				color: $color1;
-			}
-		}
+        .last-seen {
+            color: $grey;
+            display: inline;
+            font-size: 0.8em;
+            text-align: right;
+            letter-spacing: 0.2px;
 
-		.local-time {
-			color: $grey;
-			display: inline;
-			font-size: 0.8em;
-			text-align: right;
-			letter-spacing: 0.2px;
-			margin-left: 15px;
+            span {
+                font-weight: bold;
+                color: $color1;
+            }
+        }
 
-			span {
-				font-weight: bold;
-				color: $color1;
-			}
-		}
-	}
+        .local-time {
+            color: $grey;
+            display: inline;
+            font-size: 0.8em;
+            text-align: right;
+            letter-spacing: 0.2px;
+            margin-left: 15px;
 
-	.message-box-body {
-		padding: 0;
+            span {
+                font-weight: bold;
+                color: $color1;
+            }
+        }
+    }
 
-		.message-box-name {
-			font-family: $headerFont;
-			font-size: 1em;
-			color: $color1;
-			margin-bottom: 10px;
-		}
+    .message-box-body {
+        padding: 0;
 
-		.message-box-message {
-			font-size: 1em;
-			letter-spacing: 0.2px;
-			line-height: 1.2;
-		}
+        .message-box-name {
+            font-family: $headerFont;
+            font-size: 1em;
+            color: $color1;
+            margin-bottom: 10px;
+        }
 
-		.message-box-attachments {
-			margin: 30px 0 0;
+        .message-box-message {
+            font-size: 1em;
+            letter-spacing: 0.2px;
+            line-height: 1.2;
+        }
 
-			.title {
-				color: $grey;
-				font-size: 1em;
-				letter-spacing: 0;
-				font-family: $headerFont;
-				margin-bottom: 8px;
-			}
+        .message-box-attachments {
+            margin: 30px 0 0;
 
-			.attachment-item {
-				display: inline-block;
-				@include wh(150px, auto);
-				margin: 0 15px 15px 0;
-				background-color: $light;
-				box-shadow: 0 5px 10px transparentize($black, 0.95);
+            .title {
+                color: $grey;
+                font-size: 1em;
+                letter-spacing: 0;
+                font-family: $headerFont;
+                margin-bottom: 8px;
+            }
 
-				&:last-child {
-					margin: 0 0 -15px 0;
-				}
+            .attachment-item {
+                display: inline-block;
+                @include wh(150px, auto);
+                margin: 0 15px 15px 0;
+                background-color: $light;
+                box-shadow: 0 5px 10px transparentize($black, 0.95);
 
-				.attachment-remove {
-					@include wh(24px, 24px);
-					background-image: url("../img/icon.hamburger.close.png");
-					background-size: cover;
-					position: absolute;
-					top: -12px;
-					right: -12px;
-					cursor: pointer;
-					transition: transform .2s;
-					z-index: 8;
+                &:last-child {
+                    margin: 0 0 -15px 0;
+                }
 
-					&:hover {
-						transform: scale(1.05, 1.05) rotate(90deg)
-					}
-				}
-				
-				.attachment-preview {
-					@include wh(100%, 100px);
-					background-image: url('../img/icon.businessDocs.png');
-					background-size: contain;
-					background-position: center;
-					background-repeat: no-repeat;
-					cursor: pointer;
-					display: block;
-					transition: filter .45s;
+                .attachment-remove {
+                    @include wh(24px, 24px);
+                    background-image: url("../img/icon.hamburger.close.png");
+                    background-size: cover;
+                    position: absolute;
+                    top: -12px;
+                    right: -12px;
+                    cursor: pointer;
+                    transition: transform .2s;
+                    z-index: 8;
 
-					&:hover {
-						filter: saturate(20%);
-					}
-				}
+                    &:hover {
+                        transform: scale(1.05, 1.05) rotate(90deg)
+                    }
+                }
 
-				.attachment-footer {
-					@include wh(100%, auto);
-					padding: 5px 5px;
-					background-color: $white;
+                .attachment-preview {
+                    @include wh(100%, 100px);
+                    background-image: url('../img/icon.businessDocs.png');
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                    display: block;
+                    transition: filter .45s;
 
-					.download-icon {
-						color: $color1;
-						display: inline-block;
-						margin-right: 5px;
+                    &:hover {
+                        filter: saturate(20%);
+                    }
+                }
 
-						&+a {
-							font-size: 0.9em;
-							letter-spacing: 0.2px;
-						}
-					}
+                .attachment-footer {
+                    @include wh(100%, auto);
+                    padding: 5px 5px;
+                    background-color: $white;
 
-					.file-size {
-						color: $grey;
-						text-align: right;
-						font-size: 0.9em;
-						letter-spacing: 0.2px;
-						float: right;
-						line-height: 1.2;
-					}
-				}
-			}
-		}
+                    .download-icon {
+                        color: $color1;
+                        display: inline-block;
+                        margin-right: 5px;
 
-		.form-textarea {
-			border-radius: 0;
-			resize: none;
-			letter-spacing: 0.2px;
-			color: $black;
-			box-shadow: none;
-			padding: 15px 15px 5px;
-		}
+                        & + a {
+                            font-size: 0.9em;
+                            letter-spacing: 0.2px;
+                        }
+                    }
 
-		.attachment-selection {
-			padding: 5px 10px;
-			background-color: $grey2;
+                    .file-size {
+                        color: $grey;
+                        text-align: right;
+                        font-size: 0.9em;
+                        letter-spacing: 0.2px;
+                        float: right;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
 
-			div.paperclip {
-				@include wh(30px, 30px);
-				background-image: url('../img/icon.paperclip.png');
-				background-color: $grey2;
-				background-size: 60%;
-				background-position: center;
-				background-repeat: no-repeat;
-				cursor: pointer;
-				float: right;
-				border-radius: 5px;
-				transition: background-color .2s;
+        .form-textarea {
+            border-radius: 0;
+            resize: none;
+            letter-spacing: 0.2px;
+            color: $black;
+            box-shadow: none;
+            padding: 15px 15px 5px;
+        }
 
-				&:hover {
-					background-color: $light2;
-				}
-			}
+        .attachment-selection {
+            padding: 5px 10px;
+            background-color: $grey2;
 
-			&:after {
-				display: block;
-				content: "";
-				clear: both;
-			}
-		}
-	}
+            div.paperclip {
+                @include wh(30px, 30px);
+                background-image: url('../img/icon.paperclip.png');
+                background-color: $grey2;
+                background-size: 60%;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                float: right;
+                border-radius: 5px;
+                transition: background-color .2s;
 
-	.message-box-footer {
-		padding: 10px 0;
-		text-align: right;
+                &:hover {
+                    background-color: $light2;
+                }
 
-		.message-box-time {
-			color: $grey;
-			font-size: 0.8em;
-			text-align: right;
-			letter-spacing: 0.2px;
-		}
-	}
+                &.open {
+                    background-image: url('../img/icon.close.png');
+                    background-size: 50%;
+                }
+            }
+
+            &:after {
+                display: block;
+                content: "";
+                clear: both;
+            }
+        }
+    }
+
+    .message-box-footer {
+        padding: 10px 0;
+        text-align: right;
+
+        .message-box-time {
+            color: $grey;
+            font-size: 0.8em;
+            text-align: right;
+            letter-spacing: 0.2px;
+        }
+    }
 }

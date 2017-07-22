@@ -1267,5 +1267,88 @@
                 @include wh(100%, auto);
             }
         }
+
+        .latest-blog-stories, .blog-story-content {
+            background-color: $light;
+            .section-content {
+                padding: 30px 0;
+
+                @include MQ(M) {
+                    padding: 0 0 80px;
+                }
+
+                ;
+
+                .section-title {
+                    letter-spacing: 0;
+                    color: $black;
+                    font-size: 24px;
+
+                    @include MQ(M) {
+                        margin: 0 0 30px 30px
+                    }
+
+                    ;
+                }
+
+                .section-content-inner {
+                    padding: 30px 15px;
+                    background-color: $white;
+
+                    .col-content {
+                        margin: 0 0 30px;
+
+                        .col-image {
+                            display: block;
+                            @include wh(100%, auto);
+                            margin: 0 0 30px;
+                        }
+
+                        .col-category {
+                            @include rfs(0.83);
+                            font-family: $headerFont;
+                            color: $grey;
+                            letter-spacing: 0.5px;
+                        }
+
+                        .col-title {
+                            @include rfs(1.5);
+                            letter-spacing: 0;
+                            color: $black;
+                            margin: 20px 0 20px;
+                            text-align: left;
+
+                            @include MQ(M) {
+                                @include rfs(1.7);
+                                letter-spacing: 0.3px
+                            }
+
+                            ;
+                        }
+
+                        .col-body {
+                            letter-spacing: 0.2px;
+                            line-height: 2;
+                            color: $black;
+                            margin: 0 0 30px;
+                        }
+                    }
+
+                    button#read-more {
+                        display: block;
+                        text-align: center;
+                        margin: 30px auto 0;
+                    }
+                }
+            }
+        }
+
+        .blog-story-content {
+            .section-content {
+                @include MQ(M) {
+                    padding: 0 0 80px;
+                }
+            }
+        }
     }
 }

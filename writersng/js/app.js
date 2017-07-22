@@ -126,7 +126,7 @@ $(document).ready(function(e) {
 	// End of TinyMCE Text Area
 
 	//File Viewer
-	$('.attachment-item .attachment-preview[data-href]').click(function(e) {
+	$('.attachment-item .attachment-preview[data-href]').click(function() {
 		try {
 			wngviewer($(this));
 		} catch(err) {
@@ -134,16 +134,32 @@ $(document).ready(function(e) {
 		}
 	})
 
-	$('.attachment-item .attachment-remove').click(function(e) {
+	$('.attachment-item .attachment-remove').click(function() {
 		$(this).parents('.attachment-item').remove();
 	})
 	//End of File Viewer
+
+    //Handle Attachment Selection Click
+    $(".attachment-selection .paperclip").click(function() {
+        $this = $(this);
+
+        if ($this.hasClass("open")) {
+            $this.removeClass("open");
+            $this.attr("title", "Select attachment(s)");
+            $this.parent().find("input[type='file']").addClass("hidden");
+        } else {
+            $this.addClass("open");
+            $this.attr("title", "Cancel selection");
+            $this.parent().find("input[type='file']").removeClass("hidden");
+        }
+    });
+    //End
 
 	//Sticky
 	try {
 		var sticky = new Sticky('.left-column');
 	} catch(err) {
-		console.log(err)
+	    console.log(err);
 	}
 	//End of Sticky
 
