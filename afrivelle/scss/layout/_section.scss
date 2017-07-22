@@ -104,7 +104,7 @@
         }
     }
 
-    &.what-we-do {
+    &.what-we-do, &.careers-list {
         .pane {
             &.left {
                 padding: 30px 45px;
@@ -131,7 +131,14 @@
                             @include wh(auto, 60px);
                             display: block;
                             margin: 0 auto 20px;
+                        }
 
+                        .pane-item-subtitle {
+                            font-family: $headerFont;
+                            font-size: 14px;
+                            color: $color1;
+                            margin: 20px auto 10px;
+                            letter-spacing: 0;
                         }
 
                         .pane-item-title {
@@ -174,6 +181,7 @@
                     @include MQ(L) {
                         @include center(y);
                     }
+
                     .brand-icon {
                         @include wh(auto, 70px);
                         display: block;
@@ -203,7 +211,7 @@
                         padding: 6px 12px;
                         margin-bottom: 10px;
                         display: table;
-                        
+
                         @include MQ(M) {
                             margin: 0 auto 10px;
                         }
@@ -234,6 +242,17 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    &.careers-list {
+        .pane-item {
+            border-bottom: solid 1px grey;
+            padding-bottom: 30px;
+
+            @include MQ(L) {
+                padding-bottom: 60px;
             }
         }
     }
@@ -275,6 +294,7 @@
                 display: flex;
                 justify-content: flex-start;
             }
+
             .carousel-item {
                 @include wh(100%, auto);
 

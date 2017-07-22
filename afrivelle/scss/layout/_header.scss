@@ -20,7 +20,7 @@
         @include MQ(L) {
             text-align: left;
         }
-        
+
         .header-brand {
             @include wh(auto, 70px);
             display: block;
@@ -41,7 +41,7 @@
             font-size: 2em;
             color: white;
             margin-bottom: 20px;
-            
+
             @include MQ(M) {
                 font-size: 4em;
                 margin-bottom: 30px;
@@ -61,6 +61,7 @@
 
         .get-in-touch {
             position: relative;
+
             @include MQ(L) {
                 text-align: left;
                 margin-left: 60px;
@@ -100,6 +101,28 @@
         @include MQ(L) {
             width: 60%;
             left: 20%;
+        }
+    }
+
+    &.careers {
+        @include wh(100%, calc(90vh - 140px));
+
+        @include MQ(L) {
+            @include wh(100%, calc(90vh - 80px));
+        }
+
+        .hero-title {
+            margin: 0 auto 20px;
+
+            @include MQ(M) {
+                font-size: 4em;
+                margin: 0 auto 30px;
+            }
+        }
+
+        .header-brand {
+            margin: 0 auto 30px !important;
+            float: none !important;
         }
     }
 }

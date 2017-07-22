@@ -108,7 +108,8 @@ h1, h2, h3, h4, h5, h6 {
   .l-nav .nav-main .brand-container {
     padding: 0 0 10px 0;
     display: flex;
-    overflow: hidden; }
+    overflow: hidden;
+    cursor: pointer; }
     .l-nav .nav-main .brand-container .brand-icon {
       width: auto;
       height: 40px;
@@ -308,6 +309,24 @@ h1, h2, h3, h4, h5, h6 {
       .l-header .header-bg {
         width: 60%;
         left: 20%; } }
+  .l-header.careers {
+    width: 100%;
+    height: calc(90vh - 140px);
+    /* Landscape tablets and desktop or laptops */ }
+    @media only screen and (min-width: 992px) {
+      .l-header.careers {
+        width: 100%;
+        height: calc(90vh - 80px); } }
+    .l-header.careers .hero-title {
+      margin: 0 auto 20px;
+      /* Tablets and phablets */ }
+      @media only screen and (min-width: 768px) {
+        .l-header.careers .hero-title {
+          font-size: 4em;
+          margin: 0 auto 30px; } }
+    .l-header.careers .header-brand {
+      margin: 0 auto 30px !important;
+      float: none !important; }
 
 /* ==|====================
    Layout/Footer
@@ -437,57 +456,63 @@ h1, h2, h3, h4, h5, h6 {
             height: auto;
             margin: 0 auto;
             max-width: 600px; } }
-  .l-section.what-we-do .pane.left {
+  .l-section.what-we-do .pane.left, .l-section.careers-list .pane.left {
     padding: 30px 45px;
     text-align: center;
     /* Landscape tablets and desktop or laptops */ }
     @media only screen and (min-width: 992px) {
-      .l-section.what-we-do .pane.left {
+      .l-section.what-we-do .pane.left, .l-section.careers-list .pane.left {
         text-align: left;
         padding: 80px; } }
-    .l-section.what-we-do .pane.left .pane-content .pane-item {
+    .l-section.what-we-do .pane.left .pane-content .pane-item, .l-section.careers-list .pane.left .pane-content .pane-item {
       margin-bottom: 30px;
       /* Landscape tablets and desktop or laptops */ }
       @media only screen and (min-width: 992px) {
-        .l-section.what-we-do .pane.left .pane-content .pane-item {
+        .l-section.what-we-do .pane.left .pane-content .pane-item, .l-section.careers-list .pane.left .pane-content .pane-item {
           margin-bottom: 60px; } }
-      .l-section.what-we-do .pane.left .pane-content .pane-item:last-child {
+      .l-section.what-we-do .pane.left .pane-content .pane-item:last-child, .l-section.careers-list .pane.left .pane-content .pane-item:last-child {
         margin-bottom: 0; }
-      .l-section.what-we-do .pane.left .pane-content .pane-item .pane-item-icon {
+      .l-section.what-we-do .pane.left .pane-content .pane-item .pane-item-icon, .l-section.careers-list .pane.left .pane-content .pane-item .pane-item-icon {
         width: auto;
         height: 60px;
         display: block;
         margin: 0 auto 20px; }
-      .l-section.what-we-do .pane.left .pane-content .pane-item .pane-item-title {
+      .l-section.what-we-do .pane.left .pane-content .pane-item .pane-item-subtitle, .l-section.careers-list .pane.left .pane-content .pane-item .pane-item-subtitle {
+        font-family: "Roboto-Bold", Georgia, serif;
+        font-size: 14px;
+        color: #1b1a2c;
+        margin: 20px auto 10px;
+        letter-spacing: 0; }
+      .l-section.what-we-do .pane.left .pane-content .pane-item .pane-item-title, .l-section.careers-list .pane.left .pane-content .pane-item .pane-item-title {
         font-family: "Roboto-Bold", Georgia, serif;
         font-size: 16px;
         color: #ff595f;
         margin: 0 auto 10px;
         letter-spacing: 0; }
-      .l-section.what-we-do .pane.left .pane-content .pane-item .pane-item-body {
+      .l-section.what-we-do .pane.left .pane-content .pane-item .pane-item-body, .l-section.careers-list .pane.left .pane-content .pane-item .pane-item-body {
         color: black;
         font-size: 13px;
         line-height: 2; }
-      .l-section.what-we-do .pane.left .pane-content .pane-item .mvp-sprint-button {
+      .l-section.what-we-do .pane.left .pane-content .pane-item .mvp-sprint-button, .l-section.careers-list .pane.left .pane-content .pane-item .mvp-sprint-button {
         margin-top: 10px; }
-  .l-section.what-we-do .pane.right {
+  .l-section.what-we-do .pane.right, .l-section.careers-list .pane.right {
     background-color: #f9f9f9;
     padding: 30px 45px;
     text-align: left;
     /* Tablets and phablets */
     /* Landscape tablets and desktop or laptops */ }
     @media only screen and (min-width: 768px) {
-      .l-section.what-we-do .pane.right {
+      .l-section.what-we-do .pane.right, .l-section.careers-list .pane.right {
         text-align: center; } }
     @media only screen and (min-width: 992px) {
-      .l-section.what-we-do .pane.right {
+      .l-section.what-we-do .pane.right, .l-section.careers-list .pane.right {
         text-align: left;
         height: 644px;
         padding: 80px; } }
-    .l-section.what-we-do .pane.right .pane-content {
+    .l-section.what-we-do .pane.right .pane-content, .l-section.careers-list .pane.right .pane-content {
       /* Landscape tablets and desktop or laptops */ }
       @media only screen and (min-width: 992px) {
-        .l-section.what-we-do .pane.right .pane-content {
+        .l-section.what-we-do .pane.right .pane-content, .l-section.careers-list .pane.right .pane-content {
           position: relative;
           top: 50%;
           bottom: auto;
@@ -496,7 +521,7 @@ h1, h2, h3, h4, h5, h6 {
           -ms-transform: translateY(-50%);
           -webkit-transform: translateY(-50%);
           transform: translateY(-50%); } }
-      .l-section.what-we-do .pane.right .pane-content .brand-icon {
+      .l-section.what-we-do .pane.right .pane-content .brand-icon, .l-section.careers-list .pane.right .pane-content .brand-icon {
         width: auto;
         height: 70px;
         display: block;
@@ -504,45 +529,52 @@ h1, h2, h3, h4, h5, h6 {
         /* Tablets and phablets */
         /* Landscape tablets and desktop or laptops */ }
         @media only screen and (min-width: 768px) {
-          .l-section.what-we-do .pane.right .pane-content .brand-icon {
+          .l-section.what-we-do .pane.right .pane-content .brand-icon, .l-section.careers-list .pane.right .pane-content .brand-icon {
             margin: 0 auto 20px; } }
         @media only screen and (min-width: 992px) {
-          .l-section.what-we-do .pane.right .pane-content .brand-icon {
+          .l-section.what-we-do .pane.right .pane-content .brand-icon, .l-section.careers-list .pane.right .pane-content .brand-icon {
             margin: 0 0 10px; } }
-      .l-section.what-we-do .pane.right .pane-content .pane-title {
+      .l-section.what-we-do .pane.right .pane-content .pane-title, .l-section.careers-list .pane.right .pane-content .pane-title {
         color: #1b1a2c;
         font-size: 18px;
         margin: 0 0 25px;
         /* Landscape tablets and desktop or laptops */ }
         @media only screen and (min-width: 992px) {
-          .l-section.what-we-do .pane.right .pane-content .pane-title {
+          .l-section.what-we-do .pane.right .pane-content .pane-title, .l-section.careers-list .pane.right .pane-content .pane-title {
             font-size: 22px;
             margin: 0 0 35px; } }
-      .l-section.what-we-do .pane.right .pane-content .advantage {
+      .l-section.what-we-do .pane.right .pane-content .advantage, .l-section.careers-list .pane.right .pane-content .advantage {
         padding: 6px 12px;
         margin-bottom: 10px;
         display: table;
         /* Tablets and phablets */
         /* Landscape tablets and desktop or laptops */ }
         @media only screen and (min-width: 768px) {
-          .l-section.what-we-do .pane.right .pane-content .advantage {
+          .l-section.what-we-do .pane.right .pane-content .advantage, .l-section.careers-list .pane.right .pane-content .advantage {
             margin: 0 auto 10px; } }
         @media only screen and (min-width: 992px) {
-          .l-section.what-we-do .pane.right .pane-content .advantage {
+          .l-section.what-we-do .pane.right .pane-content .advantage, .l-section.careers-list .pane.right .pane-content .advantage {
             margin: 0;
             margin-bottom: 15px; } }
-        .l-section.what-we-do .pane.right .pane-content .advantage.one {
+        .l-section.what-we-do .pane.right .pane-content .advantage.one, .l-section.careers-list .pane.right .pane-content .advantage.one {
           background-color: #1b1a2c;
           color: white; }
-        .l-section.what-we-do .pane.right .pane-content .advantage.two {
+        .l-section.what-we-do .pane.right .pane-content .advantage.two, .l-section.careers-list .pane.right .pane-content .advantage.two {
           background-color: #ff595f;
           color: white; }
-        .l-section.what-we-do .pane.right .pane-content .advantage.three {
+        .l-section.what-we-do .pane.right .pane-content .advantage.three, .l-section.careers-list .pane.right .pane-content .advantage.three {
           background-color: #ffcc03;
           color: #1b1a2c; }
-        .l-section.what-we-do .pane.right .pane-content .advantage.four {
+        .l-section.what-we-do .pane.right .pane-content .advantage.four, .l-section.careers-list .pane.right .pane-content .advantage.four {
           background-color: #09e5a5;
           color: #1b1a2c; }
+  .l-section.careers-list .pane-item {
+    border-bottom: solid 1px grey;
+    padding-bottom: 30px;
+    /* Landscape tablets and desktop or laptops */ }
+    @media only screen and (min-width: 992px) {
+      .l-section.careers-list .pane-item {
+        padding-bottom: 60px; } }
   .l-section.works {
     position: relative; }
     .l-section.works .carousel-controls {

@@ -23,6 +23,7 @@
             padding: 0 0 10px 0;
             display: flex;
             overflow: hidden;
+            cursor: pointer;
             
             .brand-icon {
                 @include wh(auto, 40px);
