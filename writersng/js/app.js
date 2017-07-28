@@ -9,7 +9,7 @@ $(document).ready(function(e) {
 	sliderVariable = 0;
 	$('#index-page .rarr').on("click", function(e) {
 		sliderVariable -= 100;
-		switch(sliderVariable<-100) {
+		switch(sliderVariable<-400) {
 			case false:
 			$('#index-page .l-section.testimony .col-content-stage').css('left',sliderVariable+"%");
 			break;
@@ -49,13 +49,6 @@ $(document).ready(function(e) {
 	})
 	//--End of slider script
 
-	//--Alert Script
-	//Call the alert with wngalert($status as string, $title as string, $body as string)
-	$('#index-page .l-nav').click(function(e) {
-		wngalert("success", "Header", "Body conetnt lorem ipsum");
-	})
-	//--End of Alert Script
-
 	//Set progress bar Script
 	var _ = $('.m-progress .progress-level');
 	$.each(_, function(i,v) {
@@ -87,6 +80,16 @@ $(document).ready(function(e) {
 		$('.l-nav .right-aligned-items').removeClass('open')
 	})
 	//End of nav hamburger
+
+    //Fixed Nav scroll appear animation
+    $(document).scroll(function(e) {
+        if ($(document).scrollTop() >= 400) {
+            $('.l-nav.fixed-nav').removeClass("hidden");
+        } else {
+            $('.l-nav.fixed-nav').addClass("hidden");
+        }
+    })
+    //End of Fixed Nav scroll appear animation
 
 	//Left column mobile animation
 	$('.two-column-layout .right-column .filter-icon').click(function(e) {

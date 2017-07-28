@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>Writers.ng | User</title>
@@ -123,6 +123,35 @@
                     <div class="col-body">
                         <div class="m-pane">
                             <div class="inner-column-header">
+                                <p class="heading">ACCOUNT DETAILS</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-3 col-lg-offset-1 text-right">
+                                    <div class="user-form-switch">
+                                        <div class="selected" id="new">
+                                            New customer
+                                        </div>
+                                        <div id="returning">
+                                            Returning customer
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-6 text-center">
+                                    <form class="m-form login-form padded hidden" id="login-form">
+                                        <input type="email" name="email" class="form-input" placeholder="Email address" required autofocus>
+                                        <input type="password" class="form-input" name="password" placeholder="Password" required>
+                                        <button class="btn btn-aqua" type="submit">Continue</button>
+                                    </form>
+                                    <form class="m-form signup-form padded" id="signup-form">
+                                        <input type="text" name="first-name" class="form-input" placeholder="First name" required autofocus>
+                                        <input type="text" name="last-name" class="form-input" placeholder="Last name" required>
+                                        <input type="email" name="email" class="form-input" placeholder="Email address" required>
+                                        <input type="password" class="form-input" name="password" placeholder="Password" required>
+                                        <button class="btn btn-aqua" type="submit">Finish</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="inner-column-header">
                                 <p class="heading">JOB DETAILS</p>
                             </div>
                             <form class="m-form add-new-job" action="/ordersummary.html">
@@ -131,8 +160,8 @@
                                     <textarea rows="10" placeholder="Project summary" class="form-textarea" name="project-summary" id="project-summary"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <textarea rows="10" placeholder="Outline/Table of content" class="form-textarea" name="project-outline" id="project-outline"></textarea>    
-                                </div>                                
+                                    <textarea rows="10" placeholder="Outline/Table of content" class="form-textarea" name="project-outline" id="project-outline"></textarea>
+                                </div>
                                 <div class="row no-padding">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -245,35 +274,6 @@
                                     <input class="form-input" placeholder="Select a file" type="file" name="attachment" id="attachment"></input>
                                 </div>
                             </form>
-                            <div class="inner-column-header">
-                                <p class="heading">ACCOUNT DETAILS</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 col-md-4 col-lg-3 col-lg-offset-1 text-right">
-                                    <div class="user-form-switch">
-                                        <div class="selected" id="new">
-                                            New customer
-                                        </div>
-                                        <div id="returning">
-                                            Returning customer
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-8 col-lg-6 text-center">
-                                    <form class="m-form login-form padded hidden" id="login-form">
-                                        <input type="email" name="email" class="form-input" placeholder="Email address" required autofocus>
-                                        <input type="password" class="form-input" name="password" placeholder="Password" required>
-                                        <button class="btn btn-aqua" type="submit">Continue</button>
-                                    </form>
-                                    <form class="m-form signup-form padded" id="signup-form">
-                                        <input type="text" name="first-name" class="form-input" placeholder="First name" required autofocus>
-                                        <input type="text" name="last-name" class="form-input" placeholder="Last name" required>
-                                        <input type="email" name="email" class="form-input" placeholder="Email address" required>
-                                        <input type="password" class="form-input" name="password" placeholder="Password" required>
-                                        <button class="btn btn-aqua" type="submit">Finish</button>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

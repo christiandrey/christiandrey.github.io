@@ -138,7 +138,7 @@
                     ;
 
                     .col-content-stage {
-                        @include wh(200%, auto);
+                        @include wh(500%, auto);
                         position: relative;
                         margin: 0 auto;
                         left: 0;
@@ -148,7 +148,7 @@
                             text-align: center;
                             display: inline;
                             float: left;
-                            width: 50%;
+                            width: 20%;
 
                             .col-icon {
                                 @include wh(40px, auto);

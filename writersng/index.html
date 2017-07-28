@@ -16,12 +16,49 @@
 </head>
 <body>
 	<main class="l-main" id="index-page" role="main">
-        <div class="m-loader hidden">
-            <div class="loader-overlay"></div>
-            <div class="loader-content">
-                <div class="loader-icon"></div>
-            </div>
-        </div>
+	<div class="m-loader hidden">
+	    <div class="loader-overlay"></div>
+	    <div class="loader-content">
+	        <div class="loader-icon"></div>
+	    </div>
+	</div>
+	<nav class="l-nav fixed-nav clearfix hidden" role="navigation">
+	    <img src="../img/icon.hamburger.png" alt="writers.ng" class="nav-hamburger">
+	    <img class="brand-logo" src="../img/icon.brand--dark-stretch.png">
+	    <div class="right-aligned-items clearfix">
+	        <img src="../img/icon.hamburger.close.png" alt="" class="close-btn">
+	        <div class="user-details clearfix hidden">
+	            <img src="../img/user.avatar.jpg" alt="" class="user-avatar">
+	            <p class="user-name">Hi, Jane</p>
+	            <div class="user-notification new"></div>
+	            <div class="user-action">
+	                <button class="user-action dropdown-toggle" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+	                <ul class="dropdown-menu">
+	                    <li><a href="#">Account settings</a></li>
+	                    <li><a href="#">Logout</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	        <ul class="nav-links-container">
+	            <p class="nav-links-title">Quick links</p>
+	            <li class="nav-link is-active"><a href="../index.html">Home</a></li>
+	            <li class="nav-link"><a href="./about.html">About Us</a></li>
+	            <li class="nav-link"><a href="./howitworks.html">How it works</a></li>
+	            <li class="nav-link"><a href="./blog.html">Blog</a></li>
+	            <li class="nav-link"><a href="./contact.html">Contact</a></li>
+	            <!--If user is logged in-->
+	            <li class="nav-link hidden"><a href="./dashboard.html">My Jobs</a></li>
+	            <li class="nav-link hidden"><a href="./transactions.html">Transactions</a></li>
+	            <li class="nav-link hidden-sm hidden"><a href="">Account settings</a></li>
+	            <li class="nav-link hidden-sm hidden"><a href="">Logout</a></li>
+	            <!---->
+	            <!--If user is logged out-->
+	            <li class="nav-link login"><a href="../login.html">Login</a></li>
+	            <li class="nav-link signup"><a href="./signup.html">Signup</a></li>
+	            <!---->
+	        </ul>
+	    </div>
+	</nav>
         <header class="l-header" role="header">
             <div class="header-left-bg">
                 <img src="img/image.bg--left.png" alt="">
@@ -29,7 +66,7 @@
             <div class="header-content">
                 <img src="img/icon.brand.png" class="brand-logo" alt="writers.ng" onclick="javascript:location.href='./index.html'">
                 <p class="header-title">Writing that <span>exceeds</span> expectations</p>
-                <p class="header-subtitle">Too busy to write? Crammed with work? Have exams? Not a good writer? Say no more, help is right here. You don’t have to be a good writer, hire the best writers that make you look good!</p>
+                <p class="header-subtitle">The quality of your written assignment speaks volumes about you. It can make and mar your reputation around the world. At Writers.ng, we weave words that go on to weave excellent reputations.</p>
                 <button class="btn btn-orange" onclick="javascript:location.href='./getstarted.html'">Get started</button>
             </div>
             <div class="scroll-icon">
@@ -103,12 +140,27 @@
                                 <div class="col-content-stage clearfix">
                                     <div class="col-content">
                                         <img src="img/icon.testimony.png" alt="" class="col-icon">
-                                        <p class="col-body">We are out to impress and win over professors, project managers, CEOs, customers,Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                        <p class="col-body">Writers.ng is a truly amazing service with reasonable prices. I think the most amazing part of their service is the ease at which one use it especially as their people are just as easy going as their UI.</p>
                                         <p class="col-author">Jane Doe, Lagos</p>
                                     </div>
                                     <div class="col-content">
                                         <img src="img/icon.testimony.png" alt="" class="col-icon">
-                                        <p class="col-body">We are out to impress and win over professors, project managers, CEOs, customers,Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                        <p class="col-body">I had no idea how to write my thesis, in spite of the many seminars we had in school in that regard. Thanks to these amazing people who guided me all the way, I was able to write and submit a standard thesis paper.</p>
+                                        <p class="col-author">John Doe, Lagos</p>
+                                    </div>
+                                    <div class="col-content">
+                                        <img src="img/icon.testimony.png" alt="" class="col-icon">
+                                        <p class="col-body">It was like i had a team of professionals working round the clock to help me draft my business proposal.  All my business requirements and services were very well accommodated.</p>
+                                        <p class="col-author">John Doe, Lagos</p>
+                                    </div>
+                                    <div class="col-content">
+                                        <img src="img/icon.testimony.png" alt="" class="col-icon">
+                                        <p class="col-body">I was having problems with completing my thesis work.I was confused and hopeless until my friend told me about Writers.ng. Although, I hardly trust online freelancers, after I had hired them I discovered that no one else could have done my thesis in a better way than they have.</p>
+                                        <p class="col-author">John Doe, Lagos</p>
+                                    </div>
+                                    <div class="col-content">
+                                        <img src="img/icon.testimony.png" alt="" class="col-icon">
+                                        <p class="col-body">I was worried about getting content that my nigerian readers could relate to, the people at writers.ng were wonderful, they did not only pair me with an amazing writer but also the follow up and the support from the adim was priceless.</p>
                                         <p class="col-author">John Doe, Lagos</p>
                                     </div>
                                 </div>
