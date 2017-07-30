@@ -8,7 +8,7 @@
 	z-index: +2;
 	position: relative;
 
-	@include MQ(M) {
+	@include MQ(L) {
 		padding: 0 80px;
 	}
 
@@ -28,7 +28,7 @@
 		float: left;
 		display: inline-block;
 
-		@include MQ(M) {
+		@include MQ(L) {
 			display: none;
 		}
 	}
@@ -53,7 +53,7 @@
 		margin-left: 11px;
 		cursor: pointer;
 
-		@include MQ(M) {
+		@include MQ(L) {
 			background-image: url("../img/user-notifications.png");
 			top: 8px
 		}
@@ -87,7 +87,7 @@
 			transform: translateY(0%);
 		}
 
-		@include MQ(M) {
+		@include MQ(L) {
 			@include wh(auto, 100%);
 			background: none;
 			padding: 0;
@@ -102,7 +102,7 @@
 			top: 20px;
 			right: 20px;
 
-			@include MQ(M) {
+			@include MQ(L) {
 				display: none;
 			}
 		}
@@ -110,7 +110,7 @@
 		.user-details {
 			text-align: left;
 
-			@include MQ(M) {
+			@include MQ(L) {
 				display: block;
 				float: right;
 				margin: 20px 0;
@@ -124,7 +124,7 @@
 				float: left;
 				border: solid 3px $white;
 
-				@include MQ(M) {
+				@include MQ(L) {
 					@include wh(auto, 40px);
 					border: none;
 				}
@@ -138,7 +138,7 @@
 				font-size: 1em;
 				margin: 23px 0 23px 10px;
 
-				@include MQ(M) {
+				@include MQ(L) {
 					color: $dark;
 					margin: 13px 0 13px 10px;
 				}
@@ -159,7 +159,7 @@
 					color: $color3
 				}
 
-				@include MQ(M) {
+				@include MQ(L) {
 					display: block;
 					margin-top: 2px;
 					margin-left: 2px;
@@ -172,7 +172,7 @@
 				width: 100%;
 				text-align: left;
 
-				@include MQ(M) {
+				@include MQ(L) {
 					margin: 33px 20px;
 					width: auto;
 					display: block;
@@ -185,7 +185,7 @@
 					color: $color2;
 					margin: 0 0 8px;
 
-					@include MQ(M) {
+					@include MQ(L) {
 						display: none;
 					}
 				}
@@ -194,7 +194,7 @@
 					font-size: 1em;
 					letter-spacing: 0.2px;
 
-					@include MQ(M) {
+					@include MQ(L) {
 						display: inline-block;
 						padding: 0 10px;
 					}
@@ -206,7 +206,7 @@
 						padding: 18px 0;
 						transition: color 0.15s;
 
-						@include MQ(M) {
+						@include MQ(L) {
 							color: $dark;
 							padding: 0;
 							display: inline-block;
@@ -218,7 +218,7 @@
 					}
 
 					&.hidden-sm {
-						@include MQ(M) {
+						@include MQ(L) {
 							display: none;
 						}
 					}
@@ -231,7 +231,7 @@
 							color: $grey;
 						}
 
-						@include MQ(M) {
+						@include MQ(L) {
 							color: $color1;
 						}
 					}

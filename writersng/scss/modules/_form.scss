@@ -3,127 +3,135 @@
    ======================= */
 
 .m-form {
-	input.form-input {
-		@include wh(100%, 33px);
-		display: block;
-		margin: 0 auto 30px;
-		border: none;
-		padding: 5px 15px;
-		padding-left: 21px;
-		outline: none;
-		border-bottom: solid 2px $grey2;
-		transition: border 0.45s;
+    input.form-input {
+        @include wh(100%, 33px);
+        display: block;
+        margin: 0 auto 30px;
+        border: none;
+        padding: 5px 15px;
+        padding-left: 21px;
+        outline: none;
+        border-bottom: solid 2px $grey2;
+        transition: border 0.45s;
 
-		&:last-child {
-			margin: 0 auto;
-		}
+        &:last-child {
+            margin: 0 auto;
+        }
 
-		&:focus {
-			border-bottom: solid 2px $color1;
-			outline: none;
-		}
-	}
+        &:focus {
+            border-bottom: solid 2px $color1;
+            outline: none;
+        }
+    }
 
-	.form-textarea {
-		@include wh(100%, auto);
-		display: block;
-		margin: 0 auto 30px;
-		border: solid 1px $grey2;
-		padding: 5px 15px;
-		outline: none;
-		border-bottom: solid 2px $grey2 !important;
-		transition: border 0.45s;
+    .form-textarea {
+        @include wh(100%, auto);
+        display: block;
+        margin: 0 auto 30px;
+        border: solid 1px $grey2;
+        padding: 5px 15px;
+        outline: none;
+        border-bottom: solid 2px $grey2 !important;
+        transition: border 0.45s;
 
-		&:last-child {
-			margin: 0 auto;
-		}
+        &:last-child {
+            margin: 0 auto;
+        }
 
-		&:focus {
-			border-bottom: solid 2px $color1 !important;
-			outline: none;
-		}
-	}
+        &:focus {
+            border-bottom: solid 2px $color1 !important;
+            outline: none;
+        }
+    }
 
-	button[type='submit'] {
-		margin: 30px auto 0;
-	}
+    button[type='submit'] {
+        margin: 30px auto 0;
+    }
 
-	label.form-label {
-		display: block;
-		letter-spacing: 0;
-		font-weight: bold;
-		color: $color1;
-		margin: 0 0 8px;
-	}
+    label.form-label {
+        display: block;
+        letter-spacing: 0;
+        font-weight: bold;
+        color: $color1;
+        margin: 0 0 8px;
+    }
 
-	select.form-select {
-		@include wh(100%, auto);
-		display: block;
-		margin: 0 auto 30px;
-		border: solid 1px $grey2;
-		padding: 5px 15px;
-		outline: none;
-		border-bottom: solid 2px $grey2;
-		transition: border 0.45s;
+    select.form-select {
+        @include wh(100%, auto);
+        display: block;
+        margin: 0 auto 30px;
+        border: solid 1px $grey2;
+        padding: 5px 15px;
+        outline: none;
+        border-bottom: solid 2px $grey2;
+        transition: border 0.45s;
 
-		&:last-child {
-			margin: 0 auto;
-		}
+        &:last-child {
+            margin: 0 auto;
+        }
 
-		&:focus {
-			border-bottom: solid 2px $color1;
-			outline: none;
-		}
-	}
+        &:focus {
+            border-bottom: solid 2px $color1;
+            outline: none;
+        }
+    }
 
-	.form-radio {
-		position: relative;
-		left: -5000px;
-		outline: none !important;
+    .form-radio {
+        position: relative;
+        left: -5000px;
+        outline: none !important;
 
 
-		&:before {
-			content: "";
-			display: block;
-			position: absolute;
-			border: solid 1px $grey;
-			border-radius: 3px;
-			width: 15px;
-			height: 15px;
-			top: -4px;
-			left: 5021px;
-		}
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            border: solid 1px $grey;
+            border-radius: 3px;
+            width: 15px;
+            height: 15px;
+            top: -4px;
+            left: 5021px;
+        }
 
-		&:after {
-				content: "";
-				display: block;
-				position: absolute;
-				background-color: $color1;
-				border-radius: 10px;
-				width: 7px;
-				height: 7px;
-				top: 0;
-				left: 5025px;
-				transform: scale(0,0);
-				transition: transform 0.35s;
-			}
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: $color1;
+            border-radius: 10px;
+            width: 7px;
+            height: 7px;
+            top: 0;
+            left: 5025px;
+            transform: scale(0,0);
+            transition: transform 0.35s;
+        }
 
-		&:checked {
-			&:after {
-				transform: scale(1,1);
-			}
-		}
-	}
+        &:checked {
+            &:after {
+                transform: scale(1,1);
+            }
+        }
+    }
 
-	&.login-form, &.signup-form {
-		&.padded {
-			background-color: $light2;
-			padding: 30px;
-			border-top: solid 2px $color1;
+    &.login-form, &.signup-form, &.update-form {
+        &.padded {
+            background-color: $light2;
+            padding: 30px;
+            border-top: solid 2px $color1;
 
-			button[type="submit"] {
-				margin: auto;
-			}
-		}
-	}
+            button[type="submit"] {
+                margin: auto;
+            }
+        }
+    }
+
+    &.update-form {
+        input.form-input {
+            &:last-child {
+                margin: 0 auto 30px;
+            }
+        }
+    }
 }

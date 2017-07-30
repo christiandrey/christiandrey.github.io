@@ -1,0 +1,38 @@
+/* ==|====================
+   Module/Sample Project Item
+   ======================= */
+
+.m-sample-project-item {
+    background-color: $light2;
+    padding: 15px 10px;
+    font-size: 0.9em;
+    margin: 0 0 15px;
+    position: relative;
+    text-align: center;
+
+    @include MQ(L) {
+        text-align: left
+    }
+
+    .title {
+        font-weight: bold;
+    }
+
+    span {
+        margin-bottom: 8px;
+        display: inline-block;
+
+        @include MQ(L) {
+            margin-bottom: 0;
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include wh(4px, 100%);
+        background: linear-gradient(to bottom, $color1, $aqua);
+    }
+}

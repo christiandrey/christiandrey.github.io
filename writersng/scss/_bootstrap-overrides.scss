@@ -60,3 +60,27 @@
         padding-left: 15px;
     }
 }
+
+@media only screen and (min-width : 768px) {
+    .is-table-row-sm {
+        display: table;
+    }
+
+    .is-table-row-sm [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    .is-table-row-md {
+        display: table;
+    }
+
+    .is-table-row-md [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
