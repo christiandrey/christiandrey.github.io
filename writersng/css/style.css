@@ -61,6 +61,21 @@ h1, h2, h3, h4, h5, h6 {
     height: 2px;
     background-color: red; }
 
+.empty-content-message {
+  text-align: center; }
+  .empty-content-message div.empty-box {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icon.empty-box.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto; }
+  .empty-content-message span {
+    color: #777777;
+    font-size: 0.857em;
+    font-weight: bold; }
+
 /* Bootstrap Overrides */
 /* ===========================
    Bootstrap Overrides
@@ -1464,6 +1479,70 @@ h1, h2, h3, h4, h5, h6 {
             padding: 15px;
             border: solid 1px #ebebeb;
             border-bottom: solid 2px #128a4b; }
+        .l-section.two-column-layout .right-column .col-body .payment-status, .l-section.two-column-layout .center-column .col-body .payment-status, .l-section.single-column-layout .right-column .col-body .payment-status, .l-section.single-column-layout .center-column .col-body .payment-status {
+          margin: 0 0 30px; }
+          .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid {
+            padding: 15px;
+            border: solid 1px #ebebeb;
+            border-bottom: solid 2px #128a4b; }
+            .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item {
+              display: table;
+              margin-bottom: 15px;
+              /* Landscape tablets and desktop or laptops */ }
+              @media only screen and (min-width: 992px) {
+                .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item {
+                  margin-bottom: 0; } }
+              .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-left, .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-right, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-left, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-right, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-left, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-right, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-left, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-right {
+                display: table-cell; }
+              .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .payment-status-item-title, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .payment-status-item-title, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .payment-status-item-title, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .payment-status-item-title {
+                font-size: 0.957em;
+                font-weight: bold;
+                color: #777777; }
+              .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon {
+                width: 30px;
+                height: 30px;
+                border: solid 2px #ebebeb;
+                border-radius: 15px;
+                margin-right: 10px; }
+                .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon i, .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon span, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon i, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon span, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon i, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon span, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon i, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon span {
+                  position: relative;
+                  left: 50%;
+                  top: 50%;
+                  bottom: auto;
+                  right: auto;
+                  -moz-transform: translateX(-50%) translateY(-50%);
+                  -o-transform: translateX(-50%) translateY(-50%);
+                  -ms-transform: translateX(-50%) translateY(-50%);
+                  -webkit-transform: translateX(-50%) translateY(-50%);
+                  transform: translateX(-50%) translateY(-50%);
+                  display: block;
+                  text-align: center;
+                  color: #777777; }
+                .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon span, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon span, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon span, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item .col-icon span {
+                  font-weight: bold; }
+              .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item.paid .col-icon, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item.paid .col-icon, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item.paid .col-icon, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item.paid .col-icon {
+                background-color: #128a4b;
+                border: none; }
+                .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item.paid .col-icon i, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item.paid .col-icon i, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .payment-status-item.paid .col-icon i, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .payment-status-item.paid .col-icon i {
+                  color: white; }
+            .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .buttons, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .buttons, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .buttons, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .buttons {
+              padding: 30px 0 0;
+              text-align: center; }
+              .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .buttons button, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .buttons button, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .buttons button, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .buttons button {
+                width: calc(100% - 30px);
+                /* Landscape tablets and desktop or laptops */ }
+                .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .buttons button:first-of-type, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .buttons button:first-of-type, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .buttons button:first-of-type, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .buttons button:first-of-type {
+                  margin-top: -15px;
+                  margin-bottom: 15px;
+                  /* Landscape tablets and desktop or laptops */ }
+                  @media only screen and (min-width: 992px) {
+                    .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .buttons button:first-of-type, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .buttons button:first-of-type, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .buttons button:first-of-type, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .buttons button:first-of-type {
+                      margin-top: 0;
+                      margin-bottom: 0; } }
+                @media only screen and (min-width: 992px) {
+                  .l-section.two-column-layout .right-column .col-body .payment-status div.container-fluid .buttons button, .l-section.two-column-layout .center-column .col-body .payment-status div.container-fluid .buttons button, .l-section.single-column-layout .right-column .col-body .payment-status div.container-fluid .buttons button, .l-section.single-column-layout .center-column .col-body .payment-status div.container-fluid .buttons button {
+                    margin: 0 8px;
+                    width: 175px; } }
         .l-section.two-column-layout .right-column .col-body .payment-breakdown .header, .l-section.two-column-layout .center-column .col-body .payment-breakdown .header, .l-section.single-column-layout .right-column .col-body .payment-breakdown .header, .l-section.single-column-layout .center-column .col-body .payment-breakdown .header {
           background-color: #777777;
           color: white;
@@ -1932,6 +2011,52 @@ h1, h2, h3, h4, h5, h6 {
         @media only screen and (min-width: 992px) {
           .l-section.how-it-works .col-item .col-item-body {
             font-size: 0.98em; } }
+  .l-section.error-section {
+    height: 100vh;
+    background-color: white;
+    display: table; }
+    .l-section.error-section .container-fluid {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      /* Landscape tablets and desktop or laptops */ }
+      @media only screen and (min-width: 1200px) {
+        .l-section.error-section .container-fluid {
+          text-align: left; } }
+      .l-section.error-section .container-fluid .error-icon {
+        display: block;
+        width: auto;
+        height: 70px;
+        margin: 0 auto;
+        /* Landscape tablets and desktop or laptops */ }
+        @media only screen and (min-width: 1200px) {
+          .l-section.error-section .container-fluid .error-icon {
+            height: 225px; } }
+      .l-section.error-section .container-fluid .title {
+        font-family: "Qanelas-Black", Georgia, serif;
+        font-size: 9em;
+        color: #128a4b;
+        /* Landscape tablets and desktop or laptops */ }
+        @media only screen and (min-width: 1200px) {
+          .l-section.error-section .container-fluid .title {
+            line-height: 1; } }
+      .l-section.error-section .container-fluid .subtitle {
+        font-size: 2em;
+        color: #777777;
+        margin-bottom: 20px;
+        /* Landscape tablets and desktop or laptops */ }
+        @media only screen and (min-width: 1200px) {
+          .l-section.error-section .container-fluid .subtitle {
+            font-size: 2.5em; } }
+      .l-section.error-section .container-fluid .body {
+        font-size: 1em;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+        /* Landscape tablets and desktop or laptops */ }
+        @media only screen and (min-width: 1200px) {
+          .l-section.error-section .container-fluid .body {
+            width: 60%;
+            margin-bottom: 40px; } }
 
 /* ==|====================
    Layout/Footer
@@ -2002,13 +2127,12 @@ h1, h2, h3, h4, h5, h6 {
    ======================= */
 .btn {
   width: 175px;
-  height: 40px;
-  font-family: "CircularStd-Bold", Georgia, serif;
   color: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.03);
   outline: none !important;
   border: none;
   border-radius: 30px;
+  line-height: 1.9;
   transition: transform 0.45s, box-shadow 0.45s, background 0.45s; }
   .btn:hover {
     color: #ffffff;
@@ -2046,20 +2170,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
     border: solid 1px #ebebeb;
     width: 175px;
-    height: 40px;
     /* Tablets and phablets */ }
     @media only screen and (min-width: 768px) {
       .btn.btn-white {
-        width: 100%;
-        height: 40px; } }
+        width: 100%; } }
     .btn.btn-white:hover {
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
   .btn.btn-f-center {
     display: table;
     margin: 0 auto; }
   .btn.btn-f-full {
-    width: 100%;
-    height: 40px; }
+    width: 100%; }
 
 a.btn {
   line-height: 1.9;

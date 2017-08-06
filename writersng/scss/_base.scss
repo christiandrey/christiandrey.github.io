@@ -49,3 +49,22 @@ h1, h2, h3, h4, h5, h6 {
         background-color: red;
     }
 }
+
+.empty-content-message {
+    text-align: center;
+
+    div.empty-box {
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/icon.empty-box.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+    }
+     span {
+         color: $grey;
+         font-size: 0.857em;
+         font-weight: bold;
+     }
+}

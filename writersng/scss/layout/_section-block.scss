@@ -1045,6 +1045,88 @@
                     }
                 }
 
+                .payment-status {
+                    margin: 0 0 30px;
+
+                    div.container-fluid {
+                        padding: 15px;
+                        border: solid 1px $grey2;
+                        border-bottom: solid 2px $color1;
+
+                        .payment-status-item {
+                            display: table;
+                            margin-bottom: 15px;
+
+                            @include MQ(L) {
+                                margin-bottom: 0;
+                            }
+
+                            .col-left, .col-right {
+                                display: table-cell;
+                            }
+
+                            .payment-status-item-title {
+                                font-size: 0.957em;
+                                font-weight: bold;
+                                color: $grey;
+                            }
+
+                            .col-icon {
+                                @include wh(30px, 30px);
+                                border: solid 2px $grey2;
+                                border-radius: 15px;
+                                margin-right: 10px;
+
+                                i, span {
+                                    @include center(xy);
+                                    display: block;
+                                    text-align: center;
+                                    color: $grey;
+                                }
+
+                                span {
+                                    font-weight: bold;
+                                }
+                            }
+
+                            &.paid {
+                                .col-icon {
+                                    background-color: $color1;
+                                    border: none;
+
+                                    i {
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+
+                        .buttons {
+                            padding: 30px 0 0;
+                            text-align: center;
+
+                            button {
+                                &:first-of-type {
+                                    margin-top: -15px;
+                                    margin-bottom: 15px;
+
+                                    @include MQ(L) {
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                    }
+                                }
+
+                                width: calc(100% - 30px);
+
+                                @include MQ(L) {
+                                    margin: 0 8px;
+                                    width: 175px
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .payment-breakdown {
                     .header {
                         background-color: $grey;
@@ -1632,6 +1714,64 @@
 
                 @include MQ(L) {
                     font-size: 0.98em;
+                }
+            }
+        }
+    }
+
+    &.error-section {
+        height: 100vh;
+        background-color: white;
+        display: table;
+
+        .container-fluid {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+
+            @include MQ(XL) {
+                text-align: left;
+            }
+
+            .error-icon {
+                display: block;
+                width: auto;
+                height: 70px;
+                margin: 0 auto;
+
+                @include MQ(XL) {
+                    height: 225px;
+                }
+            }
+
+            .title {
+                font-family: $headlineFont;
+                font-size: 9em;
+                color: $color1;
+
+                @include MQ(XL) {
+                    line-height: 1;
+                }
+            }
+
+            .subtitle {
+                font-size: 2em;
+                color: $grey;
+                margin-bottom: 20px;
+
+                @include MQ(XL) {
+                    font-size: 2.5em;
+                }
+            }
+
+            .body {
+                font-size: 1em;
+                margin-bottom: 20px;
+                letter-spacing: 0.5px;
+
+                @include MQ(XL) {
+                    width: 60%;
+                    margin-bottom: 40px;
                 }
             }
         }
