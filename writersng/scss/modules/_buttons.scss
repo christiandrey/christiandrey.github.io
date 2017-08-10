@@ -28,6 +28,13 @@
         outline: none !important;
     }
 
+    &.btn-small {
+        width: auto;
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
     &.btn-aqua {
         background-color: $color1;
     }

@@ -2144,6 +2144,11 @@ h1, h2, h3, h4, h5, h6 {
   .btn:focus {
     color: #ffffff;
     outline: none !important; }
+  .btn.btn-small {
+    width: auto;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5; }
   .btn.btn-aqua {
     background-color: #128a4b; }
   .btn.btn-color-1 {
