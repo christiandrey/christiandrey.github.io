@@ -7,7 +7,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 3;
+	z-index: 20;
 
 	.alert-overlay {
 		@include wh();
@@ -15,7 +15,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		z-index: 3;
+		z-index: 20;
 	}
 
 	.alert-content {
@@ -27,7 +27,7 @@
 		box-shadow: 0 5px 10px transparentize($black, 0.85);
 		margin: 80px auto 0;
 		position: relative;
-		z-index: 4;
+		z-index: 21;
 
 		.alert-icon {
 			@include wh(150px, 150px);

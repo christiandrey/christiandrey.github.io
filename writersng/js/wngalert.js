@@ -51,7 +51,7 @@ function wngalert(status, title, body, callback) {
 		animationTime: 450,
 	})
 	$selector.find('.alert-content .alert-footer button').click(function(e) {
-    eval(callback);
+    callback();
 		$selector.find('.alert-content').dreyanim({
 			animationType: "fallOutAlternate",
 			animationTime: 450,
