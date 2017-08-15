@@ -1743,7 +1743,8 @@ h1, h2, h3, h4, h5, h6 {
               /* Tablets and phablets */
               font-family: "CircularStd-Bold", Georgia, serif;
               color: #777777;
-              letter-spacing: 0.5px; }
+              letter-spacing: 0.5px;
+              cursor: pointer; }
               @media only screen and (min-width: 768px) {
                 .l-section.two-column-layout .latest-blog-stories .section-content .section-content-inner .col-content .col-category, .l-section.two-column-layout .blog-story-content .section-content .section-content-inner .col-content .col-category, .l-section.single-column-layout .latest-blog-stories .section-content .section-content-inner .col-content .col-category, .l-section.single-column-layout .blog-story-content .section-content .section-content-inner .col-content .col-category {
                   font-size: 11.62px; } }
@@ -1754,6 +1755,7 @@ h1, h2, h3, h4, h5, h6 {
               color: #000;
               margin: 20px 0 20px;
               text-align: left;
+              cursor: pointer;
               /* Tablets and phablets */ }
               @media only screen and (min-width: 768px) {
                 .l-section.two-column-layout .latest-blog-stories .section-content .section-content-inner .col-content .col-title, .l-section.two-column-layout .blog-story-content .section-content .section-content-inner .col-content .col-title, .l-section.single-column-layout .latest-blog-stories .section-content .section-content-inner .col-content .col-title, .l-section.single-column-layout .blog-story-content .section-content .section-content-inner .col-content .col-title {
