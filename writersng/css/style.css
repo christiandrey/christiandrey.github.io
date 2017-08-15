@@ -2465,6 +2465,17 @@ a.btn {
     border-bottom: solid 2px #128a4b;
     outline: none; }
 
+.m-form .form-error {
+  text-align: left;
+  display: block;
+  font-size: 12px;
+  padding: 5px 22px;
+  color: white;
+  margin-top: -30px;
+  margin-bottom: 12px;
+  letter-spacing: 0.2px;
+  background-color: #7E1A1A; }
+
 .m-form .form-textarea {
   width: 100%;
   height: auto;

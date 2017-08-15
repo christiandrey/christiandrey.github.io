@@ -24,6 +24,18 @@
         }
     }
 
+    .form-error {
+        text-align: left;
+        display: block;
+        font-size: 12px;
+        padding: 5px 22px;
+        color: white;
+        margin-top: -30px;
+        margin-bottom: 12px;
+        letter-spacing: 0.2px;
+        background-color: #7E1A1A;
+    }
+
     .form-textarea {
         @include wh(100%, auto);
         display: block;
