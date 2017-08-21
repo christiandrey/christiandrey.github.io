@@ -389,6 +389,40 @@ h1, h2, h3, h4, h5, h6 {
     @media only screen and (min-width: 768px) {
       .l-section.mvp-sprint-application {
         padding: 60px 80px; } }
+    .l-section.mvp-sprint-application .form-message-wrapper {
+      width: 100%;
+      height: 30px;
+      padding: 0px;
+      padding-left: 12px;
+      color: white;
+      margin-bottom: 30px;
+      margin-top: -10px;
+      display: flex;
+      color: white;
+      justify-content: space-between;
+      /* Landscape tablets and desktop or laptops */ }
+      @media only screen and (min-width: 992px) {
+        .l-section.mvp-sprint-application .form-message-wrapper {
+          margin-top: -30px; } }
+      .l-section.mvp-sprint-application .form-message-wrapper.success {
+        background-color: #09e5a5;
+        color: #1b1a2c; }
+      .l-section.mvp-sprint-application .form-message-wrapper.error {
+        background-color: #ff595f; }
+      .l-section.mvp-sprint-application .form-message-wrapper .form-message {
+        align-self: center; }
+      .l-section.mvp-sprint-application .form-message-wrapper .form-message-close {
+        width: 30px;
+        height: 30px;
+        background-color: #1b1a2c;
+        background-image: url("../img/icon.close.png");
+        cursor: pointer;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: background-size .3s; }
+        .l-section.mvp-sprint-application .form-message-wrapper .form-message-close:hover {
+          background-size: 67%; }
     .l-section.mvp-sprint-application button {
       display: table;
       margin-left: auto;
