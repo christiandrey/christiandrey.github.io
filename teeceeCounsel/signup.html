@@ -1,0 +1,158 @@
+<!-- layout.njk -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teecee Counsel</title>
+  <meta name="theme-color" content="#c60083">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:700|Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/dreyanim@1.0.5/dist/css/dreyanim.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/css-bundle.css">
+</head>
+<body>
+  <!-- Navigation Partial -->
+
+<nav>
+    <div class="container-responsive">
+        <div class="display-table">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Teecee Counsel">
+                    </a>
+                </div>
+                <div class="display-table-cell">
+                    <div class="controls">
+                        <a href="signup.html">
+                            Sign up
+                        </a>
+                        <a href="login.html">
+                            Login
+                        </a>
+                        <a href="" class="search-btn">
+                            <img src="img/search.png" alt="">
+                        </a>
+                        <form action="">
+                            <input type="text" class="textbox-component" placeholder="Search..." />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+  
+<div class="signup-page" data-controller="AccountController">
+    <div class="container-responsive">
+        <img src="img/online-counselling.png" alt="" class="icon">
+        <h3 class="title">
+            Let's get started
+        </h3>
+        <div class="subtitle">
+            It only takes a few seconds to get up and running!
+        </div>
+        <form action="" class="account-form">
+            <div class="form-row">
+                <input type="text" class="textbox-component" placeholder="First Name">
+                <input type="text" class="textbox-component" placeholder="Last Name">
+            </div>
+            <input type="email" class="textbox-component" placeholder="Email address">
+            <div class="form-row">
+                <input type="password" class="textbox-component" placeholder="Password">
+                <select name="" id="" class="select-component">
+                    <option value="">
+                        Select a gender
+                    </option>
+                    <option value="">
+                        Male
+                    </option>
+                    <option value="">
+                        Female
+                    </option>
+                    <option value="">
+                        Non-binary
+                    </option>
+                </select>
+            </div>
+            <button class="btn-custom-salt-box" type="submit">
+                Sign up
+            </button>
+            <div class="legal">
+                By clicking "Sign up", you agree to the terms of service and privacy policy
+            </div>
+        </form>
+        <div class="alternate-link">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+</div>
+
+  <!-- Footer Partial -->
+
+<footer>
+    <div class="container-responsive">
+        <div class="display-table-md">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <img src="img/logo.png" alt="Teecee Counsel">
+                </div>
+                <div class="display-table-cell">
+                    <a href="">
+                        Home
+                    </a>
+                    <a href="">
+                        Block
+                    </a>
+                    <a href="">
+                        Privacy
+                    </a>
+                    <a href="">
+                        Pricing
+                    </a>
+                </div>
+                <div class="display-table-cell">
+                    <span>
+                        Contact
+                    </span>
+                    <p>
+                        +234 800 8000 800
+                    </p>
+                    <p>
+                        10, An address comes here, lorem ipsum place, Nigeria
+                    </p>
+                </div>
+                <div class="display-table-cell">
+                    <a href="">
+                        <img src="img/twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/email.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dreyanim@1.0.5/dist/js/dreyanim.min.js"></script>
+  <script src="js/js-bundle.js"></script>
+</body>
+</html>
