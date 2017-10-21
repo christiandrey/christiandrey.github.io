@@ -1,0 +1,307 @@
+<!-- layout.njk -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teecee Counsel</title>
+  <meta name="theme-color" content="#c60083">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:700|Source+Sans+Pro:400,600,700" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/dreyanim@1.0.5/dist/css/dreyanim.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/css-bundle.css">
+</head>
+<body>
+  <!-- Navigation Partial -->
+
+<nav>
+    <div class="container-responsive">
+        <div class="display-table">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Teecee Counsel">
+                    </a>
+                </div>
+                <div class="display-table-cell">
+                    <div class="controls">
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+  
+<div class="dashboard-page" data-controller="DashboardController">
+    <div class="container-responsive">
+        <header>
+            <div class="display-table-md">
+                <div class="display-table-row">
+                    <div class="display-table-cell">
+                        <h3 class="title">
+                            Welcome, Dréy
+                        </h3>
+                        <div class="subtitle">
+                            See an overview of your account below
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="section-1">
+            <div class="display-table-md">
+                <div class="display-table-row">
+                    <div class="display-table-cell">
+                        <div class="dashboard-item profile">
+                            <div class="body">
+                                <div class="view-profile">
+                                    <div class="image-and-name-container">
+                                        <div class="image" style="background-image: url(img/mid_section_banner_2.jpg)"></div>
+                                        <h3 class="title name">
+                                            Christian Dréy
+                                        </h3>
+                                        <div class="edit-profile-button"></div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="item">
+                                            <i class="fa fa-envelope-o"></i>
+                                            <span>christian.drey@christiandrey.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-table-cell">
+                        <div class="dashboard-item requests">
+                            <div class="header">
+                                <div class="display-table">
+                                    <div class="display-table-row">
+                                        <div class="display-table-cell">
+                                            <h4 class="title">
+                                                Requests
+                                            </h4>
+                                        </div>
+                                        <div class="display-table-cell">
+                                            <a href="requests.html" class="add-request-button"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    23
+                                </div>
+                            </div>
+                            <div class="body">
+                                <a href="requests.html" class="request-item ongoing">
+                                    <div class="decorator"></div>
+                                    <div class="synopsis">
+                                        This affords you the benefit of chatting with unbiased persons who will give you the best advice that is not corrupted by
+                                        sentiments and other external factors. Also because we should...
+                                    </div>
+                                    <div class="display-table sub-details">
+                                        <div class="display-table-row">
+                                            <span class="display-table-cell">
+                                                Category
+                                            </span>
+                                            <span class="display-table-cell">
+                                                2 days ago
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="requests.html" class="request-item ongoing">
+                                    <div class="decorator"></div>
+                                    <div class="synopsis">
+                                        This affords you the benefit of chatting with unbiased persons who will give you the best advice that is not corrupted by
+                                        sentiments and other external factors. Also because we should...
+                                    </div>
+                                    <div class="display-table sub-details">
+                                        <div class="display-table-row">
+                                            <span class="display-table-cell">
+                                                Category
+                                            </span>
+                                            <span class="display-table-cell">
+                                                2 days ago
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="requests.html" class="request-item ongoing">
+                                    <div class="decorator"></div>
+                                    <div class="synopsis">
+                                        This affords you the benefit of chatting with unbiased persons who will give you the best advice that is not corrupted by
+                                        sentiments and other external factors. Also because we should...
+                                    </div>
+                                    <div class="display-table sub-details">
+                                        <div class="display-table-row">
+                                            <span class="display-table-cell">
+                                                Category
+                                            </span>
+                                            <span class="display-table-cell">
+                                                2 days ago
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="btn-custom-salt-box load-more">
+                                    Load More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-table-cell">
+                        <div class="dashboard-item transactions">
+                            <div class="header">
+                                <div class="display-table">
+                                    <div class="display-table-row">
+                                        <div class="display-table-cell">
+                                            <h4 class="title">
+                                                Transactions
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    11
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="transaction-item">
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet adipiscing and co goes into this space
+                                    </div>
+                                    <div class="price">
+                                        <i class="naira"></i>3000
+                                    </div>
+                                    <div class="display-table sub-details">
+                                        <div class="display-table-row">
+                                            <div class="display-table-cell">
+                                                4 days ago
+                                            </div>
+                                            <div class="display-table-cell">
+                                                <div class="delete"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="transaction-item">
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet adipiscing and co goes into this space
+                                    </div>
+                                    <div class="price">
+                                        <i class="naira"></i>3000
+                                    </div>
+                                    <div class="display-table sub-details">
+                                        <div class="display-table-row">
+                                            <div class="display-table-cell">
+                                                4 days ago
+                                            </div>
+                                            <div class="display-table-cell">
+                                                <div class="delete"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="transaction-item">
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet adipiscing and co goes into this space
+                                    </div>
+                                    <div class="price">
+                                        <i class="naira"></i>3000
+                                    </div>
+                                    <div class="display-table sub-details">
+                                        <div class="display-table-row">
+                                            <div class="display-table-cell">
+                                                4 days ago
+                                            </div>
+                                            <div class="display-table-cell">
+                                                <div class="delete"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn-custom-salt-box load-more">
+                                    Load More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+  <!-- Footer Partial -->
+
+<footer class="footer">
+    <div class="container-responsive">
+        <div class="display-table-md">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <img src="img/logo.png" alt="Teecee Counsel">
+                </div>
+                <div class="display-table-cell">
+                    <a href="">
+                        Home
+                    </a>
+                    <a href="">
+                        Block
+                    </a>
+                    <a href="">
+                        Privacy
+                    </a>
+                    <a href="">
+                        Pricing
+                    </a>
+                </div>
+                <div class="display-table-cell">
+                    <span>
+                        Contact
+                    </span>
+                    <p>
+                        +234 800 8000 800
+                    </p>
+                    <p>
+                        10, An address comes here, lorem ipsum place, Nigeria
+                    </p>
+                </div>
+                <div class="display-table-cell">
+                    <a href="">
+                        <img src="img/twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="img/email.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dreyanim@1.0.5/dist/js/dreyanim.min.js"></script>
+  <script src="js/js-bundle.js"></script>
+</body>
+</html>
