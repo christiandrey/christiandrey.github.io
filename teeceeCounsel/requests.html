@@ -33,9 +33,11 @@
                         <a href="blog.html">
                             Blog
                         </a>
+                        <!-- Should change into logout when a user is logged in -->
                         <a href="login.html">
                             Login
                         </a>
+                        <!---->
                     </div>
                 </div>
             </div>
@@ -84,7 +86,7 @@
                     </div>
                 </div>
                 <div class="body">
-                    <a href="#" class="request-item ongoing active">
+                    <a href="#" class="request-item ongoing active new-message">
                         <div class="decorator"></div>
                         <div class="synopsis">
                             This affords you the benefit of chatting with unbiased persons who will give you the best advice that is not corrupted by
@@ -93,7 +95,24 @@
                         <div class="display-table sub-details">
                             <div class="display-table-row">
                                 <div class="display-table-cell">
-                                    Category
+                                    Category, Ongoing
+                                </div>
+                                <div class="display-table-cell">
+                                    2 days ago
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="request-item complete new-message">
+                        <div class="decorator"></div>
+                        <div class="synopsis">
+                            This affords you the benefit of chatting with unbiased persons who will give you the best advice that is not corrupted by
+                            sentiments and other external factors. Also because we should...
+                        </div>
+                        <div class="display-table sub-details">
+                            <div class="display-table-row">
+                                <div class="display-table-cell">
+                                    Category, Complete
                                 </div>
                                 <div class="display-table-cell">
                                     2 days ago
@@ -110,24 +129,7 @@
                         <div class="display-table sub-details">
                             <div class="display-table-row">
                                 <div class="display-table-cell">
-                                    Category
-                                </div>
-                                <div class="display-table-cell">
-                                    2 days ago
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="#" class="request-item complete">
-                        <div class="decorator"></div>
-                        <div class="synopsis">
-                            This affords you the benefit of chatting with unbiased persons who will give you the best advice that is not corrupted by
-                            sentiments and other external factors. Also because we should...
-                        </div>
-                        <div class="display-table sub-details">
-                            <div class="display-table-row">
-                                <div class="display-table-cell">
-                                    Category
+                                    Category, Complete
                                 </div>
                                 <div class="display-table-cell">
                                     2 days ago
@@ -141,7 +143,7 @@
                 </div>
             </div>
             <div class="dashboard-item details">
-                <div class="details">
+                <div class="details hidden">
                     <div class="header">
                         <h4 class="title">
                             Details
@@ -190,6 +192,30 @@
                                 <button type="submit"></button>
                             </form>
                         </div>
+                    </div>
+                </div>
+                <div class="add-new">
+                    <div class="header">
+                        <h4 class="title">
+                            Add a new request
+                        </h4>
+                        <div class="description">
+                            Get your answers in minutes.
+                        </div>
+                    </div>
+                    <div class="add-new-form">
+                        <textarea name="" id="" class="textarea-component" placeholder="Enter your detailed question here"></textarea>
+                        <select name="" id="" class="select-component">
+                            <option value="">
+                                Select a category
+                            </option>
+                        </select>
+                        <button class="btn-custom-flirt">
+                            Get your answer
+                        </button>
+                        <button class="btn-custom-salt-box">
+                            Cancel
+                        </button>
                     </div>
                 </div>
             </div>
