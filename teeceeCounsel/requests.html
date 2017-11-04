@@ -80,7 +80,9 @@
                     <div class="display-table">
                         <div class="display-table-row">
                             <div class="display-table-cell">
+                                <!-- Only show this button for users and not counselors -->
                                 <a href="#" class="add-request-button" title="Add a new request"></a>
+                                <!---->
                             </div>
                         </div>
                     </div>
@@ -88,6 +90,12 @@
                 <div class="body">
                     <a href="#" class="request-item ongoing active new-message">
                         <div class="decorator"></div>
+                        <!-- Only show this for counselors -->
+                        <h3 class="title client-name">
+                            Client:
+                            <span>Jane Doe</span>
+                        </h3>
+                        <!---->
                         <div class="synopsis">
                             This affords you the benefit of chatting with unbiased persons who will give you the best advice that is not corrupted by
                             sentiments and other external factors. Also because we should...
@@ -105,6 +113,12 @@
                     </a>
                     <a href="#" class="request-item complete new-message">
                         <div class="decorator"></div>
+                        <!-- Only show this for counselors -->
+                        <h3 class="title client-name">
+                            Client:
+                            <span>Jane Doe</span>
+                        </h3>
+                        <!---->
                         <div class="synopsis">
                             This affords you the benefit of chatting with unbiased persons who will give you the best advice that is not corrupted by
                             sentiments and other external factors. Also because we should...
@@ -122,6 +136,12 @@
                     </a>
                     <a href="#" class="request-item complete">
                         <div class="decorator"></div>
+                        <!-- Only show this for counselors -->
+                        <h3 class="title client-name">
+                            Client:
+                            <span>Jane Doe</span>
+                        </h3>
+                        <!---->
                         <div class="synopsis">
                             This affords you the benefit of chatting with unbiased persons who will give you the best advice that is not corrupted by
                             sentiments and other external factors. Also because we should...
@@ -143,7 +163,7 @@
                 </div>
             </div>
             <div class="dashboard-item details">
-                <div class="details hidden">
+                <div class="details">
                     <div class="header">
                         <h4 class="title">
                             Details
@@ -194,7 +214,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="add-new">
+                <!-- Only show this for users and not counselors -->
+                <div class="add-new hidden">
                     <div class="header">
                         <h4 class="title">
                             Add a new request
@@ -213,11 +234,12 @@
                         <button class="btn-custom-flirt">
                             Get your answer
                         </button>
-                        <button class="btn-custom-salt-box">
+                        <button class="btn-custom-salt-box cancel">
                             Cancel
                         </button>
                     </div>
                 </div>
+                <!---->
             </div>
         </section>
     </div>
