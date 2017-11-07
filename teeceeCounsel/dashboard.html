@@ -88,8 +88,8 @@
                                         <div class="status">
                                             Your subscription is running.
                                         </div>
-                                        <button class="btn-custom-salt-box">
-                                            Add new
+                                        <button class="btn-custom-salt-box" data-toggle="modal" data-target="#subscription-modal">
+                                            Change plan
                                         </button>
                                     </div>
                                 </div>
@@ -294,6 +294,88 @@
                 </div>
             </div>
         </section>
+    </div>
+    <div class="modal fade" id="subscription-modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="subscription-plans">
+                        <div class="header">
+                            <img src="img/package.png" alt="Teecee">
+                            <h3 class="title">
+                                Select your plan
+                            </h3>
+                            <div>
+                                Subscribe to a plan that best suits you.
+                            </div>
+                        </div>
+                        <div class="subscription-item-group">
+                            <div class="subscription-item">
+                                <div class="title">
+                                    2 months
+                                </div>
+                                <div class="price">
+                                    <i class="naira"></i>3000
+                                </div>
+                                <div class="action">
+                                    <button class="btn-custom-flirt">
+                                        Select
+                                    </button>
+                                    <div title="This is your current plan"></div>
+                                </div>
+                            </div>
+                            <div class="subscription-item selected">
+                                <div class="title">
+                                    4 months
+                                </div>
+                                <div class="price">
+                                    <i class="naira"></i>3000
+                                </div>
+                                <div class="action">
+                                    <button class="btn-custom-flirt">
+                                        Select
+                                    </button>
+                                    <div title="This is your current plan"></div>
+                                </div>
+                            </div>
+                            <div class="subscription-item">
+                                <div class="title">
+                                    6 months
+                                </div>
+                                <div class="price">
+                                    <i class="naira"></i>3000
+                                </div>
+                                <div class="action">
+                                    <button class="btn-custom-flirt">
+                                        Select
+                                    </button>
+                                    <div title="This is your current plan"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            You will be redirected to our secure payment processing platform after you select a plan.
+                        </div>
+                    </div>
+                    <div class="payment-successful hidden">
+                        <img src="img/success.gif" alt="Payment Successful">
+                        <h3 class="title">
+                            Payment Successful!
+                        </h3>
+                        <div>
+                            You will now be redirected to your dashboard.
+                        </div>
+                    </div>
+                </div>
+                <!-- Only show this when the user is selecting a plan -->
+                <div class="modal-footer">
+                    <button class="btn-custom-salt-box" data-dismiss="modal">
+                        Cancel
+                    </button>
+                </div>
+                <!---->
+            </div>
+        </div>
     </div>
 </div>
 
