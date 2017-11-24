@@ -12106,7 +12106,6 @@ $.fn.magik = function () {
         parent.waypoint({
             handler: function () {
                 parent.find("[data-magik='magik']").each(function (i) {
-                    console.log(i);
                     $(this).toggleClass("on");
                 });
             },
