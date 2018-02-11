@@ -1,0 +1,143 @@
+<!-- layout.njk -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoChamps</title>
+  <meta name="theme-color" content="#ed5565">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/css-bundle.css">
+</head>
+<body>
+  <!-- Navigation Partial -->
+
+<nav class="nav">
+    <div class="container-responsive">
+        <div class="display-table">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <a href="./index.html">
+                        <img src="img/logo-full.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="display-table-cell"></div>
+            </div>
+        </div>
+    </div>
+</nav>
+  
+<div class="account-page" data-controller="AccountController">
+    <div class="display-table-md">
+        <div class="display-table-row">
+            <div class="display-table-cell">
+                <img src="img/logo.svg" alt="Cryptochamps logo">
+            </div>
+            <div class="display-table-cell">
+                <div class="container-responsive">
+                    <h3 class="title">
+                        Welcome
+                    </h3>
+                    <div class="form-fields">
+                        <div class="textbox-component custom-form-group">
+                            <label for="email">
+                                Email
+                            </label>
+                            <input type="email" id="email" placeholder="jane@doe.com" />
+                        </div>
+                        <div class="textbox-component custom-form-group">
+                            <label for="password">
+                                Password
+                            </label>
+                            <input type="password" id="password" placeholder="*******" />
+                            <div class="footnote">
+                                <a href="">
+                                    Forgot password?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-custom-mandy">
+                        Sign in
+                    </button>
+                    <div class="footnote">
+                        Don't have an account? <a href="./register.html">Sign up here</a>
+                    </div>
+                </div>
+                <img src="img/doodle-bottom.png" alt="Doodle bottom" class="doodle-bottom">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Footer Partial -->
+
+<footer class="footer">
+    <div class="container-responsive">
+        <div class="display-table-md">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <div class="links">
+                        <a href="">
+                            How it works
+                        </a>
+                        <a href="">
+                            FAQ
+                        </a>
+                        <a href="">
+                            TOS
+                        </a>
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                        <a href="">
+                            Legal &amp; Copyright
+                        </a>
+                        <a href="">
+                            Bounty Program
+                        </a>
+                        <a href="">
+                            Verified Signup
+                        </a>
+                        <a href="">
+                            Verified Contracts
+                        </a>
+                        <a href="">
+                            Contact us
+                        </a>
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+                <div class="display-table-cell">
+                    <div class="social">
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="img/ethereum.svg" alt="Ethereum">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright © CryptoChamps
+    </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="js/js-bundle.js"></script>
+</body>
+</html>
