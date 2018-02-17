@@ -1,0 +1,363 @@
+<!-- layout.njk -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoChamps</title>
+  <meta name="theme-color" content="#ed5565">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/css-bundle.css">
+</head>
+<body>
+  <!-- Navigation Partial -->
+
+<nav class="nav">
+    <div class="container-responsive">
+        <div class="display-table">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <a href="./index.html">
+                        <img src="img/logo-full.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="display-table-cell">
+                    <a href="./live-view.html">
+                        Live View
+                    </a>
+                    <a href="./marketplace.html">
+                        Marketplace
+                    </a>
+                    <a href="./login.html" class="highlighted">
+                        Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+  
+<div class="marketplace-page" data-controller="MarketplaceController">
+    <header class="header">
+        <div class="container-responsive">
+            <img class="marketplace" src="img/marketplace.svg" alt="Marketplace">
+            <div class="caption">
+                <h1>
+                    Hello,
+                </h1>
+                <h1>
+                    marketplace!
+                </h1>
+            </div>
+        </div>
+    </header>
+    <section class="section-1">
+        <div class="container-responsive">
+            <div class="display-table-md">
+                <div class="display-table-row">
+                    <div class="display-table-cell filters">
+                        <span class="filter-item selected">
+                            All stars
+                        </span>
+                        <span class="filter-item">
+                            Highest Priced
+                        </span>
+                        <span class="filter-item">
+                            Lowest Priced
+                        </span>
+                        <span class="filter-item">
+                            Newest
+                        </span>
+                        <span class="filter-item">
+                            Verified
+                        </span>
+                    </div>
+                    <div class="display-table-cell search">
+                        <div class="textbox-component">
+                            <input type="text" id="search" placeholder="Search..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="container-responsive">
+            <a class="market-item display-table" href="">
+                <div class="display-table-row">
+                    <div 
+                        class="display-table-cell image"
+                        style="background-image:url(https://idolwiki.com/pics/MichaelJordan/MichaelJordan.jpg)"
+                        ></div>
+                    <div class="display-table-cell details">
+                        <img src="img/doodle-top.png" alt="Doodle" class="doodle">
+                        <div class="name">
+                            <div class="first-name">
+                                Vitaly
+                            </div>
+                            <div class="last-name">
+                                Kavylchenko
+                            </div>
+                        </div>
+                        <div class="specs">
+                            <div class="spec-item">
+                                <img src="img/hoodlers.svg" alt="Icon" class="icon">
+                                <div class="content">
+                                    <div class="key">
+                                        Owner
+                                    </div>
+                                    <div class="value">
+                                        Swapnir Dinkar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <img src="img/contracts.svg" alt="Icon" class="icon">
+                                <div class="content">
+                                    <div class="key">
+                                        Transactions
+                                    </div>
+                                    <div class="value">
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy">
+                            <div class="price">
+                                23.119
+                            </div>
+                            <div class="call-to-action">
+                                Buy this contract
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="market-item display-table" href="">
+                <div class="display-table-row">
+                    <div 
+                        class="display-table-cell image"
+                        style="background-image:url(https://idolwiki.com/pics/MichaelJordan/MichaelJordan.jpg)"
+                        ></div>
+                    <div class="display-table-cell details">
+                        <img src="img/doodle-top.png" alt="Doodle" class="doodle">
+                        <div class="name">
+                            <div class="first-name">
+                                Vitaly
+                            </div>
+                            <div class="last-name">
+                                Kavylchenko
+                            </div>
+                        </div>
+                        <div class="specs">
+                            <div class="spec-item">
+                                <img src="img/hoodlers.svg" alt="Icon" class="icon">
+                                <div class="content">
+                                    <div class="key">
+                                        Owner
+                                    </div>
+                                    <div class="value">
+                                        Swapnir Dinkar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <img src="img/contracts.svg" alt="Icon" class="icon">
+                                <div class="content">
+                                    <div class="key">
+                                        Transactions
+                                    </div>
+                                    <div class="value">
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy">
+                            <div class="price">
+                                23.119
+                            </div>
+                            <div class="call-to-action">
+                                Buy this contract
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="market-item display-table" href="">
+                <div class="display-table-row">
+                    <div 
+                        class="display-table-cell image"
+                        style="background-image:url(https://idolwiki.com/pics/MichaelJordan/MichaelJordan.jpg)"
+                        ></div>
+                    <div class="display-table-cell details">
+                        <img src="img/doodle-top.png" alt="Doodle" class="doodle">
+                        <div class="name">
+                            <div class="first-name">
+                                Vitaly
+                            </div>
+                            <div class="last-name">
+                                Kavylchenko
+                            </div>
+                        </div>
+                        <div class="specs">
+                            <div class="spec-item">
+                                <img src="img/hoodlers.svg" alt="Icon" class="icon">
+                                <div class="content">
+                                    <div class="key">
+                                        Owner
+                                    </div>
+                                    <div class="value">
+                                        Swapnir Dinkar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <img src="img/contracts.svg" alt="Icon" class="icon">
+                                <div class="content">
+                                    <div class="key">
+                                        Transactions
+                                    </div>
+                                    <div class="value">
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy">
+                            <div class="price">
+                                23.119
+                            </div>
+                            <div class="call-to-action">
+                                Buy this contract
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="market-item display-table" href="">
+                <div class="display-table-row">
+                    <div 
+                        class="display-table-cell image"
+                        style="background-image:url(https://idolwiki.com/pics/MichaelJordan/MichaelJordan.jpg)"
+                        ></div>
+                    <div class="display-table-cell details">
+                        <img src="img/doodle-top.png" alt="Doodle" class="doodle">
+                        <div class="name">
+                            <div class="first-name">
+                                Vitaly
+                            </div>
+                            <div class="last-name">
+                                Kavylchenko
+                            </div>
+                        </div>
+                        <div class="specs">
+                            <div class="spec-item">
+                                <img src="img/hoodlers.svg" alt="Icon" class="icon">
+                                <div class="content">
+                                    <div class="key">
+                                        Owner
+                                    </div>
+                                    <div class="value">
+                                        Swapnir Dinkar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <img src="img/contracts.svg" alt="Icon" class="icon">
+                                <div class="content">
+                                    <div class="key">
+                                        Transactions
+                                    </div>
+                                    <div class="value">
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy">
+                            <div class="price">
+                                23.119
+                            </div>
+                            <div class="call-to-action">
+                                Buy this contract
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+</div>
+
+  <!-- Footer Partial -->
+
+<footer class="footer">
+    <div class="container-responsive">
+        <div class="display-table-md">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <div class="links">
+                        <a href="">
+                            How it works
+                        </a>
+                        <a href="">
+                            FAQ
+                        </a>
+                        <a href="">
+                            TOS
+                        </a>
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                        <a href="">
+                            Legal &amp; Copyright
+                        </a>
+                        <a href="">
+                            Bounty Program
+                        </a>
+                        <a href="">
+                            Verified Signup
+                        </a>
+                        <a href="">
+                            Verified Contracts
+                        </a>
+                        <a href="">
+                            Contact us
+                        </a>
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+                <div class="display-table-cell">
+                    <div class="social">
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="img/ethereum.svg" alt="Ethereum">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright © CryptoChamps
+    </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="js/js-bundle.js"></script>
+</body>
+</html>
