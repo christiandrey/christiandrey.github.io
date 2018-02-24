@@ -1,0 +1,372 @@
+<!-- layout.njk -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoChamps</title>
+  <meta name="theme-color" content="#ed5565">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/css-bundle.css">
+</head>
+<body>
+  <!-- Navigation Partial -->
+
+<nav class="nav">
+    <div class="container-responsive">
+        <div class="display-table">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <a href="./index.html">
+                        <img src="img/logo-full.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="display-table-cell">
+                    <a href="./rank-list.html">
+                        Rank List
+                    </a>
+                    <a href="./live-view.html">
+                        Live View
+                    </a>
+                    <a href="./marketplace.html">
+                        Marketplace
+                    </a>
+                    <a href="./login.html" class="highlighted">
+                        Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+  
+<div class="rank-list-page">
+    <header class="header">
+        <div class="container-responsive">
+            <img src="img/rank-list.svg" alt="Rank List" class="rank-list">
+            <h1 class="title">
+                Rank list
+            </h1>
+        </div>
+    </header>
+    <section class="section-1">
+        <div class="container-responsive">
+            <div class="display-table-md">
+                <div class="display-table-row">
+                    <div class="display-table-cell left">
+                        <div class="top-100">
+                                <h3 class="title">
+                                    Top 100
+                                </h3>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Ranks
+                                                </th>
+                                                <th>
+                                                    Name/Address
+                                                </th>
+                                                <th>
+                                                    Contracts
+                                                </th>
+                                                <th>
+                                                    Net Value
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="rank-item gold">
+                                                <td>
+                                                    1
+                                                </td>
+                                                <td>
+                                                    <span class="icon"></span>
+                                                    <a href="">
+                                                        Whale Overlord
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    20
+                                                </td>
+                                                <td>
+                                                    322.453
+                                                </td>
+                                            </tr>
+                                            <tr class="rank-item silver">
+                                                <td>
+                                                    2
+                                                </td>
+                                                <td>
+                                                    <span class="icon"></span>
+                                                    <a href="">
+                                                        Whale Overlord
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    20
+                                                </td>
+                                                <td>
+                                                    322.453
+                                                </td>
+                                            </tr>
+                                            <tr class="rank-item bronze">
+                                                <td>
+                                                    3
+                                                </td>
+                                                <td>
+                                                    <span class="icon"></span>
+                                                    <a href="">
+                                                        Whale Overlord
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    20
+                                                </td>
+                                                <td>
+                                                    322.453
+                                                </td>
+                                            </tr>
+                                            <tr class="rank-item">
+                                                <td>
+                                                    4
+                                                </td>
+                                                <td>
+                                                    <span class="icon"></span>
+                                                    <a href="">
+                                                        Whale Overlord
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    20
+                                                </td>
+                                                <td>
+                                                    322.453
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="display-table-cell right">
+                        <div class="pane rank-summary">
+                            <div class="summary-item-group">
+                                <div class="summary-item">
+                                    <img src="img/volume.svg" alt="Volumes" class="icon">
+                                    <span class="content">
+                                        <span class="key">
+                                            Total transactions value
+                                        </span>
+                                        <span class="value">
+                                            30,277 ETH
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="summary-item">
+                                    <img src="img/contracts.svg" alt="Volumes" class="icon">
+                                    <span class="content">
+                                        <span class="key">
+                                            Total contracts active
+                                        </span>
+                                        <span class="value">
+                                            676
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="summary-item">
+                                    <img src="img/hoodlers.svg" alt="Volumes" class="icon">
+                                    <span class="content">
+                                        <span class="key">
+                                            Contracts holders
+                                        </span>
+                                        <span class="value">
+                                            231
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="contract-address">
+                                <div class="key">
+                                    Contract address on the blockchain:
+                                </div>
+                                <div class="value">
+                                    <a href="">
+                                        0xbb5Ed1EdeB5149AF3ab43ea9c7a6963b3C1374F7
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pane airdrop">
+                            <h3 class="title">
+                                Top players - Interest Airdrops
+                            </h3>
+                            <p>
+                                We pay the top 50 players an interest on their net value. The interest ranges from 15% to 50% a year depending on a player's rank and is calculated daily at 20:00 UTC, with payouts made shortly thereafter.
+                            </p>
+                            <p class="pre-table">
+                                Estimated Monthly Interest Airdrop:
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Level
+                                            </th>
+                                            <th>
+                                                #Players
+                                            </th>
+                                            <th>
+                                                Interest
+                                            </th>
+                                            <th>
+                                                Airdrop value
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="interest-item gold">
+                                            <td>
+                                                <span class="icon"></span>
+                                                Gold
+                                            </td>
+                                            <td>
+                                                10
+                                            </td>
+                                            <td>
+                                                50%
+                                            </td>
+                                            <td>
+                                                90.9649
+                                            </td>
+                                        </tr>
+                                        <tr class="interest-item silver">
+                                            <td>
+                                                <span class="icon"></span>
+                                                Silver
+                                            </td>
+                                            <td>
+                                                10
+                                            </td>
+                                            <td>
+                                                50%
+                                            </td>
+                                            <td>
+                                                90.9649
+                                            </td>
+                                        </tr>
+                                        <tr class="interest-item bronze">
+                                            <td>
+                                                <span class="icon"></span>
+                                                Bronze
+                                            </td>
+                                            <td>
+                                                10
+                                            </td>
+                                            <td>
+                                                50%
+                                            </td>
+                                            <td>
+                                                90.9649
+                                            </td>
+                                        </tr>
+                                        <tr class="interest-item total">
+                                            <td>
+                                                Total
+                                            </td>
+                                            <td>
+                                                Top 50
+                                            </td>
+                                            <td>
+                                                
+                                            </td>
+                                            <td>
+                                                90.9649
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>
+                                Learn more about <a href="">Interest Payments</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+  <!-- Footer Partial -->
+
+<footer class="footer">
+    <div class="container-responsive">
+        <div class="display-table-md">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <div class="links">
+                        <a href="">
+                            How it works
+                        </a>
+                        <a href="">
+                            FAQ
+                        </a>
+                        <a href="">
+                            TOS
+                        </a>
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                        <a href="">
+                            Legal &amp; Copyright
+                        </a>
+                        <a href="">
+                            Bounty Program
+                        </a>
+                        <a href="">
+                            Verified Signup
+                        </a>
+                        <a href="">
+                            Verified Contracts
+                        </a>
+                        <a href="">
+                            Contact us
+                        </a>
+                        <a href="">
+                            Privacy Policy
+                        </a>
+                    </div>
+                </div>
+                <div class="display-table-cell">
+                    <div class="social">
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="img/ethereum.svg" alt="Ethereum">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright © CryptoChamps
+    </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="js/js-bundle.js"></script>
+</body>
+</html>
