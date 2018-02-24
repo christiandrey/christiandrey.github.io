@@ -1,0 +1,117 @@
+<!-- layout.njk -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Board</title>
+  <meta name="theme-color" content="#0dcb6b">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/css-bundle.css">
+</head>
+<body>
+  <!-- Navigation Partial -->
+
+<nav class="nav">
+    <div class="container-responsive">
+        <div class="display-table">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <a href="./index.html">
+                        <h3>
+                            YOUR-LOGO
+                        </h3>
+                    </a>
+                </div>
+                <div class="display-table-cell">
+                    <a class="btn-custom-white" href="./post-job.html">
+                        Post job for Free
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+  
+<div class="job-page" data-controller="JobController">
+    <img src="img/design-mix.svg" alt="Design Mix" class="design-mix">
+    <img src="img/design-grey.svg" alt="Design Grey" class="design-grey">
+    <div class="container-responsive">
+        <h1 class="job-title">
+            Senior Frontend Developer
+        </h1>
+        <div class="organisation">
+            <img src="img/company.svg" alt="Company" class="icon">
+            <a href="" class="link" target="_blank">
+                <span>
+                    Sinet Technologies:
+                </span> Lagos, Nigeria
+            </a>
+        </div>
+        <button class="btn-custom-malachite apply">
+            Apply for this job
+        </button>
+        <div class="categories job-detail">
+            <span class="title">
+                Categories: 
+            </span>
+            <span class="category-item-group">
+                <span class="category-item">
+                    <span class="color-icon"></span>
+                    Programming
+                </span>
+                <span class="category-item">
+                    <span class="color-icon"></span>
+                    Design
+                </span>
+                <span class="category-item">
+                    <span class="color-icon"></span>
+                    Coding
+                </span>
+            </span>
+        </div>
+        <div class="role-type job-detail">
+            <span class="title">
+                Role Type: 
+            </span>
+            Permanent
+        </div>
+        <div class="date-published job-detail">
+            <span class="title">
+                Date Published: 
+            </span>
+            23rd November, 2017
+        </div>
+        <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu felis nec purus dapibus porta dictum et nibh. Sed in scelerisque magna. Aliquam tincidunt venenatis libero. Nam placerat commodo tortor, ac iaculis erat lacinia non. Mauris molestie tellus eu risus dictum, eu laoreet dolor congue. Nullam auctor tortor sed facilisis auctor. Donec at tortor vel eros gravida semper a et sem. Phasellus arcu dolor, euismod et arcu ut, eleifend aliquet odio. Praesent rhoncus at magna at viverra. Sed non libero quis justo semper volutpat ut non odio. Nam interdum, orci id congue ornare, lorem mi consequat lectus, eleifend dapibus nulla enim sed nisl. Suspendisse a ligula quam. Cras a risus at nunc feugiat dapibus in quis purus. Mauris aliquet magna felis, in rutrum ligula auctor non. Aenean varius dolor lectus, ut laoreet velit lobortis in.
+        </div>
+        <div class="tags">
+            Tags: 
+            <span class="tag">Javascript</span>
+            <span class="tag">Oracle</span>
+            <span class="tag">C#</span>
+        </div>
+        <button class="btn-custom-malachite apply">
+            Apply for this job
+        </button>
+    </div>
+</div>
+
+  <!-- Footer Partial -->
+
+<footer class="footer">
+    <div class="container-responsive">
+        <h3>
+            YOUR-LOGO
+        </h3>
+    </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="js/js-bundle.js"></script>
+</body>
+</html>

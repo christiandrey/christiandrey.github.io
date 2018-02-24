@@ -1,0 +1,181 @@
+<!-- layout.njk -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Board</title>
+  <meta name="theme-color" content="#0dcb6b">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/css-bundle.css">
+</head>
+<body>
+  <!-- Navigation Partial -->
+
+<nav class="nav">
+    <div class="container-responsive">
+        <div class="display-table">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <a href="./index.html">
+                        <h3>
+                            YOUR-LOGO
+                        </h3>
+                    </a>
+                </div>
+                <div class="display-table-cell">
+                    <a class="btn-custom-white" href="./post-job.html">
+                        Post job for Free
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+  
+<div class="post-job-page">
+    <img src="img/design-grey.svg" alt="Design Grey" class="design-grey">
+    <img src="img/design-mix.svg" alt="Design Mix" class="design-mix">
+    <div class="container-responsive">
+        <input type="text" placeholder="Job title goes here" autofocus class="job-title" />
+        <div class="section-group">
+            <div class="section-table display-table-md job-details">
+                <div class="display-table-row">
+                    <div class="display-table-cell description">
+                        <div class="transparent-textarea-component">
+                            <label>
+                                Description
+                            </label>
+                            <textarea placeholder="Enter description here"></textarea> 
+                        </div>
+                    </div>
+                    <div class="display-table-cell type-and-apply-url">
+                        <div class="display-table">
+                            <div class="display-table-row">
+                                <div class="display-table-cell type">
+                                    <div class="transparent-input-component">
+                                        <label>
+                                            Role Type
+                                        </label>
+                                        <input type="text" placeholder="Select a role type" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="display-table-row">
+                                <div class="display-table-cell apply-url">
+                                    <div class="transparent-input-component">
+                                        <label>
+                                            Apply URL
+                                        </label>
+                                        <input type="text" placeholder="http://..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-table-row">
+                    <div class="display-table-cell state">
+                        <div class="transparent-input-component">
+                            <label>
+                                State
+                            </label>
+                            <input type="text" placeholder="Enter state here" />
+                        </div>
+                    </div>
+                    <div class="display-table-cell country">
+                        <div class="transparent-input-component">
+                            <label>
+                                Country
+                            </label>
+                            <input type="text" placeholder="Enter country here" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="section-group">
+            <h4 class="section-title">
+                Recruiter details
+            </h4>
+            <div class="section-table display-table-md recruiter-details">
+                <div class="display-table-row">
+                    <div class="display-table-cell recruiter-name">
+                        <div class="transparent-input-component">
+                            <label>
+                                Company Name
+                            </label>
+                            <input type="text" placeholder="Enter company name here" />
+                        </div>
+                    </div>
+                    <div class="display-table-cell recruiter-website">
+                        <div class="transparent-input-component">
+                            <label>
+                                Company Website
+                            </label>
+                            <input type="text" placeholder="http://www..." />
+                        </div>
+                    </div>
+                    <div class="display-table-cell recruiter-email">
+                        <div class="transparent-input-component">
+                            <label>
+                                Company Email
+                            </label>
+                            <input type="text" placeholder="test@example.com" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="section-group">
+            <h4 class="section-title">
+                Classification
+            </h4>
+            <div class="section-table display-table-md classification">
+                <div class="display-table-row">
+                    <div class="display-table-cell categories">
+                        <div class="transparent-input-component">
+                            <label>
+                                Categories
+                            </label>
+                            <input type="text" placeholder="Select some categories" />
+                        </div>
+                    </div>
+                    <div class="display-table-cell tags">
+                        <div class="transparent-input-component">
+                            <label>
+                                Tags
+                            </label>
+                            <input type="text" placeholder="Select some tags" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button class="btn-custom-malachite submit">
+            Submit this job
+        </button>
+    </div>
+</div>
+
+  <!-- Footer Partial -->
+
+<footer class="footer">
+    <div class="container-responsive">
+        <h3>
+            YOUR-LOGO
+        </h3>
+    </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="js/js-bundle.js"></script>
+</body>
+</html>
