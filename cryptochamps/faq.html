@@ -1,0 +1,231 @@
+<!-- layout.njk -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CryptoChamps</title>
+  <meta name="theme-color" content="#ed5565">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/css-bundle.css">
+</head>
+<body>
+  <!-- Navigation Partial -->
+
+<nav class="nav">
+    <div class="container-responsive">
+        <div class="display-table">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <span class="hamburger"></span>
+                    <a href="./index.html">
+                        <img src="img/logo-full.svg" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="display-table-cell menu-links">
+                    <a href="./rank-list.html">
+                        Rank List
+                    </a>
+                    <a href="./live-view.html">
+                        Live View
+                    </a>
+                    <a href="./marketplace.html">
+                        Marketplace
+                    </a>
+                    <a href="./user.html">
+                        My Account
+                    </a>
+                    <a href="./login.html" class="highlighted">
+                        Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+  
+<div class="document-page faq">
+    <header class="header">
+        <div class="container-responsive">
+            <h3 class="title">
+                Frequently asked questions
+            </h3>
+        </div>
+    </header>
+    <section class="section-1">
+        <div class="container-responsive">
+            <h3 class="title">
+                Getting started
+            </h3>
+            <hr>
+            <h4>What equipment or software do I need to play CryptoChamps?</h4>
+            <p>Buying and trading CryptoChamps only requires three things:</p>
+            <ul>
+                <li>A computer (desktop or laptop) with a Chrome or Firefox browser installed.</li>
+                <li>A MetaMask digital wallet</li>
+                <li>Ether, the cryptocurrency used to buy Champ contracts</li>
+            </ul>
+            <hr>    
+            <h4 id="how-do-i-install-metamask">How do I install MetaMask?</h4>
+
+            <p>In order to buy contracts and sell your contracts, you’ll need to install digital wallet MetaMask on your Chrome or Firefox browser and load it up with ether.</p>
+
+            <ul>
+                <li>Go to <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en</a> and click “Add to Chrome”. Or, go to <a href="https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/">https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/</a> and click “Add to Firefox”.</li>
+                <li>Click “Add Extension” on the pop-up.</li>
+                <li>Accept the Privacy Policy and agree to the TOS.</li>
+                <li>Set up your MetaMask account.</li>
+                <li>Copy your 12 seed words and file them away somewhere safe (this helps to secure your account).Note: For security purposes, MetaMask browser extensions will periodically request that you log back in to your account. If you see a lock screen on CryptoChamps, this security measure is the most likely cause – just click your MetaMask extension, log back in, and continue buying and trading smart contracts.</li>
+            </ul>
+
+            <hr>
+
+            <h4>How do I add ether to my MetaMask wallet?</h4>
+
+            <p>There are two ways to add ether to your wallet. If you don’t currently own ether, you can:</p>
+
+            <ul>
+            <li>Buy ether directly in MetaMask. This is only possible for US citizens.</li>
+            <li>Purchase ether through a Coinbase wallet, another type of digital wallet, and then transfer the ether to your MetaMask wallet using the Coinbase widget.</li>
+            </ul>
+
+            <p>If you currently own ether, you can: Transfer your ether from your existing digital wallet to your MetaMask wallet. Just copy your MetaMask address, open up Coinbase, and click on the “Accounts” option. Click the “Send” button, paste your MetaMask address in the box, add the amount of ether you want to transfer, and complete the transaction.</p>
+
+            <hr>
+
+            <h3>All About CryptoChamps</h3>
+
+            <hr>
+
+            <h4>So, what exactly is CryptoChamps?</h4>
+
+            <p>CryptoChamps is part game, part investing, and part charity. Confused? Don’t be.</p>
+
+            <p><strong>The game:</strong>
+            With CryptoChamps, you can buy and sell Champ smart contracts. There is only one smart contract per Champ – once you own it, you’re the only one in the world who has it. Until someone else comes along and pays you up to double your purchase price to own that contract!</p>
+
+            <p><strong>The investment:</strong>
+            Every time you buy a smart contract, it automatically doubles in value. If someone else wants to buy it, they have to pay you two times what you purchased the contract for, doubling your investment.</p>
+
+            <p><strong>The charity:</strong>
+            When Champs verify their smart contract, they can opt to have 3-percent of every transaction made on their smart contract sent directly to a charity of their choice.</p>
+
+            <hr>
+
+            <h4>How do I buy a Champ smart contract?</h4>
+
+            <p>Head on over to the CryptoChamps Marketplace, scroll through the Champ contracts, and click on “Buy this Contract” if you see “someone” you’re interested in. You’ll need to have enough ether in your MetaMask wallet to cover the transaction; once you follow through the prompts and transfer the funds, you’re officially the only person in the world who owns that Champ contract.</p>
+
+            <hr>
+
+            <h4>How much do Champ smart contracts cost?</h4>
+
+            <p>That depends on the Champ. Because each contract increases in cost after every transaction, the cost of each contract depends on how many times the contract has changed hands in ownership.</p>
+
+            <hr>
+
+            <h4>Can I decide not to sell my Champ contract if someone wants to purchase it?</h4>
+
+            <p>Nope – but that’s part of the fun. Anyone can purchase any contract that you own, any time that they want to. However, you get up to double your purchase price in return, which means you’ll have plenty of funds to buy another, cheaper contract, or a head start to repurchase the Champ contract that you lost for the new price.</p>
+
+            <hr>
+
+            <h4>Can I use my normal currency (USD, EUR, RMB, etc.) to buy Champ contracts?</h4>
+
+            <p>No. Because CryptoChamps is run on the same blockchain technology used by Ethereum, ether is the only currency you can use to purchase Champ contracts. You can convert your standard currency into ether through an exchange or directly through your MetaMask wallet (depending on where you live).</p>
+
+            <hr>
+
+            <h3>Random</h3>
+
+            <hr>
+
+            <h4>Are CryptoChamps a type of cryptocurrency?</h4>
+
+            <p>Think of Champ smart contracts as collectibles – the new version of baseball cards, collectible figurines, or even artwork. While they do have value, that value is based on their desirability. You can make money on CryptoChamps’ smart contracts by selling the contracts in the game and receiving a higher ETH amount than you originally invested.</p>
+
+            <hr>
+
+            <h4>Why isn’t my sale showing up on Etherscan?</h4>
+
+            <p>No worries – it is. You just need to click over to the “internal transactions” tab to see the sale and wait until the transaction is recorded. Registering transaction on the blockchain requires lots of computer all over the world to sync the data. This take some time, just like a bitcoin or ethereum transfer, but also ensures and secures your ownership of the Champ token.</p>
+
+            <hr>
+
+            <h4>Why can’t I play CryptoChamps on my phone or tablet?</h4>
+
+            <p>Unfortunately, the current technology used to run the game is too much for your phone to handle. If your tablet runs Firefox or Chrome, you can play CryptoChamps on your tablet; however, the system runs best on a desktop or laptop with Metamask installed.</p>
+
+            <hr>
+
+            <h4>This has to be a scam. How are you making money?</h4>
+
+            <p>We take a small percentage of each transaction when a Champ contract is purchased. That’s it. There’s no scam, and no hidden requirements. If you see a contract on the marketplace that you want to buy, you can do so for the full price, and then you own it. It’s that simple.</p>
+        </div>
+    </section>
+</div>
+
+  <!-- Footer Partial -->
+
+<footer class="footer">
+    <div class="container-responsive">
+        <div class="display-table-md">
+            <div class="display-table-row">
+                <div class="display-table-cell">
+                    <div class="links">
+                        <a href="./how-it-works.html">
+                            How it works
+                        </a>
+                        <a href="./faq.html">
+                            FAQ
+                        </a>
+                        <a href="./tos.html">
+                            TOS
+                        </a>
+                        <a href="./privacy.html">
+                            Privacy Policy
+                        </a>
+                        <a href="./legal.html">
+                            Legal &amp; Copyright
+                        </a>
+                        <a href="./bounty-program.html">
+                            Bounty Program
+                        </a>
+                        <a href="./contact.html">
+                            Contact us
+                        </a>
+                        <a href="">
+                            Chat (Unofficial)
+                        </a>
+                    </div>
+                </div>
+                <div class="display-table-cell">
+                    <div class="social">
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <img src="img/ethereum.svg" alt="Ethereum">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright © CryptoChamps
+    </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="js/js-bundle.js"></script>
+</body>
+</html>

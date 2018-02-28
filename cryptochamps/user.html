@@ -47,48 +47,26 @@
     </div>
 </nav>
   
-<div class="marketplace-page" data-controller="MarketplaceController">
+<div class="user-page" data-controller="UserController">
     <header class="header">
         <div class="container-responsive">
-            <img class="marketplace" src="img/marketplace.svg" alt="Marketplace">
-            <div class="caption">
-                <h1>
-                    Hello,
-                </h1>
-                <h1>
-                    marketplace!
-                </h1>
-            </div>
+            <img src="img/hoodlers.svg" alt="User" class="user">
+            <h1 class="title">
+                Whale overlord
+            </h1>
+            <a href="" class="eth-address">
+                0x183febd8828a9ac6c70c0e27fbf441b93004fc05
+            </a>
+            <button class="edit-details btn-custom-fiord" type="button">
+                Edit details
+            </button>
         </div>
     </header>
     <section class="section-1">
         <div class="container-responsive">
-            <div class="display-table-md">
-                <div class="display-table-row">
-                    <div class="display-table-cell filters">
-                        <span class="filter-item selected">
-                            All stars
-                        </span>
-                        <span class="filter-item">
-                            Highest Priced
-                        </span>
-                        <span class="filter-item">
-                            Lowest Priced
-                        </span>
-                        <span class="filter-item">
-                            Newest
-                        </span>
-                        <span class="filter-item">
-                            Verified
-                        </span>
-                    </div>
-                    <div class="display-table-cell search">
-                        <div class="textbox-component">
-                            <input type="text" id="search" placeholder="Search..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h3 class="title">
+                <span>23</span> contracts owned
+            </h3>
         </div>
     </section>
     <section class="section-2">
@@ -485,7 +463,44 @@
 </a>
         </div>
     </section>
-    <!-- Buy Contract Modal Partial -->
+    <div class="modal-component modal fade edit-details-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-container">
+                        <h3 class="modal-title">
+                            Edit account details
+                        </h3>
+                        <div class="description">
+                            Edit your personal account details here.
+                        </div>
+                        <div class="textbox-component form-group">
+                            <label for="name">
+                                Name
+                            </label>
+                            <input type="text" id="name" placeholder="Jane Doe" />
+                        </div>
+                        <div class="textbox-component">
+                            <label for="password">
+                                Password
+                            </label>
+                            <input type="password" id="password" placeholder="********" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-custom-mandy">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Buy Contract Modal Partial -->
 
 <div class="modal-component modal fade buy-contract-modal">
     <div class="modal-dialog">
@@ -525,7 +540,6 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 
   <!-- Footer Partial -->

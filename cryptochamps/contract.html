@@ -20,11 +20,12 @@
         <div class="display-table">
             <div class="display-table-row">
                 <div class="display-table-cell">
+                    <span class="hamburger"></span>
                     <a href="./index.html">
                         <img src="img/logo-full.svg" alt="" class="logo">
                     </a>
                 </div>
-                <div class="display-table-cell">
+                <div class="display-table-cell menu-links">
                     <a href="./rank-list.html">
                         Rank List
                     </a>
@@ -33,6 +34,9 @@
                     </a>
                     <a href="./marketplace.html">
                         Marketplace
+                    </a>
+                    <a href="./user.html">
+                        My Account
                     </a>
                     <a href="./login.html" class="highlighted">
                         Log in
@@ -43,7 +47,7 @@
     </div>
 </nav>
   
-<div class="contract-page">
+<div class="contract-page" data-controller="ContractController">
     <header class="header">
         <div class="container-responsive">
             <img src="img/contract.svg" alt="Rank List" class="rank-list">
@@ -57,69 +61,71 @@
             <div class="display-table-md">
                 <div class="display-table-row">
                     <div class="display-table-cell card">
-                            <a class="market-item verified display-table" href="./contract.html">
-                                <div class="display-table-row">
-                                    <div 
-                                        class="display-table-cell image"
-                                        style="background-image:url(https://idolwiki.com/pics/MichaelJordan/MichaelJordan.jpg)"
-                                        >
-                                        <div class="tag-group">
-                                            <div class="tag basketball">
-                                                Basketball
-                                            </div>
-                                            <div class="tag football">
-                                                Football
-                                            </div>
-                                            <div class="tag volleyball">
-                                                Volleyball
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="display-table-cell details">
-                                        <img src="img/doodle-top.png" alt="Doodle" class="doodle">
-                                        <div class="name">
-                                            <div class="first-name">
-                                                Vitaly
-                                            </div>
-                                            <div class="last-name">
-                                                Kavylchenko
-                                            </div>
-                                        </div>
-                                        <div class="specs">
-                                            <div class="spec-item">
-                                                <img src="img/hoodlers.svg" alt="Icon" class="icon">
-                                                <div class="content">
-                                                    <div class="key">
-                                                        Owner
-                                                    </div>
-                                                    <div class="value">
-                                                        Swapnir Dinkar
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="spec-item">
-                                                <img src="img/contracts.svg" alt="Icon" class="icon">
-                                                <div class="content">
-                                                    <div class="key">
-                                                        Transactions
-                                                    </div>
-                                                    <div class="value">
-                                                        23
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="buy">
-                                            <div class="price">
-                                                23.119
-                                            </div>
-                                            <div class="call-to-action">
-                                                Buy this contract
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
+                        <!-- Marketitem Partial -->
+
+<a class="market-item verified display-table" href="./contract.html">
+    <div class="display-table-row">
+        <div 
+            class="display-table-cell image"
+            style="background-image:url(https://idolwiki.com/pics/MichaelJordan/MichaelJordan.jpg)"
+            >
+            <div class="tag-group">
+                <div class="tag">
+                    Basketball
+                </div>
+                <div class="tag">
+                    Football
+                </div>
+                <div class="tag">
+                    Volleyball
+                </div>
+            </div>
+        </div>
+        <div class="display-table-cell details">
+            <img src="img/doodle-top.png" alt="Doodle" class="doodle">
+            <div class="name">
+                <div class="first-name">
+                    Vitaly
+                </div>
+                <div class="last-name">
+                    Kavylchenko
+                </div>
+            </div>
+            <div class="specs">
+                <div class="spec-item">
+                    <img src="img/hoodlers.svg" alt="Icon" class="icon">
+                    <div class="content">
+                        <div class="key">
+                            Owner
+                        </div>
+                        <div class="value" data-href="./user.html">
+                            Swapnir Dinkar
+                        </div>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <img src="img/contracts.svg" alt="Icon" class="icon">
+                    <div class="content">
+                        <div class="key">
+                            Transactions
+                        </div>
+                        <div class="value">
+                            23
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buy">
+                <div class="price">
+                    23.119
+                </div>
+                <div class="call-to-action">
+                    Buy this contract
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
                     </div>
                     <div class="display-table-cell details">
                         <div class="pane">
@@ -297,6 +303,47 @@
             </div>
         </div>
     </section>
+    <!-- Buy Contract Modal Partial -->
+
+<div class="modal-component modal fade buy-contract-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-container">
+                    <h3 class="modal-title">
+                        Michael Jordan contract
+                    </h3>
+                    <div class="description">
+                        <p>
+                            The current buying price for this contract is <span>7.3567</span> ETH.
+                        </p>
+                        <p>
+                            If someone decides to snatch the contract away from you, you will be paid <span>8.4602</span> ETH
+                        </p>
+                    </div>
+                    <div class="post-script">
+                        Transactions on the Blockchain take time to process. By the time you buy this contract, it's price may already be higher than is shown on the card and your transaction will fail. You may submit a higher amount to increase the chances of a successful transaction. If you bid higher than the contract's current price, the difference will be refunded automatically.
+                    </div>
+                    <div class="textbox-component">
+                        <label for="custom-price">
+                            Custom price
+                        </label>
+                        <input type="text" id="custom-price" placeholder="0" />
+                    </div>
+                    <div class="metamask-button"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="footnote">
+                    * If someone else outbids you during this time, your ETH will be refunded.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
   <!-- Footer Partial -->
@@ -307,35 +354,29 @@
             <div class="display-table-row">
                 <div class="display-table-cell">
                     <div class="links">
-                        <a href="">
+                        <a href="./how-it-works.html">
                             How it works
                         </a>
-                        <a href="">
+                        <a href="./faq.html">
                             FAQ
                         </a>
-                        <a href="">
+                        <a href="./tos.html">
                             TOS
                         </a>
-                        <a href="">
+                        <a href="./privacy.html">
                             Privacy Policy
                         </a>
-                        <a href="">
+                        <a href="./legal.html">
                             Legal &amp; Copyright
                         </a>
-                        <a href="">
+                        <a href="./bounty-program.html">
                             Bounty Program
                         </a>
-                        <a href="">
-                            Verified Signup
-                        </a>
-                        <a href="">
-                            Verified Contracts
-                        </a>
-                        <a href="">
+                        <a href="./contact.html">
                             Contact us
                         </a>
                         <a href="">
-                            Privacy Policy
+                            Chat (Unofficial)
                         </a>
                     </div>
                 </div>
