@@ -60,7 +60,14 @@
                                         <label>
                                             Role Type
                                         </label>
-                                        <input type="text" placeholder="Select a role type" />
+                                        <select name="category" id="category">
+                                            <option value="">
+                                                Select a role type
+                                            </option>
+                                            <option value="">
+                                                Permanent
+                                            </option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -139,11 +146,18 @@
             <div class="section-table display-table-md classification">
                 <div class="display-table-row">
                     <div class="display-table-cell categories">
-                        <div class="transparent-input-component">
+                        <div class="transparent-select-component">
                             <label>
-                                Categories
+                                Category
                             </label>
-                            <input type="text" placeholder="Select some categories" />
+                            <select name="category" id="category">
+                                <option value="">
+                                    Select a category
+                                </option>
+                                <option value="">
+                                    Category name
+                                </option>
+                            </select>
                         </div>
                     </div>
                     <div class="display-table-cell tags">
@@ -151,7 +165,7 @@
                             <label>
                                 Tags
                             </label>
-                            <input type="text" placeholder="Select some tags" />
+                            <input type="text" placeholder="Select some tags" data-magicsuggest="suggest" />
                         </div>
                     </div>
                 </div>
@@ -175,6 +189,7 @@
 </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="js/js-bundle.js"></script>
 </body>
