@@ -60,36 +60,43 @@
     </div>
 </nav>
   
-<div class="gallery-page">
+<div class="contact-page">
     <header>
-        <div class="header__carousel-container">
-            <div class="header__carousel owl-carousel">
-                <div class="header__carousel-item" style="background-image: url('./img/home-slider-1.jpg')"></div>
-                <div class="header__carousel-item" style="background-image: url('./img/home-slider-2.jpg')"></div>
-                <div class="header__carousel-item" style="background-image: url('./img/home-slider-3.jpg')"></div>
-                <div class="header__carousel-item" style="background-image: url('./img/home-slider-4.jpg')"></div>
-                <div class="header__carousel-item" style="background-image: url('./img/home-slider-5.jpg')"></div>
-                <div class="header__carousel-item" style="background-image: url('./img/other-1.jpg')"></div>
-                <div class="header__carousel-item" style="background-image: url('./img/other-2.jpg')"></div>
-                <div class="header__carousel-item" style="background-image: url('./img/other-3.jpg')"></div>
-                <div class="header__carousel-item" style="background-image: url('./img/other-4.jpg')"></div>
-                
-            </div>
-            <div class="header__carousel-controls">
-                <img src="./img/arrow.svg" alt="Previous" class="header__carousel-previous">
-                <img src="./img/arrow.svg" alt="Next" class="header__carousel-next">
-            </div>
-            <div class="header__caption">
-                <h3 class="header__caption-title">
-                    Gallery
-                </h3>
-                <div class="header__caption-body">
-                    A picture is worth a thousand words
-                </div>
-            </div>
-            <img src="./img/play.svg" alt="Play" class="header__carousel-play">
-        </div>
+        <img src="./img/contact.svg" alt="Contact" class="header__image">
+        <h1 class="header__title">
+            Contact <span>us</span>
+        </h1>
     </header>
+    <section class="form">
+        <div class="form__item custom-form-group">
+            <span class="form__label">Your name</span>
+            <input type="text" name="name" />
+            <span class="form__error">Please fill in your name</span>
+        </div>
+        <div class="form__item custom-form-group">
+            <span class="form__label">Your email address</span>
+            <input type="email" name="email" />
+            <span class="form__error">Please fill in your email address</span>
+        </div>
+        <div class="form__item custom-form-group">
+            <span class="form__label">Your location</span>
+            <input type="text" name="location" />
+            <span class="form__error">Please fill in your location</span>
+        </div>
+        <div class="form__item custom-form-group">
+            <span class="form__label">Subject of your message</span>
+            <input type="text" name="subject" />
+            <span class="form__error">Please fill in a message subject</span>
+        </div>
+        <div class="form__item custom-form-group">
+            <span class="form__label">Your message</span>
+            <textarea name="message" rows="7"></textarea>
+            <span class="form__error">Please fill in some stuff</span>
+        </div>
+        <button class="btn-custom-white">
+            Submit
+        </button>
+    </section>
 </div>
 
   <!-- Footer Partial -->
