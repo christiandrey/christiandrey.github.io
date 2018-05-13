@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Coinally</title>
@@ -14,6 +15,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/css-bundle.css">
 </head>
+
 <body>
   <!-- Navigation Partial -->
 
@@ -28,8 +30,7 @@
             <div class="nav__table-cell nav__links"></div>
         </div>
     </div>
-</nav>
-  
+</nav> 
 <div class="home-page" data-controller="HomeController">
     <header>
         <div class="header__table-md">
@@ -55,8 +56,7 @@
                                     <label for="deposit">
                                         Deposit
                                     </label>
-                                    <select name="deposit" id="deposit">
-                                        <option value="">Select One</option>
+                                    <select name="deposit" id="deposit" class="custom-select">
                                         <option value="BTC">Bitcoin</option>
                                         <option value="BTC">Bitcoin Cash</option>
                                         <option value="BTC">Ether</option>
@@ -71,8 +71,7 @@
                                     <label for="receive">
                                         Receive
                                     </label>
-                                    <select name="receive" id="receive">
-                                        <option value="">Select One</option>
+                                    <select name="receive" id="receive" class="custom-select">
                                         <option value="BTC">Bitcoin</option>
                                         <option value="BTC">Bitcoin Cash</option>
                                         <option value="BTC">Ether</option>
@@ -304,8 +303,7 @@
         </div>
     </section>
 </div>
-
-  <!-- Footer Partial -->
+ <!-- Footer Partial -->
 
 <footer>
     <div class="footer__table-md">
@@ -340,7 +338,11 @@
 </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
   <script src="js/js-bundle.js"></script>
 </body>
+
 </html>
