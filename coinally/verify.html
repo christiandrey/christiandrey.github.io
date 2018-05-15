@@ -41,276 +41,7 @@
         </div>
     </div>
 </nav> 
-<div class="home-page" data-controller="HomeController">
-    <header>
-        <div class="header__table-md">
-            <div class="header__table-row">
-                <div class="header__table-cell header__caption">
-                    <h3 class="caption__title">
-                        We
-                        <span>Buy</span> and
-                        <span>Sell</span> Digital Assets
-                    </h3>
-                    <div class="caption__subtitle">
-                        The safest way to buy Bitcoin, Ethereum, Litecoin and many other blockchain tokens.
-                    </div>
-                </div>
-                <div class="header__table-cell header__cta-form">
-                    <div class="cta-form">
-                        <div class="cta-form__assets-selection">
-                            <div class="title">
-                                Choose which assets to trade
-                            </div>
-                            <div class="input-fields">
-                                <div class="select-component custom-form-group">
-                                    <label for="deposit">
-                                        Deposit
-                                    </label>
-                                    <select name="deposit" id="deposit" class="custom-select">
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/bitcoin.png">Bitcoin</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/bitcoincash.png">Bitcoin Cash</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/ether.png">Ether</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/gnosis.png">Gnosis</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/etherclassic.png">Golem</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/litecoin.png">Litecoin</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/reddcoin.png">Reddcoin</option>
-                                    </select>
-                                    <!-- <input type="text" id="deposit" placeholder="ETH" /> -->
-                                </div>
-                                <div class="select-component custom-form-group">
-                                    <label for="receive">
-                                        Receive
-                                    </label>
-                                    <select name="receive" id="receive" class="custom-select">
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/bitcoin.png">Bitcoin</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/bitcoincash.png">Bitcoin Cash</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/ether.png">Ether</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/gnosis.png">Gnosis</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/etherclassic.png">Golem</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/litecoin.png">Litecoin</option>
-                                        <option value="BTC" data-option-image="https://shapeshift.io/images/coins/reddcoin.png">Reddcoin</option>
-                                    </select>
-                                </div>
-                                <div class="textbox-component">
-                                    <label for="amount">
-                                        Amount (Min: 0, Max: 100)
-                                    </label>
-                                    <input type="number" id="amount" placeholder="0" />
-                                </div>
-                            </div>
-                            <div class="expected-amount">
-                                <div class="amount">
-                                    2.2334BTC
-                                </div>
-                                <div class="exchange-rate">
-                                    1 BTC = $8992.2343
-                                </div>
-                            </div>
-                            <button class="convert btn-custom-astronaut-blue" data-toggle="modal" data-target="#exchange-modal">
-                                Convert
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="rates-monitor">
-        <div class="rate" data-magik="magik">
-            <div class="rate__type gain"></div>
-            <div class="rate__name">
-                BTC
-            </div>
-            <div class="rate__price">
-                $8988.2000
-            </div>
-            <div class="rate__change loss">
-                -3.86%
-            </div>
-        </div>
-        <div class="rate" data-magik="magik">
-            <div class="rate__type loss"></div>
-            <div class="rate__name">
-                ETH
-            </div>
-            <div class="rate__price">
-                $8988.2000
-            </div>
-            <div class="rate__change gain">
-                3.86%
-            </div>
-        </div>
-        <div class="rate" data-magik="magik">
-            <div class="rate__type gain"></div>
-            <div class="rate__name">
-                BTC
-            </div>
-            <div class="rate__price">
-                $8988.2000
-            </div>
-            <div class="rate__change loss">
-                -3.86%
-            </div>
-        </div>
-        <div class="rate" data-magik="magik">
-            <div class="rate__type "></div>
-            <div class="rate__name">
-                BTC
-            </div>
-            <div class="rate__price">
-                $8988.2000
-            </div>
-            <div class="rate__change loss">
-                -3.86%
-            </div>
-        </div>
-        <div class="rate" data-magik="magik">
-            <div class="rate__type "></div>
-            <div class="rate__name">
-                BTC
-            </div>
-            <div class="rate__price">
-                $8988.2000
-            </div>
-            <div class="rate__change loss">
-                -3.86%
-            </div>
-        </div>
-        <div class="rate" data-magik="magik">
-            <div class="rate__type gain"></div>
-            <div class="rate__name">
-                BTC
-            </div>
-            <div class="rate__price">
-                $8988.2000
-            </div>
-            <div class="rate__change loss">
-                -3.86%
-            </div>
-        </div>
-    </section>
-    <section class="features">
-        <div class="features__table-md">
-            <div class="features__table-row">
-                <div class="features__table-cell feature-item" data-magik="magik">
-                    <img src="./img/easy.svg" alt="Easy" class="feature-item__icon">
-                    <h3 class="feature-item__title">
-                        Easy
-                    </h3>
-                    <div class="feature-item__body">
-                        Choose the altcoins or blockchain tokens you would like to exchange, input your receiving address, &amp; send your funds.
-                        Fast crypto market exchanges, no fees, and a delightful process.
-                    </div>
-                </div>
-                <div class="features__table-cell feature-item" data-magik="magik">
-                    <img src="./img/secure.svg" alt="Safe" class="feature-item__icon">
-                    <h3 class="feature-item__title">
-                        Safe
-                    </h3>
-                    <div class="feature-item__body">
-                        Unlike other digital asset and bitcoin exchanges, you don’t need an account to use ShapeShift. This means your funds and
-                        information don’t suffer custodial risk.
-                    </div>
-                </div>
-                <div class="features__table-cell feature-item" data-magik="magik">
-                    <img src="./img/competitive.svg" alt="Easy" class="feature-item__icon">
-                    <h3 class="feature-item__title">
-                        Competitive
-                    </h3>
-                    <div class="feature-item__body">
-                        We offer competitive altcoin and btc exchange rates that update in real time, with no fees on top. Our liquidity and expertise
-                        in cryptocurrency trading continually improve.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="recent-transactions">
-        <img src="./img/exchange.svg" alt="Exchnge" class="icon">
-        <h3 class="title">
-            Recent Transactions
-        </h3>
-        <div class="transaction-items transaction-item__table">
-            <div class="transaction-item__table-row">
-                <div class="transaction-item__table-cell transaction-item__description">
-                    0.022
-                    <a href="">BTC</a> to
-                    <a href="">DOGE</a>
-                </div>
-                <div class="transaction-item__table-cell transaction-item__time">
-                    10 minutes ago
-                </div>
-            </div>
-            <div class="transaction-item__table-row">
-                <div class="transaction-item__table-cell transaction-item__description">
-                    0.022
-                    <a href="">BTC</a> to
-                    <a href="">DOGE</a>
-                </div>
-                <div class="transaction-item__table-cell transaction-item__time">
-                    10 minutes ago
-                </div>
-            </div>
-            <div class="transaction-item__table-row">
-                <div class="transaction-item__table-cell transaction-item__description">
-                    0.022
-                    <a href="">BTC</a> to
-                    <a href="">DOGE</a>
-                </div>
-                <div class="transaction-item__table-cell transaction-item__time">
-                    10 minutes ago
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="statistics">
-        <div class="statistics__table-md">
-            <div class="statistics__table-row">
-                <div class="statistics__table-cell statistics__header">
-                    <img src="./img/statistics.svg" alt="Statistics" class="icon">
-                    <h3 class="title">
-                        24-hour Statistics
-                    </h3>
-                </div>
-                <div class="statistics__table-cell statistics__statistics">
-                    <div class="statistics-items">
-                        <div class="statistics-item" data-magik="magik">
-                            <h4 class="title">
-                                Transactions
-                            </h4>
-                            <div class="subtitle">
-                                10,828
-                            </div>
-                        </div>
-                        <div class="statistics-item" data-magik="magik">
-                            <h4 class="title">
-                                Bitcoin Volume Equivalent
-                            </h4>
-                            <div class="subtitle">
-                                1,021.231 BTC
-                            </div>
-                        </div>
-                        <div class="statistics-item" data-magik="magik">
-                            <h4 class="title">
-                                Average Processing Time
-                            </h4>
-                            <div class="subtitle">
-                                1244 seconds
-                            </div>
-                        </div>
-                        <div class="statistics-item" data-magik="magik">
-                            <h4 class="title">
-                                Most Popular Trade
-                            </h4>
-                            <div class="subtitle">
-                                ETH &rarr; BTC
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="dashboard-page">
     <!-- Exchange Modal Partial -->
 
 <div class="modal-component modal fade exchange-modal" id="exchange-modal">
@@ -580,7 +311,101 @@
             </div>
         </div>
     </div>
+</div> <!-- Dashboard Sidebar Partial -->
+
+<div class="dashboard__sidebar">
+    <span class="hamburger">
+        <img src="./img/close.svg" alt="Close">
+    </span>
+    <img src="./img/avatar.svg" alt="Avatar" class="avatar">
+    <div class="title">
+        Jonathan Doekritz
+    </div>
+
+    <div class="referral-code">
+        <div class="title">
+            Referral Code
+        </div>
+        <div class="body">
+            02dh3a35
+        </div>
+        <div class="subtitle">
+            Total Referrals: 2
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="dashboard.html" class="link active">
+            Dashboard
+        </a>
+        <a href="verify.html" class="link">
+            Verify Details
+        </a>
+        <a href="profile.html" class="link">
+            Edit Profile
+        </a>
+        <a href="bankaccount.html" class="link">
+            Bank Accounts
+        </a>
+        <a href="/" class="link logout">
+            Logout
+        </a>
+    </div>
 </div>
+    <div class="dashboard__content">
+        <div class="dashboard__top-bar">
+            <div class="top-bar__table-md">
+                <div class="top-bar__table-row">
+                    <div class="top-bar__table-cell top-bar__title">
+                        <div class="title">
+                             Verify Account 
+                        </div>
+                    </div>
+                    <div class="top-bar__table-cell top-bar__controls">
+                        <a href="/" class="btn-custom-astronaut-blue small">
+                            <i class="fa fa-plus"></i> New Transaction
+                        </a>
+                         
+                        <a href="verify.html" class="btn-custom-transparent-astronaut-blue small">
+                            Verify Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard__body">
+            
+<div class="dashboard__verify">
+    <img src="./img/verify.svg" alt="Verify" class="icon">
+    <div class="title">
+        Verify your account
+    </div>
+    <div class="input-fields">
+        <div class="textbox-component custom-form-group">
+            <label for="bvn">
+                Bank Verification Number (BVN)
+            </label>
+            <input type="number" id="bvn" placeholder="0..." />
+        </div>
+        <div class="divider">
+            OR
+        </div>
+        <div class="document-upload">
+            <div class="document-upload__instruction">
+                Upload either National ID Card, International Passport, Driver's License or any Govt. Issued ID plus Utility Bill
+            </div>
+            <div class="document-upload__hotspot">
+                Tap to upload
+            </div>
+        </div>
+    </div>
+    <button class="finish btn-custom-astronaut-blue">
+        Finish
+    </button>
+</div>
+
+        </div>
+    </div>
 </div>
  <!-- Footer Partial -->
 
