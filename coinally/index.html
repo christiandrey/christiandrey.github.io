@@ -315,17 +315,72 @@
     </section>
     <!-- Exchange Modal Partial -->
 
-<div class="modal-component modal fade exchange-modal" id="exchange-modal">
+<!-- USE EITHER verified OR not-verified CLASSES TO CHANGE COLOR OF HEADER -->
+<div class="modal-component modal fade exchange-modal verified" id="exchange-modal">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header clearfix">
+                <!-- CHANGE THE TEXT IN THE FOLLOWING DIV TO BE EITHER Verified OR Not Verified BASED ON THE VERIFICATION OF THE USER -->
+                <span class="modal-title">
+                    Verified
+                </span>
                 <button type="button" data-dismiss="modal"></button>
             </div>
             <div class="modal-body">
                 <div class="modal-body__container">
 
+                    <!-- ASSETS SELECTION, ONLY SHOW WHEN TRANSACTION IS INITIATED FROM DASHBOARD -->
+                    <div class="modal__pane" id="assets-selection">
+                        <div class="modal__title">
+                            Choose which assets to trade
+                        </div>
+                        <div class="input-fields">
+                            <div class="select-component custom-form-group">
+                                <label for="deposit">
+                                    Deposit
+                                </label>
+                                <select name="deposit" id="deposit" class="custom-select">
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/bitcoin.png">Bitcoin</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/bitcoincash.png">Bitcoin Cash</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/ether.png">Ether</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/gnosis.png">Gnosis</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/etherclassic.png">Golem</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/litecoin.png">Litecoin</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/reddcoin.png">Reddcoin</option>
+                                </select>
+                                <!-- <input type="text" id="deposit" placeholder="ETH" /> -->
+                            </div>
+                            <div class="select-component custom-form-group">
+                                <label for="receive">
+                                    Receive
+                                </label>
+                                <select name="receive" id="receive" class="custom-select">
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/bitcoin.png">Bitcoin</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/bitcoincash.png">Bitcoin Cash</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/ether.png">Ether</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/gnosis.png">Gnosis</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/etherclassic.png">Golem</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/litecoin.png">Litecoin</option>
+                                    <option value="BTC" data-option-image="https://shapeshift.io/images/coins/reddcoin.png">Reddcoin</option>
+                                </select>
+                            </div>
+                            <div class="textbox-component custom-form-group">
+                                <label for="amount">
+                                    Amount (Min: 0, Max: 100)
+                                </label>
+                                <input type="number" id="amount" placeholder="0" />
+                            </div>
+                        </div>
+
+                        <!-- REMOVE THE toggle-pane CLASS IN PRODUCTION -->
+                        <button class="call-to-action btn-custom-astronaut-blue toggle-pane">
+                            Convert
+                        </button>
+                    </div>
+                    <!-- END OF ASSETS SELECTION -->
+
                     <!-- LOGIN PANE -->
-                    <div class="modal__pane" id="login">
+                    <div class="modal__pane hidden" id="login">
                         <div class="modal__title">
                             Login to continue
                         </div>
@@ -569,17 +624,40 @@
                                     <img src="./img/qr-code.png" alt="QR Code">
                                 </div>
                                 <div class="payment-address__table-cell payment-address__description">
-                                    <div class="title">
-                                        Send to this address:
+
+                                    <!-- IF CRYPTOCURRENCY, REMOVE hidden FROM THE FOLLOWING DIV -->
+                                    <div class="description__cryptocurrency hidden">
+                                        <div class="title">
+                                            Send to this address:
+                                        </div>
+                                        <div class="body">
+                                            <p>
+                                                0xbb9bc244d798123fde783fcc1c72d3bb8c189413
+                                            </p>
+                                            <p>
+                                                <span>Amount:</span> 0.0002334 BTC
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="body">
-                                        <p>
-                                            0xbb9bc244d798123fde783fcc1c72d3bb8c189413
-                                        </p>
-                                        <p>
-                                            <span>Amount:</span> 0.0002334 BTC
-                                        </p>
+                                    <!--  -->
+
+                                    <!-- IF FIAT, REMOVE hidden FROM THE FOLLOWING DIV -->
+                                    <div class="description__fiat">
+                                        <div class="title">
+                                            Click to pay online
+                                        </div>
+                                        <div class="body">
+                                            <p>
+                                                <span>Amount:</span>
+                                                <i class="naira"></i>25,234.02
+                                            </p>
+                                        </div>
+                                        <button class="btn-custom-astronaut-blue small description__call-to-action">
+                                            Pay now
+                                        </button>
                                     </div>
+                                    <!--  -->
+
                                 </div>
                             </div>
                         </div>
