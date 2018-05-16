@@ -23,9 +23,11 @@
     <div class="nav__table">
         <div class="nav__table-row">
             <div class="nav__table-cell nav__logo">
+                <!-- ONLY SHOW THIS HAMBURGER WHEN A USER IS LOGGED IN -->
                 <span class="hamburger">
                     <img src="./img/menu.svg" alt="Menu">
                 </span>
+                <!--  -->
                 <a href="/" class="logo">
                     <img src="./img/logo.svg" alt="Logo">
                 </a>
@@ -168,30 +170,46 @@
 
                             <!-- IF BANK ACCOUNT, REMOVE HIDDEN FROM FOLLOWING DIV -->
                             <div class="bank-account">
-                                <div class="select-component custom-form-group">
+                                <div class="select-component form-group existing-account">
                                     <label for="bank-name">
-                                        Bank Name
+                                        Select an existing account
                                     </label>
                                     <select name="bank-name" id="bank-name" class="custom-select">
-                                        <option value="ACCESS">Access Bank</option>
-                                        <option value="UBA">UBA</option>
-                                        <option value="ZENITH">Zenith Bank</option>
+                                        <option value="ACCESS">Access Bank, 2033884492</option>
+                                        <option value="UBA">UBA, 2033884492</option>
+                                        <option value="ZENITH">Zenith Bank, 2033884492</option>
                                     </select>
                                 </div>
-                                <div class="select-component custom-form-group">
-                                    <label for="account-type">
-                                        Account Type
-                                    </label>
-                                    <select name="account-type" id="account-type" class="custom-select">
-                                        <option value="CURRENT">Current</option>
-                                        <option value="SAVINGS">Savings</option>
-                                    </select>
-                                </div>
-                                <div class="textbox-component custom-form-group">
-                                    <label for="account-number">
-                                        10-Digit NUBAN Account Number
-                                    </label>
-                                    <input type="number" max="10" id="account-number" placeholder="0..." />
+                                <button class="btn-custom-japanese-laurel add-new-account__button small custom-form-group">
+                                    <i class="fa fa-plus"></i>
+                                    Add New
+                                </button>
+                                <div class="add-new-account hidden">
+                                    <div class="select-component custom-form-group">
+                                        <label for="bank-name">
+                                            Bank Name
+                                        </label>
+                                        <select name="bank-name" id="bank-name" class="custom-select">
+                                            <option value="ACCESS">Access Bank</option>
+                                            <option value="UBA">UBA</option>
+                                            <option value="ZENITH">Zenith Bank</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-component custom-form-group">
+                                        <label for="account-type">
+                                            Account Type
+                                        </label>
+                                        <select name="account-type" id="account-type" class="custom-select">
+                                            <option value="CURRENT">Current</option>
+                                            <option value="SAVINGS">Savings</option>
+                                        </select>
+                                    </div>
+                                    <div class="textbox-component custom-form-group">
+                                        <label for="account-number">
+                                            10-Digit NUBAN Account Number
+                                        </label>
+                                        <input type="number" max="10" id="account-number" placeholder="0..." />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -211,7 +229,7 @@
                         <div class="input-fields">
 
                             <!-- IF CRYPTOCURRENCY, REMOVE HIDDEN FROM FOLLOWING DIV -->
-                            <div class="textbox-component custom-form-group">
+                            <div class="textbox-component custom-form-group hidden">
                                 <label for="destination-address">
                                     Your Ether destination address
                                 </label>
@@ -219,31 +237,47 @@
                             </div>
 
                             <!-- IF BANK ACCOUNT, REMOVE HIDDEN FROM FOLLOWING DIV -->
-                            <div class="bank-account hidden">
-                                <div class="select-component custom-form-group">
+                            <div class="bank-account">
+                                <div class="select-component form-group existing-account">
                                     <label for="bank-name">
-                                        Bank Name
+                                        Select an existing account
                                     </label>
                                     <select name="bank-name" id="bank-name" class="custom-select">
-                                        <option value="ACCESS">Access Bank</option>
-                                        <option value="UBA">UBA</option>
-                                        <option value="ZENITH">Zenith Bank</option>
+                                        <option value="ACCESS">Access Bank, 2033884492</option>
+                                        <option value="UBA">UBA, 2033884492</option>
+                                        <option value="ZENITH">Zenith Bank, 2033884492</option>
                                     </select>
                                 </div>
-                                <div class="select-component custom-form-group">
-                                    <label for="account-type">
-                                        Account Type
-                                    </label>
-                                    <select name="account-type" id="account-type" class="custom-select">
-                                        <option value="CURRENT">Current</option>
-                                        <option value="SAVINGS">Savings</option>
-                                    </select>
-                                </div>
-                                <div class="textbox-component custom-form-group">
-                                    <label for="account-number">
-                                        10-Digit NUBAN Account Number
-                                    </label>
-                                    <input type="number" max="10" id="account-number" placeholder="0..." />
+                                <button class="btn-custom-japanese-laurel add-new-account__button small custom-form-group">
+                                    <i class="fa fa-plus"></i>
+                                    Add New
+                                </button>
+                                <div class="add-new-account hidden">
+                                    <div class="select-component custom-form-group">
+                                        <label for="bank-name">
+                                            Bank Name
+                                        </label>
+                                        <select name="bank-name" id="bank-name" class="custom-select">
+                                            <option value="ACCESS">Access Bank</option>
+                                            <option value="UBA">UBA</option>
+                                            <option value="ZENITH">Zenith Bank</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-component custom-form-group">
+                                        <label for="account-type">
+                                            Account Type
+                                        </label>
+                                        <select name="account-type" id="account-type" class="custom-select">
+                                            <option value="CURRENT">Current</option>
+                                            <option value="SAVINGS">Savings</option>
+                                        </select>
+                                    </div>
+                                    <div class="textbox-component custom-form-group">
+                                        <label for="account-number">
+                                            10-Digit NUBAN Account Number
+                                        </label>
+                                        <input type="number" max="10" id="account-number" placeholder="0..." />
+                                    </div>
                                 </div>
                             </div>
                         </div>
