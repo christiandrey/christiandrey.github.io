@@ -458,7 +458,7 @@
                 <div class="top-bar__table-row">
                     <div class="top-bar__table-cell top-bar__title">
                         <div class="title">
-                             Dashboard 
+                             User 
                         </div>
                     </div>
                     <div class="top-bar__table-cell top-bar__controls">
@@ -475,165 +475,258 @@
         </div>
         <div class="dashboard__body">
             
-<div class="dashboard__table-md admin-dashboard__dashboard">
-    <div class="dashboard__table-row">
-        <div class="dashboard__table-cell dashboard__left-col">
-            <div class="dashboard-pane dashboard-pane--lg newest-orders">
-                <div class="dashboard-pane__header">
-                    <div class="header__title">
-                        Newest Orders
-                    </div>
-                    <div class="header__subtitle">
-                        23
-                    </div>
-                </div>
-                <div class="dashboard-pane__body">
-                    <div class="order-item new">
-                        <div class="order-item__title">
-                            0.34 ETH to BTC
-                        </div>
-                        <div class="order-item__subtitle">
-                            2 minutes ago - Jane Doe
-                        </div>
-                    </div>
-                    <div class="order-item new">
-                        <div class="order-item__title">
-                            0.34 ETH to BTC
-                        </div>
-                        <div class="order-item__subtitle">
-                            2 minutes ago - Jane Doe
-                        </div>
-                    </div>
-                    <div class="order-item">
-                        <div class="order-item__title">
-                            0.34 ETH to BTC
-                        </div>
-                        <div class="order-item__subtitle">
-                            2 minutes ago - Jane Doe
-                        </div>
-                    </div>
-                    <div class="order-item">
-                        <div class="order-item__title">
-                            0.34 ETH to BTC
-                        </div>
-                        <div class="order-item__subtitle">
-                            2 minutes ago - Jane Doe
-                        </div>
-                    </div>
-                    <div class="order-item">
-                        <div class="order-item__title">
-                            0.34 ETH to BTC
-                        </div>
-                        <div class="order-item__subtitle">
-                            2 minutes ago - Jane Doe
-                        </div>
-                    </div>
-                </div>
+<div class="admin-dashboard__user">
+    <div class="user__profile">
+        <div class="profile__image" style="background-image: url(./img/avatar.svg)"></div>
+        <div class="profile__title">
+            Johnny Doe
+        </div>
+        <div class="profile__subtitle">
+            johnny@johnnydoe.com
+        </div>
+        <div class="profile__subtitle">
+            +234 801 2333 333
+        </div>
+        <button class="btn-custom-astronaut-blue small ban">
+            Ban this user
+        </button>
+        <div class="profile__status">
+            Active
+            <span class="status__indicator"></span>
+        </div>
+    </div>
+    <div class="dashboard-pane dashboard-pane--lg">
+        <div class="dashboard-pane__header">
+            <div class="header__title">
+                Transactions
             </div>
-            <div class="dashboard-pane dashboard-pane--lg order-charts">
-                <div class="dashboard-pane__header">
-                    <div class="header__title">
-                        Order Charts
-                    </div>
-                    <div class="header__subtitle">
-                        01 Jan. 2018 to 05 Mar. 2018
-                    </div>
-                </div>
-                <div class="dashboard-pane__body">
-                    <div class="order-chart">
-                        <img class="placeholder-image" src="https://datavizcatalogue.com/methods/images/top_images/bar_chart.png" alt="Dunno which chart library you'll be using so I'm using an image"
-                            title="Dunno which chart library you'll be using so I'm using an image">
-                    </div>
+            <div class="header__subtitle">
+                23 Total Transactions
+            </div>
+        </div>
+        <div class="dashboard-pane__body is--padded">
+            <div class="user-transactions__table">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Date</th>
+                                <th>Transaction Details</th>
+                                <th>I have</th>
+                                <th>I want</th>
+                                <th>Sent account</th>
+                                <th>Status</th>
+                                <th>Rate</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Today</td>
+                                <td>Bla bla bla</td>
+                                <td>ETH</td>
+                                <td>Naira</td>
+                                <td>302******21</td>
+                                <td>Completed</td>
+                                <td>1000</td>
+                                <td>
+                                    <button class="btn-custom-astronaut-blue small" data-toggle="modal" data-target="#exchange-modal">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Yesterday</td>
+                                <td>Bla bla bla</td>
+                                <td>BTC</td>
+                                <td>USD</td>
+                                <td>302******21</td>
+                                <td>Pending</td>
+                                <td>8000</td>
+                                <td>
+                                    <button class="btn-custom-astronaut-blue small" data-toggle="modal" data-target="#exchange-modal">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>3 minutes ago</td>
+                                <td>Bla bla bla</td>
+                                <td>Naira</td>
+                                <td>BTC</td>
+                                <td>7482fsheyt6wh</td>
+                                <td>Completed</td>
+                                <td>0.00002</td>
+                                <td>
+                                    <button class="btn-custom-astronaut-blue small" data-toggle="modal" data-target="#exchange-modal">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="dashboard__table-cell dashboard__right-col">
-            <div class="dashboard-pane dashboard-pane--sm dashboard-pane--hover">
-                <img src="./img/cart.svg" class="dashboard-pane__icon" alt="Cart" />
-                <div class="dashboard-pane__body">
-                    <div class="body__title">
-                        900
-                    </div>
-                    <div class="body__subtitle">
-                        New orders
-                    </div>
+    </div>
+    <div class="dashboard-pane dashboard-pane--lg">
+        <div class="dashboard-pane__header">
+            <div class="header__title">
+                Bank Accounts
+            </div>
+            <div class="header__subtitle">
+                2 Bank Accounts
+            </div>
+        </div>
+        <div class="dashboard-pane__body is--padded">
+            <div class="user-bank-account__table">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Bank Name</th>
+                                <th>Account Type</th>
+                                <th>Account Number</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Zenith</td>
+                                <td>Current</td>
+                                <td>302******21</td>
+                                <td>
+                                    <button class="btn-custom-japanese-laurel small" title="Verify">
+                                        <i class="fa fa-check"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>UBA</td>
+                                <td>Savings</td>
+                                <td>302******21</td>
+                                <td>
+                                    <button class="btn-custom-japanese-laurel small" title="Verify">
+                                        <i class="fa fa-check"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Access</td>
+                                <td>Savings</td>
+                                <td>302******21</td>
+                                <td>
+                                    <button class="btn-custom-japanese-laurel small" title="Verify">
+                                        <i class="fa fa-check"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="dashboard-pane dashboard-pane--sm dashboard-pane--hover">
-                <img src="./img/chart.svg" class="dashboard-pane__icon" alt="" />
-                <div class="dashboard-pane__body">
-                    <div class="body__title">
-                        53%
-                    </div>
-                    <div class="body__subtitle">
-                        Sale Stats
-                    </div>
+        </div>
+    </div>
+    <div class="dashboard-pane dashboard-pane--lg">
+        <div class="dashboard-pane__header">
+            <div class="header__title">
+                Address urls
+            </div>
+        </div>
+        <div class="dashboard-pane__body is--padded">
+            <div class="user-urls__table">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Url</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Bitcoin</td>
+                                <td>User url</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Bitcoin</td>
+                                <td>User url</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Bitcoin</td>
+                                <td>User url</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="dashboard-pane dashboard-pane--sm dashboard-pane--hover">
-                <img src="./img/new-user.svg" class="dashboard-pane__icon" alt="" />
-                <div class="dashboard-pane__body">
-                    <div class="body__title">
-                        44
-                    </div>
-                    <div class="body__subtitle">
-                        User registrations
-                    </div>
-                </div>
+        </div>
+    </div>
+    <div class="dashboard-pane dashboard-pane--lg">
+        <div class="dashboard-pane__header">
+            <div class="header__title">
+                Verification Details
             </div>
-            <div class="dashboard-pane dashboard-pane--sm dashboard-pane--hover">
-                <img src="./img/money.svg" class="dashboard-pane__icon" alt="" />
-                <div class="dashboard-pane__body">
-                    <div class="body__title">
-                        $5,000
-                    </div>
-                    <div class="body__subtitle">
-                        Processed
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard-pane dashboard-pane--sm dashboard-pane--hover">
-                <img src="https://shapeshift.io/images/coins/ether.png" class="dashboard-pane__icon" alt="" />
-                <div class="dashboard-pane__body">
-                    <div class="body__title">
-                        ETH 12
-                    </div>
-                    <div class="body__subtitle">
-                        Processed
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard-pane dashboard-pane--sm dashboard-pane--hover">
-                <img src="https://shapeshift.io/images/coins/bitcoin.png" class="dashboard-pane__icon" alt="" />
-                <div class="dashboard-pane__body">
-                    <div class="body__title">
-                        BTC 20.778
-                    </div>
-                    <div class="body__subtitle">
-                        Processed
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard-pane dashboard-pane--sm dashboard-pane--hover">
-                <img src="./img/money.svg" class="dashboard-pane__icon" alt="" />
-                <div class="dashboard-pane__body">
-                    <div class="body__title">
-                        NGN 1.1M
-                    </div>
-                    <div class="body__subtitle">
-                        Processed
-                    </div>
-                </div>
-            </div>
-            <div class="dashboard-pane dashboard-pane--sm dashboard-pane--hover">
-                <img src="https://shapeshift.io/images/coins/bitcoincash.png" class="dashboard-pane__icon" alt="" />
-                <div class="dashboard-pane__body">
-                    <div class="body__title">
-                        BCH 4000
-                    </div>
-                    <div class="body__subtitle">
-                        Processed
-                    </div>
+        </div>
+        <div class="dashboard-pane__body is--padded">
+            <div class="user-verification__table">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Type</th>
+                                <th>Number</th>
+                                <th>Image</th>
+                                <th>Approved</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>BVN</td>
+                                <td>0000010001101</td>
+                                <td></td>
+                                <td>
+                                    False
+                                </td>
+                                <td>
+                                    <button class="btn-custom-japanese-laurel small" title="Verify">
+                                        <i class="fa fa-check"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Drivers' License</td>
+                                <td>0000010001101</td>
+                                <td>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1200px-Mastercard-logo.svg.png" alt="Image">
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    <button class="btn-custom-transparent-astronaut-blue small" title="Verify">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
