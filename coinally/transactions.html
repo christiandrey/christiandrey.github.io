@@ -23,16 +23,18 @@
     <div class="nav__table">
         <div class="nav__table-row">
             <div class="nav__table-cell nav__logo">
-                <!-- ONLY SHOW THIS HAMBURGER WHEN A USER IS LOGGED IN -->
                 <span class="hamburger">
                     <img src="./img/menu.svg" alt="Menu">
                 </span>
-                <!--  -->
                 <a href="/" class="logo">
                     <img src="./img/logo.svg" alt="Logo">
                 </a>
             </div>
+            <!-- ONLY SHOW THIS BLOCK WHEN A USER IS **NOT** LOGGED IN -->
             <div class="nav__table-cell nav__links">
+                <span class="hamburger">
+                    <img src="./img/close.svg" alt="Close">
+                </span>
                 <a href="about.html" class="nav__link">
                     About us
                 </a>
@@ -46,6 +48,7 @@
                     Signup
                 </a>
             </div>
+            <!--  -->
         </div>
     </div>
 </nav> 
@@ -646,9 +649,26 @@
                         Terms and Conditions
                     </a>
                 </div>
-                <div class="privacy">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat illum ipsam minima, velit atque veritatis nesciunt
-                    quas dignissimos quisquam porro, consequuntur maiores dolores dicta temporibus magni explicabo qui tenetur.
+                <div class="privacy-and-social">
+                    <div class="privacy">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat illum ipsam minima, velit atque veritatis nesciunt
+                        quas dignissimos quisquam porro, consequuntur maiores dolores dicta temporibus magni explicabo qui
+                        tenetur.
+                    </div>
+                    <div class="social">
+                        <a href="">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
