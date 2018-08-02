@@ -1,12 +1,12 @@
-$(document).ready(function(e) {
+$(document).ready(function (e) {
 
-    $(".form-item input, .form-item textarea").focusin(function(e) {
+    $(".form-item input, .form-item textarea").focusin(function (e) {
         if ($(this).val() == "" || $(this).val() == null) {
             $(this).siblings(".form-label").addClass("is-focused");
         }
     });
 
-    $(".form-item input, .form-item textarea").focusout(function(e) {
+    $(".form-item input, .form-item textarea").focusout(function (e) {
         if ($(this).val() == "" || $(this).val() == null) {
             $(this).siblings(".form-label").removeClass("is-focused");
         }
@@ -47,9 +47,9 @@ $(document).ready(function(e) {
         });
     } catch (e) {
 
-    } 
+    }
 
-    $(".nav-link").click(function(e) {
+    $(".nav-link").click(function (e) {
         var scroll = "#" + $(this).attr("data-href");
         $.scrollTo(scroll,
             {
@@ -58,7 +58,7 @@ $(document).ready(function(e) {
             });
     });
 
-    $("a.get-in-touch").click(function(e) {
+    $("a.get-in-touch").click(function (e) {
         e.preventDefault();
         $.scrollTo("#contact-us", {
             duration: 600,
@@ -83,7 +83,7 @@ $(document).ready(function(e) {
         $("body").css("overflow", "hidden");
     });
 
-    $(".mvp-sprint-application .close-btn").click(function(e) {
+    $(".mvp-sprint-application .close-btn").click(function (e) {
         $(".mvp-sprint-application").dreyanim({
             animationType: "fallOut",
             animationTime: 400
@@ -91,7 +91,34 @@ $(document).ready(function(e) {
         $("body").css("overflow", "auto");
     });
 
-    $(".form-message-wrapper .form-message-close").click(function(e) {
+    $(".form-message-wrapper .form-message-close").click(function (e) {
         $(this).parent().addClass("hidden");
+    });
+
+    // --------------------------------------------------------------
+    // One year after, and the code in this file...doesn't exactly 
+    // look like shit... Anyways, CAROUSEL
+    // --------------------------------------------------------------
+
+    $(".works-carousel").owlCarousel({
+        items: 2,
+        dots: false,
+        loop: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            }
+        }
+    });
+
+    $(".carousel-controls.prev").click(function () {
+        $(".works-carousel").trigger("prev.owl.carousel");
+    });
+
+    $(".carousel-controls.next").click(function () {
+        $(".works-carousel").trigger("next.owl.carousel");
     });
 })

@@ -658,12 +658,12 @@ h1, h2, h3, h4, h5, h6 {
           display: flex;
           justify-content: flex-start; } }
       .l-section.works .carousel .carousel-item {
-        width: 100%;
+        width: 100vw;
         height: auto;
         /* Landscape tablets and desktop or laptops */ }
         @media only screen and (min-width: 992px) {
           .l-section.works .carousel .carousel-item {
-            width: 50%;
+            width: 50vw;
             height: auto; } }
   .l-section.contact-us {
     padding: 30px;

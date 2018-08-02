@@ -1,0 +1,53 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.9.2/libexec/bin/yarn.js add concurrently, node-sass -D
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/christiandrey/Library/Android/sdk//tools:/Users/christiandrey/Library/Android/sdk//tools/bin:/Users/christiandrey/Library/Android/sdk//platform-tools:/Users/christiandrey/Library/Android/sdk//tools:/Users/christiandrey/Library/Android/sdk//tools/bin:/Users/christiandrey/Library/Android/sdk//platform-tools
+
+Yarn version: 
+  1.9.2
+
+Node version: 
+  8.9.4
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/concurrently,: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.9.2/libexec/lib/cli.js:64150:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.9.2/libexec/lib/cli.js:137416:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.9.2/libexec/lib/cli.js:138388:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.9.2/libexec/lib/cli.js:138310:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+    "name": "Afrivelle",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "lite-server": "^2.3.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "lite-server",
+      "sass-watch": "node-sass --watch --recursive --output css --source-map true --source-map-contents scss",
+      "dev": "concurrently --kill-others \"yarn run start\" \"yarn run sass-watch\""
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

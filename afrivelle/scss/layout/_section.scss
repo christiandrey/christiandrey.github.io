@@ -340,10 +340,10 @@
             }
 
             .carousel-item {
-                @include wh(100%, auto);
+                @include wh(100vw, auto);
 
                 @include MQ(L) {
-                    @include wh(50%, auto);
+                    @include wh(50vw, auto);
                 }
             }
         }

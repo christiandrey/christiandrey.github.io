@@ -6,12 +6,15 @@
   "dependencies": {
     "lite-server": "^2.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^3.6.1",
+    "node-sass": "^4.9.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server",
     "sass-watch": "node-sass --watch --recursive --output css --source-map true --source-map-contents scss",
-    "dev": "concurrently --kill-others \"npm run start\" \"npm run sass-watch\""
+    "dev": "concurrently --kill-others \"yarn run start\" \"yarn run sass-watch\""
   },
   "author": "",
   "license": "ISC"
