@@ -104,6 +104,8 @@ $(document).ready(function (e) {
         items: 2,
         dots: false,
         loop: true,
+        autoplay: true,
+        autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1
